@@ -32,14 +32,18 @@
         "mOtxzzbbXiJc1ePGVlr9s",
         "EvBAF1FFZgeFa7eBi-xxZ",
         "fCovc4BgyBtb4Lam1yUEp",
-        "PRTkbkmmO0tP-bQCwY91v"
+        "PRTkbkmmO0tP-bQCwY91v",
+        "UD0t_QhcAZ-_fGiOcadZp",
+        "rKr0hJ_XgU7WNaunNsehM",
+        "efZvfsWLKwdyWf6-LVoxP",
+        "DXD06_hh3QVVnTCZfblMI"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "2/22/2023",
-    "createdAt": "2/22/2023",
+    "updatedAt": "3/6/2023",
+    "createdAt": "3/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -133,7 +137,7 @@
         "id": "06sKFUy30Fh-wvRpVXF6o",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Welcome_Text",
         "attributes": {
           "name": "Welcome_Text",
           "layoutProperties": {
@@ -146,7 +150,7 @@
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "topToBottomOf": "F8EcXu2mbndJCr1x2631r",
             "layout_marginLeft": 20,
-            "layout_marginTop": 30,
+            "layout_marginTop": 10,
             "textStyle": "regular",
             "textAlignment": "left",
             "fontName": "CircularStd"
@@ -163,7 +167,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "62gH65LgBNXfVdBfFfIYP",
@@ -501,8 +506,8 @@
             "background": "#F69D26",
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-            "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
-            "layout_marginTop": 80
+            "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
+            "layout_marginTop": 20
           }
         },
         "icon": "FaTabletAlt",
@@ -516,7 +521,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-11"
+        "path": "0-11",
+        "edit": true
       },
       {
         "id": "mOtxzzbbXiJc1ePGVlr9s",
@@ -685,6 +691,155 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-15"
+      },
+      {
+        "id": "UD0t_QhcAZ-_fGiOcadZp",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Login_Register_Btn",
+        "attributes": {
+          "name": "Login_Register_Btn",
+          "layoutProperties": {
+            "layout_width": "140",
+            "layout_height": "50",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 0,
+            "layout_marginTop": 10,
+            "layout_marginBottom": 0,
+            "text": "Register",
+            "textSize": 20,
+            "textColor": "#ffffff",
+            "textStyle": "medium",
+            "textAlignment": "center",
+            "cornerRadius": [10, 10, 10, 10],
+            "clickable": true,
+            "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
+            "topToBottomOf": "DXD06_hh3QVVnTCZfblMI",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-16",
+        "edit": true
+      },
+      {
+        "id": "rKr0hJ_XgU7WNaunNsehM",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Login_Contact_Btn",
+        "attributes": {
+          "name": "Login_Contact_Btn",
+          "layoutProperties": {
+            "layout_width": "140",
+            "layout_height": "50",
+            "layout_marginLeft": 0,
+            "layout_marginRight": 20,
+            "layout_marginTop": 10,
+            "layout_marginBottom": 0,
+            "text": "Login",
+            "textSize": 20,
+            "textColor": "#000000",
+            "textStyle": "medium",
+            "textAlignment": "center",
+            "cornerRadius": [10, 10, 10, 10],
+            "background": "#FFFFFF",
+            "clickable": true,
+            "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+            "topToBottomOf": "DXD06_hh3QVVnTCZfblMI"
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-17",
+        "edit": true
+      },
+      {
+        "id": "efZvfsWLKwdyWf6-LVoxP",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "ForgotUsername_Text",
+          "layoutProperties": {
+            "textSize": 11,
+            "layout_width": "wrap_content",
+            "layout_height": "30",
+            "textColor": "#ffffff",
+            "text": "Forgot Username ?",
+            "cornerRadius": [0, 0, 0, 0],
+            "rightToLeftOf": "",
+            "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
+            "layout_marginRight": null,
+            "textStyle": "regular",
+            "textAlignment": "right",
+            "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-18"
+      },
+      {
+        "id": "DXD06_hh3QVVnTCZfblMI",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "ForgotPassword_Text",
+          "layoutProperties": {
+            "textSize": 11,
+            "layout_width": "wrap_content",
+            "layout_height": "30",
+            "textColor": "#ffffff",
+            "text": "Forgot Password ?",
+            "cornerRadius": [0, 0, 0, 0],
+            "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
+            "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
+            "textAlignment": "right",
+            "textStyle": "regular"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-19"
       }
     ],
     "subType": "screen",
@@ -806,7 +961,7 @@
             "id": "06sKFUy30Fh-wvRpVXF6o",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Welcome_Text",
             "attributes": {
               "name": "Welcome_Text",
               "layoutProperties": {
@@ -819,7 +974,7 @@
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "topToBottomOf": "F8EcXu2mbndJCr1x2631r",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 30,
+                "layout_marginTop": 10,
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "fontName": "CircularStd"
@@ -836,7 +991,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "62gH65LgBNXfVdBfFfIYP",
@@ -1174,8 +1330,8 @@
                 "background": "#F69D26",
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-                "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
-                "layout_marginTop": 80
+                "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
+                "layout_marginTop": 20
               }
             },
             "icon": "FaTabletAlt",
@@ -1189,7 +1345,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-11"
+            "path": "0-11",
+            "edit": true
           },
           {
             "id": "mOtxzzbbXiJc1ePGVlr9s",
@@ -1358,6 +1515,155 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-15"
+          },
+          {
+            "id": "UD0t_QhcAZ-_fGiOcadZp",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Login_Register_Btn",
+            "attributes": {
+              "name": "Login_Register_Btn",
+              "layoutProperties": {
+                "layout_width": "140",
+                "layout_height": "50",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 0,
+                "layout_marginTop": 10,
+                "layout_marginBottom": 0,
+                "text": "Register",
+                "textSize": 20,
+                "textColor": "#ffffff",
+                "textStyle": "medium",
+                "textAlignment": "center",
+                "cornerRadius": [10, 10, 10, 10],
+                "clickable": true,
+                "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
+                "topToBottomOf": "DXD06_hh3QVVnTCZfblMI",
+                "borderColor": "#FFFFFF",
+                "borderWidth": 2
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-16",
+            "edit": true
+          },
+          {
+            "id": "rKr0hJ_XgU7WNaunNsehM",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Login_Contact_Btn",
+            "attributes": {
+              "name": "Login_Contact_Btn",
+              "layoutProperties": {
+                "layout_width": "140",
+                "layout_height": "50",
+                "layout_marginLeft": 0,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10,
+                "layout_marginBottom": 0,
+                "text": "Login",
+                "textSize": 20,
+                "textColor": "#000000",
+                "textStyle": "medium",
+                "textAlignment": "center",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#FFFFFF",
+                "clickable": true,
+                "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+                "topToBottomOf": "DXD06_hh3QVVnTCZfblMI"
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-17",
+            "edit": true
+          },
+          {
+            "id": "efZvfsWLKwdyWf6-LVoxP",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "ForgotUsername_Text",
+              "layoutProperties": {
+                "textSize": 11,
+                "layout_width": "wrap_content",
+                "layout_height": "30",
+                "textColor": "#ffffff",
+                "text": "Forgot Username ?",
+                "cornerRadius": [0, 0, 0, 0],
+                "rightToLeftOf": "",
+                "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
+                "layout_marginRight": null,
+                "textStyle": "regular",
+                "textAlignment": "right",
+                "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-18"
+          },
+          {
+            "id": "DXD06_hh3QVVnTCZfblMI",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "ForgotPassword_Text",
+              "layoutProperties": {
+                "textSize": 11,
+                "layout_width": "wrap_content",
+                "layout_height": "30",
+                "textColor": "#ffffff",
+                "text": "Forgot Password ?",
+                "cornerRadius": [0, 0, 0, 0],
+                "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
+                "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
+                "textAlignment": "right",
+                "textStyle": "regular"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-19"
           }
         ],
         "subType": "screen"
@@ -1461,7 +1767,7 @@
   {
     "id": "06sKFUy30Fh-wvRpVXF6o",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Welcome_Text",
     "attributes": {
       "name": "Welcome_Text",
       "layoutProperties": {
@@ -1474,7 +1780,7 @@
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "topToBottomOf": "F8EcXu2mbndJCr1x2631r",
         "layout_marginLeft": 20,
-        "layout_marginTop": 30,
+        "layout_marginTop": 10,
         "textStyle": "regular",
         "textAlignment": "left",
         "fontName": "CircularStd"
@@ -1492,6 +1798,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1856,8 +2163,8 @@
         "background": "#F69D26",
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-        "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
-        "layout_marginTop": 80
+        "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
+        "layout_marginTop": 20
       }
     },
     "icon": "FaTabletAlt",
@@ -1872,6 +2179,7 @@
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-11",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2052,6 +2360,167 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-15",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "UD0t_QhcAZ-_fGiOcadZp",
+    "status": "ACTIVE",
+    "name": "Login_Register_Btn",
+    "attributes": {
+      "name": "Login_Register_Btn",
+      "layoutProperties": {
+        "layout_width": "140",
+        "layout_height": "50",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 0,
+        "layout_marginTop": 10,
+        "layout_marginBottom": 0,
+        "text": "Register",
+        "textSize": 20,
+        "textColor": "#ffffff",
+        "textStyle": "medium",
+        "textAlignment": "center",
+        "cornerRadius": [10, 10, 10, 10],
+        "clickable": true,
+        "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
+        "topToBottomOf": "DXD06_hh3QVVnTCZfblMI",
+        "borderColor": "#FFFFFF",
+        "borderWidth": 2
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [],
+    "path": "0-16",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "rKr0hJ_XgU7WNaunNsehM",
+    "status": "ACTIVE",
+    "name": "Login_Contact_Btn",
+    "attributes": {
+      "name": "Login_Contact_Btn",
+      "layoutProperties": {
+        "layout_width": "140",
+        "layout_height": "50",
+        "layout_marginLeft": 0,
+        "layout_marginRight": 20,
+        "layout_marginTop": 10,
+        "layout_marginBottom": 0,
+        "text": "Login",
+        "textSize": 20,
+        "textColor": "#000000",
+        "textStyle": "medium",
+        "textAlignment": "center",
+        "cornerRadius": [10, 10, 10, 10],
+        "background": "#FFFFFF",
+        "clickable": true,
+        "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+        "topToBottomOf": "DXD06_hh3QVVnTCZfblMI"
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [],
+    "path": "0-17",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "efZvfsWLKwdyWf6-LVoxP",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "ForgotUsername_Text",
+      "layoutProperties": {
+        "textSize": 11,
+        "layout_width": "wrap_content",
+        "layout_height": "30",
+        "textColor": "#ffffff",
+        "text": "Forgot Username ?",
+        "cornerRadius": [0, 0, 0, 0],
+        "rightToLeftOf": "",
+        "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
+        "layout_marginRight": null,
+        "textStyle": "regular",
+        "textAlignment": "right",
+        "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-18",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "DXD06_hh3QVVnTCZfblMI",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "ForgotPassword_Text",
+      "layoutProperties": {
+        "textSize": 11,
+        "layout_width": "wrap_content",
+        "layout_height": "30",
+        "textColor": "#ffffff",
+        "text": "Forgot Password ?",
+        "cornerRadius": [0, 0, 0, 0],
+        "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
+        "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
+        "textAlignment": "right",
+        "textStyle": "regular"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-19",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

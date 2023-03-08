@@ -25,8 +25,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/2/2023",
-    "createdAt": "3/2/2023",
+    "updatedAt": "3/6/2023",
+    "createdAt": "3/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -92,28 +92,11 @@
             "layout_width": "20",
             "layout_height": "20",
             "cornerRadius": [0, 0, 0, 0],
-            "srcTemp": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "640070976592c53a9c8f1e21",
-              "name": "cross_btn.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "Gz-TIRjnmIahUNuJGXELB",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "cross_btn.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
-              "createdAt": "2023-03-02T09:47:03.349Z",
-              "updatedAt": "2023-03-02T09:47:03.349Z",
-              "__v": 0,
-              "uri": "cross_btn.png"
-            },
+            "srcTemp": "Gz-TIRjnmIahUNuJGXELB",
             "leftToLeftOf": "QshnMYlM5_v1SUHXTKzq2",
             "topToTopOf": "QshnMYlM5_v1SUHXTKzq2",
             "layout_marginLeft": 20,
-            "layout_marginTop": 20,
-            "src": "Gz-TIRjnmIahUNuJGXELB"
+            "layout_marginTop": 20
           },
           "contentType": 2
         },
@@ -166,21 +149,54 @@
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "VfsVf9Pw3eL39oVZcAphf",
+                "id": "Ixl2dtIx88msSdtdKOWFr",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "Prelogin_Griditem_View",
+                "attributes": {
+                  "name": "Prelogin_Griditem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [10, 10, 10, 10],
+                    "background": "#FFFFFF"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-2-0-0"
+              },
+              {
+                "id": "tHoH6jFYFhm1HAxricwgA",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "Text view",
+                "name": "Prelogin_GridItem_Head_Text",
                 "attributes": {
-                  "name": "Sample_Grid_Text",
+                  "name": "Prelogin_GridItem_Head_Text",
                   "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "wrap_content",
+                    "textSize": 18,
+                    "layout_width": "100",
                     "layout_height": "wrap_content",
-                    "textColor": "#ffffff",
+                    "textColor": "#1F6132",
                     "text": "Start Now",
                     "cornerRadius": [0, 0, 0, 0],
-                    "textStyle": "regular",
-                    "textAlignment": "left"
+                    "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginLeft": 60,
+                    "textAlignment": "left",
+                    "textStyle": "regular"
                   },
                   "bindingKey": "prelogin_data"
                 },
@@ -195,7 +211,104 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-2-0-0"
+                "path": "0-2-0-1",
+                "edit": true
+              },
+              {
+                "id": "nj_OLqjP4f-aSLGprHoSP",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Prelogin_GridView_Icon",
+                "attributes": {
+                  "name": "Prelogin_GridView_Icon",
+                  "layoutProperties": {
+                    "layout_width": "30",
+                    "layout_height": "30",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": "6aK729IsDhhon3GQHPdk9",
+                    "srcTemp": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6405ba4ef00f8b3bc0ab0904",
+                      "name": "location_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "6aK729IsDhhon3GQHPdk9",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "location_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+                      "createdAt": "2023-03-06T10:02:54.777Z",
+                      "updatedAt": "2023-03-06T10:02:54.777Z",
+                      "__v": 0,
+                      "uri": "location_Icon.png"
+                    },
+                    "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginLeft": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-2-0-2"
+              },
+              {
+                "id": "3h71hH-KYPPxWBQ3L-GGq",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Prelogin_Griditem_Arrow_Icon",
+                "attributes": {
+                  "name": "Prelogin_Griditem_Arrow_Icon",
+                  "layoutProperties": {
+                    "layout_width": "12",
+                    "layout_height": "18",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": "Mxmbhzss8gC2KwB7wYtVl",
+                    "srcTemp": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6405bb78f00f8b3bc0ab0935",
+                      "name": "green_right_arrow.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "Mxmbhzss8gC2KwB7wYtVl",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "green_right_arrow.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+                      "createdAt": "2023-03-06T10:07:52.205Z",
+                      "updatedAt": "2023-03-06T10:07:52.205Z",
+                      "__v": 0,
+                      "uri": "green_right_arrow.png"
+                    },
+                    "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginRight": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-2-0-3"
               }
             ],
             "attributes": {
@@ -301,28 +414,11 @@
                 "layout_width": "20",
                 "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
-                "srcTemp": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "640070976592c53a9c8f1e21",
-                  "name": "cross_btn.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "Gz-TIRjnmIahUNuJGXELB",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "cross_btn.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
-                  "createdAt": "2023-03-02T09:47:03.349Z",
-                  "updatedAt": "2023-03-02T09:47:03.349Z",
-                  "__v": 0,
-                  "uri": "cross_btn.png"
-                },
+                "srcTemp": "Gz-TIRjnmIahUNuJGXELB",
                 "leftToLeftOf": "QshnMYlM5_v1SUHXTKzq2",
                 "topToTopOf": "QshnMYlM5_v1SUHXTKzq2",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 20,
-                "src": "Gz-TIRjnmIahUNuJGXELB"
+                "layout_marginTop": 20
               },
               "contentType": 2
             },
@@ -375,21 +471,54 @@
                 "updatedTimestamp": "0000-00-00T00:00:00+00:00",
                 "gridProps": [
                   {
-                    "id": "VfsVf9Pw3eL39oVZcAphf",
+                    "id": "Ixl2dtIx88msSdtdKOWFr",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "Prelogin_Griditem_View",
+                    "attributes": {
+                      "name": "Prelogin_Griditem_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [10, 10, 10, 10],
+                        "background": "#FFFFFF"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-2-0-0"
+                  },
+                  {
+                    "id": "tHoH6jFYFhm1HAxricwgA",
                     "status": "ACTIVE",
                     "_id": "61dec5ad077814a0f374d9f3",
-                    "name": "Text view",
+                    "name": "Prelogin_GridItem_Head_Text",
                     "attributes": {
-                      "name": "Sample_Grid_Text",
+                      "name": "Prelogin_GridItem_Head_Text",
                       "layoutProperties": {
-                        "textSize": 14,
-                        "layout_width": "wrap_content",
+                        "textSize": 18,
+                        "layout_width": "100",
                         "layout_height": "wrap_content",
-                        "textColor": "#ffffff",
+                        "textColor": "#1F6132",
                         "text": "Start Now",
                         "cornerRadius": [0, 0, 0, 0],
-                        "textStyle": "regular",
-                        "textAlignment": "left"
+                        "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "layout_marginLeft": 60,
+                        "textAlignment": "left",
+                        "textStyle": "regular"
                       },
                       "bindingKey": "prelogin_data"
                     },
@@ -404,7 +533,110 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-2-0-0"
+                    "path": "0-2-0-1",
+                    "edit": true
+                  },
+                  {
+                    "id": "nj_OLqjP4f-aSLGprHoSP",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Prelogin_GridView_Icon",
+                    "attributes": {
+                      "name": "Prelogin_GridView_Icon",
+                      "layoutProperties": {
+                        "layout_width": "30",
+                        "layout_height": "30",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": "6aK729IsDhhon3GQHPdk9",
+                        "srcTemp": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "6405ba4ef00f8b3bc0ab0904",
+                          "name": "location_Icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "6aK729IsDhhon3GQHPdk9",
+                          "gitBranchName": "master",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "location_Icon.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+                          "createdAt": "2023-03-06T10:02:54.777Z",
+                          "updatedAt": "2023-03-06T10:02:54.777Z",
+                          "__v": 0,
+                          "uri": "location_Icon.png"
+                        },
+                        "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "layout_marginLeft": 20
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-2-0-2"
+                  },
+                  {
+                    "id": "3h71hH-KYPPxWBQ3L-GGq",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Prelogin_Griditem_Arrow_Icon",
+                    "attributes": {
+                      "name": "Prelogin_Griditem_Arrow_Icon",
+                      "layoutProperties": {
+                        "layout_width": "12",
+                        "layout_height": "18",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": "Mxmbhzss8gC2KwB7wYtVl",
+                        "srcTemp": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "6405bb78f00f8b3bc0ab0935",
+                          "name": "green_right_arrow.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "Mxmbhzss8gC2KwB7wYtVl",
+                          "gitBranchName": "master",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "green_right_arrow.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+                          "createdAt": "2023-03-06T10:07:52.205Z",
+                          "updatedAt": "2023-03-06T10:07:52.205Z",
+                          "__v": 0,
+                          "uri": "green_right_arrow.png"
+                        },
+                        "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                        "layout_marginRight": 20
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-2-0-3"
                   }
                 ],
                 "attributes": {
@@ -489,28 +721,11 @@
         "layout_width": "20",
         "layout_height": "20",
         "cornerRadius": [0, 0, 0, 0],
-        "srcTemp": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "640070976592c53a9c8f1e21",
-          "name": "cross_btn.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "Gz-TIRjnmIahUNuJGXELB",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "cross_btn.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
-          "createdAt": "2023-03-02T09:47:03.349Z",
-          "updatedAt": "2023-03-02T09:47:03.349Z",
-          "__v": 0,
-          "uri": "cross_btn.png"
-        },
+        "srcTemp": "Gz-TIRjnmIahUNuJGXELB",
         "leftToLeftOf": "QshnMYlM5_v1SUHXTKzq2",
         "topToTopOf": "QshnMYlM5_v1SUHXTKzq2",
         "layout_marginLeft": 20,
-        "layout_marginTop": 20,
-        "src": "Gz-TIRjnmIahUNuJGXELB"
+        "layout_marginTop": 20
       },
       "contentType": 2
     },
@@ -567,21 +782,54 @@
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "VfsVf9Pw3eL39oVZcAphf",
+            "id": "Ixl2dtIx88msSdtdKOWFr",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "Prelogin_Griditem_View",
+            "attributes": {
+              "name": "Prelogin_Griditem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#FFFFFF"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-2-0-0"
+          },
+          {
+            "id": "tHoH6jFYFhm1HAxricwgA",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Prelogin_GridItem_Head_Text",
             "attributes": {
-              "name": "Sample_Grid_Text",
+              "name": "Prelogin_GridItem_Head_Text",
               "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "wrap_content",
+                "textSize": 18,
+                "layout_width": "100",
                 "layout_height": "wrap_content",
-                "textColor": "#ffffff",
+                "textColor": "#1F6132",
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
-                "textStyle": "regular",
-                "textAlignment": "left"
+                "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginLeft": 60,
+                "textAlignment": "left",
+                "textStyle": "regular"
               },
               "bindingKey": "prelogin_data"
             },
@@ -596,7 +844,104 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2-0-0"
+            "path": "0-2-0-1",
+            "edit": true
+          },
+          {
+            "id": "nj_OLqjP4f-aSLGprHoSP",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Prelogin_GridView_Icon",
+            "attributes": {
+              "name": "Prelogin_GridView_Icon",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": "6aK729IsDhhon3GQHPdk9",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6405ba4ef00f8b3bc0ab0904",
+                  "name": "location_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "6aK729IsDhhon3GQHPdk9",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "location_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+                  "createdAt": "2023-03-06T10:02:54.777Z",
+                  "updatedAt": "2023-03-06T10:02:54.777Z",
+                  "__v": 0,
+                  "uri": "location_Icon.png"
+                },
+                "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginLeft": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-2-0-2"
+          },
+          {
+            "id": "3h71hH-KYPPxWBQ3L-GGq",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Prelogin_Griditem_Arrow_Icon",
+            "attributes": {
+              "name": "Prelogin_Griditem_Arrow_Icon",
+              "layoutProperties": {
+                "layout_width": "12",
+                "layout_height": "18",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": "Mxmbhzss8gC2KwB7wYtVl",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6405bb78f00f8b3bc0ab0935",
+                  "name": "green_right_arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "Mxmbhzss8gC2KwB7wYtVl",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "green_right_arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+                  "createdAt": "2023-03-06T10:07:52.205Z",
+                  "updatedAt": "2023-03-06T10:07:52.205Z",
+                  "__v": 0,
+                  "uri": "green_right_arrow.png"
+                },
+                "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginRight": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-2-0-3"
           }
         ],
         "attributes": {
@@ -669,28 +1014,11 @@
             "layout_width": "20",
             "layout_height": "20",
             "cornerRadius": [0, 0, 0, 0],
-            "srcTemp": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "640070976592c53a9c8f1e21",
-              "name": "cross_btn.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "Gz-TIRjnmIahUNuJGXELB",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "cross_btn.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
-              "createdAt": "2023-03-02T09:47:03.349Z",
-              "updatedAt": "2023-03-02T09:47:03.349Z",
-              "__v": 0,
-              "uri": "cross_btn.png"
-            },
+            "srcTemp": "Gz-TIRjnmIahUNuJGXELB",
             "leftToLeftOf": "QshnMYlM5_v1SUHXTKzq2",
             "topToTopOf": "QshnMYlM5_v1SUHXTKzq2",
             "layout_marginLeft": 20,
-            "layout_marginTop": 20,
-            "src": "Gz-TIRjnmIahUNuJGXELB"
+            "layout_marginTop": 20
           },
           "contentType": 2
         },
@@ -743,21 +1071,54 @@
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "VfsVf9Pw3eL39oVZcAphf",
+                "id": "Ixl2dtIx88msSdtdKOWFr",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "Prelogin_Griditem_View",
+                "attributes": {
+                  "name": "Prelogin_Griditem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [10, 10, 10, 10],
+                    "background": "#FFFFFF"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-2-0-0"
+              },
+              {
+                "id": "tHoH6jFYFhm1HAxricwgA",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "Text view",
+                "name": "Prelogin_GridItem_Head_Text",
                 "attributes": {
-                  "name": "Sample_Grid_Text",
+                  "name": "Prelogin_GridItem_Head_Text",
                   "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "wrap_content",
+                    "textSize": 18,
+                    "layout_width": "100",
                     "layout_height": "wrap_content",
-                    "textColor": "#ffffff",
+                    "textColor": "#1F6132",
                     "text": "Start Now",
                     "cornerRadius": [0, 0, 0, 0],
-                    "textStyle": "regular",
-                    "textAlignment": "left"
+                    "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginLeft": 60,
+                    "textAlignment": "left",
+                    "textStyle": "regular"
                   },
                   "bindingKey": "prelogin_data"
                 },
@@ -772,7 +1133,104 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-2-0-0"
+                "path": "0-2-0-1",
+                "edit": true
+              },
+              {
+                "id": "nj_OLqjP4f-aSLGprHoSP",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Prelogin_GridView_Icon",
+                "attributes": {
+                  "name": "Prelogin_GridView_Icon",
+                  "layoutProperties": {
+                    "layout_width": "30",
+                    "layout_height": "30",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": "6aK729IsDhhon3GQHPdk9",
+                    "srcTemp": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6405ba4ef00f8b3bc0ab0904",
+                      "name": "location_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "6aK729IsDhhon3GQHPdk9",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "location_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+                      "createdAt": "2023-03-06T10:02:54.777Z",
+                      "updatedAt": "2023-03-06T10:02:54.777Z",
+                      "__v": 0,
+                      "uri": "location_Icon.png"
+                    },
+                    "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginLeft": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-2-0-2"
+              },
+              {
+                "id": "3h71hH-KYPPxWBQ3L-GGq",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Prelogin_Griditem_Arrow_Icon",
+                "attributes": {
+                  "name": "Prelogin_Griditem_Arrow_Icon",
+                  "layoutProperties": {
+                    "layout_width": "12",
+                    "layout_height": "18",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": "Mxmbhzss8gC2KwB7wYtVl",
+                    "srcTemp": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6405bb78f00f8b3bc0ab0935",
+                      "name": "green_right_arrow.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "Mxmbhzss8gC2KwB7wYtVl",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "green_right_arrow.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+                      "createdAt": "2023-03-06T10:07:52.205Z",
+                      "updatedAt": "2023-03-06T10:07:52.205Z",
+                      "__v": 0,
+                      "uri": "green_right_arrow.png"
+                    },
+                    "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                    "layout_marginRight": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-2-0-3"
               }
             ],
             "attributes": {
@@ -800,21 +1258,54 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00",
     "gridProps": [
       {
-        "id": "VfsVf9Pw3eL39oVZcAphf",
+        "id": "Ixl2dtIx88msSdtdKOWFr",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "Prelogin_Griditem_View",
+        "attributes": {
+          "name": "Prelogin_Griditem_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "borderWidth": 0,
+            "cornerRadius": [10, 10, 10, 10],
+            "background": "#FFFFFF"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-2-0-0"
+      },
+      {
+        "id": "tHoH6jFYFhm1HAxricwgA",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Prelogin_GridItem_Head_Text",
         "attributes": {
-          "name": "Sample_Grid_Text",
+          "name": "Prelogin_GridItem_Head_Text",
           "layoutProperties": {
-            "textSize": 14,
-            "layout_width": "wrap_content",
+            "textSize": 18,
+            "layout_width": "100",
             "layout_height": "wrap_content",
-            "textColor": "#ffffff",
+            "textColor": "#1F6132",
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
-            "textStyle": "regular",
-            "textAlignment": "left"
+            "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+            "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+            "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+            "layout_marginLeft": 60,
+            "textAlignment": "left",
+            "textStyle": "regular"
           },
           "bindingKey": "prelogin_data"
         },
@@ -829,11 +1320,113 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2-0-0"
+        "path": "0-2-0-1",
+        "edit": true
+      },
+      {
+        "id": "nj_OLqjP4f-aSLGprHoSP",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Prelogin_GridView_Icon",
+        "attributes": {
+          "name": "Prelogin_GridView_Icon",
+          "layoutProperties": {
+            "layout_width": "30",
+            "layout_height": "30",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": "6aK729IsDhhon3GQHPdk9",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6405ba4ef00f8b3bc0ab0904",
+              "name": "location_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6aK729IsDhhon3GQHPdk9",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "location_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+              "createdAt": "2023-03-06T10:02:54.777Z",
+              "updatedAt": "2023-03-06T10:02:54.777Z",
+              "__v": 0,
+              "uri": "location_Icon.png"
+            },
+            "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+            "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+            "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+            "layout_marginLeft": 20
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-2-0-2"
+      },
+      {
+        "id": "3h71hH-KYPPxWBQ3L-GGq",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Prelogin_Griditem_Arrow_Icon",
+        "attributes": {
+          "name": "Prelogin_Griditem_Arrow_Icon",
+          "layoutProperties": {
+            "layout_width": "12",
+            "layout_height": "18",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": "Mxmbhzss8gC2KwB7wYtVl",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6405bb78f00f8b3bc0ab0935",
+              "name": "green_right_arrow.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "Mxmbhzss8gC2KwB7wYtVl",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "green_right_arrow.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+              "createdAt": "2023-03-06T10:07:52.205Z",
+              "updatedAt": "2023-03-06T10:07:52.205Z",
+              "__v": 0,
+              "uri": "green_right_arrow.png"
+            },
+            "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+            "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+            "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+            "layout_marginRight": 20
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-2-0-3"
       }
     ],
     "attributes": {
-      "componentId": ["VfsVf9Pw3eL39oVZcAphf"],
+      "componentId": [
+        "Ixl2dtIx88msSdtdKOWFr",
+        "tHoH6jFYFhm1HAxricwgA",
+        "nj_OLqjP4f-aSLGprHoSP",
+        "3h71hH-KYPPxWBQ3L-GGq"
+      ],
       "layoutProperties": {
         "layout_height": "100",
         "layout_width": "match_parent",
@@ -848,21 +1441,54 @@
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "VfsVf9Pw3eL39oVZcAphf",
+            "id": "Ixl2dtIx88msSdtdKOWFr",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "Prelogin_Griditem_View",
+            "attributes": {
+              "name": "Prelogin_Griditem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#FFFFFF"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-2-0-0"
+          },
+          {
+            "id": "tHoH6jFYFhm1HAxricwgA",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Prelogin_GridItem_Head_Text",
             "attributes": {
-              "name": "Sample_Grid_Text",
+              "name": "Prelogin_GridItem_Head_Text",
               "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "wrap_content",
+                "textSize": 18,
+                "layout_width": "100",
                 "layout_height": "wrap_content",
-                "textColor": "#ffffff",
+                "textColor": "#1F6132",
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
-                "textStyle": "regular",
-                "textAlignment": "left"
+                "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginLeft": 60,
+                "textAlignment": "left",
+                "textStyle": "regular"
               },
               "bindingKey": "prelogin_data"
             },
@@ -877,7 +1503,104 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2-0-0"
+            "path": "0-2-0-1",
+            "edit": true
+          },
+          {
+            "id": "nj_OLqjP4f-aSLGprHoSP",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Prelogin_GridView_Icon",
+            "attributes": {
+              "name": "Prelogin_GridView_Icon",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": "6aK729IsDhhon3GQHPdk9",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6405ba4ef00f8b3bc0ab0904",
+                  "name": "location_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "6aK729IsDhhon3GQHPdk9",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "location_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+                  "createdAt": "2023-03-06T10:02:54.777Z",
+                  "updatedAt": "2023-03-06T10:02:54.777Z",
+                  "__v": 0,
+                  "uri": "location_Icon.png"
+                },
+                "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginLeft": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-2-0-2"
+          },
+          {
+            "id": "3h71hH-KYPPxWBQ3L-GGq",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Prelogin_Griditem_Arrow_Icon",
+            "attributes": {
+              "name": "Prelogin_Griditem_Arrow_Icon",
+              "layoutProperties": {
+                "layout_width": "12",
+                "layout_height": "18",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": "Mxmbhzss8gC2KwB7wYtVl",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6405bb78f00f8b3bc0ab0935",
+                  "name": "green_right_arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "Mxmbhzss8gC2KwB7wYtVl",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "green_right_arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+                  "createdAt": "2023-03-06T10:07:52.205Z",
+                  "updatedAt": "2023-03-06T10:07:52.205Z",
+                  "__v": 0,
+                  "uri": "green_right_arrow.png"
+                },
+                "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+                "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+                "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+                "layout_marginRight": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-2-0-3"
           }
         ],
         "attributes": {
@@ -896,20 +1619,56 @@
     "gitBranchName": "master"
   },
   {
-    "id": "VfsVf9Pw3eL39oVZcAphf",
+    "id": "Ixl2dtIx88msSdtdKOWFr",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Prelogin_Griditem_View",
     "attributes": {
-      "name": "Sample_Grid_Text",
+      "name": "Prelogin_Griditem_View",
       "layoutProperties": {
-        "textSize": 14,
-        "layout_width": "wrap_content",
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "borderWidth": 0,
+        "cornerRadius": [10, 10, 10, 10],
+        "background": "#FFFFFF"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-2-0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "tHoH6jFYFhm1HAxricwgA",
+    "status": "ACTIVE",
+    "name": "Prelogin_GridItem_Head_Text",
+    "attributes": {
+      "name": "Prelogin_GridItem_Head_Text",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "100",
         "layout_height": "wrap_content",
-        "textColor": "#ffffff",
+        "textColor": "#1F6132",
         "text": "Start Now",
         "cornerRadius": [0, 0, 0, 0],
-        "textStyle": "regular",
-        "textAlignment": "left"
+        "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+        "layout_marginLeft": 60,
+        "textAlignment": "left",
+        "textStyle": "regular"
       },
       "bindingKey": "prelogin_data"
     },
@@ -924,7 +1683,110 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-2-0-0",
+    "path": "0-2-0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "nj_OLqjP4f-aSLGprHoSP",
+    "status": "ACTIVE",
+    "name": "Prelogin_GridView_Icon",
+    "attributes": {
+      "name": "Prelogin_GridView_Icon",
+      "layoutProperties": {
+        "layout_width": "30",
+        "layout_height": "30",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": "6aK729IsDhhon3GQHPdk9",
+        "srcTemp": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6405ba4ef00f8b3bc0ab0904",
+          "name": "location_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "6aK729IsDhhon3GQHPdk9",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "location_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/location_Icon.png",
+          "createdAt": "2023-03-06T10:02:54.777Z",
+          "updatedAt": "2023-03-06T10:02:54.777Z",
+          "__v": 0,
+          "uri": "location_Icon.png"
+        },
+        "leftToLeftOf": "Ixl2dtIx88msSdtdKOWFr",
+        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+        "layout_marginLeft": 20
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-2-0-2",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "3h71hH-KYPPxWBQ3L-GGq",
+    "status": "ACTIVE",
+    "name": "Prelogin_Griditem_Arrow_Icon",
+    "attributes": {
+      "name": "Prelogin_Griditem_Arrow_Icon",
+      "layoutProperties": {
+        "layout_width": "12",
+        "layout_height": "18",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": "Mxmbhzss8gC2KwB7wYtVl",
+        "srcTemp": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6405bb78f00f8b3bc0ab0935",
+          "name": "green_right_arrow.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "Mxmbhzss8gC2KwB7wYtVl",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "green_right_arrow.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/green_right_arrow.png",
+          "createdAt": "2023-03-06T10:07:52.205Z",
+          "updatedAt": "2023-03-06T10:07:52.205Z",
+          "__v": 0,
+          "uri": "green_right_arrow.png"
+        },
+        "rightToRightOf": "Ixl2dtIx88msSdtdKOWFr",
+        "bottomToBottomOf": "Ixl2dtIx88msSdtdKOWFr",
+        "topToTopOf": "Ixl2dtIx88msSdtdKOWFr",
+        "layout_marginRight": 20
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-2-0-3",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
