@@ -42,8 +42,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/6/2023",
-    "createdAt": "3/6/2023",
+    "updatedAt": "3/15/2023",
+    "createdAt": "3/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -82,7 +82,11 @@
             "leftToLeftOf": "zU5cMrl69rPGNsDbecxcF",
             "rightToRightOf": "zU5cMrl69rPGNsDbecxcF",
             "topToTopOf": "zU5cMrl69rPGNsDbecxcF",
-            "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF"
+            "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF",
+            "layout_marginBottom": 0,
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "layout_marginTop": 0
           },
           "contentType": 2
         },
@@ -96,7 +100,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-0"
+        "path": "0-0",
+        "edit": true,
+        "events": []
       },
       {
         "id": "F8EcXu2mbndJCr1x2631r",
@@ -115,7 +121,25 @@
             "topToTopOf": "9roOGARsEMO3h4BdLfF4p",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            "layout_marginTop": 40
+            "layout_marginTop": 40,
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "63f3227a6ade92218c0557df",
+              "name": "HMB_Logo.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "OSY_JCO7vNbz2S7PfCtgY",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "HMB_Logo.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Logo.png",
+              "createdAt": "2023-02-20T07:34:18.628Z",
+              "updatedAt": "2023-02-20T07:34:18.628Z",
+              "__v": 0,
+              "uri": "HMB_Logo.png"
+            },
+            "id": "OSY_JCO7vNbz2S7PfCtgY"
           },
           "contentType": 2
         },
@@ -186,11 +210,12 @@
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "topToBottomOf": "06sKFUy30Fh-wvRpVXF6o",
-            "layout_marginTop": null,
+            "layout_marginTop": 0,
             "layout_marginLeft": 20,
             "textStyle": "regular",
             "textAlignment": "left",
-            "fontName": "CircularStd"
+            "fontName": "CircularStd",
+            "layout_marginBottom": 0
           }
         },
         "icon": "FaTextWidth",
@@ -366,7 +391,9 @@
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "topToBottomOf": "fFQnut13V0OMN0mFpUqqV",
             "layout_marginLeft": 20,
-            "layout_marginTop": 40
+            "layout_marginTop": 40,
+            "layout_marginBottom": 0,
+            "layout_marginRight": 0
           },
           "contentType": 2
         },
@@ -380,13 +407,15 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true,
+        "events": []
       },
       {
         "id": "IG9735bsVbLuEIkpxPjQ0",
         "status": "ACTIVE",
         "_id": "61dec716077814a0f374d9f5",
-        "name": "Input text",
+        "name": "Password_Input",
         "attributes": {
           "name": "Password_Input",
           "validation": [],
@@ -394,7 +423,7 @@
             "textSize": 16,
             "textColor": "#ffffff",
             "textStyle": "regular",
-            "textAlignment": "center",
+            "textAlignment": "left",
             "text": "",
             "numberOfLines": 16,
             "layout_height": "wrap_content",
@@ -408,7 +437,8 @@
             "layout_marginLeft": 50,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "rightToRightOf": "9roOGARsEMO3h4BdLfF4p"
+            "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+            "layout_marginBottom": 0
           }
         },
         "icon": "FaRemoveFormat",
@@ -422,7 +452,8 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-8"
+        "path": "0-8",
+        "edit": true
       },
       {
         "id": "ntW54DJkbgxdqTfjKJTsT",
@@ -442,7 +473,8 @@
             "topToBottomOf": "SQyNM6ffX8G5mhjHw5Hdt",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            "layout_marginTop": 10
+            "layout_marginTop": 10,
+            "layout_marginBottom": 0
           }
         },
         "icon": "FaTabletAlt",
@@ -456,7 +488,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-9"
+        "path": "0-9",
+        "edit": true
       },
       {
         "id": "W4l1KpeMjpEq57mMu_0ab",
@@ -506,8 +539,12 @@
             "background": "#F69D26",
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-            "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
-            "layout_marginTop": 20
+            "topToBottomOf": null,
+            "layout_marginTop": 0,
+            "layout_marginBottom": 60,
+            "layout_marginRight": 0,
+            "layout_marginLeft": 0,
+            "bottomToBottomOf": "9roOGARsEMO3h4BdLfF4p"
           }
         },
         "icon": "FaTabletAlt",
@@ -556,7 +593,9 @@
             "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
             "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
             "layout_marginLeft": 20,
-            "layout_marginTop": 15
+            "layout_marginTop": 15,
+            "layout_marginBottom": 0,
+            "layout_marginRight": 0
           },
           "contentType": 2
         },
@@ -570,7 +609,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-12"
+        "path": "0-12",
+        "edit": true,
+        "events": []
       },
       {
         "id": "EvBAF1FFZgeFa7eBi-xxZ",
@@ -604,7 +645,9 @@
             "leftToRightOf": "W4l1KpeMjpEq57mMu_0ab",
             "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
             "layout_marginTop": 15,
-            "layout_marginLeft": null
+            "layout_marginLeft": 0,
+            "layout_marginBottom": 0,
+            "layout_marginRight": 0
           },
           "contentType": 2
         },
@@ -618,13 +661,15 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-13"
+        "path": "0-13",
+        "edit": true,
+        "events": []
       },
       {
         "id": "fCovc4BgyBtb4Lam1yUEp",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "RDA_Text",
         "attributes": {
           "name": "RDA_Text",
           "layoutProperties": {
@@ -636,11 +681,13 @@
             "cornerRadius": [0, 0, 0, 0],
             "leftToRightOf": "mOtxzzbbXiJc1ePGVlr9s",
             "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
-            "layout_marginRight": null,
+            "layout_marginRight": 0,
             "layout_marginLeft": 5,
             "layout_marginTop": 5,
             "textAlignment": "left",
-            "textStyle": "regular"
+            "textStyle": "regular",
+            "layout_marginBottom": 0,
+            "numberOfLines": 1
           }
         },
         "icon": "FaTextWidth",
@@ -654,13 +701,14 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-14"
+        "path": "0-14",
+        "edit": true
       },
       {
         "id": "PRTkbkmmO0tP-bQCwY91v",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Digital_Text",
         "attributes": {
           "name": "Digital_Text",
           "layoutProperties": {
@@ -670,13 +718,15 @@
             "textColor": "#ffffff",
             "text": "Digital Account",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": null,
+            "numberOfLines": 1,
             "leftToRightOf": "EvBAF1FFZgeFa7eBi-xxZ",
             "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
             "layout_marginLeft": 5,
             "layout_marginTop": 5,
             "textStyle": "regular",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "layout_marginBottom": 0,
+            "layout_marginRight": 0
           }
         },
         "icon": "FaTextWidth",
@@ -690,7 +740,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-15"
+        "path": "0-15",
+        "edit": true
       },
       {
         "id": "UD0t_QhcAZ-_fGiOcadZp",
@@ -777,7 +828,7 @@
         "id": "efZvfsWLKwdyWf6-LVoxP",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "ForgotUsername_Text",
         "attributes": {
           "name": "ForgotUsername_Text",
           "layoutProperties": {
@@ -789,10 +840,13 @@
             "cornerRadius": [0, 0, 0, 0],
             "rightToLeftOf": "",
             "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
-            "layout_marginRight": null,
+            "layout_marginRight": 0,
             "textStyle": "regular",
             "textAlignment": "right",
-            "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+            "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo",
+            "layout_marginBottom": 0,
+            "layout_marginLeft": 0,
+            "layout_marginTop": 0
           }
         },
         "icon": "FaTextWidth",
@@ -806,13 +860,14 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-18"
+        "path": "0-18",
+        "edit": true
       },
       {
         "id": "DXD06_hh3QVVnTCZfblMI",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "ForgotPassword_Text",
         "attributes": {
           "name": "ForgotPassword_Text",
           "layoutProperties": {
@@ -825,7 +880,11 @@
             "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
             "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
             "textAlignment": "right",
-            "textStyle": "regular"
+            "textStyle": "regular",
+            "layout_marginBottom": 0,
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "layout_marginTop": 0
           }
         },
         "icon": "FaTextWidth",
@@ -839,7 +898,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-19"
+        "path": "0-19",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -906,7 +966,11 @@
                 "leftToLeftOf": "zU5cMrl69rPGNsDbecxcF",
                 "rightToRightOf": "zU5cMrl69rPGNsDbecxcF",
                 "topToTopOf": "zU5cMrl69rPGNsDbecxcF",
-                "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF"
+                "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF",
+                "layout_marginBottom": 0,
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
+                "layout_marginTop": 0
               },
               "contentType": 2
             },
@@ -920,7 +984,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-0"
+            "path": "0-0",
+            "edit": true,
+            "events": []
           },
           {
             "id": "F8EcXu2mbndJCr1x2631r",
@@ -939,7 +1005,25 @@
                 "topToTopOf": "9roOGARsEMO3h4BdLfF4p",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginTop": 40
+                "layout_marginTop": 40,
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "63f3227a6ade92218c0557df",
+                  "name": "HMB_Logo.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "OSY_JCO7vNbz2S7PfCtgY",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Logo.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Logo.png",
+                  "createdAt": "2023-02-20T07:34:18.628Z",
+                  "updatedAt": "2023-02-20T07:34:18.628Z",
+                  "__v": 0,
+                  "uri": "HMB_Logo.png"
+                },
+                "id": "OSY_JCO7vNbz2S7PfCtgY"
               },
               "contentType": 2
             },
@@ -1010,11 +1094,12 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "topToBottomOf": "06sKFUy30Fh-wvRpVXF6o",
-                "layout_marginTop": null,
+                "layout_marginTop": 0,
                 "layout_marginLeft": 20,
                 "textStyle": "regular",
                 "textAlignment": "left",
-                "fontName": "CircularStd"
+                "fontName": "CircularStd",
+                "layout_marginBottom": 0
               }
             },
             "icon": "FaTextWidth",
@@ -1190,7 +1275,9 @@
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "topToBottomOf": "fFQnut13V0OMN0mFpUqqV",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 40
+                "layout_marginTop": 40,
+                "layout_marginBottom": 0,
+                "layout_marginRight": 0
               },
               "contentType": 2
             },
@@ -1204,13 +1291,15 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true,
+            "events": []
           },
           {
             "id": "IG9735bsVbLuEIkpxPjQ0",
             "status": "ACTIVE",
             "_id": "61dec716077814a0f374d9f5",
-            "name": "Input text",
+            "name": "Password_Input",
             "attributes": {
               "name": "Password_Input",
               "validation": [],
@@ -1218,7 +1307,7 @@
                 "textSize": 16,
                 "textColor": "#ffffff",
                 "textStyle": "regular",
-                "textAlignment": "center",
+                "textAlignment": "left",
                 "text": "",
                 "numberOfLines": 16,
                 "layout_height": "wrap_content",
@@ -1232,7 +1321,8 @@
                 "layout_marginLeft": 50,
                 "layout_marginRight": 20,
                 "layout_marginTop": 30,
-                "rightToRightOf": "9roOGARsEMO3h4BdLfF4p"
+                "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+                "layout_marginBottom": 0
               }
             },
             "icon": "FaRemoveFormat",
@@ -1246,7 +1336,8 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-8"
+            "path": "0-8",
+            "edit": true
           },
           {
             "id": "ntW54DJkbgxdqTfjKJTsT",
@@ -1266,7 +1357,8 @@
                 "topToBottomOf": "SQyNM6ffX8G5mhjHw5Hdt",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginTop": 10
+                "layout_marginTop": 10,
+                "layout_marginBottom": 0
               }
             },
             "icon": "FaTabletAlt",
@@ -1280,7 +1372,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-9"
+            "path": "0-9",
+            "edit": true
           },
           {
             "id": "W4l1KpeMjpEq57mMu_0ab",
@@ -1330,8 +1423,12 @@
                 "background": "#F69D26",
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-                "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
-                "layout_marginTop": 20
+                "topToBottomOf": null,
+                "layout_marginTop": 0,
+                "layout_marginBottom": 60,
+                "layout_marginRight": 0,
+                "layout_marginLeft": 0,
+                "bottomToBottomOf": "9roOGARsEMO3h4BdLfF4p"
               }
             },
             "icon": "FaTabletAlt",
@@ -1380,7 +1477,9 @@
                 "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
                 "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 15
+                "layout_marginTop": 15,
+                "layout_marginBottom": 0,
+                "layout_marginRight": 0
               },
               "contentType": 2
             },
@@ -1394,7 +1493,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-12"
+            "path": "0-12",
+            "edit": true,
+            "events": []
           },
           {
             "id": "EvBAF1FFZgeFa7eBi-xxZ",
@@ -1428,7 +1529,9 @@
                 "leftToRightOf": "W4l1KpeMjpEq57mMu_0ab",
                 "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
                 "layout_marginTop": 15,
-                "layout_marginLeft": null
+                "layout_marginLeft": 0,
+                "layout_marginBottom": 0,
+                "layout_marginRight": 0
               },
               "contentType": 2
             },
@@ -1442,13 +1545,15 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-13"
+            "path": "0-13",
+            "edit": true,
+            "events": []
           },
           {
             "id": "fCovc4BgyBtb4Lam1yUEp",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "RDA_Text",
             "attributes": {
               "name": "RDA_Text",
               "layoutProperties": {
@@ -1460,11 +1565,13 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToRightOf": "mOtxzzbbXiJc1ePGVlr9s",
                 "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
-                "layout_marginRight": null,
+                "layout_marginRight": 0,
                 "layout_marginLeft": 5,
                 "layout_marginTop": 5,
                 "textAlignment": "left",
-                "textStyle": "regular"
+                "textStyle": "regular",
+                "layout_marginBottom": 0,
+                "numberOfLines": 1
               }
             },
             "icon": "FaTextWidth",
@@ -1478,13 +1585,14 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-14"
+            "path": "0-14",
+            "edit": true
           },
           {
             "id": "PRTkbkmmO0tP-bQCwY91v",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Digital_Text",
             "attributes": {
               "name": "Digital_Text",
               "layoutProperties": {
@@ -1494,13 +1602,15 @@
                 "textColor": "#ffffff",
                 "text": "Digital Account",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": null,
+                "numberOfLines": 1,
                 "leftToRightOf": "EvBAF1FFZgeFa7eBi-xxZ",
                 "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
                 "layout_marginLeft": 5,
                 "layout_marginTop": 5,
                 "textStyle": "regular",
-                "textAlignment": "left"
+                "textAlignment": "left",
+                "layout_marginBottom": 0,
+                "layout_marginRight": 0
               }
             },
             "icon": "FaTextWidth",
@@ -1514,7 +1624,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-15"
+            "path": "0-15",
+            "edit": true
           },
           {
             "id": "UD0t_QhcAZ-_fGiOcadZp",
@@ -1601,7 +1712,7 @@
             "id": "efZvfsWLKwdyWf6-LVoxP",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "ForgotUsername_Text",
             "attributes": {
               "name": "ForgotUsername_Text",
               "layoutProperties": {
@@ -1613,10 +1724,13 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "rightToLeftOf": "",
                 "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
-                "layout_marginRight": null,
+                "layout_marginRight": 0,
                 "textStyle": "regular",
                 "textAlignment": "right",
-                "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+                "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo",
+                "layout_marginBottom": 0,
+                "layout_marginLeft": 0,
+                "layout_marginTop": 0
               }
             },
             "icon": "FaTextWidth",
@@ -1630,13 +1744,14 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-18"
+            "path": "0-18",
+            "edit": true
           },
           {
             "id": "DXD06_hh3QVVnTCZfblMI",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "ForgotPassword_Text",
             "attributes": {
               "name": "ForgotPassword_Text",
               "layoutProperties": {
@@ -1649,7 +1764,11 @@
                 "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
                 "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
                 "textAlignment": "right",
-                "textStyle": "regular"
+                "textStyle": "regular",
+                "layout_marginBottom": 0,
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
+                "layout_marginTop": 0
               }
             },
             "icon": "FaTextWidth",
@@ -1663,14 +1782,15 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-19"
+            "path": "0-19",
+            "edit": true
           }
         ],
         "subType": "screen"
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "_id": "zU5cMrl69rPGNsDbecxcF",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1706,7 +1826,11 @@
         "leftToLeftOf": "zU5cMrl69rPGNsDbecxcF",
         "rightToRightOf": "zU5cMrl69rPGNsDbecxcF",
         "topToTopOf": "zU5cMrl69rPGNsDbecxcF",
-        "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF"
+        "bottomToBottomOf": "zU5cMrl69rPGNsDbecxcF",
+        "layout_marginBottom": 0,
+        "layout_marginLeft": 0,
+        "layout_marginRight": 0,
+        "layout_marginTop": 0
       },
       "contentType": 2
     },
@@ -1721,9 +1845,11 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-0",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1742,7 +1868,25 @@
         "topToTopOf": "9roOGARsEMO3h4BdLfF4p",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        "layout_marginTop": 40
+        "layout_marginTop": 40,
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "63f3227a6ade92218c0557df",
+          "name": "HMB_Logo.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "OSY_JCO7vNbz2S7PfCtgY",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "HMB_Logo.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Logo.png",
+          "createdAt": "2023-02-20T07:34:18.628Z",
+          "updatedAt": "2023-02-20T07:34:18.628Z",
+          "__v": 0,
+          "uri": "HMB_Logo.png"
+        },
+        "id": "OSY_JCO7vNbz2S7PfCtgY"
       },
       "contentType": 2
     },
@@ -1761,7 +1905,7 @@
     "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1801,7 +1945,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1819,11 +1963,12 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "topToBottomOf": "06sKFUy30Fh-wvRpVXF6o",
-        "layout_marginTop": null,
+        "layout_marginTop": 0,
         "layout_marginLeft": 20,
         "textStyle": "regular",
         "textAlignment": "left",
-        "fontName": "CircularStd"
+        "fontName": "CircularStd",
+        "layout_marginBottom": 0
       }
     },
     "icon": "FaTextWidth",
@@ -1841,7 +1986,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1892,7 +2037,7 @@
     "path": "0-4",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1938,7 +2083,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1977,7 +2122,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2011,7 +2156,9 @@
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "topToBottomOf": "fFQnut13V0OMN0mFpUqqV",
         "layout_marginLeft": 20,
-        "layout_marginTop": 40
+        "layout_marginTop": 40,
+        "layout_marginBottom": 0,
+        "layout_marginRight": 0
       },
       "contentType": 2
     },
@@ -2026,15 +2173,17 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-7",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "IG9735bsVbLuEIkpxPjQ0",
     "status": "ACTIVE",
-    "name": "Input text",
+    "name": "Password_Input",
     "attributes": {
       "name": "Password_Input",
       "validation": [],
@@ -2042,7 +2191,7 @@
         "textSize": 16,
         "textColor": "#ffffff",
         "textStyle": "regular",
-        "textAlignment": "center",
+        "textAlignment": "left",
         "text": "",
         "numberOfLines": 16,
         "layout_height": "wrap_content",
@@ -2056,7 +2205,8 @@
         "layout_marginLeft": 50,
         "layout_marginRight": 20,
         "layout_marginTop": 30,
-        "rightToRightOf": "9roOGARsEMO3h4BdLfF4p"
+        "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
+        "layout_marginBottom": 0
       }
     },
     "icon": "FaRemoveFormat",
@@ -2071,9 +2221,10 @@
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-8",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2093,7 +2244,8 @@
         "topToBottomOf": "SQyNM6ffX8G5mhjHw5Hdt",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        "layout_marginTop": 10
+        "layout_marginTop": 10,
+        "layout_marginBottom": 0
       }
     },
     "icon": "FaTabletAlt",
@@ -2108,9 +2260,10 @@
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-9",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2145,7 +2298,7 @@
     "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2163,8 +2316,12 @@
         "background": "#F69D26",
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "rightToRightOf": "9roOGARsEMO3h4BdLfF4p",
-        "topToBottomOf": "UD0t_QhcAZ-_fGiOcadZp",
-        "layout_marginTop": 20
+        "topToBottomOf": null,
+        "layout_marginTop": 0,
+        "layout_marginBottom": 60,
+        "layout_marginRight": 0,
+        "layout_marginLeft": 0,
+        "bottomToBottomOf": "9roOGARsEMO3h4BdLfF4p"
       }
     },
     "icon": "FaTabletAlt",
@@ -2182,7 +2339,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2216,7 +2373,9 @@
         "leftToLeftOf": "9roOGARsEMO3h4BdLfF4p",
         "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
         "layout_marginLeft": 20,
-        "layout_marginTop": 15
+        "layout_marginTop": 15,
+        "layout_marginBottom": 0,
+        "layout_marginRight": 0
       },
       "contentType": 2
     },
@@ -2231,9 +2390,11 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-12",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2267,7 +2428,9 @@
         "leftToRightOf": "W4l1KpeMjpEq57mMu_0ab",
         "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
         "layout_marginTop": 15,
-        "layout_marginLeft": null
+        "layout_marginLeft": 0,
+        "layout_marginBottom": 0,
+        "layout_marginRight": 0
       },
       "contentType": 2
     },
@@ -2282,15 +2445,17 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-13",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "fCovc4BgyBtb4Lam1yUEp",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "RDA_Text",
     "attributes": {
       "name": "RDA_Text",
       "layoutProperties": {
@@ -2302,11 +2467,13 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToRightOf": "mOtxzzbbXiJc1ePGVlr9s",
         "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
-        "layout_marginRight": null,
+        "layout_marginRight": 0,
         "layout_marginLeft": 5,
         "layout_marginTop": 5,
         "textAlignment": "left",
-        "textStyle": "regular"
+        "textStyle": "regular",
+        "layout_marginBottom": 0,
+        "numberOfLines": 1
       }
     },
     "icon": "FaTextWidth",
@@ -2321,15 +2488,16 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-14",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "PRTkbkmmO0tP-bQCwY91v",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Digital_Text",
     "attributes": {
       "name": "Digital_Text",
       "layoutProperties": {
@@ -2339,13 +2507,15 @@
         "textColor": "#ffffff",
         "text": "Digital Account",
         "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": null,
+        "numberOfLines": 1,
         "leftToRightOf": "EvBAF1FFZgeFa7eBi-xxZ",
         "topToBottomOf": "O_DrWrGr8xVyhLpiUjf6G",
         "layout_marginLeft": 5,
         "layout_marginTop": 5,
         "textStyle": "regular",
-        "textAlignment": "left"
+        "textAlignment": "left",
+        "layout_marginBottom": 0,
+        "layout_marginRight": 0
       }
     },
     "icon": "FaTextWidth",
@@ -2360,9 +2530,10 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-15",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2406,7 +2577,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2449,13 +2620,13 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "efZvfsWLKwdyWf6-LVoxP",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "ForgotUsername_Text",
     "attributes": {
       "name": "ForgotUsername_Text",
       "layoutProperties": {
@@ -2467,10 +2638,13 @@
         "cornerRadius": [0, 0, 0, 0],
         "rightToLeftOf": "",
         "topToBottomOf": "rEzFOAlLY29jMoDbjI-mo",
-        "layout_marginRight": null,
+        "layout_marginRight": 0,
         "textStyle": "regular",
         "textAlignment": "right",
-        "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo"
+        "rightToRightOf": "rEzFOAlLY29jMoDbjI-mo",
+        "layout_marginBottom": 0,
+        "layout_marginLeft": 0,
+        "layout_marginTop": 0
       }
     },
     "icon": "FaTextWidth",
@@ -2485,15 +2659,16 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-18",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "DXD06_hh3QVVnTCZfblMI",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "ForgotPassword_Text",
     "attributes": {
       "name": "ForgotPassword_Text",
       "layoutProperties": {
@@ -2506,7 +2681,11 @@
         "rightToRightOf": "IG9735bsVbLuEIkpxPjQ0",
         "topToBottomOf": "ntW54DJkbgxdqTfjKJTsT",
         "textAlignment": "right",
-        "textStyle": "regular"
+        "textStyle": "regular",
+        "layout_marginBottom": 0,
+        "layout_marginLeft": 0,
+        "layout_marginRight": 0,
+        "layout_marginTop": 0
       }
     },
     "icon": "FaTextWidth",
@@ -2521,9 +2700,10 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-19",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

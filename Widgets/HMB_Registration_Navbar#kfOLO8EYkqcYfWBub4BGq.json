@@ -1,11 +1,11 @@
 [
   {
-    "id": "LoEszM6lBHwcKPisXlEnP",
-    "name": "HMB_Contact_Navbar",
+    "id": "kfOLO8EYkqcYfWBub4BGq",
+    "name": "HMB_Registration_Navbar",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "HMB_Contact_Navbar",
+      "name": "Constraint Layout",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -17,10 +17,10 @@
         "cornerRadius": [0, 0, 0, 0]
       },
       "componentId": [
-        "pxW2j0LDZX-HWIX1KnPEJ",
-        "44w1VqUcpcsfTQPpp4qNW",
-        "_I2qnLNyqp9RsNOVLFJUN",
-        "aIH62mjAyouiq1SGgdWm5"
+        "uyKrTMzgF18ECvLBq0Zbq",
+        "PFr1NG-Nuq26H4ajJUQB-",
+        "C8QFdNzP5GCWFrhmPLntj",
+        "dZKmiNS8PGaiqjuDZxFGK"
       ]
     },
     "group": "Layout",
@@ -35,12 +35,12 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "pxW2j0LDZX-HWIX1KnPEJ",
+        "id": "uyKrTMzgF18ECvLBq0Zbq",
         "status": "ACTIVE",
         "_id": "61dec691077814a0f374d9f4",
-        "name": "Contact_Navbar_View",
+        "name": "Registration_Navbar_View",
         "attributes": {
-          "name": "Contact_Navbar_View",
+          "name": "Registration_Navbar_View",
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
@@ -48,9 +48,9 @@
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
-            "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
-            "rightToRightOf": "LoEszM6lBHwcKPisXlEnP",
-            "topToTopOf": "LoEszM6lBHwcKPisXlEnP"
+            "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
+            "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
+            "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
           }
         },
         "icon": "FaTabletAlt",
@@ -67,38 +67,38 @@
         "path": "0-0"
       },
       {
-        "id": "44w1VqUcpcsfTQPpp4qNW",
+        "id": "PFr1NG-Nuq26H4ajJUQB-",
         "status": "ACTIVE",
         "_id": "61decd8e077814a0f374d9fc",
-        "name": "Back_Btn",
+        "name": "Registration_Back_Btn",
         "attributes": {
-          "name": "Back_Btn",
+          "name": "Registration_Back_Btn",
           "layoutProperties": {
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
+            "layout_width": "15",
+            "layout_height": "18",
             "cornerRadius": [0, 0, 0, 0],
-            "src": "bunNCuh-YYqLCtmyDdr_s",
+            "src": "1d8bk13Zt-VqOzmOlGNvr",
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
-              "_id": "64019280f00f8b3bc0aaebd1",
-              "name": "white_arrow.png",
+              "_id": "63f8597bbf8c983b9cc00fd5",
+              "name": "HMB_Back.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "bunNCuh-YYqLCtmyDdr_s",
+              "id": "1d8bk13Zt-VqOzmOlGNvr",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "white_arrow.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/white_arrow.png",
-              "createdAt": "2023-03-03T06:24:00.545Z",
-              "updatedAt": "2023-03-03T06:24:00.545Z",
+              "url": "HMB_Back.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+              "createdAt": "2023-02-24T06:30:19.246Z",
+              "updatedAt": "2023-02-24T06:30:19.246Z",
               "__v": 0,
-              "uri": "white_arrow.png"
+              "uri": "HMB_Back.png"
             },
-            "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "layout_marginLeft": 10
+            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "layout_marginLeft": 20
           },
           "contentType": 2
         },
@@ -115,25 +115,25 @@
         "path": "0-1"
       },
       {
-        "id": "_I2qnLNyqp9RsNOVLFJUN",
+        "id": "C8QFdNzP5GCWFrhmPLntj",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
-          "name": "Back_Btn_Text",
+          "name": "Registration_Back_Text",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
+            "textSize": 13,
+            "layout_width": "50",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
             "text": "Back",
             "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "layout_marginLeft": 30,
-            "textAlignment": "left",
-            "textStyle": "regular"
+            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "layout_marginLeft": 40,
+            "textStyle": "regular",
+            "textAlignment": "left"
           }
         },
         "icon": "FaTextWidth",
@@ -150,23 +150,24 @@
         "path": "0-2"
       },
       {
-        "id": "aIH62mjAyouiq1SGgdWm5",
+        "id": "dZKmiNS8PGaiqjuDZxFGK",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
-          "name": "Contact_Head_Text",
+          "name": "Registration_Head_Text",
           "layoutProperties": {
-            "textSize": 22,
-            "layout_width": "100",
+            "textSize": 18,
+            "layout_width": "120",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
-            "text": "Contact",
+            "text": "Registration",
             "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "rightToRightOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-            "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+            "layout_marginLeft": null,
             "textStyle": "regular",
             "textAlignment": "center"
           }
@@ -188,12 +189,12 @@
     "subType": "widget",
     "layout": [
       {
-        "id": "LoEszM6lBHwcKPisXlEnP",
-        "name": "HMB_Contact_Navbar",
+        "id": "kfOLO8EYkqcYfWBub4BGq",
+        "name": "HMB_Registration_Navbar",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_Contact_Navbar",
+          "name": "Constraint Layout",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -218,12 +219,12 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "pxW2j0LDZX-HWIX1KnPEJ",
+            "id": "uyKrTMzgF18ECvLBq0Zbq",
             "status": "ACTIVE",
             "_id": "61dec691077814a0f374d9f4",
-            "name": "Contact_Navbar_View",
+            "name": "Registration_Navbar_View",
             "attributes": {
-              "name": "Contact_Navbar_View",
+              "name": "Registration_Navbar_View",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
@@ -231,9 +232,9 @@
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
-                "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
-                "rightToRightOf": "LoEszM6lBHwcKPisXlEnP",
-                "topToTopOf": "LoEszM6lBHwcKPisXlEnP"
+                "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
+                "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
+                "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
               }
             },
             "icon": "FaTabletAlt",
@@ -250,38 +251,38 @@
             "path": "0-0"
           },
           {
-            "id": "44w1VqUcpcsfTQPpp4qNW",
+            "id": "PFr1NG-Nuq26H4ajJUQB-",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "Back_Btn",
+            "name": "Registration_Back_Btn",
             "attributes": {
-              "name": "Back_Btn",
+              "name": "Registration_Back_Btn",
               "layoutProperties": {
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "layout_width": "15",
+                "layout_height": "18",
                 "cornerRadius": [0, 0, 0, 0],
-                "src": "bunNCuh-YYqLCtmyDdr_s",
+                "src": "1d8bk13Zt-VqOzmOlGNvr",
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "64019280f00f8b3bc0aaebd1",
-                  "name": "white_arrow.png",
+                  "_id": "63f8597bbf8c983b9cc00fd5",
+                  "name": "HMB_Back.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "bunNCuh-YYqLCtmyDdr_s",
+                  "id": "1d8bk13Zt-VqOzmOlGNvr",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "white_arrow.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/white_arrow.png",
-                  "createdAt": "2023-03-03T06:24:00.545Z",
-                  "updatedAt": "2023-03-03T06:24:00.545Z",
+                  "url": "HMB_Back.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+                  "createdAt": "2023-02-24T06:30:19.246Z",
+                  "updatedAt": "2023-02-24T06:30:19.246Z",
                   "__v": 0,
-                  "uri": "white_arrow.png"
+                  "uri": "HMB_Back.png"
                 },
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "layout_marginLeft": 10
+                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "layout_marginLeft": 20
               },
               "contentType": 2
             },
@@ -298,25 +299,25 @@
             "path": "0-1"
           },
           {
-            "id": "_I2qnLNyqp9RsNOVLFJUN",
+            "id": "C8QFdNzP5GCWFrhmPLntj",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "Back_Btn_Text",
+              "name": "Registration_Back_Text",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
+                "textSize": 13,
+                "layout_width": "50",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
                 "text": "Back",
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "layout_marginLeft": 30,
-                "textAlignment": "left",
-                "textStyle": "regular"
+                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "layout_marginLeft": 40,
+                "textStyle": "regular",
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -333,23 +334,24 @@
             "path": "0-2"
           },
           {
-            "id": "aIH62mjAyouiq1SGgdWm5",
+            "id": "dZKmiNS8PGaiqjuDZxFGK",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "Contact_Head_Text",
+              "name": "Registration_Head_Text",
               "layoutProperties": {
-                "textSize": 22,
-                "layout_width": "100",
+                "textSize": 18,
+                "layout_width": "120",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
-                "text": "Contact",
+                "text": "Registration",
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "rightToRightOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+                "layout_marginLeft": null,
                 "textStyle": "regular",
                 "textAlignment": "center"
               }
@@ -373,16 +375,16 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
-    "_id": "LoEszM6lBHwcKPisXlEnP",
+    "_id": "kfOLO8EYkqcYfWBub4BGq",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "pxW2j0LDZX-HWIX1KnPEJ",
+    "id": "uyKrTMzgF18ECvLBq0Zbq",
     "status": "ACTIVE",
-    "name": "Contact_Navbar_View",
+    "name": "Registration_Navbar_View",
     "attributes": {
-      "name": "Contact_Navbar_View",
+      "name": "Registration_Navbar_View",
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
@@ -390,9 +392,9 @@
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
-        "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
-        "rightToRightOf": "LoEszM6lBHwcKPisXlEnP",
-        "topToTopOf": "LoEszM6lBHwcKPisXlEnP"
+        "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
+        "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
+        "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
       }
     },
     "icon": "FaTabletAlt",
@@ -413,37 +415,37 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "44w1VqUcpcsfTQPpp4qNW",
+    "id": "PFr1NG-Nuq26H4ajJUQB-",
     "status": "ACTIVE",
-    "name": "Back_Btn",
+    "name": "Registration_Back_Btn",
     "attributes": {
-      "name": "Back_Btn",
+      "name": "Registration_Back_Btn",
       "layoutProperties": {
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
+        "layout_width": "15",
+        "layout_height": "18",
         "cornerRadius": [0, 0, 0, 0],
-        "src": "bunNCuh-YYqLCtmyDdr_s",
+        "src": "1d8bk13Zt-VqOzmOlGNvr",
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
-          "_id": "64019280f00f8b3bc0aaebd1",
-          "name": "white_arrow.png",
+          "_id": "63f8597bbf8c983b9cc00fd5",
+          "name": "HMB_Back.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "bunNCuh-YYqLCtmyDdr_s",
+          "id": "1d8bk13Zt-VqOzmOlGNvr",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "white_arrow.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/white_arrow.png",
-          "createdAt": "2023-03-03T06:24:00.545Z",
-          "updatedAt": "2023-03-03T06:24:00.545Z",
+          "url": "HMB_Back.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+          "createdAt": "2023-02-24T06:30:19.246Z",
+          "updatedAt": "2023-02-24T06:30:19.246Z",
           "__v": 0,
-          "uri": "white_arrow.png"
+          "uri": "HMB_Back.png"
         },
-        "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "layout_marginLeft": 10
+        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "layout_marginLeft": 20
       },
       "contentType": 2
     },
@@ -464,24 +466,24 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "_I2qnLNyqp9RsNOVLFJUN",
+    "id": "C8QFdNzP5GCWFrhmPLntj",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "Back_Btn_Text",
+      "name": "Registration_Back_Text",
       "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
+        "textSize": 13,
+        "layout_width": "50",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
         "text": "Back",
         "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "layout_marginLeft": 30,
-        "textAlignment": "left",
-        "textStyle": "regular"
+        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "layout_marginLeft": 40,
+        "textStyle": "regular",
+        "textAlignment": "left"
       }
     },
     "icon": "FaTextWidth",
@@ -502,22 +504,23 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "aIH62mjAyouiq1SGgdWm5",
+    "id": "dZKmiNS8PGaiqjuDZxFGK",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "Contact_Head_Text",
+      "name": "Registration_Head_Text",
       "layoutProperties": {
-        "textSize": 22,
-        "layout_width": "100",
+        "textSize": 18,
+        "layout_width": "120",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
-        "text": "Contact",
+        "text": "Registration",
         "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "rightToRightOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-        "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
+        "layout_marginLeft": null,
         "textStyle": "regular",
         "textAlignment": "center"
       }
