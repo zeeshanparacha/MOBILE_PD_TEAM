@@ -41,8 +41,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/16/2023",
-    "createdAt": "3/16/2023",
+    "updatedAt": "3/20/2023",
+    "createdAt": "3/20/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -615,7 +615,7 @@
         "id": "cV7ltGegSsl7BbwlOB3az",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Receipt_Text",
         "attributes": {
           "name": "Receipt_Text",
           "layoutProperties": {
@@ -651,7 +651,7 @@
         "id": "5ziiwW0KKwXEOgSdWI-vc",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Receipt_DataText",
         "attributes": {
           "name": "Receipt_DataText",
           "layoutProperties": {
@@ -665,7 +665,7 @@
             "topToTopOf": "cV7ltGegSsl7BbwlOB3az",
             "layout_marginBottom": 0,
             "layout_marginRight": 20,
-            "layout_marginTop": 10,
+            "layout_marginTop": 0,
             "textStyle": "regular",
             "textAlignment": "right"
           }
@@ -681,7 +681,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-16"
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "yoxxPNmOcn-aqHnqjyaGh",
@@ -691,7 +692,7 @@
         "attributes": {
           "name": "Resend_Btn",
           "layoutProperties": {
-            "layout_width": "200",
+            "layout_width": "195",
             "layout_height": "63",
             "layout_marginLeft": 0,
             "layout_marginRight": 0,
@@ -730,7 +731,7 @@
         "attributes": {
           "name": "Done_Btn",
           "layoutProperties": {
-            "layout_width": "200",
+            "layout_width": "195",
             "layout_height": "63",
             "layout_marginLeft": 0,
             "layout_marginRight": 0,
@@ -1361,7 +1362,7 @@
             "id": "cV7ltGegSsl7BbwlOB3az",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Receipt_Text",
             "attributes": {
               "name": "Receipt_Text",
               "layoutProperties": {
@@ -1397,7 +1398,7 @@
             "id": "5ziiwW0KKwXEOgSdWI-vc",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Receipt_DataText",
             "attributes": {
               "name": "Receipt_DataText",
               "layoutProperties": {
@@ -1411,7 +1412,7 @@
                 "topToTopOf": "cV7ltGegSsl7BbwlOB3az",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 20,
-                "layout_marginTop": 10,
+                "layout_marginTop": 0,
                 "textStyle": "regular",
                 "textAlignment": "right"
               }
@@ -1427,7 +1428,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-16"
+            "path": "0-16",
+            "edit": true
           },
           {
             "id": "yoxxPNmOcn-aqHnqjyaGh",
@@ -1437,7 +1439,7 @@
             "attributes": {
               "name": "Resend_Btn",
               "layoutProperties": {
-                "layout_width": "200",
+                "layout_width": "195",
                 "layout_height": "63",
                 "layout_marginLeft": 0,
                 "layout_marginRight": 0,
@@ -1476,7 +1478,7 @@
             "attributes": {
               "name": "Done_Btn",
               "layoutProperties": {
-                "layout_width": "200",
+                "layout_width": "195",
                 "layout_height": "63",
                 "layout_marginLeft": 0,
                 "layout_marginRight": 0,
@@ -2128,7 +2130,7 @@
   {
     "id": "cV7ltGegSsl7BbwlOB3az",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Receipt_Text",
     "attributes": {
       "name": "Receipt_Text",
       "layoutProperties": {
@@ -2167,7 +2169,7 @@
   {
     "id": "5ziiwW0KKwXEOgSdWI-vc",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Receipt_DataText",
     "attributes": {
       "name": "Receipt_DataText",
       "layoutProperties": {
@@ -2181,7 +2183,7 @@
         "topToTopOf": "cV7ltGegSsl7BbwlOB3az",
         "layout_marginBottom": 0,
         "layout_marginRight": 20,
-        "layout_marginTop": 10,
+        "layout_marginTop": 0,
         "textStyle": "regular",
         "textAlignment": "right"
       }
@@ -2198,6 +2200,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-16",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2210,7 +2213,7 @@
     "attributes": {
       "name": "Resend_Btn",
       "layoutProperties": {
-        "layout_width": "200",
+        "layout_width": "195",
         "layout_height": "63",
         "layout_marginLeft": 0,
         "layout_marginRight": 0,
@@ -2252,7 +2255,7 @@
     "attributes": {
       "name": "Done_Btn",
       "layoutProperties": {
-        "layout_width": "200",
+        "layout_width": "195",
         "layout_height": "63",
         "layout_marginLeft": 0,
         "layout_marginRight": 0,
