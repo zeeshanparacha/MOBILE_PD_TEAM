@@ -46,7 +46,7 @@
         "id": "67Txj0e6eL8_jDtgIWu0E",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "SI_StanIns_Title_Text",
         "attributes": {
           "name": "SI_StanIns_Title_Text",
           "layoutProperties": {
@@ -64,7 +64,8 @@
             "layout_marginTop": 20,
             "textStyle": "bold",
             "textAlignment": "left"
-          }
+          },
+          "hideCondition": { "logic": { "or": [1, 1] } }
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -77,7 +78,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-0"
+        "path": "0-0",
+        "edit": true
       },
       {
         "id": "WGIvbx_5qTudf12QBlexc",
@@ -309,7 +311,11 @@
             "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
             "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
             "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
-            "id": "olV-dOu-4nMbsNB_4ltxf"
+            "id": "olV-dOu-4nMbsNB_4ltxf",
+            "paddingStart": 0,
+            "paddingEnd": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0
           }
         },
         "icon": "FaRegImage",
@@ -489,7 +495,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image Button", "type": "IMAGEBUTTON" },
-        "path": "0-10"
+        "path": "0-10",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "LAg742C9NcYf961qtFETi",
+            "triggerName": "SI_Occurance_Btmsht",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "values": [],
+              "componentId": "tovJCAmid1Wi_ElM1ax6V"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "1sQBxupfAVJpnzxndzrGS",
@@ -565,7 +586,7 @@
             "id": "67Txj0e6eL8_jDtgIWu0E",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "SI_StanIns_Title_Text",
             "attributes": {
               "name": "SI_StanIns_Title_Text",
               "layoutProperties": {
@@ -583,7 +604,8 @@
                 "layout_marginTop": 20,
                 "textStyle": "bold",
                 "textAlignment": "left"
-              }
+              },
+              "hideCondition": { "logic": { "or": [1, 1] } }
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -596,7 +618,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-0"
+            "path": "0-0",
+            "edit": true
           },
           {
             "id": "WGIvbx_5qTudf12QBlexc",
@@ -828,7 +851,11 @@
                 "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
                 "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
                 "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
-                "id": "olV-dOu-4nMbsNB_4ltxf"
+                "id": "olV-dOu-4nMbsNB_4ltxf",
+                "paddingStart": 0,
+                "paddingEnd": 0,
+                "paddingTop": 0,
+                "paddingBottom": 0
               }
             },
             "icon": "FaRegImage",
@@ -1008,7 +1035,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image Button", "type": "IMAGEBUTTON" },
-            "path": "0-10"
+            "path": "0-10",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "LAg742C9NcYf961qtFETi",
+                "triggerName": "SI_Occurance_Btmsht",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [],
+                  "componentId": "tovJCAmid1Wi_ElM1ax6V"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "1sQBxupfAVJpnzxndzrGS",
@@ -1060,7 +1102,7 @@
   {
     "id": "67Txj0e6eL8_jDtgIWu0E",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "SI_StanIns_Title_Text",
     "attributes": {
       "name": "SI_StanIns_Title_Text",
       "layoutProperties": {
@@ -1078,7 +1120,8 @@
         "layout_marginTop": 20,
         "textStyle": "bold",
         "textAlignment": "left"
-      }
+      },
+      "hideCondition": { "logic": { "or": [1, 1] } }
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1092,6 +1135,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-0",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -1341,7 +1385,11 @@
         "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
         "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
         "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
-        "id": "olV-dOu-4nMbsNB_4ltxf"
+        "id": "olV-dOu-4nMbsNB_4ltxf",
+        "paddingStart": 0,
+        "paddingEnd": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
       }
     },
     "icon": "FaRegImage",
@@ -1534,6 +1582,15 @@
     "projectType": "mobile",
     "component": { "content": "Image Button", "type": "IMAGEBUTTON" },
     "path": "0-10",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "LAg742C9NcYf961qtFETi",
+        "triggerName": "SI_Occurance_Btmsht",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
