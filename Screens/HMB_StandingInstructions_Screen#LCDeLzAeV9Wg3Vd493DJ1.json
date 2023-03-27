@@ -334,7 +334,7 @@
         "id": "E8Qqe7CquXBj27Z3v0THl",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "SI_Occurance_Text",
         "attributes": {
           "name": "SI_Occurance_Text",
           "layoutProperties": {
@@ -364,8 +364,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-7"
+        "events": [
+          {
+            "triggerId": "LAg742C9NcYf961qtFETi",
+            "triggerName": "SI_Occurance_Btmsht",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "values": [],
+              "componentId": "tovJCAmid1Wi_ElM1ax6V"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-7",
+        "edit": true
       },
       {
         "id": "8cWUteZWYn06j7NPeask0",
@@ -874,7 +888,7 @@
             "id": "E8Qqe7CquXBj27Z3v0THl",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "SI_Occurance_Text",
             "attributes": {
               "name": "SI_Occurance_Text",
               "layoutProperties": {
@@ -904,8 +918,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-7"
+            "events": [
+              {
+                "triggerId": "LAg742C9NcYf961qtFETi",
+                "triggerName": "SI_Occurance_Btmsht",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [],
+                  "componentId": "tovJCAmid1Wi_ElM1ax6V"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-7",
+            "edit": true
           },
           {
             "id": "8cWUteZWYn06j7NPeask0",
@@ -1411,7 +1439,7 @@
   {
     "id": "E8Qqe7CquXBj27Z3v0THl",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "SI_Occurance_Text",
     "attributes": {
       "name": "SI_Occurance_Text",
       "layoutProperties": {
@@ -1441,8 +1469,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "LAg742C9NcYf961qtFETi",
+        "triggerName": "SI_Occurance_Btmsht",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-7",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
