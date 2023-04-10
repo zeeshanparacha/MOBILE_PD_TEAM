@@ -19,14 +19,15 @@
       "componentId": [
         "QshnMYlM5_v1SUHXTKzq2",
         "EbOCMBLYfiJc88zpFAJab",
-        "WC3FjVU4FJzKaSBghypi2"
+        "WC3FjVU4FJzKaSBghypi2",
+        "DHRvrP38DhsYILzIlYxeP"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/21/2023",
-    "createdAt": "3/21/2023",
+    "updatedAt": "4/10/2023",
+    "createdAt": "4/10/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -36,7 +37,6 @@
       {
         "id": "QshnMYlM5_v1SUHXTKzq2",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_List_Bg",
         "attributes": {
           "name": "Prelogin_List_Bg",
@@ -75,7 +75,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -90,7 +90,6 @@
       {
         "id": "EbOCMBLYfiJc88zpFAJab",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_Cross_Btn",
         "attributes": {
           "name": "Prelogin_Cross_Btn",
@@ -128,7 +127,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -147,7 +146,7 @@
         "component": { "content": "Grid List View", "type": "GLIST" },
         "attributes": {
           "name": "Prelogin_List_Grid",
-          "bindingKey": "ds_Data1",
+          "bindingKey": "ds_Data",
           "layoutProperties": {
             "layout_width": "match_parent",
             "column": 1,
@@ -179,7 +178,6 @@
               {
                 "id": "Ixl2dtIx88msSdtdKOWFr",
                 "status": "ACTIVE",
-                "_id": "61dec691077814a0f374d9f4",
                 "name": "Prelogin_Griditem_View",
                 "attributes": {
                   "name": "Prelogin_Griditem_View",
@@ -198,7 +196,7 @@
                 },
                 "icon": "FaTabletAlt",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "VIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -213,7 +211,6 @@
               {
                 "id": "tHoH6jFYFhm1HAxricwgA",
                 "status": "ACTIVE",
-                "_id": "61dec5ad077814a0f374d9f3",
                 "name": "Prelogin_GridItem_Head_Text",
                 "attributes": {
                   "name": "Prelogin_GridItem_Head_Text",
@@ -238,7 +235,7 @@
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "TEXTVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -253,7 +250,6 @@
               {
                 "id": "nj_OLqjP4f-aSLGprHoSP",
                 "status": "ACTIVE",
-                "_id": "61decd8e077814a0f374d9fc",
                 "name": "Prelogin_GridView_Icon",
                 "attributes": {
                   "name": "Prelogin_GridView_Icon",
@@ -291,7 +287,7 @@
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "IMAGEVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -306,7 +302,6 @@
               {
                 "id": "3h71hH-KYPPxWBQ3L-GGq",
                 "status": "ACTIVE",
-                "_id": "61decd8e077814a0f374d9fc",
                 "name": "Prelogin_Griditem_Arrow_Icon",
                 "attributes": {
                   "name": "Prelogin_Griditem_Arrow_Icon",
@@ -344,7 +339,7 @@
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "IMAGEVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -368,6 +363,65 @@
           }
         ],
         "edit": true
+      },
+      {
+        "id": "DHRvrP38DhsYILzIlYxeP",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "sam_textt",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "rightToRightOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "topToTopOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "layout_marginRight": 20,
+            "layout_marginTop": 8,
+            "textStyle": "regular",
+            "textAlignment": "right"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "TC6O3CLTb665pFZjs4GiJ",
+            "triggerName": "Testing_UpdateValue_Trig2",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "ds_Data",
+              "value": [
+                {
+                  "ds_Data1": "ahmeds",
+                  "ds_Data12": "ada",
+                  "ds_Data13": "ada"
+                },
+                { "": "" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "3"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-3"
       }
     ],
     "subType": "screen",
@@ -405,7 +459,6 @@
           {
             "id": "QshnMYlM5_v1SUHXTKzq2",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_List_Bg",
             "attributes": {
               "name": "Prelogin_List_Bg",
@@ -444,7 +497,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -459,7 +512,6 @@
           {
             "id": "EbOCMBLYfiJc88zpFAJab",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_Cross_Btn",
             "attributes": {
               "name": "Prelogin_Cross_Btn",
@@ -497,7 +549,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -516,7 +568,7 @@
             "component": { "content": "Grid List View", "type": "GLIST" },
             "attributes": {
               "name": "Prelogin_List_Grid",
-              "bindingKey": "ds_Data1",
+              "bindingKey": "ds_Data",
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "column": 1,
@@ -548,7 +600,6 @@
                   {
                     "id": "Ixl2dtIx88msSdtdKOWFr",
                     "status": "ACTIVE",
-                    "_id": "61dec691077814a0f374d9f4",
                     "name": "Prelogin_Griditem_View",
                     "attributes": {
                       "name": "Prelogin_Griditem_View",
@@ -567,7 +618,7 @@
                     },
                     "icon": "FaTabletAlt",
                     "group": "Form",
-                    "type": "sidebarItem",
+                    "type": "VIEW",
                     "updatedAt": "23-Aug-2021",
                     "createdAt": "23-Aug-2021",
                     "order": 20,
@@ -582,7 +633,6 @@
                   {
                     "id": "tHoH6jFYFhm1HAxricwgA",
                     "status": "ACTIVE",
-                    "_id": "61dec5ad077814a0f374d9f3",
                     "name": "Prelogin_GridItem_Head_Text",
                     "attributes": {
                       "name": "Prelogin_GridItem_Head_Text",
@@ -607,7 +657,7 @@
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
-                    "type": "sidebarItem",
+                    "type": "TEXTVIEW",
                     "updatedAt": "23-Aug-2021",
                     "createdAt": "23-Aug-2021",
                     "order": 20,
@@ -622,7 +672,6 @@
                   {
                     "id": "nj_OLqjP4f-aSLGprHoSP",
                     "status": "ACTIVE",
-                    "_id": "61decd8e077814a0f374d9fc",
                     "name": "Prelogin_GridView_Icon",
                     "attributes": {
                       "name": "Prelogin_GridView_Icon",
@@ -660,7 +709,7 @@
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
-                    "type": "sidebarItem",
+                    "type": "IMAGEVIEW",
                     "updatedAt": "23-Aug-2021",
                     "createdAt": "23-Aug-2021",
                     "order": 20,
@@ -678,7 +727,6 @@
                   {
                     "id": "3h71hH-KYPPxWBQ3L-GGq",
                     "status": "ACTIVE",
-                    "_id": "61decd8e077814a0f374d9fc",
                     "name": "Prelogin_Griditem_Arrow_Icon",
                     "attributes": {
                       "name": "Prelogin_Griditem_Arrow_Icon",
@@ -716,7 +764,7 @@
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
-                    "type": "sidebarItem",
+                    "type": "IMAGEVIEW",
                     "updatedAt": "23-Aug-2021",
                     "createdAt": "23-Aug-2021",
                     "order": 20,
@@ -743,6 +791,65 @@
               }
             ],
             "edit": true
+          },
+          {
+            "id": "DHRvrP38DhsYILzIlYxeP",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "sam_textt",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "lXt3c97Qd2dLSEHRyo3DP",
+                "rightToRightOf": "lXt3c97Qd2dLSEHRyo3DP",
+                "topToTopOf": "lXt3c97Qd2dLSEHRyo3DP",
+                "layout_marginRight": 20,
+                "layout_marginTop": 8,
+                "textStyle": "regular",
+                "textAlignment": "right"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "TC6O3CLTb665pFZjs4GiJ",
+                "triggerName": "Testing_UpdateValue_Trig2",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "ds_Data",
+                  "value": [
+                    {
+                      "ds_Data1": "ahmeds",
+                      "ds_Data12": "ada",
+                      "ds_Data13": "ada"
+                    },
+                    { "": "" }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "3"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-3"
           }
         ],
         "subType": "screen"
@@ -874,7 +981,7 @@
     "component": { "content": "Grid List View", "type": "GLIST" },
     "attributes": {
       "name": "Prelogin_List_Grid",
-      "bindingKey": "ds_Data1",
+      "bindingKey": "ds_Data",
       "layoutProperties": {
         "layout_width": "match_parent",
         "column": 1,
@@ -906,7 +1013,6 @@
           {
             "id": "Ixl2dtIx88msSdtdKOWFr",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Prelogin_Griditem_View",
             "attributes": {
               "name": "Prelogin_Griditem_View",
@@ -925,7 +1031,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -940,7 +1046,6 @@
           {
             "id": "tHoH6jFYFhm1HAxricwgA",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Prelogin_GridItem_Head_Text",
             "attributes": {
               "name": "Prelogin_GridItem_Head_Text",
@@ -965,7 +1070,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -980,7 +1085,6 @@
           {
             "id": "nj_OLqjP4f-aSLGprHoSP",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_GridView_Icon",
             "attributes": {
               "name": "Prelogin_GridView_Icon",
@@ -1018,7 +1122,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1033,7 +1137,6 @@
           {
             "id": "3h71hH-KYPPxWBQ3L-GGq",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_Griditem_Arrow_Icon",
             "attributes": {
               "name": "Prelogin_Griditem_Arrow_Icon",
@@ -1071,7 +1174,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1099,7 +1202,6 @@
       {
         "id": "QshnMYlM5_v1SUHXTKzq2",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_List_Bg",
         "attributes": {
           "name": "Prelogin_List_Bg",
@@ -1138,7 +1240,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1153,7 +1255,6 @@
       {
         "id": "EbOCMBLYfiJc88zpFAJab",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_Cross_Btn",
         "attributes": {
           "name": "Prelogin_Cross_Btn",
@@ -1191,7 +1292,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1210,7 +1311,7 @@
         "component": { "content": "Grid List View", "type": "GLIST" },
         "attributes": {
           "name": "Prelogin_List_Grid",
-          "bindingKey": "ds_Data1",
+          "bindingKey": "ds_Data",
           "layoutProperties": {
             "layout_width": "match_parent",
             "column": 1,
@@ -1242,7 +1343,6 @@
               {
                 "id": "Ixl2dtIx88msSdtdKOWFr",
                 "status": "ACTIVE",
-                "_id": "61dec691077814a0f374d9f4",
                 "name": "Prelogin_Griditem_View",
                 "attributes": {
                   "name": "Prelogin_Griditem_View",
@@ -1261,7 +1361,7 @@
                 },
                 "icon": "FaTabletAlt",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "VIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -1276,7 +1376,6 @@
               {
                 "id": "tHoH6jFYFhm1HAxricwgA",
                 "status": "ACTIVE",
-                "_id": "61dec5ad077814a0f374d9f3",
                 "name": "Prelogin_GridItem_Head_Text",
                 "attributes": {
                   "name": "Prelogin_GridItem_Head_Text",
@@ -1301,7 +1400,7 @@
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "TEXTVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -1316,7 +1415,6 @@
               {
                 "id": "nj_OLqjP4f-aSLGprHoSP",
                 "status": "ACTIVE",
-                "_id": "61decd8e077814a0f374d9fc",
                 "name": "Prelogin_GridView_Icon",
                 "attributes": {
                   "name": "Prelogin_GridView_Icon",
@@ -1354,7 +1452,7 @@
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "IMAGEVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -1369,7 +1467,6 @@
               {
                 "id": "3h71hH-KYPPxWBQ3L-GGq",
                 "status": "ACTIVE",
-                "_id": "61decd8e077814a0f374d9fc",
                 "name": "Prelogin_Griditem_Arrow_Icon",
                 "attributes": {
                   "name": "Prelogin_Griditem_Arrow_Icon",
@@ -1407,7 +1504,7 @@
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
-                "type": "sidebarItem",
+                "type": "IMAGEVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
@@ -1431,6 +1528,65 @@
           }
         ],
         "edit": true
+      },
+      {
+        "id": "DHRvrP38DhsYILzIlYxeP",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "sam_textt",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "rightToRightOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "topToTopOf": "lXt3c97Qd2dLSEHRyo3DP",
+            "layout_marginRight": 20,
+            "layout_marginTop": 8,
+            "textStyle": "regular",
+            "textAlignment": "right"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "TC6O3CLTb665pFZjs4GiJ",
+            "triggerName": "Testing_UpdateValue_Trig2",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "ds_Data",
+              "value": [
+                {
+                  "ds_Data1": "ahmeds",
+                  "ds_Data12": "ada",
+                  "ds_Data13": "ada"
+                },
+                { "": "" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "3"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-3"
       }
     ],
     "subType": "component",
@@ -1448,7 +1604,6 @@
       {
         "id": "Ixl2dtIx88msSdtdKOWFr",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Prelogin_Griditem_View",
         "attributes": {
           "name": "Prelogin_Griditem_View",
@@ -1467,7 +1622,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1482,7 +1637,6 @@
       {
         "id": "tHoH6jFYFhm1HAxricwgA",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Prelogin_GridItem_Head_Text",
         "attributes": {
           "name": "Prelogin_GridItem_Head_Text",
@@ -1507,7 +1661,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1522,7 +1676,6 @@
       {
         "id": "nj_OLqjP4f-aSLGprHoSP",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_GridView_Icon",
         "attributes": {
           "name": "Prelogin_GridView_Icon",
@@ -1560,7 +1713,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1575,7 +1728,6 @@
       {
         "id": "3h71hH-KYPPxWBQ3L-GGq",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Prelogin_Griditem_Arrow_Icon",
         "attributes": {
           "name": "Prelogin_Griditem_Arrow_Icon",
@@ -1613,7 +1765,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1649,7 +1801,6 @@
           {
             "id": "Ixl2dtIx88msSdtdKOWFr",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Prelogin_Griditem_View",
             "attributes": {
               "name": "Prelogin_Griditem_View",
@@ -1668,7 +1819,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1683,7 +1834,6 @@
           {
             "id": "tHoH6jFYFhm1HAxricwgA",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Prelogin_GridItem_Head_Text",
             "attributes": {
               "name": "Prelogin_GridItem_Head_Text",
@@ -1708,7 +1858,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1723,7 +1873,6 @@
           {
             "id": "nj_OLqjP4f-aSLGprHoSP",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_GridView_Icon",
             "attributes": {
               "name": "Prelogin_GridView_Icon",
@@ -1761,7 +1910,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1776,7 +1925,6 @@
           {
             "id": "3h71hH-KYPPxWBQ3L-GGq",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Prelogin_Griditem_Arrow_Icon",
             "attributes": {
               "name": "Prelogin_Griditem_Arrow_Icon",
@@ -1814,7 +1962,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2030,6 +2178,53 @@
     "edit": true,
     "events": [],
     "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "dev",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "DHRvrP38DhsYILzIlYxeP",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "sam_textt",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "lXt3c97Qd2dLSEHRyo3DP",
+        "rightToRightOf": "lXt3c97Qd2dLSEHRyo3DP",
+        "topToTopOf": "lXt3c97Qd2dLSEHRyo3DP",
+        "layout_marginRight": 20,
+        "layout_marginTop": 8,
+        "textStyle": "regular",
+        "textAlignment": "right"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "TC6O3CLTb665pFZjs4GiJ",
+        "triggerName": "Testing_UpdateValue_Trig2",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-3",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

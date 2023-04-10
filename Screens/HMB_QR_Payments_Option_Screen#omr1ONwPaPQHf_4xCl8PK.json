@@ -15,8 +15,8 @@
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navBarId": "y84CMf02g0AT8KxgYzqwA",
-        "layout_marginBottom": 0
+        "navBarId": "pS3aIj3FPQxYQ9o83Bpu0",
+        "navbarHeight": "wrap_content"
       },
       "componentId": [
         "nMtJMmGeFJhCJ_YYAUK2w",
@@ -32,8 +32,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/3/2023",
-    "createdAt": "4/3/2023",
+    "updatedAt": "4/4/2023",
+    "createdAt": "4/4/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -183,8 +183,146 @@
       }
     ],
     "subType": "screen",
-    "edit": true,
     "layout": [
+      {
+        "id": "pS3aIj3FPQxYQ9o83Bpu0",
+        "name": "HMB_QRPAyment_Option_Navbar",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Constraint Layout",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "3oHORnuU7Ple0Oitbl7yI",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "QRPayment_Option_Navbar_View",
+            "attributes": {
+              "name": "QRPayment_Option_Navbar_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "leftToLeftOf": "pS3aIj3FPQxYQ9o83Bpu0",
+                "rightToRightOf": "pS3aIj3FPQxYQ9o83Bpu0",
+                "topToTopOf": "pS3aIj3FPQxYQ9o83Bpu0",
+                "layout_marginBottom": 0
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "MO3vXYILj0nFvrTwU49kK",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "QRPayment_Option_Navbar_Back_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Back",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "3oHORnuU7Ple0Oitbl7yI",
+                "topToTopOf": "3oHORnuU7Ple0Oitbl7yI",
+                "bottomToBottomOf": "3oHORnuU7Ple0Oitbl7yI",
+                "layout_marginLeft": 30,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1"
+          },
+          {
+            "id": "_VSDFQG_NcWrmSE9v5cUe",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "QRPayment_Option_Navbar_QRPay_Text",
+              "layoutProperties": {
+                "textSize": 22,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "QR Payments",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "3oHORnuU7Ple0Oitbl7yI",
+                "rightToRightOf": "3oHORnuU7Ple0Oitbl7yI",
+                "topToTopOf": "3oHORnuU7Ple0Oitbl7yI",
+                "bottomToBottomOf": "3oHORnuU7Ple0Oitbl7yI",
+                "textStyle": "bold",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          }
+        ],
+        "subType": "component",
+        "isNavbarConstraint": true
+      },
       {
         "id": "omr1ONwPaPQHf_4xCl8PK",
         "name": "HMB_QR_Payments_Option_Screen",
@@ -201,8 +339,8 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navBarId": "y84CMf02g0AT8KxgYzqwA",
-            "layout_marginBottom": 0
+            "navBarId": "pS3aIj3FPQxYQ9o83Bpu0",
+            "navbarHeight": "wrap_content"
           },
           "componentId": []
         },
@@ -359,8 +497,7 @@
             "path": "0-3"
           }
         ],
-        "subType": "screen",
-        "edit": true
+        "subType": "screen"
       },
       {
         "id": "omr1ONwPaPQHf_4xCl8PK",
