@@ -49,8 +49,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/30/2023",
-    "createdAt": "3/30/2023",
+    "updatedAt": "4/19/2023",
+    "createdAt": "4/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -60,7 +60,6 @@
       {
         "id": "v_VKMvztwSYjXs9U9Nnrp",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confrim_Details_View",
         "attributes": {
           "name": "FT_Confrim_Details_View",
@@ -85,7 +84,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -100,7 +99,6 @@
       {
         "id": "zZQuO2jXcO3RpU7kh3iQm",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confrim_SendTo_Text",
@@ -123,7 +121,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -137,8 +135,7 @@
       {
         "id": "VK8ozKF959k-3_IOhjRON",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_SendTo_DataText",
         "attributes": {
           "name": "FT_Confirm_SendTo_DataText",
           "layoutProperties": {
@@ -160,7 +157,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -169,12 +166,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "-AyiDOQVJb-ulpVZvEbIU",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_SendTo_Btmline",
         "attributes": {
           "name": "FT_Confirm_SendTo_Btmline",
@@ -196,7 +193,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -210,7 +207,6 @@
       {
         "id": "3zgdwRczunCdbqE9dYFns",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_ToAccount_Text",
@@ -234,7 +230,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -248,8 +244,7 @@
       {
         "id": "iDTFepGF6UpoWViRMEGT5",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_ToAccount_DataText",
         "attributes": {
           "name": "FT_Confirm_ToAccount_DataText",
           "layoutProperties": {
@@ -271,7 +266,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -280,12 +275,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-5"
+        "path": "0-5",
+        "edit": true
       },
       {
         "id": "NMGqRs-B74nqZ2cUMjCLB",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_ToAccount_Btmline",
         "attributes": {
           "name": "FT_Confirm_ToAccount_Btmline",
@@ -307,7 +302,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -321,7 +316,6 @@
       {
         "id": "37DFH51w9WL1Frtk2mW6c",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_BankName_Text",
@@ -344,7 +338,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -358,8 +352,7 @@
       {
         "id": "qx_vg58jqzjyoQmdgP23f",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_BankName_DataText",
         "attributes": {
           "name": "FT_Confirm_BankName_DataText",
           "layoutProperties": {
@@ -381,7 +374,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -390,12 +383,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-8"
+        "path": "0-8",
+        "edit": true
       },
       {
         "id": "5PautmBVZ79vzdDFgOq0z",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_BankName_Btmline",
         "attributes": {
           "name": "FT_Confirm_BankName_Btmline",
@@ -417,7 +410,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -431,7 +424,6 @@
       {
         "id": "IzlqnUFWn4kCXVH00MIda",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_FromAccount_Text",
@@ -454,7 +446,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -468,8 +460,7 @@
       {
         "id": "Lq_zeM2lyLVjJBoplOPD_",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_FromAccount_DataText",
         "attributes": {
           "name": "FT_Confirm_FromAccount_DataText",
           "layoutProperties": {
@@ -491,7 +482,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -500,12 +491,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-11"
+        "path": "0-11",
+        "edit": true
       },
       {
         "id": "F9kQq22oCremiCKiEQhH3",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_FromAccount_Btmline",
         "attributes": {
           "name": "FT_Confirm_FromAccount_Btmline",
@@ -527,7 +518,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -541,7 +532,6 @@
       {
         "id": "uEc-z-nQiF2mccbEp-4hn",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_FromAccountNum_Text",
@@ -564,7 +554,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -578,7 +568,6 @@
       {
         "id": "OjrT_nvMF4cjfwQJQXlsO",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "FT_Confirm_FromAccountNUm_DataText",
         "attributes": {
           "name": "FT_Confirm_FromAccountNUm_DataText",
@@ -601,7 +590,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -616,7 +605,6 @@
       {
         "id": "m5pl9-c_OsDq77hwNM46c",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_FromAccountNum_Btmline",
         "attributes": {
           "name": "FT_Confirm_FromAccountNum_Btmline",
@@ -638,7 +626,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -652,7 +640,6 @@
       {
         "id": "sPqK4aomzNgKfuzGAUZrz",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_Amount_Text",
@@ -675,7 +662,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -689,8 +676,7 @@
       {
         "id": "poCqkn3pWOqpjHc0Sea1d",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_Amount_DataText",
         "attributes": {
           "name": "FT_Confirm_Amount_DataText",
           "layoutProperties": {
@@ -708,11 +694,12 @@
             "layout_marginTop": null,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "ft_amount_data"
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -721,12 +708,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-17"
+        "path": "0-17",
+        "edit": true
       },
       {
         "id": "TMIc5VIEMt69gVVVmfzft",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_Amount_Btmline",
         "attributes": {
           "name": "FT_Confirm_Amount_Btmline",
@@ -748,7 +735,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -762,7 +749,6 @@
       {
         "id": "-ktfTsdk8YaaPyq9r0Lvf",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_Purpose_Text",
@@ -785,7 +771,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -799,8 +785,7 @@
       {
         "id": "8yY1egtv6sP04Eh43L9DR",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Confirm_Purpose_DataText",
         "attributes": {
           "name": "FT_Confirm_Purpose_DataText",
           "layoutProperties": {
@@ -822,7 +807,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -831,12 +816,12 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-20"
+        "path": "0-20",
+        "edit": true
       },
       {
         "id": "1ZlqHB_hoG5Q73vUFCT6B",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_Previous_Btn_View",
         "attributes": {
           "name": "FT_Confirm_Previous_Btn_View",
@@ -854,7 +839,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -868,7 +853,6 @@
       {
         "id": "Be1uEEVqEgJH5WBHsf_mj",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_Confirm_Previous_Icon",
         "attributes": {
           "name": "FT_Confirm_Previous_Icon",
@@ -904,7 +888,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -919,7 +903,6 @@
       {
         "id": "7ArnctE6JkZ1nGs5PcoxL",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_Previous_Text",
@@ -942,7 +925,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -956,7 +939,6 @@
       {
         "id": "5e520k_pym3o3aOyjFDbU",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Confirm_Pay_Btn_View",
         "attributes": {
           "name": "FT_Confirm_Pay_Btn_View",
@@ -974,7 +956,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -988,7 +970,6 @@
       {
         "id": "pY4y0tjx6GSP589Zz_p6j",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_Confirm_Pay_Icon",
         "attributes": {
           "name": "FT_Confirm_Pay_Icon",
@@ -1024,7 +1005,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1037,7 +1018,6 @@
       {
         "id": "J8GThrErQYvsI6ROx0zYf",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Confirm_Pay_Text",
@@ -1060,7 +1040,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1107,7 +1087,6 @@
           {
             "id": "v_VKMvztwSYjXs9U9Nnrp",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confrim_Details_View",
             "attributes": {
               "name": "FT_Confrim_Details_View",
@@ -1132,7 +1111,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1147,7 +1126,6 @@
           {
             "id": "zZQuO2jXcO3RpU7kh3iQm",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confrim_SendTo_Text",
@@ -1170,7 +1148,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1184,8 +1162,7 @@
           {
             "id": "VK8ozKF959k-3_IOhjRON",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_SendTo_DataText",
             "attributes": {
               "name": "FT_Confirm_SendTo_DataText",
               "layoutProperties": {
@@ -1207,7 +1184,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1216,12 +1193,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "-AyiDOQVJb-ulpVZvEbIU",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_SendTo_Btmline",
             "attributes": {
               "name": "FT_Confirm_SendTo_Btmline",
@@ -1243,7 +1220,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1257,7 +1234,6 @@
           {
             "id": "3zgdwRczunCdbqE9dYFns",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_ToAccount_Text",
@@ -1281,7 +1257,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1295,8 +1271,7 @@
           {
             "id": "iDTFepGF6UpoWViRMEGT5",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_ToAccount_DataText",
             "attributes": {
               "name": "FT_Confirm_ToAccount_DataText",
               "layoutProperties": {
@@ -1318,7 +1293,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1327,12 +1302,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-5"
+            "path": "0-5",
+            "edit": true
           },
           {
             "id": "NMGqRs-B74nqZ2cUMjCLB",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_ToAccount_Btmline",
             "attributes": {
               "name": "FT_Confirm_ToAccount_Btmline",
@@ -1354,7 +1329,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1368,7 +1343,6 @@
           {
             "id": "37DFH51w9WL1Frtk2mW6c",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_BankName_Text",
@@ -1391,7 +1365,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1405,8 +1379,7 @@
           {
             "id": "qx_vg58jqzjyoQmdgP23f",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_BankName_DataText",
             "attributes": {
               "name": "FT_Confirm_BankName_DataText",
               "layoutProperties": {
@@ -1428,7 +1401,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1437,12 +1410,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-8"
+            "path": "0-8",
+            "edit": true
           },
           {
             "id": "5PautmBVZ79vzdDFgOq0z",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_BankName_Btmline",
             "attributes": {
               "name": "FT_Confirm_BankName_Btmline",
@@ -1464,7 +1437,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1478,7 +1451,6 @@
           {
             "id": "IzlqnUFWn4kCXVH00MIda",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_FromAccount_Text",
@@ -1501,7 +1473,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1515,8 +1487,7 @@
           {
             "id": "Lq_zeM2lyLVjJBoplOPD_",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_FromAccount_DataText",
             "attributes": {
               "name": "FT_Confirm_FromAccount_DataText",
               "layoutProperties": {
@@ -1538,7 +1509,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1547,12 +1518,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-11"
+            "path": "0-11",
+            "edit": true
           },
           {
             "id": "F9kQq22oCremiCKiEQhH3",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_FromAccount_Btmline",
             "attributes": {
               "name": "FT_Confirm_FromAccount_Btmline",
@@ -1574,7 +1545,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1588,7 +1559,6 @@
           {
             "id": "uEc-z-nQiF2mccbEp-4hn",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_FromAccountNum_Text",
@@ -1611,7 +1581,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1625,7 +1595,6 @@
           {
             "id": "OjrT_nvMF4cjfwQJQXlsO",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "FT_Confirm_FromAccountNUm_DataText",
             "attributes": {
               "name": "FT_Confirm_FromAccountNUm_DataText",
@@ -1648,7 +1617,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1663,7 +1632,6 @@
           {
             "id": "m5pl9-c_OsDq77hwNM46c",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_FromAccountNum_Btmline",
             "attributes": {
               "name": "FT_Confirm_FromAccountNum_Btmline",
@@ -1685,7 +1653,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1699,7 +1667,6 @@
           {
             "id": "sPqK4aomzNgKfuzGAUZrz",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_Amount_Text",
@@ -1722,7 +1689,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1736,8 +1703,7 @@
           {
             "id": "poCqkn3pWOqpjHc0Sea1d",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_Amount_DataText",
             "attributes": {
               "name": "FT_Confirm_Amount_DataText",
               "layoutProperties": {
@@ -1755,11 +1721,12 @@
                 "layout_marginTop": null,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "ft_amount_data"
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1768,12 +1735,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-17"
+            "path": "0-17",
+            "edit": true
           },
           {
             "id": "TMIc5VIEMt69gVVVmfzft",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_Amount_Btmline",
             "attributes": {
               "name": "FT_Confirm_Amount_Btmline",
@@ -1795,7 +1762,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1809,7 +1776,6 @@
           {
             "id": "-ktfTsdk8YaaPyq9r0Lvf",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_Purpose_Text",
@@ -1832,7 +1798,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1846,8 +1812,7 @@
           {
             "id": "8yY1egtv6sP04Eh43L9DR",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Confirm_Purpose_DataText",
             "attributes": {
               "name": "FT_Confirm_Purpose_DataText",
               "layoutProperties": {
@@ -1869,7 +1834,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1878,12 +1843,12 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-20"
+            "path": "0-20",
+            "edit": true
           },
           {
             "id": "1ZlqHB_hoG5Q73vUFCT6B",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_Previous_Btn_View",
             "attributes": {
               "name": "FT_Confirm_Previous_Btn_View",
@@ -1901,7 +1866,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1915,7 +1880,6 @@
           {
             "id": "Be1uEEVqEgJH5WBHsf_mj",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_Confirm_Previous_Icon",
             "attributes": {
               "name": "FT_Confirm_Previous_Icon",
@@ -1951,7 +1915,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1966,7 +1930,6 @@
           {
             "id": "7ArnctE6JkZ1nGs5PcoxL",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_Previous_Text",
@@ -1989,7 +1952,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2003,7 +1966,6 @@
           {
             "id": "5e520k_pym3o3aOyjFDbU",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Confirm_Pay_Btn_View",
             "attributes": {
               "name": "FT_Confirm_Pay_Btn_View",
@@ -2021,7 +1983,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2035,7 +1997,6 @@
           {
             "id": "pY4y0tjx6GSP589Zz_p6j",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_Confirm_Pay_Icon",
             "attributes": {
               "name": "FT_Confirm_Pay_Icon",
@@ -2071,7 +2032,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2084,7 +2045,6 @@
           {
             "id": "J8GThrErQYvsI6ROx0zYf",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Confirm_Pay_Text",
@@ -2107,7 +2067,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2214,7 +2174,7 @@
   {
     "id": "VK8ozKF959k-3_IOhjRON",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_SendTo_DataText",
     "attributes": {
       "name": "FT_Confirm_SendTo_DataText",
       "layoutProperties": {
@@ -2246,6 +2206,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2334,7 +2295,7 @@
   {
     "id": "iDTFepGF6UpoWViRMEGT5",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_ToAccount_DataText",
     "attributes": {
       "name": "FT_Confirm_ToAccount_DataText",
       "layoutProperties": {
@@ -2366,6 +2327,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-5",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2453,7 +2415,7 @@
   {
     "id": "qx_vg58jqzjyoQmdgP23f",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_BankName_DataText",
     "attributes": {
       "name": "FT_Confirm_BankName_DataText",
       "layoutProperties": {
@@ -2485,6 +2447,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-8",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2572,7 +2535,7 @@
   {
     "id": "Lq_zeM2lyLVjJBoplOPD_",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_FromAccount_DataText",
     "attributes": {
       "name": "FT_Confirm_FromAccount_DataText",
       "layoutProperties": {
@@ -2604,6 +2567,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-11",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2811,7 +2775,7 @@
   {
     "id": "poCqkn3pWOqpjHc0Sea1d",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_Amount_DataText",
     "attributes": {
       "name": "FT_Confirm_Amount_DataText",
       "layoutProperties": {
@@ -2829,7 +2793,8 @@
         "layout_marginTop": null,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "ft_amount_data"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2843,6 +2808,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-17",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2930,7 +2896,7 @@
   {
     "id": "8yY1egtv6sP04Eh43L9DR",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_Purpose_DataText",
     "attributes": {
       "name": "FT_Confirm_Purpose_DataText",
       "layoutProperties": {
@@ -2962,6 +2928,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-20",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
