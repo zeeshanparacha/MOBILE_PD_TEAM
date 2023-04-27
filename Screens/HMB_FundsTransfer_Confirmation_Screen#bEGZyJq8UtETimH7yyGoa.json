@@ -49,8 +49,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/19/2023",
-    "createdAt": "4/19/2023",
+    "updatedAt": "4/20/2023",
+    "createdAt": "4/20/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -66,7 +66,7 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "400",
+            "layout_height": "300",
             "borderColor": "#EAEDEA",
             "borderWidth": 2,
             "cornerRadius": [8, 8, 8, 8],
@@ -140,10 +140,10 @@
           "name": "FT_Confirm_SendTo_DataText",
           "layoutProperties": {
             "textSize": 16,
-            "layout_width": "wrap_content",
+            "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "AMNA RASHID",
+            "text": "SAARA AHMED",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
             "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
@@ -152,8 +152,10 @@
             "layout_marginRight": 20,
             "layout_marginTop": 0,
             "textStyle": "bold",
-            "textAlignment": "right"
-          }
+            "textAlignment": "right",
+            "width_percent": 50
+          },
+          "bindingKey": "ft_transferto_itemdata"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -249,7 +251,7 @@
           "name": "FT_Confirm_ToAccount_DataText",
           "layoutProperties": {
             "textSize": 16,
-            "layout_width": "wrap_content",
+            "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "6016220857425478965",
@@ -261,7 +263,8 @@
             "layout_marginRight": 20,
             "layout_marginTop": 0,
             "textStyle": "bold",
-            "textAlignment": "right"
+            "textAlignment": "right",
+            "width_percent": 50
           }
         },
         "icon": "FaTextWidth",
@@ -367,7 +370,7 @@
             "topToTopOf": "37DFH51w9WL1Frtk2mW6c",
             "layout_marginBottom": 0,
             "layout_marginRight": 20,
-            "layout_marginTop": null,
+            "layout_marginTop": 0,
             "textStyle": "bold",
             "textAlignment": "right"
           }
@@ -428,7 +431,7 @@
         "attributes": {
           "name": "FT_Confirm_FromAccount_Text",
           "layoutProperties": {
-            "textSize": 15,
+            "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#1D6131",
@@ -464,21 +467,23 @@
         "attributes": {
           "name": "FT_Confirm_FromAccount_DataText",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
+            "textSize": 15,
+            "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "MUHAMMAD FARAN TARIQ",
+            "text": "MUHAMMAD AHMED FAHAD",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
             "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
             "topToTopOf": "IzlqnUFWn4kCXVH00MIda",
             "layout_marginBottom": 0,
             "layout_marginRight": 20,
-            "layout_marginTop": null,
+            "layout_marginTop": 0,
             "textAlignment": "right",
-            "textStyle": "bold"
-          }
+            "textStyle": "bold",
+            "width_percent": 50
+          },
+          "bindingKey": "ft_transferfrom_itemdata"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -536,7 +541,7 @@
         "attributes": {
           "name": "FT_Confirm_FromAccountNum_Text",
           "layoutProperties": {
-            "textSize": 15,
+            "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#1D6131",
@@ -572,8 +577,8 @@
         "attributes": {
           "name": "FT_Confirm_FromAccountNUm_DataText",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
+            "textSize": 15,
+            "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "0010120587423698547",
@@ -583,9 +588,10 @@
             "topToTopOf": "uEc-z-nQiF2mccbEp-4hn",
             "layout_marginBottom": 0,
             "layout_marginRight": 20,
-            "layout_marginTop": null,
+            "layout_marginTop": 0,
             "textStyle": "bold",
-            "textAlignment": "right"
+            "textAlignment": "right",
+            "width_percent": 50
           }
         },
         "icon": "FaTextWidth",
@@ -644,7 +650,7 @@
         "attributes": {
           "name": "FT_Confirm_Amount_Text",
           "layoutProperties": {
-            "textSize": 15,
+            "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#1D6131",
@@ -680,7 +686,7 @@
         "attributes": {
           "name": "FT_Confirm_Amount_DataText",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 15,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
@@ -691,7 +697,7 @@
             "topToTopOf": "sPqK4aomzNgKfuzGAUZrz",
             "layout_marginBottom": 0,
             "layout_marginRight": 20,
-            "layout_marginTop": null,
+            "layout_marginTop": 0,
             "textAlignment": "right",
             "textStyle": "bold"
           },
@@ -753,7 +759,7 @@
         "attributes": {
           "name": "FT_Confirm_Purpose_Text",
           "layoutProperties": {
-            "textSize": 15,
+            "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#1D6131",
@@ -789,7 +795,7 @@
         "attributes": {
           "name": "FT_Confirm_Purpose_DataText",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 15,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
@@ -803,7 +809,8 @@
             "layout_marginTop": 0,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "ft_pos_data.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -964,8 +971,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "4YNTWKClh8rMa5azhoq_t",
+            "triggerName": "Navigate_To_FT_Reciept_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "wx-VugELwRw9ANajECrGL"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "pY4y0tjx6GSP589Zz_p6j",
@@ -1018,7 +1038,7 @@
       {
         "id": "J8GThrErQYvsI6ROx0zYf",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "FT_Confirm_Pay_Text",
         "attributes": {
           "name": "FT_Confirm_Pay_Text",
           "layoutProperties": {
@@ -1048,8 +1068,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "4YNTWKClh8rMa5azhoq_t",
+            "triggerName": "Navigate_To_FT_Reciept_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "wx-VugELwRw9ANajECrGL"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -1093,7 +1126,7 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "400",
+                "layout_height": "300",
                 "borderColor": "#EAEDEA",
                 "borderWidth": 2,
                 "cornerRadius": [8, 8, 8, 8],
@@ -1167,10 +1200,10 @@
               "name": "FT_Confirm_SendTo_DataText",
               "layoutProperties": {
                 "textSize": 16,
-                "layout_width": "wrap_content",
+                "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "AMNA RASHID",
+                "text": "SAARA AHMED",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
                 "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
@@ -1179,8 +1212,10 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 0,
                 "textStyle": "bold",
-                "textAlignment": "right"
-              }
+                "textAlignment": "right",
+                "width_percent": 50
+              },
+              "bindingKey": "ft_transferto_itemdata"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1276,7 +1311,7 @@
               "name": "FT_Confirm_ToAccount_DataText",
               "layoutProperties": {
                 "textSize": 16,
-                "layout_width": "wrap_content",
+                "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "6016220857425478965",
@@ -1288,7 +1323,8 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 0,
                 "textStyle": "bold",
-                "textAlignment": "right"
+                "textAlignment": "right",
+                "width_percent": 50
               }
             },
             "icon": "FaTextWidth",
@@ -1394,7 +1430,7 @@
                 "topToTopOf": "37DFH51w9WL1Frtk2mW6c",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 20,
-                "layout_marginTop": null,
+                "layout_marginTop": 0,
                 "textStyle": "bold",
                 "textAlignment": "right"
               }
@@ -1455,7 +1491,7 @@
             "attributes": {
               "name": "FT_Confirm_FromAccount_Text",
               "layoutProperties": {
-                "textSize": 15,
+                "textSize": 14,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#1D6131",
@@ -1491,21 +1527,23 @@
             "attributes": {
               "name": "FT_Confirm_FromAccount_DataText",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
+                "textSize": 15,
+                "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "MUHAMMAD FARAN TARIQ",
+                "text": "MUHAMMAD AHMED FAHAD",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
                 "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
                 "topToTopOf": "IzlqnUFWn4kCXVH00MIda",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 20,
-                "layout_marginTop": null,
+                "layout_marginTop": 0,
                 "textAlignment": "right",
-                "textStyle": "bold"
-              }
+                "textStyle": "bold",
+                "width_percent": 50
+              },
+              "bindingKey": "ft_transferfrom_itemdata"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1563,7 +1601,7 @@
             "attributes": {
               "name": "FT_Confirm_FromAccountNum_Text",
               "layoutProperties": {
-                "textSize": 15,
+                "textSize": 14,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#1D6131",
@@ -1599,8 +1637,8 @@
             "attributes": {
               "name": "FT_Confirm_FromAccountNUm_DataText",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
+                "textSize": 15,
+                "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "0010120587423698547",
@@ -1610,9 +1648,10 @@
                 "topToTopOf": "uEc-z-nQiF2mccbEp-4hn",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 20,
-                "layout_marginTop": null,
+                "layout_marginTop": 0,
                 "textStyle": "bold",
-                "textAlignment": "right"
+                "textAlignment": "right",
+                "width_percent": 50
               }
             },
             "icon": "FaTextWidth",
@@ -1671,7 +1710,7 @@
             "attributes": {
               "name": "FT_Confirm_Amount_Text",
               "layoutProperties": {
-                "textSize": 15,
+                "textSize": 14,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#1D6131",
@@ -1707,7 +1746,7 @@
             "attributes": {
               "name": "FT_Confirm_Amount_DataText",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 15,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
@@ -1718,7 +1757,7 @@
                 "topToTopOf": "sPqK4aomzNgKfuzGAUZrz",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 20,
-                "layout_marginTop": null,
+                "layout_marginTop": 0,
                 "textAlignment": "right",
                 "textStyle": "bold"
               },
@@ -1780,7 +1819,7 @@
             "attributes": {
               "name": "FT_Confirm_Purpose_Text",
               "layoutProperties": {
-                "textSize": 15,
+                "textSize": 14,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#1D6131",
@@ -1816,7 +1855,7 @@
             "attributes": {
               "name": "FT_Confirm_Purpose_DataText",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 15,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
@@ -1830,7 +1869,8 @@
                 "layout_marginTop": 0,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "ft_pos_data.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1991,8 +2031,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-24"
+            "events": [
+              {
+                "triggerId": "4YNTWKClh8rMa5azhoq_t",
+                "triggerName": "Navigate_To_FT_Reciept_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "wx-VugELwRw9ANajECrGL"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-24",
+            "edit": true
           },
           {
             "id": "pY4y0tjx6GSP589Zz_p6j",
@@ -2045,7 +2098,7 @@
           {
             "id": "J8GThrErQYvsI6ROx0zYf",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "FT_Confirm_Pay_Text",
             "attributes": {
               "name": "FT_Confirm_Pay_Text",
               "layoutProperties": {
@@ -2075,8 +2128,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26"
+            "events": [
+              {
+                "triggerId": "4YNTWKClh8rMa5azhoq_t",
+                "triggerName": "Navigate_To_FT_Reciept_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "wx-VugELwRw9ANajECrGL"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-26",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -2097,7 +2163,7 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "400",
+        "layout_height": "300",
         "borderColor": "#EAEDEA",
         "borderWidth": 2,
         "cornerRadius": [8, 8, 8, 8],
@@ -2179,10 +2245,10 @@
       "name": "FT_Confirm_SendTo_DataText",
       "layoutProperties": {
         "textSize": 16,
-        "layout_width": "wrap_content",
+        "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "AMNA RASHID",
+        "text": "SAARA AHMED",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
         "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
@@ -2191,8 +2257,10 @@
         "layout_marginRight": 20,
         "layout_marginTop": 0,
         "textStyle": "bold",
-        "textAlignment": "right"
-      }
+        "textAlignment": "right",
+        "width_percent": 50
+      },
+      "bindingKey": "ft_transferto_itemdata"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2300,7 +2368,7 @@
       "name": "FT_Confirm_ToAccount_DataText",
       "layoutProperties": {
         "textSize": 16,
-        "layout_width": "wrap_content",
+        "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "6016220857425478965",
@@ -2312,7 +2380,8 @@
         "layout_marginRight": 20,
         "layout_marginTop": 0,
         "textStyle": "bold",
-        "textAlignment": "right"
+        "textAlignment": "right",
+        "width_percent": 50
       }
     },
     "icon": "FaTextWidth",
@@ -2430,7 +2499,7 @@
         "topToTopOf": "37DFH51w9WL1Frtk2mW6c",
         "layout_marginBottom": 0,
         "layout_marginRight": 20,
-        "layout_marginTop": null,
+        "layout_marginTop": 0,
         "textStyle": "bold",
         "textAlignment": "right"
       }
@@ -2499,7 +2568,7 @@
     "attributes": {
       "name": "FT_Confirm_FromAccount_Text",
       "layoutProperties": {
-        "textSize": 15,
+        "textSize": 14,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#1D6131",
@@ -2539,21 +2608,23 @@
     "attributes": {
       "name": "FT_Confirm_FromAccount_DataText",
       "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
+        "textSize": 15,
+        "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "MUHAMMAD FARAN TARIQ",
+        "text": "MUHAMMAD AHMED FAHAD",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
         "rightToRightOf": "v_VKMvztwSYjXs9U9Nnrp",
         "topToTopOf": "IzlqnUFWn4kCXVH00MIda",
         "layout_marginBottom": 0,
         "layout_marginRight": 20,
-        "layout_marginTop": null,
+        "layout_marginTop": 0,
         "textAlignment": "right",
-        "textStyle": "bold"
-      }
+        "textStyle": "bold",
+        "width_percent": 50
+      },
+      "bindingKey": "ft_transferfrom_itemdata"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2619,7 +2690,7 @@
     "attributes": {
       "name": "FT_Confirm_FromAccountNum_Text",
       "layoutProperties": {
-        "textSize": 15,
+        "textSize": 14,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#1D6131",
@@ -2659,8 +2730,8 @@
     "attributes": {
       "name": "FT_Confirm_FromAccountNUm_DataText",
       "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
+        "textSize": 15,
+        "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "0010120587423698547",
@@ -2670,9 +2741,10 @@
         "topToTopOf": "uEc-z-nQiF2mccbEp-4hn",
         "layout_marginBottom": 0,
         "layout_marginRight": 20,
-        "layout_marginTop": null,
+        "layout_marginTop": 0,
         "textStyle": "bold",
-        "textAlignment": "right"
+        "textAlignment": "right",
+        "width_percent": 50
       }
     },
     "icon": "FaTextWidth",
@@ -2739,7 +2811,7 @@
     "attributes": {
       "name": "FT_Confirm_Amount_Text",
       "layoutProperties": {
-        "textSize": 15,
+        "textSize": 14,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#1D6131",
@@ -2779,7 +2851,7 @@
     "attributes": {
       "name": "FT_Confirm_Amount_DataText",
       "layoutProperties": {
-        "textSize": 16,
+        "textSize": 15,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
@@ -2790,7 +2862,7 @@
         "topToTopOf": "sPqK4aomzNgKfuzGAUZrz",
         "layout_marginBottom": 0,
         "layout_marginRight": 20,
-        "layout_marginTop": null,
+        "layout_marginTop": 0,
         "textAlignment": "right",
         "textStyle": "bold"
       },
@@ -2860,7 +2932,7 @@
     "attributes": {
       "name": "FT_Confirm_Purpose_Text",
       "layoutProperties": {
-        "textSize": 15,
+        "textSize": 14,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#1D6131",
@@ -2900,7 +2972,7 @@
     "attributes": {
       "name": "FT_Confirm_Purpose_DataText",
       "layoutProperties": {
-        "textSize": 16,
+        "textSize": 15,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
@@ -2914,7 +2986,8 @@
         "layout_marginTop": 0,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "ft_pos_data.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3091,8 +3164,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "4YNTWKClh8rMa5azhoq_t",
+        "triggerName": "Navigate_To_FT_Reciept_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-24",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -3153,7 +3234,7 @@
   {
     "id": "J8GThrErQYvsI6ROx0zYf",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Confirm_Pay_Text",
     "attributes": {
       "name": "FT_Confirm_Pay_Text",
       "layoutProperties": {
@@ -3183,8 +3264,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "4YNTWKClh8rMa5azhoq_t",
+        "triggerName": "Navigate_To_FT_Reciept_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-26",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",

@@ -1,11 +1,11 @@
 [
   {
-    "id": "TiE3lm6Bw6x0tapt78owg",
-    "name": "Sample_Vlist_Screen",
+    "id": "d_LGJUBUjFtG--Nx43Xig",
+    "name": "Check_Vlist_Screen",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "Sample_Vlist_Screen",
+      "name": "Check_Vlist_Screen",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -16,13 +16,13 @@
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0]
       },
-      "componentId": ["Ozdyr7XFsqktcRDpbEDZH", "u0qR4GlGbzVDPiREniK6v"]
+      "componentId": ["lvSL4Pyp-US46XKReTjZ9", "7TN6Rzu38DsN0ZzB9XoIu"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/18/2023",
-    "createdAt": "4/18/2023",
+    "updatedAt": "4/19/2023",
+    "createdAt": "4/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -30,12 +30,12 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "Ozdyr7XFsqktcRDpbEDZH",
+        "id": "lvSL4Pyp-US46XKReTjZ9",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Sam_vlist_text",
+        "name": "Check_vlist_text",
         "attributes": {
-          "name": "Sam_vlist_text",
+          "name": "Check_vlist_text",
           "layoutProperties": {
             "textSize": 16,
             "layout_width": "wrap_content",
@@ -44,14 +44,13 @@
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-            "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-            "topToTopOf": "TiE3lm6Bw6x0tapt78owg",
-            "layout_marginTop": 10,
+            "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+            "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+            "topToTopOf": "d_LGJUBUjFtG--Nx43Xig",
+            "layout_marginTop": 18,
             "textAlignment": "center",
             "textStyle": "regular"
-          },
-          "bindingKey": "1"
+          }
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -65,15 +64,17 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [
           {
-            "triggerId": "weYQLtIhE8_sJ7htK8iDi",
-            "triggerName": "vlist_data_store_trig",
+            "triggerId": "rvyCsAqDBD22UYuQ_4AHs",
+            "triggerName": "check_vlist_data_trig",
             "serviceType": "DATASTORAGE",
             "attributes": {
               "serviceName": "Update value against binding key",
-              "bindingKey": "vlist_vldata",
-              "value": [{ "vlist_data1": "ahmed" }],
+              "bindingKey": "vlist_maindata",
+              "value": [
+                { "vlist_maintext1": "ahmed", "vlist_maintext2": "sara" }
+              ],
               "contentType": "array",
-              "totalcolumns": "1"
+              "totalcolumns": "2"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -83,59 +84,57 @@
         "edit": true
       },
       {
-        "id": "u0qR4GlGbzVDPiREniK6v",
+        "id": "7TN6Rzu38DsN0ZzB9XoIu",
         "type": "VLIST",
-        "name": "vlist_vl",
+        "name": "check_vlist_vv",
         "component": { "content": "List view", "type": "VLIST" },
         "attributes": {
-          "name": "vlist_vl",
+          "name": "check_vlist_vv",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "background": "#000000",
             "layout_height": "match_parent",
             "layout_width": "match_parent",
             "rows": [
-              { "id": "Vqqjutz2zCFMucpKgHJ5c", "visibility": { "logic": {} } }
+              { "id": "GdEhPUjV1ePn-suSev_m7", "visibility": { "logic": {} } }
             ],
-            "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-            "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-            "topToBottomOf": "Ozdyr7XFsqktcRDpbEDZH",
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "layout_marginTop": 10,
-            "spacing": 0
+            "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+            "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+            "topToBottomOf": "lvSL4Pyp-US46XKReTjZ9",
+            "layout_marginTop": 19
           },
-          "bindingKey": "vlist_vldata",
+          "bindingKey": "vlist_maindata",
           "componentId": []
         },
         "events": [],
         "path": "0-1",
         "gridProps": [
           {
-            "id": "Vqqjutz2zCFMucpKgHJ5c",
+            "id": "GdEhPUjV1ePn-suSev_m7",
             "name": "List item 0",
             "path": "0-1-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "1iBR_lMFuhU5dXsP9er3n",
+                "id": "HhdcxQwEHWUqHClwc5W92",
                 "status": "ACTIVE",
                 "_id": "61dec691077814a0f374d9f4",
-                "name": "vlist_view",
+                "name": "check_vlist_view",
                 "attributes": {
-                  "name": "vlist_view",
+                  "name": "check_vlist_view",
                   "layoutProperties": {
                     "name": "View",
                     "layout_width": "match_parent",
-                    "layout_height": "100",
+                    "layout_height": "match_parent",
                     "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#1D6131",
-                    "layout_marginBottom": 0
-                  },
-                  "bindingKey": "vv_view"
+                    "background": "#1A5B2C",
+                    "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+                    "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+                    "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+                    "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+                  }
                 },
                 "icon": "FaTabletAlt",
                 "group": "Form",
@@ -151,12 +150,12 @@
                 "path": "0-1-0-0"
               },
               {
-                "id": "o1RqbHgqYx-0sHsPjCmND",
+                "id": "_ZRessfRUDPFQdJ-_1XRQ",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
                 "name": "Text view",
                 "attributes": {
-                  "name": "vlist_text1",
+                  "name": "Check_vlist_Text1",
                   "layoutProperties": {
                     "textSize": 14,
                     "layout_width": "wrap_content",
@@ -165,14 +164,14 @@
                     "text": "Start Now",
                     "cornerRadius": [0, 0, 0, 0],
                     "numberOfLines": 1,
-                    "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-                    "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 8,
+                    "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                    "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 10,
                     "textAlignment": "left",
                     "textStyle": "regular"
                   },
-                  "bindingKey": "vlist_data1"
+                  "bindingKey": "vlist_maintext1"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -186,6 +185,43 @@
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
                 "path": "0-1-0-1"
+              },
+              {
+                "id": "0W2IwKI6xdADwLODwWNsn",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Check_vlist_Text2",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                    "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 10,
+                    "textAlignment": "left",
+                    "textStyle": "regular"
+                  },
+                  "bindingKey": "vlist_maintext2"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2"
               }
             ],
             "attributes": {
@@ -193,11 +229,8 @@
                 "layout_height": "100",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
-                "layout_marginBottom": 0,
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "layout_marginTop": 10,
-                "background": "#FF0000"
+                "borderColor": "#FFFFFF",
+                "background": "#ffffff"
               },
               "componentId": []
             }
@@ -208,12 +241,12 @@
     "subType": "screen",
     "layout": [
       {
-        "id": "TiE3lm6Bw6x0tapt78owg",
-        "name": "Sample_Vlist_Screen",
+        "id": "d_LGJUBUjFtG--Nx43Xig",
+        "name": "Check_Vlist_Screen",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "Sample_Vlist_Screen",
+          "name": "Check_Vlist_Screen",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -238,12 +271,12 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "Ozdyr7XFsqktcRDpbEDZH",
+            "id": "lvSL4Pyp-US46XKReTjZ9",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Sam_vlist_text",
+            "name": "Check_vlist_text",
             "attributes": {
-              "name": "Sam_vlist_text",
+              "name": "Check_vlist_text",
               "layoutProperties": {
                 "textSize": 16,
                 "layout_width": "wrap_content",
@@ -252,14 +285,13 @@
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-                "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-                "topToTopOf": "TiE3lm6Bw6x0tapt78owg",
-                "layout_marginTop": 10,
+                "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+                "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+                "topToTopOf": "d_LGJUBUjFtG--Nx43Xig",
+                "layout_marginTop": 18,
                 "textAlignment": "center",
                 "textStyle": "regular"
-              },
-              "bindingKey": "1"
+              }
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -273,15 +305,17 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [
               {
-                "triggerId": "weYQLtIhE8_sJ7htK8iDi",
-                "triggerName": "vlist_data_store_trig",
+                "triggerId": "rvyCsAqDBD22UYuQ_4AHs",
+                "triggerName": "check_vlist_data_trig",
                 "serviceType": "DATASTORAGE",
                 "attributes": {
                   "serviceName": "Update value against binding key",
-                  "bindingKey": "vlist_vldata",
-                  "value": [{ "vlist_data1": "ahmed" }],
+                  "bindingKey": "vlist_maindata",
+                  "value": [
+                    { "vlist_maintext1": "ahmed", "vlist_maintext2": "sara" }
+                  ],
                   "contentType": "array",
-                  "totalcolumns": "1"
+                  "totalcolumns": "2"
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
@@ -291,12 +325,12 @@
             "edit": true
           },
           {
-            "id": "u0qR4GlGbzVDPiREniK6v",
+            "id": "7TN6Rzu38DsN0ZzB9XoIu",
             "type": "VLIST",
-            "name": "vlist_vl",
+            "name": "check_vlist_vv",
             "component": { "content": "List view", "type": "VLIST" },
             "attributes": {
-              "name": "vlist_vl",
+              "name": "check_vlist_vv",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#000000",
@@ -304,49 +338,47 @@
                 "layout_width": "match_parent",
                 "rows": [
                   {
-                    "id": "Vqqjutz2zCFMucpKgHJ5c",
+                    "id": "GdEhPUjV1ePn-suSev_m7",
                     "visibility": { "logic": {} }
                   }
                 ],
-                "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-                "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-                "topToBottomOf": "Ozdyr7XFsqktcRDpbEDZH",
-                "layout_marginBottom": 0,
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "layout_marginTop": 10,
-                "spacing": 0
+                "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+                "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+                "topToBottomOf": "lvSL4Pyp-US46XKReTjZ9",
+                "layout_marginTop": 19
               },
-              "bindingKey": "vlist_vldata",
+              "bindingKey": "vlist_maindata",
               "componentId": []
             },
             "events": [],
             "path": "0-1",
             "gridProps": [
               {
-                "id": "Vqqjutz2zCFMucpKgHJ5c",
+                "id": "GdEhPUjV1ePn-suSev_m7",
                 "name": "List item 0",
                 "path": "0-1-0",
                 "type": "VLISTITEM",
                 "updatedTimestamp": "0000-00-00T00:00:00+00:00",
                 "gridProps": [
                   {
-                    "id": "1iBR_lMFuhU5dXsP9er3n",
+                    "id": "HhdcxQwEHWUqHClwc5W92",
                     "status": "ACTIVE",
                     "_id": "61dec691077814a0f374d9f4",
-                    "name": "vlist_view",
+                    "name": "check_vlist_view",
                     "attributes": {
-                      "name": "vlist_view",
+                      "name": "check_vlist_view",
                       "layoutProperties": {
                         "name": "View",
                         "layout_width": "match_parent",
-                        "layout_height": "100",
+                        "layout_height": "match_parent",
                         "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
-                        "background": "#1D6131",
-                        "layout_marginBottom": 0
-                      },
-                      "bindingKey": "vv_view"
+                        "background": "#1A5B2C",
+                        "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+                        "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+                        "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+                        "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+                      }
                     },
                     "icon": "FaTabletAlt",
                     "group": "Form",
@@ -362,12 +394,12 @@
                     "path": "0-1-0-0"
                   },
                   {
-                    "id": "o1RqbHgqYx-0sHsPjCmND",
+                    "id": "_ZRessfRUDPFQdJ-_1XRQ",
                     "status": "ACTIVE",
                     "_id": "61dec5ad077814a0f374d9f3",
                     "name": "Text view",
                     "attributes": {
-                      "name": "vlist_text1",
+                      "name": "Check_vlist_Text1",
                       "layoutProperties": {
                         "textSize": 14,
                         "layout_width": "wrap_content",
@@ -376,14 +408,14 @@
                         "text": "Start Now",
                         "cornerRadius": [0, 0, 0, 0],
                         "numberOfLines": 1,
-                        "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-                        "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-                        "layout_marginLeft": 10,
-                        "layout_marginTop": 8,
+                        "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                        "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+                        "layout_marginLeft": 20,
+                        "layout_marginTop": 10,
                         "textAlignment": "left",
                         "textStyle": "regular"
                       },
-                      "bindingKey": "vlist_data1"
+                      "bindingKey": "vlist_maintext1"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -397,6 +429,43 @@
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
                     "path": "0-1-0-1"
+                  },
+                  {
+                    "id": "0W2IwKI6xdADwLODwWNsn",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Check_vlist_Text2",
+                      "layoutProperties": {
+                        "textSize": 14,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                        "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+                        "layout_marginLeft": 20,
+                        "layout_marginTop": 10,
+                        "textAlignment": "left",
+                        "textStyle": "regular"
+                      },
+                      "bindingKey": "vlist_maintext2"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-2"
                   }
                 ],
                 "attributes": {
@@ -404,11 +473,8 @@
                     "layout_height": "100",
                     "layout_width": "match_parent",
                     "cornerRadius": [0, 0, 0, 0],
-                    "layout_marginBottom": 0,
-                    "layout_marginLeft": 10,
-                    "layout_marginRight": 10,
-                    "layout_marginTop": 10,
-                    "background": "#FF0000"
+                    "borderColor": "#FFFFFF",
+                    "background": "#ffffff"
                   },
                   "componentId": []
                 }
@@ -421,16 +487,16 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
-    "_id": "TiE3lm6Bw6x0tapt78owg",
+    "_id": "d_LGJUBUjFtG--Nx43Xig",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Ozdyr7XFsqktcRDpbEDZH",
+    "id": "lvSL4Pyp-US46XKReTjZ9",
     "status": "ACTIVE",
-    "name": "Sam_vlist_text",
+    "name": "Check_vlist_text",
     "attributes": {
-      "name": "Sam_vlist_text",
+      "name": "Check_vlist_text",
       "layoutProperties": {
         "textSize": 16,
         "layout_width": "wrap_content",
@@ -439,14 +505,13 @@
         "text": "Start Now",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-        "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-        "topToTopOf": "TiE3lm6Bw6x0tapt78owg",
-        "layout_marginTop": 10,
+        "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+        "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+        "topToTopOf": "d_LGJUBUjFtG--Nx43Xig",
+        "layout_marginTop": 18,
         "textAlignment": "center",
         "textStyle": "regular"
-      },
-      "bindingKey": "1"
+      }
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -460,8 +525,8 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [
       {
-        "triggerId": "weYQLtIhE8_sJ7htK8iDi",
-        "triggerName": "vlist_data_store_trig",
+        "triggerId": "rvyCsAqDBD22UYuQ_4AHs",
+        "triggerName": "check_vlist_data_trig",
         "name": "On Load",
         "type": "ONLOAD"
       }
@@ -474,59 +539,57 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "u0qR4GlGbzVDPiREniK6v",
+    "id": "7TN6Rzu38DsN0ZzB9XoIu",
     "type": "VLIST",
-    "name": "vlist_vl",
+    "name": "check_vlist_vv",
     "component": { "content": "List view", "type": "VLIST" },
     "attributes": {
-      "name": "vlist_vl",
+      "name": "check_vlist_vv",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
         "background": "#000000",
         "layout_height": "match_parent",
         "layout_width": "match_parent",
         "rows": [
-          { "id": "Vqqjutz2zCFMucpKgHJ5c", "visibility": { "logic": {} } }
+          { "id": "GdEhPUjV1ePn-suSev_m7", "visibility": { "logic": {} } }
         ],
-        "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-        "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-        "topToBottomOf": "Ozdyr7XFsqktcRDpbEDZH",
-        "layout_marginBottom": 0,
-        "layout_marginLeft": 10,
-        "layout_marginRight": 10,
-        "layout_marginTop": 10,
-        "spacing": 0
+        "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+        "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+        "topToBottomOf": "lvSL4Pyp-US46XKReTjZ9",
+        "layout_marginTop": 19
       },
-      "bindingKey": "vlist_vldata",
-      "componentId": ["Vqqjutz2zCFMucpKgHJ5c"]
+      "bindingKey": "vlist_maindata",
+      "componentId": ["GdEhPUjV1ePn-suSev_m7"]
     },
     "events": [],
     "path": "0-1",
     "gridProps": [
       {
-        "id": "Vqqjutz2zCFMucpKgHJ5c",
+        "id": "GdEhPUjV1ePn-suSev_m7",
         "name": "List item 0",
         "path": "0-1-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "1iBR_lMFuhU5dXsP9er3n",
+            "id": "HhdcxQwEHWUqHClwc5W92",
             "status": "ACTIVE",
             "_id": "61dec691077814a0f374d9f4",
-            "name": "vlist_view",
+            "name": "check_vlist_view",
             "attributes": {
-              "name": "vlist_view",
+              "name": "check_vlist_view",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "100",
+                "layout_height": "match_parent",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
-                "layout_marginBottom": 0
-              },
-              "bindingKey": "vv_view"
+                "background": "#1A5B2C",
+                "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+                "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+                "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+                "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+              }
             },
             "icon": "FaTabletAlt",
             "group": "Form",
@@ -542,12 +605,12 @@
             "path": "0-1-0-0"
           },
           {
-            "id": "o1RqbHgqYx-0sHsPjCmND",
+            "id": "_ZRessfRUDPFQdJ-_1XRQ",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "vlist_text1",
+              "name": "Check_vlist_Text1",
               "layoutProperties": {
                 "textSize": 14,
                 "layout_width": "wrap_content",
@@ -556,14 +619,14 @@
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-                "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 8,
+                "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "vlist_data1"
+              "bindingKey": "vlist_maintext1"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -577,6 +640,43 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-1-0-1"
+          },
+          {
+            "id": "0W2IwKI6xdADwLODwWNsn",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Check_vlist_Text2",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
+                "textAlignment": "left",
+                "textStyle": "regular"
+              },
+              "bindingKey": "vlist_maintext2"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2"
           }
         ],
         "attributes": {
@@ -584,11 +684,8 @@
             "layout_height": "100",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "layout_marginTop": 10,
-            "background": "#FF0000"
+            "borderColor": "#FFFFFF",
+            "background": "#ffffff"
           },
           "componentId": []
         }
@@ -596,12 +693,12 @@
     ],
     "layout": [
       {
-        "id": "Ozdyr7XFsqktcRDpbEDZH",
+        "id": "lvSL4Pyp-US46XKReTjZ9",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Sam_vlist_text",
+        "name": "Check_vlist_text",
         "attributes": {
-          "name": "Sam_vlist_text",
+          "name": "Check_vlist_text",
           "layoutProperties": {
             "textSize": 16,
             "layout_width": "wrap_content",
@@ -610,14 +707,13 @@
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-            "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-            "topToTopOf": "TiE3lm6Bw6x0tapt78owg",
-            "layout_marginTop": 10,
+            "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+            "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+            "topToTopOf": "d_LGJUBUjFtG--Nx43Xig",
+            "layout_marginTop": 18,
             "textAlignment": "center",
             "textStyle": "regular"
-          },
-          "bindingKey": "1"
+          }
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -631,15 +727,17 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [
           {
-            "triggerId": "weYQLtIhE8_sJ7htK8iDi",
-            "triggerName": "vlist_data_store_trig",
+            "triggerId": "rvyCsAqDBD22UYuQ_4AHs",
+            "triggerName": "check_vlist_data_trig",
             "serviceType": "DATASTORAGE",
             "attributes": {
               "serviceName": "Update value against binding key",
-              "bindingKey": "vlist_vldata",
-              "value": [{ "vlist_data1": "ahmed" }],
+              "bindingKey": "vlist_maindata",
+              "value": [
+                { "vlist_maintext1": "ahmed", "vlist_maintext2": "sara" }
+              ],
               "contentType": "array",
-              "totalcolumns": "1"
+              "totalcolumns": "2"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -649,59 +747,57 @@
         "edit": true
       },
       {
-        "id": "u0qR4GlGbzVDPiREniK6v",
+        "id": "7TN6Rzu38DsN0ZzB9XoIu",
         "type": "VLIST",
-        "name": "vlist_vl",
+        "name": "check_vlist_vv",
         "component": { "content": "List view", "type": "VLIST" },
         "attributes": {
-          "name": "vlist_vl",
+          "name": "check_vlist_vv",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "background": "#000000",
             "layout_height": "match_parent",
             "layout_width": "match_parent",
             "rows": [
-              { "id": "Vqqjutz2zCFMucpKgHJ5c", "visibility": { "logic": {} } }
+              { "id": "GdEhPUjV1ePn-suSev_m7", "visibility": { "logic": {} } }
             ],
-            "leftToLeftOf": "TiE3lm6Bw6x0tapt78owg",
-            "rightToRightOf": "TiE3lm6Bw6x0tapt78owg",
-            "topToBottomOf": "Ozdyr7XFsqktcRDpbEDZH",
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "layout_marginTop": 10,
-            "spacing": 0
+            "leftToLeftOf": "d_LGJUBUjFtG--Nx43Xig",
+            "rightToRightOf": "d_LGJUBUjFtG--Nx43Xig",
+            "topToBottomOf": "lvSL4Pyp-US46XKReTjZ9",
+            "layout_marginTop": 19
           },
-          "bindingKey": "vlist_vldata",
+          "bindingKey": "vlist_maindata",
           "componentId": []
         },
         "events": [],
         "path": "0-1",
         "gridProps": [
           {
-            "id": "Vqqjutz2zCFMucpKgHJ5c",
+            "id": "GdEhPUjV1ePn-suSev_m7",
             "name": "List item 0",
             "path": "0-1-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "1iBR_lMFuhU5dXsP9er3n",
+                "id": "HhdcxQwEHWUqHClwc5W92",
                 "status": "ACTIVE",
                 "_id": "61dec691077814a0f374d9f4",
-                "name": "vlist_view",
+                "name": "check_vlist_view",
                 "attributes": {
-                  "name": "vlist_view",
+                  "name": "check_vlist_view",
                   "layoutProperties": {
                     "name": "View",
                     "layout_width": "match_parent",
-                    "layout_height": "100",
+                    "layout_height": "match_parent",
                     "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#1D6131",
-                    "layout_marginBottom": 0
-                  },
-                  "bindingKey": "vv_view"
+                    "background": "#1A5B2C",
+                    "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+                    "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+                    "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+                    "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+                  }
                 },
                 "icon": "FaTabletAlt",
                 "group": "Form",
@@ -717,12 +813,12 @@
                 "path": "0-1-0-0"
               },
               {
-                "id": "o1RqbHgqYx-0sHsPjCmND",
+                "id": "_ZRessfRUDPFQdJ-_1XRQ",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
                 "name": "Text view",
                 "attributes": {
-                  "name": "vlist_text1",
+                  "name": "Check_vlist_Text1",
                   "layoutProperties": {
                     "textSize": 14,
                     "layout_width": "wrap_content",
@@ -731,14 +827,14 @@
                     "text": "Start Now",
                     "cornerRadius": [0, 0, 0, 0],
                     "numberOfLines": 1,
-                    "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-                    "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 8,
+                    "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                    "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 10,
                     "textAlignment": "left",
                     "textStyle": "regular"
                   },
-                  "bindingKey": "vlist_data1"
+                  "bindingKey": "vlist_maintext1"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -752,6 +848,43 @@
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
                 "path": "0-1-0-1"
+              },
+              {
+                "id": "0W2IwKI6xdADwLODwWNsn",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Check_vlist_Text2",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                    "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 10,
+                    "textAlignment": "left",
+                    "textStyle": "regular"
+                  },
+                  "bindingKey": "vlist_maintext2"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2"
               }
             ],
             "attributes": {
@@ -759,11 +892,8 @@
                 "layout_height": "100",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
-                "layout_marginBottom": 0,
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "layout_marginTop": 10,
-                "background": "#FF0000"
+                "borderColor": "#FFFFFF",
+                "background": "#ffffff"
               },
               "componentId": []
             }
@@ -778,29 +908,31 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Vqqjutz2zCFMucpKgHJ5c",
+    "id": "GdEhPUjV1ePn-suSev_m7",
     "name": "List item 0",
     "path": "0-1-0",
     "type": "VLISTITEM",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00",
     "gridProps": [
       {
-        "id": "1iBR_lMFuhU5dXsP9er3n",
+        "id": "HhdcxQwEHWUqHClwc5W92",
         "status": "ACTIVE",
         "_id": "61dec691077814a0f374d9f4",
-        "name": "vlist_view",
+        "name": "check_vlist_view",
         "attributes": {
-          "name": "vlist_view",
+          "name": "check_vlist_view",
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "100",
+            "layout_height": "match_parent",
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#1D6131",
-            "layout_marginBottom": 0
-          },
-          "bindingKey": "vv_view"
+            "background": "#1A5B2C",
+            "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+            "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+            "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+            "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+          }
         },
         "icon": "FaTabletAlt",
         "group": "Form",
@@ -816,12 +948,12 @@
         "path": "0-1-0-0"
       },
       {
-        "id": "o1RqbHgqYx-0sHsPjCmND",
+        "id": "_ZRessfRUDPFQdJ-_1XRQ",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
-          "name": "vlist_text1",
+          "name": "Check_vlist_Text1",
           "layoutProperties": {
             "textSize": 14,
             "layout_width": "wrap_content",
@@ -830,14 +962,14 @@
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-            "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-            "layout_marginLeft": 10,
-            "layout_marginTop": 8,
+            "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+            "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "vlist_data1"
+          "bindingKey": "vlist_maintext1"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -851,6 +983,43 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-1-0-1"
+      },
+      {
+        "id": "0W2IwKI6xdADwLODwWNsn",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Check_vlist_Text2",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+            "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
+            "textAlignment": "left",
+            "textStyle": "regular"
+          },
+          "bindingKey": "vlist_maintext2"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-2"
       }
     ],
     "attributes": {
@@ -858,39 +1027,42 @@
         "layout_height": "100",
         "layout_width": "match_parent",
         "cornerRadius": [0, 0, 0, 0],
-        "layout_marginBottom": 0,
-        "layout_marginLeft": 10,
-        "layout_marginRight": 10,
-        "layout_marginTop": 10,
-        "background": "#FF0000"
+        "borderColor": "#FFFFFF",
+        "background": "#ffffff"
       },
-      "componentId": ["1iBR_lMFuhU5dXsP9er3n", "o1RqbHgqYx-0sHsPjCmND"]
+      "componentId": [
+        "HhdcxQwEHWUqHClwc5W92",
+        "_ZRessfRUDPFQdJ-_1XRQ",
+        "0W2IwKI6xdADwLODwWNsn"
+      ]
     },
     "layout": [
       {
-        "id": "Vqqjutz2zCFMucpKgHJ5c",
+        "id": "GdEhPUjV1ePn-suSev_m7",
         "name": "List item 0",
         "path": "0-1-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "1iBR_lMFuhU5dXsP9er3n",
+            "id": "HhdcxQwEHWUqHClwc5W92",
             "status": "ACTIVE",
             "_id": "61dec691077814a0f374d9f4",
-            "name": "vlist_view",
+            "name": "check_vlist_view",
             "attributes": {
-              "name": "vlist_view",
+              "name": "check_vlist_view",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "100",
+                "layout_height": "match_parent",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
-                "layout_marginBottom": 0
-              },
-              "bindingKey": "vv_view"
+                "background": "#1A5B2C",
+                "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+                "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+                "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+                "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+              }
             },
             "icon": "FaTabletAlt",
             "group": "Form",
@@ -906,12 +1078,12 @@
             "path": "0-1-0-0"
           },
           {
-            "id": "o1RqbHgqYx-0sHsPjCmND",
+            "id": "_ZRessfRUDPFQdJ-_1XRQ",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "vlist_text1",
+              "name": "Check_vlist_Text1",
               "layoutProperties": {
                 "textSize": 14,
                 "layout_width": "wrap_content",
@@ -920,14 +1092,14 @@
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-                "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 8,
+                "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "vlist_data1"
+              "bindingKey": "vlist_maintext1"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -941,6 +1113,43 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-1-0-1"
+          },
+          {
+            "id": "0W2IwKI6xdADwLODwWNsn",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Check_vlist_Text2",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+                "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
+                "textAlignment": "left",
+                "textStyle": "regular"
+              },
+              "bindingKey": "vlist_maintext2"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2"
           }
         ],
         "attributes": {
@@ -948,11 +1157,8 @@
             "layout_height": "100",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "layout_marginTop": 10,
-            "background": "#FF0000"
+            "borderColor": "#FFFFFF",
+            "background": "#ffffff"
           },
           "componentId": []
         }
@@ -964,21 +1170,23 @@
     "gitBranchName": "dev"
   },
   {
-    "id": "1iBR_lMFuhU5dXsP9er3n",
+    "id": "HhdcxQwEHWUqHClwc5W92",
     "status": "ACTIVE",
-    "name": "vlist_view",
+    "name": "check_vlist_view",
     "attributes": {
-      "name": "vlist_view",
+      "name": "check_vlist_view",
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "100",
+        "layout_height": "match_parent",
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
-        "background": "#1D6131",
-        "layout_marginBottom": 0
-      },
-      "bindingKey": "vv_view"
+        "background": "#1A5B2C",
+        "leftToLeftOf": "GdEhPUjV1ePn-suSev_m7",
+        "rightToRightOf": "GdEhPUjV1ePn-suSev_m7",
+        "topToTopOf": "GdEhPUjV1ePn-suSev_m7",
+        "bottomToBottomOf": "GdEhPUjV1ePn-suSev_m7"
+      }
     },
     "icon": "FaTabletAlt",
     "group": "Form",
@@ -998,11 +1206,11 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "o1RqbHgqYx-0sHsPjCmND",
+    "id": "_ZRessfRUDPFQdJ-_1XRQ",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "vlist_text1",
+      "name": "Check_vlist_Text1",
       "layoutProperties": {
         "textSize": 14,
         "layout_width": "wrap_content",
@@ -1011,14 +1219,14 @@
         "text": "Start Now",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "1iBR_lMFuhU5dXsP9er3n",
-        "topToTopOf": "1iBR_lMFuhU5dXsP9er3n",
-        "layout_marginLeft": 10,
-        "layout_marginTop": 8,
+        "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+        "topToTopOf": "HhdcxQwEHWUqHClwc5W92",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "vlist_data1"
+      "bindingKey": "vlist_maintext1"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1032,6 +1240,46 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-1-0-1",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "dev",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "0W2IwKI6xdADwLODwWNsn",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Check_vlist_Text2",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "HhdcxQwEHWUqHClwc5W92",
+        "topToBottomOf": "_ZRessfRUDPFQdJ-_1XRQ",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 10,
+        "textAlignment": "left",
+        "textStyle": "regular"
+      },
+      "bindingKey": "vlist_maintext2"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-2",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",

@@ -1,11 +1,11 @@
 [
   {
-    "id": "kfOLO8EYkqcYfWBub4BGq",
-    "name": "HMB_Registration_Navbar",
+    "id": "7UrniWrmV_k7EGxjtl0L0",
+    "name": "HMB_RaastConfrimOtp_Navbar",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "HMB_Registration_Navbar",
+      "name": "Constraint Layout",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -17,10 +17,9 @@
         "cornerRadius": [0, 0, 0, 0]
       },
       "componentId": [
-        "uyKrTMzgF18ECvLBq0Zbq",
-        "PFr1NG-Nuq26H4ajJUQB-",
-        "C8QFdNzP5GCWFrhmPLntj",
-        "IjIH8vDSsZGlTUZJ2Tj7e"
+        "1J7o7BCE8GLbhqXM7lAM3",
+        "PO6eKGI_8Y4TGABjytxXs",
+        "jnis09c9lzWsMOdD_0rsK"
       ]
     },
     "group": "Layout",
@@ -35,12 +34,11 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "uyKrTMzgF18ECvLBq0Zbq",
+        "id": "1J7o7BCE8GLbhqXM7lAM3",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
-        "name": "Registration_Navbar_View",
+        "name": "RaastOtp_Navbar_View",
         "attributes": {
-          "name": "Registration_Navbar_View",
+          "name": "RaastOtp_Navbar_View",
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
@@ -48,14 +46,14 @@
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
-            "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
-            "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
-            "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
+            "leftToLeftOf": "7UrniWrmV_k7EGxjtl0L0",
+            "rightToRightOf": "7UrniWrmV_k7EGxjtl0L0",
+            "topToTopOf": "7UrniWrmV_k7EGxjtl0L0"
           }
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -67,18 +65,16 @@
         "path": "0-0"
       },
       {
-        "id": "PFr1NG-Nuq26H4ajJUQB-",
+        "id": "PO6eKGI_8Y4TGABjytxXs",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "Registration_Back_Btn",
+        "name": "RaastOtp_Navbar_Back_Icon",
         "attributes": {
-          "name": "Registration_Back_Btn",
+          "name": "RaastOtp_Navbar_Back_Icon",
           "layoutProperties": {
-            "layout_width": "15",
-            "layout_height": "18",
+            "layout_width": "20",
+            "layout_height": "20",
             "cornerRadius": [0, 0, 0, 0],
-            "src": "1d8bk13Zt-VqOzmOlGNvr",
-            "srcTemp": {
+            "src": {
               "createdBy": "shaikhahmedraza",
               "_id": "63f8597bbf8c983b9cc00fd5",
               "name": "HMB_Back.png",
@@ -95,16 +91,17 @@
               "__v": 0,
               "uri": "HMB_Back.png"
             },
-            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "layout_marginLeft": 20
+            "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "layout_marginLeft": 10,
+            "id": "1d8bk13Zt-VqOzmOlGNvr"
           },
           "contentType": 2
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -115,30 +112,30 @@
         "path": "0-1"
       },
       {
-        "id": "C8QFdNzP5GCWFrhmPLntj",
+        "id": "jnis09c9lzWsMOdD_0rsK",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
-          "name": "Registration_Back_Text",
+          "name": "RaastOtp_Navabr_Back_Text",
           "layoutProperties": {
-            "textSize": 13,
-            "layout_width": "50",
+            "textSize": 18,
+            "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
             "text": "Back",
             "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "layout_marginLeft": 40,
+            "numberOfLines": 1,
+            "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+            "layout_marginLeft": 30,
             "textStyle": "regular",
             "textAlignment": "left"
           }
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -148,53 +145,17 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-2"
-      },
-      {
-        "id": "IjIH8vDSsZGlTUZJ2Tj7e",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Regis_Title_Text",
-        "attributes": {
-          "name": "Regis_Title_Text",
-          "layoutProperties": {
-            "textSize": 18,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Registration",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-            "textAlignment": "center",
-            "textStyle": "bold"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-3"
       }
     ],
     "subType": "widget",
     "layout": [
       {
-        "id": "kfOLO8EYkqcYfWBub4BGq",
-        "name": "HMB_Registration_Navbar",
+        "id": "7UrniWrmV_k7EGxjtl0L0",
+        "name": "HMB_RaastConfrimOtp_Navbar",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_Registration_Navbar",
+          "name": "Constraint Layout",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -219,12 +180,11 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "uyKrTMzgF18ECvLBq0Zbq",
+            "id": "1J7o7BCE8GLbhqXM7lAM3",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "Registration_Navbar_View",
+            "name": "RaastOtp_Navbar_View",
             "attributes": {
-              "name": "Registration_Navbar_View",
+              "name": "RaastOtp_Navbar_View",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
@@ -232,14 +192,14 @@
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
-                "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
-                "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
-                "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
+                "leftToLeftOf": "7UrniWrmV_k7EGxjtl0L0",
+                "rightToRightOf": "7UrniWrmV_k7EGxjtl0L0",
+                "topToTopOf": "7UrniWrmV_k7EGxjtl0L0"
               }
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -251,18 +211,16 @@
             "path": "0-0"
           },
           {
-            "id": "PFr1NG-Nuq26H4ajJUQB-",
+            "id": "PO6eKGI_8Y4TGABjytxXs",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "Registration_Back_Btn",
+            "name": "RaastOtp_Navbar_Back_Icon",
             "attributes": {
-              "name": "Registration_Back_Btn",
+              "name": "RaastOtp_Navbar_Back_Icon",
               "layoutProperties": {
-                "layout_width": "15",
-                "layout_height": "18",
+                "layout_width": "20",
+                "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
-                "src": "1d8bk13Zt-VqOzmOlGNvr",
-                "srcTemp": {
+                "src": {
                   "createdBy": "shaikhahmedraza",
                   "_id": "63f8597bbf8c983b9cc00fd5",
                   "name": "HMB_Back.png",
@@ -279,16 +237,17 @@
                   "__v": 0,
                   "uri": "HMB_Back.png"
                 },
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "layout_marginLeft": 20
+                "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "layout_marginLeft": 10,
+                "id": "1d8bk13Zt-VqOzmOlGNvr"
               },
               "contentType": 2
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -299,30 +258,30 @@
             "path": "0-1"
           },
           {
-            "id": "C8QFdNzP5GCWFrhmPLntj",
+            "id": "jnis09c9lzWsMOdD_0rsK",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "Registration_Back_Text",
+              "name": "RaastOtp_Navabr_Back_Text",
               "layoutProperties": {
-                "textSize": 13,
-                "layout_width": "50",
+                "textSize": 18,
+                "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
                 "text": "Back",
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "layout_marginLeft": 40,
+                "numberOfLines": 1,
+                "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+                "layout_marginLeft": 30,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -332,42 +291,6 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-2"
-          },
-          {
-            "id": "IjIH8vDSsZGlTUZJ2Tj7e",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Regis_Title_Text",
-            "attributes": {
-              "name": "Regis_Title_Text",
-              "layoutProperties": {
-                "textSize": 18,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Registration",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "textAlignment": "center",
-                "textStyle": "bold"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-3"
           }
         ],
         "subType": "widget"
@@ -375,16 +298,16 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
-    "_id": "kfOLO8EYkqcYfWBub4BGq",
+    "_id": "7UrniWrmV_k7EGxjtl0L0",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "uyKrTMzgF18ECvLBq0Zbq",
+    "id": "1J7o7BCE8GLbhqXM7lAM3",
     "status": "ACTIVE",
-    "name": "Registration_Navbar_View",
+    "name": "RaastOtp_Navbar_View",
     "attributes": {
-      "name": "Registration_Navbar_View",
+      "name": "RaastOtp_Navbar_View",
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
@@ -392,9 +315,9 @@
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
-        "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
-        "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
-        "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
+        "leftToLeftOf": "7UrniWrmV_k7EGxjtl0L0",
+        "rightToRightOf": "7UrniWrmV_k7EGxjtl0L0",
+        "topToTopOf": "7UrniWrmV_k7EGxjtl0L0"
       }
     },
     "icon": "FaTabletAlt",
@@ -406,26 +329,25 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
+    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-0",
-    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "PFr1NG-Nuq26H4ajJUQB-",
+    "id": "PO6eKGI_8Y4TGABjytxXs",
     "status": "ACTIVE",
-    "name": "Registration_Back_Btn",
+    "name": "RaastOtp_Navbar_Back_Icon",
     "attributes": {
-      "name": "Registration_Back_Btn",
+      "name": "RaastOtp_Navbar_Back_Icon",
       "layoutProperties": {
-        "layout_width": "15",
-        "layout_height": "18",
+        "layout_width": "20",
+        "layout_height": "20",
         "cornerRadius": [0, 0, 0, 0],
-        "src": "1d8bk13Zt-VqOzmOlGNvr",
-        "srcTemp": {
+        "src": {
           "createdBy": "shaikhahmedraza",
           "_id": "63f8597bbf8c983b9cc00fd5",
           "name": "HMB_Back.png",
@@ -442,10 +364,11 @@
           "__v": 0,
           "uri": "HMB_Back.png"
         },
-        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "layout_marginLeft": 20
+        "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "layout_marginLeft": 10,
+        "id": "1d8bk13Zt-VqOzmOlGNvr"
       },
       "contentType": 2
     },
@@ -458,30 +381,31 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
+    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-1",
-    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "C8QFdNzP5GCWFrhmPLntj",
+    "id": "jnis09c9lzWsMOdD_0rsK",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "Registration_Back_Text",
+      "name": "RaastOtp_Navabr_Back_Text",
       "layoutProperties": {
-        "textSize": 13,
-        "layout_width": "50",
+        "textSize": 18,
+        "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
         "text": "Back",
         "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "layout_marginLeft": 40,
+        "numberOfLines": 1,
+        "leftToLeftOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "topToTopOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "bottomToBottomOf": "1J7o7BCE8GLbhqXM7lAM3",
+        "layout_marginLeft": 30,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -495,49 +419,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
+    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "IjIH8vDSsZGlTUZJ2Tj7e",
-    "status": "ACTIVE",
-    "name": "Regis_Title_Text",
-    "attributes": {
-      "name": "Regis_Title_Text",
-      "layoutProperties": {
-        "textSize": 18,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#ffffff",
-        "text": "Registration",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-        "textAlignment": "center",
-        "textStyle": "bold"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-3",
-    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

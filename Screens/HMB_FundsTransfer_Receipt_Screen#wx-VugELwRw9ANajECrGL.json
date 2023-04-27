@@ -54,8 +54,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/30/2023",
-    "createdAt": "3/30/2023",
+    "updatedAt": "4/20/2023",
+    "createdAt": "4/20/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -65,7 +65,6 @@
       {
         "id": "SPV_7KcPa8oS7xFklH_jh",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_Receipt_Success_Icon",
         "attributes": {
           "name": "FT_Receipt_Success_Icon",
@@ -101,7 +100,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -114,7 +113,6 @@
       {
         "id": "slgtAIx6eKtTL8quatNEH",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_Receipt_HMB_Icon",
         "attributes": {
           "name": "FT_Receipt_HMB_Icon",
@@ -149,7 +147,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -162,7 +160,6 @@
       {
         "id": "LtVxvyAMfV5GhdwjVC0Ch",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_SuccessProcess_Text",
@@ -185,7 +182,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -199,7 +196,6 @@
       {
         "id": "XDeCeVj_xcYZPVmLc6gvJ",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_DateTime_Text",
@@ -222,7 +218,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -236,7 +232,6 @@
       {
         "id": "bdpqvV89b-kz0rLg-mpnA",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_RefNum_Text",
@@ -259,7 +254,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -273,7 +268,6 @@
       {
         "id": "VpqbiMg-T3X1JMuiKKCvy",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_Details_View",
         "attributes": {
           "name": "FT_Receipt_Details_View",
@@ -295,7 +289,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -310,7 +304,6 @@
       {
         "id": "qXrgiAosRFw-jvzLRHbma",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_SentTo_Text",
@@ -333,7 +326,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -347,7 +340,6 @@
       {
         "id": "B2GTzbufkLdJlUKBcWpRD",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_SentTO_DataText",
@@ -365,11 +357,12 @@
             "layout_marginRight": 20,
             "textStyle": "bold",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "ft_transferto_itemdata"
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -383,7 +376,6 @@
       {
         "id": "wYrdqQzKbRBEEjN4XsWAr",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_SentTo_Btmline",
         "attributes": {
           "name": "FT_Receipt_SentTo_Btmline",
@@ -405,7 +397,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -419,7 +411,6 @@
       {
         "id": "n3v97V2K5q5Xf1I_E9E79",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_ToAccountNum_Text",
@@ -443,7 +434,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -457,7 +448,6 @@
       {
         "id": "pP78H4gxgIGSShRIF8nNY",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_ToAccNum_DataText",
@@ -479,7 +469,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -493,7 +483,6 @@
       {
         "id": "VbIeudJGWesJ9ctw8qmUD",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_ToAccNum_Btmline",
         "attributes": {
           "name": "FT_Receipt_ToAccNum_Btmline",
@@ -515,7 +504,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -529,7 +518,6 @@
       {
         "id": "ed-L9Sbm3CMCePg6uTxXO",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_bankName_Text",
@@ -552,7 +540,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -566,7 +554,6 @@
       {
         "id": "rtAss5nCOwgVT_N3jPmhu",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_bankName_DataText",
@@ -588,7 +575,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -602,7 +589,6 @@
       {
         "id": "RMEOVuv63-jbq_-GcD0KS",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_BankName_Btmline",
         "attributes": {
           "name": "FT_Receipt_BankName_Btmline",
@@ -625,7 +611,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -639,7 +625,6 @@
       {
         "id": "b8VcQW4KXL3bGHLkpXTTP",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_FromAcc_Text",
@@ -662,7 +647,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -676,7 +661,6 @@
       {
         "id": "aqTRc870g8CsPFckzkzXu",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_FromAcc_DataText",
@@ -698,7 +682,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -712,7 +696,6 @@
       {
         "id": "M59fKmcfJlHA191j7qiya",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_FromAcc_Btmline",
         "attributes": {
           "name": "FT_Receipt_FromAcc_Btmline",
@@ -734,7 +717,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -748,7 +731,6 @@
       {
         "id": "aejcUsRAsC1_xK7aXnGO_",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Amount_Text",
@@ -771,7 +753,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -785,7 +767,6 @@
       {
         "id": "6DO6rG1hQ-QbwQwkxZ6us",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Amount_DataText",
@@ -803,11 +784,12 @@
             "layout_marginRight": 19,
             "textStyle": "bold",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "ft_amount_data"
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -821,7 +803,6 @@
       {
         "id": "tJpQUv_EHAu9-bxrueqfD",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_Amount_Btmline",
         "attributes": {
           "name": "FT_Receipt_Amount_Btmline",
@@ -843,7 +824,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -857,7 +838,6 @@
       {
         "id": "UuCcdp6XiHwtOVovqwvAd",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Purpose_Text",
@@ -880,7 +860,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -894,7 +874,6 @@
       {
         "id": "Et57lJQklIf2QXUscx1b8",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Purpose_DataText",
@@ -912,11 +891,12 @@
             "layout_marginRight": 20,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "ft_pos_data.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -930,7 +910,6 @@
       {
         "id": "z8msKqBQ5SLxV2IaxRclJ",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_Purpose_Btmline",
         "attributes": {
           "name": "FT_Receipt_Purpose_Btmline",
@@ -952,7 +931,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -966,7 +945,6 @@
       {
         "id": "ryBqnDae9_aPAq3pb3zrT",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Comment_Text",
@@ -989,7 +967,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1003,7 +981,6 @@
       {
         "id": "r6VtwWUP1m3nXibUNLfGe",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Comment_DataText",
@@ -1025,7 +1002,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1039,7 +1016,6 @@
       {
         "id": "QDXi-0ibbRvAjXMbJciWh",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_Share_Btn_View",
         "attributes": {
           "name": "FT_Receipt_Share_Btn_View",
@@ -1057,7 +1033,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1071,7 +1047,6 @@
       {
         "id": "emcZJq5ilRtrfIKjSp283",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_Share_Text",
@@ -1094,7 +1069,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1108,7 +1083,6 @@
       {
         "id": "Ba5_c345Sr53My84N-Dj1",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_REceipt_Share_Icon",
         "attributes": {
           "name": "FT_REceipt_Share_Icon",
@@ -1144,7 +1118,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1157,7 +1131,6 @@
       {
         "id": "RMExvavwvwM9JTUZ8QRhf",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "FT_Receipt_SaveToGallery_Btn_View",
         "attributes": {
           "name": "FT_Receipt_SaveToGallery_Btn_View",
@@ -1175,7 +1148,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1189,7 +1162,6 @@
       {
         "id": "_mOGR_Ygq4Enl5yp1HNyx",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Text view",
         "attributes": {
           "name": "FT_Receipt_SaveToGallery_Text",
@@ -1212,7 +1184,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1226,7 +1198,6 @@
       {
         "id": "kFHWwQioGpq_S6L8Vr174",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "FT_Receipt_SavetoGallery_Icon",
         "attributes": {
           "name": "FT_Receipt_SavetoGallery_Icon",
@@ -1262,7 +1233,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1308,7 +1279,6 @@
           {
             "id": "SPV_7KcPa8oS7xFklH_jh",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_Receipt_Success_Icon",
             "attributes": {
               "name": "FT_Receipt_Success_Icon",
@@ -1344,7 +1314,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1357,7 +1327,6 @@
           {
             "id": "slgtAIx6eKtTL8quatNEH",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_Receipt_HMB_Icon",
             "attributes": {
               "name": "FT_Receipt_HMB_Icon",
@@ -1392,7 +1361,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1405,7 +1374,6 @@
           {
             "id": "LtVxvyAMfV5GhdwjVC0Ch",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_SuccessProcess_Text",
@@ -1428,7 +1396,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1442,7 +1410,6 @@
           {
             "id": "XDeCeVj_xcYZPVmLc6gvJ",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_DateTime_Text",
@@ -1465,7 +1432,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1479,7 +1446,6 @@
           {
             "id": "bdpqvV89b-kz0rLg-mpnA",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_RefNum_Text",
@@ -1502,7 +1468,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1516,7 +1482,6 @@
           {
             "id": "VpqbiMg-T3X1JMuiKKCvy",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_Details_View",
             "attributes": {
               "name": "FT_Receipt_Details_View",
@@ -1538,7 +1503,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1553,7 +1518,6 @@
           {
             "id": "qXrgiAosRFw-jvzLRHbma",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_SentTo_Text",
@@ -1576,7 +1540,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1590,7 +1554,6 @@
           {
             "id": "B2GTzbufkLdJlUKBcWpRD",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_SentTO_DataText",
@@ -1608,11 +1571,12 @@
                 "layout_marginRight": 20,
                 "textStyle": "bold",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "ft_transferto_itemdata"
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1626,7 +1590,6 @@
           {
             "id": "wYrdqQzKbRBEEjN4XsWAr",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_SentTo_Btmline",
             "attributes": {
               "name": "FT_Receipt_SentTo_Btmline",
@@ -1648,7 +1611,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1662,7 +1625,6 @@
           {
             "id": "n3v97V2K5q5Xf1I_E9E79",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_ToAccountNum_Text",
@@ -1686,7 +1648,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1700,7 +1662,6 @@
           {
             "id": "pP78H4gxgIGSShRIF8nNY",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_ToAccNum_DataText",
@@ -1722,7 +1683,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1736,7 +1697,6 @@
           {
             "id": "VbIeudJGWesJ9ctw8qmUD",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_ToAccNum_Btmline",
             "attributes": {
               "name": "FT_Receipt_ToAccNum_Btmline",
@@ -1758,7 +1718,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1772,7 +1732,6 @@
           {
             "id": "ed-L9Sbm3CMCePg6uTxXO",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_bankName_Text",
@@ -1795,7 +1754,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1809,7 +1768,6 @@
           {
             "id": "rtAss5nCOwgVT_N3jPmhu",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_bankName_DataText",
@@ -1831,7 +1789,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1845,7 +1803,6 @@
           {
             "id": "RMEOVuv63-jbq_-GcD0KS",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_BankName_Btmline",
             "attributes": {
               "name": "FT_Receipt_BankName_Btmline",
@@ -1868,7 +1825,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1882,7 +1839,6 @@
           {
             "id": "b8VcQW4KXL3bGHLkpXTTP",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_FromAcc_Text",
@@ -1905,7 +1861,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1919,7 +1875,6 @@
           {
             "id": "aqTRc870g8CsPFckzkzXu",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_FromAcc_DataText",
@@ -1941,7 +1896,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1955,7 +1910,6 @@
           {
             "id": "M59fKmcfJlHA191j7qiya",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_FromAcc_Btmline",
             "attributes": {
               "name": "FT_Receipt_FromAcc_Btmline",
@@ -1977,7 +1931,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1991,7 +1945,6 @@
           {
             "id": "aejcUsRAsC1_xK7aXnGO_",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Amount_Text",
@@ -2014,7 +1967,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2028,7 +1981,6 @@
           {
             "id": "6DO6rG1hQ-QbwQwkxZ6us",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Amount_DataText",
@@ -2046,11 +1998,12 @@
                 "layout_marginRight": 19,
                 "textStyle": "bold",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "ft_amount_data"
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2064,7 +2017,6 @@
           {
             "id": "tJpQUv_EHAu9-bxrueqfD",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_Amount_Btmline",
             "attributes": {
               "name": "FT_Receipt_Amount_Btmline",
@@ -2086,7 +2038,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2100,7 +2052,6 @@
           {
             "id": "UuCcdp6XiHwtOVovqwvAd",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Purpose_Text",
@@ -2123,7 +2074,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2137,7 +2088,6 @@
           {
             "id": "Et57lJQklIf2QXUscx1b8",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Purpose_DataText",
@@ -2155,11 +2105,12 @@
                 "layout_marginRight": 20,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "ft_pos_data.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2173,7 +2124,6 @@
           {
             "id": "z8msKqBQ5SLxV2IaxRclJ",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_Purpose_Btmline",
             "attributes": {
               "name": "FT_Receipt_Purpose_Btmline",
@@ -2195,7 +2145,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2209,7 +2159,6 @@
           {
             "id": "ryBqnDae9_aPAq3pb3zrT",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Comment_Text",
@@ -2232,7 +2181,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2246,7 +2195,6 @@
           {
             "id": "r6VtwWUP1m3nXibUNLfGe",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Comment_DataText",
@@ -2268,7 +2216,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2282,7 +2230,6 @@
           {
             "id": "QDXi-0ibbRvAjXMbJciWh",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_Share_Btn_View",
             "attributes": {
               "name": "FT_Receipt_Share_Btn_View",
@@ -2300,7 +2247,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2314,7 +2261,6 @@
           {
             "id": "emcZJq5ilRtrfIKjSp283",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_Share_Text",
@@ -2337,7 +2283,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2351,7 +2297,6 @@
           {
             "id": "Ba5_c345Sr53My84N-Dj1",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_REceipt_Share_Icon",
             "attributes": {
               "name": "FT_REceipt_Share_Icon",
@@ -2387,7 +2332,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2400,7 +2345,6 @@
           {
             "id": "RMExvavwvwM9JTUZ8QRhf",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "FT_Receipt_SaveToGallery_Btn_View",
             "attributes": {
               "name": "FT_Receipt_SaveToGallery_Btn_View",
@@ -2418,7 +2362,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2432,7 +2376,6 @@
           {
             "id": "_mOGR_Ygq4Enl5yp1HNyx",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
               "name": "FT_Receipt_SaveToGallery_Text",
@@ -2455,7 +2398,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2469,7 +2412,6 @@
           {
             "id": "kFHWwQioGpq_S6L8Vr174",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "FT_Receipt_SavetoGallery_Icon",
             "attributes": {
               "name": "FT_Receipt_SavetoGallery_Icon",
@@ -2505,7 +2447,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2848,7 +2790,8 @@
         "layout_marginRight": 20,
         "textStyle": "bold",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "ft_transferto_itemdata"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3322,7 +3265,8 @@
         "layout_marginRight": 19,
         "textStyle": "bold",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "ft_amount_data"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3440,7 +3384,8 @@
         "layout_marginRight": 20,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "ft_pos_data.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",

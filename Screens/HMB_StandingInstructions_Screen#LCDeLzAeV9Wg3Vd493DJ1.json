@@ -22,14 +22,15 @@
         "AGPcKJ6lc9pcKoLs5yT9v",
         "Ia5Tf2keYWw9EO_PGUYdC",
         "ejLDNxW0KdtYEF2Q-ffj2",
-        "VojwCrlBZEEaqMR3L_4H4"
+        "VojwCrlBZEEaqMR3L_4H4",
+        "a2N0BxeHEW7Lbv_7REYRL"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/18/2023",
-    "createdAt": "4/18/2023",
+    "updatedAt": "4/19/2023",
+    "createdAt": "4/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -225,7 +226,7 @@
       {
         "id": "VojwCrlBZEEaqMR3L_4H4",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "SI_StartDate_InputText",
         "attributes": {
           "name": "SI_StartDate_InputText",
           "layoutProperties": {
@@ -247,7 +248,7 @@
             "textStyle": "regular",
             "textAlignment": "left"
           },
-          "bindingKey": "SI_startdate"
+          "bindingKey": "si_date_data"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -260,7 +261,59 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-5"
+        "path": "0-5",
+        "edit": true
+      },
+      {
+        "id": "a2N0BxeHEW7Lbv_7REYRL",
+        "status": "ACTIVE",
+        "name": "Date_Text",
+        "attributes": {
+          "name": "Date_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "50",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
+            "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
+            "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
+            "layout_marginRight": 10,
+            "textAlignment": "right",
+            "textStyle": "regular"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "TQwI7Kp8G-0v65Hfp7XYP",
+            "triggerName": "date_picker_trig",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "si_date_data",
+              "dateFormat": "dd MMM, yyyy",
+              "minimumDate": "0",
+              "maximumDate": "0"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-6",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -484,7 +537,7 @@
           {
             "id": "VojwCrlBZEEaqMR3L_4H4",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "SI_StartDate_InputText",
             "attributes": {
               "name": "SI_StartDate_InputText",
               "layoutProperties": {
@@ -506,7 +559,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "SI_startdate"
+              "bindingKey": "si_date_data"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -519,7 +572,59 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-5"
+            "path": "0-5",
+            "edit": true
+          },
+          {
+            "id": "a2N0BxeHEW7Lbv_7REYRL",
+            "status": "ACTIVE",
+            "name": "Date_Text",
+            "attributes": {
+              "name": "Date_Text",
+              "layoutProperties": {
+                "textSize": 12,
+                "layout_width": "50",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Date",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
+                "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
+                "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
+                "layout_marginRight": 10,
+                "textAlignment": "right",
+                "textStyle": "regular"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "TQwI7Kp8G-0v65Hfp7XYP",
+                "triggerName": "date_picker_trig",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": " Date picker",
+                  "bindingKey": "si_date_data",
+                  "dateFormat": "dd MMM, yyyy",
+                  "minimumDate": "0",
+                  "maximumDate": "0"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-6",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -740,7 +845,7 @@
   {
     "id": "VojwCrlBZEEaqMR3L_4H4",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "SI_StartDate_InputText",
     "attributes": {
       "name": "SI_StartDate_InputText",
       "layoutProperties": {
@@ -762,7 +867,7 @@
         "textStyle": "regular",
         "textAlignment": "left"
       },
-      "bindingKey": "SI_startdate"
+      "bindingKey": "si_date_data"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -776,6 +881,54 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-5",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "dev",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "a2N0BxeHEW7Lbv_7REYRL",
+    "status": "ACTIVE",
+    "name": "Date_Text",
+    "attributes": {
+      "name": "Date_Text",
+      "layoutProperties": {
+        "textSize": 12,
+        "layout_width": "50",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Date",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "rightToRightOf": "ejLDNxW0KdtYEF2Q-ffj2",
+        "topToTopOf": "ejLDNxW0KdtYEF2Q-ffj2",
+        "bottomToBottomOf": "ejLDNxW0KdtYEF2Q-ffj2",
+        "layout_marginRight": 10,
+        "textAlignment": "right",
+        "textStyle": "regular"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "TQwI7Kp8G-0v65Hfp7XYP",
+        "triggerName": "date_picker_trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-6",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",

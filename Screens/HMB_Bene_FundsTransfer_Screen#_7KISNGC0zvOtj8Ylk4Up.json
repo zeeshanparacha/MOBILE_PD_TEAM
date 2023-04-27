@@ -52,8 +52,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/18/2023",
-    "createdAt": "4/18/2023",
+    "updatedAt": "4/26/2023",
+    "createdAt": "4/26/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -134,7 +134,7 @@
       {
         "id": "8ofyiQEhk3xLrT3miR5JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "BeneFT_TransferFrom_NameText",
         "attributes": {
           "name": "BeneFT_TransferFrom_NameText",
           "layoutProperties": {
@@ -152,7 +152,8 @@
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "ft_transferfrom_itemdata"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -165,7 +166,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "FbRUPjB2FvtPirIPJNhxa",
@@ -315,7 +317,7 @@
       {
         "id": "lW-u9YYZFBg6-ZLKrHEIR",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "BeneFT_TransferTo_NameText",
         "attributes": {
           "name": "BeneFT_TransferTo_NameText",
           "layoutProperties": {
@@ -333,7 +335,8 @@
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "ft_transferto_itemdata"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -346,7 +349,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true
       },
       {
         "id": "4xpmIxmebKUxNINIBTKAG",
@@ -429,7 +433,7 @@
           "name": "BeneFT_TransferFrom_Change_Text",
           "layoutProperties": {
             "textSize": 11,
-            "layout_width": "wrap_content",
+            "layout_width": "60",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "Change",
@@ -465,7 +469,7 @@
           "name": "BeneFT_TransferTo_Change_Text",
           "layoutProperties": {
             "textSize": 11,
-            "layout_width": "wrap_content",
+            "layout_width": "60",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "Change",
@@ -1311,7 +1315,7 @@
           {
             "id": "8ofyiQEhk3xLrT3miR5JQ",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_TransferFrom_NameText",
             "attributes": {
               "name": "BeneFT_TransferFrom_NameText",
               "layoutProperties": {
@@ -1329,7 +1333,8 @@
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "ft_transferfrom_itemdata"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1342,7 +1347,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "FbRUPjB2FvtPirIPJNhxa",
@@ -1492,7 +1498,7 @@
           {
             "id": "lW-u9YYZFBg6-ZLKrHEIR",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_TransferTo_NameText",
             "attributes": {
               "name": "BeneFT_TransferTo_NameText",
               "layoutProperties": {
@@ -1510,7 +1516,8 @@
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "ft_transferto_itemdata"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1523,7 +1530,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true
           },
           {
             "id": "4xpmIxmebKUxNINIBTKAG",
@@ -1606,7 +1614,7 @@
               "name": "BeneFT_TransferFrom_Change_Text",
               "layoutProperties": {
                 "textSize": 11,
-                "layout_width": "wrap_content",
+                "layout_width": "60",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "Change",
@@ -1642,7 +1650,7 @@
               "name": "BeneFT_TransferTo_Change_Text",
               "layoutProperties": {
                 "textSize": 11,
-                "layout_width": "wrap_content",
+                "layout_width": "60",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "Change",
@@ -2473,7 +2481,7 @@
   {
     "id": "8ofyiQEhk3xLrT3miR5JQ",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "BeneFT_TransferFrom_NameText",
     "attributes": {
       "name": "BeneFT_TransferFrom_NameText",
       "layoutProperties": {
@@ -2491,7 +2499,8 @@
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "ft_transferfrom_itemdata"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2505,6 +2514,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2674,7 +2684,7 @@
   {
     "id": "lW-u9YYZFBg6-ZLKrHEIR",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "BeneFT_TransferTo_NameText",
     "attributes": {
       "name": "BeneFT_TransferTo_NameText",
       "layoutProperties": {
@@ -2692,7 +2702,8 @@
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "ft_transferto_itemdata"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2706,6 +2717,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-7",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "dev",
@@ -2800,7 +2812,7 @@
       "name": "BeneFT_TransferFrom_Change_Text",
       "layoutProperties": {
         "textSize": 11,
-        "layout_width": "wrap_content",
+        "layout_width": "60",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "Change",
@@ -2840,7 +2852,7 @@
       "name": "BeneFT_TransferTo_Change_Text",
       "layoutProperties": {
         "textSize": 11,
-        "layout_width": "wrap_content",
+        "layout_width": "60",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "Change",
