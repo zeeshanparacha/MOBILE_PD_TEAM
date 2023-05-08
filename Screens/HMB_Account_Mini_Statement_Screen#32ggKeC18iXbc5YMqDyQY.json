@@ -44,14 +44,15 @@
         "-FBre3zZs7VUFvIfH0hI9",
         "LCQlf5oBWQNkhGxn6IGZz",
         "jV7LgxD4-HtshlFFdz6JO",
-        "oqOxICM6mapbie9efxW-a"
+        "oqOxICM6mapbie9efxW-a",
+        "5A8ZOjuv-i1jHPOFhinlm"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/2/2023",
-    "createdAt": "5/2/2023",
+    "updatedAt": "5/8/2023",
+    "createdAt": "5/8/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -676,7 +677,7 @@
       {
         "id": "JabjatpO76LZs9jtjT7rh",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "AccMiniState_Cal_StatementRequest_Text",
         "attributes": {
           "name": "AccMiniState_Cal_StatementRequest_Text",
           "layoutProperties": {
@@ -692,7 +693,8 @@
             "topToTopOf": "dnwGCNoZb806iN_IytsbY",
             "layout_marginTop": 15,
             "textAlignment": "center",
-            "textStyle": "bold"
+            "textStyle": "bold",
+            "visibility": true
           }
         },
         "icon": "FaTextWidth",
@@ -706,12 +708,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-18"
+        "path": "0-18",
+        "edit": true
       },
       {
         "id": "uTXKIeL-DtZ7vvbanDFHy",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "AccMiniState_Cal_From_Text",
         "attributes": {
           "name": "AccMiniState_Cal_From_Text",
           "layoutProperties": {
@@ -726,7 +729,8 @@
             "topToBottomOf": "JabjatpO76LZs9jtjT7rh",
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
-            "textStyle": "regular"
+            "textStyle": "regular",
+            "visibility": true
           }
         },
         "icon": "FaTextWidth",
@@ -740,7 +744,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-19"
+        "path": "0-19",
+        "edit": true
       },
       {
         "id": "1pp8NgB0S8sJcXRYY9v0G",
@@ -789,7 +794,8 @@
             "rightToRightOf": "1pp8NgB0S8sJcXRYY9v0G",
             "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
             "bottomToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
-            "layout_marginRight": 20
+            "layout_marginRight": 20,
+            "visibility": false
           }
         },
         "icon": "FaTabletAlt",
@@ -824,7 +830,7 @@
       {
         "id": "-FBre3zZs7VUFvIfH0hI9",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "AccMiniState_Cal_To_Text",
         "attributes": {
           "name": "AccMiniState_Cal_To_Text",
           "layoutProperties": {
@@ -838,7 +844,8 @@
             "leftToLeftOf": "1pp8NgB0S8sJcXRYY9v0G",
             "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
             "layout_marginRight": 20,
-            "textStyle": "regular"
+            "textStyle": "regular",
+            "visibility": true
           }
         },
         "icon": "FaTextWidth",
@@ -852,7 +859,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-22"
+        "path": "0-22",
+        "edit": true
       },
       {
         "id": "LCQlf5oBWQNkhGxn6IGZz",
@@ -870,7 +878,8 @@
             "rightToRightOf": "dnwGCNoZb806iN_IytsbY",
             "topToTopOf": "-FBre3zZs7VUFvIfH0hI9",
             "bottomToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
-            "layout_marginRight": 20
+            "layout_marginRight": 20,
+            "visibility": false
           }
         },
         "icon": "FaTabletAlt",
@@ -920,7 +929,8 @@
             "topToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
             "layout_marginLeft": 20,
             "layout_marginTop": 40,
-            "textStyle": "bold"
+            "textStyle": "bold",
+            "visibility": true
           },
           "bindingKey": "ministate_from_date_data"
         },
@@ -955,7 +965,8 @@
             "leftToLeftOf": "-FBre3zZs7VUFvIfH0hI9",
             "topToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
             "layout_marginTop": 40,
-            "textStyle": "bold"
+            "textStyle": "bold",
+            "visibility": false
           },
           "bindingKey": "ministate_to_date_data"
         },
@@ -972,6 +983,38 @@
         "events": [],
         "path": "0-25",
         "edit": true
+      },
+      {
+        "id": "5A8ZOjuv-i1jHPOFhinlm",
+        "status": "ACTIVE",
+        "name": "MiniState_FilterBy_SHowHide_Btn_View",
+        "attributes": {
+          "name": "MiniState_FilterBy_SHowHide_Btn_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "20",
+            "layout_height": "20",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#093959",
+            "rightToRightOf": "QbUM8vVKojBwIO6boGWN3",
+            "topToTopOf": "QbUM8vVKojBwIO6boGWN3",
+            "bottomToBottomOf": "QbUM8vVKojBwIO6boGWN3",
+            "layout_marginRight": 20
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-26"
       }
     ],
     "subType": "screen",
@@ -995,7 +1038,7 @@
             "cornerRadius": [0, 0, 0, 0],
             "navbarHeight": 0,
             "hideNavBar": true
-			},
+          },
           "componentId": []
         },
         "group": "Layout",
@@ -1627,7 +1670,7 @@
           {
             "id": "JabjatpO76LZs9jtjT7rh",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "AccMiniState_Cal_StatementRequest_Text",
             "attributes": {
               "name": "AccMiniState_Cal_StatementRequest_Text",
               "layoutProperties": {
@@ -1643,7 +1686,8 @@
                 "topToTopOf": "dnwGCNoZb806iN_IytsbY",
                 "layout_marginTop": 15,
                 "textAlignment": "center",
-                "textStyle": "bold"
+                "textStyle": "bold",
+                "visibility": true
               }
             },
             "icon": "FaTextWidth",
@@ -1657,12 +1701,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-18"
+            "path": "0-18",
+            "edit": true
           },
           {
             "id": "uTXKIeL-DtZ7vvbanDFHy",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "AccMiniState_Cal_From_Text",
             "attributes": {
               "name": "AccMiniState_Cal_From_Text",
               "layoutProperties": {
@@ -1677,7 +1722,8 @@
                 "topToBottomOf": "JabjatpO76LZs9jtjT7rh",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
-                "textStyle": "regular"
+                "textStyle": "regular",
+                "visibility": true
               }
             },
             "icon": "FaTextWidth",
@@ -1691,7 +1737,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-19"
+            "path": "0-19",
+            "edit": true
           },
           {
             "id": "1pp8NgB0S8sJcXRYY9v0G",
@@ -1740,7 +1787,8 @@
                 "rightToRightOf": "1pp8NgB0S8sJcXRYY9v0G",
                 "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
                 "bottomToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
-                "layout_marginRight": 20
+                "layout_marginRight": 20,
+                "visibility": false
               }
             },
             "icon": "FaTabletAlt",
@@ -1775,7 +1823,7 @@
           {
             "id": "-FBre3zZs7VUFvIfH0hI9",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "AccMiniState_Cal_To_Text",
             "attributes": {
               "name": "AccMiniState_Cal_To_Text",
               "layoutProperties": {
@@ -1789,7 +1837,8 @@
                 "leftToLeftOf": "1pp8NgB0S8sJcXRYY9v0G",
                 "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
                 "layout_marginRight": 20,
-                "textStyle": "regular"
+                "textStyle": "regular",
+                "visibility": true
               }
             },
             "icon": "FaTextWidth",
@@ -1803,7 +1852,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-22"
+            "path": "0-22",
+            "edit": true
           },
           {
             "id": "LCQlf5oBWQNkhGxn6IGZz",
@@ -1821,7 +1871,8 @@
                 "rightToRightOf": "dnwGCNoZb806iN_IytsbY",
                 "topToTopOf": "-FBre3zZs7VUFvIfH0hI9",
                 "bottomToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
-                "layout_marginRight": 20
+                "layout_marginRight": 20,
+                "visibility": false
               }
             },
             "icon": "FaTabletAlt",
@@ -1871,7 +1922,8 @@
                 "topToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 40,
-                "textStyle": "bold"
+                "textStyle": "bold",
+                "visibility": true
               },
               "bindingKey": "ministate_from_date_data"
             },
@@ -1906,7 +1958,8 @@
                 "leftToLeftOf": "-FBre3zZs7VUFvIfH0hI9",
                 "topToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
                 "layout_marginTop": 40,
-                "textStyle": "bold"
+                "textStyle": "bold",
+                "visibility": false
               },
               "bindingKey": "ministate_to_date_data"
             },
@@ -1923,6 +1976,38 @@
             "events": [],
             "path": "0-25",
             "edit": true
+          },
+          {
+            "id": "5A8ZOjuv-i1jHPOFhinlm",
+            "status": "ACTIVE",
+            "name": "MiniState_FilterBy_SHowHide_Btn_View",
+            "attributes": {
+              "name": "MiniState_FilterBy_SHowHide_Btn_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "20",
+                "layout_height": "20",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#093959",
+                "rightToRightOf": "QbUM8vVKojBwIO6boGWN3",
+                "topToTopOf": "QbUM8vVKojBwIO6boGWN3",
+                "bottomToBottomOf": "QbUM8vVKojBwIO6boGWN3",
+                "layout_marginRight": 20
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-26"
           }
         ],
         "subType": "screen",
@@ -2625,7 +2710,7 @@
   {
     "id": "JabjatpO76LZs9jtjT7rh",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "AccMiniState_Cal_StatementRequest_Text",
     "attributes": {
       "name": "AccMiniState_Cal_StatementRequest_Text",
       "layoutProperties": {
@@ -2641,7 +2726,8 @@
         "topToTopOf": "dnwGCNoZb806iN_IytsbY",
         "layout_marginTop": 15,
         "textAlignment": "center",
-        "textStyle": "bold"
+        "textStyle": "bold",
+        "visibility": true
       }
     },
     "icon": "FaTextWidth",
@@ -2656,6 +2742,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-18",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2664,7 +2751,7 @@
   {
     "id": "uTXKIeL-DtZ7vvbanDFHy",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "AccMiniState_Cal_From_Text",
     "attributes": {
       "name": "AccMiniState_Cal_From_Text",
       "layoutProperties": {
@@ -2679,7 +2766,8 @@
         "topToBottomOf": "JabjatpO76LZs9jtjT7rh",
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
-        "textStyle": "regular"
+        "textStyle": "regular",
+        "visibility": true
       }
     },
     "icon": "FaTextWidth",
@@ -2694,6 +2782,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-19",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2750,7 +2839,8 @@
         "rightToRightOf": "1pp8NgB0S8sJcXRYY9v0G",
         "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
         "bottomToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
-        "layout_marginRight": 20
+        "layout_marginRight": 20,
+        "visibility": false
       }
     },
     "icon": "FaTabletAlt",
@@ -2781,7 +2871,7 @@
   {
     "id": "-FBre3zZs7VUFvIfH0hI9",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "AccMiniState_Cal_To_Text",
     "attributes": {
       "name": "AccMiniState_Cal_To_Text",
       "layoutProperties": {
@@ -2795,7 +2885,8 @@
         "leftToLeftOf": "1pp8NgB0S8sJcXRYY9v0G",
         "topToTopOf": "uTXKIeL-DtZ7vvbanDFHy",
         "layout_marginRight": 20,
-        "textStyle": "regular"
+        "textStyle": "regular",
+        "visibility": true
       }
     },
     "icon": "FaTextWidth",
@@ -2810,6 +2901,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-22",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2831,7 +2923,8 @@
         "rightToRightOf": "dnwGCNoZb806iN_IytsbY",
         "topToTopOf": "-FBre3zZs7VUFvIfH0hI9",
         "bottomToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
-        "layout_marginRight": 20
+        "layout_marginRight": 20,
+        "visibility": false
       }
     },
     "icon": "FaTabletAlt",
@@ -2877,7 +2970,8 @@
         "topToBottomOf": "uTXKIeL-DtZ7vvbanDFHy",
         "layout_marginLeft": 20,
         "layout_marginTop": 40,
-        "textStyle": "bold"
+        "textStyle": "bold",
+        "visibility": true
       },
       "bindingKey": "ministate_from_date_data"
     },
@@ -2916,7 +3010,8 @@
         "leftToLeftOf": "-FBre3zZs7VUFvIfH0hI9",
         "topToBottomOf": "-FBre3zZs7VUFvIfH0hI9",
         "layout_marginTop": 40,
-        "textStyle": "bold"
+        "textStyle": "bold",
+        "visibility": false
       },
       "bindingKey": "ministate_to_date_data"
     },
@@ -2933,6 +3028,42 @@
     "events": [],
     "path": "0-25",
     "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "5A8ZOjuv-i1jHPOFhinlm",
+    "status": "ACTIVE",
+    "name": "MiniState_FilterBy_SHowHide_Btn_View",
+    "attributes": {
+      "name": "MiniState_FilterBy_SHowHide_Btn_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "20",
+        "layout_height": "20",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#093959",
+        "rightToRightOf": "QbUM8vVKojBwIO6boGWN3",
+        "topToTopOf": "QbUM8vVKojBwIO6boGWN3",
+        "bottomToBottomOf": "QbUM8vVKojBwIO6boGWN3",
+        "layout_marginRight": 20
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-26",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
