@@ -1,0 +1,37 @@
+{
+  "id": "-mUXJRPv0ipj1WkDDXO-H",
+  "name": "Dashboard_BillPayment_Hlist_DS_Trig",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "services": [
+    {
+      "type": "DATASTORAGE",
+      "command": {
+        "type": "3",
+        "attributes": {
+          "serviceName": "Update value against binding key",
+          "bindingKey": "dash_billpayment_data",
+          "value": [
+            {
+              "dash_billpayment_nickname_data": "CAREEM",
+              "dash_billpayment_billnum_data": "625874112541",
+              "dash_billpayment_companyname_data": "careem"
+            },
+            {
+              "dash_billpayment_nickname_data": "DARAZ",
+              "dash_billpayment_billnum_data": "52014785214",
+              "dash_billpayment_companyname_data": "daraz"
+            }
+          ],
+          "contentType": "array",
+          "totalcolumns": "3"
+        }
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "CwykngFtfmxMmiyAzgUGO",
+  "updatedAt": "5/8/2023",
+  "createdAt": "5/8/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
