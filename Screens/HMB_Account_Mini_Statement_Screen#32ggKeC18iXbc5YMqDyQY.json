@@ -45,7 +45,7 @@
         "jV7LgxD4-HtshlFFdz6JO",
         "oqOxICM6mapbie9efxW-a",
         "5A8ZOjuv-i1jHPOFhinlm",
-        "p2VX1KcIbzPjBuNdi6io8"
+        "jVMalrqm62mDfAJ3sV4hQ"
       ]
     },
     "group": "Layout",
@@ -211,6 +211,24 @@
               ],
               "contentType": "array",
               "totalcolumns": "5"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "hYJE4v7Rj23dQ5fn74dpu",
+            "triggerName": "samvlist_data_trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "samvlist",
+              "value": [
+                { "samvlisttext": "ahned" },
+                { "samvlisttext": "sara" },
+                { "samvlisttext": "ali" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -681,13 +699,13 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "150",
+            "layout_height": "wrap_content",
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "FyqONwpi3_s6iUGh1ixZ_",
             "rightToRightOf": "FyqONwpi3_s6iUGh1ixZ_",
-            "topToBottomOf": "QbUM8vVKojBwIO6boGWN3"
+            "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-"
           }
         },
         "icon": "FaTabletAlt",
@@ -701,7 +719,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-17"
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "JabjatpO76LZs9jtjT7rh",
@@ -737,7 +756,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-18",
+        "path": "0-17",
         "edit": true
       },
       {
@@ -974,7 +993,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-24",
+        "path": "0-23",
         "edit": true
       },
       {
@@ -1042,57 +1061,181 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "2O6riUUAq51L5jciFJqI0",
+            "triggerName": "MiniState_Cal_View_Show_Trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "32ggKeC18iXbc5YMqDyQY",
+              "component": [
+                {
+                  "id": "dnwGCNoZb806iN_IytsbY",
+                  "name": "AccMiniState_Cal_View"
+                },
+                {
+                  "id": "JabjatpO76LZs9jtjT7rh",
+                  "name": "AccMiniState_Cal_StatementRequest_Text"
+                },
+                {
+                  "id": "uTXKIeL-DtZ7vvbanDFHy",
+                  "name": "AccMiniState_Cal_From_Text"
+                },
+                {
+                  "id": "1pp8NgB0S8sJcXRYY9v0G",
+                  "name": "AccMiniState_Cal_Midline_View"
+                },
+                {
+                  "id": "ZdgL4GwYItkJQby47elUk",
+                  "name": "AccMiniState_Cal_From_Icon_View"
+                },
+                {
+                  "id": "-FBre3zZs7VUFvIfH0hI9",
+                  "name": "AccMiniState_Cal_To_Text"
+                },
+                {
+                  "id": "LCQlf5oBWQNkhGxn6IGZz",
+                  "name": "AccMiniState_Cal_To_Icon_View"
+                },
+                {
+                  "id": "jV7LgxD4-HtshlFFdz6JO",
+                  "name": "AccMiniState_Cal_SelectFromDate_Text"
+                },
+                {
+                  "id": "oqOxICM6mapbie9efxW-a",
+                  "name": "AccMiniState_Cal_SelectToDate_Text"
+                }
+              ],
+              "componentId": [
+                "dnwGCNoZb806iN_IytsbY",
+                "JabjatpO76LZs9jtjT7rh",
+                "uTXKIeL-DtZ7vvbanDFHy",
+                "1pp8NgB0S8sJcXRYY9v0G",
+                "ZdgL4GwYItkJQby47elUk",
+                "-FBre3zZs7VUFvIfH0hI9",
+                "LCQlf5oBWQNkhGxn6IGZz",
+                "jV7LgxD4-HtshlFFdz6JO",
+                "oqOxICM6mapbie9efxW-a"
+              ],
+              "visibility": true
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "2O6riUUAq51L5jciFJqI0",
+            "triggerName": "MiniState_Cal_View_Show_Trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "32ggKeC18iXbc5YMqDyQY",
+              "component": [
+                {
+                  "id": "dnwGCNoZb806iN_IytsbY",
+                  "name": "AccMiniState_Cal_View"
+                },
+                {
+                  "id": "JabjatpO76LZs9jtjT7rh",
+                  "name": "AccMiniState_Cal_StatementRequest_Text"
+                },
+                {
+                  "id": "uTXKIeL-DtZ7vvbanDFHy",
+                  "name": "AccMiniState_Cal_From_Text"
+                },
+                {
+                  "id": "1pp8NgB0S8sJcXRYY9v0G",
+                  "name": "AccMiniState_Cal_Midline_View"
+                },
+                {
+                  "id": "ZdgL4GwYItkJQby47elUk",
+                  "name": "AccMiniState_Cal_From_Icon_View"
+                },
+                {
+                  "id": "-FBre3zZs7VUFvIfH0hI9",
+                  "name": "AccMiniState_Cal_To_Text"
+                },
+                {
+                  "id": "LCQlf5oBWQNkhGxn6IGZz",
+                  "name": "AccMiniState_Cal_To_Icon_View"
+                },
+                {
+                  "id": "jV7LgxD4-HtshlFFdz6JO",
+                  "name": "AccMiniState_Cal_SelectFromDate_Text"
+                },
+                {
+                  "id": "oqOxICM6mapbie9efxW-a",
+                  "name": "AccMiniState_Cal_SelectToDate_Text"
+                }
+              ],
+              "componentId": [
+                "dnwGCNoZb806iN_IytsbY",
+                "JabjatpO76LZs9jtjT7rh",
+                "uTXKIeL-DtZ7vvbanDFHy",
+                "1pp8NgB0S8sJcXRYY9v0G",
+                "ZdgL4GwYItkJQby47elUk",
+                "-FBre3zZs7VUFvIfH0hI9",
+                "LCQlf5oBWQNkhGxn6IGZz",
+                "jV7LgxD4-HtshlFFdz6JO",
+                "oqOxICM6mapbie9efxW-a"
+              ],
+              "visibility": true
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
-        "id": "p2VX1KcIbzPjBuNdi6io8",
+        "id": "jVMalrqm62mDfAJ3sV4hQ",
         "type": "VLIST",
-        "name": "MiniState_Main_Vlist",
-        "component": { "content": "List view", "type": "VLIST" },
+        "name": "Samm_Vlistt",
+        "component": { "type": "VLIST" },
         "attributes": {
-          "name": "MiniState_Main_Vlist",
+          "name": "Samm_Vlistt",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "background": "#000000",
             "layout_height": "match_parent",
             "layout_width": "match_parent",
-            "rows": [{ "id": "M5q1BWJsMTA4WpBSYXYQx" }],
+            "rows": [{ "id": "pn6VjEKED-J4UrOsMpihQ" }],
             "leftToLeftOf": "32ggKeC18iXbc5YMqDyQY",
             "rightToRightOf": "32ggKeC18iXbc5YMqDyQY",
-            "topToBottomOf": "FiFjf4vjnOFaaJHNVjHhi",
-            "bottomToBottomOf": "32ggKeC18iXbc5YMqDyQY"
+            "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-",
+            "layout_marginTop": 20
           },
-          "bindingKey": "ministate_main_list_data",
+          "bindingKey": "samvlist",
           "componentId": []
         },
         "events": [],
         "path": "0-26",
         "gridProps": [
           {
-            "id": "M5q1BWJsMTA4WpBSYXYQx",
+            "id": "pn6VjEKED-J4UrOsMpihQ",
             "name": "List item 0",
             "path": "0-26-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "yuodx45LZi0tLhY3EpbdY",
+                "id": "aF-Cz2k0iUm_f8Dhqb04-",
                 "status": "ACTIVE",
-                "name": "MiniState_Vlistitem_View",
+                "name": "samvlist_view",
                 "attributes": {
-                  "name": "MiniState_Vlistitem_View",
+                  "name": "samvlist_view",
                   "layoutProperties": {
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
                     "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#FFFFFF",
-                    "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+                    "background": "#1C6030",
+                    "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -1109,223 +1252,40 @@
                 "path": "0-26-0-0"
               },
               {
-                "id": "ribN2p1hOOqz81H3wIdVj",
+                "id": "5GrVC49wSMMbep4-Ry2L4",
                 "status": "ACTIVE",
-                "name": "MiniState_Vlistitem_Date_View",
+                "name": "Text view",
                 "attributes": {
-                  "name": "MiniState_Vlistitem_Date_View",
+                  "name": "samvlist_text",
                   "layoutProperties": {
-                    "name": "View",
-                    "layout_width": "45",
-                    "layout_height": "65",
-                    "borderColor": "#EAF0F7",
-                    "borderWidth": 2,
-                    "cornerRadius": [10, 10, 10, 10],
-                    "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "shadowOpacity": 0.2,
-                    "shadowThickness": 4,
-                    "shadowColor": "#000000",
-                    "elevation": 19,
-                    "layout_marginTop": 18,
-                    "layout_marginLeft": 10
-                  }
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                    "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "textStyle": "regular",
+                    "textAlignment": "left"
+                  },
+                  "bindingKey": "samvlisttext"
                 },
-                "icon": "FaTabletAlt",
+                "icon": "FaTextWidth",
                 "group": "Form",
-                "type": "VIEW",
+                "type": "TEXTVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
                 "version": "1.0.0",
                 "isLatest": true,
                 "projectType": "mobile",
-                "component": { "content": "View", "type": "VIEW" },
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
                 "path": "0-26-0-1"
-              },
-              {
-                "id": "uOELe38P-ZhUXLK5LLhaT",
-                "status": "ACTIVE",
-                "name": "MiniState_Vlstitem_Date_Text",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Text",
-                  "layoutProperties": {
-                    "textSize": 12,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#000000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-                    "layout_marginTop": 4,
-                    "layout_marginLeft": 0,
-                    "textStyle": "regular",
-                    "textAlignment": "center",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-                  },
-                  "bindingKey": "ministate_Date_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-2",
-                "edit": true
-              },
-              {
-                "id": "gSYaTZWq21Wg684ED3J26",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Month_Text",
-                  "layoutProperties": {
-                    "textSize": 12,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#96C0F5",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-                    "layout_marginTop": 1,
-                    "textStyle": "bold",
-                    "textAlignment": "center"
-                  },
-                  "bindingKey": "ministate_Date_month_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-3"
-              },
-              {
-                "id": "jcAiN8LP5u1Ag1K0hrIak",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Year_Text",
-                  "layoutProperties": {
-                    "textSize": 10,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#000000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-                    "layout_marginTop": 1,
-                    "textStyle": "bold",
-                    "textAlignment": "center"
-                  },
-                  "bindingKey": "ministate_Date_year_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-4"
-              },
-              {
-                "id": "OndX4tAUEX04L2XXQopRl",
-                "status": "ACTIVE",
-                "name": "MiniState_Vlstitem_Tran_Name_Text",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Tran_Name_Text",
-                  "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "match_parent",
-                    "layout_height": "wrap_content",
-                    "textColor": "#1C6030",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 2,
-                    "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "layout_marginLeft": 30,
-                    "layout_marginTop": 30,
-                    "textStyle": "regular",
-                    "width_percent": 60
-                  },
-                  "bindingKey": "ministate_tran_name_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-5",
-                "edit": true
-              },
-              {
-                "id": "0RmSXV_mTN-yUECIMhHB7",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_DebCreAmount_Text",
-                  "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#FF0000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-                    "textStyle": "bold",
-                    "layout_marginRight": 10,
-                    "textAlignment": "right"
-                  },
-                  "bindingKey": "ministate_debcreamount_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-6"
               }
             ],
             "attributes": {
@@ -1333,12 +1293,14 @@
                 "layout_height": "100",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
+                "layout_marginLeft": 0,
                 "background": "#FFBB00"
               },
               "componentId": []
             }
           }
-        ]
+        ],
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -1528,6 +1490,24 @@
                   ],
                   "contentType": "array",
                   "totalcolumns": "5"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              },
+              {
+                "triggerId": "hYJE4v7Rj23dQ5fn74dpu",
+                "triggerName": "samvlist_data_trig",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "samvlist",
+                  "value": [
+                    { "samvlisttext": "ahned" },
+                    { "samvlisttext": "sara" },
+                    { "samvlisttext": "ali" }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "1"
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
@@ -1998,13 +1978,13 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "150",
+                "layout_height": "wrap_content",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "FyqONwpi3_s6iUGh1ixZ_",
                 "rightToRightOf": "FyqONwpi3_s6iUGh1ixZ_",
-                "topToBottomOf": "QbUM8vVKojBwIO6boGWN3"
+                "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-"
               }
             },
             "icon": "FaTabletAlt",
@@ -2018,7 +1998,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-17"
+            "path": "0-16",
+            "edit": true
           },
           {
             "id": "JabjatpO76LZs9jtjT7rh",
@@ -2054,7 +2035,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-18",
+            "path": "0-17",
             "edit": true
           },
           {
@@ -2291,7 +2272,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-24",
+            "path": "0-23",
             "edit": true
           },
           {
@@ -2359,57 +2340,181 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-26"
+            "events": [
+              {
+                "triggerId": "2O6riUUAq51L5jciFJqI0",
+                "triggerName": "MiniState_Cal_View_Show_Trig",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "32ggKeC18iXbc5YMqDyQY",
+                  "component": [
+                    {
+                      "id": "dnwGCNoZb806iN_IytsbY",
+                      "name": "AccMiniState_Cal_View"
+                    },
+                    {
+                      "id": "JabjatpO76LZs9jtjT7rh",
+                      "name": "AccMiniState_Cal_StatementRequest_Text"
+                    },
+                    {
+                      "id": "uTXKIeL-DtZ7vvbanDFHy",
+                      "name": "AccMiniState_Cal_From_Text"
+                    },
+                    {
+                      "id": "1pp8NgB0S8sJcXRYY9v0G",
+                      "name": "AccMiniState_Cal_Midline_View"
+                    },
+                    {
+                      "id": "ZdgL4GwYItkJQby47elUk",
+                      "name": "AccMiniState_Cal_From_Icon_View"
+                    },
+                    {
+                      "id": "-FBre3zZs7VUFvIfH0hI9",
+                      "name": "AccMiniState_Cal_To_Text"
+                    },
+                    {
+                      "id": "LCQlf5oBWQNkhGxn6IGZz",
+                      "name": "AccMiniState_Cal_To_Icon_View"
+                    },
+                    {
+                      "id": "jV7LgxD4-HtshlFFdz6JO",
+                      "name": "AccMiniState_Cal_SelectFromDate_Text"
+                    },
+                    {
+                      "id": "oqOxICM6mapbie9efxW-a",
+                      "name": "AccMiniState_Cal_SelectToDate_Text"
+                    }
+                  ],
+                  "componentId": [
+                    "dnwGCNoZb806iN_IytsbY",
+                    "JabjatpO76LZs9jtjT7rh",
+                    "uTXKIeL-DtZ7vvbanDFHy",
+                    "1pp8NgB0S8sJcXRYY9v0G",
+                    "ZdgL4GwYItkJQby47elUk",
+                    "-FBre3zZs7VUFvIfH0hI9",
+                    "LCQlf5oBWQNkhGxn6IGZz",
+                    "jV7LgxD4-HtshlFFdz6JO",
+                    "oqOxICM6mapbie9efxW-a"
+                  ],
+                  "visibility": true
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "2O6riUUAq51L5jciFJqI0",
+                "triggerName": "MiniState_Cal_View_Show_Trig",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "32ggKeC18iXbc5YMqDyQY",
+                  "component": [
+                    {
+                      "id": "dnwGCNoZb806iN_IytsbY",
+                      "name": "AccMiniState_Cal_View"
+                    },
+                    {
+                      "id": "JabjatpO76LZs9jtjT7rh",
+                      "name": "AccMiniState_Cal_StatementRequest_Text"
+                    },
+                    {
+                      "id": "uTXKIeL-DtZ7vvbanDFHy",
+                      "name": "AccMiniState_Cal_From_Text"
+                    },
+                    {
+                      "id": "1pp8NgB0S8sJcXRYY9v0G",
+                      "name": "AccMiniState_Cal_Midline_View"
+                    },
+                    {
+                      "id": "ZdgL4GwYItkJQby47elUk",
+                      "name": "AccMiniState_Cal_From_Icon_View"
+                    },
+                    {
+                      "id": "-FBre3zZs7VUFvIfH0hI9",
+                      "name": "AccMiniState_Cal_To_Text"
+                    },
+                    {
+                      "id": "LCQlf5oBWQNkhGxn6IGZz",
+                      "name": "AccMiniState_Cal_To_Icon_View"
+                    },
+                    {
+                      "id": "jV7LgxD4-HtshlFFdz6JO",
+                      "name": "AccMiniState_Cal_SelectFromDate_Text"
+                    },
+                    {
+                      "id": "oqOxICM6mapbie9efxW-a",
+                      "name": "AccMiniState_Cal_SelectToDate_Text"
+                    }
+                  ],
+                  "componentId": [
+                    "dnwGCNoZb806iN_IytsbY",
+                    "JabjatpO76LZs9jtjT7rh",
+                    "uTXKIeL-DtZ7vvbanDFHy",
+                    "1pp8NgB0S8sJcXRYY9v0G",
+                    "ZdgL4GwYItkJQby47elUk",
+                    "-FBre3zZs7VUFvIfH0hI9",
+                    "LCQlf5oBWQNkhGxn6IGZz",
+                    "jV7LgxD4-HtshlFFdz6JO",
+                    "oqOxICM6mapbie9efxW-a"
+                  ],
+                  "visibility": true
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-25",
+            "edit": true
           },
           {
-            "id": "p2VX1KcIbzPjBuNdi6io8",
+            "id": "jVMalrqm62mDfAJ3sV4hQ",
             "type": "VLIST",
-            "name": "MiniState_Main_Vlist",
-            "component": { "content": "List view", "type": "VLIST" },
+            "name": "Samm_Vlistt",
+            "component": { "type": "VLIST" },
             "attributes": {
-              "name": "MiniState_Main_Vlist",
+              "name": "Samm_Vlistt",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#000000",
                 "layout_height": "match_parent",
                 "layout_width": "match_parent",
-                "rows": [{ "id": "M5q1BWJsMTA4WpBSYXYQx" }],
+                "rows": [{ "id": "pn6VjEKED-J4UrOsMpihQ" }],
                 "leftToLeftOf": "32ggKeC18iXbc5YMqDyQY",
                 "rightToRightOf": "32ggKeC18iXbc5YMqDyQY",
-                "topToBottomOf": "FiFjf4vjnOFaaJHNVjHhi",
-                "bottomToBottomOf": "32ggKeC18iXbc5YMqDyQY"
+                "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-",
+                "layout_marginTop": 20
               },
-              "bindingKey": "ministate_main_list_data",
+              "bindingKey": "samvlist",
               "componentId": []
             },
             "events": [],
             "path": "0-26",
             "gridProps": [
               {
-                "id": "M5q1BWJsMTA4WpBSYXYQx",
+                "id": "pn6VjEKED-J4UrOsMpihQ",
                 "name": "List item 0",
                 "path": "0-26-0",
                 "type": "VLISTITEM",
                 "updatedTimestamp": "0000-00-00T00:00:00+00:00",
                 "gridProps": [
                   {
-                    "id": "yuodx45LZi0tLhY3EpbdY",
+                    "id": "aF-Cz2k0iUm_f8Dhqb04-",
                     "status": "ACTIVE",
-                    "name": "MiniState_Vlistitem_View",
+                    "name": "samvlist_view",
                     "attributes": {
-                      "name": "MiniState_Vlistitem_View",
+                      "name": "samvlist_view",
                       "layoutProperties": {
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
                         "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
-                        "background": "#FFFFFF",
-                        "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-                        "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-                        "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-                        "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+                        "background": "#1C6030",
+                        "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+                        "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+                        "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+                        "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
                       }
                     },
                     "icon": "FaTabletAlt",
@@ -2426,223 +2531,40 @@
                     "path": "0-26-0-0"
                   },
                   {
-                    "id": "ribN2p1hOOqz81H3wIdVj",
+                    "id": "5GrVC49wSMMbep4-Ry2L4",
                     "status": "ACTIVE",
-                    "name": "MiniState_Vlistitem_Date_View",
+                    "name": "Text view",
                     "attributes": {
-                      "name": "MiniState_Vlistitem_Date_View",
+                      "name": "samvlist_text",
                       "layoutProperties": {
-                        "name": "View",
-                        "layout_width": "45",
-                        "layout_height": "65",
-                        "borderColor": "#EAF0F7",
-                        "borderWidth": 2,
-                        "cornerRadius": [10, 10, 10, 10],
-                        "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-                        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                        "shadowOpacity": 0.2,
-                        "shadowThickness": 4,
-                        "shadowColor": "#000000",
-                        "elevation": 19,
-                        "layout_marginTop": 18,
-                        "layout_marginLeft": 10
-                      }
+                        "textSize": 16,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#ffffff",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                        "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                        "layout_marginLeft": 20,
+                        "layout_marginTop": 20,
+                        "textStyle": "regular",
+                        "textAlignment": "left"
+                      },
+                      "bindingKey": "samvlisttext"
                     },
-                    "icon": "FaTabletAlt",
+                    "icon": "FaTextWidth",
                     "group": "Form",
-                    "type": "VIEW",
+                    "type": "TEXTVIEW",
                     "updatedAt": "23-Aug-2021",
                     "createdAt": "23-Aug-2021",
                     "order": 20,
                     "version": "1.0.0",
                     "isLatest": true,
                     "projectType": "mobile",
-                    "component": { "content": "View", "type": "VIEW" },
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
                     "path": "0-26-0-1"
-                  },
-                  {
-                    "id": "uOELe38P-ZhUXLK5LLhaT",
-                    "status": "ACTIVE",
-                    "name": "MiniState_Vlstitem_Date_Text",
-                    "attributes": {
-                      "name": "MiniState_Vlstitem_Date_Text",
-                      "layoutProperties": {
-                        "textSize": 12,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#000000",
-                        "text": "Start Now",
-                        "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                        "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-                        "layout_marginTop": 4,
-                        "layout_marginLeft": 0,
-                        "textStyle": "regular",
-                        "textAlignment": "center",
-                        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-                      },
-                      "bindingKey": "ministate_Date_data"
-                    },
-                    "icon": "FaTextWidth",
-                    "group": "Form",
-                    "type": "TEXTVIEW",
-                    "updatedAt": "23-Aug-2021",
-                    "createdAt": "23-Aug-2021",
-                    "order": 20,
-                    "version": "1.0.0",
-                    "isLatest": true,
-                    "projectType": "mobile",
-                    "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-26-0-2",
-                    "edit": true
-                  },
-                  {
-                    "id": "gSYaTZWq21Wg684ED3J26",
-                    "status": "ACTIVE",
-                    "name": "Text view",
-                    "attributes": {
-                      "name": "MiniState_Vlstitem_Date_Month_Text",
-                      "layoutProperties": {
-                        "textSize": 12,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#96C0F5",
-                        "text": "Start Now",
-                        "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                        "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-                        "layout_marginTop": 1,
-                        "textStyle": "bold",
-                        "textAlignment": "center"
-                      },
-                      "bindingKey": "ministate_Date_month_data"
-                    },
-                    "icon": "FaTextWidth",
-                    "group": "Form",
-                    "type": "TEXTVIEW",
-                    "updatedAt": "23-Aug-2021",
-                    "createdAt": "23-Aug-2021",
-                    "order": 20,
-                    "version": "1.0.0",
-                    "isLatest": true,
-                    "projectType": "mobile",
-                    "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-26-0-3"
-                  },
-                  {
-                    "id": "jcAiN8LP5u1Ag1K0hrIak",
-                    "status": "ACTIVE",
-                    "name": "Text view",
-                    "attributes": {
-                      "name": "MiniState_Vlstitem_Date_Year_Text",
-                      "layoutProperties": {
-                        "textSize": 10,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#000000",
-                        "text": "Start Now",
-                        "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                        "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-                        "layout_marginTop": 1,
-                        "textStyle": "bold",
-                        "textAlignment": "center"
-                      },
-                      "bindingKey": "ministate_Date_year_data"
-                    },
-                    "icon": "FaTextWidth",
-                    "group": "Form",
-                    "type": "TEXTVIEW",
-                    "updatedAt": "23-Aug-2021",
-                    "createdAt": "23-Aug-2021",
-                    "order": 20,
-                    "version": "1.0.0",
-                    "isLatest": true,
-                    "projectType": "mobile",
-                    "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-26-0-4"
-                  },
-                  {
-                    "id": "OndX4tAUEX04L2XXQopRl",
-                    "status": "ACTIVE",
-                    "name": "MiniState_Vlstitem_Tran_Name_Text",
-                    "attributes": {
-                      "name": "MiniState_Vlstitem_Tran_Name_Text",
-                      "layoutProperties": {
-                        "textSize": 14,
-                        "layout_width": "match_parent",
-                        "layout_height": "wrap_content",
-                        "textColor": "#1C6030",
-                        "text": "Start Now",
-                        "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 2,
-                        "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                        "layout_marginLeft": 30,
-                        "layout_marginTop": 30,
-                        "textStyle": "regular",
-                        "width_percent": 60
-                      },
-                      "bindingKey": "ministate_tran_name_data"
-                    },
-                    "icon": "FaTextWidth",
-                    "group": "Form",
-                    "type": "TEXTVIEW",
-                    "updatedAt": "23-Aug-2021",
-                    "createdAt": "23-Aug-2021",
-                    "order": 20,
-                    "version": "1.0.0",
-                    "isLatest": true,
-                    "projectType": "mobile",
-                    "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-26-0-5",
-                    "edit": true
-                  },
-                  {
-                    "id": "0RmSXV_mTN-yUECIMhHB7",
-                    "status": "ACTIVE",
-                    "name": "Text view",
-                    "attributes": {
-                      "name": "MiniState_Vlstitem_DebCreAmount_Text",
-                      "layoutProperties": {
-                        "textSize": 14,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#FF0000",
-                        "text": "Start Now",
-                        "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-                        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                        "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-                        "textStyle": "bold",
-                        "layout_marginRight": 10,
-                        "textAlignment": "right"
-                      },
-                      "bindingKey": "ministate_debcreamount_data"
-                    },
-                    "icon": "FaTextWidth",
-                    "group": "Form",
-                    "type": "TEXTVIEW",
-                    "updatedAt": "23-Aug-2021",
-                    "createdAt": "23-Aug-2021",
-                    "order": 20,
-                    "version": "1.0.0",
-                    "isLatest": true,
-                    "projectType": "mobile",
-                    "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-26-0-6"
                   }
                 ],
                 "attributes": {
@@ -2650,12 +2572,14 @@
                     "layout_height": "100",
                     "layout_width": "match_parent",
                     "cornerRadius": [0, 0, 0, 0],
+                    "layout_marginLeft": 0,
                     "background": "#FFBB00"
                   },
                   "componentId": []
                 }
               }
-            ]
+            ],
+            "edit": true
           }
         ],
         "subType": "screen",
@@ -2778,6 +2702,12 @@
       {
         "triggerId": "KwCy0_t7H3D5XEqdP6w3W",
         "triggerName": "Mini_State_All_Main_Vlist_Data_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "hYJE4v7Rj23dQ5fn74dpu",
+        "triggerName": "samvlist_data_trig",
         "name": "On Load",
         "type": "ONLOAD"
       }
@@ -3303,13 +3233,13 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "150",
+        "layout_height": "wrap_content",
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#ffffff",
         "leftToLeftOf": "FyqONwpi3_s6iUGh1ixZ_",
         "rightToRightOf": "FyqONwpi3_s6iUGh1ixZ_",
-        "topToBottomOf": "QbUM8vVKojBwIO6boGWN3"
+        "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-"
       }
     },
     "icon": "FaTabletAlt",
@@ -3323,7 +3253,8 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-17",
+    "path": "0-16",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3363,7 +3294,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-18",
+    "path": "0-17",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -3608,7 +3539,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-24",
+    "path": "0-23",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -3684,61 +3615,75 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-26",
+    "events": [
+      {
+        "triggerId": "2O6riUUAq51L5jciFJqI0",
+        "triggerName": "MiniState_Cal_View_Show_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "2O6riUUAq51L5jciFJqI0",
+        "triggerName": "MiniState_Cal_View_Show_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-25",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "p2VX1KcIbzPjBuNdi6io8",
+    "id": "jVMalrqm62mDfAJ3sV4hQ",
     "type": "VLIST",
-    "name": "MiniState_Main_Vlist",
-    "component": { "content": "List view", "type": "VLIST" },
+    "name": "Samm_Vlistt",
+    "component": { "type": "VLIST" },
     "attributes": {
-      "name": "MiniState_Main_Vlist",
+      "name": "Samm_Vlistt",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
         "background": "#000000",
         "layout_height": "match_parent",
         "layout_width": "match_parent",
-        "rows": [{ "id": "M5q1BWJsMTA4WpBSYXYQx" }],
+        "rows": [{ "id": "pn6VjEKED-J4UrOsMpihQ" }],
         "leftToLeftOf": "32ggKeC18iXbc5YMqDyQY",
         "rightToRightOf": "32ggKeC18iXbc5YMqDyQY",
-        "topToBottomOf": "FiFjf4vjnOFaaJHNVjHhi",
-        "bottomToBottomOf": "32ggKeC18iXbc5YMqDyQY"
+        "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-",
+        "layout_marginTop": 20
       },
-      "bindingKey": "ministate_main_list_data",
-      "componentId": ["M5q1BWJsMTA4WpBSYXYQx"]
+      "bindingKey": "samvlist",
+      "componentId": ["pn6VjEKED-J4UrOsMpihQ"]
     },
     "events": [],
     "path": "0-26",
     "gridProps": [
       {
-        "id": "M5q1BWJsMTA4WpBSYXYQx",
+        "id": "pn6VjEKED-J4UrOsMpihQ",
         "name": "List item 0",
         "path": "0-26-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "yuodx45LZi0tLhY3EpbdY",
+            "id": "aF-Cz2k0iUm_f8Dhqb04-",
             "status": "ACTIVE",
-            "name": "MiniState_Vlistitem_View",
+            "name": "samvlist_view",
             "attributes": {
-              "name": "MiniState_Vlistitem_View",
+              "name": "samvlist_view",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+                "background": "#1C6030",
+                "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+                "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+                "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+                "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
               }
             },
             "icon": "FaTabletAlt",
@@ -3755,223 +3700,40 @@
             "path": "0-26-0-0"
           },
           {
-            "id": "ribN2p1hOOqz81H3wIdVj",
+            "id": "5GrVC49wSMMbep4-Ry2L4",
             "status": "ACTIVE",
-            "name": "MiniState_Vlistitem_Date_View",
+            "name": "Text view",
             "attributes": {
-              "name": "MiniState_Vlistitem_Date_View",
+              "name": "samvlist_text",
               "layoutProperties": {
-                "name": "View",
-                "layout_width": "45",
-                "layout_height": "65",
-                "borderColor": "#EAF0F7",
-                "borderWidth": 2,
-                "cornerRadius": [10, 10, 10, 10],
-                "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "shadowOpacity": 0.2,
-                "shadowThickness": 4,
-                "shadowColor": "#000000",
-                "elevation": 19,
-                "layout_marginTop": 18,
-                "layout_marginLeft": 10
-              }
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "samvlisttext"
             },
-            "icon": "FaTabletAlt",
+            "icon": "FaTextWidth",
             "group": "Form",
-            "type": "VIEW",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-26-0-1"
-          },
-          {
-            "id": "uOELe38P-ZhUXLK5LLhaT",
-            "status": "ACTIVE",
-            "name": "MiniState_Vlstitem_Date_Text",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Text",
-              "layoutProperties": {
-                "textSize": 12,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-                "layout_marginTop": 4,
-                "layout_marginLeft": 0,
-                "textStyle": "regular",
-                "textAlignment": "center",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-              },
-              "bindingKey": "ministate_Date_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-2",
-            "edit": true
-          },
-          {
-            "id": "gSYaTZWq21Wg684ED3J26",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Month_Text",
-              "layoutProperties": {
-                "textSize": 12,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#96C0F5",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-                "layout_marginTop": 1,
-                "textStyle": "bold",
-                "textAlignment": "center"
-              },
-              "bindingKey": "ministate_Date_month_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-3"
-          },
-          {
-            "id": "jcAiN8LP5u1Ag1K0hrIak",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Year_Text",
-              "layoutProperties": {
-                "textSize": 10,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-                "layout_marginTop": 1,
-                "textStyle": "bold",
-                "textAlignment": "center"
-              },
-              "bindingKey": "ministate_Date_year_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-4"
-          },
-          {
-            "id": "OndX4tAUEX04L2XXQopRl",
-            "status": "ACTIVE",
-            "name": "MiniState_Vlstitem_Tran_Name_Text",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Tran_Name_Text",
-              "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "match_parent",
-                "layout_height": "wrap_content",
-                "textColor": "#1C6030",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 2,
-                "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "layout_marginLeft": 30,
-                "layout_marginTop": 30,
-                "textStyle": "regular",
-                "width_percent": 60
-              },
-              "bindingKey": "ministate_tran_name_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-5",
-            "edit": true
-          },
-          {
-            "id": "0RmSXV_mTN-yUECIMhHB7",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_DebCreAmount_Text",
-              "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#FF0000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-                "textStyle": "bold",
-                "layout_marginRight": 10,
-                "textAlignment": "right"
-              },
-              "bindingKey": "ministate_debcreamount_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-6"
           }
         ],
         "attributes": {
@@ -3979,12 +3741,14 @@
             "layout_height": "100",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
+            "layout_marginLeft": 0,
             "background": "#FFBB00"
           },
           "componentId": []
         }
       }
     ],
+    "edit": true,
     "layout": [
       {
         "id": "jZbgdaxmP6VovYxDgCNjn",
@@ -4138,6 +3902,24 @@
               ],
               "contentType": "array",
               "totalcolumns": "5"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "hYJE4v7Rj23dQ5fn74dpu",
+            "triggerName": "samvlist_data_trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "samvlist",
+              "value": [
+                { "samvlisttext": "ahned" },
+                { "samvlisttext": "sara" },
+                { "samvlisttext": "ali" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -4608,13 +4390,13 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "150",
+            "layout_height": "wrap_content",
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "FyqONwpi3_s6iUGh1ixZ_",
             "rightToRightOf": "FyqONwpi3_s6iUGh1ixZ_",
-            "topToBottomOf": "QbUM8vVKojBwIO6boGWN3"
+            "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-"
           }
         },
         "icon": "FaTabletAlt",
@@ -4628,7 +4410,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-17"
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "JabjatpO76LZs9jtjT7rh",
@@ -4664,7 +4447,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-18",
+        "path": "0-17",
         "edit": true
       },
       {
@@ -4901,7 +4684,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-24",
+        "path": "0-23",
         "edit": true
       },
       {
@@ -4969,57 +4752,181 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "2O6riUUAq51L5jciFJqI0",
+            "triggerName": "MiniState_Cal_View_Show_Trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "32ggKeC18iXbc5YMqDyQY",
+              "component": [
+                {
+                  "id": "dnwGCNoZb806iN_IytsbY",
+                  "name": "AccMiniState_Cal_View"
+                },
+                {
+                  "id": "JabjatpO76LZs9jtjT7rh",
+                  "name": "AccMiniState_Cal_StatementRequest_Text"
+                },
+                {
+                  "id": "uTXKIeL-DtZ7vvbanDFHy",
+                  "name": "AccMiniState_Cal_From_Text"
+                },
+                {
+                  "id": "1pp8NgB0S8sJcXRYY9v0G",
+                  "name": "AccMiniState_Cal_Midline_View"
+                },
+                {
+                  "id": "ZdgL4GwYItkJQby47elUk",
+                  "name": "AccMiniState_Cal_From_Icon_View"
+                },
+                {
+                  "id": "-FBre3zZs7VUFvIfH0hI9",
+                  "name": "AccMiniState_Cal_To_Text"
+                },
+                {
+                  "id": "LCQlf5oBWQNkhGxn6IGZz",
+                  "name": "AccMiniState_Cal_To_Icon_View"
+                },
+                {
+                  "id": "jV7LgxD4-HtshlFFdz6JO",
+                  "name": "AccMiniState_Cal_SelectFromDate_Text"
+                },
+                {
+                  "id": "oqOxICM6mapbie9efxW-a",
+                  "name": "AccMiniState_Cal_SelectToDate_Text"
+                }
+              ],
+              "componentId": [
+                "dnwGCNoZb806iN_IytsbY",
+                "JabjatpO76LZs9jtjT7rh",
+                "uTXKIeL-DtZ7vvbanDFHy",
+                "1pp8NgB0S8sJcXRYY9v0G",
+                "ZdgL4GwYItkJQby47elUk",
+                "-FBre3zZs7VUFvIfH0hI9",
+                "LCQlf5oBWQNkhGxn6IGZz",
+                "jV7LgxD4-HtshlFFdz6JO",
+                "oqOxICM6mapbie9efxW-a"
+              ],
+              "visibility": true
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "2O6riUUAq51L5jciFJqI0",
+            "triggerName": "MiniState_Cal_View_Show_Trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "32ggKeC18iXbc5YMqDyQY",
+              "component": [
+                {
+                  "id": "dnwGCNoZb806iN_IytsbY",
+                  "name": "AccMiniState_Cal_View"
+                },
+                {
+                  "id": "JabjatpO76LZs9jtjT7rh",
+                  "name": "AccMiniState_Cal_StatementRequest_Text"
+                },
+                {
+                  "id": "uTXKIeL-DtZ7vvbanDFHy",
+                  "name": "AccMiniState_Cal_From_Text"
+                },
+                {
+                  "id": "1pp8NgB0S8sJcXRYY9v0G",
+                  "name": "AccMiniState_Cal_Midline_View"
+                },
+                {
+                  "id": "ZdgL4GwYItkJQby47elUk",
+                  "name": "AccMiniState_Cal_From_Icon_View"
+                },
+                {
+                  "id": "-FBre3zZs7VUFvIfH0hI9",
+                  "name": "AccMiniState_Cal_To_Text"
+                },
+                {
+                  "id": "LCQlf5oBWQNkhGxn6IGZz",
+                  "name": "AccMiniState_Cal_To_Icon_View"
+                },
+                {
+                  "id": "jV7LgxD4-HtshlFFdz6JO",
+                  "name": "AccMiniState_Cal_SelectFromDate_Text"
+                },
+                {
+                  "id": "oqOxICM6mapbie9efxW-a",
+                  "name": "AccMiniState_Cal_SelectToDate_Text"
+                }
+              ],
+              "componentId": [
+                "dnwGCNoZb806iN_IytsbY",
+                "JabjatpO76LZs9jtjT7rh",
+                "uTXKIeL-DtZ7vvbanDFHy",
+                "1pp8NgB0S8sJcXRYY9v0G",
+                "ZdgL4GwYItkJQby47elUk",
+                "-FBre3zZs7VUFvIfH0hI9",
+                "LCQlf5oBWQNkhGxn6IGZz",
+                "jV7LgxD4-HtshlFFdz6JO",
+                "oqOxICM6mapbie9efxW-a"
+              ],
+              "visibility": true
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
-        "id": "p2VX1KcIbzPjBuNdi6io8",
+        "id": "jVMalrqm62mDfAJ3sV4hQ",
         "type": "VLIST",
-        "name": "MiniState_Main_Vlist",
-        "component": { "content": "List view", "type": "VLIST" },
+        "name": "Samm_Vlistt",
+        "component": { "type": "VLIST" },
         "attributes": {
-          "name": "MiniState_Main_Vlist",
+          "name": "Samm_Vlistt",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "background": "#000000",
             "layout_height": "match_parent",
             "layout_width": "match_parent",
-            "rows": [{ "id": "M5q1BWJsMTA4WpBSYXYQx" }],
+            "rows": [{ "id": "pn6VjEKED-J4UrOsMpihQ" }],
             "leftToLeftOf": "32ggKeC18iXbc5YMqDyQY",
             "rightToRightOf": "32ggKeC18iXbc5YMqDyQY",
-            "topToBottomOf": "FiFjf4vjnOFaaJHNVjHhi",
-            "bottomToBottomOf": "32ggKeC18iXbc5YMqDyQY"
+            "topToBottomOf": "d5IsxahHYX6X_ae_pf1I-",
+            "layout_marginTop": 20
           },
-          "bindingKey": "ministate_main_list_data",
+          "bindingKey": "samvlist",
           "componentId": []
         },
         "events": [],
         "path": "0-26",
         "gridProps": [
           {
-            "id": "M5q1BWJsMTA4WpBSYXYQx",
+            "id": "pn6VjEKED-J4UrOsMpihQ",
             "name": "List item 0",
             "path": "0-26-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "yuodx45LZi0tLhY3EpbdY",
+                "id": "aF-Cz2k0iUm_f8Dhqb04-",
                 "status": "ACTIVE",
-                "name": "MiniState_Vlistitem_View",
+                "name": "samvlist_view",
                 "attributes": {
-                  "name": "MiniState_Vlistitem_View",
+                  "name": "samvlist_view",
                   "layoutProperties": {
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
                     "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#FFFFFF",
-                    "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-                    "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+                    "background": "#1C6030",
+                    "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+                    "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -5036,223 +4943,40 @@
                 "path": "0-26-0-0"
               },
               {
-                "id": "ribN2p1hOOqz81H3wIdVj",
+                "id": "5GrVC49wSMMbep4-Ry2L4",
                 "status": "ACTIVE",
-                "name": "MiniState_Vlistitem_Date_View",
+                "name": "Text view",
                 "attributes": {
-                  "name": "MiniState_Vlistitem_Date_View",
+                  "name": "samvlist_text",
                   "layoutProperties": {
-                    "name": "View",
-                    "layout_width": "45",
-                    "layout_height": "65",
-                    "borderColor": "#EAF0F7",
-                    "borderWidth": 2,
-                    "cornerRadius": [10, 10, 10, 10],
-                    "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "shadowOpacity": 0.2,
-                    "shadowThickness": 4,
-                    "shadowColor": "#000000",
-                    "elevation": 19,
-                    "layout_marginTop": 18,
-                    "layout_marginLeft": 10
-                  }
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                    "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "textStyle": "regular",
+                    "textAlignment": "left"
+                  },
+                  "bindingKey": "samvlisttext"
                 },
-                "icon": "FaTabletAlt",
+                "icon": "FaTextWidth",
                 "group": "Form",
-                "type": "VIEW",
+                "type": "TEXTVIEW",
                 "updatedAt": "23-Aug-2021",
                 "createdAt": "23-Aug-2021",
                 "order": 20,
                 "version": "1.0.0",
                 "isLatest": true,
                 "projectType": "mobile",
-                "component": { "content": "View", "type": "VIEW" },
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
                 "path": "0-26-0-1"
-              },
-              {
-                "id": "uOELe38P-ZhUXLK5LLhaT",
-                "status": "ACTIVE",
-                "name": "MiniState_Vlstitem_Date_Text",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Text",
-                  "layoutProperties": {
-                    "textSize": 12,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#000000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-                    "layout_marginTop": 4,
-                    "layout_marginLeft": 0,
-                    "textStyle": "regular",
-                    "textAlignment": "center",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-                  },
-                  "bindingKey": "ministate_Date_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-2",
-                "edit": true
-              },
-              {
-                "id": "gSYaTZWq21Wg684ED3J26",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Month_Text",
-                  "layoutProperties": {
-                    "textSize": 12,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#96C0F5",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-                    "layout_marginTop": 1,
-                    "textStyle": "bold",
-                    "textAlignment": "center"
-                  },
-                  "bindingKey": "ministate_Date_month_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-3"
-              },
-              {
-                "id": "jcAiN8LP5u1Ag1K0hrIak",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Date_Year_Text",
-                  "layoutProperties": {
-                    "textSize": 10,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#000000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                    "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-                    "layout_marginTop": 1,
-                    "textStyle": "bold",
-                    "textAlignment": "center"
-                  },
-                  "bindingKey": "ministate_Date_year_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-4"
-              },
-              {
-                "id": "OndX4tAUEX04L2XXQopRl",
-                "status": "ACTIVE",
-                "name": "MiniState_Vlstitem_Tran_Name_Text",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_Tran_Name_Text",
-                  "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "match_parent",
-                    "layout_height": "wrap_content",
-                    "textColor": "#1C6030",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 2,
-                    "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "layout_marginLeft": 30,
-                    "layout_marginTop": 30,
-                    "textStyle": "regular",
-                    "width_percent": 60
-                  },
-                  "bindingKey": "ministate_tran_name_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-5",
-                "edit": true
-              },
-              {
-                "id": "0RmSXV_mTN-yUECIMhHB7",
-                "status": "ACTIVE",
-                "name": "Text view",
-                "attributes": {
-                  "name": "MiniState_Vlstitem_DebCreAmount_Text",
-                  "layoutProperties": {
-                    "textSize": 14,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#FF0000",
-                    "text": "Start Now",
-                    "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-                    "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                    "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-                    "textStyle": "bold",
-                    "layout_marginRight": 10,
-                    "textAlignment": "right"
-                  },
-                  "bindingKey": "ministate_debcreamount_data"
-                },
-                "icon": "FaTextWidth",
-                "group": "Form",
-                "type": "TEXTVIEW",
-                "updatedAt": "23-Aug-2021",
-                "createdAt": "23-Aug-2021",
-                "order": 20,
-                "version": "1.0.0",
-                "isLatest": true,
-                "projectType": "mobile",
-                "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-26-0-6"
               }
             ],
             "attributes": {
@@ -5260,12 +4984,14 @@
                 "layout_height": "100",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
+                "layout_marginLeft": 0,
                 "background": "#FFBB00"
               },
               "componentId": []
             }
           }
-        ]
+        ],
+        "edit": true
       }
     ],
     "subType": "component",
@@ -5275,29 +5001,29 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "M5q1BWJsMTA4WpBSYXYQx",
+    "id": "pn6VjEKED-J4UrOsMpihQ",
     "name": "List item 0",
     "path": "0-26-0",
     "type": "VLISTITEM",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00",
     "gridProps": [
       {
-        "id": "yuodx45LZi0tLhY3EpbdY",
+        "id": "aF-Cz2k0iUm_f8Dhqb04-",
         "status": "ACTIVE",
-        "name": "MiniState_Vlistitem_View",
+        "name": "samvlist_view",
         "attributes": {
-          "name": "MiniState_Vlistitem_View",
+          "name": "samvlist_view",
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-            "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-            "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-            "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+            "background": "#1C6030",
+            "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+            "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+            "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+            "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
           }
         },
         "icon": "FaTabletAlt",
@@ -5314,223 +5040,40 @@
         "path": "0-26-0-0"
       },
       {
-        "id": "ribN2p1hOOqz81H3wIdVj",
+        "id": "5GrVC49wSMMbep4-Ry2L4",
         "status": "ACTIVE",
-        "name": "MiniState_Vlistitem_Date_View",
+        "name": "Text view",
         "attributes": {
-          "name": "MiniState_Vlistitem_Date_View",
+          "name": "samvlist_text",
           "layoutProperties": {
-            "name": "View",
-            "layout_width": "45",
-            "layout_height": "65",
-            "borderColor": "#EAF0F7",
-            "borderWidth": 2,
-            "cornerRadius": [10, 10, 10, 10],
-            "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-            "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-            "shadowOpacity": 0.2,
-            "shadowThickness": 4,
-            "shadowColor": "#000000",
-            "elevation": 19,
-            "layout_marginTop": 18,
-            "layout_marginLeft": 10
-          }
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+            "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          },
+          "bindingKey": "samvlisttext"
         },
-        "icon": "FaTabletAlt",
+        "icon": "FaTextWidth",
         "group": "Form",
-        "type": "VIEW",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-26-0-1"
-      },
-      {
-        "id": "uOELe38P-ZhUXLK5LLhaT",
-        "status": "ACTIVE",
-        "name": "MiniState_Vlstitem_Date_Text",
-        "attributes": {
-          "name": "MiniState_Vlstitem_Date_Text",
-          "layoutProperties": {
-            "textSize": 12,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-            "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-            "layout_marginTop": 4,
-            "layout_marginLeft": 0,
-            "textStyle": "regular",
-            "textAlignment": "center",
-            "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-          },
-          "bindingKey": "ministate_Date_data"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26-0-2",
-        "edit": true
-      },
-      {
-        "id": "gSYaTZWq21Wg684ED3J26",
-        "status": "ACTIVE",
-        "name": "Text view",
-        "attributes": {
-          "name": "MiniState_Vlstitem_Date_Month_Text",
-          "layoutProperties": {
-            "textSize": 12,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#96C0F5",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-            "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-            "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-            "layout_marginTop": 1,
-            "textStyle": "bold",
-            "textAlignment": "center"
-          },
-          "bindingKey": "ministate_Date_month_data"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26-0-3"
-      },
-      {
-        "id": "jcAiN8LP5u1Ag1K0hrIak",
-        "status": "ACTIVE",
-        "name": "Text view",
-        "attributes": {
-          "name": "MiniState_Vlstitem_Date_Year_Text",
-          "layoutProperties": {
-            "textSize": 10,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-            "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-            "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-            "layout_marginTop": 1,
-            "textStyle": "bold",
-            "textAlignment": "center"
-          },
-          "bindingKey": "ministate_Date_year_data"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26-0-4"
-      },
-      {
-        "id": "OndX4tAUEX04L2XXQopRl",
-        "status": "ACTIVE",
-        "name": "MiniState_Vlstitem_Tran_Name_Text",
-        "attributes": {
-          "name": "MiniState_Vlstitem_Tran_Name_Text",
-          "layoutProperties": {
-            "textSize": 14,
-            "layout_width": "match_parent",
-            "layout_height": "wrap_content",
-            "textColor": "#1C6030",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 2,
-            "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-            "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-            "layout_marginLeft": 30,
-            "layout_marginTop": 30,
-            "textStyle": "regular",
-            "width_percent": 60
-          },
-          "bindingKey": "ministate_tran_name_data"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26-0-5",
-        "edit": true
-      },
-      {
-        "id": "0RmSXV_mTN-yUECIMhHB7",
-        "status": "ACTIVE",
-        "name": "Text view",
-        "attributes": {
-          "name": "MiniState_Vlstitem_DebCreAmount_Text",
-          "layoutProperties": {
-            "textSize": 14,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#FF0000",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-            "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-            "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-            "textStyle": "bold",
-            "layout_marginRight": 10,
-            "textAlignment": "right"
-          },
-          "bindingKey": "ministate_debcreamount_data"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26-0-6"
       }
     ],
     "attributes": {
@@ -5538,43 +5081,36 @@
         "layout_height": "100",
         "layout_width": "match_parent",
         "cornerRadius": [0, 0, 0, 0],
+        "layout_marginLeft": 0,
         "background": "#FFBB00"
       },
-      "componentId": [
-        "yuodx45LZi0tLhY3EpbdY",
-        "ribN2p1hOOqz81H3wIdVj",
-        "uOELe38P-ZhUXLK5LLhaT",
-        "gSYaTZWq21Wg684ED3J26",
-        "jcAiN8LP5u1Ag1K0hrIak",
-        "OndX4tAUEX04L2XXQopRl",
-        "0RmSXV_mTN-yUECIMhHB7"
-      ]
+      "componentId": ["aF-Cz2k0iUm_f8Dhqb04-", "5GrVC49wSMMbep4-Ry2L4"]
     },
     "layout": [
       {
-        "id": "M5q1BWJsMTA4WpBSYXYQx",
+        "id": "pn6VjEKED-J4UrOsMpihQ",
         "name": "List item 0",
         "path": "0-26-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "yuodx45LZi0tLhY3EpbdY",
+            "id": "aF-Cz2k0iUm_f8Dhqb04-",
             "status": "ACTIVE",
-            "name": "MiniState_Vlistitem_View",
+            "name": "samvlist_view",
             "attributes": {
-              "name": "MiniState_Vlistitem_View",
+              "name": "samvlist_view",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-                "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+                "background": "#1C6030",
+                "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+                "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+                "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+                "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
               }
             },
             "icon": "FaTabletAlt",
@@ -5591,223 +5127,40 @@
             "path": "0-26-0-0"
           },
           {
-            "id": "ribN2p1hOOqz81H3wIdVj",
+            "id": "5GrVC49wSMMbep4-Ry2L4",
             "status": "ACTIVE",
-            "name": "MiniState_Vlistitem_Date_View",
+            "name": "Text view",
             "attributes": {
-              "name": "MiniState_Vlistitem_Date_View",
+              "name": "samvlist_text",
               "layoutProperties": {
-                "name": "View",
-                "layout_width": "45",
-                "layout_height": "65",
-                "borderColor": "#EAF0F7",
-                "borderWidth": 2,
-                "cornerRadius": [10, 10, 10, 10],
-                "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "shadowOpacity": 0.2,
-                "shadowThickness": 4,
-                "shadowColor": "#000000",
-                "elevation": 19,
-                "layout_marginTop": 18,
-                "layout_marginLeft": 10
-              }
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "samvlisttext"
             },
-            "icon": "FaTabletAlt",
+            "icon": "FaTextWidth",
             "group": "Form",
-            "type": "VIEW",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-26-0-1"
-          },
-          {
-            "id": "uOELe38P-ZhUXLK5LLhaT",
-            "status": "ACTIVE",
-            "name": "MiniState_Vlstitem_Date_Text",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Text",
-              "layoutProperties": {
-                "textSize": 12,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-                "layout_marginTop": 4,
-                "layout_marginLeft": 0,
-                "textStyle": "regular",
-                "textAlignment": "center",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-              },
-              "bindingKey": "ministate_Date_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-2",
-            "edit": true
-          },
-          {
-            "id": "gSYaTZWq21Wg684ED3J26",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Month_Text",
-              "layoutProperties": {
-                "textSize": 12,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#96C0F5",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-                "layout_marginTop": 1,
-                "textStyle": "bold",
-                "textAlignment": "center"
-              },
-              "bindingKey": "ministate_Date_month_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-3"
-          },
-          {
-            "id": "jcAiN8LP5u1Ag1K0hrIak",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Date_Year_Text",
-              "layoutProperties": {
-                "textSize": 10,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-                "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-                "layout_marginTop": 1,
-                "textStyle": "bold",
-                "textAlignment": "center"
-              },
-              "bindingKey": "ministate_Date_year_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-4"
-          },
-          {
-            "id": "OndX4tAUEX04L2XXQopRl",
-            "status": "ACTIVE",
-            "name": "MiniState_Vlstitem_Tran_Name_Text",
-            "attributes": {
-              "name": "MiniState_Vlstitem_Tran_Name_Text",
-              "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "match_parent",
-                "layout_height": "wrap_content",
-                "textColor": "#1C6030",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 2,
-                "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "layout_marginLeft": 30,
-                "layout_marginTop": 30,
-                "textStyle": "regular",
-                "width_percent": 60
-              },
-              "bindingKey": "ministate_tran_name_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-5",
-            "edit": true
-          },
-          {
-            "id": "0RmSXV_mTN-yUECIMhHB7",
-            "status": "ACTIVE",
-            "name": "Text view",
-            "attributes": {
-              "name": "MiniState_Vlstitem_DebCreAmount_Text",
-              "layoutProperties": {
-                "textSize": 14,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#FF0000",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-                "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-                "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-                "textStyle": "bold",
-                "layout_marginRight": 10,
-                "textAlignment": "right"
-              },
-              "bindingKey": "ministate_debcreamount_data"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26-0-6"
           }
         ],
         "attributes": {
@@ -5815,6 +5168,7 @@
             "layout_height": "100",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
+            "layout_marginLeft": 0,
             "background": "#FFBB00"
           },
           "componentId": []
@@ -5827,22 +5181,22 @@
     "gitBranchName": "master"
   },
   {
-    "id": "yuodx45LZi0tLhY3EpbdY",
+    "id": "aF-Cz2k0iUm_f8Dhqb04-",
     "status": "ACTIVE",
-    "name": "MiniState_Vlistitem_View",
+    "name": "samvlist_view",
     "attributes": {
-      "name": "MiniState_Vlistitem_View",
+      "name": "samvlist_view",
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
-        "background": "#FFFFFF",
-        "leftToLeftOf": "M5q1BWJsMTA4WpBSYXYQx",
-        "rightToRightOf": "M5q1BWJsMTA4WpBSYXYQx",
-        "topToTopOf": "M5q1BWJsMTA4WpBSYXYQx",
-        "bottomToBottomOf": "M5q1BWJsMTA4WpBSYXYQx"
+        "background": "#1C6030",
+        "leftToLeftOf": "pn6VjEKED-J4UrOsMpihQ",
+        "rightToRightOf": "pn6VjEKED-J4UrOsMpihQ",
+        "topToTopOf": "pn6VjEKED-J4UrOsMpihQ",
+        "bottomToBottomOf": "pn6VjEKED-J4UrOsMpihQ"
       }
     },
     "icon": "FaTabletAlt",
@@ -5863,243 +5217,40 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "ribN2p1hOOqz81H3wIdVj",
+    "id": "5GrVC49wSMMbep4-Ry2L4",
     "status": "ACTIVE",
-    "name": "MiniState_Vlistitem_Date_View",
+    "name": "Text view",
     "attributes": {
-      "name": "MiniState_Vlistitem_Date_View",
+      "name": "samvlist_text",
       "layoutProperties": {
-        "name": "View",
-        "layout_width": "45",
-        "layout_height": "65",
-        "borderColor": "#EAF0F7",
-        "borderWidth": 2,
-        "cornerRadius": [10, 10, 10, 10],
-        "leftToLeftOf": "yuodx45LZi0tLhY3EpbdY",
-        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-        "shadowOpacity": 0.2,
-        "shadowThickness": 4,
-        "shadowColor": "#000000",
-        "elevation": 19,
-        "layout_marginTop": 18,
-        "layout_marginLeft": 10
-      }
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "aF-Cz2k0iUm_f8Dhqb04-",
+        "topToTopOf": "aF-Cz2k0iUm_f8Dhqb04-",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      },
+      "bindingKey": "samvlisttext"
     },
-    "icon": "FaTabletAlt",
+    "icon": "FaTextWidth",
     "group": "Form",
-    "type": "VIEW",
+    "type": "TEXTVIEW",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-26-0-1",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "uOELe38P-ZhUXLK5LLhaT",
-    "status": "ACTIVE",
-    "name": "MiniState_Vlstitem_Date_Text",
-    "attributes": {
-      "name": "MiniState_Vlstitem_Date_Text",
-      "layoutProperties": {
-        "textSize": 12,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-        "topToTopOf": "ribN2p1hOOqz81H3wIdVj",
-        "layout_marginTop": 4,
-        "layout_marginLeft": 0,
-        "textStyle": "regular",
-        "textAlignment": "center",
-        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj"
-      },
-      "bindingKey": "ministate_Date_data"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-26-0-2",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "gSYaTZWq21Wg684ED3J26",
-    "status": "ACTIVE",
-    "name": "Text view",
-    "attributes": {
-      "name": "MiniState_Vlstitem_Date_Month_Text",
-      "layoutProperties": {
-        "textSize": 12,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#96C0F5",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-        "topToBottomOf": "uOELe38P-ZhUXLK5LLhaT",
-        "layout_marginTop": 1,
-        "textStyle": "bold",
-        "textAlignment": "center"
-      },
-      "bindingKey": "ministate_Date_month_data"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-26-0-3",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "jcAiN8LP5u1Ag1K0hrIak",
-    "status": "ACTIVE",
-    "name": "Text view",
-    "attributes": {
-      "name": "MiniState_Vlstitem_Date_Year_Text",
-      "layoutProperties": {
-        "textSize": 10,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "ribN2p1hOOqz81H3wIdVj",
-        "rightToRightOf": "ribN2p1hOOqz81H3wIdVj",
-        "topToBottomOf": "gSYaTZWq21Wg684ED3J26",
-        "layout_marginTop": 1,
-        "textStyle": "bold",
-        "textAlignment": "center"
-      },
-      "bindingKey": "ministate_Date_year_data"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-26-0-4",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "OndX4tAUEX04L2XXQopRl",
-    "status": "ACTIVE",
-    "name": "MiniState_Vlstitem_Tran_Name_Text",
-    "attributes": {
-      "name": "MiniState_Vlstitem_Tran_Name_Text",
-      "layoutProperties": {
-        "textSize": 14,
-        "layout_width": "match_parent",
-        "layout_height": "wrap_content",
-        "textColor": "#1C6030",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 2,
-        "leftToRightOf": "ribN2p1hOOqz81H3wIdVj",
-        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-        "layout_marginLeft": 30,
-        "layout_marginTop": 30,
-        "textStyle": "regular",
-        "width_percent": 60
-      },
-      "bindingKey": "ministate_tran_name_data"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-26-0-5",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "0RmSXV_mTN-yUECIMhHB7",
-    "status": "ACTIVE",
-    "name": "Text view",
-    "attributes": {
-      "name": "MiniState_Vlstitem_DebCreAmount_Text",
-      "layoutProperties": {
-        "textSize": 14,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#FF0000",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "rightToRightOf": "yuodx45LZi0tLhY3EpbdY",
-        "topToTopOf": "yuodx45LZi0tLhY3EpbdY",
-        "bottomToBottomOf": "yuodx45LZi0tLhY3EpbdY",
-        "textStyle": "bold",
-        "layout_marginRight": 10,
-        "textAlignment": "right"
-      },
-      "bindingKey": "ministate_debcreamount_data"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-26-0-6",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

@@ -1,0 +1,35 @@
+{
+  "id": "lK3IKa-sZZkHpUlefzpND",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "MS_HideBtn_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "fjj1zlI7U2-aCYIYdXaHF",
+              "triggerName": "MS_Cal_Show_Btn_Hide"
+            },
+            {
+              "triggerId": "wjX7PtcH-qqjgQiGPFVrE",
+              "triggerName": "MS_Cal_Components_Show_Trig"
+            }
+          ],
+          "triggerId": ["fjj1zlI7U2-aCYIYdXaHF", "wjX7PtcH-qqjgQiGPFVrE"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "YLomFPgUiBbB5mOZAx_cq",
+  "updatedAt": "5/9/2023",
+  "createdAt": "5/9/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
