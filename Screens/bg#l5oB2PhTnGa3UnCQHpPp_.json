@@ -1,11 +1,11 @@
 [
   {
-    "id": "gpBZZn7_y96-YaOmrlkv0",
-    "name": "Bg",
+    "id": "l5oB2PhTnGa3UnCQHpPp_",
+    "name": "bg",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "Bg",
+      "name": "bg",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -15,16 +15,16 @@
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navBarId": "LoEszM6lBHwcKPisXlEnP",
+        "navBarId": "JmeIpRM-zDnsN9utsXtq9",
         "navbarHeight": "wrap_content"
       },
-      "componentId": ["02I_zaVW3hX9l-GpciaZL"]
+      "componentId": ["2WFVo790T75ci020f4Ufw"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/2/2023",
-    "createdAt": "5/2/2023",
+    "updatedAt": "5/11/2023",
+    "createdAt": "5/11/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -32,23 +32,23 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "02I_zaVW3hX9l-GpciaZL",
+        "id": "2WFVo790T75ci020f4Ufw",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
-        "name": "View",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
         "attributes": {
-          "name": "View",
+          "name": "Text view",
           "layoutProperties": {
-            "name": "View",
-            "layout_width": "50",
-            "layout_height": "50",
-            "borderColor": "#9D9D9D",
-            "borderWidth": 0,
-            "cornerRadius": [0, 0, 0, 0],
-            "background": "#093959"
-          }
+            "textSize": 18,
+            "layout_width": "match_parent",
+            "layout_height": "60",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "g"
         },
-        "icon": "FaTabletAlt",
+        "icon": "FaTextWidth",
         "group": "Form",
         "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
@@ -57,7 +57,7 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-0"
       }
@@ -65,12 +65,12 @@
     "subType": "screen",
     "layout": [
       {
-        "id": "LoEszM6lBHwcKPisXlEnP",
-        "name": "HMB_Contact_Navbar",
+        "id": "JmeIpRM-zDnsN9utsXtq9",
+        "name": "HMB_Beneficiary_List_Navbar",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_Contact_Navbar",
+          "name": "Constraint Layout",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -95,12 +95,12 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "pxW2j0LDZX-HWIX1KnPEJ",
+            "id": "J84cOn0ZmbSHRrpzWBK6d",
             "status": "ACTIVE",
             "_id": "61dec691077814a0f374d9f4",
-            "name": "Contact_Navbar_View",
+            "name": "BeneList_Navbar_View",
             "attributes": {
-              "name": "Contact_Navbar_View",
+              "name": "BeneList_Navbar_View",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
@@ -108,9 +108,9 @@
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
-                "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
-                "rightToRightOf": "LoEszM6lBHwcKPisXlEnP",
-                "topToTopOf": "LoEszM6lBHwcKPisXlEnP"
+                "leftToLeftOf": "JmeIpRM-zDnsN9utsXtq9",
+                "rightToRightOf": "JmeIpRM-zDnsN9utsXtq9",
+                "topToTopOf": "JmeIpRM-zDnsN9utsXtq9"
               }
             },
             "icon": "FaTabletAlt",
@@ -127,38 +127,38 @@
             "path": "0-0"
           },
           {
-            "id": "44w1VqUcpcsfTQPpp4qNW",
+            "id": "nc1pVrhLpDfQKTd5_Mtvz",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "Back_Btn",
+            "name": "BeneList_Back_Icon",
             "attributes": {
-              "name": "Back_Btn",
+              "name": "BeneList_Back_Icon",
               "layoutProperties": {
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "layout_width": "18",
+                "layout_height": "12",
                 "cornerRadius": [0, 0, 0, 0],
-                "src": "bunNCuh-YYqLCtmyDdr_s",
-                "srcTemp": {
+                "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "64019280f00f8b3bc0aaebd1",
-                  "name": "white_arrow.png",
+                  "_id": "63f8597bbf8c983b9cc00fd5",
+                  "name": "HMB_Back.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "bunNCuh-YYqLCtmyDdr_s",
+                  "id": "1d8bk13Zt-VqOzmOlGNvr",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "white_arrow.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/white_arrow.png",
-                  "createdAt": "2023-03-03T06:24:00.545Z",
-                  "updatedAt": "2023-03-03T06:24:00.545Z",
+                  "url": "HMB_Back.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+                  "createdAt": "2023-02-24T06:30:19.246Z",
+                  "updatedAt": "2023-02-24T06:30:19.246Z",
                   "__v": 0,
-                  "uri": "white_arrow.png"
+                  "uri": "HMB_Back.png"
                 },
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "layout_marginLeft": 10
+                "leftToLeftOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "topToTopOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "bottomToBottomOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "layout_marginLeft": 10,
+                "id": "1d8bk13Zt-VqOzmOlGNvr"
               },
               "contentType": 2
             },
@@ -175,25 +175,26 @@
             "path": "0-1"
           },
           {
-            "id": "_I2qnLNyqp9RsNOVLFJUN",
+            "id": "_mike10lXM-1arz4ZGd24",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
             "name": "Text view",
             "attributes": {
-              "name": "Back_Btn_Text",
+              "name": "BeneList_FundsTransfer_Title_Text",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 22,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
-                "text": "Back",
+                "text": "Funds Transfer",
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "layout_marginLeft": 30,
-                "textAlignment": "left",
-                "textStyle": "regular"
+                "numberOfLines": 1,
+                "leftToLeftOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "rightToRightOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "topToTopOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "bottomToBottomOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "textStyle": "regular",
+                "textAlignment": "center"
               }
             },
             "icon": "FaTextWidth",
@@ -210,28 +211,42 @@
             "path": "0-2"
           },
           {
-            "id": "aIH62mjAyouiq1SGgdWm5",
+            "id": "Y7JpKgiyfmhAeev4ulVkU",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "BeneList_Navbar_Search_Icon",
             "attributes": {
-              "name": "Contact_Head_Text",
+              "name": "BeneList_Navbar_Search_Icon",
               "layoutProperties": {
-                "textSize": 22,
-                "layout_width": "100",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Contact",
+                "layout_width": "21",
+                "layout_height": "21",
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "rightToRightOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
-                "textStyle": "regular",
-                "textAlignment": "center"
-              }
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6450f14684663962546cb244",
+                  "name": "Search_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "96lufT_qkepuVZJyFFiUF",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "Search_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/Search_Icon.png",
+                  "createdAt": "2023-05-02T11:17:26.801Z",
+                  "updatedAt": "2023-05-02T11:17:26.801Z",
+                  "__v": 0,
+                  "uri": "Search_Icon.png"
+                },
+                "rightToRightOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "topToTopOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "bottomToBottomOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "layout_marginRight": 60,
+                "id": "96lufT_qkepuVZJyFFiUF"
+              },
+              "contentType": 2
             },
-            "icon": "FaTextWidth",
+            "icon": "FaRegImage",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -240,21 +255,68 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-3"
+          },
+          {
+            "id": "ZB1lHMXGmn10PuumoBor8",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "BeneList_Home_Icon",
+            "attributes": {
+              "name": "BeneList_Home_Icon",
+              "layoutProperties": {
+                "layout_width": "20",
+                "layout_height": "20",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6450f21184663962546cb2bc",
+                  "name": "Home_Icon_White.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "sdxibR7CDNQFg8MJBl-HA",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "Home_Icon_White.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/Home_Icon_White.png",
+                  "createdAt": "2023-05-02T11:20:49.750Z",
+                  "updatedAt": "2023-05-02T11:20:49.750Z",
+                  "__v": 0,
+                  "uri": "Home_Icon_White.png"
+                },
+                "rightToRightOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "topToTopOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "bottomToBottomOf": "J84cOn0ZmbSHRrpzWBK6d",
+                "layout_marginRight": 10,
+                "id": "sdxibR7CDNQFg8MJBl-HA"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-4"
           }
         ],
         "subType": "component",
         "isNavbarConstraint": true
       },
       {
-        "id": "gpBZZn7_y96-YaOmrlkv0",
-        "name": "Bg",
+        "id": "l5oB2PhTnGa3UnCQHpPp_",
+        "name": "bg",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "Bg",
+          "name": "bg",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -264,7 +326,7 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navBarId": "LoEszM6lBHwcKPisXlEnP",
+            "navBarId": "JmeIpRM-zDnsN9utsXtq9",
             "navbarHeight": "wrap_content"
           },
           "componentId": []
@@ -281,23 +343,23 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "02I_zaVW3hX9l-GpciaZL",
+            "id": "2WFVo790T75ci020f4Ufw",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "View",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
             "attributes": {
-              "name": "View",
+              "name": "Text view",
               "layoutProperties": {
-                "name": "View",
-                "layout_width": "50",
-                "layout_height": "50",
-                "borderColor": "#9D9D9D",
-                "borderWidth": 0,
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#093959"
-              }
+                "textSize": 18,
+                "layout_width": "match_parent",
+                "layout_height": "60",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "g"
             },
-            "icon": "FaTabletAlt",
+            "icon": "FaTextWidth",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -306,7 +368,7 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-0"
           }
@@ -316,29 +378,29 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
-    "_id": "gpBZZn7_y96-YaOmrlkv0",
-    "createdBy": "shaikhahmedraza",
+    "_id": "l5oB2PhTnGa3UnCQHpPp_",
+    "createdBy": "muzzamil",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "02I_zaVW3hX9l-GpciaZL",
+    "id": "2WFVo790T75ci020f4Ufw",
     "status": "ACTIVE",
-    "name": "View",
+    "name": "Text view",
     "attributes": {
-      "name": "View",
+      "name": "Text view",
       "layoutProperties": {
-        "name": "View",
-        "layout_width": "50",
-        "layout_height": "50",
-        "borderColor": "#9D9D9D",
-        "borderWidth": 0,
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#093959"
-      }
+        "textSize": 18,
+        "layout_width": "match_parent",
+        "layout_height": "60",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "bindingKey": "g"
     },
-    "icon": "FaTabletAlt",
+    "icon": "FaTextWidth",
     "group": "Form",
-    "type": "VIEW",
+    "type": "TEXTVIEW",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
@@ -346,7 +408,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "subType": "component",
-    "component": { "content": "View", "type": "VIEW" },
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-0",
     "projectId": "63ef72a290c5800428f84dd9",
