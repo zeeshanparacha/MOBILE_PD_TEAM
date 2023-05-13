@@ -1,0 +1,30 @@
+{
+  "id": "CwB0UOKyXJ60Zlzhk_R6P",
+  "name": "SI_Frequency_Hlist_Data_Trig",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "services": [
+    {
+      "type": "DATASTORAGE",
+      "command": {
+        "type": "3",
+        "attributes": {
+          "serviceName": "Update value against binding key",
+          "bindingKey": "si_frequency_data",
+          "value": [
+            { "si_frequency_text_data": "DAILY" },
+            { "si_frequency_text_data": "WEEKLY" },
+            { "si_frequency_text_data": "MONTHLY" }
+          ],
+          "contentType": "array",
+          "totalcolumns": "1"
+        }
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "iz3bqrltUXPR5uUKxweEn",
+  "updatedAt": "5/12/2023",
+  "createdAt": "5/12/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

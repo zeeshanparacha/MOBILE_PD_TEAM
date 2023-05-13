@@ -1,0 +1,37 @@
+{
+  "id": "qKfi2NADIIhmGEbMqDlS-",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "FT_PayLater_Switch_HideSHow",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "beneft_Paylater_Switch",
+          "actions": [
+            {
+              "triggerId": ["Bme7ObQn8vPviU_mLR9_y"],
+              "triggerName": "FT_PayNow_Btns_Hide",
+              "value": "false"
+            },
+            {
+              "triggerId": ["G4mTXHTCSEHgSL5G5XPlz"],
+              "triggerName": "FT_PayNow_Btns_Show",
+              "value": "true"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "8GRDaJv6Hr6YHxLopgPR4",
+  "updatedAt": "5/12/2023",
+  "createdAt": "5/12/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
