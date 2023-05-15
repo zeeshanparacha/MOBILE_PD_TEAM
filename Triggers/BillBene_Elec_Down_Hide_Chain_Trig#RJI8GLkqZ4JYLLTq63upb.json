@@ -1,0 +1,35 @@
+{
+  "id": "PhPosITKiIL1kx4GyBGEF",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "BillBene_Elec_Down_Hide_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "BMRQ9NoQU8Mn3JJPV-b1N",
+              "triggerName": "BillBene_Elec_Down_AllShow"
+            },
+            {
+              "triggerId": "lIlL2iT6iBjEeqONE_nGq",
+              "triggerName": "BillBene_Elec_Down_AllHide"
+            }
+          ],
+          "triggerId": ["BMRQ9NoQU8Mn3JJPV-b1N", "lIlL2iT6iBjEeqONE_nGq"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "RJI8GLkqZ4JYLLTq63upb",
+  "updatedAt": "5/14/2023",
+  "createdAt": "5/14/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
