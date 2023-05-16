@@ -1,0 +1,35 @@
+{
+  "id": "DfPElZwomTab4I7FQTEKK",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "MainMenu_Transfer_UpBtn_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "nGEtO7fTAQBH2RG36uTAH",
+              "triggerName": "MainMenu_Transfer_AllHide2"
+            },
+            {
+              "triggerId": "sctQL5IrY_k19IxNx98-U",
+              "triggerName": "MainMenu_Transfer_AllShow2"
+            }
+          ],
+          "triggerId": ["nGEtO7fTAQBH2RG36uTAH", "sctQL5IrY_k19IxNx98-U"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "fwqeJx8XNywGR60I9gHAf",
+  "updatedAt": "5/16/2023",
+  "createdAt": "5/16/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

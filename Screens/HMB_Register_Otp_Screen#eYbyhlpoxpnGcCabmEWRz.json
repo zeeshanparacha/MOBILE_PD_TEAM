@@ -14,7 +14,9 @@
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "V7LMsaAZOGbNaPAq3NgKq",
@@ -24,15 +26,14 @@
         "vRLK8Jk22ICo8ZzOtPf2K",
         "1u52uhy4ByB_A63HkhAHj",
         "gdFPsdwFVjU2wZt6O8axw",
-        "vPoZeogNzixUH8UyoEkkL",
-        "JKzRyN5RnKJPBN0QzQdqT"
+        "vPoZeogNzixUH8UyoEkkL"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/13/2023",
-    "createdAt": "3/13/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -42,7 +43,6 @@
       {
         "id": "V7LMsaAZOGbNaPAq3NgKq",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "RegisterOtp_EmailOtp_Text",
         "attributes": {
           "name": "RegisterOtp_EmailOtp_Text",
@@ -65,7 +65,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -80,7 +80,6 @@
       {
         "id": "rU6CbAcjNF1g-vkc-wZE1",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "EmailOtp_Input_View",
         "attributes": {
           "name": "EmailOtp_Input_View",
@@ -102,7 +101,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -117,7 +116,6 @@
       {
         "id": "17fFi6XEgRykknLgMkyAV",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "EmailOtp_Input",
         "attributes": {
           "name": "EmailOtp_Input",
@@ -145,7 +143,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -160,7 +158,6 @@
       {
         "id": "ospX5uahLQTZ0nIaYdpMj",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "SmsOtp_Text",
         "attributes": {
           "name": "SmsOtp_Text",
@@ -183,7 +180,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -198,7 +195,6 @@
       {
         "id": "vRLK8Jk22ICo8ZzOtPf2K",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "SmsOtp_Input_View",
         "attributes": {
           "name": "SmsOtp_Input_View",
@@ -220,7 +216,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -235,7 +231,6 @@
       {
         "id": "1u52uhy4ByB_A63HkhAHj",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "SmsOtp_Input",
         "attributes": {
           "name": "SmsOtp_Input",
@@ -265,7 +260,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -280,7 +275,6 @@
       {
         "id": "gdFPsdwFVjU2wZt6O8axw",
         "status": "ACTIVE",
-        "_id": "61dec753077814a0f374d9f6",
         "name": "GenerateOtp_Btn",
         "attributes": {
           "name": "GenerateOtp_Btn",
@@ -308,7 +302,7 @@
         },
         "icon": "FaBimobject",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "BUTTON",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -323,7 +317,6 @@
       {
         "id": "vPoZeogNzixUH8UyoEkkL",
         "status": "ACTIVE",
-        "_id": "61dec753077814a0f374d9f6",
         "name": "RegisterOtp_Next_Btn",
         "attributes": {
           "name": "RegisterOtp_Next_Btn",
@@ -349,7 +342,7 @@
         },
         "icon": "FaBimobject",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "BUTTON",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -360,53 +353,6 @@
         "events": [],
         "path": "0-7",
         "edit": true
-      },
-      {
-        "id": "JKzRyN5RnKJPBN0QzQdqT",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "RegisterOtp_LoadingBar",
-        "attributes": {
-          "name": "RegisterOtp_LoadingBar",
-          "layoutProperties": {
-            "layout_width": "match_parent",
-            "layout_height": "6",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": "KfOLI2HTzTvkgNGq_Ca0n",
-            "srcTemp": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "640ac5cdf00f8b3bc0ab4c79",
-              "name": "RegisterOtp_LoadingBar.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "KfOLI2HTzTvkgNGq_Ca0n",
-              "gitBranchName": "dev",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "RegisterOtp_LoadingBar.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/RegisterOtp_LoadingBar.png",
-              "createdAt": "2023-03-10T05:53:17.504Z",
-              "updatedAt": "2023-03-10T05:53:17.504Z",
-              "__v": 0,
-              "uri": "RegisterOtp_LoadingBar.png"
-            },
-            "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
-            "rightToRightOf": "eYbyhlpoxpnGcCabmEWRz",
-            "topToTopOf": "eYbyhlpoxpnGcCabmEWRz"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-8"
       }
     ],
     "subType": "screen",
@@ -426,7 +372,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -444,7 +392,6 @@
           {
             "id": "V7LMsaAZOGbNaPAq3NgKq",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "RegisterOtp_EmailOtp_Text",
             "attributes": {
               "name": "RegisterOtp_EmailOtp_Text",
@@ -467,7 +414,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -482,7 +429,6 @@
           {
             "id": "rU6CbAcjNF1g-vkc-wZE1",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "EmailOtp_Input_View",
             "attributes": {
               "name": "EmailOtp_Input_View",
@@ -504,7 +450,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -519,7 +465,6 @@
           {
             "id": "17fFi6XEgRykknLgMkyAV",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "EmailOtp_Input",
             "attributes": {
               "name": "EmailOtp_Input",
@@ -547,7 +492,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -562,7 +507,6 @@
           {
             "id": "ospX5uahLQTZ0nIaYdpMj",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "SmsOtp_Text",
             "attributes": {
               "name": "SmsOtp_Text",
@@ -585,7 +529,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -600,7 +544,6 @@
           {
             "id": "vRLK8Jk22ICo8ZzOtPf2K",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "SmsOtp_Input_View",
             "attributes": {
               "name": "SmsOtp_Input_View",
@@ -622,7 +565,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -637,7 +580,6 @@
           {
             "id": "1u52uhy4ByB_A63HkhAHj",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "SmsOtp_Input",
             "attributes": {
               "name": "SmsOtp_Input",
@@ -667,7 +609,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -682,7 +624,6 @@
           {
             "id": "gdFPsdwFVjU2wZt6O8axw",
             "status": "ACTIVE",
-            "_id": "61dec753077814a0f374d9f6",
             "name": "GenerateOtp_Btn",
             "attributes": {
               "name": "GenerateOtp_Btn",
@@ -710,7 +651,7 @@
             },
             "icon": "FaBimobject",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "BUTTON",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -725,7 +666,6 @@
           {
             "id": "vPoZeogNzixUH8UyoEkkL",
             "status": "ACTIVE",
-            "_id": "61dec753077814a0f374d9f6",
             "name": "RegisterOtp_Next_Btn",
             "attributes": {
               "name": "RegisterOtp_Next_Btn",
@@ -751,7 +691,7 @@
             },
             "icon": "FaBimobject",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "BUTTON",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -762,60 +702,13 @@
             "events": [],
             "path": "0-7",
             "edit": true
-          },
-          {
-            "id": "JKzRyN5RnKJPBN0QzQdqT",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "RegisterOtp_LoadingBar",
-            "attributes": {
-              "name": "RegisterOtp_LoadingBar",
-              "layoutProperties": {
-                "layout_width": "match_parent",
-                "layout_height": "6",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": "KfOLI2HTzTvkgNGq_Ca0n",
-                "srcTemp": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "640ac5cdf00f8b3bc0ab4c79",
-                  "name": "RegisterOtp_LoadingBar.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "KfOLI2HTzTvkgNGq_Ca0n",
-                  "gitBranchName": "dev",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "RegisterOtp_LoadingBar.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/RegisterOtp_LoadingBar.png",
-                  "createdAt": "2023-03-10T05:53:17.504Z",
-                  "updatedAt": "2023-03-10T05:53:17.504Z",
-                  "__v": 0,
-                  "uri": "RegisterOtp_LoadingBar.png"
-                },
-                "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
-                "rightToRightOf": "eYbyhlpoxpnGcCabmEWRz",
-                "topToTopOf": "eYbyhlpoxpnGcCabmEWRz"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-8"
           }
         ],
         "subType": "screen"
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "_id": "eYbyhlpoxpnGcCabmEWRz",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -858,7 +751,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -898,7 +791,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -944,7 +837,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -985,7 +878,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1025,7 +918,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1073,7 +966,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1119,7 +1012,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1163,57 +1056,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "JKzRyN5RnKJPBN0QzQdqT",
-    "status": "ACTIVE",
-    "name": "RegisterOtp_LoadingBar",
-    "attributes": {
-      "name": "RegisterOtp_LoadingBar",
-      "layoutProperties": {
-        "layout_width": "match_parent",
-        "layout_height": "6",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": "KfOLI2HTzTvkgNGq_Ca0n",
-        "srcTemp": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "640ac5cdf00f8b3bc0ab4c79",
-          "name": "RegisterOtp_LoadingBar.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "KfOLI2HTzTvkgNGq_Ca0n",
-          "gitBranchName": "dev",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "RegisterOtp_LoadingBar.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/RegisterOtp_LoadingBar.png",
-          "createdAt": "2023-03-10T05:53:17.504Z",
-          "updatedAt": "2023-03-10T05:53:17.504Z",
-          "__v": 0,
-          "uri": "RegisterOtp_LoadingBar.png"
-        },
-        "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
-        "rightToRightOf": "eYbyhlpoxpnGcCabmEWRz",
-        "topToTopOf": "eYbyhlpoxpnGcCabmEWRz"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-8",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

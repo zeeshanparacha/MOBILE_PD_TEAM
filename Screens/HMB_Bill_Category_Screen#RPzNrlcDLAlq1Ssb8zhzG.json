@@ -1,0 +1,1659 @@
+[
+  {
+    "id": "RPzNrlcDLAlq1Ssb8zhzG",
+    "name": "HMB_Bill_Category_Screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "HMB_Bill_Category_Screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#FFFFFF",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": [
+        "B0bWELdNBS41MI8TX7WMa",
+        "bCTtV1tXcLYgIT9kVToKW",
+        "zCjsMVZsEEJ87AbuFoKWw"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "5/16/2023",
+    "createdAt": "5/16/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "B0bWELdNBS41MI8TX7WMa",
+        "status": "ACTIVE",
+        "name": "BillCat_SearchBar_View",
+        "attributes": {
+          "name": "BillCat_SearchBar_View",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "50",
+            "cornerRadius": [0, 0, 0, 0],
+            "textSize": 16,
+            "searchComponentId": "RPzNrlcDLAlq1Ssb8zhzG",
+            "placeHolderText": "Search",
+            "bindingKey": "billcat_glist",
+            "imgAsset": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            },
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "placeHolderTextSize": 16,
+            "layout_marginTop": 20,
+            "layout_marginRight": 10,
+            "layout_marginLeft": 10,
+            "textColor": "#000000",
+            "placeHolderTextColor": "#A6A8A4",
+            "assetId": "0YHVpR9LJqx6UWKo0NH7E",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            }
+          },
+          "validation": [],
+          "searchKey": "billcat_glist"
+        },
+        "icon": "FaSearchengin",
+        "group": "Advanced",
+        "type": "SEARCHBAR",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+        "path": "0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "bCTtV1tXcLYgIT9kVToKW",
+        "type": "GLIST",
+        "name": "BillCat_Main_Glist",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "BillCat_Main_Glist",
+          "bindingKey": "billcat_glist_data",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 3,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "borderWidth": 0,
+            "clickable": true,
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToBottomOf": "B0bWELdNBS41MI8TX7WMa",
+            "bottomToBottomOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rows": [{ "id": "en-xK4IHU5MuKMUfolRwD" }],
+            "layout_marginTop": 10
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "en-xK4IHU5MuKMUfolRwD",
+            "name": "GLIST",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "szepG5taTfr1VaOUFyFLf",
+                "status": "ACTIVE",
+                "name": "BillCat_Main_Glistitem_View",
+                "attributes": {
+                  "name": "BillCat_Main_Glistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+                    "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+                    "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+                    "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "VIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "R3HUerNrIESnp221NrFpm",
+                "status": "ACTIVE",
+                "name": "BillCat_Glistitem_GridImg",
+                "attributes": {
+                  "name": "BillCat_Glistitem_GridImg",
+                  "layoutProperties": {
+                    "layout_width": "60",
+                    "layout_height": "60",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645e45d04e35ca4a482aba02",
+                      "name": "HMB_Bills_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "RKI0fY71awOyUi7uwL5rr",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "HMB_Bills_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+                      "createdAt": "2023-05-12T13:57:36.476Z",
+                      "updatedAt": "2023-05-12T13:57:36.476Z",
+                      "__v": 0,
+                      "uri": "HMB_Bills_Icon.png"
+                    },
+                    "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                    "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                    "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+                    "layout_marginTop": 10,
+                    "id": "RKI0fY71awOyUi7uwL5rr"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-1"
+              },
+              {
+                "id": "UIB34ksJtB5g1bnp89Roe",
+                "status": "ACTIVE",
+                "name": "Text view",
+                "attributes": {
+                  "name": "BillCat_Glistitem_CatName_Text",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                    "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                    "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+                    "layout_marginTop": 5,
+                    "textStyle": "regular",
+                    "textAlignment": "center"
+                  },
+                  "bindingKey": "billcat_catname_text"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2"
+              }
+            ],
+            "attributes": {
+              "componentId": [],
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "clickable": true
+              }
+            }
+          }
+        ],
+        "edit": true
+      },
+      {
+        "id": "zCjsMVZsEEJ87AbuFoKWw",
+        "status": "ACTIVE",
+        "name": "BillCat_Sam_Text",
+        "attributes": {
+          "name": "BillCat_Sam_Text",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "Dcd2XfLnK_BMlcFkp7CUE",
+            "triggerName": "BillCat_Glist_Data_Trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "billcat_glist_data",
+              "value": [
+                { "billcat_catname_text": "E-PAYMENTS" },
+                { "billcat_catname_text": "MOBILE PREPAID" },
+                { "billcat_catname_text": "MUTUAL FUNDS" },
+                { "billcat_catname_text": "MOBILE PREPAID" },
+                { "billcat_catname_text": "KE BILL" },
+                { "billcat_catname_text": "1 BILL" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-2",
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "RPzNrlcDLAlq1Ssb8zhzG",
+        "name": "HMB_Bill_Category_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Bill_Category_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "B0bWELdNBS41MI8TX7WMa",
+            "status": "ACTIVE",
+            "name": "BillCat_SearchBar_View",
+            "attributes": {
+              "name": "BillCat_SearchBar_View",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "cornerRadius": [0, 0, 0, 0],
+                "textSize": 16,
+                "searchComponentId": "RPzNrlcDLAlq1Ssb8zhzG",
+                "placeHolderText": "Search",
+                "bindingKey": "billcat_glist",
+                "imgAsset": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6458dfd3badaaa2d6406ae3a",
+                  "name": "searchIcon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "0YHVpR9LJqx6UWKo0NH7E",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "searchIcon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+                  "createdAt": "2023-05-08T11:41:07.519Z",
+                  "updatedAt": "2023-05-08T11:41:07.519Z",
+                  "__v": 0,
+                  "uri": "searchIcon.png"
+                },
+                "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "placeHolderTextSize": 16,
+                "layout_marginTop": 20,
+                "layout_marginRight": 10,
+                "layout_marginLeft": 10,
+                "textColor": "#000000",
+                "placeHolderTextColor": "#A6A8A4",
+                "assetId": "0YHVpR9LJqx6UWKo0NH7E",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6458dfd3badaaa2d6406ae3a",
+                  "name": "searchIcon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "0YHVpR9LJqx6UWKo0NH7E",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "searchIcon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+                  "createdAt": "2023-05-08T11:41:07.519Z",
+                  "updatedAt": "2023-05-08T11:41:07.519Z",
+                  "__v": 0,
+                  "uri": "searchIcon.png"
+                }
+              },
+              "validation": [],
+              "searchKey": "billcat_glist"
+            },
+            "icon": "FaSearchengin",
+            "group": "Advanced",
+            "type": "SEARCHBAR",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+            "path": "0-0",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "bCTtV1tXcLYgIT9kVToKW",
+            "type": "GLIST",
+            "name": "BillCat_Main_Glist",
+            "component": { "content": "Grid List View", "type": "GLIST" },
+            "attributes": {
+              "name": "BillCat_Main_Glist",
+              "bindingKey": "billcat_glist_data",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "column": 3,
+                "layout_height": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "borderWidth": 0,
+                "clickable": true,
+                "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "topToBottomOf": "B0bWELdNBS41MI8TX7WMa",
+                "bottomToBottomOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "rows": [{ "id": "en-xK4IHU5MuKMUfolRwD" }],
+                "layout_marginTop": 10
+              },
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "en-xK4IHU5MuKMUfolRwD",
+                "name": "GLIST",
+                "path": "0-1-0",
+                "type": "GLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "szepG5taTfr1VaOUFyFLf",
+                    "status": "ACTIVE",
+                    "name": "BillCat_Main_Glistitem_View",
+                    "attributes": {
+                      "name": "BillCat_Main_Glistitem_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [0, 0, 0, 0],
+                        "background": "#FFFFFF",
+                        "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+                        "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+                        "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+                        "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "VIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-1-0-0"
+                  },
+                  {
+                    "id": "R3HUerNrIESnp221NrFpm",
+                    "status": "ACTIVE",
+                    "name": "BillCat_Glistitem_GridImg",
+                    "attributes": {
+                      "name": "BillCat_Glistitem_GridImg",
+                      "layoutProperties": {
+                        "layout_width": "60",
+                        "layout_height": "60",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "645e45d04e35ca4a482aba02",
+                          "name": "HMB_Bills_Icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "RKI0fY71awOyUi7uwL5rr",
+                          "gitBranchName": "master",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "HMB_Bills_Icon.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+                          "createdAt": "2023-05-12T13:57:36.476Z",
+                          "updatedAt": "2023-05-12T13:57:36.476Z",
+                          "__v": 0,
+                          "uri": "HMB_Bills_Icon.png"
+                        },
+                        "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                        "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                        "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+                        "layout_marginTop": 10,
+                        "id": "RKI0fY71awOyUi7uwL5rr"
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "IMAGEVIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-1-0-1"
+                  },
+                  {
+                    "id": "UIB34ksJtB5g1bnp89Roe",
+                    "status": "ACTIVE",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "BillCat_Glistitem_CatName_Text",
+                      "layoutProperties": {
+                        "textSize": 14,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                        "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                        "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+                        "layout_marginTop": 5,
+                        "textStyle": "regular",
+                        "textAlignment": "center"
+                      },
+                      "bindingKey": "billcat_catname_text"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "TEXTVIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-2"
+                  }
+                ],
+                "attributes": {
+                  "componentId": [],
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "clickable": true
+                  }
+                }
+              }
+            ],
+            "edit": true
+          },
+          {
+            "id": "zCjsMVZsEEJ87AbuFoKWw",
+            "status": "ACTIVE",
+            "name": "BillCat_Sam_Text",
+            "attributes": {
+              "name": "BillCat_Sam_Text",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "Dcd2XfLnK_BMlcFkp7CUE",
+                "triggerName": "BillCat_Glist_Data_Trig",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "billcat_glist_data",
+                  "value": [
+                    { "billcat_catname_text": "E-PAYMENTS" },
+                    { "billcat_catname_text": "MOBILE PREPAID" },
+                    { "billcat_catname_text": "MUTUAL FUNDS" },
+                    { "billcat_catname_text": "MOBILE PREPAID" },
+                    { "billcat_catname_text": "KE BILL" },
+                    { "billcat_catname_text": "1 BILL" }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "1"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-2",
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "RPzNrlcDLAlq1Ssb8zhzG",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "B0bWELdNBS41MI8TX7WMa",
+    "status": "ACTIVE",
+    "name": "BillCat_SearchBar_View",
+    "attributes": {
+      "name": "BillCat_SearchBar_View",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "50",
+        "cornerRadius": [0, 0, 0, 0],
+        "textSize": 16,
+        "searchComponentId": "RPzNrlcDLAlq1Ssb8zhzG",
+        "placeHolderText": "Search",
+        "bindingKey": "billcat_glist",
+        "imgAsset": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6458dfd3badaaa2d6406ae3a",
+          "name": "searchIcon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "0YHVpR9LJqx6UWKo0NH7E",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "searchIcon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+          "createdAt": "2023-05-08T11:41:07.519Z",
+          "updatedAt": "2023-05-08T11:41:07.519Z",
+          "__v": 0,
+          "uri": "searchIcon.png"
+        },
+        "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "placeHolderTextSize": 16,
+        "layout_marginTop": 20,
+        "layout_marginRight": 10,
+        "layout_marginLeft": 10,
+        "textColor": "#000000",
+        "placeHolderTextColor": "#A6A8A4",
+        "assetId": "0YHVpR9LJqx6UWKo0NH7E",
+        "srcTemp": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6458dfd3badaaa2d6406ae3a",
+          "name": "searchIcon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "0YHVpR9LJqx6UWKo0NH7E",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "searchIcon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+          "createdAt": "2023-05-08T11:41:07.519Z",
+          "updatedAt": "2023-05-08T11:41:07.519Z",
+          "__v": 0,
+          "uri": "searchIcon.png"
+        }
+      },
+      "validation": [],
+      "searchKey": "billcat_glist"
+    },
+    "icon": "FaSearchengin",
+    "group": "Advanced",
+    "type": "SEARCHBAR",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+    "path": "0-0",
+    "edit": true,
+    "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "bCTtV1tXcLYgIT9kVToKW",
+    "type": "GLIST",
+    "name": "BillCat_Main_Glist",
+    "component": { "content": "Grid List View", "type": "GLIST" },
+    "attributes": {
+      "name": "BillCat_Main_Glist",
+      "bindingKey": "billcat_glist_data",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "column": 3,
+        "layout_height": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "borderWidth": 0,
+        "clickable": true,
+        "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "topToBottomOf": "B0bWELdNBS41MI8TX7WMa",
+        "bottomToBottomOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "rows": [{ "id": "en-xK4IHU5MuKMUfolRwD" }],
+        "layout_marginTop": 10
+      },
+      "componentId": ["en-xK4IHU5MuKMUfolRwD"]
+    },
+    "events": [],
+    "path": "0-1",
+    "gridProps": [
+      {
+        "id": "en-xK4IHU5MuKMUfolRwD",
+        "name": "GLIST",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "szepG5taTfr1VaOUFyFLf",
+            "status": "ACTIVE",
+            "name": "BillCat_Main_Glistitem_View",
+            "attributes": {
+              "name": "BillCat_Main_Glistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+                "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+                "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+                "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "R3HUerNrIESnp221NrFpm",
+            "status": "ACTIVE",
+            "name": "BillCat_Glistitem_GridImg",
+            "attributes": {
+              "name": "BillCat_Glistitem_GridImg",
+              "layoutProperties": {
+                "layout_width": "60",
+                "layout_height": "60",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "645e45d04e35ca4a482aba02",
+                  "name": "HMB_Bills_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "RKI0fY71awOyUi7uwL5rr",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Bills_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+                  "createdAt": "2023-05-12T13:57:36.476Z",
+                  "updatedAt": "2023-05-12T13:57:36.476Z",
+                  "__v": 0,
+                  "uri": "HMB_Bills_Icon.png"
+                },
+                "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+                "layout_marginTop": 10,
+                "id": "RKI0fY71awOyUi7uwL5rr"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-1"
+          },
+          {
+            "id": "UIB34ksJtB5g1bnp89Roe",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "BillCat_Glistitem_CatName_Text",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+                "layout_marginTop": 5,
+                "textStyle": "regular",
+                "textAlignment": "center"
+              },
+              "bindingKey": "billcat_catname_text"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2"
+          }
+        ],
+        "attributes": {
+          "componentId": [],
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "clickable": true
+          }
+        }
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "B0bWELdNBS41MI8TX7WMa",
+        "status": "ACTIVE",
+        "name": "BillCat_SearchBar_View",
+        "attributes": {
+          "name": "BillCat_SearchBar_View",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "50",
+            "cornerRadius": [0, 0, 0, 0],
+            "textSize": 16,
+            "searchComponentId": "RPzNrlcDLAlq1Ssb8zhzG",
+            "placeHolderText": "Search",
+            "bindingKey": "billcat_glist",
+            "imgAsset": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            },
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "placeHolderTextSize": 16,
+            "layout_marginTop": 20,
+            "layout_marginRight": 10,
+            "layout_marginLeft": 10,
+            "textColor": "#000000",
+            "placeHolderTextColor": "#A6A8A4",
+            "assetId": "0YHVpR9LJqx6UWKo0NH7E",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            }
+          },
+          "validation": [],
+          "searchKey": "billcat_glist"
+        },
+        "icon": "FaSearchengin",
+        "group": "Advanced",
+        "type": "SEARCHBAR",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+        "path": "0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "bCTtV1tXcLYgIT9kVToKW",
+        "type": "GLIST",
+        "name": "BillCat_Main_Glist",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "BillCat_Main_Glist",
+          "bindingKey": "billcat_glist_data",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 3,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "borderWidth": 0,
+            "clickable": true,
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rightToRightOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToBottomOf": "B0bWELdNBS41MI8TX7WMa",
+            "bottomToBottomOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "rows": [{ "id": "en-xK4IHU5MuKMUfolRwD" }],
+            "layout_marginTop": 10
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "en-xK4IHU5MuKMUfolRwD",
+            "name": "GLIST",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "szepG5taTfr1VaOUFyFLf",
+                "status": "ACTIVE",
+                "name": "BillCat_Main_Glistitem_View",
+                "attributes": {
+                  "name": "BillCat_Main_Glistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+                    "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+                    "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+                    "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "VIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "R3HUerNrIESnp221NrFpm",
+                "status": "ACTIVE",
+                "name": "BillCat_Glistitem_GridImg",
+                "attributes": {
+                  "name": "BillCat_Glistitem_GridImg",
+                  "layoutProperties": {
+                    "layout_width": "60",
+                    "layout_height": "60",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645e45d04e35ca4a482aba02",
+                      "name": "HMB_Bills_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "RKI0fY71awOyUi7uwL5rr",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "HMB_Bills_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+                      "createdAt": "2023-05-12T13:57:36.476Z",
+                      "updatedAt": "2023-05-12T13:57:36.476Z",
+                      "__v": 0,
+                      "uri": "HMB_Bills_Icon.png"
+                    },
+                    "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                    "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                    "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+                    "layout_marginTop": 10,
+                    "id": "RKI0fY71awOyUi7uwL5rr"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-1"
+              },
+              {
+                "id": "UIB34ksJtB5g1bnp89Roe",
+                "status": "ACTIVE",
+                "name": "Text view",
+                "attributes": {
+                  "name": "BillCat_Glistitem_CatName_Text",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                    "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                    "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+                    "layout_marginTop": 5,
+                    "textStyle": "regular",
+                    "textAlignment": "center"
+                  },
+                  "bindingKey": "billcat_catname_text"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2"
+              }
+            ],
+            "attributes": {
+              "componentId": [],
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "clickable": true
+              }
+            }
+          }
+        ],
+        "edit": true
+      },
+      {
+        "id": "zCjsMVZsEEJ87AbuFoKWw",
+        "status": "ACTIVE",
+        "name": "BillCat_Sam_Text",
+        "attributes": {
+          "name": "BillCat_Sam_Text",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "Dcd2XfLnK_BMlcFkp7CUE",
+            "triggerName": "BillCat_Glist_Data_Trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "billcat_glist_data",
+              "value": [
+                { "billcat_catname_text": "E-PAYMENTS" },
+                { "billcat_catname_text": "MOBILE PREPAID" },
+                { "billcat_catname_text": "MUTUAL FUNDS" },
+                { "billcat_catname_text": "MOBILE PREPAID" },
+                { "billcat_catname_text": "KE BILL" },
+                { "billcat_catname_text": "1 BILL" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-2",
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "en-xK4IHU5MuKMUfolRwD",
+    "name": "GLIST",
+    "path": "0-1-0",
+    "type": "GLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "szepG5taTfr1VaOUFyFLf",
+        "status": "ACTIVE",
+        "name": "BillCat_Main_Glistitem_View",
+        "attributes": {
+          "name": "BillCat_Main_Glistitem_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+            "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+            "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+            "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-1-0-0"
+      },
+      {
+        "id": "R3HUerNrIESnp221NrFpm",
+        "status": "ACTIVE",
+        "name": "BillCat_Glistitem_GridImg",
+        "attributes": {
+          "name": "BillCat_Glistitem_GridImg",
+          "layoutProperties": {
+            "layout_width": "60",
+            "layout_height": "60",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "645e45d04e35ca4a482aba02",
+              "name": "HMB_Bills_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "RKI0fY71awOyUi7uwL5rr",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "HMB_Bills_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+              "createdAt": "2023-05-12T13:57:36.476Z",
+              "updatedAt": "2023-05-12T13:57:36.476Z",
+              "__v": 0,
+              "uri": "HMB_Bills_Icon.png"
+            },
+            "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+            "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+            "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+            "layout_marginTop": 10,
+            "id": "RKI0fY71awOyUi7uwL5rr"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "IMAGEVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-1-0-1"
+      },
+      {
+        "id": "UIB34ksJtB5g1bnp89Roe",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "BillCat_Glistitem_CatName_Text",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+            "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+            "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+            "layout_marginTop": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          },
+          "bindingKey": "billcat_catname_text"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-2"
+      }
+    ],
+    "attributes": {
+      "componentId": [
+        "szepG5taTfr1VaOUFyFLf",
+        "R3HUerNrIESnp221NrFpm",
+        "UIB34ksJtB5g1bnp89Roe"
+      ],
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent",
+        "clickable": true
+      }
+    },
+    "layout": [
+      {
+        "id": "en-xK4IHU5MuKMUfolRwD",
+        "name": "GLIST",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "szepG5taTfr1VaOUFyFLf",
+            "status": "ACTIVE",
+            "name": "BillCat_Main_Glistitem_View",
+            "attributes": {
+              "name": "BillCat_Main_Glistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+                "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+                "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+                "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "R3HUerNrIESnp221NrFpm",
+            "status": "ACTIVE",
+            "name": "BillCat_Glistitem_GridImg",
+            "attributes": {
+              "name": "BillCat_Glistitem_GridImg",
+              "layoutProperties": {
+                "layout_width": "60",
+                "layout_height": "60",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "645e45d04e35ca4a482aba02",
+                  "name": "HMB_Bills_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "RKI0fY71awOyUi7uwL5rr",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Bills_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+                  "createdAt": "2023-05-12T13:57:36.476Z",
+                  "updatedAt": "2023-05-12T13:57:36.476Z",
+                  "__v": 0,
+                  "uri": "HMB_Bills_Icon.png"
+                },
+                "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+                "layout_marginTop": 10,
+                "id": "RKI0fY71awOyUi7uwL5rr"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-1"
+          },
+          {
+            "id": "UIB34ksJtB5g1bnp89Roe",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "BillCat_Glistitem_CatName_Text",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+                "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+                "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+                "layout_marginTop": 5,
+                "textStyle": "regular",
+                "textAlignment": "center"
+              },
+              "bindingKey": "billcat_catname_text"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2"
+          }
+        ],
+        "attributes": {
+          "componentId": [],
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "clickable": true
+          }
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "szepG5taTfr1VaOUFyFLf",
+    "status": "ACTIVE",
+    "name": "BillCat_Main_Glistitem_View",
+    "attributes": {
+      "name": "BillCat_Main_Glistitem_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "leftToLeftOf": "en-xK4IHU5MuKMUfolRwD",
+        "rightToRightOf": "en-xK4IHU5MuKMUfolRwD",
+        "topToTopOf": "en-xK4IHU5MuKMUfolRwD",
+        "bottomToBottomOf": "en-xK4IHU5MuKMUfolRwD"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-1-0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "R3HUerNrIESnp221NrFpm",
+    "status": "ACTIVE",
+    "name": "BillCat_Glistitem_GridImg",
+    "attributes": {
+      "name": "BillCat_Glistitem_GridImg",
+      "layoutProperties": {
+        "layout_width": "60",
+        "layout_height": "60",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "645e45d04e35ca4a482aba02",
+          "name": "HMB_Bills_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "RKI0fY71awOyUi7uwL5rr",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "HMB_Bills_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bills_Icon.png",
+          "createdAt": "2023-05-12T13:57:36.476Z",
+          "updatedAt": "2023-05-12T13:57:36.476Z",
+          "__v": 0,
+          "uri": "HMB_Bills_Icon.png"
+        },
+        "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+        "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+        "topToTopOf": "szepG5taTfr1VaOUFyFLf",
+        "layout_marginTop": 10,
+        "id": "RKI0fY71awOyUi7uwL5rr"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-1-0-1",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "UIB34ksJtB5g1bnp89Roe",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "BillCat_Glistitem_CatName_Text",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "szepG5taTfr1VaOUFyFLf",
+        "rightToRightOf": "szepG5taTfr1VaOUFyFLf",
+        "topToBottomOf": "R3HUerNrIESnp221NrFpm",
+        "layout_marginTop": 5,
+        "textStyle": "regular",
+        "textAlignment": "center"
+      },
+      "bindingKey": "billcat_catname_text"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-2",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zCjsMVZsEEJ87AbuFoKWw",
+    "status": "ACTIVE",
+    "name": "BillCat_Sam_Text",
+    "attributes": {
+      "name": "BillCat_Sam_Text",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "topToTopOf": "RPzNrlcDLAlq1Ssb8zhzG",
+        "textStyle": "regular",
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "Dcd2XfLnK_BMlcFkp7CUE",
+        "triggerName": "BillCat_Glist_Data_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-2",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

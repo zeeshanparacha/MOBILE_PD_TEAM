@@ -15,8 +15,8 @@
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navBarId": "kfOLO8EYkqcYfWBub4BGq",
-        "navbarHeight": "wrap_content"
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "ZaQGfH-wTzPYVuZM2_ZYN",
@@ -35,15 +35,14 @@
         "sLrpKI96XQN9XcEFxc4SH",
         "ygRgbIHt04UPaGxH91jWb",
         "nH7SFl3QglfiZjMqYFoPe",
-        "ciFpgdkFbiNs_Np6dsRIo",
-        "6jH3hLT1mBfrmvte0MdIn"
+        "ciFpgdkFbiNs_Np6dsRIo"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "3/24/2023",
-    "createdAt": "3/24/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -53,7 +52,6 @@
       {
         "id": "ZaQGfH-wTzPYVuZM2_ZYN",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Register_IdType_Name",
         "attributes": {
           "name": "Register_IdType_Name",
@@ -76,7 +74,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -91,7 +89,6 @@
       {
         "id": "8b0c5_N7ErnaSOv7YzaMm",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Register_IdType_Input_View",
         "attributes": {
           "name": "Register_IdType_Input_View",
@@ -117,7 +114,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -132,7 +129,6 @@
       {
         "id": "1SXQS42eARxnb1aCDcDFz",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Register_IdType_Input_Text",
         "attributes": {
           "name": "Register_IdType_Input_Text",
@@ -156,7 +152,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -171,7 +167,6 @@
       {
         "id": "T4HCexvPhmA4k3Bc95Joy",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Register_IdType_Btmsht_Icon",
         "attributes": {
           "name": "Register_IdType_Btmsht_Icon",
@@ -179,7 +174,23 @@
             "layout_width": "30",
             "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
-            "src": "TDI6iHI2WebhM0mMtUzEc",
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "64087882f00f8b3bc0ab36d4",
+              "name": "BtmSheet_Arrow.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "TDI6iHI2WebhM0mMtUzEc",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "BtmSheet_Arrow.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
+              "createdAt": "2023-03-08T11:58:58.504Z",
+              "updatedAt": "2023-03-08T11:58:58.504Z",
+              "__v": 0,
+              "uri": "BtmSheet_Arrow.png"
+            },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
               "_id": "64087882f00f8b3bc0ab36d4",
@@ -203,13 +214,14 @@
             "layout_marginLeft": 0,
             "layout_marginRight": 20,
             "layout_marginBottom": 0,
-            "layout_marginTop": 0
+            "layout_marginTop": 0,
+            "id": "TDI6iHI2WebhM0mMtUzEc"
           },
           "contentType": 2
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -217,14 +229,13 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-3",
+        "path": "1-3",
         "edit": true,
         "events": []
       },
       {
         "id": "ADlXoSSx6qSgKdfmt3iCr",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Register_IdNum_Text",
         "attributes": {
           "name": "Register_IdNum_Text",
@@ -247,7 +258,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -262,7 +273,6 @@
       {
         "id": "trukJngGz--eYR9duuSoa",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Register_IdNum_Input_View",
         "attributes": {
           "name": "Register_IdNum_Input_View",
@@ -284,7 +294,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -299,7 +309,6 @@
       {
         "id": "gUd-aqrxkv36Px6MsmOr5",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Register_AccNum_Text",
         "attributes": {
           "name": "Register_AccNum_Text",
@@ -322,7 +331,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -337,7 +346,6 @@
       {
         "id": "PlopqjQP-LbFK7gzlPAPn",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Register_AccNum_Input_View",
         "attributes": {
           "name": "Register_AccNum_Input_View",
@@ -359,7 +367,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -374,7 +382,6 @@
       {
         "id": "BJLtynh5yJNkD6tSK_zOL",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "Register_AccNum_Input",
         "attributes": {
           "name": "Register_AccNum_Input",
@@ -402,7 +409,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -417,7 +424,6 @@
       {
         "id": "wk4b-uLdtlRkcShoSu7tI",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "Register_IdNum_Input",
         "attributes": {
           "name": "Register_IdNum_Input",
@@ -447,7 +453,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -462,7 +468,6 @@
       {
         "id": "MSw06Epy6cdYAkQlkqgkb",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Register_Email_Text",
         "attributes": {
           "name": "Register_Email_Text",
@@ -485,7 +490,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -500,7 +505,6 @@
       {
         "id": "FS__xL0CD7z4ve0WTnC15",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Register_Email_Input_View",
         "attributes": {
           "name": "Register_Email_Input_View",
@@ -522,7 +526,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -537,7 +541,6 @@
       {
         "id": "wVEzBgqJJTWmdFH2g3kP7",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "Input text",
         "attributes": {
           "name": "Register_Email_Input",
@@ -565,7 +568,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -579,7 +582,6 @@
       {
         "id": "sLrpKI96XQN9XcEFxc4SH",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
         "name": "Rgister_Mobile_Text",
         "attributes": {
           "name": "Rgister_Mobile_Text",
@@ -602,7 +604,7 @@
         },
         "icon": "FaTextWidth",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "TEXTVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -617,7 +619,6 @@
       {
         "id": "ygRgbIHt04UPaGxH91jWb",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Register_Mobile_Input_View",
         "attributes": {
           "name": "Register_Mobile_Input_View",
@@ -638,7 +639,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -653,7 +654,6 @@
       {
         "id": "nH7SFl3QglfiZjMqYFoPe",
         "status": "ACTIVE",
-        "_id": "61dec716077814a0f374d9f5",
         "name": "Input text",
         "attributes": {
           "name": "Register_Mobile_Input",
@@ -679,7 +679,7 @@
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "INPUTTEXT",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -693,7 +693,6 @@
       {
         "id": "ciFpgdkFbiNs_Np6dsRIo",
         "status": "ACTIVE",
-        "_id": "61dec753077814a0f374d9f6",
         "name": "Register_Next_Btn",
         "attributes": {
           "name": "Register_Next_Btn",
@@ -719,7 +718,7 @@
         },
         "icon": "FaBimobject",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "BUTTON",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -727,251 +726,25 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-16",
-        "edit": true
-      },
-      {
-        "id": "6jH3hLT1mBfrmvte0MdIn",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "Register_LoadingHalf_Img",
-        "attributes": {
-          "name": "Register_LoadingHalf_Img",
-          "layoutProperties": {
-            "layout_width": "match_parent",
-            "layout_height": "wrap_content",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": "RjTpBzVxhnncFhDud5aPJ",
-            "srcTemp": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "6409c358f00f8b3bc0ab4970",
-              "name": "Register_Loading_Half.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "RjTpBzVxhnncFhDud5aPJ",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "Register_Loading_Half.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/Register_Loading_Half.png",
-              "createdAt": "2023-03-09T11:30:32.760Z",
-              "updatedAt": "2023-03-09T11:30:32.760Z",
-              "__v": 0,
-              "uri": "Register_Loading_Half.png"
+        "events": [
+          {
+            "triggerId": "EYW87PQXfuOgj16bCYAX3",
+            "triggerName": "Navigate_To_RegisterOtp_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "eYbyhlpoxpnGcCabmEWRz"
             },
-            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-            "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-            "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
-            "layout_marginTop": 0
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-17",
-        "edit": true,
-        "events": []
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "1-16",
+        "edit": true
       }
     ],
     "subType": "screen",
     "layout": [
-      {
-        "id": "kfOLO8EYkqcYfWBub4BGq",
-        "name": "HMB_Registration_Navbar",
-        "icon": "FaGripHorizontal",
-        "path": "0",
-        "attributes": {
-          "name": "HMB_Registration_Navbar",
-          "layoutProperties": {
-            "orientation": "vertical",
-            "layout_width": "match_parent",
-            "layout_height": "wrap_content",
-            "statusBarColor": "#093959",
-            "background": "#F8F8F8",
-            "navBarColor": "#093959",
-            "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
-          },
-          "componentId": []
-        },
-        "group": "Layout",
-        "type": "CONSTRAINT",
-        "status": "ACTIVE",
-        "updatedAt": "2021-09-23T15:17:45.489Z",
-        "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
-        "order": 1,
-        "version": "1.0.0",
-        "isLatest": true,
-        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
-        "gridProps": [
-          {
-            "id": "uyKrTMzgF18ECvLBq0Zbq",
-            "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "Registration_Navbar_View",
-            "attributes": {
-              "name": "Registration_Navbar_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "50",
-                "borderWidth": 0,
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
-                "rightToRightOf": "kfOLO8EYkqcYfWBub4BGq",
-                "leftToLeftOf": "kfOLO8EYkqcYfWBub4BGq",
-                "topToTopOf": "kfOLO8EYkqcYfWBub4BGq"
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-0"
-          },
-          {
-            "id": "PFr1NG-Nuq26H4ajJUQB-",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "Registration_Back_Btn",
-            "attributes": {
-              "name": "Registration_Back_Btn",
-              "layoutProperties": {
-                "layout_width": "15",
-                "layout_height": "18",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": "1d8bk13Zt-VqOzmOlGNvr",
-                "srcTemp": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "63f8597bbf8c983b9cc00fd5",
-                  "name": "HMB_Back.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "1d8bk13Zt-VqOzmOlGNvr",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "HMB_Back.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
-                  "createdAt": "2023-02-24T06:30:19.246Z",
-                  "updatedAt": "2023-02-24T06:30:19.246Z",
-                  "__v": 0,
-                  "uri": "HMB_Back.png"
-                },
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "layout_marginLeft": 20
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1"
-          },
-          {
-            "id": "C8QFdNzP5GCWFrhmPLntj",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
-            "attributes": {
-              "name": "Registration_Back_Text",
-              "layoutProperties": {
-                "textSize": 13,
-                "layout_width": "50",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Back",
-                "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "layout_marginLeft": 40,
-                "textStyle": "regular",
-                "textAlignment": "left"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-2"
-          },
-          {
-            "id": "dZKmiNS8PGaiqjuDZxFGK",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
-            "attributes": {
-              "name": "Registration_Head_Text",
-              "layoutProperties": {
-                "textSize": 18,
-                "layout_width": "120",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Registration",
-                "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "rightToRightOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "topToTopOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "bottomToBottomOf": "uyKrTMzgF18ECvLBq0Zbq",
-                "layout_marginLeft": null,
-                "textStyle": "regular",
-                "textAlignment": "center"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-3"
-          }
-        ],
-        "subType": "component",
-        "isNavbarConstraint": true
-      },
       {
         "id": "LuqT0odLSGTL_5JtRzTis",
         "name": "HMB_Register_Screen",
@@ -988,8 +761,8 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navBarId": "kfOLO8EYkqcYfWBub4BGq",
-            "navbarHeight": "wrap_content"
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -1007,7 +780,6 @@
           {
             "id": "ZaQGfH-wTzPYVuZM2_ZYN",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Register_IdType_Name",
             "attributes": {
               "name": "Register_IdType_Name",
@@ -1030,7 +802,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1045,7 +817,6 @@
           {
             "id": "8b0c5_N7ErnaSOv7YzaMm",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Register_IdType_Input_View",
             "attributes": {
               "name": "Register_IdType_Input_View",
@@ -1071,7 +842,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1086,7 +857,6 @@
           {
             "id": "1SXQS42eARxnb1aCDcDFz",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Register_IdType_Input_Text",
             "attributes": {
               "name": "Register_IdType_Input_Text",
@@ -1110,7 +880,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1125,7 +895,6 @@
           {
             "id": "T4HCexvPhmA4k3Bc95Joy",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Register_IdType_Btmsht_Icon",
             "attributes": {
               "name": "Register_IdType_Btmsht_Icon",
@@ -1133,7 +902,23 @@
                 "layout_width": "30",
                 "layout_height": "30",
                 "cornerRadius": [0, 0, 0, 0],
-                "src": "TDI6iHI2WebhM0mMtUzEc",
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "64087882f00f8b3bc0ab36d4",
+                  "name": "BtmSheet_Arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "TDI6iHI2WebhM0mMtUzEc",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "BtmSheet_Arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
+                  "createdAt": "2023-03-08T11:58:58.504Z",
+                  "updatedAt": "2023-03-08T11:58:58.504Z",
+                  "__v": 0,
+                  "uri": "BtmSheet_Arrow.png"
+                },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
                   "_id": "64087882f00f8b3bc0ab36d4",
@@ -1157,13 +942,14 @@
                 "layout_marginLeft": 0,
                 "layout_marginRight": 20,
                 "layout_marginBottom": 0,
-                "layout_marginTop": 0
+                "layout_marginTop": 0,
+                "id": "TDI6iHI2WebhM0mMtUzEc"
               },
               "contentType": 2
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1171,14 +957,13 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-3",
+            "path": "1-3",
             "edit": true,
             "events": []
           },
           {
             "id": "ADlXoSSx6qSgKdfmt3iCr",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Register_IdNum_Text",
             "attributes": {
               "name": "Register_IdNum_Text",
@@ -1201,7 +986,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1216,7 +1001,6 @@
           {
             "id": "trukJngGz--eYR9duuSoa",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Register_IdNum_Input_View",
             "attributes": {
               "name": "Register_IdNum_Input_View",
@@ -1238,7 +1022,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1253,7 +1037,6 @@
           {
             "id": "gUd-aqrxkv36Px6MsmOr5",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Register_AccNum_Text",
             "attributes": {
               "name": "Register_AccNum_Text",
@@ -1276,7 +1059,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1291,7 +1074,6 @@
           {
             "id": "PlopqjQP-LbFK7gzlPAPn",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Register_AccNum_Input_View",
             "attributes": {
               "name": "Register_AccNum_Input_View",
@@ -1313,7 +1095,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1328,7 +1110,6 @@
           {
             "id": "BJLtynh5yJNkD6tSK_zOL",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "Register_AccNum_Input",
             "attributes": {
               "name": "Register_AccNum_Input",
@@ -1356,7 +1137,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1371,7 +1152,6 @@
           {
             "id": "wk4b-uLdtlRkcShoSu7tI",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "Register_IdNum_Input",
             "attributes": {
               "name": "Register_IdNum_Input",
@@ -1401,7 +1181,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1416,7 +1196,6 @@
           {
             "id": "MSw06Epy6cdYAkQlkqgkb",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Register_Email_Text",
             "attributes": {
               "name": "Register_Email_Text",
@@ -1439,7 +1218,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1454,7 +1233,6 @@
           {
             "id": "FS__xL0CD7z4ve0WTnC15",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Register_Email_Input_View",
             "attributes": {
               "name": "Register_Email_Input_View",
@@ -1476,7 +1254,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1491,7 +1269,6 @@
           {
             "id": "wVEzBgqJJTWmdFH2g3kP7",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "Input text",
             "attributes": {
               "name": "Register_Email_Input",
@@ -1519,7 +1296,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1533,7 +1310,6 @@
           {
             "id": "sLrpKI96XQN9XcEFxc4SH",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
             "name": "Rgister_Mobile_Text",
             "attributes": {
               "name": "Rgister_Mobile_Text",
@@ -1556,7 +1332,7 @@
             },
             "icon": "FaTextWidth",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "TEXTVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1571,7 +1347,6 @@
           {
             "id": "ygRgbIHt04UPaGxH91jWb",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Register_Mobile_Input_View",
             "attributes": {
               "name": "Register_Mobile_Input_View",
@@ -1592,7 +1367,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1607,7 +1382,6 @@
           {
             "id": "nH7SFl3QglfiZjMqYFoPe",
             "status": "ACTIVE",
-            "_id": "61dec716077814a0f374d9f5",
             "name": "Input text",
             "attributes": {
               "name": "Register_Mobile_Input",
@@ -1633,7 +1407,7 @@
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "INPUTTEXT",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1647,7 +1421,6 @@
           {
             "id": "ciFpgdkFbiNs_Np6dsRIo",
             "status": "ACTIVE",
-            "_id": "61dec753077814a0f374d9f6",
             "name": "Register_Next_Btn",
             "attributes": {
               "name": "Register_Next_Btn",
@@ -1673,7 +1446,7 @@
             },
             "icon": "FaBimobject",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "BUTTON",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1681,69 +1454,28 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-16",
-            "edit": true
-          },
-          {
-            "id": "6jH3hLT1mBfrmvte0MdIn",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "Register_LoadingHalf_Img",
-            "attributes": {
-              "name": "Register_LoadingHalf_Img",
-              "layoutProperties": {
-                "layout_width": "match_parent",
-                "layout_height": "wrap_content",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": "RjTpBzVxhnncFhDud5aPJ",
-                "srcTemp": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "6409c358f00f8b3bc0ab4970",
-                  "name": "Register_Loading_Half.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "RjTpBzVxhnncFhDud5aPJ",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "Register_Loading_Half.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/Register_Loading_Half.png",
-                  "createdAt": "2023-03-09T11:30:32.760Z",
-                  "updatedAt": "2023-03-09T11:30:32.760Z",
-                  "__v": 0,
-                  "uri": "Register_Loading_Half.png"
+            "events": [
+              {
+                "triggerId": "EYW87PQXfuOgj16bCYAX3",
+                "triggerName": "Navigate_To_RegisterOtp_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "eYbyhlpoxpnGcCabmEWRz"
                 },
-                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-                "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
-                "layout_marginBottom": 0,
-                "layout_marginLeft": 0,
-                "layout_marginRight": 0,
-                "layout_marginTop": 0
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-17",
-            "edit": true,
-            "events": []
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "1-16",
+            "edit": true
           }
         ],
         "subType": "screen"
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "_id": "LuqT0odLSGTL_5JtRzTis",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1786,7 +1518,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1830,7 +1562,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1872,7 +1604,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1885,7 +1617,23 @@
         "layout_width": "30",
         "layout_height": "30",
         "cornerRadius": [0, 0, 0, 0],
-        "src": "TDI6iHI2WebhM0mMtUzEc",
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "64087882f00f8b3bc0ab36d4",
+          "name": "BtmSheet_Arrow.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "TDI6iHI2WebhM0mMtUzEc",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "BtmSheet_Arrow.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
+          "createdAt": "2023-03-08T11:58:58.504Z",
+          "updatedAt": "2023-03-08T11:58:58.504Z",
+          "__v": 0,
+          "uri": "BtmSheet_Arrow.png"
+        },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
           "_id": "64087882f00f8b3bc0ab36d4",
@@ -1909,7 +1657,8 @@
         "layout_marginLeft": 0,
         "layout_marginRight": 20,
         "layout_marginBottom": 0,
-        "layout_marginTop": 0
+        "layout_marginTop": 0,
+        "id": "TDI6iHI2WebhM0mMtUzEc"
       },
       "contentType": 2
     },
@@ -1923,12 +1672,12 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-3",
+    "path": "1-3",
     "edit": true,
     "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1969,7 +1718,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2009,7 +1758,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2050,7 +1799,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2090,7 +1839,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2136,7 +1885,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2184,7 +1933,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2225,7 +1974,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2265,7 +2014,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2310,7 +2059,7 @@
     "path": "0-12",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2351,7 +2100,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2390,7 +2139,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2433,7 +2182,7 @@
     "path": "0-15",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2472,68 +2221,19 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
-    "path": "0-16",
+    "events": [
+      {
+        "triggerId": "EYW87PQXfuOgj16bCYAX3",
+        "triggerName": "Navigate_To_RegisterOtp_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "1-16",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "6jH3hLT1mBfrmvte0MdIn",
-    "status": "ACTIVE",
-    "name": "Register_LoadingHalf_Img",
-    "attributes": {
-      "name": "Register_LoadingHalf_Img",
-      "layoutProperties": {
-        "layout_width": "match_parent",
-        "layout_height": "wrap_content",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": "RjTpBzVxhnncFhDud5aPJ",
-        "srcTemp": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "6409c358f00f8b3bc0ab4970",
-          "name": "Register_Loading_Half.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "RjTpBzVxhnncFhDud5aPJ",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "Register_Loading_Half.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/Register_Loading_Half.png",
-          "createdAt": "2023-03-09T11:30:32.760Z",
-          "updatedAt": "2023-03-09T11:30:32.760Z",
-          "__v": 0,
-          "uri": "Register_Loading_Half.png"
-        },
-        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-        "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-        "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
-        "layout_marginBottom": 0,
-        "layout_marginLeft": 0,
-        "layout_marginRight": 0,
-        "layout_marginTop": 0
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-17",
-    "edit": true,
-    "events": [],
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

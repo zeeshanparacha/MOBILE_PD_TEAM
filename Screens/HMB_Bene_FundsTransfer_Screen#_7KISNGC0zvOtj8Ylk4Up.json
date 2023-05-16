@@ -52,8 +52,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/12/2023",
-    "createdAt": "5/12/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -1109,7 +1109,7 @@
             "leftToLeftOf": "_7KISNGC0zvOtj8Ylk4Up",
             "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
             "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-            "visibility": false
+            "visibility": true
           }
         },
         "icon": "FaBimobject",
@@ -1122,7 +1122,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "8xBZharFSWQGlUCzkMp91",
+            "triggerName": "Navigate_To_FT_Receipt_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "wx-VugELwRw9ANajECrGL"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-27",
         "edit": true
       },
@@ -1150,7 +1162,7 @@
             "rightToRightOf": "_7KISNGC0zvOtj8Ylk4Up",
             "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
             "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-            "visibility": false
+            "visibility": true
           }
         },
         "icon": "FaBimobject",
@@ -1165,12 +1177,12 @@
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [
           {
-            "triggerId": "N8CoABxzjVwqMwT8wUUws",
-            "triggerName": "naigate_to_ft_confirmation_screen",
+            "triggerId": "9NDsIudS00wumfIFNnxvw",
+            "triggerName": "Navigate_To_SI_Screen",
             "serviceType": "NAVIGATION",
             "attributes": {
               "serviceName": "Navigate with back stack",
-              "id": "bEGZyJq8UtETimH7yyGoa"
+              "id": "KWR0JTZeJ0S4P9ip_08Qg"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -2320,7 +2332,7 @@
                 "leftToLeftOf": "_7KISNGC0zvOtj8Ylk4Up",
                 "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
                 "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-                "visibility": false
+                "visibility": true
               }
             },
             "icon": "FaBimobject",
@@ -2333,7 +2345,19 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "8xBZharFSWQGlUCzkMp91",
+                "triggerName": "Navigate_To_FT_Receipt_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "wx-VugELwRw9ANajECrGL"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-27",
             "edit": true
           },
@@ -2361,7 +2385,7 @@
                 "rightToRightOf": "_7KISNGC0zvOtj8Ylk4Up",
                 "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
                 "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-                "visibility": false
+                "visibility": true
               }
             },
             "icon": "FaBimobject",
@@ -2376,12 +2400,12 @@
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [
               {
-                "triggerId": "N8CoABxzjVwqMwT8wUUws",
-                "triggerName": "naigate_to_ft_confirmation_screen",
+                "triggerId": "9NDsIudS00wumfIFNnxvw",
+                "triggerName": "Navigate_To_SI_Screen",
                 "serviceType": "NAVIGATION",
                 "attributes": {
                   "serviceName": "Navigate with back stack",
-                  "id": "bEGZyJq8UtETimH7yyGoa"
+                  "id": "KWR0JTZeJ0S4P9ip_08Qg"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -3604,7 +3628,7 @@
         "leftToLeftOf": "_7KISNGC0zvOtj8Ylk4Up",
         "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
         "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-        "visibility": false
+        "visibility": true
       }
     },
     "icon": "FaBimobject",
@@ -3617,7 +3641,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "8xBZharFSWQGlUCzkMp91",
+        "triggerName": "Navigate_To_FT_Receipt_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-27",
     "edit": true,
     "subType": "component",
@@ -3649,7 +3680,7 @@
         "rightToRightOf": "_7KISNGC0zvOtj8Ylk4Up",
         "topToBottomOf": "jUXOfrDdJxYnkg4y4Ot0U",
         "bottomToTopOf": "LkgYe9eyh5CxUqVvzSthB",
-        "visibility": false
+        "visibility": true
       }
     },
     "icon": "FaBimobject",
@@ -3664,8 +3695,8 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [
       {
-        "triggerId": "N8CoABxzjVwqMwT8wUUws",
-        "triggerName": "naigate_to_ft_confirmation_screen",
+        "triggerId": "9NDsIudS00wumfIFNnxvw",
+        "triggerName": "Navigate_To_SI_Screen",
         "name": "On click",
         "type": "ONCLICK"
       }

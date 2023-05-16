@@ -57,8 +57,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/13/2023",
-    "createdAt": "5/13/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -533,8 +533,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-11"
+        "events": [
+          {
+            "triggerId": "CN7LUyAQ043rhiZICC3-Z",
+            "triggerName": "Navigate_To_Register_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "LuqT0odLSGTL_5JtRzTis"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-11",
+        "edit": true
       },
       {
         "id": "jJinVrYvScv0EUG3hg9pL",
@@ -571,8 +584,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "4O2zOMOA53rSnkYZGJPGx",
+            "triggerName": "Navigate_To_Dashboard",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "-KVpNZurpv2ng6pwljlmG"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "z2QamlRU8A8QpaRZ4rtgq",
@@ -603,8 +629,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "x1IdutT56oRygJ2w90pP9",
+            "triggerName": "Navigate_To_Prelogin_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "9z-pU7ksNiAxIf5p2Qps-"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "z_Kcy1BOMBoBdUT1KeJaH",
@@ -650,7 +689,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-14"
+        "path": "0-14",
+        "edit": true,
+        "events": []
       },
       {
         "id": "D9fIUs_cvVIHtISeBHKaa",
@@ -702,7 +743,6 @@
       {
         "id": "CtAZioBgSq_6QGLYtxJ_O",
         "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
         "name": "Login_DigitalAccount_Logo",
         "attributes": {
           "name": "Login_DigitalAccount_Logo",
@@ -737,7 +777,7 @@
         },
         "icon": "FaRegImage",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "IMAGEVIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1267,8 +1307,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-11"
+            "events": [
+              {
+                "triggerId": "CN7LUyAQ043rhiZICC3-Z",
+                "triggerName": "Navigate_To_Register_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "LuqT0odLSGTL_5JtRzTis"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-11",
+            "edit": true
           },
           {
             "id": "jJinVrYvScv0EUG3hg9pL",
@@ -1305,8 +1358,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-12"
+            "events": [
+              {
+                "triggerId": "4O2zOMOA53rSnkYZGJPGx",
+                "triggerName": "Navigate_To_Dashboard",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "-KVpNZurpv2ng6pwljlmG"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-12",
+            "edit": true
           },
           {
             "id": "z2QamlRU8A8QpaRZ4rtgq",
@@ -1337,8 +1403,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-13"
+            "events": [
+              {
+                "triggerId": "x1IdutT56oRygJ2w90pP9",
+                "triggerName": "Navigate_To_Prelogin_List_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "9z-pU7ksNiAxIf5p2Qps-"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-13",
+            "edit": true
           },
           {
             "id": "z_Kcy1BOMBoBdUT1KeJaH",
@@ -1384,7 +1463,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-14"
+            "path": "0-14",
+            "edit": true,
+            "events": []
           },
           {
             "id": "D9fIUs_cvVIHtISeBHKaa",
@@ -1436,7 +1517,6 @@
           {
             "id": "CtAZioBgSq_6QGLYtxJ_O",
             "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
             "name": "Login_DigitalAccount_Logo",
             "attributes": {
               "name": "Login_DigitalAccount_Logo",
@@ -1471,7 +1551,7 @@
             },
             "icon": "FaRegImage",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "IMAGEVIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -1536,9 +1616,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-0",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1574,10 +1654,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-1",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1613,10 +1693,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1659,10 +1739,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-3",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1714,9 +1794,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-4",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1751,10 +1831,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-5",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1790,10 +1870,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-6",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1832,9 +1912,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Password", "type": "PASSWORDVIEW" },
     "path": "0-7",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1883,9 +1963,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-8",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1920,11 +2000,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-9",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1960,10 +2040,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2003,10 +2083,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "CN7LUyAQ043rhiZICC3-Z",
+        "triggerName": "Navigate_To_Register_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-11",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2045,10 +2133,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "4O2zOMOA53rSnkYZGJPGx",
+        "triggerName": "Navigate_To_Dashboard",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-12",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2081,10 +2177,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "x1IdutT56oRygJ2w90pP9",
+        "triggerName": "Navigate_To_Prelogin_List_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-13",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2132,9 +2236,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-14",
+    "edit": true,
+    "events": [],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2183,9 +2289,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-15",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2234,9 +2340,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-16",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

@@ -47,8 +47,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/20/2023",
-    "createdAt": "4/20/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -811,7 +811,7 @@
       {
         "id": "sdIknW6-MB3GLj8pifRWt",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "RaastTransfer_PuposeText",
         "attributes": {
           "name": "RaastTransfer_PuposeText",
           "layoutProperties": {
@@ -841,8 +841,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-20"
+        "events": [
+          {
+            "triggerId": "yApE9crHqTLB7ha97swhe",
+            "triggerName": "Navigate_To_RaastConfirm_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "NEvaMD3VL292kEjpATZXX"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-20",
+        "edit": true
       },
       {
         "id": "yVPcg4AKK7CTGseYGcXBw",
@@ -961,7 +974,6 @@
       {
         "id": "QX2EZfIjLbIouUF_3_TZ2",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
         "name": "Raast_Purpose_Btmsht_Btn",
         "attributes": {
           "name": "Raast_Purpose_Btmsht_Btn",
@@ -980,7 +992,7 @@
         },
         "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "sidebarItem",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -1804,7 +1816,7 @@
           {
             "id": "sdIknW6-MB3GLj8pifRWt",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "RaastTransfer_PuposeText",
             "attributes": {
               "name": "RaastTransfer_PuposeText",
               "layoutProperties": {
@@ -1834,8 +1846,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-20"
+            "events": [
+              {
+                "triggerId": "yApE9crHqTLB7ha97swhe",
+                "triggerName": "Navigate_To_RaastConfirm_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "NEvaMD3VL292kEjpATZXX"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-20",
+            "edit": true
           },
           {
             "id": "yVPcg4AKK7CTGseYGcXBw",
@@ -1954,7 +1979,6 @@
           {
             "id": "QX2EZfIjLbIouUF_3_TZ2",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
             "name": "Raast_Purpose_Btmsht_Btn",
             "attributes": {
               "name": "Raast_Purpose_Btmsht_Btn",
@@ -1973,7 +1997,7 @@
             },
             "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "sidebarItem",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -2013,7 +2037,7 @@
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "_id": "n6lncHJpMG9KJxzS--K8b",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2055,7 +2079,7 @@
     "path": "0-0",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2095,7 +2119,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2135,7 +2159,7 @@
     "path": "0-2",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2175,7 +2199,7 @@
     "path": "0-3",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2215,7 +2239,7 @@
     "path": "0-4",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2255,7 +2279,7 @@
     "path": "0-5",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2296,7 +2320,7 @@
     "path": "0-6",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2336,7 +2360,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2376,7 +2400,7 @@
     "path": "0-8",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2428,7 +2452,7 @@
     "path": "0-9",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2467,7 +2491,7 @@
     "path": "0-10",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2520,7 +2544,7 @@
     "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2559,7 +2583,7 @@
     "path": "0-12",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2605,7 +2629,7 @@
     "path": "0-13",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2645,7 +2669,7 @@
     "path": "0-14",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2684,7 +2708,7 @@
     "path": "0-15",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2731,7 +2755,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2770,7 +2794,7 @@
     "path": "0-17",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2809,7 +2833,7 @@
     "path": "0-18",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2848,13 +2872,13 @@
     "path": "0-19",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "sdIknW6-MB3GLj8pifRWt",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "RaastTransfer_PuposeText",
     "attributes": {
       "name": "RaastTransfer_PuposeText",
       "layoutProperties": {
@@ -2884,11 +2908,19 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "yApE9crHqTLB7ha97swhe",
+        "triggerName": "Navigate_To_RaastConfirm_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-20",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2927,7 +2959,7 @@
     "path": "0-21",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2969,7 +3001,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3014,7 +3046,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3058,7 +3090,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

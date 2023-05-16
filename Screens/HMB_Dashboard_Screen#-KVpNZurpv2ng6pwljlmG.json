@@ -66,14 +66,15 @@
         "Bt480_e_L_aNG0SX4jzbi",
         "xZO76clZ2mPBl3hNjAFMh",
         "ZvlgE7WP0WLqOux_vTE4Y",
-        "FBSvLrQhOQKEosrN0_AtV"
+        "FBSvLrQhOQKEosrN0_AtV",
+        "BmrmbRvoHNqst17fFygMg"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/13/2023",
-    "createdAt": "5/13/2023",
+    "updatedAt": "5/15/2023",
+    "createdAt": "5/15/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -260,6 +261,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -366,7 +378,7 @@
               {
                 "id": "3arAQvnb3MFVot6D-M363",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                 "attributes": {
                   "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                   "layoutProperties": {
@@ -396,8 +408,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-4-0-1"
+                "events": [
+                  {
+                    "triggerId": "J13dXHF6odo5RRfThnl7_",
+                    "triggerName": "Navigate_To_AccountDetail_Screen",
+                    "serviceType": "NAVIGATION",
+                    "attributes": {
+                      "serviceName": "Navigate with back stack",
+                      "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                    },
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "path": "0-4-0-1",
+                "edit": true
               },
               {
                 "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -999,7 +1024,7 @@
       {
         "id": "hvz4TnCLBvwuJawLRfTX6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Transfer_Text",
           "layoutProperties": {
@@ -1029,13 +1054,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+            "triggerName": "Navigate_To_FT_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_7KISNGC0zvOtj8Ylk4Up"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "wT7xng2gNluWJR9UwEsd7",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashbord_Account_Options_Payments_Text",
         "attributes": {
           "name": "Dashbord_Account_Options_Payments_Text",
           "layoutProperties": {
@@ -1065,8 +1103,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "r5tHFPoyQogt096HdkBD_",
+            "triggerName": "Navigate_To_BillPay_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HoywjU4phoVfHKqvHAa09"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "o38nxFWB6BSiyjK_6PUro",
@@ -1432,7 +1483,7 @@
       {
         "id": "GfLvr2LMHsZWVfSaFY8Q6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_QRPayment_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_QRPayment_Text",
           "layoutProperties": {
@@ -1462,13 +1513,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+            "triggerName": "Navigate_To_Zakat_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "x2yVu1Nz7wvUxd8USJiMI"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "baF15zpIW3_yvihDe27Z8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Raast_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Raast_Text",
           "layoutProperties": {
@@ -1498,13 +1562,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-25"
+        "events": [
+          {
+            "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+            "triggerName": "Navigate_To_Raast",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "n6lncHJpMG9KJxzS--K8b"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
         "id": "McVGIFD95JoOKDdaK9-JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Services_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Services_Text",
           "layoutProperties": {
@@ -1534,8 +1611,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+            "triggerName": "Navigate_To_ServicesOption_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       },
       {
         "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -1586,6 +1676,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-27",
@@ -1594,7 +1695,7 @@
       {
         "id": "n3xRQRyDAW4fAAvdaKzrk",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Transfer_Text",
           "layoutProperties": {
@@ -1623,8 +1724,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-28"
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-28",
+        "edit": true
       },
       {
         "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -2093,6 +2207,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-33",
@@ -2637,7 +2762,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-39"
+        "path": "0-39",
+        "edit": true,
+        "events": []
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -3239,6 +3366,54 @@
           }
         ],
         "edit": true
+      },
+      {
+        "id": "BmrmbRvoHNqst17fFygMg",
+        "status": "ACTIVE",
+        "name": "Dash_Statement_Text",
+        "attributes": {
+          "name": "Dash_Statement_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Statement",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+            "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+            "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+            "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-50",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -3453,6 +3628,17 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
+              },
+              {
+                "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+                "triggerName": "Navigate_To_LogoutSummary_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "upsD2d5yrT9Trb6gmcoHf"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
               }
             ],
             "path": "0-2",
@@ -3559,7 +3745,7 @@
                   {
                     "id": "3arAQvnb3MFVot6D-M363",
                     "status": "ACTIVE",
-                    "name": "Text view",
+                    "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                     "attributes": {
                       "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                       "layoutProperties": {
@@ -3589,8 +3775,21 @@
                     "isLatest": true,
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
-                    "events": [],
-                    "path": "0-4-0-1"
+                    "events": [
+                      {
+                        "triggerId": "J13dXHF6odo5RRfThnl7_",
+                        "triggerName": "Navigate_To_AccountDetail_Screen",
+                        "serviceType": "NAVIGATION",
+                        "attributes": {
+                          "serviceName": "Navigate with back stack",
+                          "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                        },
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ],
+                    "path": "0-4-0-1",
+                    "edit": true
                   },
                   {
                     "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -4198,7 +4397,7 @@
           {
             "id": "hvz4TnCLBvwuJawLRfTX6",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Options_Transfer_Text",
             "attributes": {
               "name": "Dashboard_Account_Options_Transfer_Text",
               "layoutProperties": {
@@ -4228,13 +4427,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-12"
+            "events": [
+              {
+                "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+                "triggerName": "Navigate_To_FT_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "_7KISNGC0zvOtj8Ylk4Up"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-12",
+            "edit": true
           },
           {
             "id": "wT7xng2gNluWJR9UwEsd7",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashbord_Account_Options_Payments_Text",
             "attributes": {
               "name": "Dashbord_Account_Options_Payments_Text",
               "layoutProperties": {
@@ -4264,8 +4476,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-13"
+            "events": [
+              {
+                "triggerId": "r5tHFPoyQogt096HdkBD_",
+                "triggerName": "Navigate_To_BillPay_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "HoywjU4phoVfHKqvHAa09"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-13",
+            "edit": true
           },
           {
             "id": "o38nxFWB6BSiyjK_6PUro",
@@ -4631,7 +4856,7 @@
           {
             "id": "GfLvr2LMHsZWVfSaFY8Q6",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Options_QRPayment_Text",
             "attributes": {
               "name": "Dashboard_Account_Options_QRPayment_Text",
               "layoutProperties": {
@@ -4661,13 +4886,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-24"
+            "events": [
+              {
+                "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+                "triggerName": "Navigate_To_Zakat_List_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "x2yVu1Nz7wvUxd8USJiMI"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-24",
+            "edit": true
           },
           {
             "id": "baF15zpIW3_yvihDe27Z8",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Options_Raast_Text",
             "attributes": {
               "name": "Dashboard_Account_Options_Raast_Text",
               "layoutProperties": {
@@ -4697,13 +4935,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-25"
+            "events": [
+              {
+                "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+                "triggerName": "Navigate_To_Raast",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "n6lncHJpMG9KJxzS--K8b"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-25",
+            "edit": true
           },
           {
             "id": "McVGIFD95JoOKDdaK9-JQ",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Options_Services_Text",
             "attributes": {
               "name": "Dashboard_Account_Options_Services_Text",
               "layoutProperties": {
@@ -4733,8 +4984,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-26"
+            "events": [
+              {
+                "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+                "triggerName": "Navigate_To_ServicesOption_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "VIVV-F-Ok6XkAgAKegApr"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-26",
+            "edit": true
           },
           {
             "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -4785,6 +5049,17 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
+              },
+              {
+                "triggerId": "b8pRI6dMc1lvnRlThChAW",
+                "triggerName": "Navigate_To_CardRequest_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "GMhZUhcHBT0E03rdSeyqe"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
               }
             ],
             "path": "0-27",
@@ -4793,7 +5068,7 @@
           {
             "id": "n3xRQRyDAW4fAAvdaKzrk",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Transfer_Text",
             "attributes": {
               "name": "Dashboard_Transfer_Text",
               "layoutProperties": {
@@ -4822,8 +5097,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-28"
+            "events": [
+              {
+                "triggerId": "8j-on39yS7NETxMPMalD-",
+                "triggerName": "Navigate_To_Bene_List_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "az-zEHqs8jNLcY5jSoBDk"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-28",
+            "edit": true
           },
           {
             "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -5298,6 +5586,17 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
+              },
+              {
+                "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+                "triggerName": "Navigate_To_BillBeneList_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "2YwG1lUxEQzSHUa-AXzK7"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
               }
             ],
             "path": "0-33",
@@ -5848,7 +6147,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-39"
+            "path": "0-39",
+            "edit": true,
+            "events": []
           },
           {
             "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -6453,6 +6754,54 @@
               }
             ],
             "edit": true
+          },
+          {
+            "id": "BmrmbRvoHNqst17fFygMg",
+            "status": "ACTIVE",
+            "name": "Dash_Statement_Text",
+            "attributes": {
+              "name": "Dash_Statement_Text",
+              "layoutProperties": {
+                "textSize": 12,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Statement",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+                "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+                "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+                "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+                "textStyle": "regular",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "b746R4CVk9OkC2VJMknh9",
+                "triggerName": "Navigate_To_MiniStatement_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ydRSfrJLTaKtLy0O3jZzn"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-50",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -6600,6 +6949,12 @@
         "triggerName": "Dashboard_Transfer_Hlist_DS_Trig",
         "name": "On Load",
         "type": "ONLOAD"
+      },
+      {
+        "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+        "triggerName": "Navigate_To_LogoutSummary_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
       }
     ],
     "path": "0-2",
@@ -6714,7 +7069,7 @@
           {
             "id": "3arAQvnb3MFVot6D-M363",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Hlistitem_AccNum_Text",
             "attributes": {
               "name": "Dashboard_Account_Hlistitem_AccNum_Text",
               "layoutProperties": {
@@ -6744,8 +7099,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-4-0-1"
+            "events": [
+              {
+                "triggerId": "J13dXHF6odo5RRfThnl7_",
+                "triggerName": "Navigate_To_AccountDetail_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-4-0-1",
+            "edit": true
           },
           {
             "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -7280,6 +7648,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -7386,7 +7765,7 @@
               {
                 "id": "3arAQvnb3MFVot6D-M363",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                 "attributes": {
                   "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                   "layoutProperties": {
@@ -7416,8 +7795,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-4-0-1"
+                "events": [
+                  {
+                    "triggerId": "J13dXHF6odo5RRfThnl7_",
+                    "triggerName": "Navigate_To_AccountDetail_Screen",
+                    "serviceType": "NAVIGATION",
+                    "attributes": {
+                      "serviceName": "Navigate with back stack",
+                      "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                    },
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "path": "0-4-0-1",
+                "edit": true
               },
               {
                 "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -8019,7 +8411,7 @@
       {
         "id": "hvz4TnCLBvwuJawLRfTX6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Transfer_Text",
           "layoutProperties": {
@@ -8049,13 +8441,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+            "triggerName": "Navigate_To_FT_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_7KISNGC0zvOtj8Ylk4Up"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "wT7xng2gNluWJR9UwEsd7",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashbord_Account_Options_Payments_Text",
         "attributes": {
           "name": "Dashbord_Account_Options_Payments_Text",
           "layoutProperties": {
@@ -8085,8 +8490,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "r5tHFPoyQogt096HdkBD_",
+            "triggerName": "Navigate_To_BillPay_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HoywjU4phoVfHKqvHAa09"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "o38nxFWB6BSiyjK_6PUro",
@@ -8452,7 +8870,7 @@
       {
         "id": "GfLvr2LMHsZWVfSaFY8Q6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_QRPayment_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_QRPayment_Text",
           "layoutProperties": {
@@ -8482,13 +8900,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+            "triggerName": "Navigate_To_Zakat_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "x2yVu1Nz7wvUxd8USJiMI"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "baF15zpIW3_yvihDe27Z8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Raast_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Raast_Text",
           "layoutProperties": {
@@ -8518,13 +8949,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-25"
+        "events": [
+          {
+            "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+            "triggerName": "Navigate_To_Raast",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "n6lncHJpMG9KJxzS--K8b"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
         "id": "McVGIFD95JoOKDdaK9-JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Services_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Services_Text",
           "layoutProperties": {
@@ -8554,8 +8998,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+            "triggerName": "Navigate_To_ServicesOption_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       },
       {
         "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -8606,6 +9063,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-27",
@@ -8614,7 +9082,7 @@
       {
         "id": "n3xRQRyDAW4fAAvdaKzrk",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Transfer_Text",
           "layoutProperties": {
@@ -8643,8 +9111,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-28"
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-28",
+        "edit": true
       },
       {
         "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -9113,6 +9594,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-33",
@@ -9657,7 +10149,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-39"
+        "path": "0-39",
+        "edit": true,
+        "events": []
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -10259,6 +10753,54 @@
           }
         ],
         "edit": true
+      },
+      {
+        "id": "BmrmbRvoHNqst17fFygMg",
+        "status": "ACTIVE",
+        "name": "Dash_Statement_Text",
+        "attributes": {
+          "name": "Dash_Statement_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Statement",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+            "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+            "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+            "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-50",
+        "edit": true
       }
     ],
     "subType": "component",
@@ -10312,7 +10854,7 @@
       {
         "id": "3arAQvnb3MFVot6D-M363",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Hlistitem_AccNum_Text",
         "attributes": {
           "name": "Dashboard_Account_Hlistitem_AccNum_Text",
           "layoutProperties": {
@@ -10342,8 +10884,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-4-0-1"
+        "events": [
+          {
+            "triggerId": "J13dXHF6odo5RRfThnl7_",
+            "triggerName": "Navigate_To_AccountDetail_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "3EgTzbR0Nn7s8J4QuHsDe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-4-0-1",
+        "edit": true
       },
       {
         "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -10753,7 +11308,7 @@
           {
             "id": "3arAQvnb3MFVot6D-M363",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Dashboard_Account_Hlistitem_AccNum_Text",
             "attributes": {
               "name": "Dashboard_Account_Hlistitem_AccNum_Text",
               "layoutProperties": {
@@ -10783,8 +11338,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-4-0-1"
+            "events": [
+              {
+                "triggerId": "J13dXHF6odo5RRfThnl7_",
+                "triggerName": "Navigate_To_AccountDetail_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-4-0-1",
+            "edit": true
           },
           {
             "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -11185,7 +11753,7 @@
   {
     "id": "3arAQvnb3MFVot6D-M363",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Account_Hlistitem_AccNum_Text",
     "attributes": {
       "name": "Dashboard_Account_Hlistitem_AccNum_Text",
       "layoutProperties": {
@@ -11215,8 +11783,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "J13dXHF6odo5RRfThnl7_",
+        "triggerName": "Navigate_To_AccountDetail_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-4-0-1",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -11873,7 +12449,7 @@
   {
     "id": "hvz4TnCLBvwuJawLRfTX6",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Account_Options_Transfer_Text",
     "attributes": {
       "name": "Dashboard_Account_Options_Transfer_Text",
       "layoutProperties": {
@@ -11903,8 +12479,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+        "triggerName": "Navigate_To_FT_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-12",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -11913,7 +12497,7 @@
   {
     "id": "wT7xng2gNluWJR9UwEsd7",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashbord_Account_Options_Payments_Text",
     "attributes": {
       "name": "Dashbord_Account_Options_Payments_Text",
       "layoutProperties": {
@@ -11943,8 +12527,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "r5tHFPoyQogt096HdkBD_",
+        "triggerName": "Navigate_To_BillPay_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-13",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -12354,7 +12946,7 @@
   {
     "id": "GfLvr2LMHsZWVfSaFY8Q6",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Account_Options_QRPayment_Text",
     "attributes": {
       "name": "Dashboard_Account_Options_QRPayment_Text",
       "layoutProperties": {
@@ -12384,8 +12976,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+        "triggerName": "Navigate_To_Zakat_List_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-24",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -12394,7 +12994,7 @@
   {
     "id": "baF15zpIW3_yvihDe27Z8",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Account_Options_Raast_Text",
     "attributes": {
       "name": "Dashboard_Account_Options_Raast_Text",
       "layoutProperties": {
@@ -12424,8 +13024,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+        "triggerName": "Navigate_To_Raast",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-25",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -12434,7 +13042,7 @@
   {
     "id": "McVGIFD95JoOKDdaK9-JQ",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Account_Options_Services_Text",
     "attributes": {
       "name": "Dashboard_Account_Options_Services_Text",
       "layoutProperties": {
@@ -12464,8 +13072,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+        "triggerName": "Navigate_To_ServicesOption_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-26",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -12509,6 +13125,12 @@
         "triggerName": "Dash_Cards_Hlist_Data_Trig",
         "name": "On Load",
         "type": "ONLOAD"
+      },
+      {
+        "triggerId": "b8pRI6dMc1lvnRlThChAW",
+        "triggerName": "Navigate_To_CardRequest_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
       }
     ],
     "path": "0-27",
@@ -12521,7 +13143,7 @@
   {
     "id": "n3xRQRyDAW4fAAvdaKzrk",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Dashboard_Transfer_Text",
     "attributes": {
       "name": "Dashboard_Transfer_Text",
       "layoutProperties": {
@@ -12550,8 +13172,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "8j-on39yS7NETxMPMalD-",
+        "triggerName": "Navigate_To_Bene_List_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-28",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -13159,6 +13789,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -13265,7 +13906,7 @@
               {
                 "id": "3arAQvnb3MFVot6D-M363",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                 "attributes": {
                   "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                   "layoutProperties": {
@@ -13295,8 +13936,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-4-0-1"
+                "events": [
+                  {
+                    "triggerId": "J13dXHF6odo5RRfThnl7_",
+                    "triggerName": "Navigate_To_AccountDetail_Screen",
+                    "serviceType": "NAVIGATION",
+                    "attributes": {
+                      "serviceName": "Navigate with back stack",
+                      "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                    },
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "path": "0-4-0-1",
+                "edit": true
               },
               {
                 "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -13898,7 +14552,7 @@
       {
         "id": "hvz4TnCLBvwuJawLRfTX6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Transfer_Text",
           "layoutProperties": {
@@ -13928,13 +14582,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+            "triggerName": "Navigate_To_FT_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_7KISNGC0zvOtj8Ylk4Up"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "wT7xng2gNluWJR9UwEsd7",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashbord_Account_Options_Payments_Text",
         "attributes": {
           "name": "Dashbord_Account_Options_Payments_Text",
           "layoutProperties": {
@@ -13964,8 +14631,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "r5tHFPoyQogt096HdkBD_",
+            "triggerName": "Navigate_To_BillPay_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HoywjU4phoVfHKqvHAa09"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "o38nxFWB6BSiyjK_6PUro",
@@ -14331,7 +15011,7 @@
       {
         "id": "GfLvr2LMHsZWVfSaFY8Q6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_QRPayment_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_QRPayment_Text",
           "layoutProperties": {
@@ -14361,13 +15041,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+            "triggerName": "Navigate_To_Zakat_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "x2yVu1Nz7wvUxd8USJiMI"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "baF15zpIW3_yvihDe27Z8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Raast_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Raast_Text",
           "layoutProperties": {
@@ -14397,13 +15090,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-25"
+        "events": [
+          {
+            "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+            "triggerName": "Navigate_To_Raast",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "n6lncHJpMG9KJxzS--K8b"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
         "id": "McVGIFD95JoOKDdaK9-JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Services_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Services_Text",
           "layoutProperties": {
@@ -14433,8 +15139,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+            "triggerName": "Navigate_To_ServicesOption_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       },
       {
         "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -14485,6 +15204,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-27",
@@ -14493,7 +15223,7 @@
       {
         "id": "n3xRQRyDAW4fAAvdaKzrk",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Transfer_Text",
           "layoutProperties": {
@@ -14522,8 +15252,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-28"
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-28",
+        "edit": true
       },
       {
         "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -14992,6 +15735,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-33",
@@ -15536,7 +16290,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-39"
+        "path": "0-39",
+        "edit": true,
+        "events": []
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -16137,6 +16893,54 @@
             }
           }
         ],
+        "edit": true
+      },
+      {
+        "id": "BmrmbRvoHNqst17fFygMg",
+        "status": "ACTIVE",
+        "name": "Dash_Statement_Text",
+        "attributes": {
+          "name": "Dash_Statement_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Statement",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+            "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+            "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+            "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-50",
         "edit": true
       }
     ],
@@ -16913,9 +17717,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-32-0-4",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -16965,9 +17769,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-32-0-5",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -17010,6 +17814,12 @@
         "triggerName": "Dashboard_BillPayment_Hlist_DS_Trig",
         "name": "On Load",
         "type": "ONLOAD"
+      },
+      {
+        "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+        "triggerName": "Navigate_To_BillBeneList_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
       }
     ],
     "path": "0-33",
@@ -17569,6 +18379,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -17675,7 +18496,7 @@
               {
                 "id": "3arAQvnb3MFVot6D-M363",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                 "attributes": {
                   "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                   "layoutProperties": {
@@ -17705,8 +18526,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-4-0-1"
+                "events": [
+                  {
+                    "triggerId": "J13dXHF6odo5RRfThnl7_",
+                    "triggerName": "Navigate_To_AccountDetail_Screen",
+                    "serviceType": "NAVIGATION",
+                    "attributes": {
+                      "serviceName": "Navigate with back stack",
+                      "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                    },
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "path": "0-4-0-1",
+                "edit": true
               },
               {
                 "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -18308,7 +19142,7 @@
       {
         "id": "hvz4TnCLBvwuJawLRfTX6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Transfer_Text",
           "layoutProperties": {
@@ -18338,13 +19172,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+            "triggerName": "Navigate_To_FT_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_7KISNGC0zvOtj8Ylk4Up"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "wT7xng2gNluWJR9UwEsd7",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashbord_Account_Options_Payments_Text",
         "attributes": {
           "name": "Dashbord_Account_Options_Payments_Text",
           "layoutProperties": {
@@ -18374,8 +19221,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "r5tHFPoyQogt096HdkBD_",
+            "triggerName": "Navigate_To_BillPay_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HoywjU4phoVfHKqvHAa09"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "o38nxFWB6BSiyjK_6PUro",
@@ -18741,7 +19601,7 @@
       {
         "id": "GfLvr2LMHsZWVfSaFY8Q6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_QRPayment_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_QRPayment_Text",
           "layoutProperties": {
@@ -18771,13 +19631,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+            "triggerName": "Navigate_To_Zakat_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "x2yVu1Nz7wvUxd8USJiMI"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "baF15zpIW3_yvihDe27Z8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Raast_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Raast_Text",
           "layoutProperties": {
@@ -18807,13 +19680,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-25"
+        "events": [
+          {
+            "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+            "triggerName": "Navigate_To_Raast",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "n6lncHJpMG9KJxzS--K8b"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
         "id": "McVGIFD95JoOKDdaK9-JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Services_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Services_Text",
           "layoutProperties": {
@@ -18843,8 +19729,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+            "triggerName": "Navigate_To_ServicesOption_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       },
       {
         "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -18895,6 +19794,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-27",
@@ -18903,7 +19813,7 @@
       {
         "id": "n3xRQRyDAW4fAAvdaKzrk",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Transfer_Text",
           "layoutProperties": {
@@ -18932,8 +19842,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-28"
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-28",
+        "edit": true
       },
       {
         "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -19402,6 +20325,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-33",
@@ -19946,7 +20880,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-39"
+        "path": "0-39",
+        "edit": true,
+        "events": []
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -20547,6 +21483,54 @@
             }
           }
         ],
+        "edit": true
+      },
+      {
+        "id": "BmrmbRvoHNqst17fFygMg",
+        "status": "ACTIVE",
+        "name": "Dash_Statement_Text",
+        "attributes": {
+          "name": "Dash_Statement_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Statement",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+            "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+            "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+            "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-50",
         "edit": true
       }
     ],
@@ -21421,9 +22405,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-35-0-5",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -21473,9 +22457,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-35-0-6",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -21666,6 +22650,8 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-39",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -22488,6 +23474,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -22594,7 +23591,7 @@
               {
                 "id": "3arAQvnb3MFVot6D-M363",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                 "attributes": {
                   "name": "Dashboard_Account_Hlistitem_AccNum_Text",
                   "layoutProperties": {
@@ -22624,8 +23621,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
-                "events": [],
-                "path": "0-4-0-1"
+                "events": [
+                  {
+                    "triggerId": "J13dXHF6odo5RRfThnl7_",
+                    "triggerName": "Navigate_To_AccountDetail_Screen",
+                    "serviceType": "NAVIGATION",
+                    "attributes": {
+                      "serviceName": "Navigate with back stack",
+                      "id": "3EgTzbR0Nn7s8J4QuHsDe"
+                    },
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "path": "0-4-0-1",
+                "edit": true
               },
               {
                 "id": "4czMV_2ao1mS8zaqqJmB5",
@@ -23227,7 +24237,7 @@
       {
         "id": "hvz4TnCLBvwuJawLRfTX6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Transfer_Text",
           "layoutProperties": {
@@ -23257,13 +24267,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-12"
+        "events": [
+          {
+            "triggerId": "_nhxbRi1Y9_HpWj51D9p1",
+            "triggerName": "Navigate_To_FT_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_7KISNGC0zvOtj8Ylk4Up"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "wT7xng2gNluWJR9UwEsd7",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashbord_Account_Options_Payments_Text",
         "attributes": {
           "name": "Dashbord_Account_Options_Payments_Text",
           "layoutProperties": {
@@ -23293,8 +24316,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "r5tHFPoyQogt096HdkBD_",
+            "triggerName": "Navigate_To_BillPay_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HoywjU4phoVfHKqvHAa09"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "o38nxFWB6BSiyjK_6PUro",
@@ -23660,7 +24696,7 @@
       {
         "id": "GfLvr2LMHsZWVfSaFY8Q6",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_QRPayment_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_QRPayment_Text",
           "layoutProperties": {
@@ -23690,13 +24726,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-24"
+        "events": [
+          {
+            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
+            "triggerName": "Navigate_To_Zakat_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "x2yVu1Nz7wvUxd8USJiMI"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       },
       {
         "id": "baF15zpIW3_yvihDe27Z8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Raast_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Raast_Text",
           "layoutProperties": {
@@ -23726,13 +24775,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-25"
+        "events": [
+          {
+            "triggerId": "arUBl1xwNIM5PkcNEJxtR",
+            "triggerName": "Navigate_To_Raast",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "n6lncHJpMG9KJxzS--K8b"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-25",
+        "edit": true
       },
       {
         "id": "McVGIFD95JoOKDdaK9-JQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Account_Options_Services_Text",
         "attributes": {
           "name": "Dashboard_Account_Options_Services_Text",
           "layoutProperties": {
@@ -23762,8 +24824,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-26"
+        "events": [
+          {
+            "triggerId": "H1wBd2oCTyyGgTOQ9n7zy",
+            "triggerName": "Navigate_To_ServicesOption_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-26",
+        "edit": true
       },
       {
         "id": "Wv9EPfcG_WCV8PYpjUm1k",
@@ -23814,6 +24889,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-27",
@@ -23822,7 +24908,7 @@
       {
         "id": "n3xRQRyDAW4fAAvdaKzrk",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Dashboard_Transfer_Text",
         "attributes": {
           "name": "Dashboard_Transfer_Text",
           "layoutProperties": {
@@ -23851,8 +24937,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-28"
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-28",
+        "edit": true
       },
       {
         "id": "ut0IPLMg3mH0MCnz5fRvB",
@@ -24321,6 +25420,17 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-33",
@@ -24865,7 +25975,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-39"
+        "path": "0-39",
+        "edit": true,
+        "events": []
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -25467,6 +26579,54 @@
           }
         ],
         "edit": true
+      },
+      {
+        "id": "BmrmbRvoHNqst17fFygMg",
+        "status": "ACTIVE",
+        "name": "Dash_Statement_Text",
+        "attributes": {
+          "name": "Dash_Statement_Text",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Statement",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+            "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+            "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+            "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-50",
+        "edit": true
       }
     ],
     "subType": "component",
@@ -25884,6 +27044,53 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-49-0-2",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "BmrmbRvoHNqst17fFygMg",
+    "status": "ACTIVE",
+    "name": "Dash_Statement_Text",
+    "attributes": {
+      "name": "Dash_Statement_Text",
+      "layoutProperties": {
+        "textSize": 12,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Statement",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "BTYyy8aNq5gjeeuUafbCh",
+        "rightToRightOf": "BTYyy8aNq5gjeeuUafbCh",
+        "topToTopOf": "BTYyy8aNq5gjeeuUafbCh",
+        "bottomToBottomOf": "BTYyy8aNq5gjeeuUafbCh",
+        "textStyle": "regular",
+        "textAlignment": "center"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "b746R4CVk9OkC2VJMknh9",
+        "triggerName": "Navigate_To_MiniStatement_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-50",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
