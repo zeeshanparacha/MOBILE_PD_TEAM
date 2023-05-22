@@ -32,8 +32,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/4/2023",
-    "createdAt": "4/4/2023",
+    "updatedAt": "5/17/2023",
+    "createdAt": "5/17/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -149,7 +149,7 @@
       {
         "id": "qq5IIbFgQUTXAC86O6bTU",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "QRPayment_Option_TransferviaQR_Text",
         "attributes": {
           "name": "QRPayment_Option_TransferviaQR_Text",
           "layoutProperties": {
@@ -178,19 +178,32 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-3"
+        "events": [
+          {
+            "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+            "triggerName": "Navigate_to_QRScannerComp_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "amOGZaRQ8bL7hA3MuP1F6"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "1-3",
+        "edit": true
       }
     ],
     "subType": "screen",
     "layout": [
       {
         "id": "pS3aIj3FPQxYQ9o83Bpu0",
-        "name": "HMB_QRPAyment_Option_Navbar",
+        "name": "HMB_QR_Payments_Option_Screen",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "Constraint Layout",
+          "name": "HMB_QR_Payments_Option_Screen",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -464,7 +477,7 @@
           {
             "id": "qq5IIbFgQUTXAC86O6bTU",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "QRPayment_Option_TransferviaQR_Text",
             "attributes": {
               "name": "QRPayment_Option_TransferviaQR_Text",
               "layoutProperties": {
@@ -493,8 +506,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-3"
+            "events": [
+              {
+                "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+                "triggerName": "Navigate_to_QRScannerComp_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "amOGZaRQ8bL7hA3MuP1F6"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "1-3",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -676,7 +702,7 @@
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "_id": "omr1ONwPaPQHf_4xCl8PK",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -717,7 +743,7 @@
     "path": "0-0",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -756,7 +782,7 @@
     "path": "0-1",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -796,13 +822,13 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "qq5IIbFgQUTXAC86O6bTU",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "QRPayment_Option_TransferviaQR_Text",
     "attributes": {
       "name": "QRPayment_Option_TransferviaQR_Text",
       "layoutProperties": {
@@ -831,11 +857,19 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-3",
+    "events": [
+      {
+        "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+        "triggerName": "Navigate_to_QRScannerComp_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "1-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

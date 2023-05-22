@@ -1,11 +1,11 @@
 [
   {
-    "id": "WSYSE7cJ9_61V80ozVXdF",
-    "name": "HMB_QR_Generate_Screen",
+    "id": "HAzYPYO-4gDDaLF-djicT",
+    "name": "HMB_Account_Maintanance_Certificate_Screen",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "HMB_QR_Generate_Screen",
+      "name": "HMB_Account_Maintanance_Certificate_Screen",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -17,15 +17,17 @@
         "cornerRadius": [0, 0, 0, 0]
       },
       "componentId": [
-        "hJequfx6A82jLNO5nkpS-",
-        "-fnl0EMBecNMyCtxn5_EW",
-        "v5UeU3yxc-OCQr8S7COVy",
-        "_yPd6VuD6brCeNC_AwH0Z",
-        "5mYH3hcVa2C_rTV7E-mAV",
-        "lVX4nOGNXDQQGNVHrMwlm",
-        "KM1y1LoWSnh9zYGGoKg0B",
-        "Di0fOyJK3jIeg5TG-HD7i",
-        "pAgRCXKK2BKuBgzHT5jzb"
+        "JS0mWAPBv6C9oZbjzvcFE",
+        "B8w4YoCYAZFlEryPqljOx",
+        "fVeocwqPQupbqS4cF5aOp",
+        "r90WD6qhrlvbfWJBrxvfr",
+        "paTSpSZ75sqaWKKA01Bj1",
+        "5AQo8Db4jCB7Nl9SJo4CT",
+        "8wxdTGHuUb0qjbotX98mJ",
+        "Qzi3ok523HNWyXKqJDZmc",
+        "TKvMAUkvYTBbu0X0g8H-z",
+        "AzA5pND8W9bBf_74YAS3g",
+        "jpZ-9pmGrR5kSUxdXDTDk"
       ]
     },
     "group": "Layout",
@@ -40,11 +42,11 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "hJequfx6A82jLNO5nkpS-",
+        "id": "JS0mWAPBv6C9oZbjzvcFE",
         "status": "ACTIVE",
         "name": "Text view",
         "attributes": {
-          "name": "QRGenerate_Accounts_Text",
+          "name": "AccMainCert_Accounts_Text",
           "layoutProperties": {
             "textSize": 18,
             "layout_width": "wrap_content",
@@ -53,8 +55,8 @@
             "text": "Accounts",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-            "topToTopOf": "WSYSE7cJ9_61V80ozVXdF",
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToTopOf": "HAzYPYO-4gDDaLF-djicT",
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textStyle": "bold",
@@ -75,11 +77,11 @@
         "path": "0-0"
       },
       {
-        "id": "-fnl0EMBecNMyCtxn5_EW",
+        "id": "B8w4YoCYAZFlEryPqljOx",
         "status": "ACTIVE",
-        "name": "QRGenerate_Accounts_View",
+        "name": "AccMainCert_Accounts_View",
         "attributes": {
-          "name": "QRGenerate_Accounts_View",
+          "name": "AccMainCert_Accounts_View",
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
@@ -87,12 +89,11 @@
             "borderColor": "#1D6131",
             "borderWidth": 2,
             "cornerRadius": [8, 8, 8, 8],
-            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-            "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-            "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-            "layout_marginBottom": 0,
-            "layout_marginLeft": 20,
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToBottomOf": "JS0mWAPBv6C9oZbjzvcFE",
             "layout_marginRight": 20,
+            "layout_marginLeft": 20,
             "layout_marginTop": 10
           }
         },
@@ -107,15 +108,14 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-1",
-        "edit": true
+        "path": "0-1"
       },
       {
-        "id": "v5UeU3yxc-OCQr8S7COVy",
+        "id": "fVeocwqPQupbqS4cF5aOp",
         "status": "ACTIVE",
-        "name": "QRGenerate_Accounts_AccTitle_Text",
+        "name": "AccMainCert_AccTitle_Text",
         "attributes": {
-          "name": "QRGenerate_Accounts_AccTitle_Text",
+          "name": "AccMainCert_AccTitle_Text",
           "layoutProperties": {
             "textSize": 15,
             "layout_width": "wrap_content",
@@ -124,12 +124,12 @@
             "text": "MUHAMMAD FARAN TAHIR",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-            "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
+            "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+            "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
             "layout_marginLeft": 20,
             "layout_marginTop": 10,
-            "textAlignment": "left",
-            "textStyle": "regular"
+            "textStyle": "regular",
+            "textAlignment": "left"
           }
         },
         "icon": "FaTextWidth",
@@ -146,11 +146,11 @@
         "path": "0-2"
       },
       {
-        "id": "_yPd6VuD6brCeNC_AwH0Z",
+        "id": "r90WD6qhrlvbfWJBrxvfr",
         "status": "ACTIVE",
-        "name": "QRGenerate_Accounts_AccNum_Text",
+        "name": "AccMainCert_AccNum_Text",
         "attributes": {
-          "name": "QRGenerate_Accounts_AccNum_Text",
+          "name": "AccMainCert_AccNum_Text",
           "layoutProperties": {
             "textSize": 15,
             "layout_width": "wrap_content",
@@ -159,8 +159,8 @@
             "text": "6010152417896325412",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-            "topToBottomOf": "v5UeU3yxc-OCQr8S7COVy",
+            "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+            "topToBottomOf": "fVeocwqPQupbqS4cF5aOp",
             "layout_marginTop": 10,
             "layout_marginLeft": 20,
             "textStyle": "regular",
@@ -181,11 +181,11 @@
         "path": "0-3"
       },
       {
-        "id": "5mYH3hcVa2C_rTV7E-mAV",
+        "id": "paTSpSZ75sqaWKKA01Bj1",
         "status": "ACTIVE",
         "name": "Text view",
         "attributes": {
-          "name": "QRGenerate_Accounts_BankName_Text",
+          "name": "AccMainCert_BankName_Text",
           "layoutProperties": {
             "textSize": 14,
             "layout_width": "wrap_content",
@@ -194,10 +194,10 @@
             "text": "HABIBMETRO",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-            "topToBottomOf": "_yPd6VuD6brCeNC_AwH0Z",
-            "layout_marginTop": 10,
+            "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+            "topToBottomOf": "r90WD6qhrlvbfWJBrxvfr",
             "layout_marginLeft": 20,
+            "layout_marginTop": 10,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -216,25 +216,25 @@
         "path": "0-4"
       },
       {
-        "id": "lVX4nOGNXDQQGNVHrMwlm",
+        "id": "5AQo8Db4jCB7Nl9SJo4CT",
         "status": "ACTIVE",
         "name": "Text view",
         "attributes": {
-          "name": "QRGenerate_WantAmount_Text",
+          "name": "AccMainCert_Accounts_Change_Text",
           "layoutProperties": {
-            "textSize": 18,
+            "textSize": 11,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Want to enter amount",
+            "text": "Change",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-            "topToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-            "layout_marginTop": 40,
-            "layout_marginLeft": 20,
-            "textStyle": "bold",
-            "textAlignment": "left"
+            "rightToRightOf": "B8w4YoCYAZFlEryPqljOx",
+            "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
+            "bottomToBottomOf": "B8w4YoCYAZFlEryPqljOx",
+            "textStyle": "regular",
+            "textAlignment": "right",
+            "layout_marginRight": 20
           }
         },
         "icon": "FaTextWidth",
@@ -251,25 +251,72 @@
         "path": "0-5"
       },
       {
-        "id": "KM1y1LoWSnh9zYGGoKg0B",
+        "id": "8wxdTGHuUb0qjbotX98mJ",
+        "status": "ACTIVE",
+        "name": "AccMainCert_Otp_Icon",
+        "attributes": {
+          "name": "AccMainCert_Otp_Icon",
+          "layoutProperties": {
+            "layout_width": "50",
+            "layout_height": "50",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6418300edde33425bca0f7ce",
+              "name": "HMB_Otp_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "RfDsIFy4Eb5EwFXQFSz1p",
+              "gitBranchName": "dev",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "HMB_Otp_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Otp_Icon.png",
+              "createdAt": "2023-03-20T10:06:06.042Z",
+              "updatedAt": "2023-03-20T10:06:06.042Z",
+              "__v": 0,
+              "uri": "HMB_Otp_Icon.png"
+            },
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToBottomOf": "B8w4YoCYAZFlEryPqljOx",
+            "layout_marginTop": 40,
+            "id": "RfDsIFy4Eb5EwFXQFSz1p"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "IMAGEVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-6"
+      },
+      {
+        "id": "Qzi3ok523HNWyXKqJDZmc",
         "status": "ACTIVE",
         "name": "Text view",
         "attributes": {
-          "name": "QRGenerate_Accounts_Change_Text",
+          "name": "AccMainCert_Otp_Auth_Text",
           "layoutProperties": {
-            "textSize": 11,
+            "textSize": 15,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Change",
+            "textColor": "#1D6131",
+            "text": "AUTHENTICATION",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "rightToRightOf": "-fnl0EMBecNMyCtxn5_EW",
-            "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
-            "bottomToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-            "layout_marginRight": 20,
-            "textStyle": "regular",
-            "textAlignment": "right"
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToBottomOf": "8wxdTGHuUb0qjbotX98mJ",
+            "layout_marginTop": 10,
+            "textStyle": "bold",
+            "textAlignment": "center"
           }
         },
         "icon": "FaTextWidth",
@@ -283,50 +330,90 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-6"
+        "path": "0-7"
       },
       {
-        "id": "Di0fOyJK3jIeg5TG-HD7i",
+        "id": "TKvMAUkvYTBbu0X0g8H-z",
         "status": "ACTIVE",
-        "name": "QRGenerate_WantAMount_Switch",
+        "name": "AccMainCert_Otp_Auth_Btmline",
         "attributes": {
-          "name": "QRGenerate_WantAMount_Switch",
+          "name": "AccMainCert_Otp_Auth_Btmline",
           "layoutProperties": {
-            "layout_width": "50",
-            "layout_height": "22",
-            "layout_marginLeft": 0,
-            "layout_marginRight": 20,
-            "layout_marginTop": 0,
-            "layout_marginBottom": 0,
-            "centerX": "",
-            "centerY": "",
-            "transform": 0.3,
-            "selectedTintColor": "#1D6131",
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "2",
+            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
-            "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-            "topToTopOf": "lVX4nOGNXDQQGNVHrMwlm"
-          },
-          "bindingkey": "qrgenerate_switch"
+            "background": "#1D6131",
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToBottomOf": "Qzi3ok523HNWyXKqJDZmc",
+            "layout_marginTop": 10,
+            "layout_marginRight": 20,
+            "layout_marginLeft": 20
+          }
         },
-        "icon": "FaToggleOn",
+        "icon": "FaTabletAlt",
         "group": "Form",
-        "type": "SWITCH",
+        "type": "VIEW",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "Switch", "type": "SWITCH" },
-        "bindingkey": "qrgenerate_switch",
-        "path": "0-7"
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-8"
       },
       {
-        "id": "pAgRCXKK2BKuBgzHT5jzb",
+        "id": "AzA5pND8W9bBf_74YAS3g",
         "status": "ACTIVE",
-        "name": "QRGenerate_Generate_Btn",
+        "name": "AccMainCert_OTP",
         "attributes": {
-          "name": "QRGenerate_Generate_Btn",
+          "name": "AccMainCert_OTP",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 20,
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "textAlignment": "center",
+            "lineColor": "#1D6131",
+            "activeLineColor": "#1D6131",
+            "textColor": "#1D6131",
+            "spacing": 50,
+            "lineWidth": 30,
+            "activeLineWidth": 30,
+            "textSize": 20,
+            "textStyle": "regular",
+            "secureText": "*"
+          }
+        },
+        "icon": "FaShieldAlt",
+        "group": "Security",
+        "type": "OTP",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "OTP", "type": "OTP" },
+        "events": [],
+        "path": "0-9"
+      },
+      {
+        "id": "jpZ-9pmGrR5kSUxdXDTDk",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "AccMainCert_GenerateCert_Btn",
+        "attributes": {
+          "name": "AccMainCert_GenerateCert_Btn",
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "63",
@@ -334,7 +421,7 @@
             "layout_marginRight": 20,
             "layout_marginTop": 0,
             "layout_marginBottom": 40,
-            "text": "Generate QR",
+            "text": "Generate Certificate",
             "textSize": 20,
             "textColor": "#ffffff",
             "textStyle": "bold",
@@ -342,14 +429,14 @@
             "cornerRadius": [8, 8, 8, 8],
             "background": "#1D6131",
             "clickable": true,
-            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-            "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-            "bottomToBottomOf": "WSYSE7cJ9_61V80ozVXdF"
+            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+            "bottomToBottomOf": "HAzYPYO-4gDDaLF-djicT"
           }
         },
         "icon": "FaBimobject",
         "group": "Form",
-        "type": "BUTTON",
+        "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
         "createdAt": "23-Aug-2021",
         "order": 20,
@@ -358,19 +445,19 @@
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
-        "path": "0-8",
+        "path": "0-10",
         "edit": true
       }
     ],
     "subType": "screen",
     "layout": [
       {
-        "id": "WSYSE7cJ9_61V80ozVXdF",
-        "name": "HMB_QR_Generate_Screen",
+        "id": "HAzYPYO-4gDDaLF-djicT",
+        "name": "HMB_Account_Maintanance_Certificate_Screen",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_QR_Generate_Screen",
+          "name": "HMB_Account_Maintanance_Certificate_Screen",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -395,11 +482,11 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "hJequfx6A82jLNO5nkpS-",
+            "id": "JS0mWAPBv6C9oZbjzvcFE",
             "status": "ACTIVE",
             "name": "Text view",
             "attributes": {
-              "name": "QRGenerate_Accounts_Text",
+              "name": "AccMainCert_Accounts_Text",
               "layoutProperties": {
                 "textSize": 18,
                 "layout_width": "wrap_content",
@@ -408,8 +495,8 @@
                 "text": "Accounts",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-                "topToTopOf": "WSYSE7cJ9_61V80ozVXdF",
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToTopOf": "HAzYPYO-4gDDaLF-djicT",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
@@ -430,11 +517,11 @@
             "path": "0-0"
           },
           {
-            "id": "-fnl0EMBecNMyCtxn5_EW",
+            "id": "B8w4YoCYAZFlEryPqljOx",
             "status": "ACTIVE",
-            "name": "QRGenerate_Accounts_View",
+            "name": "AccMainCert_Accounts_View",
             "attributes": {
-              "name": "QRGenerate_Accounts_View",
+              "name": "AccMainCert_Accounts_View",
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
@@ -442,12 +529,11 @@
                 "borderColor": "#1D6131",
                 "borderWidth": 2,
                 "cornerRadius": [8, 8, 8, 8],
-                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-                "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-                "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-                "layout_marginBottom": 0,
-                "layout_marginLeft": 20,
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToBottomOf": "JS0mWAPBv6C9oZbjzvcFE",
                 "layout_marginRight": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 10
               }
             },
@@ -462,15 +548,14 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-1",
-            "edit": true
+            "path": "0-1"
           },
           {
-            "id": "v5UeU3yxc-OCQr8S7COVy",
+            "id": "fVeocwqPQupbqS4cF5aOp",
             "status": "ACTIVE",
-            "name": "QRGenerate_Accounts_AccTitle_Text",
+            "name": "AccMainCert_AccTitle_Text",
             "attributes": {
-              "name": "QRGenerate_Accounts_AccTitle_Text",
+              "name": "AccMainCert_AccTitle_Text",
               "layoutProperties": {
                 "textSize": 15,
                 "layout_width": "wrap_content",
@@ -479,12 +564,12 @@
                 "text": "MUHAMMAD FARAN TAHIR",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-                "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
+                "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+                "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 10,
-                "textAlignment": "left",
-                "textStyle": "regular"
+                "textStyle": "regular",
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -501,11 +586,11 @@
             "path": "0-2"
           },
           {
-            "id": "_yPd6VuD6brCeNC_AwH0Z",
+            "id": "r90WD6qhrlvbfWJBrxvfr",
             "status": "ACTIVE",
-            "name": "QRGenerate_Accounts_AccNum_Text",
+            "name": "AccMainCert_AccNum_Text",
             "attributes": {
-              "name": "QRGenerate_Accounts_AccNum_Text",
+              "name": "AccMainCert_AccNum_Text",
               "layoutProperties": {
                 "textSize": 15,
                 "layout_width": "wrap_content",
@@ -514,8 +599,8 @@
                 "text": "6010152417896325412",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-                "topToBottomOf": "v5UeU3yxc-OCQr8S7COVy",
+                "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+                "topToBottomOf": "fVeocwqPQupbqS4cF5aOp",
                 "layout_marginTop": 10,
                 "layout_marginLeft": 20,
                 "textStyle": "regular",
@@ -536,11 +621,11 @@
             "path": "0-3"
           },
           {
-            "id": "5mYH3hcVa2C_rTV7E-mAV",
+            "id": "paTSpSZ75sqaWKKA01Bj1",
             "status": "ACTIVE",
             "name": "Text view",
             "attributes": {
-              "name": "QRGenerate_Accounts_BankName_Text",
+              "name": "AccMainCert_BankName_Text",
               "layoutProperties": {
                 "textSize": 14,
                 "layout_width": "wrap_content",
@@ -549,10 +634,10 @@
                 "text": "HABIBMETRO",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-                "topToBottomOf": "_yPd6VuD6brCeNC_AwH0Z",
-                "layout_marginTop": 10,
+                "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+                "topToBottomOf": "r90WD6qhrlvbfWJBrxvfr",
                 "layout_marginLeft": 20,
+                "layout_marginTop": 10,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -571,25 +656,25 @@
             "path": "0-4"
           },
           {
-            "id": "lVX4nOGNXDQQGNVHrMwlm",
+            "id": "5AQo8Db4jCB7Nl9SJo4CT",
             "status": "ACTIVE",
             "name": "Text view",
             "attributes": {
-              "name": "QRGenerate_WantAmount_Text",
+              "name": "AccMainCert_Accounts_Change_Text",
               "layoutProperties": {
-                "textSize": 18,
+                "textSize": 11,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "Want to enter amount",
+                "text": "Change",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-                "topToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-                "layout_marginTop": 40,
-                "layout_marginLeft": 20,
-                "textStyle": "bold",
-                "textAlignment": "left"
+                "rightToRightOf": "B8w4YoCYAZFlEryPqljOx",
+                "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
+                "bottomToBottomOf": "B8w4YoCYAZFlEryPqljOx",
+                "textStyle": "regular",
+                "textAlignment": "right",
+                "layout_marginRight": 20
               }
             },
             "icon": "FaTextWidth",
@@ -606,25 +691,72 @@
             "path": "0-5"
           },
           {
-            "id": "KM1y1LoWSnh9zYGGoKg0B",
+            "id": "8wxdTGHuUb0qjbotX98mJ",
+            "status": "ACTIVE",
+            "name": "AccMainCert_Otp_Icon",
+            "attributes": {
+              "name": "AccMainCert_Otp_Icon",
+              "layoutProperties": {
+                "layout_width": "50",
+                "layout_height": "50",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6418300edde33425bca0f7ce",
+                  "name": "HMB_Otp_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "RfDsIFy4Eb5EwFXQFSz1p",
+                  "gitBranchName": "dev",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Otp_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Otp_Icon.png",
+                  "createdAt": "2023-03-20T10:06:06.042Z",
+                  "updatedAt": "2023-03-20T10:06:06.042Z",
+                  "__v": 0,
+                  "uri": "HMB_Otp_Icon.png"
+                },
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToBottomOf": "B8w4YoCYAZFlEryPqljOx",
+                "layout_marginTop": 40,
+                "id": "RfDsIFy4Eb5EwFXQFSz1p"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-6"
+          },
+          {
+            "id": "Qzi3ok523HNWyXKqJDZmc",
             "status": "ACTIVE",
             "name": "Text view",
             "attributes": {
-              "name": "QRGenerate_Accounts_Change_Text",
+              "name": "AccMainCert_Otp_Auth_Text",
               "layoutProperties": {
-                "textSize": 11,
+                "textSize": 15,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Change",
+                "textColor": "#1D6131",
+                "text": "AUTHENTICATION",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "rightToRightOf": "-fnl0EMBecNMyCtxn5_EW",
-                "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
-                "bottomToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-                "layout_marginRight": 20,
-                "textStyle": "regular",
-                "textAlignment": "right"
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToBottomOf": "8wxdTGHuUb0qjbotX98mJ",
+                "layout_marginTop": 10,
+                "textStyle": "bold",
+                "textAlignment": "center"
               }
             },
             "icon": "FaTextWidth",
@@ -638,50 +770,90 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-6"
+            "path": "0-7"
           },
           {
-            "id": "Di0fOyJK3jIeg5TG-HD7i",
+            "id": "TKvMAUkvYTBbu0X0g8H-z",
             "status": "ACTIVE",
-            "name": "QRGenerate_WantAMount_Switch",
+            "name": "AccMainCert_Otp_Auth_Btmline",
             "attributes": {
-              "name": "QRGenerate_WantAMount_Switch",
+              "name": "AccMainCert_Otp_Auth_Btmline",
               "layoutProperties": {
-                "layout_width": "50",
-                "layout_height": "22",
-                "layout_marginLeft": 0,
-                "layout_marginRight": 20,
-                "layout_marginTop": 0,
-                "layout_marginBottom": 0,
-                "centerX": "",
-                "centerY": "",
-                "transform": 0.3,
-                "selectedTintColor": "#1D6131",
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "2",
+                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-                "topToTopOf": "lVX4nOGNXDQQGNVHrMwlm"
-              },
-              "bindingkey": "qrgenerate_switch"
+                "background": "#1D6131",
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToBottomOf": "Qzi3ok523HNWyXKqJDZmc",
+                "layout_marginTop": 10,
+                "layout_marginRight": 20,
+                "layout_marginLeft": 20
+              }
             },
-            "icon": "FaToggleOn",
+            "icon": "FaTabletAlt",
             "group": "Form",
-            "type": "SWITCH",
+            "type": "VIEW",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Switch", "type": "SWITCH" },
-            "bindingkey": "qrgenerate_switch",
-            "path": "0-7"
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-8"
           },
           {
-            "id": "pAgRCXKK2BKuBgzHT5jzb",
+            "id": "AzA5pND8W9bBf_74YAS3g",
             "status": "ACTIVE",
-            "name": "QRGenerate_Generate_Btn",
+            "name": "AccMainCert_OTP",
             "attributes": {
-              "name": "QRGenerate_Generate_Btn",
+              "name": "AccMainCert_OTP",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 20,
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "textAlignment": "center",
+                "lineColor": "#1D6131",
+                "activeLineColor": "#1D6131",
+                "textColor": "#1D6131",
+                "spacing": 50,
+                "lineWidth": 30,
+                "activeLineWidth": 30,
+                "textSize": 20,
+                "textStyle": "regular",
+                "secureText": "*"
+              }
+            },
+            "icon": "FaShieldAlt",
+            "group": "Security",
+            "type": "OTP",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "OTP", "type": "OTP" },
+            "events": [],
+            "path": "0-9"
+          },
+          {
+            "id": "jpZ-9pmGrR5kSUxdXDTDk",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "AccMainCert_GenerateCert_Btn",
+            "attributes": {
+              "name": "AccMainCert_GenerateCert_Btn",
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "63",
@@ -689,7 +861,7 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 0,
                 "layout_marginBottom": 40,
-                "text": "Generate QR",
+                "text": "Generate Certificate",
                 "textSize": 20,
                 "textColor": "#ffffff",
                 "textStyle": "bold",
@@ -697,14 +869,14 @@
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#1D6131",
                 "clickable": true,
-                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-                "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-                "bottomToBottomOf": "WSYSE7cJ9_61V80ozVXdF"
+                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+                "bottomToBottomOf": "HAzYPYO-4gDDaLF-djicT"
               }
             },
             "icon": "FaBimobject",
             "group": "Form",
-            "type": "BUTTON",
+            "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
             "order": 20,
@@ -713,7 +885,7 @@
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
-            "path": "0-8",
+            "path": "0-10",
             "edit": true
           }
         ],
@@ -722,16 +894,16 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
-    "_id": "WSYSE7cJ9_61V80ozVXdF",
+    "_id": "HAzYPYO-4gDDaLF-djicT",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "hJequfx6A82jLNO5nkpS-",
+    "id": "JS0mWAPBv6C9oZbjzvcFE",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "QRGenerate_Accounts_Text",
+      "name": "AccMainCert_Accounts_Text",
       "layoutProperties": {
         "textSize": 18,
         "layout_width": "wrap_content",
@@ -740,8 +912,8 @@
         "text": "Accounts",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-        "topToTopOf": "WSYSE7cJ9_61V80ozVXdF",
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToTopOf": "HAzYPYO-4gDDaLF-djicT",
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
@@ -766,11 +938,11 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "-fnl0EMBecNMyCtxn5_EW",
+    "id": "B8w4YoCYAZFlEryPqljOx",
     "status": "ACTIVE",
-    "name": "QRGenerate_Accounts_View",
+    "name": "AccMainCert_Accounts_View",
     "attributes": {
-      "name": "QRGenerate_Accounts_View",
+      "name": "AccMainCert_Accounts_View",
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
@@ -778,12 +950,11 @@
         "borderColor": "#1D6131",
         "borderWidth": 2,
         "cornerRadius": [8, 8, 8, 8],
-        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-        "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-        "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-        "layout_marginBottom": 0,
-        "layout_marginLeft": 20,
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToBottomOf": "JS0mWAPBv6C9oZbjzvcFE",
         "layout_marginRight": 20,
+        "layout_marginLeft": 20,
         "layout_marginTop": 10
       }
     },
@@ -799,18 +970,17 @@
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-1",
-    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "v5UeU3yxc-OCQr8S7COVy",
+    "id": "fVeocwqPQupbqS4cF5aOp",
     "status": "ACTIVE",
-    "name": "QRGenerate_Accounts_AccTitle_Text",
+    "name": "AccMainCert_AccTitle_Text",
     "attributes": {
-      "name": "QRGenerate_Accounts_AccTitle_Text",
+      "name": "AccMainCert_AccTitle_Text",
       "layoutProperties": {
         "textSize": 15,
         "layout_width": "wrap_content",
@@ -819,12 +989,12 @@
         "text": "MUHAMMAD FARAN TAHIR",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-        "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
+        "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+        "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
-        "textAlignment": "left",
-        "textStyle": "regular"
+        "textStyle": "regular",
+        "textAlignment": "left"
       }
     },
     "icon": "FaTextWidth",
@@ -836,20 +1006,20 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "_yPd6VuD6brCeNC_AwH0Z",
+    "id": "r90WD6qhrlvbfWJBrxvfr",
     "status": "ACTIVE",
-    "name": "QRGenerate_Accounts_AccNum_Text",
+    "name": "AccMainCert_AccNum_Text",
     "attributes": {
-      "name": "QRGenerate_Accounts_AccNum_Text",
+      "name": "AccMainCert_AccNum_Text",
       "layoutProperties": {
         "textSize": 15,
         "layout_width": "wrap_content",
@@ -858,8 +1028,8 @@
         "text": "6010152417896325412",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-        "topToBottomOf": "v5UeU3yxc-OCQr8S7COVy",
+        "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+        "topToBottomOf": "fVeocwqPQupbqS4cF5aOp",
         "layout_marginTop": 10,
         "layout_marginLeft": 20,
         "textStyle": "regular",
@@ -875,20 +1045,20 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "5mYH3hcVa2C_rTV7E-mAV",
+    "id": "paTSpSZ75sqaWKKA01Bj1",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "QRGenerate_Accounts_BankName_Text",
+      "name": "AccMainCert_BankName_Text",
       "layoutProperties": {
         "textSize": 14,
         "layout_width": "wrap_content",
@@ -897,10 +1067,10 @@
         "text": "HABIBMETRO",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
-        "topToBottomOf": "_yPd6VuD6brCeNC_AwH0Z",
-        "layout_marginTop": 10,
+        "leftToLeftOf": "B8w4YoCYAZFlEryPqljOx",
+        "topToBottomOf": "r90WD6qhrlvbfWJBrxvfr",
         "layout_marginLeft": 20,
+        "layout_marginTop": 10,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -914,59 +1084,20 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-4",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "lVX4nOGNXDQQGNVHrMwlm",
-    "status": "ACTIVE",
-    "name": "Text view",
-    "attributes": {
-      "name": "QRGenerate_WantAmount_Text",
-      "layoutProperties": {
-        "textSize": 18,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Want to enter amount",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-        "topToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-        "layout_marginTop": 40,
-        "layout_marginLeft": 20,
-        "textStyle": "bold",
-        "textAlignment": "left"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
     "subType": "component",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-5",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "KM1y1LoWSnh9zYGGoKg0B",
+    "id": "5AQo8Db4jCB7Nl9SJo4CT",
     "status": "ACTIVE",
     "name": "Text view",
     "attributes": {
-      "name": "QRGenerate_Accounts_Change_Text",
+      "name": "AccMainCert_Accounts_Change_Text",
       "layoutProperties": {
         "textSize": 11,
         "layout_width": "wrap_content",
@@ -975,12 +1106,12 @@
         "text": "Change",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "rightToRightOf": "-fnl0EMBecNMyCtxn5_EW",
-        "topToTopOf": "-fnl0EMBecNMyCtxn5_EW",
-        "bottomToBottomOf": "-fnl0EMBecNMyCtxn5_EW",
-        "layout_marginRight": 20,
+        "rightToRightOf": "B8w4YoCYAZFlEryPqljOx",
+        "topToTopOf": "B8w4YoCYAZFlEryPqljOx",
+        "bottomToBottomOf": "B8w4YoCYAZFlEryPqljOx",
         "textStyle": "regular",
-        "textAlignment": "right"
+        "textAlignment": "right",
+        "layout_marginRight": 20
       }
     },
     "icon": "FaTextWidth",
@@ -992,40 +1123,173 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-6",
+    "path": "0-5",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Di0fOyJK3jIeg5TG-HD7i",
+    "id": "8wxdTGHuUb0qjbotX98mJ",
     "status": "ACTIVE",
-    "name": "QRGenerate_WantAMount_Switch",
+    "name": "AccMainCert_Otp_Icon",
     "attributes": {
-      "name": "QRGenerate_WantAMount_Switch",
+      "name": "AccMainCert_Otp_Icon",
       "layoutProperties": {
         "layout_width": "50",
-        "layout_height": "22",
-        "layout_marginLeft": 0,
-        "layout_marginRight": 20,
-        "layout_marginTop": 0,
-        "layout_marginBottom": 0,
-        "centerX": "",
-        "centerY": "",
-        "transform": 0.3,
-        "selectedTintColor": "#1D6131",
+        "layout_height": "50",
         "cornerRadius": [0, 0, 0, 0],
-        "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-        "topToTopOf": "lVX4nOGNXDQQGNVHrMwlm"
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6418300edde33425bca0f7ce",
+          "name": "HMB_Otp_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "RfDsIFy4Eb5EwFXQFSz1p",
+          "gitBranchName": "dev",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "HMB_Otp_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Otp_Icon.png",
+          "createdAt": "2023-03-20T10:06:06.042Z",
+          "updatedAt": "2023-03-20T10:06:06.042Z",
+          "__v": 0,
+          "uri": "HMB_Otp_Icon.png"
+        },
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToBottomOf": "B8w4YoCYAZFlEryPqljOx",
+        "layout_marginTop": 40,
+        "id": "RfDsIFy4Eb5EwFXQFSz1p"
       },
-      "bindingkey": "qrgenerate_switch"
+      "contentType": 2
     },
-    "icon": "FaToggleOn",
+    "icon": "FaRegImage",
     "group": "Form",
-    "type": "SWITCH",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-6",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Qzi3ok523HNWyXKqJDZmc",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "AccMainCert_Otp_Auth_Text",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#1D6131",
+        "text": "AUTHENTICATION",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToBottomOf": "8wxdTGHuUb0qjbotX98mJ",
+        "layout_marginTop": 10,
+        "textStyle": "bold",
+        "textAlignment": "center"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-7",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "TKvMAUkvYTBbu0X0g8H-z",
+    "status": "ACTIVE",
+    "name": "AccMainCert_Otp_Auth_Btmline",
+    "attributes": {
+      "name": "AccMainCert_Otp_Auth_Btmline",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "2",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1D6131",
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToBottomOf": "Qzi3ok523HNWyXKqJDZmc",
+        "layout_marginTop": 10,
+        "layout_marginRight": 20,
+        "layout_marginLeft": 20
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-8",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "AzA5pND8W9bBf_74YAS3g",
+    "status": "ACTIVE",
+    "name": "AccMainCert_OTP",
+    "attributes": {
+      "name": "AccMainCert_OTP",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20,
+        "layout_marginTop": 20,
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "textAlignment": "center",
+        "lineColor": "#1D6131",
+        "activeLineColor": "#1D6131",
+        "textColor": "#1D6131",
+        "spacing": 50,
+        "lineWidth": 30,
+        "activeLineWidth": 30,
+        "textSize": 20,
+        "textStyle": "regular",
+        "secureText": "*"
+      }
+    },
+    "icon": "FaShieldAlt",
+    "group": "Security",
+    "type": "OTP",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
@@ -1033,19 +1297,19 @@
     "isLatest": true,
     "projectType": "mobile",
     "subType": "component",
-    "component": { "content": "Switch", "type": "SWITCH" },
-    "bindingkey": "qrgenerate_switch",
-    "path": "0-7",
+    "component": { "content": "OTP", "type": "OTP" },
+    "events": [],
+    "path": "0-9",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "pAgRCXKK2BKuBgzHT5jzb",
+    "id": "jpZ-9pmGrR5kSUxdXDTDk",
     "status": "ACTIVE",
-    "name": "QRGenerate_Generate_Btn",
+    "name": "AccMainCert_GenerateCert_Btn",
     "attributes": {
-      "name": "QRGenerate_Generate_Btn",
+      "name": "AccMainCert_GenerateCert_Btn",
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "63",
@@ -1053,7 +1317,7 @@
         "layout_marginRight": 20,
         "layout_marginTop": 0,
         "layout_marginBottom": 40,
-        "text": "Generate QR",
+        "text": "Generate Certificate",
         "textSize": 20,
         "textColor": "#ffffff",
         "textStyle": "bold",
@@ -1061,9 +1325,9 @@
         "cornerRadius": [8, 8, 8, 8],
         "background": "#1D6131",
         "clickable": true,
-        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
-        "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
-        "bottomToBottomOf": "WSYSE7cJ9_61V80ozVXdF"
+        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
+        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
+        "bottomToBottomOf": "HAzYPYO-4gDDaLF-djicT"
       }
     },
     "icon": "FaBimobject",
@@ -1078,7 +1342,7 @@
     "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
-    "path": "0-8",
+    "path": "0-10",
     "edit": true,
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
