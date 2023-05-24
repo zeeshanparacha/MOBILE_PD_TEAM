@@ -1,0 +1,1720 @@
+[
+  {
+    "id": "OP7I_YX7wF5Oc3isWma2_",
+    "name": "HMB_Prelogin_Location_FindNearestBranch_Screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "HMB_Prelogin_Location_FindNearestBranch_Screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#FFFFFF",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": [
+        "GtTisQc1e8dyHNDRfMe6y",
+        "ZZcydWzzqJk8m4GXXvli4",
+        "37gEjh--qIzx_N2UvGiVI",
+        "yULQJuc2E-RwzyXyZkpq8"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "5/24/2023",
+    "createdAt": "5/24/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "GtTisQc1e8dyHNDRfMe6y",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Back_Icon",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Back_Icon",
+          "layoutProperties": {
+            "layout_width": "30",
+            "layout_height": "30",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646b2ea860501c687c75259d",
+              "name": "location_back_btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "kbEs-j3rYx3jfCwuMCZF0",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "location_back_btn.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
+              "createdAt": "2023-05-22T08:58:16.339Z",
+              "updatedAt": "2023-05-22T08:58:16.339Z",
+              "__v": 0,
+              "uri": "location_back_btn.png"
+            },
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToTopOf": "OP7I_YX7wF5Oc3isWma2_",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "id": "kbEs-j3rYx3jfCwuMCZF0"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "IMAGEVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-0"
+      },
+      {
+        "id": "ZZcydWzzqJk8m4GXXvli4",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Text",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Text",
+          "layoutProperties": {
+            "textSize": 25,
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Find Nearest Branches & ATMs",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 2,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "GtTisQc1e8dyHNDRfMe6y",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
+            "width_percent": 80,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "ZpZnYXESHbHtj1u_9Up93",
+            "triggerName": "Location_FindNearestBranch_Cities_Glist_Data_Trigg",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "findnearestbranch_cities_glist_data",
+              "value": [
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Karachi",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "lahore",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Islamabad",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Faisalabad",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Peshawar",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Sialkot",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "37gEjh--qIzx_N2UvGiVI",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "Location_FindNearestBranch_PopularCities_Text",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Popular Cities",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "ZZcydWzzqJk8m4GXXvli4",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 50,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-2"
+      },
+      {
+        "id": "yULQJuc2E-RwzyXyZkpq8",
+        "type": "GLIST",
+        "name": "Location_FindNearestBranch_Cities_Glist",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "Location_FindNearestBranch_Cities_Glist",
+          "bindingKey": "findnearestbranch_cities_glist_data",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 2,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "borderWidth": 0,
+            "clickable": true,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "rightToRightOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "37gEjh--qIzx_N2UvGiVI",
+            "bottomToBottomOf": "OP7I_YX7wF5Oc3isWma2_",
+            "layout_marginTop": 10,
+            "background": "#1D6131",
+            "rows": [{ "id": "P681FHANi-2Tl6eSOQNKE" }]
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-3",
+        "gridProps": [
+          {
+            "id": "P681FHANi-2Tl6eSOQNKE",
+            "name": "GLIST",
+            "path": "0-3-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "status": "ACTIVE",
+                "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [10, 10, 10, 10],
+                    "background": "#6E6E6E",
+                    "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+                    "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+                    "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+                    "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+                    "layout_marginLeft": 10,
+                    "layout_marginRight": 10,
+                    "layout_marginTop": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "VIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-3-0-0",
+                "edit": true
+              },
+              {
+                "id": "FCXPvoXi283jpteJrlDGJ",
+                "status": "ACTIVE",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Cities_Text",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginRight": 10,
+                    "layout_marginBottom": 30,
+                    "textStyle": "bold",
+                    "textAlignment": "right"
+                  },
+                  "bindingKey": "findnearestbranch_cities_glist_cities_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-3-0-1"
+              },
+              {
+                "id": "140nBP6Z5TlSPqo4Nrsqh",
+                "status": "ACTIVE",
+                "name": "Location_FindNearestBranch_Country_Text",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Country_Text",
+                  "layoutProperties": {
+                    "textSize": 15,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginRight": 10,
+                    "layout_marginTop": 0,
+                    "textStyle": "regular",
+                    "textAlignment": "right",
+                    "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginBottom": 10
+                  },
+                  "bindingKey": "findnearestbranch_cities_glist_country_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-3-0-2",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "componentId": [],
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "clickable": true
+              }
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "OP7I_YX7wF5Oc3isWma2_",
+        "name": "HMB_Prelogin_Location_FindNearestBranch_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Prelogin_Location_FindNearestBranch_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "GtTisQc1e8dyHNDRfMe6y",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Back_Icon",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Back_Icon",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "646b2ea860501c687c75259d",
+                  "name": "location_back_btn.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "kbEs-j3rYx3jfCwuMCZF0",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "location_back_btn.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
+                  "createdAt": "2023-05-22T08:58:16.339Z",
+                  "updatedAt": "2023-05-22T08:58:16.339Z",
+                  "__v": 0,
+                  "uri": "location_back_btn.png"
+                },
+                "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+                "topToTopOf": "OP7I_YX7wF5Oc3isWma2_",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "id": "kbEs-j3rYx3jfCwuMCZF0"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-0"
+          },
+          {
+            "id": "ZZcydWzzqJk8m4GXXvli4",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Text",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Text",
+              "layoutProperties": {
+                "textSize": 25,
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Find Nearest Branches & ATMs",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 2,
+                "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+                "topToBottomOf": "GtTisQc1e8dyHNDRfMe6y",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
+                "width_percent": 80,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "ZpZnYXESHbHtj1u_9Up93",
+                "triggerName": "Location_FindNearestBranch_Cities_Glist_Data_Trigg",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "findnearestbranch_cities_glist_data",
+                  "value": [
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "Karachi",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    },
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "lahore",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    },
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "Islamabad",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    },
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "Faisalabad",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    },
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "Peshawar",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    },
+                    {
+                      "findnearestbranch_cities_glist_cities_data": "Sialkot",
+                      "findnearestbranch_cities_glist_country_data": "Pakistan"
+                    }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "2"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "37gEjh--qIzx_N2UvGiVI",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "Location_FindNearestBranch_PopularCities_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Popular Cities",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+                "topToBottomOf": "ZZcydWzzqJk8m4GXXvli4",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 50,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          },
+          {
+            "id": "yULQJuc2E-RwzyXyZkpq8",
+            "type": "GLIST",
+            "name": "Location_FindNearestBranch_Cities_Glist",
+            "component": { "content": "Grid List View", "type": "GLIST" },
+            "attributes": {
+              "name": "Location_FindNearestBranch_Cities_Glist",
+              "bindingKey": "findnearestbranch_cities_glist_data",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "column": 2,
+                "layout_height": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "borderWidth": 0,
+                "clickable": true,
+                "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+                "rightToRightOf": "OP7I_YX7wF5Oc3isWma2_",
+                "topToBottomOf": "37gEjh--qIzx_N2UvGiVI",
+                "bottomToBottomOf": "OP7I_YX7wF5Oc3isWma2_",
+                "layout_marginTop": 10,
+                "background": "#1D6131",
+                "rows": [{ "id": "P681FHANi-2Tl6eSOQNKE" }]
+              },
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-3",
+            "gridProps": [
+              {
+                "id": "P681FHANi-2Tl6eSOQNKE",
+                "name": "GLIST",
+                "path": "0-3-0",
+                "type": "GLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "status": "ACTIVE",
+                    "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                    "attributes": {
+                      "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [10, 10, 10, 10],
+                        "background": "#6E6E6E",
+                        "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+                        "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+                        "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+                        "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+                        "layout_marginLeft": 10,
+                        "layout_marginRight": 10,
+                        "layout_marginTop": 10
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "VIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-3-0-0",
+                    "edit": true
+                  },
+                  {
+                    "id": "FCXPvoXi283jpteJrlDGJ",
+                    "status": "ACTIVE",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Location_FindNearestBranch_Cities_Text",
+                      "layoutProperties": {
+                        "textSize": 16,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#ffffff",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                        "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                        "layout_marginRight": 10,
+                        "layout_marginBottom": 30,
+                        "textStyle": "bold",
+                        "textAlignment": "right"
+                      },
+                      "bindingKey": "findnearestbranch_cities_glist_cities_data"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "TEXTVIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-3-0-1"
+                  },
+                  {
+                    "id": "140nBP6Z5TlSPqo4Nrsqh",
+                    "status": "ACTIVE",
+                    "name": "Location_FindNearestBranch_Country_Text",
+                    "attributes": {
+                      "name": "Location_FindNearestBranch_Country_Text",
+                      "layoutProperties": {
+                        "textSize": 15,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#ffffff",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                        "layout_marginRight": 10,
+                        "layout_marginTop": 0,
+                        "textStyle": "regular",
+                        "textAlignment": "right",
+                        "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                        "layout_marginBottom": 10
+                      },
+                      "bindingKey": "findnearestbranch_cities_glist_country_data"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "TEXTVIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-3-0-2",
+                    "edit": true
+                  }
+                ],
+                "attributes": {
+                  "componentId": [],
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "clickable": true
+                  }
+                }
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "OP7I_YX7wF5Oc3isWma2_",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "GtTisQc1e8dyHNDRfMe6y",
+    "status": "ACTIVE",
+    "name": "Location_FindNearestBranch_Back_Icon",
+    "attributes": {
+      "name": "Location_FindNearestBranch_Back_Icon",
+      "layoutProperties": {
+        "layout_width": "30",
+        "layout_height": "30",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "646b2ea860501c687c75259d",
+          "name": "location_back_btn.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "kbEs-j3rYx3jfCwuMCZF0",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "location_back_btn.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
+          "createdAt": "2023-05-22T08:58:16.339Z",
+          "updatedAt": "2023-05-22T08:58:16.339Z",
+          "__v": 0,
+          "uri": "location_back_btn.png"
+        },
+        "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+        "topToTopOf": "OP7I_YX7wF5Oc3isWma2_",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20,
+        "id": "kbEs-j3rYx3jfCwuMCZF0"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ZZcydWzzqJk8m4GXXvli4",
+    "status": "ACTIVE",
+    "name": "Location_FindNearestBranch_Text",
+    "attributes": {
+      "name": "Location_FindNearestBranch_Text",
+      "layoutProperties": {
+        "textSize": 25,
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Find Nearest Branches & ATMs",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 2,
+        "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+        "topToBottomOf": "GtTisQc1e8dyHNDRfMe6y",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 10,
+        "width_percent": 80,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "ZpZnYXESHbHtj1u_9Up93",
+        "triggerName": "Location_FindNearestBranch_Cities_Glist_Data_Trigg",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "37gEjh--qIzx_N2UvGiVI",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Location_FindNearestBranch_PopularCities_Text",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Popular Cities",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+        "topToBottomOf": "ZZcydWzzqJk8m4GXXvli4",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 50,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-2",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "yULQJuc2E-RwzyXyZkpq8",
+    "type": "GLIST",
+    "name": "Location_FindNearestBranch_Cities_Glist",
+    "component": { "content": "Grid List View", "type": "GLIST" },
+    "attributes": {
+      "name": "Location_FindNearestBranch_Cities_Glist",
+      "bindingKey": "findnearestbranch_cities_glist_data",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "column": 2,
+        "layout_height": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "borderWidth": 0,
+        "clickable": true,
+        "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+        "rightToRightOf": "OP7I_YX7wF5Oc3isWma2_",
+        "topToBottomOf": "37gEjh--qIzx_N2UvGiVI",
+        "bottomToBottomOf": "OP7I_YX7wF5Oc3isWma2_",
+        "layout_marginTop": 10,
+        "background": "#1D6131",
+        "rows": [{ "id": "P681FHANi-2Tl6eSOQNKE" }]
+      },
+      "componentId": ["P681FHANi-2Tl6eSOQNKE"]
+    },
+    "events": [],
+    "path": "0-3",
+    "gridProps": [
+      {
+        "id": "P681FHANi-2Tl6eSOQNKE",
+        "name": "GLIST",
+        "path": "0-3-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#6E6E6E",
+                "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+                "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+                "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+                "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-3-0-0",
+            "edit": true
+          },
+          {
+            "id": "FCXPvoXi283jpteJrlDGJ",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Cities_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginRight": 10,
+                "layout_marginBottom": 30,
+                "textStyle": "bold",
+                "textAlignment": "right"
+              },
+              "bindingKey": "findnearestbranch_cities_glist_cities_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3-0-1"
+          },
+          {
+            "id": "140nBP6Z5TlSPqo4Nrsqh",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Country_Text",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Country_Text",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginRight": 10,
+                "layout_marginTop": 0,
+                "textStyle": "regular",
+                "textAlignment": "right",
+                "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginBottom": 10
+              },
+              "bindingKey": "findnearestbranch_cities_glist_country_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3-0-2",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "componentId": [],
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "clickable": true
+          }
+        }
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "GtTisQc1e8dyHNDRfMe6y",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Back_Icon",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Back_Icon",
+          "layoutProperties": {
+            "layout_width": "30",
+            "layout_height": "30",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646b2ea860501c687c75259d",
+              "name": "location_back_btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "kbEs-j3rYx3jfCwuMCZF0",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "location_back_btn.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
+              "createdAt": "2023-05-22T08:58:16.339Z",
+              "updatedAt": "2023-05-22T08:58:16.339Z",
+              "__v": 0,
+              "uri": "location_back_btn.png"
+            },
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToTopOf": "OP7I_YX7wF5Oc3isWma2_",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "id": "kbEs-j3rYx3jfCwuMCZF0"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "IMAGEVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-0"
+      },
+      {
+        "id": "ZZcydWzzqJk8m4GXXvli4",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Text",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Text",
+          "layoutProperties": {
+            "textSize": 25,
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Find Nearest Branches & ATMs",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 2,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "GtTisQc1e8dyHNDRfMe6y",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
+            "width_percent": 80,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "ZpZnYXESHbHtj1u_9Up93",
+            "triggerName": "Location_FindNearestBranch_Cities_Glist_Data_Trigg",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "findnearestbranch_cities_glist_data",
+              "value": [
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Karachi",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "lahore",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Islamabad",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Faisalabad",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Peshawar",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                },
+                {
+                  "findnearestbranch_cities_glist_cities_data": "Sialkot",
+                  "findnearestbranch_cities_glist_country_data": "Pakistan"
+                }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "37gEjh--qIzx_N2UvGiVI",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "Location_FindNearestBranch_PopularCities_Text",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Popular Cities",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "ZZcydWzzqJk8m4GXXvli4",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 50,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-2"
+      },
+      {
+        "id": "yULQJuc2E-RwzyXyZkpq8",
+        "type": "GLIST",
+        "name": "Location_FindNearestBranch_Cities_Glist",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "Location_FindNearestBranch_Cities_Glist",
+          "bindingKey": "findnearestbranch_cities_glist_data",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 2,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "borderWidth": 0,
+            "clickable": true,
+            "leftToLeftOf": "OP7I_YX7wF5Oc3isWma2_",
+            "rightToRightOf": "OP7I_YX7wF5Oc3isWma2_",
+            "topToBottomOf": "37gEjh--qIzx_N2UvGiVI",
+            "bottomToBottomOf": "OP7I_YX7wF5Oc3isWma2_",
+            "layout_marginTop": 10,
+            "background": "#1D6131",
+            "rows": [{ "id": "P681FHANi-2Tl6eSOQNKE" }]
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-3",
+        "gridProps": [
+          {
+            "id": "P681FHANi-2Tl6eSOQNKE",
+            "name": "GLIST",
+            "path": "0-3-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "status": "ACTIVE",
+                "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [10, 10, 10, 10],
+                    "background": "#6E6E6E",
+                    "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+                    "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+                    "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+                    "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+                    "layout_marginLeft": 10,
+                    "layout_marginRight": 10,
+                    "layout_marginTop": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "VIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-3-0-0",
+                "edit": true
+              },
+              {
+                "id": "FCXPvoXi283jpteJrlDGJ",
+                "status": "ACTIVE",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Cities_Text",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginRight": 10,
+                    "layout_marginBottom": 30,
+                    "textStyle": "bold",
+                    "textAlignment": "right"
+                  },
+                  "bindingKey": "findnearestbranch_cities_glist_cities_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-3-0-1"
+              },
+              {
+                "id": "140nBP6Z5TlSPqo4Nrsqh",
+                "status": "ACTIVE",
+                "name": "Location_FindNearestBranch_Country_Text",
+                "attributes": {
+                  "name": "Location_FindNearestBranch_Country_Text",
+                  "layoutProperties": {
+                    "textSize": 15,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#ffffff",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginRight": 10,
+                    "layout_marginTop": 0,
+                    "textStyle": "regular",
+                    "textAlignment": "right",
+                    "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                    "layout_marginBottom": 10
+                  },
+                  "bindingKey": "findnearestbranch_cities_glist_country_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "TEXTVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-3-0-2",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "componentId": [],
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "clickable": true
+              }
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "P681FHANi-2Tl6eSOQNKE",
+    "name": "GLIST",
+    "path": "0-3-0",
+    "type": "GLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "borderWidth": 0,
+            "cornerRadius": [10, 10, 10, 10],
+            "background": "#6E6E6E",
+            "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+            "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+            "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+            "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-3-0-0",
+        "edit": true
+      },
+      {
+        "id": "FCXPvoXi283jpteJrlDGJ",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Cities_Text",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "layout_marginRight": 10,
+            "layout_marginBottom": 30,
+            "textStyle": "bold",
+            "textAlignment": "right"
+          },
+          "bindingKey": "findnearestbranch_cities_glist_cities_data"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-3-0-1"
+      },
+      {
+        "id": "140nBP6Z5TlSPqo4Nrsqh",
+        "status": "ACTIVE",
+        "name": "Location_FindNearestBranch_Country_Text",
+        "attributes": {
+          "name": "Location_FindNearestBranch_Country_Text",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "layout_marginRight": 10,
+            "layout_marginTop": 0,
+            "textStyle": "regular",
+            "textAlignment": "right",
+            "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "layout_marginBottom": 10
+          },
+          "bindingKey": "findnearestbranch_cities_glist_country_data"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-3-0-2",
+        "edit": true
+      }
+    ],
+    "attributes": {
+      "componentId": [
+        "8mkFQ1Za2xVK0m8f2Wn7s",
+        "FCXPvoXi283jpteJrlDGJ",
+        "140nBP6Z5TlSPqo4Nrsqh"
+      ],
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent",
+        "clickable": true
+      }
+    },
+    "layout": [
+      {
+        "id": "P681FHANi-2Tl6eSOQNKE",
+        "name": "GLIST",
+        "path": "0-3-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#6E6E6E",
+                "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+                "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+                "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+                "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-3-0-0",
+            "edit": true
+          },
+          {
+            "id": "FCXPvoXi283jpteJrlDGJ",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Cities_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginRight": 10,
+                "layout_marginBottom": 30,
+                "textStyle": "bold",
+                "textAlignment": "right"
+              },
+              "bindingKey": "findnearestbranch_cities_glist_cities_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3-0-1"
+          },
+          {
+            "id": "140nBP6Z5TlSPqo4Nrsqh",
+            "status": "ACTIVE",
+            "name": "Location_FindNearestBranch_Country_Text",
+            "attributes": {
+              "name": "Location_FindNearestBranch_Country_Text",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginRight": 10,
+                "layout_marginTop": 0,
+                "textStyle": "regular",
+                "textAlignment": "right",
+                "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+                "layout_marginBottom": 10
+              },
+              "bindingKey": "findnearestbranch_cities_glist_country_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3-0-2",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "componentId": [],
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "clickable": true
+          }
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "8mkFQ1Za2xVK0m8f2Wn7s",
+    "status": "ACTIVE",
+    "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+    "attributes": {
+      "name": "Location_FindNearestBranch_Cities_Glistitem_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "borderWidth": 0,
+        "cornerRadius": [10, 10, 10, 10],
+        "background": "#6E6E6E",
+        "leftToLeftOf": "P681FHANi-2Tl6eSOQNKE",
+        "rightToRightOf": "P681FHANi-2Tl6eSOQNKE",
+        "topToTopOf": "P681FHANi-2Tl6eSOQNKE",
+        "bottomToBottomOf": "P681FHANi-2Tl6eSOQNKE",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10,
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-3-0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "FCXPvoXi283jpteJrlDGJ",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Location_FindNearestBranch_Cities_Text",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+        "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+        "layout_marginRight": 10,
+        "layout_marginBottom": 30,
+        "textStyle": "bold",
+        "textAlignment": "right"
+      },
+      "bindingKey": "findnearestbranch_cities_glist_cities_data"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-3-0-1",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "140nBP6Z5TlSPqo4Nrsqh",
+    "status": "ACTIVE",
+    "name": "Location_FindNearestBranch_Country_Text",
+    "attributes": {
+      "name": "Location_FindNearestBranch_Country_Text",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "rightToRightOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+        "layout_marginRight": 10,
+        "layout_marginTop": 0,
+        "textStyle": "regular",
+        "textAlignment": "right",
+        "bottomToBottomOf": "8mkFQ1Za2xVK0m8f2Wn7s",
+        "layout_marginBottom": 10
+      },
+      "bindingKey": "findnearestbranch_cities_glist_country_data"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-3-0-2",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

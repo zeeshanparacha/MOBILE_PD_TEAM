@@ -1,0 +1,35 @@
+{
+  "id": "6Nxr6_ed_v2kajuccGk7S",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "MainMenu_PayBill_ExpandView_Hide_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "JYcLSPcqjfk4Ia4qf20JW",
+              "triggerName": "MainMenu_PayBill_ExpandView_AllHide"
+            },
+            {
+              "triggerId": "d15xbmrvHFcTtJ0mCtyRw",
+              "triggerName": "MainMenu_PayBill_ExpandView_AllShow"
+            }
+          ],
+          "triggerId": ["JYcLSPcqjfk4Ia4qf20JW", "d15xbmrvHFcTtJ0mCtyRw"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "_SoWL81E-GJcX1jDq77dt",
+  "updatedAt": "5/24/2023",
+  "createdAt": "5/24/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

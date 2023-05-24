@@ -73,14 +73,18 @@
         "ynTGlJg-lCcgynLFI_ZWF",
         "oqIcX-fhHyZKFNRpVTbFj",
         "Dg-ROW7bA9vN75bwD_4CQ",
-        "XyOjdoQLvlHqT6ZhICpOI"
+        "XyOjdoQLvlHqT6ZhICpOI",
+        "G9m_PUlBk5WBPAMDatDww",
+        "Rww_k6G7g_OohUVVoqhOj",
+        "f_IMIZoDyJYNvM7oCY7MR",
+        "Cw8BuZUDElnF4niRqXeAi"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/18/2023",
-    "createdAt": "5/18/2023",
+    "updatedAt": "5/23/2023",
+    "createdAt": "5/23/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -267,17 +271,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -895,7 +888,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -1537,19 +1542,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -2652,6 +2645,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -2745,7 +2786,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -2841,7 +2896,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -2891,7 +2958,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -2987,7 +3066,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -3929,7 +4022,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -3940,8 +4045,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -4018,6 +4123,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "screen",
@@ -4232,17 +4483,6 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
-              },
-              {
-                "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-                "triggerName": "Navigate_To_LogoutSummary_Screen",
-                "serviceType": "NAVIGATION",
-                "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "upsD2d5yrT9Trb6gmcoHf"
-                },
-                "type": "ONCLICK",
-                "name": "On click"
               }
             ],
             "path": "0-2",
@@ -4866,7 +5106,19 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "b746R4CVk9OkC2VJMknh9",
+                "triggerName": "Navigate_To_MiniStatement_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ydRSfrJLTaKtLy0O3jZzn"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-7",
             "edit": true
           },
@@ -5508,19 +5760,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-                "triggerName": "Navigate_To_Zakat_List_Screen",
-                "serviceType": "NAVIGATION",
-                "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "x2yVu1Nz7wvUxd8USJiMI"
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
+            "events": [],
             "path": "0-24",
             "edit": true
           },
@@ -6638,6 +6878,57 @@
                       "type": "IMAGEVIEW"
                     },
                     "path": "0-35-0-6"
+                  },
+                  {
+                    "id": "MwpQAx6sukBxM2SGSSRiu",
+                    "status": "ACTIVE",
+                    "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                    "attributes": {
+                      "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                      "layoutProperties": {
+                        "layout_width": "40",
+                        "layout_height": "40",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "645fa8464e35ca4a482adea4",
+                          "name": "SC_Icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "0X23KUiXjt-VYJ_WIJGVc",
+                          "gitBranchName": "master",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "SC_Icon.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                          "createdAt": "2023-05-13T15:09:58.373Z",
+                          "updatedAt": "2023-05-13T15:09:58.373Z",
+                          "__v": 0,
+                          "uri": "SC_Icon.png"
+                        },
+                        "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                        "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                        "layout_marginLeft": 20,
+                        "layout_marginTop": 20,
+                        "id": "0X23KUiXjt-VYJ_WIJGVc",
+                        "elevation": 20
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "IMAGEVIEW",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-35-0-7"
                   }
                 ],
                 "attributes": {
@@ -6731,7 +7022,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-37"
+            "path": "0-37",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+                "triggerName": "Navigate_To_Profile_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "GAQ5tPz4rug98MPB7_H5n"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -6827,7 +7132,19 @@
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-39",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+                "triggerName": "Navigate_To_LogoutSummary_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "upsD2d5yrT9Trb6gmcoHf"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -6877,7 +7194,19 @@
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-40",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "8j-on39yS7NETxMPMalD-",
+                "triggerName": "Navigate_To_Bene_List_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "az-zEHqs8jNLcY5jSoBDk"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -6973,7 +7302,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-42"
+            "path": "0-42",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+                "triggerName": "Navigate_To_BillBeneList_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "2YwG1lUxEQzSHUa-AXzK7"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -7927,7 +8270,19 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "b8pRI6dMc1lvnRlThChAW",
+                "triggerName": "Navigate_To_CardRequest_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "GMhZUhcHBT0E03rdSeyqe"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-54",
             "edit": true
           },
@@ -7938,8 +8293,8 @@
             "attributes": {
               "name": "Dash_State_State_Icon",
               "layoutProperties": {
-                "layout_width": "20",
-                "layout_height": "20",
+                "layout_width": "30",
+                "layout_height": "30",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
@@ -8016,6 +8371,152 @@
             "events": [],
             "path": "0-56",
             "edit": true
+          },
+          {
+            "id": "G9m_PUlBk5WBPAMDatDww",
+            "status": "ACTIVE",
+            "name": "samp_view",
+            "attributes": {
+              "name": "samp_view",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "70",
+                "borderWidth": 0,
+                "cornerRadius": [5, 5, 5, 5],
+                "background": "#1D6131",
+                "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+                "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+                "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-57"
+          },
+          {
+            "id": "Rww_k6G7g_OohUVVoqhOj",
+            "status": "ACTIVE",
+            "name": "Dashboard_RequesttoPay_View",
+            "attributes": {
+              "name": "Dashboard_RequesttoPay_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "70",
+                "layout_height": "60",
+                "borderColor": "#FFFFFF",
+                "borderWidth": 2,
+                "cornerRadius": [5, 5, 5, 5],
+                "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+                "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+                "layout_marginRight": 5,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-58"
+          },
+          {
+            "id": "f_IMIZoDyJYNvM7oCY7MR",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "DashRequesttoPay_Text",
+              "layoutProperties": {
+                "textSize": 8,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Request to pay",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+                "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+                "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+                "layout_marginBottom": 5,
+                "textStyle": "regular",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-59"
+          },
+          {
+            "id": "Cw8BuZUDElnF4niRqXeAi",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "10",
+                "layout_height": "10",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "646cabd360501c687c755864",
+                  "name": "requesttopay_icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "6ohL2uvzUFgbilKWosVR3",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "requesttopay_icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+                  "createdAt": "2023-05-23T12:04:35.955Z",
+                  "updatedAt": "2023-05-23T12:04:35.955Z",
+                  "__v": 0,
+                  "uri": "requesttopay_icon.png"
+                },
+                "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+                "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+                "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+                "layout_marginTop": 5,
+                "id": "6ohL2uvzUFgbilKWosVR3"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-60"
           }
         ],
         "subType": "screen"
@@ -8163,12 +8664,6 @@
         "triggerName": "Dashboard_Transfer_Hlist_DS_Trig",
         "name": "On Load",
         "type": "ONLOAD"
-      },
-      {
-        "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-        "triggerName": "Navigate_To_LogoutSummary_Screen",
-        "name": "On click",
-        "type": "ONCLICK"
       }
     ],
     "path": "0-2",
@@ -8879,17 +9374,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -9507,7 +9991,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -10149,19 +10645,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -11264,6 +11748,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -11357,7 +11889,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -11453,7 +11999,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -11503,7 +12061,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -11599,7 +12169,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -12541,7 +13125,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -12552,8 +13148,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -12630,6 +13226,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "component",
@@ -14154,7 +14896,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "b746R4CVk9OkC2VJMknh9",
+        "triggerName": "Navigate_To_MiniStatement_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-7",
     "edit": true,
     "subType": "component",
@@ -14854,14 +15603,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-        "triggerName": "Navigate_To_Zakat_List_Screen",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
+    "events": [],
     "path": "0-24",
     "edit": true,
     "subType": "component",
@@ -15680,17 +16422,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -16308,7 +17039,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -16950,19 +17693,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -18065,6 +18796,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -18158,7 +18937,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -18254,7 +19047,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -18304,7 +19109,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -18400,7 +19217,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -19342,7 +20173,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -19353,8 +20196,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -19431,6 +20274,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "component",
@@ -20674,6 +21663,54 @@
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-35-0-6"
+          },
+          {
+            "id": "MwpQAx6sukBxM2SGSSRiu",
+            "status": "ACTIVE",
+            "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+            "attributes": {
+              "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "645fa8464e35ca4a482adea4",
+                  "name": "SC_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "0X23KUiXjt-VYJ_WIJGVc",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "SC_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                  "createdAt": "2023-05-13T15:09:58.373Z",
+                  "updatedAt": "2023-05-13T15:09:58.373Z",
+                  "__v": 0,
+                  "uri": "SC_Icon.png"
+                },
+                "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "id": "0X23KUiXjt-VYJ_WIJGVc",
+                "elevation": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-35-0-7"
           }
         ],
         "attributes": {
@@ -20868,17 +21905,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -21496,7 +22522,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -22138,19 +23176,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -23253,6 +24279,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -23346,7 +24420,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -23442,7 +24530,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -23492,7 +24592,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -23588,7 +24700,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -24530,7 +25656,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -24541,8 +25679,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -24619,6 +25757,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "component",
@@ -24915,6 +26199,54 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-35-0-6"
+      },
+      {
+        "id": "MwpQAx6sukBxM2SGSSRiu",
+        "status": "ACTIVE",
+        "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+        "attributes": {
+          "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "645fa8464e35ca4a482adea4",
+              "name": "SC_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0X23KUiXjt-VYJ_WIJGVc",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "SC_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+              "createdAt": "2023-05-13T15:09:58.373Z",
+              "updatedAt": "2023-05-13T15:09:58.373Z",
+              "__v": 0,
+              "uri": "SC_Icon.png"
+            },
+            "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+            "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "id": "0X23KUiXjt-VYJ_WIJGVc",
+            "elevation": 20
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "IMAGEVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-35-0-7"
       }
     ],
     "attributes": {
@@ -24931,7 +26263,8 @@
         "XOw2I9kCczK0rIjL4Tzqn",
         "A1XfcKxU4zYPbmHMa_d3w",
         "asEfIwrPQM3jCWizyEW0Z",
-        "cyMEziWLQyUfRXX680YQO"
+        "cyMEziWLQyUfRXX680YQO",
+        "MwpQAx6sukBxM2SGSSRiu"
       ]
     },
     "layout": [
@@ -25223,6 +26556,54 @@
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-35-0-6"
+          },
+          {
+            "id": "MwpQAx6sukBxM2SGSSRiu",
+            "status": "ACTIVE",
+            "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+            "attributes": {
+              "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "645fa8464e35ca4a482adea4",
+                  "name": "SC_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "0X23KUiXjt-VYJ_WIJGVc",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "SC_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                  "createdAt": "2023-05-13T15:09:58.373Z",
+                  "updatedAt": "2023-05-13T15:09:58.373Z",
+                  "__v": 0,
+                  "uri": "SC_Icon.png"
+                },
+                "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "id": "0X23KUiXjt-VYJ_WIJGVc",
+                "elevation": 20
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-35-0-7"
           }
         ],
         "attributes": {
@@ -25552,6 +26933,58 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
+    "id": "MwpQAx6sukBxM2SGSSRiu",
+    "status": "ACTIVE",
+    "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+    "attributes": {
+      "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "645fa8464e35ca4a482adea4",
+          "name": "SC_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "0X23KUiXjt-VYJ_WIJGVc",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "SC_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+          "createdAt": "2023-05-13T15:09:58.373Z",
+          "updatedAt": "2023-05-13T15:09:58.373Z",
+          "__v": 0,
+          "uri": "SC_Icon.png"
+        },
+        "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+        "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20,
+        "id": "0X23KUiXjt-VYJ_WIJGVc",
+        "elevation": 20
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-35-0-7",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
     "id": "SJC7dQ4HWE-ay6D3OomS5",
     "status": "ACTIVE",
     "name": "Dashboard_Green_Btm_View",
@@ -25635,6 +27068,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-37",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+        "triggerName": "Navigate_To_Profile_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -25738,7 +27180,14 @@
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-39",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+        "triggerName": "Navigate_To_LogoutSummary_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -25792,7 +27241,14 @@
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-40",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "8j-on39yS7NETxMPMalD-",
+        "triggerName": "Navigate_To_Bene_List_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -25897,6 +27353,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-42",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+        "triggerName": "Navigate_To_BillBeneList_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -26561,17 +28026,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -27189,7 +28643,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -27831,19 +29297,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -28946,6 +30400,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -29039,7 +30541,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -29135,7 +30651,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -29185,7 +30713,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -29281,7 +30821,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -30223,7 +31777,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -30234,8 +31800,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -30312,6 +31878,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "component",
@@ -31256,17 +32968,6 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
-          },
-          {
-            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
-            "triggerName": "Navigate_To_LogoutSummary_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "upsD2d5yrT9Trb6gmcoHf"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
           }
         ],
         "path": "0-2",
@@ -31884,7 +33585,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -32526,19 +34239,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "cRjk-GLoKM2hzoz2ykhFa",
-            "triggerName": "Navigate_To_Zakat_List_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "x2yVu1Nz7wvUxd8USJiMI"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
+        "events": [],
         "path": "0-24",
         "edit": true
       },
@@ -33641,6 +35342,54 @@
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-35-0-6"
+              },
+              {
+                "id": "MwpQAx6sukBxM2SGSSRiu",
+                "status": "ACTIVE",
+                "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                "attributes": {
+                  "name": "Dash_Billpay_Hlistitem_BankLogo_Icon",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "645fa8464e35ca4a482adea4",
+                      "name": "SC_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "0X23KUiXjt-VYJ_WIJGVc",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "SC_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/SC_Icon.png",
+                      "createdAt": "2023-05-13T15:09:58.373Z",
+                      "updatedAt": "2023-05-13T15:09:58.373Z",
+                      "__v": 0,
+                      "uri": "SC_Icon.png"
+                    },
+                    "leftToLeftOf": "SWChncVyVCDfxK6SPr3SI",
+                    "topToTopOf": "SWChncVyVCDfxK6SPr3SI",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 20,
+                    "id": "0X23KUiXjt-VYJ_WIJGVc",
+                    "elevation": 20
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "IMAGEVIEW",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-35-0-7"
               }
             ],
             "attributes": {
@@ -33734,7 +35483,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-37"
+        "path": "0-37",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "AjXQKQNzK-Z4iJ3LJ-wrA",
+            "triggerName": "Navigate_To_Profile_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GAQ5tPz4rug98MPB7_H5n"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "U4wE5hw8u_Xnak8fneZ64",
@@ -33830,7 +35593,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-39",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "W5vRvx8oeEWSqFuN6YF65",
+            "triggerName": "Navigate_To_LogoutSummary_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "upsD2d5yrT9Trb6gmcoHf"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "oSHDSCvodXAvTX8DrcFO9",
@@ -33880,7 +35655,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-40",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "8j-on39yS7NETxMPMalD-",
+            "triggerName": "Navigate_To_Bene_List_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "az-zEHqs8jNLcY5jSoBDk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "0SOl8LCOyBtBpP8Jywcq3",
@@ -33976,7 +35763,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-42"
+        "path": "0-42",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "jDuGLbqEB65J_SOS-4Tkf",
+            "triggerName": "Navigate_To_BillBeneList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "2YwG1lUxEQzSHUa-AXzK7"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "GsitPBQi2YWLgrE53F7Gz",
@@ -34918,7 +36719,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "b8pRI6dMc1lvnRlThChAW",
+            "triggerName": "Navigate_To_CardRequest_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "GMhZUhcHBT0E03rdSeyqe"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-54",
         "edit": true
       },
@@ -34929,8 +36742,8 @@
         "attributes": {
           "name": "Dash_State_State_Icon",
           "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -35007,6 +36820,152 @@
         "events": [],
         "path": "0-56",
         "edit": true
+      },
+      {
+        "id": "G9m_PUlBk5WBPAMDatDww",
+        "status": "ACTIVE",
+        "name": "samp_view",
+        "attributes": {
+          "name": "samp_view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "70",
+            "borderWidth": 0,
+            "cornerRadius": [5, 5, 5, 5],
+            "background": "#1D6131",
+            "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-57"
+      },
+      {
+        "id": "Rww_k6G7g_OohUVVoqhOj",
+        "status": "ACTIVE",
+        "name": "Dashboard_RequesttoPay_View",
+        "attributes": {
+          "name": "Dashboard_RequesttoPay_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "70",
+            "layout_height": "60",
+            "borderColor": "#FFFFFF",
+            "borderWidth": 2,
+            "cornerRadius": [5, 5, 5, 5],
+            "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+            "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+            "layout_marginRight": 5,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "VIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-58"
+      },
+      {
+        "id": "f_IMIZoDyJYNvM7oCY7MR",
+        "status": "ACTIVE",
+        "name": "Text view",
+        "attributes": {
+          "name": "DashRequesttoPay_Text",
+          "layoutProperties": {
+            "textSize": 8,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Request to pay",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginBottom": 5,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-59"
+      },
+      {
+        "id": "Cw8BuZUDElnF4niRqXeAi",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "10",
+            "layout_height": "10",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "646cabd360501c687c755864",
+              "name": "requesttopay_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "6ohL2uvzUFgbilKWosVR3",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "requesttopay_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+              "createdAt": "2023-05-23T12:04:35.955Z",
+              "updatedAt": "2023-05-23T12:04:35.955Z",
+              "__v": 0,
+              "uri": "requesttopay_icon.png"
+            },
+            "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+            "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+            "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+            "layout_marginTop": 5,
+            "id": "6ohL2uvzUFgbilKWosVR3"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-60"
       }
     ],
     "subType": "component",
@@ -35965,7 +37924,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "b8pRI6dMc1lvnRlThChAW",
+        "triggerName": "Navigate_To_CardRequest_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-54",
     "edit": true,
     "subType": "component",
@@ -35980,8 +37946,8 @@
     "attributes": {
       "name": "Dash_State_State_Icon",
       "layoutProperties": {
-        "layout_width": "20",
-        "layout_height": "20",
+        "layout_width": "30",
+        "layout_height": "30",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
@@ -36063,6 +38029,167 @@
     "path": "0-56",
     "edit": true,
     "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "G9m_PUlBk5WBPAMDatDww",
+    "status": "ACTIVE",
+    "name": "samp_view",
+    "attributes": {
+      "name": "samp_view",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "70",
+        "borderWidth": 0,
+        "cornerRadius": [5, 5, 5, 5],
+        "background": "#1D6131",
+        "leftToLeftOf": "-KVpNZurpv2ng6pwljlmG",
+        "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+        "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-57",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Rww_k6G7g_OohUVVoqhOj",
+    "status": "ACTIVE",
+    "name": "Dashboard_RequesttoPay_View",
+    "attributes": {
+      "name": "Dashboard_RequesttoPay_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "70",
+        "layout_height": "60",
+        "borderColor": "#FFFFFF",
+        "borderWidth": 2,
+        "cornerRadius": [5, 5, 5, 5],
+        "rightToRightOf": "Bu4kh3zPOW1zY96bpzcEI",
+        "topToBottomOf": "VL9ZUWi-DAZDBah8hzVDE",
+        "layout_marginRight": 5,
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-58",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "f_IMIZoDyJYNvM7oCY7MR",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "DashRequesttoPay_Text",
+      "layoutProperties": {
+        "textSize": 8,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Request to pay",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+        "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+        "bottomToBottomOf": "Rww_k6G7g_OohUVVoqhOj",
+        "layout_marginBottom": 5,
+        "textStyle": "regular",
+        "textAlignment": "center"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-59",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Cw8BuZUDElnF4niRqXeAi",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "10",
+        "layout_height": "10",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "646cabd360501c687c755864",
+          "name": "requesttopay_icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "6ohL2uvzUFgbilKWosVR3",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "requesttopay_icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/requesttopay_icon.png",
+          "createdAt": "2023-05-23T12:04:35.955Z",
+          "updatedAt": "2023-05-23T12:04:35.955Z",
+          "__v": 0,
+          "uri": "requesttopay_icon.png"
+        },
+        "leftToLeftOf": "Rww_k6G7g_OohUVVoqhOj",
+        "rightToRightOf": "Rww_k6G7g_OohUVVoqhOj",
+        "topToTopOf": "Rww_k6G7g_OohUVVoqhOj",
+        "layout_marginTop": 5,
+        "id": "6ohL2uvzUFgbilKWosVR3"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-60",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

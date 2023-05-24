@@ -1,0 +1,35 @@
+{
+  "id": "9hvSEXJq0YvbISx_j6XC0",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "MainMenu_CheqManage_ExpandView_Hide_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "oHh8EXMulHl_de2OwEv0V",
+              "triggerName": "MainMenu_CheqManage_ExpandView_AllHide"
+            },
+            {
+              "triggerId": "V7obaeBbsYqhp2Iq8BFUl",
+              "triggerName": "MainMenu_CheqManage_ExpandView_AllShow"
+            }
+          ],
+          "triggerId": ["oHh8EXMulHl_de2OwEv0V", "V7obaeBbsYqhp2Iq8BFUl"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "Y22Ai7sts2FM6JzToe8M4",
+  "updatedAt": "5/24/2023",
+  "createdAt": "5/24/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
