@@ -29,9 +29,6 @@
         "PlopqjQP-LbFK7gzlPAPn",
         "BJLtynh5yJNkD6tSK_zOL",
         "wk4b-uLdtlRkcShoSu7tI",
-        "MSw06Epy6cdYAkQlkqgkb",
-        "FS__xL0CD7z4ve0WTnC15",
-        "wVEzBgqJJTWmdFH2g3kP7",
         "sLrpKI96XQN9XcEFxc4SH",
         "ygRgbIHt04UPaGxH91jWb",
         "nH7SFl3QglfiZjMqYFoPe",
@@ -41,8 +38,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "5/29/2023",
+    "createdAt": "5/29/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -66,7 +63,7 @@
             "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
             "layout_marginLeft": 20,
             "layout_marginTop": 19,
-            "textStyle": "regular",
+            "textStyle": "bold",
             "textAlignment": "left",
             "layout_marginBottom": 0,
             "layout_marginRight": 0
@@ -148,7 +145,8 @@
             "layout_marginBottom": 0,
             "layout_marginTop": 0,
             "layout_marginRight": 0
-          }
+          },
+          "bindingKey": "register_idtype.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -171,8 +169,8 @@
         "attributes": {
           "name": "Register_IdType_Btmsht_Icon",
           "layoutProperties": {
-            "layout_width": "30",
-            "layout_height": "30",
+            "layout_width": "40",
+            "layout_height": "40",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -229,9 +227,30 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "1-3",
+        "path": "0-3",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "-QRyEQu8bsVO1V7zPBkUe",
+            "triggerName": "HMB_Register_IDType_Btmsht",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "values": [
+                { "code": "code", "name": "CNIC" },
+                { "code": "code", "name": "Passport" }
+              ],
+              "bottomsheetType": "Normal Bottomsheet",
+              "code": "code",
+              "value": "name",
+              "title": "User Type",
+              "selectedBindingKey": "register_idtype",
+              "dataType": "static"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "ADlXoSSx6qSgKdfmt3iCr",
@@ -244,16 +263,17 @@
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "ID Number",
+            "text": "Account Number / IBAN",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
             "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
-            "textStyle": "regular",
+            "textStyle": "bold",
             "textAlignment": "left",
             "layout_marginBottom": 0,
-            "layout_marginRight": 0
+            "layout_marginRight": 0,
+            "numberOfLines": 1
           }
         },
         "icon": "FaTextWidth",
@@ -317,16 +337,17 @@
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Account Number",
+            "text": "Email",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
             "topToBottomOf": "trukJngGz--eYR9duuSoa",
             "layout_marginLeft": 20,
             "layout_marginTop": 10,
             "textAlignment": "left",
-            "textStyle": "regular",
+            "textStyle": "bold",
             "layout_marginBottom": 0,
-            "layout_marginRight": 0
+            "layout_marginRight": 0,
+            "numberOfLines": 1
           }
         },
         "icon": "FaTextWidth",
@@ -466,24 +487,24 @@
         "edit": true
       },
       {
-        "id": "MSw06Epy6cdYAkQlkqgkb",
+        "id": "sLrpKI96XQN9XcEFxc4SH",
         "status": "ACTIVE",
-        "name": "Register_Email_Text",
+        "name": "Rgister_Mobile_Text",
         "attributes": {
-          "name": "Register_Email_Text",
+          "name": "Rgister_Mobile_Text",
           "layoutProperties": {
             "textSize": 18,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Email Address",
+            "text": "Mobile Number",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
             "topToBottomOf": "PlopqjQP-LbFK7gzlPAPn",
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
-            "textStyle": "regular",
+            "textStyle": "bold",
             "layout_marginBottom": 0,
             "layout_marginRight": 0
           }
@@ -500,120 +521,6 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-10",
-        "edit": true
-      },
-      {
-        "id": "FS__xL0CD7z4ve0WTnC15",
-        "status": "ACTIVE",
-        "name": "Register_Email_Input_View",
-        "attributes": {
-          "name": "Register_Email_Input_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "match_parent",
-            "layout_height": "55",
-            "borderWidth": 0,
-            "cornerRadius": [10, 10, 10, 10],
-            "background": "#F0F2F0",
-            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-            "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-            "topToBottomOf": "MSw06Epy6cdYAkQlkqgkb",
-            "layout_marginLeft": 20,
-            "layout_marginRight": 20,
-            "layout_marginTop": 10,
-            "layout_marginBottom": 0
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-11",
-        "edit": true
-      },
-      {
-        "id": "wVEzBgqJJTWmdFH2g3kP7",
-        "status": "ACTIVE",
-        "name": "Input text",
-        "attributes": {
-          "name": "Register_Email_Input",
-          "validation": [],
-          "layoutProperties": {
-            "textSize": 15,
-            "textColor": "#989898",
-            "textStyle": "regular",
-            "textAlignment": "left",
-            "text": "",
-            "numberOfLines": 15,
-            "layout_height": "wrap_content",
-            "layout_width": "match_parent",
-            "placeHolderText": "Ente ryour email address here",
-            "keyboardType": "email",
-            "leftToLeftOf": "FS__xL0CD7z4ve0WTnC15",
-            "rightToRightOf": "FS__xL0CD7z4ve0WTnC15",
-            "topToTopOf": "FS__xL0CD7z4ve0WTnC15",
-            "bottomToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-            "placeHolderTextColor": "#989898",
-            "style": "SENTENCECASE",
-            "layout_marginLeft": 20,
-            "layout_marginRight": 20
-          }
-        },
-        "icon": "FaRemoveFormat",
-        "group": "Form",
-        "type": "INPUTTEXT",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Input text", "type": "INPUTTEXT" },
-        "events": [],
-        "path": "0-12"
-      },
-      {
-        "id": "sLrpKI96XQN9XcEFxc4SH",
-        "status": "ACTIVE",
-        "name": "Rgister_Mobile_Text",
-        "attributes": {
-          "name": "Rgister_Mobile_Text",
-          "layoutProperties": {
-            "textSize": 18,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Mobile",
-            "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-            "topToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 20,
-            "textAlignment": "left",
-            "textStyle": "regular",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-13",
         "edit": true
       },
       {
@@ -703,7 +610,7 @@
             "layout_marginRight": 0,
             "layout_marginTop": 0,
             "layout_marginBottom": 0,
-            "text": "Next",
+            "text": "SUBMIT",
             "textSize": 20,
             "textColor": "#ffffff",
             "textStyle": "book",
@@ -739,7 +646,7 @@
             "name": "On click"
           }
         ],
-        "path": "1-16",
+        "path": "0-13",
         "edit": true
       }
     ],
@@ -794,7 +701,7 @@
                 "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 19,
-                "textStyle": "regular",
+                "textStyle": "bold",
                 "textAlignment": "left",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 0
@@ -876,7 +783,8 @@
                 "layout_marginBottom": 0,
                 "layout_marginTop": 0,
                 "layout_marginRight": 0
-              }
+              },
+              "bindingKey": "register_idtype.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -899,8 +807,8 @@
             "attributes": {
               "name": "Register_IdType_Btmsht_Icon",
               "layoutProperties": {
-                "layout_width": "30",
-                "layout_height": "30",
+                "layout_width": "40",
+                "layout_height": "40",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
@@ -957,9 +865,30 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "1-3",
+            "path": "0-3",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "-QRyEQu8bsVO1V7zPBkUe",
+                "triggerName": "HMB_Register_IDType_Btmsht",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [
+                    { "code": "code", "name": "CNIC" },
+                    { "code": "code", "name": "Passport" }
+                  ],
+                  "bottomsheetType": "Normal Bottomsheet",
+                  "code": "code",
+                  "value": "name",
+                  "title": "User Type",
+                  "selectedBindingKey": "register_idtype",
+                  "dataType": "static"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "ADlXoSSx6qSgKdfmt3iCr",
@@ -972,16 +901,17 @@
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "ID Number",
+                "text": "Account Number / IBAN",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
                 "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
-                "textStyle": "regular",
+                "textStyle": "bold",
                 "textAlignment": "left",
                 "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "layout_marginRight": 0,
+                "numberOfLines": 1
               }
             },
             "icon": "FaTextWidth",
@@ -1045,16 +975,17 @@
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "Account Number",
+                "text": "Email",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
                 "topToBottomOf": "trukJngGz--eYR9duuSoa",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
+                "textStyle": "bold",
                 "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "layout_marginRight": 0,
+                "numberOfLines": 1
               }
             },
             "icon": "FaTextWidth",
@@ -1194,24 +1125,24 @@
             "edit": true
           },
           {
-            "id": "MSw06Epy6cdYAkQlkqgkb",
+            "id": "sLrpKI96XQN9XcEFxc4SH",
             "status": "ACTIVE",
-            "name": "Register_Email_Text",
+            "name": "Rgister_Mobile_Text",
             "attributes": {
-              "name": "Register_Email_Text",
+              "name": "Rgister_Mobile_Text",
               "layoutProperties": {
                 "textSize": 18,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "Email Address",
+                "text": "Mobile Number",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
                 "topToBottomOf": "PlopqjQP-LbFK7gzlPAPn",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
-                "textStyle": "regular",
+                "textStyle": "bold",
                 "layout_marginBottom": 0,
                 "layout_marginRight": 0
               }
@@ -1228,120 +1159,6 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-10",
-            "edit": true
-          },
-          {
-            "id": "FS__xL0CD7z4ve0WTnC15",
-            "status": "ACTIVE",
-            "name": "Register_Email_Input_View",
-            "attributes": {
-              "name": "Register_Email_Input_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "55",
-                "borderWidth": 0,
-                "cornerRadius": [10, 10, 10, 10],
-                "background": "#F0F2F0",
-                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-                "topToBottomOf": "MSw06Epy6cdYAkQlkqgkb",
-                "layout_marginLeft": 20,
-                "layout_marginRight": 20,
-                "layout_marginTop": 10,
-                "layout_marginBottom": 0
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "VIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-11",
-            "edit": true
-          },
-          {
-            "id": "wVEzBgqJJTWmdFH2g3kP7",
-            "status": "ACTIVE",
-            "name": "Input text",
-            "attributes": {
-              "name": "Register_Email_Input",
-              "validation": [],
-              "layoutProperties": {
-                "textSize": 15,
-                "textColor": "#989898",
-                "textStyle": "regular",
-                "textAlignment": "left",
-                "text": "",
-                "numberOfLines": 15,
-                "layout_height": "wrap_content",
-                "layout_width": "match_parent",
-                "placeHolderText": "Ente ryour email address here",
-                "keyboardType": "email",
-                "leftToLeftOf": "FS__xL0CD7z4ve0WTnC15",
-                "rightToRightOf": "FS__xL0CD7z4ve0WTnC15",
-                "topToTopOf": "FS__xL0CD7z4ve0WTnC15",
-                "bottomToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-                "placeHolderTextColor": "#989898",
-                "style": "SENTENCECASE",
-                "layout_marginLeft": 20,
-                "layout_marginRight": 20
-              }
-            },
-            "icon": "FaRemoveFormat",
-            "group": "Form",
-            "type": "INPUTTEXT",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Input text", "type": "INPUTTEXT" },
-            "events": [],
-            "path": "0-12"
-          },
-          {
-            "id": "sLrpKI96XQN9XcEFxc4SH",
-            "status": "ACTIVE",
-            "name": "Rgister_Mobile_Text",
-            "attributes": {
-              "name": "Rgister_Mobile_Text",
-              "layoutProperties": {
-                "textSize": 18,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Mobile",
-                "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-                "topToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 20,
-                "textAlignment": "left",
-                "textStyle": "regular",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-13",
             "edit": true
           },
           {
@@ -1431,7 +1248,7 @@
                 "layout_marginRight": 0,
                 "layout_marginTop": 0,
                 "layout_marginBottom": 0,
-                "text": "Next",
+                "text": "SUBMIT",
                 "textSize": 20,
                 "textColor": "#ffffff",
                 "textStyle": "book",
@@ -1467,7 +1284,7 @@
                 "name": "On click"
               }
             ],
-            "path": "1-16",
+            "path": "0-13",
             "edit": true
           }
         ],
@@ -1497,7 +1314,7 @@
         "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
         "layout_marginLeft": 20,
         "layout_marginTop": 19,
-        "textStyle": "regular",
+        "textStyle": "bold",
         "textAlignment": "left",
         "layout_marginBottom": 0,
         "layout_marginRight": 0
@@ -1587,7 +1404,8 @@
         "layout_marginBottom": 0,
         "layout_marginTop": 0,
         "layout_marginRight": 0
-      }
+      },
+      "bindingKey": "register_idtype.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1614,8 +1432,8 @@
     "attributes": {
       "name": "Register_IdType_Btmsht_Icon",
       "layoutProperties": {
-        "layout_width": "30",
-        "layout_height": "30",
+        "layout_width": "40",
+        "layout_height": "40",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
@@ -1672,9 +1490,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "1-3",
+    "path": "0-3",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "-QRyEQu8bsVO1V7zPBkUe",
+        "triggerName": "HMB_Register_IDType_Btmsht",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1691,16 +1516,17 @@
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "ID Number",
+        "text": "Account Number / IBAN",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
         "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
-        "textStyle": "regular",
+        "textStyle": "bold",
         "textAlignment": "left",
         "layout_marginBottom": 0,
-        "layout_marginRight": 0
+        "layout_marginRight": 0,
+        "numberOfLines": 1
       }
     },
     "icon": "FaTextWidth",
@@ -1772,16 +1598,17 @@
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "Account Number",
+        "text": "Email",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
         "topToBottomOf": "trukJngGz--eYR9duuSoa",
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textAlignment": "left",
-        "textStyle": "regular",
+        "textStyle": "bold",
         "layout_marginBottom": 0,
-        "layout_marginRight": 0
+        "layout_marginRight": 0,
+        "numberOfLines": 1
       }
     },
     "icon": "FaTextWidth",
@@ -1937,24 +1764,24 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "MSw06Epy6cdYAkQlkqgkb",
+    "id": "sLrpKI96XQN9XcEFxc4SH",
     "status": "ACTIVE",
-    "name": "Register_Email_Text",
+    "name": "Rgister_Mobile_Text",
     "attributes": {
-      "name": "Register_Email_Text",
+      "name": "Rgister_Mobile_Text",
       "layoutProperties": {
         "textSize": 18,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "Email Address",
+        "text": "Mobile Number",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
         "topToBottomOf": "PlopqjQP-LbFK7gzlPAPn",
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
-        "textStyle": "regular",
+        "textStyle": "bold",
         "layout_marginBottom": 0,
         "layout_marginRight": 0
       }
@@ -1971,132 +1798,6 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "FS__xL0CD7z4ve0WTnC15",
-    "status": "ACTIVE",
-    "name": "Register_Email_Input_View",
-    "attributes": {
-      "name": "Register_Email_Input_View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "match_parent",
-        "layout_height": "55",
-        "borderWidth": 0,
-        "cornerRadius": [10, 10, 10, 10],
-        "background": "#F0F2F0",
-        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-        "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-        "topToBottomOf": "MSw06Epy6cdYAkQlkqgkb",
-        "layout_marginLeft": 20,
-        "layout_marginRight": 20,
-        "layout_marginTop": 10,
-        "layout_marginBottom": 0
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-11",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "wVEzBgqJJTWmdFH2g3kP7",
-    "status": "ACTIVE",
-    "name": "Input text",
-    "attributes": {
-      "name": "Register_Email_Input",
-      "validation": [],
-      "layoutProperties": {
-        "textSize": 15,
-        "textColor": "#989898",
-        "textStyle": "regular",
-        "textAlignment": "left",
-        "text": "",
-        "numberOfLines": 15,
-        "layout_height": "wrap_content",
-        "layout_width": "match_parent",
-        "placeHolderText": "Ente ryour email address here",
-        "keyboardType": "email",
-        "leftToLeftOf": "FS__xL0CD7z4ve0WTnC15",
-        "rightToRightOf": "FS__xL0CD7z4ve0WTnC15",
-        "topToTopOf": "FS__xL0CD7z4ve0WTnC15",
-        "bottomToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-        "placeHolderTextColor": "#989898",
-        "style": "SENTENCECASE",
-        "layout_marginLeft": 20,
-        "layout_marginRight": 20
-      }
-    },
-    "icon": "FaRemoveFormat",
-    "group": "Form",
-    "type": "INPUTTEXT",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Input text", "type": "INPUTTEXT" },
-    "events": [],
-    "path": "0-12",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "sLrpKI96XQN9XcEFxc4SH",
-    "status": "ACTIVE",
-    "name": "Rgister_Mobile_Text",
-    "attributes": {
-      "name": "Rgister_Mobile_Text",
-      "layoutProperties": {
-        "textSize": 18,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Mobile",
-        "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-        "topToBottomOf": "FS__xL0CD7z4ve0WTnC15",
-        "layout_marginLeft": 20,
-        "layout_marginTop": 20,
-        "textAlignment": "left",
-        "textStyle": "regular",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-13",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2198,7 +1899,7 @@
         "layout_marginRight": 0,
         "layout_marginTop": 0,
         "layout_marginBottom": 0,
-        "text": "Next",
+        "text": "SUBMIT",
         "textSize": 20,
         "textColor": "#ffffff",
         "textStyle": "book",
@@ -2229,7 +1930,7 @@
         "type": "ONCLICK"
       }
     ],
-    "path": "1-16",
+    "path": "0-13",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",

@@ -57,8 +57,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "6/19/2023",
+    "createdAt": "6/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -110,12 +110,29 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-0"
+        "path": "0-0",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "EbJ6o-2PbjEYXXHL1zMti",
+            "triggerName": "Prelogin_Whatsapp_Trig",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "WHATSAPP",
+              "urlType": "action",
+              "text": "Hi",
+              "contact": "+9221111142242"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "ltTwYTHjDZK7Bo2I27Zpf",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Login_Welcome_Text",
         "attributes": {
           "name": "Login_Welcome_Text",
           "layoutProperties": {
@@ -145,12 +162,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-1"
+        "path": "0-1",
+        "edit": true
       },
       {
         "id": "9hl0ekOkAJAqPxKezb3kQ",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Login_SignIn_Text",
         "attributes": {
           "name": "Login_SignIn_Text",
           "layoutProperties": {
@@ -179,8 +197,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-2"
+        "events": [
+          {
+            "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
+            "triggerName": "Prelogin_Url_Nav",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "https://www.habibmetro.com/e-services/mobile-banking/",
+              "urlType": "url"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "-1-qQ55mVlJUFD8W-MpTa",
@@ -209,7 +241,8 @@
             "layout_marginTop": 60,
             "style": "SENTENCECASE",
             "fontName": "CircularStd"
-          }
+          },
+          "bindingKey": "hmb_username"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -366,7 +399,7 @@
             "layout_marginRight": 20,
             "layout_marginTop": 40
           },
-          "bindingKey": "login_password"
+          "bindingKey": "hmb_password"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -586,12 +619,43 @@
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [
           {
-            "triggerId": "4O2zOMOA53rSnkYZGJPGx",
-            "triggerName": "Navigate_To_Dashboard",
-            "serviceType": "NAVIGATION",
+            "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
+            "triggerName": "HMB_User_Login_Api_Trig",
+            "serviceType": "NETWORK",
             "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "-KVpNZurpv2ng6pwljlmG"
+              "serviceName": "POST",
+              "headers": { "Content-Type": "application/json" },
+              "requestBody": {
+                "username": "$hmb_username",
+                "password": "$hmb_password",
+                "imeino": "111111111111111",
+                "osname": "ANDROID",
+                "osversion": "1.0",
+                "ipaddress": "192.168.0.1",
+                "location": "22,34",
+                "isVerifyOtp": "0"
+              },
+              "url": "/login/faran2tahir",
+              "responseStateKey": "hmb_loginResponse",
+              "conditions": [
+                {
+                  "logic": {
+                    "==": [{ "var": "hmb_loginResponse.status" }, 200]
+                  },
+                  "httpStatus": 200,
+                  "triggerName": "Navigate_To_Dashboard",
+                  "triggerId": "4O2zOMOA53rSnkYZGJPGx"
+                },
+                {
+                  "logic": {
+                    "!=": [{ "var": "hmb_loginResponse.status" }, 200]
+                  },
+                  "httpStatus": 400,
+                  "triggerName": "HMB_Login_Api_Failure_Alert",
+                  "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
+                }
+              ],
+              "baseURL": "6481a1567f12ba699c105149"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -691,7 +755,19 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-14",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "i3RQPIkTHW3ofcOiDlRiC",
+            "triggerName": "Navigate_To_Prelogin_DynList_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "_cciBhoNCkbdIJKKy5Sig"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "D9fIUs_cvVIHtISeBHKaa",
@@ -738,7 +814,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-15"
+        "path": "0-15",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "2qhDG-AT91V2mhu_5aOk2",
+            "triggerName": "Navigate_To_RDA_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "J1IoBP_P1k84of2txeOzh"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "CtAZioBgSq_6QGLYtxJ_O",
@@ -785,7 +875,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-16"
+        "path": "0-16",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "PsmQoS4Rsfi6bdwsICXyj",
+            "triggerName": "Navigate_To_DigiAcc_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "rlziaXnhqtVKjaxyodk4F"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "screen",
@@ -884,12 +988,29 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-0"
+            "path": "0-0",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "EbJ6o-2PbjEYXXHL1zMti",
+                "triggerName": "Prelogin_Whatsapp_Trig",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "WHATSAPP",
+                  "urlType": "action",
+                  "text": "Hi",
+                  "contact": "+9221111142242"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "ltTwYTHjDZK7Bo2I27Zpf",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Login_Welcome_Text",
             "attributes": {
               "name": "Login_Welcome_Text",
               "layoutProperties": {
@@ -919,12 +1040,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-1"
+            "path": "0-1",
+            "edit": true
           },
           {
             "id": "9hl0ekOkAJAqPxKezb3kQ",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Login_SignIn_Text",
             "attributes": {
               "name": "Login_SignIn_Text",
               "layoutProperties": {
@@ -953,8 +1075,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-2"
+            "events": [
+              {
+                "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
+                "triggerName": "Prelogin_Url_Nav",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "https://www.habibmetro.com/e-services/mobile-banking/",
+                  "urlType": "url"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "-1-qQ55mVlJUFD8W-MpTa",
@@ -983,7 +1119,8 @@
                 "layout_marginTop": 60,
                 "style": "SENTENCECASE",
                 "fontName": "CircularStd"
-              }
+              },
+              "bindingKey": "hmb_username"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1140,7 +1277,7 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 40
               },
-              "bindingKey": "login_password"
+              "bindingKey": "hmb_password"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1360,12 +1497,43 @@
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [
               {
-                "triggerId": "4O2zOMOA53rSnkYZGJPGx",
-                "triggerName": "Navigate_To_Dashboard",
-                "serviceType": "NAVIGATION",
+                "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
+                "triggerName": "HMB_User_Login_Api_Trig",
+                "serviceType": "NETWORK",
                 "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "-KVpNZurpv2ng6pwljlmG"
+                  "serviceName": "POST",
+                  "headers": { "Content-Type": "application/json" },
+                  "requestBody": {
+                    "username": "$hmb_username",
+                    "password": "$hmb_password",
+                    "imeino": "111111111111111",
+                    "osname": "ANDROID",
+                    "osversion": "1.0",
+                    "ipaddress": "192.168.0.1",
+                    "location": "22,34",
+                    "isVerifyOtp": "0"
+                  },
+                  "url": "/login/faran2tahir",
+                  "responseStateKey": "hmb_loginResponse",
+                  "conditions": [
+                    {
+                      "logic": {
+                        "==": [{ "var": "hmb_loginResponse.status" }, 200]
+                      },
+                      "httpStatus": 200,
+                      "triggerName": "Navigate_To_Dashboard",
+                      "triggerId": "4O2zOMOA53rSnkYZGJPGx"
+                    },
+                    {
+                      "logic": {
+                        "!=": [{ "var": "hmb_loginResponse.status" }, 200]
+                      },
+                      "httpStatus": 400,
+                      "triggerName": "HMB_Login_Api_Failure_Alert",
+                      "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
+                    }
+                  ],
+                  "baseURL": "6481a1567f12ba699c105149"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -1465,7 +1633,19 @@
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-14",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "i3RQPIkTHW3ofcOiDlRiC",
+                "triggerName": "Navigate_To_Prelogin_DynList_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "_cciBhoNCkbdIJKKy5Sig"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "D9fIUs_cvVIHtISeBHKaa",
@@ -1512,7 +1692,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-15"
+            "path": "0-15",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "2qhDG-AT91V2mhu_5aOk2",
+                "triggerName": "Navigate_To_RDA_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "J1IoBP_P1k84of2txeOzh"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "CtAZioBgSq_6QGLYtxJ_O",
@@ -1559,7 +1753,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-16"
+            "path": "0-16",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "PsmQoS4Rsfi6bdwsICXyj",
+                "triggerName": "Navigate_To_DigiAcc_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "rlziaXnhqtVKjaxyodk4F"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
         ],
         "subType": "screen",
@@ -1618,6 +1826,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-0",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "EbJ6o-2PbjEYXXHL1zMti",
+        "triggerName": "Prelogin_Whatsapp_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1626,7 +1843,7 @@
   {
     "id": "ltTwYTHjDZK7Bo2I27Zpf",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Login_Welcome_Text",
     "attributes": {
       "name": "Login_Welcome_Text",
       "layoutProperties": {
@@ -1657,6 +1874,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-1",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1665,7 +1883,7 @@
   {
     "id": "9hl0ekOkAJAqPxKezb3kQ",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Login_SignIn_Text",
     "attributes": {
       "name": "Login_SignIn_Text",
       "layoutProperties": {
@@ -1694,8 +1912,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
+        "triggerName": "Prelogin_Url_Nav",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1728,7 +1954,8 @@
         "layout_marginTop": 60,
         "style": "SENTENCECASE",
         "fontName": "CircularStd"
-      }
+      },
+      "bindingKey": "hmb_username"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -1901,7 +2128,7 @@
         "layout_marginRight": 20,
         "layout_marginTop": 40
       },
-      "bindingKey": "login_password"
+      "bindingKey": "hmb_password"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -2136,8 +2363,8 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [
       {
-        "triggerId": "4O2zOMOA53rSnkYZGJPGx",
-        "triggerName": "Navigate_To_Dashboard",
+        "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
+        "triggerName": "HMB_User_Login_Api_Trig",
         "name": "On click",
         "type": "ONCLICK"
       }
@@ -2239,7 +2466,14 @@
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-14",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "i3RQPIkTHW3ofcOiDlRiC",
+        "triggerName": "Navigate_To_Prelogin_DynList_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2291,6 +2525,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-15",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "2qhDG-AT91V2mhu_5aOk2",
+        "triggerName": "Navigate_To_RDA_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2342,6 +2585,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-16",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "PsmQoS4Rsfi6bdwsICXyj",
+        "triggerName": "Navigate_To_DigiAcc_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

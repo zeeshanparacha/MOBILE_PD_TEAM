@@ -1,0 +1,53 @@
+{
+  "id": "b5rfteB4Lzw7fi0ClAUUF",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_User_Login_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": { "Content-Type": "application/json" },
+          "requestBody": {
+            "username": "$hmb_username",
+            "password": "$hmb_password",
+            "imeino": "111111111111111",
+            "osname": "ANDROID",
+            "osversion": "1.0",
+            "ipaddress": "192.168.0.1",
+            "location": "22,34",
+            "isVerifyOtp": "0"
+          },
+          "url": "/login/faran2tahir",
+          "responseStateKey": "hmb_loginResponse",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_loginResponse.status" }, 200] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_To_Dashboard",
+              "triggerId": "4O2zOMOA53rSnkYZGJPGx"
+            },
+            {
+              "logic": { "!=": [{ "var": "hmb_loginResponse.status" }, 200] },
+              "httpStatus": 400,
+              "triggerName": "HMB_Login_Api_Failure_Alert",
+              "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
+            }
+          ],
+          "baseURL": "6481a1567f12ba699c105149"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "_id": "WbTE_jglBx91nKWSJFkI1",
+  "updatedAt": "6/13/2023",
+  "createdAt": "6/13/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_User_Login_Api_Trig"
+}

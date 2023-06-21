@@ -1,28 +1,28 @@
 [
   {
-    "id": "G2tgBSaMAbaNKAn9sDGRm",
-    "name": "check_tab",
+    "id": "ftu9_As88DhSLDPi2uTST",
+    "name": "Tabbar_June_Testing",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "check_tab",
+      "name": "Tabbar_June_Testing",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "statusBarColor": "#093959",
-        "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF"
       },
-      "componentId": ["CftdO3p4ndqo6EGsFYoJO"]
+      "componentId": ["iF3D2bZLgVZ1n9O8CTzTO"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/17/2023",
-    "createdAt": "5/17/2023",
+    "updatedAt": "6/5/2023",
+    "createdAt": "6/5/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -30,43 +30,35 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "CftdO3p4ndqo6EGsFYoJO",
+        "id": "iF3D2bZLgVZ1n9O8CTzTO",
         "status": "ACTIVE",
         "_id": "61ded04c077814a0f374da02",
-        "name": "check_tab_view",
+        "name": "Tab Bar",
         "attributes": {
-          "name": "check_tab_view",
+          "name": "Tab Bar",
           "layoutProperties": {
             "src": " ",
-            "background": "#000000",
-            "barBackground": "#1D6131",
+            "barBackground": "#FFFFFF",
             "selectedTintColor": "#005C29",
             "unSelectedTintColor": "#000000",
-            "textAlignment": "center"
+            "textAlignment": "center",
+            "spacing": 10
           },
           "child": [
             {
-              "id": "_HalxRpwSXJw_2cdtCWHn",
-              "screenName": "navbarr",
-              "src": "JbDP96JE_l2yk4JlWVqQ3",
-              "selectedSrc": "JbDP96JE_l2yk4JlWVqQ3",
-              "title": "Star"
+              "title": "HOME",
+              "id": "_7KISNGC0zvOtj8Ylk4Up",
+              "screenName": "HMB_Bene_FundsTransfer_Screen",
+              "src": "01BET8tjSERNWON23lLO4",
+              "selectedSrc": "TNgxz_GnfVXo-vwLHHY0Q"
             },
             {
-              "title": "QR Scan",
-              "src": "mhBJVKG2Yhu5rHvh0c2U7",
-              "selectedSrc": "mhBJVKG2Yhu5rHvh0c2U7",
+              "title": "CONTACT",
+              "src": "PMWEykb5paQP2e3YR33sZ",
+              "selectedSrc": "6CAIkcJYQU4I5w-UX66pn",
               "triggerId": "",
-              "id": "A_pJEEuBDw8ZxM2oF9mHZ",
-              "screenName": "Screen"
-            },
-            {
-              "title": "Transfer",
-              "src": "7lIlFInmUa2DCIlmLYa6Z",
-              "selectedSrc": "7lIlFInmUa2DCIlmLYa6Z",
-              "triggerId": "",
-              "id": "dxd7gP1LKsPph_On9bJhP",
-              "screenName": "BackTest_Screen"
+              "id": "RPzNrlcDLAlq1Ssb8zhzG",
+              "screenName": "HMB_Bill_Category_Screen"
             }
           ]
         },
@@ -79,29 +71,31 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "gridProps": [""],
+        "gridProps": [],
         "component": { "content": "Tab Bar", "type": "TABBAR" },
-        "path": "0-0"
+        "path": "0-0",
+        "edit": true,
+        "events": []
       }
     ],
     "subType": "screen",
     "layout": [
       {
-        "id": "G2tgBSaMAbaNKAn9sDGRm",
-        "name": "check_tab",
+        "id": "ftu9_As88DhSLDPi2uTST",
+        "name": "Tabbar_June_Testing",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "check_tab",
+          "name": "Tabbar_June_Testing",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "statusBarColor": "#093959",
-            "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF"
           },
           "componentId": []
         },
@@ -117,43 +111,35 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "CftdO3p4ndqo6EGsFYoJO",
+            "id": "iF3D2bZLgVZ1n9O8CTzTO",
             "status": "ACTIVE",
             "_id": "61ded04c077814a0f374da02",
-            "name": "check_tab_view",
+            "name": "Tab Bar",
             "attributes": {
-              "name": "check_tab_view",
+              "name": "Tab Bar",
               "layoutProperties": {
                 "src": " ",
-                "background": "#000000",
-                "barBackground": "#1D6131",
+                "barBackground": "#FFFFFF",
                 "selectedTintColor": "#005C29",
                 "unSelectedTintColor": "#000000",
-                "textAlignment": "center"
+                "textAlignment": "center",
+                "spacing": 10
               },
               "child": [
                 {
-                  "id": "_HalxRpwSXJw_2cdtCWHn",
-                  "screenName": "navbarr",
-                  "src": "JbDP96JE_l2yk4JlWVqQ3",
-                  "selectedSrc": "JbDP96JE_l2yk4JlWVqQ3",
-                  "title": "Star"
+                  "title": "HOME",
+                  "id": "_7KISNGC0zvOtj8Ylk4Up",
+                  "screenName": "HMB_Bene_FundsTransfer_Screen",
+                  "src": "01BET8tjSERNWON23lLO4",
+                  "selectedSrc": "TNgxz_GnfVXo-vwLHHY0Q"
                 },
                 {
-                  "title": "QR Scan",
-                  "src": "mhBJVKG2Yhu5rHvh0c2U7",
-                  "selectedSrc": "mhBJVKG2Yhu5rHvh0c2U7",
+                  "title": "CONTACT",
+                  "src": "PMWEykb5paQP2e3YR33sZ",
+                  "selectedSrc": "6CAIkcJYQU4I5w-UX66pn",
                   "triggerId": "",
-                  "id": "A_pJEEuBDw8ZxM2oF9mHZ",
-                  "screenName": "Screen"
-                },
-                {
-                  "title": "Transfer",
-                  "src": "7lIlFInmUa2DCIlmLYa6Z",
-                  "selectedSrc": "7lIlFInmUa2DCIlmLYa6Z",
-                  "triggerId": "",
-                  "id": "dxd7gP1LKsPph_On9bJhP",
-                  "screenName": "BackTest_Screen"
+                  "id": "RPzNrlcDLAlq1Ssb8zhzG",
+                  "screenName": "HMB_Bill_Category_Screen"
                 }
               ]
             },
@@ -166,9 +152,11 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "gridProps": [""],
+            "gridProps": [],
             "component": { "content": "Tab Bar", "type": "TABBAR" },
-            "path": "0-0"
+            "path": "0-0",
+            "edit": true,
+            "events": []
           }
         ],
         "subType": "screen"
@@ -176,49 +164,42 @@
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
-    "_id": "G2tgBSaMAbaNKAn9sDGRm",
+    "_id": "ftu9_As88DhSLDPi2uTST",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "CftdO3p4ndqo6EGsFYoJO",
+    "id": "iF3D2bZLgVZ1n9O8CTzTO",
     "status": "ACTIVE",
-    "name": "check_tab_view",
+    "name": "Tab Bar",
     "attributes": {
-      "name": "check_tab_view",
+      "name": "Tab Bar",
       "layoutProperties": {
         "src": " ",
-        "background": "#000000",
-        "barBackground": "#1D6131",
+        "barBackground": "#FFFFFF",
         "selectedTintColor": "#005C29",
         "unSelectedTintColor": "#000000",
-        "textAlignment": "center"
+        "textAlignment": "center",
+        "spacing": 10
       },
       "child": [
         {
-          "id": "_HalxRpwSXJw_2cdtCWHn",
-          "screenName": "navbarr",
-          "src": "JbDP96JE_l2yk4JlWVqQ3",
-          "selectedSrc": "JbDP96JE_l2yk4JlWVqQ3",
-          "title": "Star"
+          "title": "HOME",
+          "id": "_7KISNGC0zvOtj8Ylk4Up",
+          "screenName": "HMB_Bene_FundsTransfer_Screen",
+          "src": "01BET8tjSERNWON23lLO4",
+          "selectedSrc": "TNgxz_GnfVXo-vwLHHY0Q"
         },
         {
-          "title": "QR Scan",
-          "src": "mhBJVKG2Yhu5rHvh0c2U7",
-          "selectedSrc": "mhBJVKG2Yhu5rHvh0c2U7",
+          "title": "CONTACT",
+          "src": "PMWEykb5paQP2e3YR33sZ",
+          "selectedSrc": "6CAIkcJYQU4I5w-UX66pn",
           "triggerId": "",
-          "id": "A_pJEEuBDw8ZxM2oF9mHZ",
-          "screenName": "Screen"
-        },
-        {
-          "title": "Transfer",
-          "src": "7lIlFInmUa2DCIlmLYa6Z",
-          "selectedSrc": "7lIlFInmUa2DCIlmLYa6Z",
-          "triggerId": "",
-          "id": "dxd7gP1LKsPph_On9bJhP",
-          "screenName": "BackTest_Screen"
+          "id": "RPzNrlcDLAlq1Ssb8zhzG",
+          "screenName": "HMB_Bill_Category_Screen"
         }
-      ]
+      ],
+      "componentId": []
     },
     "icon": "FaGripLines",
     "group": "Form",
@@ -229,49 +210,42 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "gridProps": [""],
-    "subType": "component",
+    "gridProps": [],
     "component": { "content": "Tab Bar", "type": "TABBAR" },
     "path": "0-0",
+    "edit": true,
+    "events": [],
     "layout": [
       {
-        "id": "CftdO3p4ndqo6EGsFYoJO",
+        "id": "iF3D2bZLgVZ1n9O8CTzTO",
         "status": "ACTIVE",
         "_id": "61ded04c077814a0f374da02",
-        "name": "check_tab_view",
+        "name": "Tab Bar",
         "attributes": {
-          "name": "check_tab_view",
+          "name": "Tab Bar",
           "layoutProperties": {
             "src": " ",
-            "background": "#000000",
-            "barBackground": "#1D6131",
+            "barBackground": "#FFFFFF",
             "selectedTintColor": "#005C29",
             "unSelectedTintColor": "#000000",
-            "textAlignment": "center"
+            "textAlignment": "center",
+            "spacing": 10
           },
           "child": [
             {
-              "id": "_HalxRpwSXJw_2cdtCWHn",
-              "screenName": "navbarr",
-              "src": "JbDP96JE_l2yk4JlWVqQ3",
-              "selectedSrc": "JbDP96JE_l2yk4JlWVqQ3",
-              "title": "Star"
+              "title": "HOME",
+              "id": "_7KISNGC0zvOtj8Ylk4Up",
+              "screenName": "HMB_Bene_FundsTransfer_Screen",
+              "src": "01BET8tjSERNWON23lLO4",
+              "selectedSrc": "TNgxz_GnfVXo-vwLHHY0Q"
             },
             {
-              "title": "QR Scan",
-              "src": "mhBJVKG2Yhu5rHvh0c2U7",
-              "selectedSrc": "mhBJVKG2Yhu5rHvh0c2U7",
+              "title": "CONTACT",
+              "src": "PMWEykb5paQP2e3YR33sZ",
+              "selectedSrc": "6CAIkcJYQU4I5w-UX66pn",
               "triggerId": "",
-              "id": "A_pJEEuBDw8ZxM2oF9mHZ",
-              "screenName": "Screen"
-            },
-            {
-              "title": "Transfer",
-              "src": "7lIlFInmUa2DCIlmLYa6Z",
-              "selectedSrc": "7lIlFInmUa2DCIlmLYa6Z",
-              "triggerId": "",
-              "id": "dxd7gP1LKsPph_On9bJhP",
-              "screenName": "BackTest_Screen"
+              "id": "RPzNrlcDLAlq1Ssb8zhzG",
+              "screenName": "HMB_Bill_Category_Screen"
             }
           ]
         },
@@ -284,19 +258,15 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "gridProps": [""],
+        "gridProps": [],
         "component": { "content": "Tab Bar", "type": "TABBAR" },
-        "path": "0-0"
+        "path": "0-0",
+        "edit": true,
+        "events": []
       }
     ],
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }

@@ -1,0 +1,686 @@
+[
+  {
+    "id": "cMFSdFNI6_zsKGqvo6LKu",
+    "name": "Prelogin_Lists_Testing",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Prelogin_Lists_Testing",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "63f8590abf8c983b9cc00fa4",
+          "name": "Dash_background_Img3.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "KN6esKJCZLCTf-oNIAaF6",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "Dash_background_Img3.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/Dash_background_Img3.png",
+          "createdAt": "2023-02-24T06:28:26.626Z",
+          "updatedAt": "2023-02-24T06:28:26.626Z",
+          "__v": 0,
+          "uri": "Dash_background_Img3.png"
+        },
+        "navbarHeight": 0,
+        "hideNavBar": true
+      },
+      "componentId": ["7mMBELe7A9UWiquncFkgI", "n4n4qBRx0AcXzE1eazLDO"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "5/30/2023",
+    "createdAt": "5/30/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "7mMBELe7A9UWiquncFkgI",
+        "status": "ACTIVE",
+        "name": "prelogin_lists_samtext",
+        "attributes": {
+          "name": "prelogin_lists_samtext",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Hello",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "topToTopOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "layout_marginLeft": 10,
+            "layout_marginTop": 6,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "BHqiub9p6tcpBTrKVKQmH",
+            "triggerName": "Prelogin_Lists_Data_Trigg",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "prelogin_lists_data",
+              "value": [
+                { "prelogin_lists_text_data": "Location" },
+                { "prelogin_lists_text_data": "Security Guidelines" },
+                { "prelogin_lists_text_data": "Contact Us" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "n4n4qBRx0AcXzE1eazLDO",
+        "type": "VLIST",
+        "name": "prelogin_lists_vlist",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "prelogin_lists_vlist",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#000000",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "Q8aunDVwu9MJ8VZDIcmUD",
+                "bindingKey": "prleogin_list1",
+                "events": [
+                  {
+                    "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                    "triggerName": "Navigate_To_Contact_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "rightToRightOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "topToBottomOf": "7mMBELe7A9UWiquncFkgI",
+            "bottomToBottomOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "layout_marginBottom": 88,
+            "layout_marginTop": 80
+          },
+          "bindingKey": "prelogin_lists_data",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Q8aunDVwu9MJ8VZDIcmUD",
+            "name": "List item 0",
+            "path": "0-1-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [],
+            "events": [
+              {
+                "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                "triggerName": "Navigate_To_Contact_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "80",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_marginLeft": 1,
+                "layout_marginRight": 1,
+                "layout_marginTop": 1,
+                "layout_marginBottom": 1,
+                "background": "#1d6131"
+              },
+              "bindingKey": "prleogin_list1",
+              "componentId": []
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "edit": true,
+    "layout": [
+      {
+        "id": "cMFSdFNI6_zsKGqvo6LKu",
+        "name": "Prelogin_Lists_Testing",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Prelogin_Lists_Testing",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "63f8590abf8c983b9cc00fa4",
+              "name": "Dash_background_Img3.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "KN6esKJCZLCTf-oNIAaF6",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "Dash_background_Img3.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/Dash_background_Img3.png",
+              "createdAt": "2023-02-24T06:28:26.626Z",
+              "updatedAt": "2023-02-24T06:28:26.626Z",
+              "__v": 0,
+              "uri": "Dash_background_Img3.png"
+            },
+            "navbarHeight": 0,
+            "hideNavBar": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "7mMBELe7A9UWiquncFkgI",
+            "status": "ACTIVE",
+            "name": "prelogin_lists_samtext",
+            "attributes": {
+              "name": "prelogin_lists_samtext",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Hello",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+                "topToTopOf": "cMFSdFNI6_zsKGqvo6LKu",
+                "layout_marginLeft": 10,
+                "layout_marginTop": 6,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "BHqiub9p6tcpBTrKVKQmH",
+                "triggerName": "Prelogin_Lists_Data_Trigg",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "prelogin_lists_data",
+                  "value": [
+                    { "prelogin_lists_text_data": "Location" },
+                    { "prelogin_lists_text_data": "Security Guidelines" },
+                    { "prelogin_lists_text_data": "Contact Us" }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "1"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "n4n4qBRx0AcXzE1eazLDO",
+            "type": "VLIST",
+            "name": "prelogin_lists_vlist",
+            "component": { "type": "VLIST" },
+            "attributes": {
+              "name": "prelogin_lists_vlist",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#000000",
+                "layout_height": "match_parent",
+                "layout_width": "match_parent",
+                "rows": [
+                  {
+                    "id": "Q8aunDVwu9MJ8VZDIcmUD",
+                    "bindingKey": "prleogin_list1",
+                    "events": [
+                      {
+                        "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                        "triggerName": "Navigate_To_Contact_Screen",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+                "rightToRightOf": "cMFSdFNI6_zsKGqvo6LKu",
+                "topToBottomOf": "7mMBELe7A9UWiquncFkgI",
+                "bottomToBottomOf": "cMFSdFNI6_zsKGqvo6LKu",
+                "layout_marginBottom": 88,
+                "layout_marginTop": 80
+              },
+              "bindingKey": "prelogin_lists_data",
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "Q8aunDVwu9MJ8VZDIcmUD",
+                "name": "List item 0",
+                "path": "0-1-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [],
+                "events": [
+                  {
+                    "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                    "triggerName": "Navigate_To_Contact_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "80",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "layout_marginLeft": 1,
+                    "layout_marginRight": 1,
+                    "layout_marginTop": 1,
+                    "layout_marginBottom": 1,
+                    "background": "#1d6131"
+                  },
+                  "bindingKey": "prleogin_list1",
+                  "componentId": []
+                }
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "cMFSdFNI6_zsKGqvo6LKu",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "7mMBELe7A9UWiquncFkgI",
+    "status": "ACTIVE",
+    "name": "prelogin_lists_samtext",
+    "attributes": {
+      "name": "prelogin_lists_samtext",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Hello",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+        "topToTopOf": "cMFSdFNI6_zsKGqvo6LKu",
+        "layout_marginLeft": 10,
+        "layout_marginTop": 6,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "BHqiub9p6tcpBTrKVKQmH",
+        "triggerName": "Prelogin_Lists_Data_Trigg",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-0",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "n4n4qBRx0AcXzE1eazLDO",
+    "type": "VLIST",
+    "name": "prelogin_lists_vlist",
+    "component": { "type": "VLIST" },
+    "attributes": {
+      "name": "prelogin_lists_vlist",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#000000",
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "rows": [
+          {
+            "id": "Q8aunDVwu9MJ8VZDIcmUD",
+            "bindingKey": "prleogin_list1",
+            "events": [
+              {
+                "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                "triggerName": "Navigate_To_Contact_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+        "rightToRightOf": "cMFSdFNI6_zsKGqvo6LKu",
+        "topToBottomOf": "7mMBELe7A9UWiquncFkgI",
+        "bottomToBottomOf": "cMFSdFNI6_zsKGqvo6LKu",
+        "layout_marginBottom": 88,
+        "layout_marginTop": 80
+      },
+      "bindingKey": "prelogin_lists_data",
+      "componentId": ["Q8aunDVwu9MJ8VZDIcmUD"]
+    },
+    "events": [],
+    "path": "0-1",
+    "gridProps": [
+      {
+        "id": "Q8aunDVwu9MJ8VZDIcmUD",
+        "name": "List item 0",
+        "path": "0-1-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [],
+        "events": [
+          {
+            "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+            "triggerName": "Navigate_To_Contact_Screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "80",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_marginLeft": 1,
+            "layout_marginRight": 1,
+            "layout_marginTop": 1,
+            "layout_marginBottom": 1,
+            "background": "#1d6131"
+          },
+          "bindingKey": "prleogin_list1",
+          "componentId": []
+        }
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "7mMBELe7A9UWiquncFkgI",
+        "status": "ACTIVE",
+        "name": "prelogin_lists_samtext",
+        "attributes": {
+          "name": "prelogin_lists_samtext",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Hello",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "topToTopOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "layout_marginLeft": 10,
+            "layout_marginTop": 6,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "TEXTVIEW",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "BHqiub9p6tcpBTrKVKQmH",
+            "triggerName": "Prelogin_Lists_Data_Trigg",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "prelogin_lists_data",
+              "value": [
+                { "prelogin_lists_text_data": "Location" },
+                { "prelogin_lists_text_data": "Security Guidelines" },
+                { "prelogin_lists_text_data": "Contact Us" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "n4n4qBRx0AcXzE1eazLDO",
+        "type": "VLIST",
+        "name": "prelogin_lists_vlist",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "prelogin_lists_vlist",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#000000",
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "Q8aunDVwu9MJ8VZDIcmUD",
+                "bindingKey": "prleogin_list1",
+                "events": [
+                  {
+                    "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                    "triggerName": "Navigate_To_Contact_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "rightToRightOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "topToBottomOf": "7mMBELe7A9UWiquncFkgI",
+            "bottomToBottomOf": "cMFSdFNI6_zsKGqvo6LKu",
+            "layout_marginBottom": 88,
+            "layout_marginTop": 80
+          },
+          "bindingKey": "prelogin_lists_data",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Q8aunDVwu9MJ8VZDIcmUD",
+            "name": "List item 0",
+            "path": "0-1-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [],
+            "events": [
+              {
+                "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+                "triggerName": "Navigate_To_Contact_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "80",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_marginLeft": 1,
+                "layout_marginRight": 1,
+                "layout_marginTop": 1,
+                "layout_marginBottom": 1,
+                "background": "#1d6131"
+              },
+              "bindingKey": "prleogin_list1",
+              "componentId": []
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Q8aunDVwu9MJ8VZDIcmUD",
+    "name": "List item 0",
+    "path": "0-1-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [],
+    "events": [
+      {
+        "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+        "triggerName": "Navigate_To_Contact_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "80",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_marginLeft": 1,
+        "layout_marginRight": 1,
+        "layout_marginTop": 1,
+        "layout_marginBottom": 1,
+        "background": "#1d6131"
+      },
+      "bindingKey": "prleogin_list1",
+      "componentId": []
+    },
+    "layout": [
+      {
+        "id": "Q8aunDVwu9MJ8VZDIcmUD",
+        "name": "List item 0",
+        "path": "0-1-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [],
+        "events": [
+          {
+            "triggerId": "Do3JyLxH-2t9v6iCFmw5o",
+            "triggerName": "Navigate_To_Contact_Screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "80",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_marginLeft": 1,
+            "layout_marginRight": 1,
+            "layout_marginTop": 1,
+            "layout_marginBottom": 1,
+            "background": "#1d6131"
+          },
+          "bindingKey": "prleogin_list1",
+          "componentId": []
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  }
+]
