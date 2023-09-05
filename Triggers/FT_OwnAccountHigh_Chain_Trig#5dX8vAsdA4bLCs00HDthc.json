@@ -1,0 +1,36 @@
+{
+  "id": "jSDyuVjQYccJV5cDasFO2",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "FT_OwnAccountHigh_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "YYbXAhwMZu-Jz5RoanRYK",
+              "triggerName": "FT_OwnAcc_AllHide"
+            },
+            {
+              "triggerId": "CYqtkO5oi2E7IkUvtUKQx",
+              "triggerName": "FT_OwnAcc_AllShow"
+            }
+          ],
+          "triggerId": ["YYbXAhwMZu-Jz5RoanRYK", "CYqtkO5oi2E7IkUvtUKQx"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.cy8kqkr5r98cSQgvZO5mD-9PrvKRa8Iy",
+  "_id": "5dX8vAsdA4bLCs00HDthc",
+  "updatedAt": "8/21/2023",
+  "createdAt": "8/21/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

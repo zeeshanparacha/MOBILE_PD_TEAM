@@ -1,0 +1,46 @@
+{
+  "id": "3pm-3piY6m2Ec897GTkA8",
+  "name": "HMB_ContactUS_Filter_Trig",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "services": [
+    {
+      "type": "DATASTORAGE",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "serviceName": "Show Bottom Sheet",
+          "conditions": [
+            {
+              "bindingKey": "contactFilterData",
+              "value": "$getContact_Data",
+              "logic": {
+                "filter": [
+                  { "var": "content" },
+                  { "==": [{ "var": "groupCode" }, "CONTACT"] }
+                ]
+              }
+            },
+            {
+              "bindingKey": "socialmediaFilterData",
+              "value": "$getContact_Data",
+              "logic": {
+                "filter": [
+                  { "var": "content" },
+                  { "==": [{ "var": "groupCode" }, "SOCIALMEDIA"] }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.kdlzvijr75QbDNMBMGQ2sMLSGA-782W",
+  "_id": "50N_1VaEoA1HqUArdOmJ3",
+  "updatedAt": "8/16/2023",
+  "createdAt": "8/16/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_ContactUS_Filter_Trig"
+}

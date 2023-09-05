@@ -1,0 +1,442 @@
+[
+  {
+    "id": "QmyJHJcXBCt7yKGnCBgMg",
+    "name": "HMB_withholdingTaxCert_Navbar",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "HMB_withholdingTaxCert_Navbar",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#FFFFFF",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+          
+        "hideNavBar": true
+      },
+      "componentId": [
+        "Yi6_mtU4R5qduj4SX_0pS",
+        "778bIoSkAtGgxstzhdkE9",
+        "gtW-RzTaINyRlBOXiOD2v"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "7/12/2023",
+    "createdAt": "7/12/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "Yi6_mtU4R5qduj4SX_0pS",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "WTC_Navbar_View",
+        "attributes": {
+          "name": "WTC_Navbar_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "50",
+             
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1D6131",
+            "leftToLeftOf": "QmyJHJcXBCt7yKGnCBgMg",
+            "rightToRightOf": "QmyJHJcXBCt7yKGnCBgMg",
+            "topToTopOf": "QmyJHJcXBCt7yKGnCBgMg"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-0"
+      },
+      {
+        "id": "778bIoSkAtGgxstzhdkE9",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "WTC_Navbar_Back_Btn",
+        "attributes": {
+          "name": "WTC_Navbar_Back_Btn",
+          "layoutProperties": {
+            "layout_width": "22",
+            "layout_height": "22",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "63f8597bbf8c983b9cc00fd5",
+              "name": "HMB_Back.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "1d8bk13Zt-VqOzmOlGNvr",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "HMB_Back.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+              "createdAt": "2023-02-24T06:30:19.246Z",
+              "updatedAt": "2023-02-24T06:30:19.246Z",
+              "__v": 0,
+              "uri": "HMB_Back.png"
+            },
+            "leftToLeftOf": "Yi6_mtU4R5qduj4SX_0pS",
+            "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+            "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+            "layout_marginLeft": 10,
+            "id": "1d8bk13Zt-VqOzmOlGNvr"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-1"
+      },
+      {
+        "id": "gtW-RzTaINyRlBOXiOD2v",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "WTC_Navbar_Title_Text",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#ffffff",
+            "text": "Withholding Tax Certificate",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToRightOf": "778bIoSkAtGgxstzhdkE9",
+            "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+            "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+            "layout_marginLeft": 18,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-2"
+      }
+    ],
+    "subType": "widget",
+    "edit": true,
+    "layout": [
+      {
+        "id": "QmyJHJcXBCt7yKGnCBgMg",
+        "name": "HMB_withholdingTaxCert_Navbar",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_withholdingTaxCert_Navbar",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+              
+            "hideNavBar": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "Yi6_mtU4R5qduj4SX_0pS",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "WTC_Navbar_View",
+            "attributes": {
+              "name": "WTC_Navbar_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                 
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "leftToLeftOf": "QmyJHJcXBCt7yKGnCBgMg",
+                "rightToRightOf": "QmyJHJcXBCt7yKGnCBgMg",
+                "topToTopOf": "QmyJHJcXBCt7yKGnCBgMg"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "778bIoSkAtGgxstzhdkE9",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "WTC_Navbar_Back_Btn",
+            "attributes": {
+              "name": "WTC_Navbar_Back_Btn",
+              "layoutProperties": {
+                "layout_width": "22",
+                "layout_height": "22",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "63f8597bbf8c983b9cc00fd5",
+                  "name": "HMB_Back.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "1d8bk13Zt-VqOzmOlGNvr",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Back.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+                  "createdAt": "2023-02-24T06:30:19.246Z",
+                  "updatedAt": "2023-02-24T06:30:19.246Z",
+                  "__v": 0,
+                  "uri": "HMB_Back.png"
+                },
+                "leftToLeftOf": "Yi6_mtU4R5qduj4SX_0pS",
+                "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+                "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+                "layout_marginLeft": 10,
+                "id": "1d8bk13Zt-VqOzmOlGNvr"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1"
+          },
+          {
+            "id": "gtW-RzTaINyRlBOXiOD2v",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "WTC_Navbar_Title_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Withholding Tax Certificate",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "778bIoSkAtGgxstzhdkE9",
+                "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+                "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+                "layout_marginLeft": 18,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          }
+        ],
+        "subType": "widget",
+        "edit": true
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "QmyJHJcXBCt7yKGnCBgMg",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Yi6_mtU4R5qduj4SX_0pS",
+    "status": "ACTIVE",
+    "name": "WTC_Navbar_View",
+    "attributes": {
+      "name": "WTC_Navbar_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "50",
+         
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1D6131",
+        "leftToLeftOf": "QmyJHJcXBCt7yKGnCBgMg",
+        "rightToRightOf": "QmyJHJcXBCt7yKGnCBgMg",
+        "topToTopOf": "QmyJHJcXBCt7yKGnCBgMg"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-0",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "778bIoSkAtGgxstzhdkE9",
+    "status": "ACTIVE",
+    "name": "WTC_Navbar_Back_Btn",
+    "attributes": {
+      "name": "WTC_Navbar_Back_Btn",
+      "layoutProperties": {
+        "layout_width": "22",
+        "layout_height": "22",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "63f8597bbf8c983b9cc00fd5",
+          "name": "HMB_Back.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "1d8bk13Zt-VqOzmOlGNvr",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "HMB_Back.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
+          "createdAt": "2023-02-24T06:30:19.246Z",
+          "updatedAt": "2023-02-24T06:30:19.246Z",
+          "__v": 0,
+          "uri": "HMB_Back.png"
+        },
+        "leftToLeftOf": "Yi6_mtU4R5qduj4SX_0pS",
+        "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+        "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+        "layout_marginLeft": 10,
+        "id": "1d8bk13Zt-VqOzmOlGNvr"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-1",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "gtW-RzTaINyRlBOXiOD2v",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "WTC_Navbar_Title_Text",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#ffffff",
+        "text": "Withholding Tax Certificate",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToRightOf": "778bIoSkAtGgxstzhdkE9",
+        "topToTopOf": "Yi6_mtU4R5qduj4SX_0pS",
+        "bottomToBottomOf": "Yi6_mtU4R5qduj4SX_0pS",
+        "layout_marginLeft": 18,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-2",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

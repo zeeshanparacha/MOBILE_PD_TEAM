@@ -1,0 +1,2178 @@
+[
+  {
+    "id": "SeKIgIt0GzejZDSrT1xNB",
+    "name": "HMB_TrustedDevice_Screen",
+    "icon": "FaGripHorizontal",
+    "path": "1",
+    "attributes": {
+      "name": "HMB_TrustedDevice_Screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#1D6131",
+        "background": "#FFFFFF",
+        "navBarColor": "#1D6131",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "O4cb2mIjUJYQ7sbtW37UZ",
+        "navbarHeight": "wrap_content",
+        "navBarLayout": {
+          "subType": "widget_component",
+          "layout": [
+            {
+              "id": "O4cb2mIjUJYQ7sbtW37UZ",
+              "name": "HMB_TrustedDevice_Navbar",
+              "icon": "FaGripHorizontal",
+              "path": "0",
+              "attributes": {
+                "name": "HMB_TrustedDevice_Navbar",
+                "layoutProperties": {
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "statusBarColor": "#093959",
+                  "background": "#F8F8F8",
+                  "navBarColor": "#093959",
+                  "hideNavbar": true,
+                  "cornerRadius": [0, 0, 0, 0]
+                },
+                "componentId": []
+              },
+              "group": "Layout",
+              "type": "CONSTRAINT",
+              "status": "ACTIVE",
+              "updatedAt": "2021-09-23T15:17:45.489Z",
+              "createdAt": "2021-08-24T06:05:50.559Z",
+              "events": [],
+              "order": 1,
+              "version": "1.0.0",
+              "isLatest": true,
+              "component": {
+                "content": "Constraint Layout",
+                "type": "CONSTRAINT"
+              },
+              "gridProps": [],
+              "subType": "widget"
+            }
+          ],
+          "name": "HMB_TrustedDevice_Navbar",
+          "widgetGridProps": [
+            {
+              "gridProps": [
+                {
+                  "type": "column",
+                  "id": "S8FQUORIO2Vw4Fahha4Gd",
+                  "gridProps": []
+                }
+              ]
+            }
+          ],
+          "events": [],
+          "id": "O4cb2mIjUJYQ7sbtW37UZ",
+          "icon": "FaGripHorizontal",
+          "path": "0",
+          "attributes": {
+            "name": "Constraint Layout",
+            "layoutProperties": {
+              "orientation": "vertical",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "statusBarColor": "#093959",
+              "background": "#F8F8F8",
+              "navBarColor": "#093959",
+              "hideNavbar": true,
+              "cornerRadius": [0, 0, 0, 0]
+            },
+            "componentId": []
+          },
+          "group": "Layout",
+          "type": "CONSTRAINT",
+          "status": "ACTIVE",
+          "updatedAt": "7/10/2023",
+          "createdAt": "7/10/2023",
+          "order": 1,
+          "version": "1.0.0",
+          "isLatest": true,
+          "component": { "type": "widget_component" },
+          "gridProps": [],
+          "projectId": "63ef72a290c5800428f84dd9",
+          "gitBranchName": "master",
+          "_id": "O4cb2mIjUJYQ7sbtW37UZ",
+          "createdBy": "shaikhahmedraza",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+        }
+      },
+      "componentId": ["oN5LB8_zB_dfxkCYcsavo", "bHjWqcc-Jyd7ORlcLQ3Mp"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "7/10/2023",
+    "createdAt": "7/10/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "oN5LB8_zB_dfxkCYcsavo",
+        "type": "VLIST",
+        "name": "TrustedDevice_Main_Vlist",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "TrustedDevice_Main_Vlist",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "nyLaCAqaHnKIw0OHKvwkl",
+                "bindingKey": "td_android_vlistitem",
+                "events": [
+                  {
+                    "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                    "triggerName": "AccMiniState_From_Date_Trig",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+            "rightToRightOf": "SeKIgIt0GzejZDSrT1xNB",
+            "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+            "bottomToBottomOf": "SeKIgIt0GzejZDSrT1xNB",
+            "layout_marginTop": 10
+          },
+          "bindingKey": "td_vlist_data",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-0",
+        "gridProps": [
+          {
+            "id": "nyLaCAqaHnKIw0OHKvwkl",
+            "name": "List item 0",
+            "path": "0-0-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "SP8hdKvK1guUxtglT9Kfa",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "TrustedDevice_Vlistitem_View",
+                "attributes": {
+                  "name": "TrustedDevice_Vlistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-0-0-0"
+              },
+              {
+                "id": "5hJr0A2tY-wr8AvmuHYRd",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "TrustedDevice_OSLogo_Img",
+                "attributes": {
+                  "name": "TrustedDevice_OSLogo_Img",
+                  "layoutProperties": {
+                    "layout_width": "30",
+                    "layout_height": "30",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "642a86943ed66321dc8f145d",
+                      "name": "AccState_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "01BET8tjSERNWON23lLO4",
+                      "gitBranchName": "dev",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "AccState_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+                      "createdAt": "2023-04-03T07:56:04.811Z",
+                      "updatedAt": "2023-04-03T07:56:04.811Z",
+                      "__v": 0,
+                      "uri": "AccState_Icon.png"
+                    },
+                    "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginLeft": 10,
+                    "id": "01BET8tjSERNWON23lLO4"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-0-0-1",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "D99WDwfp1UHA2EVo1889T",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "TrustedDevice_OSName_Text",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginLeft": 20,
+                    "textStyle": "regular",
+                    "textAlignment": "left"
+                  },
+                  "bindingKey": "td_osname_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-0-0-2"
+              },
+              {
+                "id": "f7JPe6mBTtG5eAFC5BvdM",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "TrustedDevice_Delete_Icon",
+                "attributes": {
+                  "name": "TrustedDevice_Delete_Icon",
+                  "layoutProperties": {
+                    "layout_width": "20",
+                    "layout_height": "20",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6401988ff00f8b3bc0aaecf6",
+                      "name": "PD_TrustedDevice_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "YLkR7KBuGmWUfBjdxLFGZ",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "PD_TrustedDevice_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+                      "createdAt": "2023-03-03T06:49:51.409Z",
+                      "updatedAt": "2023-03-03T06:49:51.409Z",
+                      "__v": 0,
+                      "uri": "PD_TrustedDevice_Icon.png"
+                    },
+                    "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginRight": 6,
+                    "id": "YLkR7KBuGmWUfBjdxLFGZ"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-0-0-3"
+              }
+            ],
+            "events": [
+              {
+                "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                "triggerName": "AccMiniState_From_Date_Trig",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "80",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1d6131",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20
+              },
+              "bindingKey": "td_android_vlistitem",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ],
+        "edit": true
+      },
+      {
+        "id": "bHjWqcc-Jyd7ORlcLQ3Mp",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "TD_Sam_Text",
+        "attributes": {
+          "name": "TD_Sam_Text",
+          "layoutProperties": {
+            "textSize": 2,
+            "layout_width": "60",
+            "layout_height": "1",
+            "textColor": "#ffffff",
+            "text": "Start",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+            "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+            "textAlignment": "left",
+            "textStyle": "regular"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "gBUHFQmRzdppJ3G_JN0Y1",
+            "triggerName": "TrustedDevice_Data_Trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "td_vlist_data",
+              "value": [],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "1-1",
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "edit": true,
+    "layout": [
+      {
+        "id": "LoEszM6lBHwcKPisXlEnP",
+        "name": "HMB_Contact_Navbar",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Contact_Navbar",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "pxW2j0LDZX-HWIX1KnPEJ",
+            "status": "ACTIVE",
+            "name": "Contact_Navbar_View",
+            "attributes": {
+              "name": "Contact_Navbar_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
+                "rightToRightOf": "LoEszM6lBHwcKPisXlEnP",
+                "topToTopOf": "LoEszM6lBHwcKPisXlEnP"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "44w1VqUcpcsfTQPpp4qNW",
+            "status": "ACTIVE",
+            "name": "Back_Btn",
+            "attributes": {
+              "name": "Back_Btn",
+              "layoutProperties": {
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": "bunNCuh-YYqLCtmyDdr_s",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "64019280f00f8b3bc0aaebd1",
+                  "name": "white_arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "bunNCuh-YYqLCtmyDdr_s",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "white_arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/white_arrow.png",
+                  "createdAt": "2023-03-03T06:24:00.545Z",
+                  "updatedAt": "2023-03-03T06:24:00.545Z",
+                  "__v": 0,
+                  "uri": "white_arrow.png"
+                },
+                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "layout_marginLeft": 10
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1"
+          },
+          {
+            "id": "_I2qnLNyqp9RsNOVLFJUN",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "Back_Btn_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Back",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "layout_marginLeft": 30,
+                "textAlignment": "left",
+                "textStyle": "regular"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          },
+          {
+            "id": "aIH62mjAyouiq1SGgdWm5",
+            "status": "ACTIVE",
+            "name": "Text view",
+            "attributes": {
+              "name": "Contact_Head_Text",
+              "layoutProperties": {
+                "textSize": 22,
+                "layout_width": "100",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Contact",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "rightToRightOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "topToTopOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "bottomToBottomOf": "pxW2j0LDZX-HWIX1KnPEJ",
+                "textStyle": "regular",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3"
+          }
+        ],
+        "subType": "component",
+        "isNavbarConstraint": true
+      },
+      {
+        "id": "SeKIgIt0GzejZDSrT1xNB",
+        "name": "HMB_TrustedDevice_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "1",
+        "attributes": {
+          "name": "HMB_TrustedDevice_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#1D6131",
+            "background": "#FFFFFF",
+            "navBarColor": "#1D6131",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "O4cb2mIjUJYQ7sbtW37UZ",
+            "navbarHeight": "wrap_content",
+            "navBarLayout": {
+              "subType": "widget_component",
+              "layout": [
+                {
+                  "id": "O4cb2mIjUJYQ7sbtW37UZ",
+                  "name": "HMB_TrustedDevice_Navbar",
+                  "icon": "FaGripHorizontal",
+                  "path": "0",
+                  "attributes": {
+                    "name": "HMB_TrustedDevice_Navbar",
+                    "layoutProperties": {
+                      "orientation": "vertical",
+                      "layout_width": "match_parent",
+                      "layout_height": "wrap_content",
+                      "statusBarColor": "#093959",
+                      "background": "#F8F8F8",
+                      "navBarColor": "#093959",
+                      "hideNavbar": true,
+                      "cornerRadius": [0, 0, 0, 0]
+                    },
+                    "componentId": []
+                  },
+                  "group": "Layout",
+                  "type": "CONSTRAINT",
+                  "status": "ACTIVE",
+                  "updatedAt": "2021-09-23T15:17:45.489Z",
+                  "createdAt": "2021-08-24T06:05:50.559Z",
+                  "events": [],
+                  "order": 1,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "component": {
+                    "content": "Constraint Layout",
+                    "type": "CONSTRAINT"
+                  },
+                  "gridProps": [],
+                  "subType": "widget"
+                }
+              ],
+              "name": "HMB_TrustedDevice_Navbar",
+              "widgetGridProps": [
+                {
+                  "gridProps": [
+                    {
+                      "type": "column",
+                      "id": "S8FQUORIO2Vw4Fahha4Gd",
+                      "gridProps": []
+                    }
+                  ]
+                }
+              ],
+              "events": [],
+              "id": "O4cb2mIjUJYQ7sbtW37UZ",
+              "icon": "FaGripHorizontal",
+              "path": "0",
+              "attributes": {
+                "name": "Constraint Layout",
+                "layoutProperties": {
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "statusBarColor": "#093959",
+                  "background": "#F8F8F8",
+                  "navBarColor": "#093959",
+                  "hideNavbar": true,
+                  "cornerRadius": [0, 0, 0, 0]
+                },
+                "componentId": []
+              },
+              "group": "Layout",
+              "type": "CONSTRAINT",
+              "status": "ACTIVE",
+              "updatedAt": "7/10/2023",
+              "createdAt": "7/10/2023",
+              "order": 1,
+              "version": "1.0.0",
+              "isLatest": true,
+              "component": { "type": "widget_component" },
+              "gridProps": [],
+              "projectId": "63ef72a290c5800428f84dd9",
+              "gitBranchName": "master",
+              "_id": "O4cb2mIjUJYQ7sbtW37UZ",
+              "createdBy": "shaikhahmedraza",
+              "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+            }
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "oN5LB8_zB_dfxkCYcsavo",
+            "type": "VLIST",
+            "name": "TrustedDevice_Main_Vlist",
+            "component": { "type": "VLIST" },
+            "attributes": {
+              "name": "TrustedDevice_Main_Vlist",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_height": "match_parent",
+                "layout_width": "match_parent",
+                "rows": [
+                  {
+                    "id": "nyLaCAqaHnKIw0OHKvwkl",
+                    "bindingKey": "td_android_vlistitem",
+                    "events": [
+                      {
+                        "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                        "triggerName": "AccMiniState_From_Date_Trig",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+                "rightToRightOf": "SeKIgIt0GzejZDSrT1xNB",
+                "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+                "bottomToBottomOf": "SeKIgIt0GzejZDSrT1xNB",
+                "layout_marginTop": 10
+              },
+              "bindingKey": "td_vlist_data",
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-0",
+            "gridProps": [
+              {
+                "id": "nyLaCAqaHnKIw0OHKvwkl",
+                "name": "List item 0",
+                "path": "0-0-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "SP8hdKvK1guUxtglT9Kfa",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "TrustedDevice_Vlistitem_View",
+                    "attributes": {
+                      "name": "TrustedDevice_Vlistitem_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        
+                        "cornerRadius": [0, 0, 0, 0],
+                        "background": "#FFFFFF",
+                        "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+                        "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+                        "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+                        "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-0-0-0"
+                  },
+                  {
+                    "id": "5hJr0A2tY-wr8AvmuHYRd",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "TrustedDevice_OSLogo_Img",
+                    "attributes": {
+                      "name": "TrustedDevice_OSLogo_Img",
+                      "layoutProperties": {
+                        "layout_width": "30",
+                        "layout_height": "30",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "642a86943ed66321dc8f145d",
+                          "name": "AccState_Icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "01BET8tjSERNWON23lLO4",
+                          "gitBranchName": "dev",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "AccState_Icon.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+                          "createdAt": "2023-04-03T07:56:04.811Z",
+                          "updatedAt": "2023-04-03T07:56:04.811Z",
+                          "__v": 0,
+                          "uri": "AccState_Icon.png"
+                        },
+                        "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "layout_marginLeft": 10,
+                        "id": "01BET8tjSERNWON23lLO4"
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-0-0-1",
+                    "edit": true,
+                    "events": []
+                  },
+                  {
+                    "id": "D99WDwfp1UHA2EVo1889T",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "TrustedDevice_OSName_Text",
+                      "layoutProperties": {
+                        "textSize": 16,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+                        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "layout_marginLeft": 20,
+                        "textStyle": "regular",
+                        "textAlignment": "left"
+                      },
+                      "bindingKey": "td_osname_data"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-0-0-2"
+                  },
+                  {
+                    "id": "f7JPe6mBTtG5eAFC5BvdM",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "TrustedDevice_Delete_Icon",
+                    "attributes": {
+                      "name": "TrustedDevice_Delete_Icon",
+                      "layoutProperties": {
+                        "layout_width": "20",
+                        "layout_height": "20",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "6401988ff00f8b3bc0aaecf6",
+                          "name": "PD_TrustedDevice_Icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "YLkR7KBuGmWUfBjdxLFGZ",
+                          "gitBranchName": "master",
+                          "folderType": "xxxhdpi",
+                          "platform": "Android",
+                          "url": "PD_TrustedDevice_Icon.png",
+                          "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+                          "createdAt": "2023-03-03T06:49:51.409Z",
+                          "updatedAt": "2023-03-03T06:49:51.409Z",
+                          "__v": 0,
+                          "uri": "PD_TrustedDevice_Icon.png"
+                        },
+                        "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                        "layout_marginRight": 6,
+                        "id": "YLkR7KBuGmWUfBjdxLFGZ"
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-0-0-3"
+                  }
+                ],
+                "events": [
+                  {
+                    "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                    "triggerName": "AccMiniState_From_Date_Trig",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "80",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#1d6131",
+                    "layout_marginLeft": 20,
+                    "layout_marginRight": 20
+                  },
+                  "bindingKey": "td_android_vlistitem",
+                  "componentId": [],
+                  "swipeButtons": []
+                }
+              }
+            ],
+            "edit": true
+          },
+          {
+            "id": "bHjWqcc-Jyd7ORlcLQ3Mp",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "TD_Sam_Text",
+            "attributes": {
+              "name": "TD_Sam_Text",
+              "layoutProperties": {
+                "textSize": 2,
+                "layout_width": "60",
+                "layout_height": "1",
+                "textColor": "#ffffff",
+                "text": "Start",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+                "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+                "textAlignment": "left",
+                "textStyle": "regular"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "gBUHFQmRzdppJ3G_JN0Y1",
+                "triggerName": "TrustedDevice_Data_Trig",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "td_vlist_data",
+                  "value": [],
+                  "contentType": "array",
+                  "totalcolumns": "1"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "1-1",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "SeKIgIt0GzejZDSrT1xNB",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "oN5LB8_zB_dfxkCYcsavo",
+    "type": "VLIST",
+    "name": "TrustedDevice_Main_Vlist",
+    "component": { "type": "VLIST" },
+    "attributes": {
+      "name": "TrustedDevice_Main_Vlist",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "rows": [
+          {
+            "id": "nyLaCAqaHnKIw0OHKvwkl",
+            "bindingKey": "td_android_vlistitem",
+            "events": [
+              {
+                "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                "triggerName": "AccMiniState_From_Date_Trig",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+        "rightToRightOf": "SeKIgIt0GzejZDSrT1xNB",
+        "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+        "bottomToBottomOf": "SeKIgIt0GzejZDSrT1xNB",
+        "layout_marginTop": 10
+      },
+      "bindingKey": "td_vlist_data",
+      "componentId": ["nyLaCAqaHnKIw0OHKvwkl"]
+    },
+    "events": [],
+    "path": "0-0",
+    "gridProps": [
+      {
+        "id": "nyLaCAqaHnKIw0OHKvwkl",
+        "name": "List item 0",
+        "path": "0-0-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "SP8hdKvK1guUxtglT9Kfa",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "TrustedDevice_Vlistitem_View",
+            "attributes": {
+              "name": "TrustedDevice_Vlistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0-0-0"
+          },
+          {
+            "id": "5hJr0A2tY-wr8AvmuHYRd",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "TrustedDevice_OSLogo_Img",
+            "attributes": {
+              "name": "TrustedDevice_OSLogo_Img",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "642a86943ed66321dc8f145d",
+                  "name": "AccState_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "01BET8tjSERNWON23lLO4",
+                  "gitBranchName": "dev",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "AccState_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+                  "createdAt": "2023-04-03T07:56:04.811Z",
+                  "updatedAt": "2023-04-03T07:56:04.811Z",
+                  "__v": 0,
+                  "uri": "AccState_Icon.png"
+                },
+                "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginLeft": 10,
+                "id": "01BET8tjSERNWON23lLO4"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-0-0-1",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "D99WDwfp1UHA2EVo1889T",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "TrustedDevice_OSName_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "td_osname_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0-0-2"
+          },
+          {
+            "id": "f7JPe6mBTtG5eAFC5BvdM",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "TrustedDevice_Delete_Icon",
+            "attributes": {
+              "name": "TrustedDevice_Delete_Icon",
+              "layoutProperties": {
+                "layout_width": "20",
+                "layout_height": "20",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6401988ff00f8b3bc0aaecf6",
+                  "name": "PD_TrustedDevice_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "YLkR7KBuGmWUfBjdxLFGZ",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "PD_TrustedDevice_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+                  "createdAt": "2023-03-03T06:49:51.409Z",
+                  "updatedAt": "2023-03-03T06:49:51.409Z",
+                  "__v": 0,
+                  "uri": "PD_TrustedDevice_Icon.png"
+                },
+                "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginRight": 6,
+                "id": "YLkR7KBuGmWUfBjdxLFGZ"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-0-0-3"
+          }
+        ],
+        "events": [
+          {
+            "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+            "triggerName": "AccMiniState_From_Date_Trig",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "80",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1d6131",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20
+          },
+          "bindingKey": "td_android_vlistitem",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "oN5LB8_zB_dfxkCYcsavo",
+        "type": "VLIST",
+        "name": "TrustedDevice_Main_Vlist",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "TrustedDevice_Main_Vlist",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "nyLaCAqaHnKIw0OHKvwkl",
+                "bindingKey": "td_android_vlistitem",
+                "events": [
+                  {
+                    "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                    "triggerName": "AccMiniState_From_Date_Trig",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+            "rightToRightOf": "SeKIgIt0GzejZDSrT1xNB",
+            "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+            "bottomToBottomOf": "SeKIgIt0GzejZDSrT1xNB",
+            "layout_marginTop": 10
+          },
+          "bindingKey": "td_vlist_data",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-0",
+        "gridProps": [
+          {
+            "id": "nyLaCAqaHnKIw0OHKvwkl",
+            "name": "List item 0",
+            "path": "0-0-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "SP8hdKvK1guUxtglT9Kfa",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "TrustedDevice_Vlistitem_View",
+                "attributes": {
+                  "name": "TrustedDevice_Vlistitem_View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+                    "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-0-0-0"
+              },
+              {
+                "id": "5hJr0A2tY-wr8AvmuHYRd",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "TrustedDevice_OSLogo_Img",
+                "attributes": {
+                  "name": "TrustedDevice_OSLogo_Img",
+                  "layoutProperties": {
+                    "layout_width": "30",
+                    "layout_height": "30",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "642a86943ed66321dc8f145d",
+                      "name": "AccState_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "01BET8tjSERNWON23lLO4",
+                      "gitBranchName": "dev",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "AccState_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+                      "createdAt": "2023-04-03T07:56:04.811Z",
+                      "updatedAt": "2023-04-03T07:56:04.811Z",
+                      "__v": 0,
+                      "uri": "AccState_Icon.png"
+                    },
+                    "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginLeft": 10,
+                    "id": "01BET8tjSERNWON23lLO4"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-0-0-1",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "D99WDwfp1UHA2EVo1889T",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "TrustedDevice_OSName_Text",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginLeft": 20,
+                    "textStyle": "regular",
+                    "textAlignment": "left"
+                  },
+                  "bindingKey": "td_osname_data"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-0-0-2"
+              },
+              {
+                "id": "f7JPe6mBTtG5eAFC5BvdM",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "TrustedDevice_Delete_Icon",
+                "attributes": {
+                  "name": "TrustedDevice_Delete_Icon",
+                  "layoutProperties": {
+                    "layout_width": "20",
+                    "layout_height": "20",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6401988ff00f8b3bc0aaecf6",
+                      "name": "PD_TrustedDevice_Icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "YLkR7KBuGmWUfBjdxLFGZ",
+                      "gitBranchName": "master",
+                      "folderType": "xxxhdpi",
+                      "platform": "Android",
+                      "url": "PD_TrustedDevice_Icon.png",
+                      "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+                      "createdAt": "2023-03-03T06:49:51.409Z",
+                      "updatedAt": "2023-03-03T06:49:51.409Z",
+                      "__v": 0,
+                      "uri": "PD_TrustedDevice_Icon.png"
+                    },
+                    "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                    "layout_marginRight": 6,
+                    "id": "YLkR7KBuGmWUfBjdxLFGZ"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-0-0-3"
+              }
+            ],
+            "events": [
+              {
+                "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+                "triggerName": "AccMiniState_From_Date_Trig",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "80",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1d6131",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20
+              },
+              "bindingKey": "td_android_vlistitem",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ],
+        "edit": true
+      },
+      {
+        "id": "bHjWqcc-Jyd7ORlcLQ3Mp",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "TD_Sam_Text",
+        "attributes": {
+          "name": "TD_Sam_Text",
+          "layoutProperties": {
+            "textSize": 2,
+            "layout_width": "60",
+            "layout_height": "1",
+            "textColor": "#ffffff",
+            "text": "Start",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+            "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+            "textAlignment": "left",
+            "textStyle": "regular"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "gBUHFQmRzdppJ3G_JN0Y1",
+            "triggerName": "TrustedDevice_Data_Trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "td_vlist_data",
+              "value": [],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "1-1",
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "nyLaCAqaHnKIw0OHKvwkl",
+    "name": "List item 0",
+    "path": "0-0-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "SP8hdKvK1guUxtglT9Kfa",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "TrustedDevice_Vlistitem_View",
+        "attributes": {
+          "name": "TrustedDevice_Vlistitem_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+            "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+            "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+            "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-0-0-0"
+      },
+      {
+        "id": "5hJr0A2tY-wr8AvmuHYRd",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "TrustedDevice_OSLogo_Img",
+        "attributes": {
+          "name": "TrustedDevice_OSLogo_Img",
+          "layoutProperties": {
+            "layout_width": "30",
+            "layout_height": "30",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "642a86943ed66321dc8f145d",
+              "name": "AccState_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "01BET8tjSERNWON23lLO4",
+              "gitBranchName": "dev",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "AccState_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+              "createdAt": "2023-04-03T07:56:04.811Z",
+              "updatedAt": "2023-04-03T07:56:04.811Z",
+              "__v": 0,
+              "uri": "AccState_Icon.png"
+            },
+            "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+            "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+            "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+            "layout_marginLeft": 10,
+            "id": "01BET8tjSERNWON23lLO4"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-0-0-1",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "D99WDwfp1UHA2EVo1889T",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "TrustedDevice_OSName_Text",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+            "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+            "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+            "layout_marginLeft": 20,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          },
+          "bindingKey": "td_osname_data"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0-0-2"
+      },
+      {
+        "id": "f7JPe6mBTtG5eAFC5BvdM",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "TrustedDevice_Delete_Icon",
+        "attributes": {
+          "name": "TrustedDevice_Delete_Icon",
+          "layoutProperties": {
+            "layout_width": "20",
+            "layout_height": "20",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6401988ff00f8b3bc0aaecf6",
+              "name": "PD_TrustedDevice_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "YLkR7KBuGmWUfBjdxLFGZ",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "PD_TrustedDevice_Icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+              "createdAt": "2023-03-03T06:49:51.409Z",
+              "updatedAt": "2023-03-03T06:49:51.409Z",
+              "__v": 0,
+              "uri": "PD_TrustedDevice_Icon.png"
+            },
+            "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+            "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+            "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+            "layout_marginRight": 6,
+            "id": "YLkR7KBuGmWUfBjdxLFGZ"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-0-0-3"
+      }
+    ],
+    "events": [
+      {
+        "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+        "triggerName": "AccMiniState_From_Date_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "80",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1d6131",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20
+      },
+      "bindingKey": "td_android_vlistitem",
+      "componentId": [
+        "SP8hdKvK1guUxtglT9Kfa",
+        "5hJr0A2tY-wr8AvmuHYRd",
+        "D99WDwfp1UHA2EVo1889T",
+        "f7JPe6mBTtG5eAFC5BvdM"
+      ],
+      "swipeButtons": []
+    },
+    "layout": [
+      {
+        "id": "nyLaCAqaHnKIw0OHKvwkl",
+        "name": "List item 0",
+        "path": "0-0-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "SP8hdKvK1guUxtglT9Kfa",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "TrustedDevice_Vlistitem_View",
+            "attributes": {
+              "name": "TrustedDevice_Vlistitem_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+                "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0-0-0"
+          },
+          {
+            "id": "5hJr0A2tY-wr8AvmuHYRd",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "TrustedDevice_OSLogo_Img",
+            "attributes": {
+              "name": "TrustedDevice_OSLogo_Img",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "642a86943ed66321dc8f145d",
+                  "name": "AccState_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "01BET8tjSERNWON23lLO4",
+                  "gitBranchName": "dev",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "AccState_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+                  "createdAt": "2023-04-03T07:56:04.811Z",
+                  "updatedAt": "2023-04-03T07:56:04.811Z",
+                  "__v": 0,
+                  "uri": "AccState_Icon.png"
+                },
+                "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginLeft": 10,
+                "id": "01BET8tjSERNWON23lLO4"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-0-0-1",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "D99WDwfp1UHA2EVo1889T",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "TrustedDevice_OSName_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "td_osname_data"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0-0-2"
+          },
+          {
+            "id": "f7JPe6mBTtG5eAFC5BvdM",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "TrustedDevice_Delete_Icon",
+            "attributes": {
+              "name": "TrustedDevice_Delete_Icon",
+              "layoutProperties": {
+                "layout_width": "20",
+                "layout_height": "20",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6401988ff00f8b3bc0aaecf6",
+                  "name": "PD_TrustedDevice_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "YLkR7KBuGmWUfBjdxLFGZ",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "PD_TrustedDevice_Icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+                  "createdAt": "2023-03-03T06:49:51.409Z",
+                  "updatedAt": "2023-03-03T06:49:51.409Z",
+                  "__v": 0,
+                  "uri": "PD_TrustedDevice_Icon.png"
+                },
+                "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+                "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+                "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+                "layout_marginRight": 6,
+                "id": "YLkR7KBuGmWUfBjdxLFGZ"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-0-0-3"
+          }
+        ],
+        "events": [
+          {
+            "triggerId": "uBRfJvjT2MvWWHRQzudpy",
+            "triggerName": "AccMiniState_From_Date_Trig",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "80",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1d6131",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20
+          },
+          "bindingKey": "td_android_vlistitem",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "SP8hdKvK1guUxtglT9Kfa",
+    "status": "ACTIVE",
+    "name": "TrustedDevice_Vlistitem_View",
+    "attributes": {
+      "name": "TrustedDevice_Vlistitem_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "leftToLeftOf": "nyLaCAqaHnKIw0OHKvwkl",
+        "rightToRightOf": "nyLaCAqaHnKIw0OHKvwkl",
+        "topToTopOf": "nyLaCAqaHnKIw0OHKvwkl",
+        "bottomToBottomOf": "nyLaCAqaHnKIw0OHKvwkl"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-0-0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "5hJr0A2tY-wr8AvmuHYRd",
+    "status": "ACTIVE",
+    "name": "TrustedDevice_OSLogo_Img",
+    "attributes": {
+      "name": "TrustedDevice_OSLogo_Img",
+      "layoutProperties": {
+        "layout_width": "30",
+        "layout_height": "30",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "642a86943ed66321dc8f145d",
+          "name": "AccState_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "01BET8tjSERNWON23lLO4",
+          "gitBranchName": "dev",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "AccState_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/AccState_Icon.png",
+          "createdAt": "2023-04-03T07:56:04.811Z",
+          "updatedAt": "2023-04-03T07:56:04.811Z",
+          "__v": 0,
+          "uri": "AccState_Icon.png"
+        },
+        "leftToLeftOf": "SP8hdKvK1guUxtglT9Kfa",
+        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+        "layout_marginLeft": 10,
+        "id": "01BET8tjSERNWON23lLO4"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-0-0-1",
+    "edit": true,
+    "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "D99WDwfp1UHA2EVo1889T",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "TrustedDevice_OSName_Text",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToRightOf": "5hJr0A2tY-wr8AvmuHYRd",
+        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+        "layout_marginLeft": 20,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      },
+      "bindingKey": "td_osname_data"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0-0-2",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "f7JPe6mBTtG5eAFC5BvdM",
+    "status": "ACTIVE",
+    "name": "TrustedDevice_Delete_Icon",
+    "attributes": {
+      "name": "TrustedDevice_Delete_Icon",
+      "layoutProperties": {
+        "layout_width": "20",
+        "layout_height": "20",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6401988ff00f8b3bc0aaecf6",
+          "name": "PD_TrustedDevice_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "YLkR7KBuGmWUfBjdxLFGZ",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "PD_TrustedDevice_Icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/PD_TrustedDevice_Icon.png",
+          "createdAt": "2023-03-03T06:49:51.409Z",
+          "updatedAt": "2023-03-03T06:49:51.409Z",
+          "__v": 0,
+          "uri": "PD_TrustedDevice_Icon.png"
+        },
+        "rightToRightOf": "SP8hdKvK1guUxtglT9Kfa",
+        "topToTopOf": "SP8hdKvK1guUxtglT9Kfa",
+        "bottomToBottomOf": "SP8hdKvK1guUxtglT9Kfa",
+        "layout_marginRight": 6,
+        "id": "YLkR7KBuGmWUfBjdxLFGZ"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-0-0-3",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "bHjWqcc-Jyd7ORlcLQ3Mp",
+    "status": "ACTIVE",
+    "name": "TD_Sam_Text",
+    "attributes": {
+      "name": "TD_Sam_Text",
+      "layoutProperties": {
+        "textSize": 2,
+        "layout_width": "60",
+        "layout_height": "1",
+        "textColor": "#ffffff",
+        "text": "Start",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "SeKIgIt0GzejZDSrT1xNB",
+        "topToTopOf": "SeKIgIt0GzejZDSrT1xNB",
+        "textAlignment": "left",
+        "textStyle": "regular"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "gBUHFQmRzdppJ3G_JN0Y1",
+        "triggerName": "TrustedDevice_Data_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "1-1",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

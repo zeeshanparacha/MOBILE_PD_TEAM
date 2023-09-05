@@ -1,0 +1,36 @@
+{
+  "id": "jS-VkNeF9IOGPpo5wFg8X",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "FP_Passport_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "u5DtkNkNAcSAnBpttEKj-",
+              "triggerName": "FP_Passport_AllHide"
+            },
+            {
+              "triggerId": "BRBMP9LmOdei47BL4jt-z",
+              "triggerName": "FP_Passport_AllShow"
+            }
+          ],
+          "triggerId": ["u5DtkNkNAcSAnBpttEKj-", "BRBMP9LmOdei47BL4jt-z"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.klhlctewqkhq4bhxURj3gK59ol_32SIn",
+  "_id": "SU-TyBvwmRzw0G69N1xG7",
+  "updatedAt": "9/5/2023",
+  "createdAt": "9/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "bRJQvQzYctUffiaeF-jql",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetBeneList_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "L58689Q5O5MY99O8M18KLYO581YL965Q088KM5K6",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken"
+          },
+          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "inquiry": true,
+            "instrumentType": "A",
+            "tFlag": "N",
+            "transferType": ""
+          },
+          "responseStateKey": "hmb_getBeneList_data"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.t94xaowlvwnJadPfS2ZaV5ulg-68Vfif",
+  "_id": "un_Bb6EkFh8iAZBnkK0zh",
+  "updatedAt": "8/22/2023",
+  "createdAt": "8/22/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetBeneList_Api_Trig"
+}

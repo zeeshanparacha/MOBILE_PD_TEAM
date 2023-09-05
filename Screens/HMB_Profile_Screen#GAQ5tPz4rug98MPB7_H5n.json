@@ -31,7 +31,6 @@
           "__v": 0,
           "uri": "HMB_Dash_Header_Bg.png"
         },
-        "navbarHeight": 0,
         "hideNavBar": true
       },
       "componentId": [
@@ -62,14 +61,15 @@
         "E03mBx2_FYXvcf_w5U9Mb",
         "NtjpXyMwKqPjMRM1FYLIU",
         "BgGlyIlu_E5A3-ZT0D-CK",
-        "fE8Rd0tCyXUqI_rAXrd6z"
+        "fE8Rd0tCyXUqI_rAXrd6z",
+        "SQxJpnn3OLpFtcBI5HBLL"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/16/2023",
-    "createdAt": "5/16/2023",
+    "updatedAt": "8/24/2023",
+    "createdAt": "8/24/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -211,7 +211,7 @@
       {
         "id": "QstaAAL6Ahr9kEd5oTtW-",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_UserName_Head_Text",
         "attributes": {
           "name": "Profile_UserName_Head_Text",
           "layoutProperties": {
@@ -222,12 +222,11 @@
             "text": "MUHAMMAD FARAN TAHIR",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
-            "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
             "topToBottomOf": "PLqr2NMg1SRqCGTHnuCG2",
             "layout_marginTop": 20,
             "textStyle": "regular",
-            "textAlignment": "center"
+            "textAlignment": "center",
+            "centerX": "GAQ5tPz4rug98MPB7_H5n"
           }
         },
         "icon": "FaTextWidth",
@@ -241,7 +240,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "fTH1IqCiIBXWMx1fYOEAl",
@@ -251,16 +251,15 @@
           "name": "Profile_White_Main_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
-            "layout_height": "match_parent",
-            "borderWidth": 0,
+            "layout_width": "match_constraint",
+            "layout_height": "match_constraint",
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
             "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
-            "topToBottomOf": "QstaAAL6Ahr9kEd5oTtW-",
             "bottomToBottomOf": "GAQ5tPz4rug98MPB7_H5n",
-            "layout_marginTop": 30
+            "layout_marginTop": 130,
+            "topToTopOf": "GAQ5tPz4rug98MPB7_H5n"
           }
         },
         "icon": "FaTabletAlt",
@@ -274,12 +273,13 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-4"
+        "path": "0-4",
+        "edit": true
       },
       {
         "id": "BfkovDtfebd3QX7qJjXhE",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_Profile_Text",
         "attributes": {
           "name": "Profile_Profile_Text",
           "layoutProperties": {
@@ -309,12 +309,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-5"
+        "path": "0-5",
+        "edit": true
       },
       {
         "id": "i0W6DCKYjpEqVrxFRLaVG",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "HMB_Profile_UserName_Text",
         "attributes": {
           "name": "HMB_Profile_UserName_Text",
           "layoutProperties": {
@@ -344,7 +345,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-6"
+        "path": "0-6",
+        "edit": true
       },
       {
         "id": "xupu-4HtVlJCNWFaOx0U8",
@@ -354,9 +356,8 @@
           "name": "HMB_Profile_Username_DataView",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            "borderWidth": 0,
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -378,19 +379,20 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true
       },
       {
         "id": "lOlZjavnN4qHNxU-hc466",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "HMB_Profile_Username_DataText",
         "attributes": {
           "name": "HMB_Profile_Username_DataText",
           "layoutProperties": {
             "textSize": 15,
-            "layout_width": "match_parent",
-            "layout_height": "60",
-            "textColor": "#989898",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#878985",
             "text": "Shaikh Ahmed",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
@@ -413,12 +415,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-8"
+        "path": "0-8",
+        "edit": true
       },
       {
         "id": "aSDr2yvp9ncXc4sUrK8Td",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_ChangePassword_Text",
         "attributes": {
           "name": "Profile_ChangePassword_Text",
           "layoutProperties": {
@@ -448,7 +451,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-9"
+        "path": "0-9",
+        "edit": true
       },
       {
         "id": "Bw6nm-CVud8jIzltatFMV",
@@ -458,9 +462,8 @@
           "name": "Profile_ChangePassword_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            "borderWidth": 0,
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -481,13 +484,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-10"
+        "events": [
+          {
+            "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+            "triggerName": "Navigate_to_ChangePassword_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ZVmaPhjX93W56LwTOGtlk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-10",
+        "edit": true
       },
       {
         "id": "DLZJ3n90NbcQ7VkH07d4c",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_ChangePassword_DataText",
         "attributes": {
           "name": "Profile_ChangePassword_DataText",
           "layoutProperties": {
@@ -495,7 +511,7 @@
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#989898",
-            "text": "Tab to change password",
+            "text": "Tab Here To Change Your Password",
             "cornerRadius": [0, 0, 0, 0],
             "textStyle": "regular",
             "textAlignment": "left",
@@ -516,13 +532,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-11"
+        "events": [
+          {
+            "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+            "triggerName": "Navigate_to_ChangePassword_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ZVmaPhjX93W56LwTOGtlk"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-11",
+        "edit": true
       },
       {
         "id": "Qx4-81VQILs7UooGNT4xj",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_Email_Text",
         "attributes": {
           "name": "Profile_Email_Text",
           "layoutProperties": {
@@ -552,7 +581,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-12"
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "kHZq4R9eMf19EK94Xi9Jd",
@@ -562,9 +592,8 @@
           "name": "Profile_Email_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            "borderWidth": 0,
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -586,12 +615,13 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-13"
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "0qKHofgskOrDoZuc_-DaV",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_Email_DataText",
         "attributes": {
           "name": "Profile_Email_DataText",
           "layoutProperties": {
@@ -606,7 +636,6 @@
             "topToTopOf": "kHZq4R9eMf19EK94Xi9Jd",
             "bottomToBottomOf": "kHZq4R9eMf19EK94Xi9Jd",
             "layout_marginLeft": 20,
-            "layout_marginTop": 0,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -622,12 +651,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-14"
+        "path": "0-14",
+        "edit": true
       },
       {
         "id": "T9WsM7pjxr1_ByDkzJYJj",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_MobileNum_Text",
         "attributes": {
           "name": "Profile_MobileNum_Text",
           "layoutProperties": {
@@ -657,7 +687,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-15"
+        "path": "0-15",
+        "edit": true
       },
       {
         "id": "FN3vMJoU1g2O6MZrqg1Nb",
@@ -667,9 +698,8 @@
           "name": "Profile_MobileNum_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            "borderWidth": 0,
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -691,12 +721,13 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-16"
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "4hzVU5N3fMubTg-sXCSGt",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Profile_MobileNum_DataText",
         "attributes": {
           "name": "Profile_MobileNum_DataText",
           "layoutProperties": {
@@ -726,7 +757,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-17"
+        "path": "0-17",
+        "edit": true
       },
       {
         "id": "ub2Cce9ejmVilBLNe8xo4",
@@ -980,7 +1012,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "YStVGlzU57HLa1qdHygJP",
             "topToBottomOf": "YStVGlzU57HLa1qdHygJP",
-            "layout_marginTop": 0,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -1115,6 +1146,40 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-27"
+      },
+      {
+        "id": "SQxJpnn3OLpFtcBI5HBLL",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "HMB_Profile_Bottom_Empty_View",
+        "attributes": {
+          "name": "HMB_Profile_Bottom_Empty_View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "20",
+            "layout_height": "50",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
+            "rightToRightOf": "fTH1IqCiIBXWMx1fYOEAl",
+            "topToBottomOf": "fE8Rd0tCyXUqI_rAXrd6z",
+            "bottomToBottomOf": "fTH1IqCiIBXWMx1fYOEAl",
+            "layout_marginRight": 40,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-28"
       }
     ],
     "subType": "screen",
@@ -1152,7 +1217,6 @@
               "__v": 0,
               "uri": "HMB_Dash_Header_Bg.png"
             },
-            "navbarHeight": 0,
             "hideNavBar": true
           },
           "componentId": []
@@ -1303,7 +1367,7 @@
           {
             "id": "QstaAAL6Ahr9kEd5oTtW-",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_UserName_Head_Text",
             "attributes": {
               "name": "Profile_UserName_Head_Text",
               "layoutProperties": {
@@ -1314,12 +1378,11 @@
                 "text": "MUHAMMAD FARAN TAHIR",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
-                "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
                 "topToBottomOf": "PLqr2NMg1SRqCGTHnuCG2",
                 "layout_marginTop": 20,
                 "textStyle": "regular",
-                "textAlignment": "center"
+                "textAlignment": "center",
+                "centerX": "GAQ5tPz4rug98MPB7_H5n"
               }
             },
             "icon": "FaTextWidth",
@@ -1333,7 +1396,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "fTH1IqCiIBXWMx1fYOEAl",
@@ -1343,16 +1407,15 @@
               "name": "Profile_White_Main_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "match_parent",
-                "borderWidth": 0,
+                "layout_width": "match_constraint",
+                "layout_height": "match_constraint",
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
                 "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
-                "topToBottomOf": "QstaAAL6Ahr9kEd5oTtW-",
                 "bottomToBottomOf": "GAQ5tPz4rug98MPB7_H5n",
-                "layout_marginTop": 30
+                "layout_marginTop": 130,
+                "topToTopOf": "GAQ5tPz4rug98MPB7_H5n"
               }
             },
             "icon": "FaTabletAlt",
@@ -1366,12 +1429,13 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-4"
+            "path": "0-4",
+            "edit": true
           },
           {
             "id": "BfkovDtfebd3QX7qJjXhE",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_Profile_Text",
             "attributes": {
               "name": "Profile_Profile_Text",
               "layoutProperties": {
@@ -1401,12 +1465,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-5"
+            "path": "0-5",
+            "edit": true
           },
           {
             "id": "i0W6DCKYjpEqVrxFRLaVG",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "HMB_Profile_UserName_Text",
             "attributes": {
               "name": "HMB_Profile_UserName_Text",
               "layoutProperties": {
@@ -1436,7 +1501,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-6"
+            "path": "0-6",
+            "edit": true
           },
           {
             "id": "xupu-4HtVlJCNWFaOx0U8",
@@ -1446,9 +1512,8 @@
               "name": "HMB_Profile_Username_DataView",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                "borderWidth": 0,
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -1470,19 +1535,20 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true
           },
           {
             "id": "lOlZjavnN4qHNxU-hc466",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "HMB_Profile_Username_DataText",
             "attributes": {
               "name": "HMB_Profile_Username_DataText",
               "layoutProperties": {
                 "textSize": 15,
-                "layout_width": "match_parent",
-                "layout_height": "60",
-                "textColor": "#989898",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#878985",
                 "text": "Shaikh Ahmed",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
@@ -1505,12 +1571,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-8"
+            "path": "0-8",
+            "edit": true
           },
           {
             "id": "aSDr2yvp9ncXc4sUrK8Td",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_ChangePassword_Text",
             "attributes": {
               "name": "Profile_ChangePassword_Text",
               "layoutProperties": {
@@ -1540,7 +1607,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-9"
+            "path": "0-9",
+            "edit": true
           },
           {
             "id": "Bw6nm-CVud8jIzltatFMV",
@@ -1550,9 +1618,8 @@
               "name": "Profile_ChangePassword_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                "borderWidth": 0,
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -1573,13 +1640,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-10"
+            "events": [
+              {
+                "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+                "triggerName": "Navigate_to_ChangePassword_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ZVmaPhjX93W56LwTOGtlk"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-10",
+            "edit": true
           },
           {
             "id": "DLZJ3n90NbcQ7VkH07d4c",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_ChangePassword_DataText",
             "attributes": {
               "name": "Profile_ChangePassword_DataText",
               "layoutProperties": {
@@ -1587,7 +1667,7 @@
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#989898",
-                "text": "Tab to change password",
+                "text": "Tab Here To Change Your Password",
                 "cornerRadius": [0, 0, 0, 0],
                 "textStyle": "regular",
                 "textAlignment": "left",
@@ -1608,13 +1688,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-11"
+            "events": [
+              {
+                "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+                "triggerName": "Navigate_to_ChangePassword_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ZVmaPhjX93W56LwTOGtlk"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-11",
+            "edit": true
           },
           {
             "id": "Qx4-81VQILs7UooGNT4xj",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_Email_Text",
             "attributes": {
               "name": "Profile_Email_Text",
               "layoutProperties": {
@@ -1644,7 +1737,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-12"
+            "path": "0-12",
+            "edit": true
           },
           {
             "id": "kHZq4R9eMf19EK94Xi9Jd",
@@ -1654,9 +1748,8 @@
               "name": "Profile_Email_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                "borderWidth": 0,
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -1678,12 +1771,13 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-13"
+            "path": "0-13",
+            "edit": true
           },
           {
             "id": "0qKHofgskOrDoZuc_-DaV",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_Email_DataText",
             "attributes": {
               "name": "Profile_Email_DataText",
               "layoutProperties": {
@@ -1698,7 +1792,6 @@
                 "topToTopOf": "kHZq4R9eMf19EK94Xi9Jd",
                 "bottomToBottomOf": "kHZq4R9eMf19EK94Xi9Jd",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 0,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -1714,12 +1807,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-14"
+            "path": "0-14",
+            "edit": true
           },
           {
             "id": "T9WsM7pjxr1_ByDkzJYJj",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_MobileNum_Text",
             "attributes": {
               "name": "Profile_MobileNum_Text",
               "layoutProperties": {
@@ -1749,7 +1843,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-15"
+            "path": "0-15",
+            "edit": true
           },
           {
             "id": "FN3vMJoU1g2O6MZrqg1Nb",
@@ -1759,9 +1854,8 @@
               "name": "Profile_MobileNum_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                "borderWidth": 0,
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -1783,12 +1877,13 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-16"
+            "path": "0-16",
+            "edit": true
           },
           {
             "id": "4hzVU5N3fMubTg-sXCSGt",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Profile_MobileNum_DataText",
             "attributes": {
               "name": "Profile_MobileNum_DataText",
               "layoutProperties": {
@@ -1818,7 +1913,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-17"
+            "path": "0-17",
+            "edit": true
           },
           {
             "id": "ub2Cce9ejmVilBLNe8xo4",
@@ -2072,7 +2168,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "YStVGlzU57HLa1qdHygJP",
                 "topToBottomOf": "YStVGlzU57HLa1qdHygJP",
-                "layout_marginTop": 0,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -2207,6 +2302,40 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-27"
+          },
+          {
+            "id": "SQxJpnn3OLpFtcBI5HBLL",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "HMB_Profile_Bottom_Empty_View",
+            "attributes": {
+              "name": "HMB_Profile_Bottom_Empty_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "20",
+                "layout_height": "50",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
+                "rightToRightOf": "fTH1IqCiIBXWMx1fYOEAl",
+                "topToBottomOf": "fE8Rd0tCyXUqI_rAXrd6z",
+                "bottomToBottomOf": "fTH1IqCiIBXWMx1fYOEAl",
+                "layout_marginRight": 40,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-28"
           }
         ],
         "subType": "screen",
@@ -2263,9 +2392,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-0",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2301,11 +2430,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-1",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2354,11 +2483,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-2",
     "edit": true,
     "events": [],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2366,7 +2495,7 @@
   {
     "id": "QstaAAL6Ahr9kEd5oTtW-",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_UserName_Head_Text",
     "attributes": {
       "name": "Profile_UserName_Head_Text",
       "layoutProperties": {
@@ -2377,12 +2506,11 @@
         "text": "MUHAMMAD FARAN TAHIR",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
-        "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
-        "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
         "topToBottomOf": "PLqr2NMg1SRqCGTHnuCG2",
         "layout_marginTop": 20,
         "textStyle": "regular",
-        "textAlignment": "center"
+        "textAlignment": "center",
+        "centerX": "GAQ5tPz4rug98MPB7_H5n"
       }
     },
     "icon": "FaTextWidth",
@@ -2394,10 +2522,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2410,16 +2539,15 @@
       "name": "Profile_White_Main_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
-        "layout_height": "match_parent",
-        "borderWidth": 0,
+        "layout_width": "match_constraint",
+        "layout_height": "match_constraint",
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "GAQ5tPz4rug98MPB7_H5n",
         "rightToRightOf": "GAQ5tPz4rug98MPB7_H5n",
-        "topToBottomOf": "QstaAAL6Ahr9kEd5oTtW-",
         "bottomToBottomOf": "GAQ5tPz4rug98MPB7_H5n",
-        "layout_marginTop": 30
+        "layout_marginTop": 130,
+        "topToTopOf": "GAQ5tPz4rug98MPB7_H5n"
       }
     },
     "icon": "FaTabletAlt",
@@ -2431,10 +2559,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-4",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2442,7 +2571,7 @@
   {
     "id": "BfkovDtfebd3QX7qJjXhE",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_Profile_Text",
     "attributes": {
       "name": "Profile_Profile_Text",
       "layoutProperties": {
@@ -2470,10 +2599,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-5",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2481,7 +2611,7 @@
   {
     "id": "i0W6DCKYjpEqVrxFRLaVG",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_Profile_UserName_Text",
     "attributes": {
       "name": "HMB_Profile_UserName_Text",
       "layoutProperties": {
@@ -2509,10 +2639,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-6",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2525,9 +2656,8 @@
       "name": "HMB_Profile_Username_DataView",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        "borderWidth": 0,
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -2547,10 +2677,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-7",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2558,14 +2689,14 @@
   {
     "id": "lOlZjavnN4qHNxU-hc466",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_Profile_Username_DataText",
     "attributes": {
       "name": "HMB_Profile_Username_DataText",
       "layoutProperties": {
         "textSize": 15,
-        "layout_width": "match_parent",
-        "layout_height": "60",
-        "textColor": "#989898",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#878985",
         "text": "Shaikh Ahmed",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
@@ -2586,10 +2717,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-8",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2597,7 +2729,7 @@
   {
     "id": "aSDr2yvp9ncXc4sUrK8Td",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_ChangePassword_Text",
     "attributes": {
       "name": "Profile_ChangePassword_Text",
       "layoutProperties": {
@@ -2625,10 +2757,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-9",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2641,9 +2774,8 @@
       "name": "Profile_ChangePassword_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        "borderWidth": 0,
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -2663,10 +2795,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+        "triggerName": "Navigate_to_ChangePassword_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-10",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2674,7 +2814,7 @@
   {
     "id": "DLZJ3n90NbcQ7VkH07d4c",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_ChangePassword_DataText",
     "attributes": {
       "name": "Profile_ChangePassword_DataText",
       "layoutProperties": {
@@ -2682,7 +2822,7 @@
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#989898",
-        "text": "Tab to change password",
+        "text": "Tab Here To Change Your Password",
         "cornerRadius": [0, 0, 0, 0],
         "textStyle": "regular",
         "textAlignment": "left",
@@ -2702,10 +2842,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "NVw96dwoTgsUGe3VgKt8p",
+        "triggerName": "Navigate_to_ChangePassword_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-11",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2713,7 +2861,7 @@
   {
     "id": "Qx4-81VQILs7UooGNT4xj",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_Email_Text",
     "attributes": {
       "name": "Profile_Email_Text",
       "layoutProperties": {
@@ -2741,10 +2889,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-12",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2757,9 +2906,8 @@
       "name": "Profile_Email_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        "borderWidth": 0,
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -2779,10 +2927,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-13",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2790,7 +2939,7 @@
   {
     "id": "0qKHofgskOrDoZuc_-DaV",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_Email_DataText",
     "attributes": {
       "name": "Profile_Email_DataText",
       "layoutProperties": {
@@ -2805,7 +2954,6 @@
         "topToTopOf": "kHZq4R9eMf19EK94Xi9Jd",
         "bottomToBottomOf": "kHZq4R9eMf19EK94Xi9Jd",
         "layout_marginLeft": 20,
-        "layout_marginTop": 0,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -2819,10 +2967,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-14",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2830,7 +2979,7 @@
   {
     "id": "T9WsM7pjxr1_ByDkzJYJj",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_MobileNum_Text",
     "attributes": {
       "name": "Profile_MobileNum_Text",
       "layoutProperties": {
@@ -2858,10 +3007,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-15",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2874,9 +3024,8 @@
       "name": "Profile_MobileNum_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        "borderWidth": 0,
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
@@ -2896,10 +3045,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-16",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2907,7 +3057,7 @@
   {
     "id": "4hzVU5N3fMubTg-sXCSGt",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Profile_MobileNum_DataText",
     "attributes": {
       "name": "Profile_MobileNum_DataText",
       "layoutProperties": {
@@ -2935,10 +3085,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-17",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2974,10 +3125,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-18",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3026,9 +3177,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-19",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3064,11 +3215,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-20",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3101,11 +3252,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-21",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3154,11 +3305,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-22",
     "edit": true,
     "events": [],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3194,11 +3345,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-23",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3219,7 +3370,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "YStVGlzU57HLa1qdHygJP",
         "topToBottomOf": "YStVGlzU57HLa1qdHygJP",
-        "layout_marginTop": 0,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -3233,10 +3383,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-24",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3285,9 +3435,9 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-25",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3323,10 +3473,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-26",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3360,10 +3510,47 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-27",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "SQxJpnn3OLpFtcBI5HBLL",
+    "status": "ACTIVE",
+    "name": "HMB_Profile_Bottom_Empty_View",
+    "attributes": {
+      "name": "HMB_Profile_Bottom_Empty_View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "20",
+        "layout_height": "50",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "fTH1IqCiIBXWMx1fYOEAl",
+        "rightToRightOf": "fTH1IqCiIBXWMx1fYOEAl",
+        "topToBottomOf": "fE8Rd0tCyXUqI_rAXrd6z",
+        "bottomToBottomOf": "fTH1IqCiIBXWMx1fYOEAl",
+        "layout_marginRight": 40,
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-28",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

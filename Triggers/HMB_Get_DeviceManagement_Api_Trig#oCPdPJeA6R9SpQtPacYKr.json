@@ -1,0 +1,71 @@
+{
+  "id": "PAqZr2Rc9OyhP1Hzk2433",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Get_DeviceManagement_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/security/v2/deviceManagement",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "action": "V",
+            "otpToken": "$hmb_loginKey.content.otpToken",
+            "trustedDevice": {
+              "countryCode": "PKR",
+              "deviceKey": "87897dbf5a4c2974",
+              "fcmToken": null,
+              "imei": "111111111111111",
+              "ip": "192.168.0.112",
+              "isNotificationEnabled": true,
+              "name": "2201117TG",
+              "os": "Android",
+              "osType": "31"
+            },
+            "validation": {
+              "emailPin": "",
+              "smsPin": "$sms_otp",
+              "splitOtp": false,
+              "validationType": "OTP"
+            }
+          },
+          "responseStateKey": "devicemanage_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "devicemanage_data.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_HMB_Tabbar_Final",
+              "triggerId": "-Os20THea9S8z99YkrzXE"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.xgdktyzsyxoV8Odi_3qf-NP7_mq2TXpQ",
+  "_id": "oCPdPJeA6R9SpQtPacYKr",
+  "updatedAt": "9/5/2023",
+  "createdAt": "9/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Get_DeviceManagement_Api_Trig"
+}

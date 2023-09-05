@@ -1,0 +1,49 @@
+{
+  "id": "jLldotBht1Oxo8xR5iMOc",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetRaastFaq_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "HLKHQO098OOK8QL5MK5OQQQH05O86KL16MQH915L"
+          },
+          "requestBody": { "entityId": "TERMS_CONDITIONS_RAAST" },
+          "responseStateKey": "hmb_terms_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_terms_data.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_RaastFaqs_Screen",
+              "triggerId": "rbPgP-KeAZphPO0d84qZG"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.jd405pozrqJ8UyAyeAWwR4NWTBiFrgz",
+  "_id": "bOmGCllN4i_M95scLpbMh",
+  "updatedAt": "8/22/2023",
+  "createdAt": "8/22/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetRaastFaq_Api_Trig"
+}

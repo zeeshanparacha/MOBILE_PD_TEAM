@@ -1,0 +1,49 @@
+{
+  "id": "Rw80cLyFePO5jCVzdXxlZ",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetLocationList_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getLocations",
+          "requestDataType": "byJSON",
+          "requestBody": {},
+          "responseStateKey": "hmb_getLocationData",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_getLocationData.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_Final_Location_Screen",
+              "triggerId": "kwXlQq-pKedeEbqsLNuwZ"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.8f2bbbkdwr-nkdW0fNGzXRULUM6aqmk",
+  "_id": "UNpzFtQLOGN1vB8aZXJH6",
+  "updatedAt": "9/1/2023",
+  "createdAt": "9/1/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetLocationList_Api_Trig"
+}

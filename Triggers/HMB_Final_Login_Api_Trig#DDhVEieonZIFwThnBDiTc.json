@@ -1,0 +1,84 @@
+{
+  "id": "pjhOp8Jc6HC-wux07QlQn",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Final_Login_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Content-Length": "438",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
+          },
+          "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "1244d1426ebe80d3",
+              "fcmToken": null,
+              "imei": "111111111111111",
+              "ip": "192.168.0.112",
+              "isNotificationEnabled": true,
+              "name": "2201117TG",
+              "os": "Android",
+              "osType": "31"
+            },
+            "location": "",
+            "loginPin": "",
+            "loginType": "CREDENTIALS",
+            "password": "$hmb_password",
+            "username": "$hmb_username"
+          },
+          "responseStateKey": "hmb_loginKey",
+          "conditions": [
+            {
+              "logic": {
+                "==": [{ "var": "hmb_loginKey.content.isTrustedDevice" }, true]
+              },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_HMB_Tabbar_Final",
+              "triggerId": "-Os20THea9S8z99YkrzXE"
+            },
+            {
+              "logic": {
+                "==": [{ "var": "hmb_loginKey.content.isTrustedDevice" }, false]
+              },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_Login_OTP_Screen",
+              "triggerId": "ZHyZ1fqWJOGrkpy2_UGmz"
+            },
+            {
+              "logic": { "==": [{ "var": "hmb_loginKey.code" }, 0] },
+              "httpStatus": 200,
+              "triggerName": "HMB_Login_Api_Failure_Alert",
+              "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.vl2n4nm9erg2AshWktyFS3EZInP1LX5",
+  "_id": "DDhVEieonZIFwThnBDiTc",
+  "updatedAt": "9/5/2023",
+  "createdAt": "9/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Final_Login_Api_Trig"
+}

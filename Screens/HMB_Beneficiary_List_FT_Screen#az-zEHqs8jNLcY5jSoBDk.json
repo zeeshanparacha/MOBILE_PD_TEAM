@@ -12,11 +12,11 @@
         "layout_height": "wrap_content",
         "statusBarColor": "#1D6131",
         "background": "#FFFFFF",
-        "navBarColor": "#093959",
+        "navBarColor": "#1D6131",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navBarId": "CZ1E0f8_CUL-9hF7gBIbv",
-        "navbarHeight": "wrap_content"
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "eJJJ32GuuYHgRSlmjpExg",
@@ -58,8 +58,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "6/6/2023",
-    "createdAt": "6/6/2023",
+    "updatedAt": "8/23/2023",
+    "createdAt": "8/23/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -76,7 +76,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "50",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -222,7 +221,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -358,8 +356,7 @@
             "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
             "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-            "layout_marginTop": 0
+            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
           },
           "bindingKey": "beneftlist_ownaccount_data",
           "componentId": []
@@ -384,7 +381,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -741,14 +737,12 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#ffffff",
                     "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                    "paddingStart": 0,
                     "layout_marginLeft": 10,
                     "layout_marginRight": 10
                   }
@@ -801,7 +795,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-1"
+                "path": "0-12-0-1"
               },
               {
                 "id": "F3DrgojP5-kcC8FClbZzH",
@@ -836,7 +830,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-2"
+                "path": "0-12-0-2"
               },
               {
                 "id": "4GlHExdO1KulYfxQApneY",
@@ -931,8 +925,7 @@
                 "layout_marginTop": 10,
                 "background": "#0573E8"
               },
-              "componentId": [],
-              "bindingKey": "ownbeneft_list_item"
+              "componentId": []
             },
             "events": [
               {
@@ -1309,6 +1302,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "az-zEHqs8jNLcY5jSoBDk",
@@ -1323,11 +1317,11 @@
             "layout_height": "wrap_content",
             "statusBarColor": "#1D6131",
             "background": "#FFFFFF",
-            "navBarColor": "#093959",
+            "navBarColor": "#1D6131",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navBarId": "CZ1E0f8_CUL-9hF7gBIbv",
-            "navbarHeight": "wrap_content"
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -1352,7 +1346,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "50",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -1498,7 +1491,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "3",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F69D26",
                 "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -1634,8 +1626,7 @@
                 "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
                 "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
                 "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-                "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-                "layout_marginTop": 0
+                "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
               },
               "bindingKey": "beneftlist_ownaccount_data",
               "componentId": []
@@ -1660,7 +1651,6 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -2020,14 +2010,12 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#ffffff",
                         "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                        "paddingStart": 0,
                         "layout_marginLeft": 10,
                         "layout_marginRight": 10
                       }
@@ -2080,7 +2068,7 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-10-0-1"
+                    "path": "0-12-0-1"
                   },
                   {
                     "id": "F3DrgojP5-kcC8FClbZzH",
@@ -2115,7 +2103,7 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-10-0-2"
+                    "path": "0-12-0-2"
                   },
                   {
                     "id": "4GlHExdO1KulYfxQApneY",
@@ -2213,8 +2201,7 @@
                     "layout_marginTop": 10,
                     "background": "#0573E8"
                   },
-                  "componentId": [],
-                  "bindingKey": "ownbeneft_list_item"
+                  "componentId": []
                 },
                 "events": [
                   {
@@ -2599,7 +2586,8 @@
             ]
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       },
       {
         "id": "az-zEHqs8jNLcY5jSoBDk",
@@ -2643,7 +2631,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "50",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -2789,7 +2776,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "3",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F69D26",
                 "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -2925,8 +2911,7 @@
                 "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
                 "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
                 "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-                "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-                "layout_marginTop": 0
+                "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
               },
               "bindingKey": "beneftlist_ownaccount_data",
               "componentId": []
@@ -2951,7 +2936,6 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -3311,14 +3295,12 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#ffffff",
                         "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                         "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                        "paddingStart": 0,
                         "layout_marginLeft": 10,
                         "layout_marginRight": 10
                       }
@@ -3909,7 +3891,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "50",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -4066,7 +4047,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "3",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F69D26",
         "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -4190,8 +4170,7 @@
         "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
         "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
         "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-        "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-        "layout_marginTop": 0
+        "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
       },
       "bindingKey": "beneftlist_ownaccount_data",
       "componentId": ["bjWPCXBw44HlTrJqNtlUt", "bjWPCXBw44HlTrJqNtlUt"]
@@ -4216,7 +4195,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -4421,7 +4399,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "50",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -4567,7 +4544,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -4703,8 +4679,7 @@
             "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
             "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-            "layout_marginTop": 0
+            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
           },
           "bindingKey": "beneftlist_ownaccount_data",
           "componentId": []
@@ -4729,7 +4704,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -5086,14 +5060,12 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#ffffff",
                     "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                    "paddingStart": 0,
                     "layout_marginLeft": 10,
                     "layout_marginRight": 10
                   }
@@ -5146,7 +5118,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-1"
+                "path": "0-12-0-1"
               },
               {
                 "id": "F3DrgojP5-kcC8FClbZzH",
@@ -5181,7 +5153,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-2"
+                "path": "0-12-0-2"
               },
               {
                 "id": "4GlHExdO1KulYfxQApneY",
@@ -5276,8 +5248,7 @@
                 "layout_marginTop": 10,
                 "background": "#0573E8"
               },
-              "componentId": [],
-              "bindingKey": "ownbeneft_list_item"
+              "componentId": []
             },
             "events": [
               {
@@ -5676,7 +5647,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -5896,7 +5866,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -6104,7 +6073,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -6438,14 +6406,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                "paddingStart": 0,
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
               }
@@ -6498,7 +6464,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10-0-1"
+            "path": "0-12-0-1"
           },
           {
             "id": "F3DrgojP5-kcC8FClbZzH",
@@ -6533,7 +6499,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10-0-2"
+            "path": "0-12-0-2"
           },
           {
             "id": "4GlHExdO1KulYfxQApneY",
@@ -6628,8 +6594,7 @@
             "layout_marginTop": 10,
             "background": "#0573E8"
           },
-          "componentId": [],
-          "bindingKey": "ownbeneft_list_item"
+          "componentId": []
         },
         "events": [
           {
@@ -6653,7 +6618,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "50",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
@@ -6799,7 +6763,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "leftToLeftOf": "tJ9DbligJD8HNcm_Ao8FN",
@@ -6935,8 +6898,7 @@
             "rows": [{ "id": "bjWPCXBw44HlTrJqNtlUt" }],
             "leftToLeftOf": "az-zEHqs8jNLcY5jSoBDk",
             "rightToRightOf": "az-zEHqs8jNLcY5jSoBDk",
-            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by",
-            "layout_marginTop": 0
+            "topToBottomOf": "uNkvqGMXgALmNhuQMi_by"
           },
           "bindingKey": "beneftlist_ownaccount_data",
           "componentId": []
@@ -6961,7 +6923,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "bjWPCXBw44HlTrJqNtlUt",
@@ -7318,14 +7279,12 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#ffffff",
                     "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                     "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                    "paddingStart": 0,
                     "layout_marginLeft": 10,
                     "layout_marginRight": 10
                   }
@@ -7378,7 +7337,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-1"
+                "path": "0-12-0-1"
               },
               {
                 "id": "F3DrgojP5-kcC8FClbZzH",
@@ -7413,7 +7372,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-10-0-2"
+                "path": "0-12-0-2"
               },
               {
                 "id": "4GlHExdO1KulYfxQApneY",
@@ -7508,8 +7467,7 @@
                 "layout_marginTop": 10,
                 "background": "#0573E8"
               },
-              "componentId": [],
-              "bindingKey": "ownbeneft_list_item"
+              "componentId": []
             },
             "events": [
               {
@@ -7908,14 +7866,12 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
             "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
             "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
             "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-            "paddingStart": 0,
             "layout_marginLeft": 10,
             "layout_marginRight": 10
           }
@@ -7968,7 +7924,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-10-0-1"
+        "path": "0-12-0-1"
       },
       {
         "id": "F3DrgojP5-kcC8FClbZzH",
@@ -8003,7 +7959,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-10-0-2"
+        "path": "0-12-0-2"
       },
       {
         "id": "4GlHExdO1KulYfxQApneY",
@@ -8109,8 +8065,7 @@
         "F3DrgojP5-kcC8FClbZzH",
         "4GlHExdO1KulYfxQApneY",
         "EtLqwvmW12bJGs27hC-Kh"
-      ],
-      "bindingKey": "ownbeneft_list_item"
+      ]
     },
     "events": [
       {
@@ -8138,14 +8093,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
                 "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-                "paddingStart": 0,
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
               }
@@ -8198,7 +8151,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10-0-1"
+            "path": "0-12-0-1"
           },
           {
             "id": "F3DrgojP5-kcC8FClbZzH",
@@ -8233,7 +8186,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10-0-2"
+            "path": "0-12-0-2"
           },
           {
             "id": "4GlHExdO1KulYfxQApneY",
@@ -8328,8 +8281,7 @@
             "layout_marginTop": 10,
             "background": "#0573E8"
           },
-          "componentId": [],
-          "bindingKey": "ownbeneft_list_item"
+          "componentId": []
         },
         "events": [
           {
@@ -8356,14 +8308,12 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#ffffff",
         "leftToLeftOf": "c2cNPcOUhhTqj-HlBXwXe",
         "rightToRightOf": "c2cNPcOUhhTqj-HlBXwXe",
         "topToTopOf": "c2cNPcOUhhTqj-HlBXwXe",
         "bottomToBottomOf": "c2cNPcOUhhTqj-HlBXwXe",
-        "paddingStart": 0,
         "layout_marginLeft": 10,
         "layout_marginRight": 10
       }
@@ -8420,7 +8370,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-10-0-1",
+    "path": "0-12-0-1",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -8459,7 +8409,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-10-0-2",
+    "path": "0-12-0-2",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

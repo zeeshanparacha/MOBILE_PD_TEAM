@@ -1,0 +1,36 @@
+{
+  "id": "4hp_U7JhBbPHKZomLutG1",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Dashboard_Amount_ShowHide_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "JjtpmKWQy4lNlPNrGoceC",
+              "triggerName": "HideBalance_Amount_Hide"
+            },
+            {
+              "triggerId": "F-hWg3vpPByRLjrNfzDLW",
+              "triggerName": "HideBalance_Amount_Show"
+            }
+          ],
+          "triggerId": ["JjtpmKWQy4lNlPNrGoceC", "F-hWg3vpPByRLjrNfzDLW"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.1ln017arjcqqWPOjkPBAsxBHk8xiD0jY",
+  "_id": "Vr6gbh3CIGXt2u1AwOogO",
+  "updatedAt": "9/4/2023",
+  "createdAt": "9/4/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

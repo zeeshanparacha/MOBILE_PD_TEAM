@@ -1,0 +1,43 @@
+{
+  "id": "zT9olvS3WmSDZTovHUjGU",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetBillBene_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken"
+          },
+          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+          "responseStateKey": "getBillBene_Data",
+          "requestDataType": "byJSON",
+          "requestBody": { "inquiry": true, "temp": null }
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.xwhurvuecmvHwXba60WjNlYqkkOWwYs",
+  "_id": "rCwWd4Jruq_E3LRDGDDEc",
+  "updatedAt": "8/23/2023",
+  "createdAt": "8/23/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetBillBene_Api_Trig"
+}

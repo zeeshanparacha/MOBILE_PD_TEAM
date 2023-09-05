@@ -1,0 +1,48 @@
+{
+  "id": "TjZEAaPzBvs1wFM_HSa_O",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Register_IDType_CnicPassport_ShowHide",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "$register_idtype.value",
+          "actions": [
+            {
+              "triggerId": ["JIzsz8LK1rOyqgj9qEhk-"],
+              "triggerName": "HMB_Register_IDType_Cnic_Chain",
+              "value": "CNIC",
+              "type": "string"
+            },
+            {
+              "triggerId": ["XvKX-7Wht_bnEdLz3ngWd"],
+              "triggerName": "HMB_Register_IDType_Passport_Chain",
+              "value": "Passport",
+              "type": "string"
+            }
+          ],
+          "defaultTriggerId": ["g76a1dv_FbOH2iQ-_26GQ"],
+          "defaultTrigger": [
+            {
+              "triggerId": "g76a1dv_FbOH2iQ-_26GQ",
+              "triggerName": "HMB_Register_IDType_CnicPassport_Hide"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.tyrujp5sypxvGdbfDwpo8sGO8hpJK2Y",
+  "_id": "YWgFvRBWzLFDwedrPQqrZ",
+  "updatedAt": "8/18/2023",
+  "createdAt": "8/18/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Register_IDType_CnicPassport_ShowHide"
+}

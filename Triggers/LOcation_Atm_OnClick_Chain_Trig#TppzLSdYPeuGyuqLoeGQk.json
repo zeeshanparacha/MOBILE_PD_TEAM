@@ -1,0 +1,36 @@
+{
+  "id": "Aw666AvSRLmtTkIzV5HQa",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "LOcation_Atm_OnClick_Chain_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "DRhBeH7GcCgcMwFQwLpmW",
+              "triggerName": "LOcation_Atm_OnClick_AllHide"
+            },
+            {
+              "triggerId": "-uaJOtb1_TLENEkWmw99v",
+              "triggerName": "LOcation_Atm_OnClick_AllShow"
+            }
+          ],
+          "triggerId": ["DRhBeH7GcCgcMwFQwLpmW", "-uaJOtb1_TLENEkWmw99v"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.i1q61jrbt6fXWc0W_YvpPn8_VOZgsyj8",
+  "_id": "TppzLSdYPeuGyuqLoeGQk",
+  "updatedAt": "9/1/2023",
+  "createdAt": "9/1/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

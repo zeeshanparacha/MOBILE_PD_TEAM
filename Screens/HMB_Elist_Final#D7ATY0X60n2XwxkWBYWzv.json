@@ -3,26 +3,344 @@
     "id": "D7ATY0X60n2XwxkWBYWzv",
     "name": "HMB_Elist_Final",
     "icon": "FaGripHorizontal",
-    "path": "0",
+    "path": "1",
     "attributes": {
       "name": "HMB_Elist_Final",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
+        "statusBarColor": "#1D6131",
         "background": "#FFFFFF",
-        "navBarColor": "#093959",
+        "navBarColor": "#1D6131",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "GTPoplKBt1ZWut9O2kwv_",
+        "navbarHeight": "wrap_content",
+        "navBarLayout": {
+          "id": "GTPoplKBt1ZWut9O2kwv_",
+          "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+          "icon": "FaGripHorizontal",
+          "path": "0",
+          "attributes": {
+            "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+            "layoutProperties": {
+              "orientation": "vertical",
+              "layout_width": "match_parent",
+              "layout_height": "wrap_content",
+              "statusBarColor": "#093959",
+              "background": "#FFFFFF",
+              "navBarColor": "#093959",
+              "hideNavbar": true,
+              "cornerRadius": [0, 0, 0, 0]
+            },
+            "componentId": [
+              "WbSEo3lgiX9jHjmR6YmfB",
+              "ZWDDpgjRd-yQ6tM9yyh7J",
+              "vRPvmYlSh0Uy-hXfQRyea"
+            ]
+          },
+          "group": "Layout",
+          "type": "CONSTRAINT",
+          "status": "ACTIVE",
+          "updatedAt": "6/21/2023",
+          "createdAt": "6/21/2023",
+          "events": [],
+          "order": 1,
+          "version": "1.0.0",
+          "isLatest": true,
+          "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+          "gridProps": [
+            {
+              "id": "WbSEo3lgiX9jHjmR6YmfB",
+              "status": "ACTIVE",
+              "_id": "61dec691077814a0f374d9f4",
+              "name": "GeneralFaqs_Navbar_View",
+              "attributes": {
+                "name": "GeneralFaqs_Navbar_View",
+                "layoutProperties": {
+                  "name": "View",
+                  "layout_width": "match_parent",
+                  "layout_height": "50",
+                  
+                  "cornerRadius": [0, 0, 0, 0],
+                  "background": "#1D6131",
+                  "leftToLeftOf": "GTPoplKBt1ZWut9O2kwv_",
+                  "rightToRightOf": "GTPoplKBt1ZWut9O2kwv_",
+                  "topToTopOf": "GTPoplKBt1ZWut9O2kwv_"
+                }
+              },
+              "icon": "FaTabletAlt",
+              "group": "Form",
+              "type": "sidebarItem",
+              "updatedAt": "23-Aug-2021",
+              "createdAt": "23-Aug-2021",
+              "order": 20,
+              "version": "1.0.0",
+              "isLatest": true,
+              "projectType": "mobile",
+              "component": { "content": "View", "type": "VIEW" },
+              "events": [],
+              "path": "0-0"
+            },
+            {
+              "id": "ZWDDpgjRd-yQ6tM9yyh7J",
+              "status": "ACTIVE",
+              "_id": "61decd8e077814a0f374d9fc",
+              "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+              "attributes": {
+                "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                "layoutProperties": {
+                  "layout_width": "30",
+                  "layout_height": "30",
+                  "cornerRadius": [0, 0, 0, 0],
+                  "src": {
+                    "createdBy": "shaikhahmedraza",
+                    "_id": "640070976592c53a9c8f1e21",
+                    "name": "cross_btn.png",
+                    "type": "png",
+                    "projectId": "63ef72a290c5800428f84dd9",
+                    "id": "Gz-TIRjnmIahUNuJGXELB",
+                    "gitBranchName": "master",
+                    "folderType": "xxxhdpi",
+                    "platform": "Android",
+                    "url": "cross_btn.png",
+                    "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
+                    "createdAt": "2023-03-02T09:47:03.349Z",
+                    "updatedAt": "2023-03-02T09:47:03.349Z",
+                    "__v": 0,
+                    "uri": "cross_btn.png"
+                  },
+                  "leftToLeftOf": "WbSEo3lgiX9jHjmR6YmfB",
+                  "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                  "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                  "layout_marginLeft": 15,
+                  "id": "Gz-TIRjnmIahUNuJGXELB"
+                },
+                "contentType": 2
+              },
+              "icon": "FaRegImage",
+              "group": "Form",
+              "type": "sidebarItem",
+              "updatedAt": "23-Aug-2021",
+              "createdAt": "23-Aug-2021",
+              "order": 20,
+              "version": "1.0.0",
+              "isLatest": true,
+              "projectType": "mobile",
+              "component": { "content": "Image view", "type": "IMAGEVIEW" },
+              "path": "0-1",
+              "edit": true,
+              "events": []
+            },
+            {
+              "id": "vRPvmYlSh0Uy-hXfQRyea",
+              "status": "ACTIVE",
+              "_id": "61dec5ad077814a0f374d9f3",
+              "name": "Text view",
+              "attributes": {
+                "name": "Prelogin_GeneralFaqs_Navbar_Title_Text",
+                "layoutProperties": {
+                  "textSize": 18,
+                  "layout_width": "wrap_content",
+                  "layout_height": "wrap_content",
+                  "textColor": "#ffffff",
+                  "text": "General FAQs",
+                  "cornerRadius": [0, 0, 0, 0],
+                  "numberOfLines": 1,
+                  "leftToRightOf": "ZWDDpgjRd-yQ6tM9yyh7J",
+                  "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                  "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                  "layout_marginLeft": 20,
+                  "textStyle": "regular",
+                  "textAlignment": "left"
+                }
+              },
+              "icon": "FaTextWidth",
+              "group": "Form",
+              "type": "sidebarItem",
+              "updatedAt": "23-Aug-2021",
+              "createdAt": "23-Aug-2021",
+              "order": 20,
+              "version": "1.0.0",
+              "isLatest": true,
+              "projectType": "mobile",
+              "component": { "content": "Text view", "type": "TEXTVIEW" },
+              "events": [],
+              "path": "0-2"
+            }
+          ],
+          "subType": "widget",
+          "layout": [
+            {
+              "id": "GTPoplKBt1ZWut9O2kwv_",
+              "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+              "icon": "FaGripHorizontal",
+              "path": "0",
+              "attributes": {
+                "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+                "layoutProperties": {
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "statusBarColor": "#093959",
+                  "background": "#FFFFFF",
+                  "navBarColor": "#093959",
+                  "hideNavbar": true,
+                  "cornerRadius": [0, 0, 0, 0]
+                },
+                "componentId": []
+              },
+              "group": "Layout",
+              "type": "CONSTRAINT",
+              "status": "ACTIVE",
+              "updatedAt": "2021-09-23T15:17:45.489Z",
+              "createdAt": "2021-08-24T06:05:50.559Z",
+              "events": [],
+              "order": 1,
+              "version": "1.0.0",
+              "isLatest": true,
+              "component": {
+                "content": "Constraint Layout",
+                "type": "CONSTRAINT"
+              },
+              "gridProps": [
+                {
+                  "id": "WbSEo3lgiX9jHjmR6YmfB",
+                  "status": "ACTIVE",
+                  "_id": "61dec691077814a0f374d9f4",
+                  "name": "GeneralFaqs_Navbar_View",
+                  "attributes": {
+                    "name": "GeneralFaqs_Navbar_View",
+                    "layoutProperties": {
+                      "name": "View",
+                      "layout_width": "match_parent",
+                      "layout_height": "50",
+                      
+                      "cornerRadius": [0, 0, 0, 0],
+                      "background": "#1D6131",
+                      "leftToLeftOf": "GTPoplKBt1ZWut9O2kwv_",
+                      "rightToRightOf": "GTPoplKBt1ZWut9O2kwv_",
+                      "topToTopOf": "GTPoplKBt1ZWut9O2kwv_"
+                    }
+                  },
+                  "icon": "FaTabletAlt",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "View", "type": "VIEW" },
+                  "events": [],
+                  "path": "0-0"
+                },
+                {
+                  "id": "ZWDDpgjRd-yQ6tM9yyh7J",
+                  "status": "ACTIVE",
+                  "_id": "61decd8e077814a0f374d9fc",
+                  "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                  "attributes": {
+                    "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                    "layoutProperties": {
+                      "layout_width": "30",
+                      "layout_height": "30",
+                      "cornerRadius": [0, 0, 0, 0],
+                      "src": {
+                        "createdBy": "shaikhahmedraza",
+                        "_id": "640070976592c53a9c8f1e21",
+                        "name": "cross_btn.png",
+                        "type": "png",
+                        "projectId": "63ef72a290c5800428f84dd9",
+                        "id": "Gz-TIRjnmIahUNuJGXELB",
+                        "gitBranchName": "master",
+                        "folderType": "xxxhdpi",
+                        "platform": "Android",
+                        "url": "cross_btn.png",
+                        "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
+                        "createdAt": "2023-03-02T09:47:03.349Z",
+                        "updatedAt": "2023-03-02T09:47:03.349Z",
+                        "__v": 0,
+                        "uri": "cross_btn.png"
+                      },
+                      "leftToLeftOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "layout_marginLeft": 15,
+                      "id": "Gz-TIRjnmIahUNuJGXELB"
+                    },
+                    "contentType": 2
+                  },
+                  "icon": "FaRegImage",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                  "path": "0-1",
+                  "edit": true,
+                  "events": []
+                },
+                {
+                  "id": "vRPvmYlSh0Uy-hXfQRyea",
+                  "status": "ACTIVE",
+                  "_id": "61dec5ad077814a0f374d9f3",
+                  "name": "Text view",
+                  "attributes": {
+                    "name": "Prelogin_GeneralFaqs_Navbar_Title_Text",
+                    "layoutProperties": {
+                      "textSize": 18,
+                      "layout_width": "wrap_content",
+                      "layout_height": "wrap_content",
+                      "textColor": "#ffffff",
+                      "text": "General FAQs",
+                      "cornerRadius": [0, 0, 0, 0],
+                      "numberOfLines": 1,
+                      "leftToRightOf": "ZWDDpgjRd-yQ6tM9yyh7J",
+                      "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "layout_marginLeft": 20,
+                      "textStyle": "regular",
+                      "textAlignment": "left"
+                    }
+                  },
+                  "icon": "FaTextWidth",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "Text view", "type": "TEXTVIEW" },
+                  "events": [],
+                  "path": "0-2"
+                }
+              ],
+              "subType": "widget"
+            }
+          ],
+          "projectId": "63ef72a290c5800428f84dd9",
+          "gitBranchName": "master",
+          "_id": "GTPoplKBt1ZWut9O2kwv_",
+          "createdBy": "shaikhahmedraza",
+          "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+        }
       },
       "componentId": ["6RgaWa_ShFnhQvPmMojjo", "HqV_NtL5rqhUE1JJr5B5j"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "6/20/2023",
-    "createdAt": "6/20/2023",
+    "updatedAt": "6/21/2023",
+    "createdAt": "6/21/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -40,7 +358,7 @@
             "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
-            "textColor": "#000000",
+            "textColor": "#ffffff",
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
@@ -104,7 +422,7 @@
             "groupTitleKey": "title",
             "groupItemsKey": "data",
             "bounce": false,
-            "spacing": 0,
+            
             "parentId": "8s15rv75nIEqU1ETde158",
             "childId": "KFxS34E7zaLm47pKptKAw",
             "layout_width": "match_parent",
@@ -113,7 +431,7 @@
             "leftToLeftOf": "D7ATY0X60n2XwxkWBYWzv",
             "rightToRightOf": "D7ATY0X60n2XwxkWBYWzv",
             "topToTopOf": "D7ATY0X60n2XwxkWBYWzv",
-            "layout_marginTop": 30,
+            "layout_marginTop": 50,
             "layout_marginBottom": 20,
             "layout_marginLeft": 1,
             "layout_marginRight": 1
@@ -135,8 +453,8 @@
                 "layout_height": "wrap_content",
                 "clickable": true,
                 "layout_marginTop": 10,
-                "layout_marginLeft": 0,
-                "layout_marginRight": 0,
+                
+                
                 "background": "#F1F1F1"
               },
               "componentId": []
@@ -154,7 +472,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#F1F1F1",
                     "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -231,8 +549,8 @@
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "layout_marginTop": 1,
-                "layout_marginLeft": 0,
-                "layout_marginRight": 0,
+                
+                
                 "background": "#F1F1F1"
               },
               "componentId": []
@@ -250,7 +568,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#f1f1f1",
                     "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -295,8 +613,7 @@
                     "layout_marginRight": 50,
                     "layout_marginTop": 10,
                     "textAlignment": "left",
-                    "textStyle": "regular",
-                    "numberOfLines": 0
+                    "textStyle": "regular"
                   },
                   "bindingKey": "key"
                 },
@@ -321,14 +638,15 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
-        "id": "D7ATY0X60n2XwxkWBYWzv",
-        "name": "HMB_Elist_Final",
+        "id": "GTPoplKBt1ZWut9O2kwv_",
+        "name": "HMB_Prelogin_GeneralFaqs_Navbar",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_Elist_Final",
+          "name": "HMB_Prelogin_GeneralFaqs_Navbar",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -338,6 +656,485 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "WbSEo3lgiX9jHjmR6YmfB",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "GeneralFaqs_Navbar_View",
+            "attributes": {
+              "name": "GeneralFaqs_Navbar_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "leftToLeftOf": "GTPoplKBt1ZWut9O2kwv_",
+                "rightToRightOf": "GTPoplKBt1ZWut9O2kwv_",
+                "topToTopOf": "GTPoplKBt1ZWut9O2kwv_"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "ZWDDpgjRd-yQ6tM9yyh7J",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+            "attributes": {
+              "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "640070976592c53a9c8f1e21",
+                  "name": "cross_btn.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "Gz-TIRjnmIahUNuJGXELB",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "cross_btn.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
+                  "createdAt": "2023-03-02T09:47:03.349Z",
+                  "updatedAt": "2023-03-02T09:47:03.349Z",
+                  "__v": 0,
+                  "uri": "cross_btn.png"
+                },
+                "leftToLeftOf": "WbSEo3lgiX9jHjmR6YmfB",
+                "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                "layout_marginLeft": 15,
+                "id": "Gz-TIRjnmIahUNuJGXELB"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "vRPvmYlSh0Uy-hXfQRyea",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Prelogin_GeneralFaqs_Navbar_Title_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "General FAQs",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "ZWDDpgjRd-yQ6tM9yyh7J",
+                "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          }
+        ],
+        "subType": "component",
+        "isNavbarConstraint": true
+      },
+      {
+        "id": "D7ATY0X60n2XwxkWBYWzv",
+        "name": "HMB_Elist_Final",
+        "icon": "FaGripHorizontal",
+        "path": "1",
+        "attributes": {
+          "name": "HMB_Elist_Final",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#1D6131",
+            "background": "#FFFFFF",
+            "navBarColor": "#1D6131",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "GTPoplKBt1ZWut9O2kwv_",
+            "navbarHeight": "wrap_content",
+            "navBarLayout": {
+              "id": "GTPoplKBt1ZWut9O2kwv_",
+              "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+              "icon": "FaGripHorizontal",
+              "path": "0",
+              "attributes": {
+                "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+                "layoutProperties": {
+                  "orientation": "vertical",
+                  "layout_width": "match_parent",
+                  "layout_height": "wrap_content",
+                  "statusBarColor": "#093959",
+                  "background": "#FFFFFF",
+                  "navBarColor": "#093959",
+                  "hideNavbar": true,
+                  "cornerRadius": [0, 0, 0, 0]
+                },
+                "componentId": [
+                  "WbSEo3lgiX9jHjmR6YmfB",
+                  "ZWDDpgjRd-yQ6tM9yyh7J",
+                  "vRPvmYlSh0Uy-hXfQRyea"
+                ]
+              },
+              "group": "Layout",
+              "type": "CONSTRAINT",
+              "status": "ACTIVE",
+              "updatedAt": "6/21/2023",
+              "createdAt": "6/21/2023",
+              "events": [],
+              "order": 1,
+              "version": "1.0.0",
+              "isLatest": true,
+              "component": {
+                "content": "Constraint Layout",
+                "type": "CONSTRAINT"
+              },
+              "gridProps": [
+                {
+                  "id": "WbSEo3lgiX9jHjmR6YmfB",
+                  "status": "ACTIVE",
+                  "_id": "61dec691077814a0f374d9f4",
+                  "name": "GeneralFaqs_Navbar_View",
+                  "attributes": {
+                    "name": "GeneralFaqs_Navbar_View",
+                    "layoutProperties": {
+                      "name": "View",
+                      "layout_width": "match_parent",
+                      "layout_height": "50",
+                      
+                      "cornerRadius": [0, 0, 0, 0],
+                      "background": "#1D6131",
+                      "leftToLeftOf": "GTPoplKBt1ZWut9O2kwv_",
+                      "rightToRightOf": "GTPoplKBt1ZWut9O2kwv_",
+                      "topToTopOf": "GTPoplKBt1ZWut9O2kwv_"
+                    }
+                  },
+                  "icon": "FaTabletAlt",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "View", "type": "VIEW" },
+                  "events": [],
+                  "path": "0-0"
+                },
+                {
+                  "id": "ZWDDpgjRd-yQ6tM9yyh7J",
+                  "status": "ACTIVE",
+                  "_id": "61decd8e077814a0f374d9fc",
+                  "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                  "attributes": {
+                    "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                    "layoutProperties": {
+                      "layout_width": "30",
+                      "layout_height": "30",
+                      "cornerRadius": [0, 0, 0, 0],
+                      "src": {
+                        "createdBy": "shaikhahmedraza",
+                        "_id": "640070976592c53a9c8f1e21",
+                        "name": "cross_btn.png",
+                        "type": "png",
+                        "projectId": "63ef72a290c5800428f84dd9",
+                        "id": "Gz-TIRjnmIahUNuJGXELB",
+                        "gitBranchName": "master",
+                        "folderType": "xxxhdpi",
+                        "platform": "Android",
+                        "url": "cross_btn.png",
+                        "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
+                        "createdAt": "2023-03-02T09:47:03.349Z",
+                        "updatedAt": "2023-03-02T09:47:03.349Z",
+                        "__v": 0,
+                        "uri": "cross_btn.png"
+                      },
+                      "leftToLeftOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "layout_marginLeft": 15,
+                      "id": "Gz-TIRjnmIahUNuJGXELB"
+                    },
+                    "contentType": 2
+                  },
+                  "icon": "FaRegImage",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                  "path": "0-1",
+                  "edit": true,
+                  "events": []
+                },
+                {
+                  "id": "vRPvmYlSh0Uy-hXfQRyea",
+                  "status": "ACTIVE",
+                  "_id": "61dec5ad077814a0f374d9f3",
+                  "name": "Text view",
+                  "attributes": {
+                    "name": "Prelogin_GeneralFaqs_Navbar_Title_Text",
+                    "layoutProperties": {
+                      "textSize": 18,
+                      "layout_width": "wrap_content",
+                      "layout_height": "wrap_content",
+                      "textColor": "#ffffff",
+                      "text": "General FAQs",
+                      "cornerRadius": [0, 0, 0, 0],
+                      "numberOfLines": 1,
+                      "leftToRightOf": "ZWDDpgjRd-yQ6tM9yyh7J",
+                      "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                      "layout_marginLeft": 20,
+                      "textStyle": "regular",
+                      "textAlignment": "left"
+                    }
+                  },
+                  "icon": "FaTextWidth",
+                  "group": "Form",
+                  "type": "sidebarItem",
+                  "updatedAt": "23-Aug-2021",
+                  "createdAt": "23-Aug-2021",
+                  "order": 20,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "projectType": "mobile",
+                  "component": { "content": "Text view", "type": "TEXTVIEW" },
+                  "events": [],
+                  "path": "0-2"
+                }
+              ],
+              "subType": "widget",
+              "layout": [
+                {
+                  "id": "GTPoplKBt1ZWut9O2kwv_",
+                  "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+                  "icon": "FaGripHorizontal",
+                  "path": "0",
+                  "attributes": {
+                    "name": "HMB_Prelogin_GeneralFaqs_Navbar",
+                    "layoutProperties": {
+                      "orientation": "vertical",
+                      "layout_width": "match_parent",
+                      "layout_height": "wrap_content",
+                      "statusBarColor": "#093959",
+                      "background": "#FFFFFF",
+                      "navBarColor": "#093959",
+                      "hideNavbar": true,
+                      "cornerRadius": [0, 0, 0, 0]
+                    },
+                    "componentId": []
+                  },
+                  "group": "Layout",
+                  "type": "CONSTRAINT",
+                  "status": "ACTIVE",
+                  "updatedAt": "2021-09-23T15:17:45.489Z",
+                  "createdAt": "2021-08-24T06:05:50.559Z",
+                  "events": [],
+                  "order": 1,
+                  "version": "1.0.0",
+                  "isLatest": true,
+                  "component": {
+                    "content": "Constraint Layout",
+                    "type": "CONSTRAINT"
+                  },
+                  "gridProps": [
+                    {
+                      "id": "WbSEo3lgiX9jHjmR6YmfB",
+                      "status": "ACTIVE",
+                      "_id": "61dec691077814a0f374d9f4",
+                      "name": "GeneralFaqs_Navbar_View",
+                      "attributes": {
+                        "name": "GeneralFaqs_Navbar_View",
+                        "layoutProperties": {
+                          "name": "View",
+                          "layout_width": "match_parent",
+                          "layout_height": "50",
+                          
+                          "cornerRadius": [0, 0, 0, 0],
+                          "background": "#1D6131",
+                          "leftToLeftOf": "GTPoplKBt1ZWut9O2kwv_",
+                          "rightToRightOf": "GTPoplKBt1ZWut9O2kwv_",
+                          "topToTopOf": "GTPoplKBt1ZWut9O2kwv_"
+                        }
+                      },
+                      "icon": "FaTabletAlt",
+                      "group": "Form",
+                      "type": "sidebarItem",
+                      "updatedAt": "23-Aug-2021",
+                      "createdAt": "23-Aug-2021",
+                      "order": 20,
+                      "version": "1.0.0",
+                      "isLatest": true,
+                      "projectType": "mobile",
+                      "component": { "content": "View", "type": "VIEW" },
+                      "events": [],
+                      "path": "0-0"
+                    },
+                    {
+                      "id": "ZWDDpgjRd-yQ6tM9yyh7J",
+                      "status": "ACTIVE",
+                      "_id": "61decd8e077814a0f374d9fc",
+                      "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                      "attributes": {
+                        "name": "Prelogin_GeneralFaqs_Navbar_Close_Btn",
+                        "layoutProperties": {
+                          "layout_width": "30",
+                          "layout_height": "30",
+                          "cornerRadius": [0, 0, 0, 0],
+                          "src": {
+                            "createdBy": "shaikhahmedraza",
+                            "_id": "640070976592c53a9c8f1e21",
+                            "name": "cross_btn.png",
+                            "type": "png",
+                            "projectId": "63ef72a290c5800428f84dd9",
+                            "id": "Gz-TIRjnmIahUNuJGXELB",
+                            "gitBranchName": "master",
+                            "folderType": "xxxhdpi",
+                            "platform": "Android",
+                            "url": "cross_btn.png",
+                            "canvasUrl": "Android/drawable-xxxhdpi/cross_btn.png",
+                            "createdAt": "2023-03-02T09:47:03.349Z",
+                            "updatedAt": "2023-03-02T09:47:03.349Z",
+                            "__v": 0,
+                            "uri": "cross_btn.png"
+                          },
+                          "leftToLeftOf": "WbSEo3lgiX9jHjmR6YmfB",
+                          "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                          "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                          "layout_marginLeft": 15,
+                          "id": "Gz-TIRjnmIahUNuJGXELB"
+                        },
+                        "contentType": 2
+                      },
+                      "icon": "FaRegImage",
+                      "group": "Form",
+                      "type": "sidebarItem",
+                      "updatedAt": "23-Aug-2021",
+                      "createdAt": "23-Aug-2021",
+                      "order": 20,
+                      "version": "1.0.0",
+                      "isLatest": true,
+                      "projectType": "mobile",
+                      "component": {
+                        "content": "Image view",
+                        "type": "IMAGEVIEW"
+                      },
+                      "path": "0-1",
+                      "edit": true,
+                      "events": []
+                    },
+                    {
+                      "id": "vRPvmYlSh0Uy-hXfQRyea",
+                      "status": "ACTIVE",
+                      "_id": "61dec5ad077814a0f374d9f3",
+                      "name": "Text view",
+                      "attributes": {
+                        "name": "Prelogin_GeneralFaqs_Navbar_Title_Text",
+                        "layoutProperties": {
+                          "textSize": 18,
+                          "layout_width": "wrap_content",
+                          "layout_height": "wrap_content",
+                          "textColor": "#ffffff",
+                          "text": "General FAQs",
+                          "cornerRadius": [0, 0, 0, 0],
+                          "numberOfLines": 1,
+                          "leftToRightOf": "ZWDDpgjRd-yQ6tM9yyh7J",
+                          "topToTopOf": "WbSEo3lgiX9jHjmR6YmfB",
+                          "bottomToBottomOf": "WbSEo3lgiX9jHjmR6YmfB",
+                          "layout_marginLeft": 20,
+                          "textStyle": "regular",
+                          "textAlignment": "left"
+                        }
+                      },
+                      "icon": "FaTextWidth",
+                      "group": "Form",
+                      "type": "sidebarItem",
+                      "updatedAt": "23-Aug-2021",
+                      "createdAt": "23-Aug-2021",
+                      "order": 20,
+                      "version": "1.0.0",
+                      "isLatest": true,
+                      "projectType": "mobile",
+                      "component": {
+                        "content": "Text view",
+                        "type": "TEXTVIEW"
+                      },
+                      "events": [],
+                      "path": "0-2"
+                    }
+                  ],
+                  "subType": "widget"
+                }
+              ],
+              "projectId": "63ef72a290c5800428f84dd9",
+              "gitBranchName": "master",
+              "_id": "GTPoplKBt1ZWut9O2kwv_",
+              "createdBy": "shaikhahmedraza",
+              "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+            }
           },
           "componentId": []
         },
@@ -363,7 +1160,7 @@
                 "textSize": 14,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
-                "textColor": "#000000",
+                "textColor": "#ffffff",
                 "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
@@ -427,7 +1224,7 @@
                 "groupTitleKey": "title",
                 "groupItemsKey": "data",
                 "bounce": false,
-                "spacing": 0,
+                
                 "parentId": "8s15rv75nIEqU1ETde158",
                 "childId": "KFxS34E7zaLm47pKptKAw",
                 "layout_width": "match_parent",
@@ -436,7 +1233,7 @@
                 "leftToLeftOf": "D7ATY0X60n2XwxkWBYWzv",
                 "rightToRightOf": "D7ATY0X60n2XwxkWBYWzv",
                 "topToTopOf": "D7ATY0X60n2XwxkWBYWzv",
-                "layout_marginTop": 30,
+                "layout_marginTop": 50,
                 "layout_marginBottom": 20,
                 "layout_marginLeft": 1,
                 "layout_marginRight": 1
@@ -458,8 +1255,8 @@
                     "layout_height": "wrap_content",
                     "clickable": true,
                     "layout_marginTop": 10,
-                    "layout_marginLeft": 0,
-                    "layout_marginRight": 0,
+                    
+                    
                     "background": "#F1F1F1"
                   },
                   "componentId": []
@@ -477,7 +1274,7 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
+                        
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#F1F1F1",
                         "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -554,8 +1351,8 @@
                     "layout_width": "match_parent",
                     "layout_height": "wrap_content",
                     "layout_marginTop": 1,
-                    "layout_marginLeft": 0,
-                    "layout_marginRight": 0,
+                    
+                    
                     "background": "#F1F1F1"
                   },
                   "componentId": []
@@ -573,7 +1370,7 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
+                        
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#f1f1f1",
                         "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -618,8 +1415,7 @@
                         "layout_marginRight": 50,
                         "layout_marginTop": 10,
                         "textAlignment": "left",
-                        "textStyle": "regular",
-                        "numberOfLines": 0
+                        "textStyle": "regular"
                       },
                       "bindingKey": "key"
                     },
@@ -643,7 +1439,8 @@
             "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
@@ -662,7 +1459,7 @@
         "textSize": 14,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
-        "textColor": "#000000",
+        "textColor": "#ffffff",
         "text": "Start Now",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
@@ -711,7 +1508,7 @@
         "groupTitleKey": "title",
         "groupItemsKey": "data",
         "bounce": false,
-        "spacing": 0,
+        
         "parentId": "8s15rv75nIEqU1ETde158",
         "childId": "KFxS34E7zaLm47pKptKAw",
         "layout_width": "match_parent",
@@ -720,7 +1517,7 @@
         "leftToLeftOf": "D7ATY0X60n2XwxkWBYWzv",
         "rightToRightOf": "D7ATY0X60n2XwxkWBYWzv",
         "topToTopOf": "D7ATY0X60n2XwxkWBYWzv",
-        "layout_marginTop": 30,
+        "layout_marginTop": 50,
         "layout_marginBottom": 20,
         "layout_marginLeft": 1,
         "layout_marginRight": 1
@@ -742,8 +1539,8 @@
             "layout_height": "wrap_content",
             "clickable": true,
             "layout_marginTop": 10,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -761,7 +1558,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F1F1F1",
                 "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -838,8 +1635,8 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "layout_marginTop": 1,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -857,7 +1654,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#f1f1f1",
                 "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -902,8 +1699,7 @@
                 "layout_marginRight": 50,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "numberOfLines": 0
+                "textStyle": "regular"
               },
               "bindingKey": "key"
             },
@@ -937,7 +1733,7 @@
             "textSize": 14,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
-            "textColor": "#000000",
+            "textColor": "#ffffff",
             "text": "Start Now",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
@@ -1001,7 +1797,7 @@
             "groupTitleKey": "title",
             "groupItemsKey": "data",
             "bounce": false,
-            "spacing": 0,
+            
             "parentId": "8s15rv75nIEqU1ETde158",
             "childId": "KFxS34E7zaLm47pKptKAw",
             "layout_width": "match_parent",
@@ -1010,7 +1806,7 @@
             "leftToLeftOf": "D7ATY0X60n2XwxkWBYWzv",
             "rightToRightOf": "D7ATY0X60n2XwxkWBYWzv",
             "topToTopOf": "D7ATY0X60n2XwxkWBYWzv",
-            "layout_marginTop": 30,
+            "layout_marginTop": 50,
             "layout_marginBottom": 20,
             "layout_marginLeft": 1,
             "layout_marginRight": 1
@@ -1032,8 +1828,8 @@
                 "layout_height": "wrap_content",
                 "clickable": true,
                 "layout_marginTop": 10,
-                "layout_marginLeft": 0,
-                "layout_marginRight": 0,
+                
+                
                 "background": "#F1F1F1"
               },
               "componentId": []
@@ -1051,7 +1847,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#F1F1F1",
                     "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -1128,8 +1924,8 @@
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "layout_marginTop": 1,
-                "layout_marginLeft": 0,
-                "layout_marginRight": 0,
+                
+                
                 "background": "#F1F1F1"
               },
               "componentId": []
@@ -1147,7 +1943,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#f1f1f1",
                     "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -1192,8 +1988,7 @@
                     "layout_marginRight": 50,
                     "layout_marginTop": 10,
                     "textAlignment": "left",
-                    "textStyle": "regular",
-                    "numberOfLines": 0
+                    "textStyle": "regular"
                   },
                   "bindingKey": "key"
                 },
@@ -1234,8 +2029,8 @@
         "layout_height": "wrap_content",
         "clickable": true,
         "layout_marginTop": 10,
-        "layout_marginLeft": 0,
-        "layout_marginRight": 0,
+        
+        
         "background": "#F1F1F1"
       },
       "componentId": ["9C1RnjhdKChdHRa05DcSz", "FRZAMSNAVT4t31HyBjxgV"]
@@ -1253,7 +2048,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F1F1F1",
             "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -1331,8 +2126,8 @@
             "layout_height": "wrap_content",
             "clickable": true,
             "layout_marginTop": 10,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -1350,7 +2145,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F1F1F1",
                 "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -1427,8 +2222,8 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "layout_marginTop": 1,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -1446,7 +2241,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#f1f1f1",
                 "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -1491,8 +2286,7 @@
                 "layout_marginRight": 50,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "numberOfLines": 0
+                "textStyle": "regular"
               },
               "bindingKey": "key"
             },
@@ -1529,7 +2323,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F1F1F1",
         "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -1611,8 +2405,8 @@
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "layout_marginTop": 1,
-        "layout_marginLeft": 0,
-        "layout_marginRight": 0,
+        
+        
         "background": "#F1F1F1"
       },
       "componentId": ["LFUgVLj3Yt5yFiS42W2g8", "mbwAbNWRgL5wYcz_z_-Wa"]
@@ -1630,7 +2424,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#f1f1f1",
             "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -1675,8 +2469,7 @@
             "layout_marginRight": 50,
             "layout_marginTop": 10,
             "textAlignment": "left",
-            "textStyle": "regular",
-            "numberOfLines": 0
+            "textStyle": "regular"
           },
           "bindingKey": "key"
         },
@@ -1707,8 +2500,8 @@
             "layout_height": "wrap_content",
             "clickable": true,
             "layout_marginTop": 10,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -1726,7 +2519,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F1F1F1",
                 "leftToLeftOf": "8s15rv75nIEqU1ETde158",
@@ -1803,8 +2596,8 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "layout_marginTop": 1,
-            "layout_marginLeft": 0,
-            "layout_marginRight": 0,
+            
+            
             "background": "#F1F1F1"
           },
           "componentId": []
@@ -1822,7 +2615,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#f1f1f1",
                 "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -1867,8 +2660,7 @@
                 "layout_marginRight": 50,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "numberOfLines": 0
+                "textStyle": "regular"
               },
               "bindingKey": "key"
             },
@@ -1905,7 +2697,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#f1f1f1",
         "leftToLeftOf": "KFxS34E7zaLm47pKptKAw",
@@ -1953,8 +2745,7 @@
         "layout_marginRight": 50,
         "layout_marginTop": 10,
         "textAlignment": "left",
-        "textStyle": "regular",
-        "numberOfLines": 0
+        "textStyle": "regular"
       },
       "bindingKey": "key"
     },

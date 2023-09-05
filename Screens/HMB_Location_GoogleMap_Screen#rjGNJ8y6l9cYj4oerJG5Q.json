@@ -1,0 +1,195 @@
+[
+  {
+    "id": "rjGNJ8y6l9cYj4oerJG5Q",
+    "name": "HMB_Location_GoogleMap_Screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "HMB_Location_GoogleMap_Screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#FFFFFF",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": ["R8IqRY8G8bTco0AUQpJCh"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "9/1/2023",
+    "createdAt": "9/1/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "R8IqRY8G8bTco0AUQpJCh",
+        "status": "ACTIVE",
+        "_id": "62ac4e3bf79772b042878fe2",
+        "name": "Location_GoogleMap_View",
+        "attributes": {
+          "name": "Location_GoogleMap_View",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "selectedMarker": "hmb_billbene_dataItem",
+            "leftToLeftOf": "rjGNJ8y6l9cYj4oerJG5Q",
+            "rightToRightOf": "rjGNJ8y6l9cYj4oerJG5Q",
+            "topToTopOf": "rjGNJ8y6l9cYj4oerJG5Q",
+            "bottomToBottomOf": "rjGNJ8y6l9cYj4oerJG5Q"
+          },
+          "bindingKey": "hmb_billbene_dataItem",
+          "configuration": {
+            "latitude": "latitude",
+            "longitude": "longitude",
+            "title": "address",
+            "description": "name"
+          }
+        },
+        "icon": "FaMapMarkerAlt",
+        "group": "Advanced",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Google map view", "type": "GOOGLEMAPVIEW" },
+        "events": [],
+        "path": "0-0"
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "rjGNJ8y6l9cYj4oerJG5Q",
+        "name": "HMB_Location_GoogleMap_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Location_GoogleMap_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "R8IqRY8G8bTco0AUQpJCh",
+            "status": "ACTIVE",
+            "_id": "62ac4e3bf79772b042878fe2",
+            "name": "Location_GoogleMap_View",
+            "attributes": {
+              "name": "Location_GoogleMap_View",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_height": "match_parent",
+                "layout_width": "match_parent",
+                "selectedMarker": "hmb_billbene_dataItem",
+                "leftToLeftOf": "rjGNJ8y6l9cYj4oerJG5Q",
+                "rightToRightOf": "rjGNJ8y6l9cYj4oerJG5Q",
+                "topToTopOf": "rjGNJ8y6l9cYj4oerJG5Q",
+                "bottomToBottomOf": "rjGNJ8y6l9cYj4oerJG5Q"
+              },
+              "bindingKey": "hmb_billbene_dataItem",
+              "configuration": {
+                "latitude": "latitude",
+                "longitude": "longitude",
+                "title": "address",
+                "description": "name"
+              }
+            },
+            "icon": "FaMapMarkerAlt",
+            "group": "Advanced",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": {
+              "content": "Google map view",
+              "type": "GOOGLEMAPVIEW"
+            },
+            "events": [],
+            "path": "0-0"
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "rjGNJ8y6l9cYj4oerJG5Q",
+    "createdBy": "shaikhahmedraza",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "R8IqRY8G8bTco0AUQpJCh",
+    "status": "ACTIVE",
+    "name": "Location_GoogleMap_View",
+    "attributes": {
+      "name": "Location_GoogleMap_View",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "selectedMarker": "hmb_billbene_dataItem",
+        "leftToLeftOf": "rjGNJ8y6l9cYj4oerJG5Q",
+        "rightToRightOf": "rjGNJ8y6l9cYj4oerJG5Q",
+        "topToTopOf": "rjGNJ8y6l9cYj4oerJG5Q",
+        "bottomToBottomOf": "rjGNJ8y6l9cYj4oerJG5Q"
+      },
+      "bindingKey": "hmb_billbene_dataItem",
+      "configuration": {
+        "latitude": "latitude",
+        "longitude": "longitude",
+        "title": "address",
+        "description": "name"
+      }
+    },
+    "icon": "FaMapMarkerAlt",
+    "group": "Advanced",
+    "type": "GOOGLEMAPVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Google map view", "type": "GOOGLEMAPVIEW" },
+    "events": [],
+    "path": "0-0",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

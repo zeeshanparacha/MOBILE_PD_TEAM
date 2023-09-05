@@ -15,7 +15,6 @@
         "navBarColor": "#1D6131",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navbarHeight": 0,
         "hideNavBar": true
       },
       "componentId": [
@@ -72,8 +71,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "8/16/2023",
+    "createdAt": "8/16/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -92,20 +91,20 @@
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45f34e35ca4a482aba3b",
-              "name": "HMB_Cheque_Icon.png",
+              "_id": "6492aad469bc7727a8747648",
+              "name": "website_icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "isHEKJJYFd6cO-AN_WFDf",
+              "id": "URb4ncZ1E6ZN69YUd_lKf",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Cheque_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-              "createdAt": "2023-05-12T13:58:11.223Z",
-              "updatedAt": "2023-05-12T13:58:11.223Z",
+              "url": "website_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/website_icon.png",
+              "createdAt": "2023-06-21T07:46:28.843Z",
+              "updatedAt": "2023-06-21T07:46:28.843Z",
               "__v": 0,
-              "uri": "HMB_Cheque_Icon.png"
+              "uri": "website_icon.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -125,12 +124,10 @@
               "uri": "PD_TrustedDevice_Icon.png"
             },
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-            "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
+            "topToTopOf": "QUGMA3D3lmtgy9a6cWN9Q",
             "layout_marginLeft": 20,
-            "layout_marginTop": 100,
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0,
-            "id": "isHEKJJYFd6cO-AN_WFDf"
+            "layout_marginTop": 10,
+            "id": "URb4ncZ1E6ZN69YUd_lKf"
           },
           "contentType": 2
         },
@@ -144,7 +141,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-0",
+        "path": "0-0",
         "edit": true,
         "events": []
       },
@@ -159,17 +156,16 @@
             "layout_width": "wrap_content",
             "layout_height": "40",
             "textColor": "#000000",
-            "text": "Website",
+            "text": "Websitee",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
             "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
-            "layout_marginLeft": 60,
+            "layout_marginLeft": 80,
             "layout_marginTop": 60,
             "textStyle": "bold",
-            "textAlignment": "left",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
+            "textAlignment": "left"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.0.contactType"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -181,8 +177,41 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "1-1",
+        "events": [
+          {
+            "triggerId": "3pm-3piY6m2Ec897GTkA8",
+            "triggerName": "HMB_ContactUS_Filter_Trig",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Show Bottom Sheet",
+              "conditions": [
+                {
+                  "bindingKey": "contactFilterData",
+                  "value": "$getContact_Data",
+                  "logic": {
+                    "filter": [
+                      { "var": "content" },
+                      { "==": [{ "var": "groupCode" }, "CONTACT"] }
+                    ]
+                  }
+                },
+                {
+                  "bindingKey": "socialmediaFilterData",
+                  "value": "$getContact_Data",
+                  "logic": {
+                    "filter": [
+                      { "var": "content" },
+                      { "==": [{ "var": "groupCode" }, "SOCIALMEDIA"] }
+                    ]
+                  }
+                }
+              ]
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
         "edit": true
       },
       {
@@ -196,17 +225,15 @@
             "layout_width": "wrap_content",
             "layout_height": "38",
             "textColor": "#000000",
-            "text": "https://www.habibmetro.com/",
+            "text": "https://www.habibmetro.com//",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "QUGMA3D3lmtgy9a6cWN9Q",
             "topToBottomOf": "QUGMA3D3lmtgy9a6cWN9Q",
-            "layout_marginLeft": 0,
-            "layout_marginTop": 10,
+            "layout_marginTop": 6,
             "textStyle": "regular",
-            "textAlignment": "left",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
+            "textAlignment": "left"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.0.contactDetails1"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -219,7 +246,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "1-2",
+        "path": "0-2",
         "edit": true
       },
       {
@@ -232,7 +259,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -240,8 +266,7 @@
             "topToBottomOf": "_AZnWfU3UjkWVvEbDQDa3",
             "layout_marginTop": 30,
             "layout_marginRight": 20,
-            "layout_marginLeft": 20,
-            "layout_marginBottom": 0
+            "layout_marginLeft": 20
           }
         },
         "icon": "FaTabletAlt",
@@ -265,25 +290,25 @@
         "attributes": {
           "name": "Contact_Email_Icon",
           "layoutProperties": {
-            "layout_width": "35",
-            "layout_height": "40",
+            "layout_width": "30",
+            "layout_height": "35",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45f34e35ca4a482aba3b",
-              "name": "HMB_Cheque_Icon.png",
+              "_id": "6492aada69bc7727a874765b",
+              "name": "email.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "isHEKJJYFd6cO-AN_WFDf",
+              "id": "tP3qvyW61RFYqmua8BDYX",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Cheque_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-              "createdAt": "2023-05-12T13:58:11.223Z",
-              "updatedAt": "2023-05-12T13:58:11.223Z",
+              "url": "email.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/email.png",
+              "createdAt": "2023-06-21T07:46:34.222Z",
+              "updatedAt": "2023-06-21T07:46:34.222Z",
               "__v": 0,
-              "uri": "HMB_Cheque_Icon.png"
+              "uri": "email.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -303,12 +328,10 @@
               "uri": "PD_TrustedDevice_Icon.png"
             },
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-            "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
             "layout_marginLeft": 20,
-            "layout_marginTop": 50,
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0,
-            "id": "isHEKJJYFd6cO-AN_WFDf"
+            "layout_marginTop": 7,
+            "id": "tP3qvyW61RFYqmua8BDYX",
+            "topToTopOf": "z546zFsDOQmPAsYx_vyiJ"
           },
           "contentType": 2
         },
@@ -322,7 +345,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-4",
+        "path": "0-4",
         "edit": true,
         "events": []
       },
@@ -337,17 +360,16 @@
             "layout_width": "wrap_content",
             "layout_height": "40",
             "textColor": "#000000",
-            "text": "Email",
+            "text": "Emaill",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
             "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
-            "layout_marginLeft": 60,
+            "layout_marginLeft": 80,
             "layout_marginTop": 10,
             "textStyle": "bold",
-            "textAlignment": "left",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
+            "textAlignment": "left"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.1.contactType"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -360,7 +382,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "1-5",
+        "path": "0-5",
         "edit": true
       },
       {
@@ -374,17 +396,15 @@
             "layout_width": "wrap_content",
             "layout_height": "40",
             "textColor": "#000000",
-            "text": "complaints@habibmetro.com",
+            "text": "complaints@habibmetro.comm",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "z546zFsDOQmPAsYx_vyiJ",
             "topToBottomOf": "z546zFsDOQmPAsYx_vyiJ",
-            "layout_marginLeft": 0,
-            "layout_marginTop": 10,
+            "layout_marginTop": 6,
             "textStyle": "regular",
-            "textAlignment": "left",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
+            "textAlignment": "left"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.1.contactDetails1"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -397,7 +417,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "1-6",
+        "path": "0-6",
         "edit": true
       },
       {
@@ -410,7 +430,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -418,8 +437,7 @@
             "topToBottomOf": "ukr_EPYfnn0XkifyfeXDQ",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            "layout_marginTop": 30,
-            "layout_marginBottom": 0
+            "layout_marginTop": 30
           }
         },
         "icon": "FaTabletAlt",
@@ -443,25 +461,25 @@
         "attributes": {
           "name": "Contact_Icon",
           "layoutProperties": {
-            "layout_width": "35",
-            "layout_height": "40",
+            "layout_width": "45",
+            "layout_height": "50",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45f34e35ca4a482aba3b",
-              "name": "HMB_Cheque_Icon.png",
+              "_id": "6492aadf69bc7727a874766e",
+              "name": "telephone.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "isHEKJJYFd6cO-AN_WFDf",
+              "id": "r0C3Ezrvwi72jO-6_0BNe",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Cheque_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-              "createdAt": "2023-05-12T13:58:11.223Z",
-              "updatedAt": "2023-05-12T13:58:11.223Z",
+              "url": "telephone.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/telephone.png",
+              "createdAt": "2023-06-21T07:46:39.939Z",
+              "updatedAt": "2023-06-21T07:46:39.939Z",
               "__v": 0,
-              "uri": "HMB_Cheque_Icon.png"
+              "uri": "telephone.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -481,12 +499,10 @@
               "uri": "PD_TrustedDevice_Icon.png"
             },
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-            "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
-            "layout_marginTop": 50,
+            "layout_marginTop": 2,
             "layout_marginLeft": 20,
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0,
-            "id": "isHEKJJYFd6cO-AN_WFDf"
+            "id": "r0C3Ezrvwi72jO-6_0BNe",
+            "topToTopOf": "PK1b6UDGUDW7O97VM3EG-"
           },
           "contentType": 2
         },
@@ -500,7 +516,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-8",
+        "path": "0-8",
         "edit": true,
         "events": []
       },
@@ -515,17 +531,16 @@
             "layout_width": "wrap_content",
             "layout_height": "40",
             "textColor": "#000000",
-            "text": "Contact",
+            "text": "Contactt",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
             "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
             "layout_marginTop": 10,
-            "layout_marginLeft": 60,
+            "layout_marginLeft": 80,
             "textAlignment": "left",
-            "textStyle": "bold",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0
-          }
+            "textStyle": "bold"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.2.contactType"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -538,7 +553,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "1-9",
+        "path": "0-9",
         "edit": true
       },
       {
@@ -556,13 +571,11 @@
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "PK1b6UDGUDW7O97VM3EG-",
             "topToBottomOf": "PK1b6UDGUDW7O97VM3EG-",
-            "layout_marginTop": 10,
+            "layout_marginTop": 6,
             "textAlignment": "left",
-            "textStyle": "regular",
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0,
-            "layout_marginLeft": 0
-          }
+            "textStyle": "regular"
+          },
+          "bindingKey": "contactFilterData.0.contactDetails.2.contactDetails1"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -574,8 +587,20 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "1-10",
+        "events": [
+          {
+            "triggerId": "oVlXjKnwj9szUKTpRMJrN",
+            "triggerName": "Contact_BanlCall_Trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Open caller utility",
+              "contact": "bank_contact"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-10",
         "edit": true
       },
       {
@@ -588,7 +613,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -624,20 +648,20 @@
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45b94e35ca4a482ab9e7",
-              "name": "HMB_Transfer_Icon.png",
+              "_id": "6492aac069bc7727a874760f",
+              "name": "youtube_icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "N80KklphZMwFr9rU9XqKE",
+              "id": "IDlHEscsciCXg5nxzzkXE",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Transfer_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-              "createdAt": "2023-05-12T13:57:13.394Z",
-              "updatedAt": "2023-05-12T13:57:13.394Z",
+              "url": "youtube_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/youtube_icon.png",
+              "createdAt": "2023-06-21T07:46:08.981Z",
+              "updatedAt": "2023-06-21T07:46:08.981Z",
               "__v": 0,
-              "uri": "HMB_Transfer_Icon.png"
+              "uri": "youtube_icon.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -660,9 +684,7 @@
             "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
-            "layout_marginBottom": 0,
-            "layout_marginRight": 0,
-            "id": "N80KklphZMwFr9rU9XqKE"
+            "id": "IDlHEscsciCXg5nxzzkXE"
           },
           "contentType": 2
         },
@@ -676,9 +698,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-12",
+        "path": "0-12",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "YmM45M7QV5INRD_q-wp51",
+            "triggerName": "Open_HMB_Contact_Youtube_URL",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "https://www.youtube.com/@HABIBMETROOFFICIAL",
+              "urlType": "url"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "AvuaqDb1TsGKaikRcOD6c",
@@ -692,20 +727,20 @@
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45b94e35ca4a482ab9e7",
-              "name": "HMB_Transfer_Icon.png",
+              "_id": "6492aaba69bc7727a87475fc",
+              "name": "linkedin_icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "N80KklphZMwFr9rU9XqKE",
+              "id": "kEIp7MG45w5baCxpLgeN2",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Transfer_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-              "createdAt": "2023-05-12T13:57:13.394Z",
-              "updatedAt": "2023-05-12T13:57:13.394Z",
+              "url": "linkedin_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/linkedin_icon.png",
+              "createdAt": "2023-06-21T07:46:02.655Z",
+              "updatedAt": "2023-06-21T07:46:02.655Z",
               "__v": 0,
-              "uri": "HMB_Transfer_Icon.png"
+              "uri": "linkedin_icon.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -727,10 +762,8 @@
             "leftToRightOf": "cRG80JepJiixxUHWNvJpQ",
             "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
             "layout_marginTop": 20,
-            "layout_marginRight": 0,
-            "layout_marginLeft": 25,
-            "layout_marginBottom": 0,
-            "id": "N80KklphZMwFr9rU9XqKE"
+            "layout_marginLeft": 35,
+            "id": "kEIp7MG45w5baCxpLgeN2"
           },
           "contentType": 2
         },
@@ -744,9 +777,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-13",
+        "path": "0-13",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "184GpV-JwhpePtvpsnTtI",
+            "triggerName": "Open_HMB_Contact_LinkedIn_URL",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "https://www.linkedin.com/company/habib-metropolitan-bank-limited/",
+              "urlType": "url"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8KX1fbsJ5IE8Lma6GX7U4",
@@ -760,20 +806,20 @@
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45b94e35ca4a482ab9e7",
-              "name": "HMB_Transfer_Icon.png",
+              "_id": "6492aac869bc7727a8747622",
+              "name": "instagram.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "N80KklphZMwFr9rU9XqKE",
+              "id": "Ppk_zek1lfJIy_6EuTdyS",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Transfer_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-              "createdAt": "2023-05-12T13:57:13.394Z",
-              "updatedAt": "2023-05-12T13:57:13.394Z",
+              "url": "instagram.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/instagram.png",
+              "createdAt": "2023-06-21T07:46:16.167Z",
+              "updatedAt": "2023-06-21T07:46:16.167Z",
               "__v": 0,
-              "uri": "HMB_Transfer_Icon.png"
+              "uri": "instagram.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -794,9 +840,9 @@
             },
             "leftToRightOf": "AvuaqDb1TsGKaikRcOD6c",
             "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-            "layout_marginLeft": 25,
+            "layout_marginLeft": 35,
             "layout_marginTop": 20,
-            "id": "N80KklphZMwFr9rU9XqKE"
+            "id": "Ppk_zek1lfJIy_6EuTdyS"
           },
           "contentType": 2
         },
@@ -810,9 +856,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-14",
+        "path": "0-14",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "-2EtBhFnIJ1CaGFTUbBPk",
+            "triggerName": "Open_HMB_Contact_Insta_URL",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "https://instagram.com/habibmetrobank?igshid=NTc4MTIwNjQ2YQ==",
+              "urlType": "url"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "KQTcJDkEEb6fwyrb4ZN7N",
@@ -826,20 +885,20 @@
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
-              "_id": "645e45b94e35ca4a482ab9e7",
-              "name": "HMB_Transfer_Icon.png",
+              "_id": "6492aace69bc7727a8747635",
+              "name": "twitter_icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "N80KklphZMwFr9rU9XqKE",
+              "id": "PFUBqwCK4CI9iXEO72Wyv",
               "gitBranchName": "master",
               "folderType": "xxxhdpi",
               "platform": "Android",
-              "url": "HMB_Transfer_Icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-              "createdAt": "2023-05-12T13:57:13.394Z",
-              "updatedAt": "2023-05-12T13:57:13.394Z",
+              "url": "twitter_icon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/twitter_icon.png",
+              "createdAt": "2023-06-21T07:46:22.138Z",
+              "updatedAt": "2023-06-21T07:46:22.138Z",
               "__v": 0,
-              "uri": "HMB_Transfer_Icon.png"
+              "uri": "twitter_icon.png"
             },
             "srcTemp": {
               "createdBy": "shaikhahmedraza",
@@ -860,9 +919,9 @@
             },
             "leftToRightOf": "8KX1fbsJ5IE8Lma6GX7U4",
             "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-            "layout_marginLeft": 25,
+            "layout_marginLeft": 35,
             "layout_marginTop": 20,
-            "id": "N80KklphZMwFr9rU9XqKE"
+            "id": "PFUBqwCK4CI9iXEO72Wyv"
           },
           "contentType": 2
         },
@@ -876,9 +935,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "2-15",
+        "path": "0-15",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "R3tPS8HFtl_QBdCFvjjof",
+            "triggerName": "Open_HMB_Contact_Twitter_URL",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "https://twitter.com/HMBPakistan",
+              "urlType": "url"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "screen",
@@ -900,7 +972,6 @@
             "navBarColor": "#1D6131",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navbarHeight": 0,
             "hideNavBar": true
           },
           "componentId": []
@@ -928,20 +999,20 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45f34e35ca4a482aba3b",
-                  "name": "HMB_Cheque_Icon.png",
+                  "_id": "6492aad469bc7727a8747648",
+                  "name": "website_icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "isHEKJJYFd6cO-AN_WFDf",
+                  "id": "URb4ncZ1E6ZN69YUd_lKf",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Cheque_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-                  "createdAt": "2023-05-12T13:58:11.223Z",
-                  "updatedAt": "2023-05-12T13:58:11.223Z",
+                  "url": "website_icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/website_icon.png",
+                  "createdAt": "2023-06-21T07:46:28.843Z",
+                  "updatedAt": "2023-06-21T07:46:28.843Z",
                   "__v": 0,
-                  "uri": "HMB_Cheque_Icon.png"
+                  "uri": "website_icon.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -961,12 +1032,10 @@
                   "uri": "PD_TrustedDevice_Icon.png"
                 },
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-                "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
+                "topToTopOf": "QUGMA3D3lmtgy9a6cWN9Q",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 100,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "id": "isHEKJJYFd6cO-AN_WFDf"
+                "layout_marginTop": 10,
+                "id": "URb4ncZ1E6ZN69YUd_lKf"
               },
               "contentType": 2
             },
@@ -980,7 +1049,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-0",
+            "path": "0-0",
             "edit": true,
             "events": []
           },
@@ -995,17 +1064,16 @@
                 "layout_width": "wrap_content",
                 "layout_height": "40",
                 "textColor": "#000000",
-                "text": "Website",
+                "text": "Websitee",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
                 "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
-                "layout_marginLeft": 60,
+                "layout_marginLeft": 80,
                 "layout_marginTop": 60,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
+                "textAlignment": "left"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.0.contactType"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1017,8 +1085,41 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "1-1",
+            "events": [
+              {
+                "triggerId": "3pm-3piY6m2Ec897GTkA8",
+                "triggerName": "HMB_ContactUS_Filter_Trig",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Show Bottom Sheet",
+                  "conditions": [
+                    {
+                      "bindingKey": "contactFilterData",
+                      "value": "$getContact_Data",
+                      "logic": {
+                        "filter": [
+                          { "var": "content" },
+                          { "==": [{ "var": "groupCode" }, "CONTACT"] }
+                        ]
+                      }
+                    },
+                    {
+                      "bindingKey": "socialmediaFilterData",
+                      "value": "$getContact_Data",
+                      "logic": {
+                        "filter": [
+                          { "var": "content" },
+                          { "==": [{ "var": "groupCode" }, "SOCIALMEDIA"] }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-1",
             "edit": true
           },
           {
@@ -1032,17 +1133,15 @@
                 "layout_width": "wrap_content",
                 "layout_height": "38",
                 "textColor": "#000000",
-                "text": "https://www.habibmetro.com/",
+                "text": "https://www.habibmetro.com//",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "QUGMA3D3lmtgy9a6cWN9Q",
                 "topToBottomOf": "QUGMA3D3lmtgy9a6cWN9Q",
-                "layout_marginLeft": 0,
-                "layout_marginTop": 10,
+                "layout_marginTop": 6,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
+                "textAlignment": "left"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.0.contactDetails1"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1055,7 +1154,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "1-2",
+            "path": "0-2",
             "edit": true
           },
           {
@@ -1068,7 +1167,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -1076,8 +1174,7 @@
                 "topToBottomOf": "_AZnWfU3UjkWVvEbDQDa3",
                 "layout_marginTop": 30,
                 "layout_marginRight": 20,
-                "layout_marginLeft": 20,
-                "layout_marginBottom": 0
+                "layout_marginLeft": 20
               }
             },
             "icon": "FaTabletAlt",
@@ -1101,25 +1198,25 @@
             "attributes": {
               "name": "Contact_Email_Icon",
               "layoutProperties": {
-                "layout_width": "35",
-                "layout_height": "40",
+                "layout_width": "30",
+                "layout_height": "35",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45f34e35ca4a482aba3b",
-                  "name": "HMB_Cheque_Icon.png",
+                  "_id": "6492aada69bc7727a874765b",
+                  "name": "email.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "isHEKJJYFd6cO-AN_WFDf",
+                  "id": "tP3qvyW61RFYqmua8BDYX",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Cheque_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-                  "createdAt": "2023-05-12T13:58:11.223Z",
-                  "updatedAt": "2023-05-12T13:58:11.223Z",
+                  "url": "email.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/email.png",
+                  "createdAt": "2023-06-21T07:46:34.222Z",
+                  "updatedAt": "2023-06-21T07:46:34.222Z",
                   "__v": 0,
-                  "uri": "HMB_Cheque_Icon.png"
+                  "uri": "email.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1139,12 +1236,10 @@
                   "uri": "PD_TrustedDevice_Icon.png"
                 },
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-                "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 50,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "id": "isHEKJJYFd6cO-AN_WFDf"
+                "layout_marginTop": 7,
+                "id": "tP3qvyW61RFYqmua8BDYX",
+                "topToTopOf": "z546zFsDOQmPAsYx_vyiJ"
               },
               "contentType": 2
             },
@@ -1158,7 +1253,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-4",
+            "path": "0-4",
             "edit": true,
             "events": []
           },
@@ -1173,17 +1268,16 @@
                 "layout_width": "wrap_content",
                 "layout_height": "40",
                 "textColor": "#000000",
-                "text": "Email",
+                "text": "Emaill",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
                 "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
-                "layout_marginLeft": 60,
+                "layout_marginLeft": 80,
                 "layout_marginTop": 10,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
+                "textAlignment": "left"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.1.contactType"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1196,7 +1290,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "1-5",
+            "path": "0-5",
             "edit": true
           },
           {
@@ -1210,17 +1304,15 @@
                 "layout_width": "wrap_content",
                 "layout_height": "40",
                 "textColor": "#000000",
-                "text": "complaints@habibmetro.com",
+                "text": "complaints@habibmetro.comm",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "z546zFsDOQmPAsYx_vyiJ",
                 "topToBottomOf": "z546zFsDOQmPAsYx_vyiJ",
-                "layout_marginLeft": 0,
-                "layout_marginTop": 10,
+                "layout_marginTop": 6,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
+                "textAlignment": "left"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.1.contactDetails1"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1233,7 +1325,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "1-6",
+            "path": "0-6",
             "edit": true
           },
           {
@@ -1246,7 +1338,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -1254,8 +1345,7 @@
                 "topToBottomOf": "ukr_EPYfnn0XkifyfeXDQ",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginTop": 30,
-                "layout_marginBottom": 0
+                "layout_marginTop": 30
               }
             },
             "icon": "FaTabletAlt",
@@ -1279,25 +1369,25 @@
             "attributes": {
               "name": "Contact_Icon",
               "layoutProperties": {
-                "layout_width": "35",
-                "layout_height": "40",
+                "layout_width": "45",
+                "layout_height": "50",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45f34e35ca4a482aba3b",
-                  "name": "HMB_Cheque_Icon.png",
+                  "_id": "6492aadf69bc7727a874766e",
+                  "name": "telephone.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "isHEKJJYFd6cO-AN_WFDf",
+                  "id": "r0C3Ezrvwi72jO-6_0BNe",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Cheque_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-                  "createdAt": "2023-05-12T13:58:11.223Z",
-                  "updatedAt": "2023-05-12T13:58:11.223Z",
+                  "url": "telephone.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/telephone.png",
+                  "createdAt": "2023-06-21T07:46:39.939Z",
+                  "updatedAt": "2023-06-21T07:46:39.939Z",
                   "__v": 0,
-                  "uri": "HMB_Cheque_Icon.png"
+                  "uri": "telephone.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1317,12 +1407,10 @@
                   "uri": "PD_TrustedDevice_Icon.png"
                 },
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-                "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
-                "layout_marginTop": 50,
+                "layout_marginTop": 2,
                 "layout_marginLeft": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "id": "isHEKJJYFd6cO-AN_WFDf"
+                "id": "r0C3Ezrvwi72jO-6_0BNe",
+                "topToTopOf": "PK1b6UDGUDW7O97VM3EG-"
               },
               "contentType": 2
             },
@@ -1336,7 +1424,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-8",
+            "path": "0-8",
             "edit": true,
             "events": []
           },
@@ -1351,17 +1439,16 @@
                 "layout_width": "wrap_content",
                 "layout_height": "40",
                 "textColor": "#000000",
-                "text": "Contact",
+                "text": "Contactt",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
                 "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
                 "layout_marginTop": 10,
-                "layout_marginLeft": 60,
+                "layout_marginLeft": 80,
                 "textAlignment": "left",
-                "textStyle": "bold",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
-              }
+                "textStyle": "bold"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.2.contactType"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1374,7 +1461,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "1-9",
+            "path": "0-9",
             "edit": true
           },
           {
@@ -1392,13 +1479,11 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "PK1b6UDGUDW7O97VM3EG-",
                 "topToBottomOf": "PK1b6UDGUDW7O97VM3EG-",
-                "layout_marginTop": 10,
+                "layout_marginTop": 6,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "layout_marginLeft": 0
-              }
+                "textStyle": "regular"
+              },
+              "bindingKey": "contactFilterData.0.contactDetails.2.contactDetails1"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1410,8 +1495,20 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "1-10",
+            "events": [
+              {
+                "triggerId": "oVlXjKnwj9szUKTpRMJrN",
+                "triggerName": "Contact_BanlCall_Trig",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Open caller utility",
+                  "contact": "bank_contact"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-10",
             "edit": true
           },
           {
@@ -1424,7 +1521,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -1460,20 +1556,20 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45b94e35ca4a482ab9e7",
-                  "name": "HMB_Transfer_Icon.png",
+                  "_id": "6492aac069bc7727a874760f",
+                  "name": "youtube_icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "N80KklphZMwFr9rU9XqKE",
+                  "id": "IDlHEscsciCXg5nxzzkXE",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Transfer_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-                  "createdAt": "2023-05-12T13:57:13.394Z",
-                  "updatedAt": "2023-05-12T13:57:13.394Z",
+                  "url": "youtube_icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/youtube_icon.png",
+                  "createdAt": "2023-06-21T07:46:08.981Z",
+                  "updatedAt": "2023-06-21T07:46:08.981Z",
                   "__v": 0,
-                  "uri": "HMB_Transfer_Icon.png"
+                  "uri": "youtube_icon.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1496,9 +1592,7 @@
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "id": "N80KklphZMwFr9rU9XqKE"
+                "id": "IDlHEscsciCXg5nxzzkXE"
               },
               "contentType": 2
             },
@@ -1512,9 +1606,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-12",
+            "path": "0-12",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "YmM45M7QV5INRD_q-wp51",
+                "triggerName": "Open_HMB_Contact_Youtube_URL",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "https://www.youtube.com/@HABIBMETROOFFICIAL",
+                  "urlType": "url"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "AvuaqDb1TsGKaikRcOD6c",
@@ -1528,20 +1635,20 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45b94e35ca4a482ab9e7",
-                  "name": "HMB_Transfer_Icon.png",
+                  "_id": "6492aaba69bc7727a87475fc",
+                  "name": "linkedin_icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "N80KklphZMwFr9rU9XqKE",
+                  "id": "kEIp7MG45w5baCxpLgeN2",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Transfer_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-                  "createdAt": "2023-05-12T13:57:13.394Z",
-                  "updatedAt": "2023-05-12T13:57:13.394Z",
+                  "url": "linkedin_icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/linkedin_icon.png",
+                  "createdAt": "2023-06-21T07:46:02.655Z",
+                  "updatedAt": "2023-06-21T07:46:02.655Z",
                   "__v": 0,
-                  "uri": "HMB_Transfer_Icon.png"
+                  "uri": "linkedin_icon.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1563,10 +1670,8 @@
                 "leftToRightOf": "cRG80JepJiixxUHWNvJpQ",
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginTop": 20,
-                "layout_marginRight": 0,
-                "layout_marginLeft": 25,
-                "layout_marginBottom": 0,
-                "id": "N80KklphZMwFr9rU9XqKE"
+                "layout_marginLeft": 35,
+                "id": "kEIp7MG45w5baCxpLgeN2"
               },
               "contentType": 2
             },
@@ -1580,9 +1685,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-13",
+            "path": "0-13",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "184GpV-JwhpePtvpsnTtI",
+                "triggerName": "Open_HMB_Contact_LinkedIn_URL",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "https://www.linkedin.com/company/habib-metropolitan-bank-limited/",
+                  "urlType": "url"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "8KX1fbsJ5IE8Lma6GX7U4",
@@ -1596,20 +1714,20 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45b94e35ca4a482ab9e7",
-                  "name": "HMB_Transfer_Icon.png",
+                  "_id": "6492aac869bc7727a8747622",
+                  "name": "instagram.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "N80KklphZMwFr9rU9XqKE",
+                  "id": "Ppk_zek1lfJIy_6EuTdyS",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Transfer_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-                  "createdAt": "2023-05-12T13:57:13.394Z",
-                  "updatedAt": "2023-05-12T13:57:13.394Z",
+                  "url": "instagram.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/instagram.png",
+                  "createdAt": "2023-06-21T07:46:16.167Z",
+                  "updatedAt": "2023-06-21T07:46:16.167Z",
                   "__v": 0,
-                  "uri": "HMB_Transfer_Icon.png"
+                  "uri": "instagram.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1630,9 +1748,9 @@
                 },
                 "leftToRightOf": "AvuaqDb1TsGKaikRcOD6c",
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-                "layout_marginLeft": 25,
+                "layout_marginLeft": 35,
                 "layout_marginTop": 20,
-                "id": "N80KklphZMwFr9rU9XqKE"
+                "id": "Ppk_zek1lfJIy_6EuTdyS"
               },
               "contentType": 2
             },
@@ -1646,9 +1764,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-14",
+            "path": "0-14",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "-2EtBhFnIJ1CaGFTUbBPk",
+                "triggerName": "Open_HMB_Contact_Insta_URL",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "https://instagram.com/habibmetrobank?igshid=NTc4MTIwNjQ2YQ==",
+                  "urlType": "url"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "KQTcJDkEEb6fwyrb4ZN7N",
@@ -1662,20 +1793,20 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
-                  "_id": "645e45b94e35ca4a482ab9e7",
-                  "name": "HMB_Transfer_Icon.png",
+                  "_id": "6492aace69bc7727a8747635",
+                  "name": "twitter_icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "N80KklphZMwFr9rU9XqKE",
+                  "id": "PFUBqwCK4CI9iXEO72Wyv",
                   "gitBranchName": "master",
                   "folderType": "xxxhdpi",
                   "platform": "Android",
-                  "url": "HMB_Transfer_Icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-                  "createdAt": "2023-05-12T13:57:13.394Z",
-                  "updatedAt": "2023-05-12T13:57:13.394Z",
+                  "url": "twitter_icon.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/twitter_icon.png",
+                  "createdAt": "2023-06-21T07:46:22.138Z",
+                  "updatedAt": "2023-06-21T07:46:22.138Z",
                   "__v": 0,
-                  "uri": "HMB_Transfer_Icon.png"
+                  "uri": "twitter_icon.png"
                 },
                 "srcTemp": {
                   "createdBy": "shaikhahmedraza",
@@ -1696,9 +1827,9 @@
                 },
                 "leftToRightOf": "8KX1fbsJ5IE8Lma6GX7U4",
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-                "layout_marginLeft": 25,
+                "layout_marginLeft": 35,
                 "layout_marginTop": 20,
-                "id": "N80KklphZMwFr9rU9XqKE"
+                "id": "PFUBqwCK4CI9iXEO72Wyv"
               },
               "contentType": 2
             },
@@ -1712,9 +1843,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "2-15",
+            "path": "0-15",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "R3tPS8HFtl_QBdCFvjjof",
+                "triggerName": "Open_HMB_Contact_Twitter_URL",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "https://twitter.com/HMBPakistan",
+                  "urlType": "url"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
         ],
         "subType": "screen",
@@ -1785,7 +1929,6 @@
                           "name": "View",
                           "layout_width": "match_parent",
                           "layout_height": "50",
-                          "borderWidth": 0,
                           "cornerRadius": [0, 0, 0, 0],
                           "background": "#1D6131",
                           "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
@@ -1954,7 +2097,6 @@
                       "name": "View",
                       "layout_width": "match_parent",
                       "layout_height": "50",
-                      "borderWidth": 0,
                       "cornerRadius": [0, 0, 0, 0],
                       "background": "#1D6131",
                       "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
@@ -2128,8 +2270,6 @@
                 "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 100,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -2167,9 +2307,7 @@
                 "layout_marginLeft": 60,
                 "layout_marginTop": 60,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               },
               "hideCondition": { "logic": { "or": [1, 1] } }
             },
@@ -2203,12 +2341,9 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "QUGMA3D3lmtgy9a6cWN9Q",
                 "topToBottomOf": "QUGMA3D3lmtgy9a6cWN9Q",
-                "layout_marginLeft": 0,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -2236,7 +2371,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -2244,8 +2378,7 @@
                 "topToBottomOf": "_AZnWfU3UjkWVvEbDQDa3",
                 "layout_marginTop": 30,
                 "layout_marginRight": 20,
-                "layout_marginLeft": 20,
-                "layout_marginBottom": 0
+                "layout_marginLeft": 20
               }
             },
             "icon": "FaTabletAlt",
@@ -2311,8 +2444,6 @@
                 "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 50,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -2350,9 +2481,7 @@
                 "layout_marginLeft": 60,
                 "layout_marginTop": 10,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -2385,12 +2514,9 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "z546zFsDOQmPAsYx_vyiJ",
                 "topToBottomOf": "z546zFsDOQmPAsYx_vyiJ",
-                "layout_marginLeft": 0,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -2418,7 +2544,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -2426,8 +2551,7 @@
                 "topToBottomOf": "ukr_EPYfnn0XkifyfeXDQ",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginTop": 30,
-                "layout_marginBottom": 0
+                "layout_marginTop": 30
               }
             },
             "icon": "FaTabletAlt",
@@ -2493,8 +2617,6 @@
                 "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
                 "layout_marginTop": 50,
                 "layout_marginLeft": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -2532,9 +2654,7 @@
                 "layout_marginTop": 10,
                 "layout_marginLeft": 60,
                 "textAlignment": "left",
-                "textStyle": "bold",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textStyle": "bold"
               }
             },
             "icon": "FaTextWidth",
@@ -2569,10 +2689,7 @@
                 "topToBottomOf": "PK1b6UDGUDW7O97VM3EG-",
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "layout_marginLeft": 0
+                "textStyle": "regular"
               }
             },
             "icon": "FaTextWidth",
@@ -2600,7 +2717,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -2673,8 +2789,6 @@
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "N80KklphZMwFr9rU9XqKE"
               },
               "contentType": 2
@@ -2741,9 +2855,7 @@
                 "leftToRightOf": "cRG80JepJiixxUHWNvJpQ",
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginTop": 20,
-                "layout_marginRight": 0,
                 "layout_marginLeft": 25,
-                "layout_marginBottom": 0,
                 "id": "N80KklphZMwFr9rU9XqKE"
               },
               "contentType": 2
@@ -2965,7 +3077,6 @@
                           "name": "View",
                           "layout_width": "match_parent",
                           "layout_height": "50",
-                          "borderWidth": 0,
                           "cornerRadius": [0, 0, 0, 0],
                           "background": "#1D6131",
                           "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
@@ -3134,7 +3245,6 @@
                       "name": "View",
                       "layout_width": "match_parent",
                       "layout_height": "50",
-                      "borderWidth": 0,
                       "cornerRadius": [0, 0, 0, 0],
                       "background": "#1D6131",
                       "leftToLeftOf": "LoEszM6lBHwcKPisXlEnP",
@@ -3307,8 +3417,6 @@
                 "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 100,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -3345,9 +3453,7 @@
                 "layout_marginLeft": 60,
                 "layout_marginTop": 60,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -3379,12 +3485,9 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "QUGMA3D3lmtgy9a6cWN9Q",
                 "topToBottomOf": "QUGMA3D3lmtgy9a6cWN9Q",
-                "layout_marginLeft": 0,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -3411,7 +3514,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -3419,8 +3521,7 @@
                 "topToBottomOf": "_AZnWfU3UjkWVvEbDQDa3",
                 "layout_marginTop": 30,
                 "layout_marginRight": 20,
-                "layout_marginLeft": 20,
-                "layout_marginBottom": 0
+                "layout_marginLeft": 20
               }
             },
             "icon": "FaTabletAlt",
@@ -3485,8 +3586,6 @@
                 "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 50,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -3523,9 +3622,7 @@
                 "layout_marginLeft": 60,
                 "layout_marginTop": 10,
                 "textStyle": "bold",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -3557,12 +3654,9 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "z546zFsDOQmPAsYx_vyiJ",
                 "topToBottomOf": "z546zFsDOQmPAsYx_vyiJ",
-                "layout_marginLeft": 0,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textAlignment": "left"
               }
             },
             "icon": "FaTextWidth",
@@ -3589,7 +3683,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -3597,8 +3690,7 @@
                 "topToBottomOf": "ukr_EPYfnn0XkifyfeXDQ",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginTop": 30,
-                "layout_marginBottom": 0
+                "layout_marginTop": 30
               }
             },
             "icon": "FaTabletAlt",
@@ -3663,8 +3755,6 @@
                 "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
                 "layout_marginTop": 50,
                 "layout_marginLeft": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "isHEKJJYFd6cO-AN_WFDf"
               },
               "contentType": 2
@@ -3701,9 +3791,7 @@
                 "layout_marginTop": 10,
                 "layout_marginLeft": 60,
                 "textAlignment": "left",
-                "textStyle": "bold",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0
+                "textStyle": "bold"
               }
             },
             "icon": "FaTextWidth",
@@ -3737,10 +3825,7 @@
                 "topToBottomOf": "PK1b6UDGUDW7O97VM3EG-",
                 "layout_marginTop": 10,
                 "textAlignment": "left",
-                "textStyle": "regular",
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
-                "layout_marginLeft": 0
+                "textStyle": "regular"
               }
             },
             "icon": "FaTextWidth",
@@ -3767,7 +3852,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -3839,8 +3923,6 @@
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
-                "layout_marginBottom": 0,
-                "layout_marginRight": 0,
                 "id": "N80KklphZMwFr9rU9XqKE"
               },
               "contentType": 2
@@ -3906,9 +3988,7 @@
                 "leftToRightOf": "cRG80JepJiixxUHWNvJpQ",
                 "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
                 "layout_marginTop": 20,
-                "layout_marginRight": 0,
                 "layout_marginLeft": 25,
-                "layout_marginBottom": 0,
                 "id": "N80KklphZMwFr9rU9XqKE"
               },
               "contentType": 2
@@ -4082,20 +4162,20 @@
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45f34e35ca4a482aba3b",
-          "name": "HMB_Cheque_Icon.png",
+          "_id": "6492aad469bc7727a8747648",
+          "name": "website_icon.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "isHEKJJYFd6cO-AN_WFDf",
+          "id": "URb4ncZ1E6ZN69YUd_lKf",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Cheque_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-          "createdAt": "2023-05-12T13:58:11.223Z",
-          "updatedAt": "2023-05-12T13:58:11.223Z",
+          "url": "website_icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/website_icon.png",
+          "createdAt": "2023-06-21T07:46:28.843Z",
+          "updatedAt": "2023-06-21T07:46:28.843Z",
           "__v": 0,
-          "uri": "HMB_Cheque_Icon.png"
+          "uri": "website_icon.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4115,12 +4195,10 @@
           "uri": "PD_TrustedDevice_Icon.png"
         },
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-        "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
+        "topToTopOf": "QUGMA3D3lmtgy9a6cWN9Q",
         "layout_marginLeft": 20,
-        "layout_marginTop": 100,
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0,
-        "id": "isHEKJJYFd6cO-AN_WFDf"
+        "layout_marginTop": 10,
+        "id": "URb4ncZ1E6ZN69YUd_lKf"
       },
       "contentType": 2
     },
@@ -4134,7 +4212,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-0",
+    "path": "0-0",
     "edit": true,
     "events": [],
     "subType": "component",
@@ -4153,17 +4231,16 @@
         "layout_width": "wrap_content",
         "layout_height": "40",
         "textColor": "#000000",
-        "text": "Website",
+        "text": "Websitee",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
         "topToTopOf": "e_PKgokwMhN_d-P1hSRN0",
-        "layout_marginLeft": 60,
+        "layout_marginLeft": 80,
         "layout_marginTop": 60,
         "textStyle": "bold",
-        "textAlignment": "left",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
+        "textAlignment": "left"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.0.contactType"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4175,8 +4252,15 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "1-1",
+    "events": [
+      {
+        "triggerId": "3pm-3piY6m2Ec897GTkA8",
+        "triggerName": "HMB_ContactUS_Filter_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-1",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4194,17 +4278,15 @@
         "layout_width": "wrap_content",
         "layout_height": "38",
         "textColor": "#000000",
-        "text": "https://www.habibmetro.com/",
+        "text": "https://www.habibmetro.com//",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "QUGMA3D3lmtgy9a6cWN9Q",
         "topToBottomOf": "QUGMA3D3lmtgy9a6cWN9Q",
-        "layout_marginLeft": 0,
-        "layout_marginTop": 10,
+        "layout_marginTop": 6,
         "textStyle": "regular",
-        "textAlignment": "left",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
+        "textAlignment": "left"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.0.contactDetails1"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4217,7 +4299,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "1-2",
+    "path": "0-2",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4234,7 +4316,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -4242,8 +4323,7 @@
         "topToBottomOf": "_AZnWfU3UjkWVvEbDQDa3",
         "layout_marginTop": 30,
         "layout_marginRight": 20,
-        "layout_marginLeft": 20,
-        "layout_marginBottom": 0
+        "layout_marginLeft": 20
       }
     },
     "icon": "FaTabletAlt",
@@ -4271,25 +4351,25 @@
     "attributes": {
       "name": "Contact_Email_Icon",
       "layoutProperties": {
-        "layout_width": "35",
-        "layout_height": "40",
+        "layout_width": "30",
+        "layout_height": "35",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45f34e35ca4a482aba3b",
-          "name": "HMB_Cheque_Icon.png",
+          "_id": "6492aada69bc7727a874765b",
+          "name": "email.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "isHEKJJYFd6cO-AN_WFDf",
+          "id": "tP3qvyW61RFYqmua8BDYX",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Cheque_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-          "createdAt": "2023-05-12T13:58:11.223Z",
-          "updatedAt": "2023-05-12T13:58:11.223Z",
+          "url": "email.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/email.png",
+          "createdAt": "2023-06-21T07:46:34.222Z",
+          "updatedAt": "2023-06-21T07:46:34.222Z",
           "__v": 0,
-          "uri": "HMB_Cheque_Icon.png"
+          "uri": "email.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4309,12 +4389,10 @@
           "uri": "PD_TrustedDevice_Icon.png"
         },
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-        "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
         "layout_marginLeft": 20,
-        "layout_marginTop": 50,
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0,
-        "id": "isHEKJJYFd6cO-AN_WFDf"
+        "layout_marginTop": 7,
+        "id": "tP3qvyW61RFYqmua8BDYX",
+        "topToTopOf": "z546zFsDOQmPAsYx_vyiJ"
       },
       "contentType": 2
     },
@@ -4328,7 +4406,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-4",
+    "path": "0-4",
     "edit": true,
     "events": [],
     "subType": "component",
@@ -4347,17 +4425,16 @@
         "layout_width": "wrap_content",
         "layout_height": "40",
         "textColor": "#000000",
-        "text": "Email",
+        "text": "Emaill",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
         "topToBottomOf": "cCT9Nh-T9NXpHUbP0PqQU",
-        "layout_marginLeft": 60,
+        "layout_marginLeft": 80,
         "layout_marginTop": 10,
         "textStyle": "bold",
-        "textAlignment": "left",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
+        "textAlignment": "left"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.1.contactType"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4370,7 +4447,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "1-5",
+    "path": "0-5",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4388,17 +4465,15 @@
         "layout_width": "wrap_content",
         "layout_height": "40",
         "textColor": "#000000",
-        "text": "complaints@habibmetro.com",
+        "text": "complaints@habibmetro.comm",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "z546zFsDOQmPAsYx_vyiJ",
         "topToBottomOf": "z546zFsDOQmPAsYx_vyiJ",
-        "layout_marginLeft": 0,
-        "layout_marginTop": 10,
+        "layout_marginTop": 6,
         "textStyle": "regular",
-        "textAlignment": "left",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
+        "textAlignment": "left"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.1.contactDetails1"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4411,7 +4486,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "1-6",
+    "path": "0-6",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4428,7 +4503,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -4436,8 +4510,7 @@
         "topToBottomOf": "ukr_EPYfnn0XkifyfeXDQ",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        "layout_marginTop": 30,
-        "layout_marginBottom": 0
+        "layout_marginTop": 30
       }
     },
     "icon": "FaTabletAlt",
@@ -4465,25 +4538,25 @@
     "attributes": {
       "name": "Contact_Icon",
       "layoutProperties": {
-        "layout_width": "35",
-        "layout_height": "40",
+        "layout_width": "45",
+        "layout_height": "50",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45f34e35ca4a482aba3b",
-          "name": "HMB_Cheque_Icon.png",
+          "_id": "6492aadf69bc7727a874766e",
+          "name": "telephone.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "isHEKJJYFd6cO-AN_WFDf",
+          "id": "r0C3Ezrvwi72jO-6_0BNe",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Cheque_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Cheque_Icon.png",
-          "createdAt": "2023-05-12T13:58:11.223Z",
-          "updatedAt": "2023-05-12T13:58:11.223Z",
+          "url": "telephone.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/telephone.png",
+          "createdAt": "2023-06-21T07:46:39.939Z",
+          "updatedAt": "2023-06-21T07:46:39.939Z",
           "__v": 0,
-          "uri": "HMB_Cheque_Icon.png"
+          "uri": "telephone.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4503,12 +4576,10 @@
           "uri": "PD_TrustedDevice_Icon.png"
         },
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
-        "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
-        "layout_marginTop": 50,
+        "layout_marginTop": 2,
         "layout_marginLeft": 20,
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0,
-        "id": "isHEKJJYFd6cO-AN_WFDf"
+        "id": "r0C3Ezrvwi72jO-6_0BNe",
+        "topToTopOf": "PK1b6UDGUDW7O97VM3EG-"
       },
       "contentType": 2
     },
@@ -4522,7 +4593,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-8",
+    "path": "0-8",
     "edit": true,
     "events": [],
     "subType": "component",
@@ -4541,17 +4612,16 @@
         "layout_width": "wrap_content",
         "layout_height": "40",
         "textColor": "#000000",
-        "text": "Contact",
+        "text": "Contactt",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
         "topToBottomOf": "pG8k7Vs_BmF0R7_dUO4YC",
         "layout_marginTop": 10,
-        "layout_marginLeft": 60,
+        "layout_marginLeft": 80,
         "textAlignment": "left",
-        "textStyle": "bold",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0
-      }
+        "textStyle": "bold"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.2.contactType"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4564,7 +4634,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "1-9",
+    "path": "0-9",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4586,13 +4656,11 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "PK1b6UDGUDW7O97VM3EG-",
         "topToBottomOf": "PK1b6UDGUDW7O97VM3EG-",
-        "layout_marginTop": 10,
+        "layout_marginTop": 6,
         "textAlignment": "left",
-        "textStyle": "regular",
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0,
-        "layout_marginLeft": 0
-      }
+        "textStyle": "regular"
+      },
+      "bindingKey": "contactFilterData.0.contactDetails.2.contactDetails1"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4604,8 +4672,15 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "1-10",
+    "events": [
+      {
+        "triggerId": "oVlXjKnwj9szUKTpRMJrN",
+        "triggerName": "Contact_BanlCall_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-10",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4622,7 +4697,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "e_PKgokwMhN_d-P1hSRN0",
@@ -4662,20 +4736,20 @@
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45b94e35ca4a482ab9e7",
-          "name": "HMB_Transfer_Icon.png",
+          "_id": "6492aac069bc7727a874760f",
+          "name": "youtube_icon.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "N80KklphZMwFr9rU9XqKE",
+          "id": "IDlHEscsciCXg5nxzzkXE",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Transfer_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-          "createdAt": "2023-05-12T13:57:13.394Z",
-          "updatedAt": "2023-05-12T13:57:13.394Z",
+          "url": "youtube_icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/youtube_icon.png",
+          "createdAt": "2023-06-21T07:46:08.981Z",
+          "updatedAt": "2023-06-21T07:46:08.981Z",
           "__v": 0,
-          "uri": "HMB_Transfer_Icon.png"
+          "uri": "youtube_icon.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4698,9 +4772,7 @@
         "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
-        "layout_marginBottom": 0,
-        "layout_marginRight": 0,
-        "id": "N80KklphZMwFr9rU9XqKE"
+        "id": "IDlHEscsciCXg5nxzzkXE"
       },
       "contentType": 2
     },
@@ -4714,9 +4786,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-12",
+    "path": "0-12",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "YmM45M7QV5INRD_q-wp51",
+        "triggerName": "Open_HMB_Contact_Youtube_URL",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4734,20 +4813,20 @@
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45b94e35ca4a482ab9e7",
-          "name": "HMB_Transfer_Icon.png",
+          "_id": "6492aaba69bc7727a87475fc",
+          "name": "linkedin_icon.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "N80KklphZMwFr9rU9XqKE",
+          "id": "kEIp7MG45w5baCxpLgeN2",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Transfer_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-          "createdAt": "2023-05-12T13:57:13.394Z",
-          "updatedAt": "2023-05-12T13:57:13.394Z",
+          "url": "linkedin_icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/linkedin_icon.png",
+          "createdAt": "2023-06-21T07:46:02.655Z",
+          "updatedAt": "2023-06-21T07:46:02.655Z",
           "__v": 0,
-          "uri": "HMB_Transfer_Icon.png"
+          "uri": "linkedin_icon.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4769,10 +4848,8 @@
         "leftToRightOf": "cRG80JepJiixxUHWNvJpQ",
         "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
         "layout_marginTop": 20,
-        "layout_marginRight": 0,
-        "layout_marginLeft": 25,
-        "layout_marginBottom": 0,
-        "id": "N80KklphZMwFr9rU9XqKE"
+        "layout_marginLeft": 35,
+        "id": "kEIp7MG45w5baCxpLgeN2"
       },
       "contentType": 2
     },
@@ -4786,9 +4863,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-13",
+    "path": "0-13",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "184GpV-JwhpePtvpsnTtI",
+        "triggerName": "Open_HMB_Contact_LinkedIn_URL",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4806,20 +4890,20 @@
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45b94e35ca4a482ab9e7",
-          "name": "HMB_Transfer_Icon.png",
+          "_id": "6492aac869bc7727a8747622",
+          "name": "instagram.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "N80KklphZMwFr9rU9XqKE",
+          "id": "Ppk_zek1lfJIy_6EuTdyS",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Transfer_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-          "createdAt": "2023-05-12T13:57:13.394Z",
-          "updatedAt": "2023-05-12T13:57:13.394Z",
+          "url": "instagram.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/instagram.png",
+          "createdAt": "2023-06-21T07:46:16.167Z",
+          "updatedAt": "2023-06-21T07:46:16.167Z",
           "__v": 0,
-          "uri": "HMB_Transfer_Icon.png"
+          "uri": "instagram.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4840,9 +4924,9 @@
         },
         "leftToRightOf": "AvuaqDb1TsGKaikRcOD6c",
         "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-        "layout_marginLeft": 25,
+        "layout_marginLeft": 35,
         "layout_marginTop": 20,
-        "id": "N80KklphZMwFr9rU9XqKE"
+        "id": "Ppk_zek1lfJIy_6EuTdyS"
       },
       "contentType": 2
     },
@@ -4856,9 +4940,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-14",
+    "path": "0-14",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "-2EtBhFnIJ1CaGFTUbBPk",
+        "triggerName": "Open_HMB_Contact_Insta_URL",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4876,20 +4967,20 @@
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
-          "_id": "645e45b94e35ca4a482ab9e7",
-          "name": "HMB_Transfer_Icon.png",
+          "_id": "6492aace69bc7727a8747635",
+          "name": "twitter_icon.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "N80KklphZMwFr9rU9XqKE",
+          "id": "PFUBqwCK4CI9iXEO72Wyv",
           "gitBranchName": "master",
           "folderType": "xxxhdpi",
           "platform": "Android",
-          "url": "HMB_Transfer_Icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Transfer_Icon.png",
-          "createdAt": "2023-05-12T13:57:13.394Z",
-          "updatedAt": "2023-05-12T13:57:13.394Z",
+          "url": "twitter_icon.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/twitter_icon.png",
+          "createdAt": "2023-06-21T07:46:22.138Z",
+          "updatedAt": "2023-06-21T07:46:22.138Z",
           "__v": 0,
-          "uri": "HMB_Transfer_Icon.png"
+          "uri": "twitter_icon.png"
         },
         "srcTemp": {
           "createdBy": "shaikhahmedraza",
@@ -4910,9 +5001,9 @@
         },
         "leftToRightOf": "8KX1fbsJ5IE8Lma6GX7U4",
         "topToBottomOf": "J6X2-Nz9JZvACuk9fVIHx",
-        "layout_marginLeft": 25,
+        "layout_marginLeft": 35,
         "layout_marginTop": 20,
-        "id": "N80KklphZMwFr9rU9XqKE"
+        "id": "PFUBqwCK4CI9iXEO72Wyv"
       },
       "contentType": 2
     },
@@ -4926,9 +5017,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "2-15",
+    "path": "0-15",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "R3tPS8HFtl_QBdCFvjjof",
+        "triggerName": "Open_HMB_Contact_Twitter_URL",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

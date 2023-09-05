@@ -1,0 +1,64 @@
+{
+  "id": "rZ_OGL6wTp0jscUSRrK8N",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetAccountDetails_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "requestDataType": "byJSON",
+          "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+          "requestBody": {
+            "accNo": "$hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber",
+            "accountId": "$hmb_getAllAccounts_data.content.casaAccounts.0.accountId",
+            "accountNumber": "$hmb_getAllAccounts_dataItems.accountNumber",
+            "amount": "$ft_amount",
+            "bankIMD": "$hmb_getAllAccounts_dataItems.bankIMD",
+            "bankName": null,
+            "fromAccount": null,
+            "purposeCode": "",
+            "purposeDetail": "$ft_purpose.value",
+            "rda": false,
+            "swiftCode": null,
+            "toAccount": null
+          },
+          "responseStateKey": "hmb_getAccountDetails",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_getAccountDetails.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
+              "triggerId": "WfoRghy24XDRvZ_8GUi1a"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.7z3dkrri4p8bq_8qj7EZxVyWItH-SpC1",
+  "_id": "RInj9ZZouHlxMOPq7FhSW",
+  "updatedAt": "8/31/2023",
+  "createdAt": "8/31/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetAccountDetails_Api_Trig"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "vjYCryHp7Nmwse5BemFnb",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_FU_PerformAction",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "$fu_idtype.value",
+          "actions": [
+            {
+              "triggerId": "gcVrxyXFgmHtN5tNYnhvW",
+              "triggerName": "FU_Cnic_Chain_Trig",
+              "value": "CNIC",
+              "type": "string"
+            },
+            {
+              "triggerId": "oNoPZFNC2dSIWO1ftcgkr",
+              "triggerName": "FU_Passport_Chain_Trig",
+              "value": "Passport",
+              "type": "string"
+            }
+          ],
+          "defaultTriggerId": ["RFV2LZD59WsO5UzQzeT1a"],
+          "defaultTrigger": [
+            {
+              "triggerId": "RFV2LZD59WsO5UzQzeT1a",
+              "triggerName": "FU_PassportCnic_Default_AllHide"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.xgdktyzsyxoV8Odi_3qf-NP7_mq2TXpQ",
+  "_id": "pdVjK0EuMb4NJ1G0nXC1W",
+  "updatedAt": "9/5/2023",
+  "createdAt": "9/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_FU_PerformAction"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "XRQk-PqAiLPc2ru4Hemyu",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Register_Failure_Error_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "17",
+        "attributes": {
+          "serviceName": "Show alert",
+          "title": "Alert!",
+          "text": "$register_response.message",
+          "buttons": [
+            {
+              "buttonText": "Ok",
+              "triggerId": "QuW75lFVr4xa6FB_9aL7P",
+              "triggerName": "Navigate_To_AboutUs_Screen"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.uurdheslukacpdcrhJd3B7EtAUZCcvgt",
+  "_id": "QrVVRXBvumkIbMWnV9pgW",
+  "updatedAt": "8/18/2023",
+  "createdAt": "8/18/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Register_Failure_Error_Trig"
+}

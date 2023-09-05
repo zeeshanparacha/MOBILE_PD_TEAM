@@ -19,19 +19,9 @@
       "componentId": [
         "1cdnLXCqzheykyuMO9tp9",
         "GMdsxuj-I41Q31HVJ-F5y",
-        "MVka-slvkEbe6oKzOc67Y",
-        "fp6PIx1cVlSeerNtRushL",
         "G3IQza4xIkHlB-S_a4l2s",
-        "XiWu6_d_TnwSv6QgW598C",
-        "6PiWS-DDo833_QOuJhcFk",
-        "vKkUiW5Bojd3iXOCt_MSX",
         "TRouXVN-PjhDhYwT_FsJb",
-        "nfuLTczZ_JrPyoVVUIRV-",
         "nKBKsVphLHVeXjSAwPWP9",
-        "-pOietpS32d29JQANWuyV",
-        "wD8OW6rAuX-gz-5OiI9Ii",
-        "w4rQh9obGhvZiFpaXEMWt",
-        "LFg2EF3F9c0_Dn2KYhuWp",
         "BmXu3iPjFSUh0RrQjsX8u",
         "eroJBOkLlwv0Pgri5LkCm"
       ]
@@ -39,8 +29,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/26/2023",
-    "createdAt": "5/26/2023",
+    "updatedAt": "8/28/2023",
+    "createdAt": "8/28/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -55,9 +45,8 @@
           "name": "Location_Top_Green_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "150",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
@@ -141,7 +130,6 @@
             "name": "View",
             "layout_width": "3",
             "layout_height": "20",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -164,122 +152,6 @@
         "path": "0-1"
       },
       {
-        "id": "MVka-slvkEbe6oKzOc67Y",
-        "status": "ACTIVE",
-        "name": "Location_Branch_Text",
-        "attributes": {
-          "name": "Location_Branch_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Branch",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "T3E_PgH6BVIyuLh2_Z21d",
-            "triggerName": "Prelogin_Location_Branch_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "8f96u73owuCgcPEmZAxEI",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "gwjBaMV8L4Za-xWVKOrXm",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["8f96u73owuCgcPEmZAxEI", "gwjBaMV8L4Za-xWVKOrXm"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-2",
-        "edit": true
-      },
-      {
-        "id": "fp6PIx1cVlSeerNtRushL",
-        "status": "ACTIVE",
-        "name": "Location_Atm_Text",
-        "attributes": {
-          "name": "Location_Atm_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "ATM",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "D_TPthbDWIFfrUW4zKZEA",
-            "triggerName": "Prelogin_Location_Atm_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "NLIMOOnfd-pLs0D-qXLxb",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "IfkjtQXdXTa-N4r_fWv82",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["NLIMOOnfd-pLs0D-qXLxb", "IfkjtQXdXTa-N4r_fWv82"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-3",
-        "edit": true
-      },
-      {
         "id": "G3IQza4xIkHlB-S_a4l2s",
         "status": "ACTIVE",
         "name": "Location_Branch_Highlighted_Line",
@@ -289,7 +161,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -311,134 +182,6 @@
         "path": "0-4"
       },
       {
-        "id": "XiWu6_d_TnwSv6QgW598C",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_Btn_View",
-        "attributes": {
-          "name": "Location_CityLocation_Btn_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "110",
-            "layout_height": "40",
-            "borderWidth": 0,
-            "cornerRadius": [30, 30, 30, 30],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginTop": 30
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-5"
-      },
-      {
-        "id": "6PiWS-DDo833_QOuJhcFk",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_DataText",
-        "attributes": {
-          "name": "Location_CityLocation_DataText",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Karachi",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "textStyle": "regular"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-6",
-        "edit": true
-      },
-      {
-        "id": "vKkUiW5Bojd3iXOCt_MSX",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "100",
-            "layout_height": "30",
-            "borderWidth": 0,
-            "cornerRadius": [10, 10, 10, 10],
-            "background": "#022E0C",
-            "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [
-          {
-            "triggerId": "7VTsAFiXUyyxFnCBXESr-",
-            "triggerName": "Prelogin_Location_Vlist_DS_Trig",
-            "serviceType": "DATASTORAGE",
-            "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "location_vlist_data",
-              "value": [
-                {
-                  "location_vlist_titlelocation_text": "Main Branch Karachi",
-                  "location_vlist_fulllocation_text": "Ground Floor, Spencers Building, II Chundrigar Road",
-                  "location_vlist_distance_text": "29 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                },
-                {
-                  "location_vlist_titlelocation_text": "HBZ Plaza Branch",
-                  "location_vlist_fulllocation_text": "H.B.Z Plaza, IIChundrigar Road",
-                  "location_vlist_distance_text": "39 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                }
-              ],
-              "contentType": "array",
-              "totalcolumns": "4"
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
-          }
-        ],
-        "path": "0-7",
-        "edit": true
-      },
-      {
         "id": "TRouXVN-PjhDhYwT_FsJb",
         "type": "VLIST",
         "name": "Prelogin_Location_List_Vlist",
@@ -452,19 +195,20 @@
             "rows": [{ "id": "1vIwhYktdyCJazVPmE2kg" }],
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf"
+            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
+            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
+            "layout_marginTop": 60
           },
           "bindingKey": "location_vlist_data",
           "componentId": []
         },
         "events": [],
-        "path": "0-8",
+        "path": "0-4",
         "gridProps": [
           {
             "id": "1vIwhYktdyCJazVPmE2kg",
             "name": "List item 0",
-            "path": "0-8-0",
+            "path": "0-4-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
@@ -478,7 +222,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -621,16 +364,12 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                     "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                     "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 0,
-                    "layout_marginRight": 0,
-                    "layout_marginBottom": 0
+                    "layout_marginLeft": 10
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -865,38 +604,6 @@
         "edit": true
       },
       {
-        "id": "nfuLTczZ_JrPyoVVUIRV-",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_White_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_White_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "15",
-            "layout_height": "15",
-            "borderWidth": 0,
-            "cornerRadius": [5, 5, 5, 5],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginLeft": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-9"
-      },
-      {
         "id": "nKBKsVphLHVeXjSAwPWP9",
         "status": "ACTIVE",
         "name": "Prelogin_Location_NearBy_View_NearBy_Text",
@@ -946,199 +653,6 @@
         "edit": true
       },
       {
-        "id": "-pOietpS32d29JQANWuyV",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "10",
-            "layout_height": "10",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b046360501c687c751e7a",
-              "name": "down_white_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "1xdiLKzAllgZtoB2rGoiA",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_white_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_white_icon.png",
-              "createdAt": "2023-05-22T05:57:55.536Z",
-              "updatedAt": "2023-05-22T05:57:55.536Z",
-              "__v": 0,
-              "uri": "down_white_icon.png"
-            },
-            "rightToRightOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginRight": 9,
-            "id": "1xdiLKzAllgZtoB2rGoiA"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-11"
-      },
-      {
-        "id": "wD8OW6rAuX-gz-5OiI9Ii",
-        "status": "ACTIVE",
-        "name": "Location_BackBtn_Icon",
-        "attributes": {
-          "name": "Location_BackBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2ea860501c687c75259d",
-              "name": "location_back_btn.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "kbEs-j3rYx3jfCwuMCZF0",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_back_btn.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
-              "createdAt": "2023-05-22T08:58:16.339Z",
-              "updatedAt": "2023-05-22T08:58:16.339Z",
-              "__v": 0,
-              "uri": "location_back_btn.png"
-            },
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 0,
-            "id": "kbEs-j3rYx3jfCwuMCZF0",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-12",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "w4rQh9obGhvZiFpaXEMWt",
-        "status": "ACTIVE",
-        "name": "Location_Search_Icon",
-        "attributes": {
-          "name": "Location_Search_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2eb260501c687c7525b0",
-              "name": "location_search_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "R4JmQ5IsSljLFcYC2bBXp",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_search_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_search_icon.png",
-              "createdAt": "2023-05-22T08:58:26.492Z",
-              "updatedAt": "2023-05-22T08:58:26.492Z",
-              "__v": 0,
-              "uri": "location_search_icon.png"
-            },
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 20,
-            "id": "R4JmQ5IsSljLFcYC2bBXp"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-13",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "LFg2EF3F9c0_Dn2KYhuWp",
-        "status": "ACTIVE",
-        "name": "Location_City_View_Down_Arrow",
-        "attributes": {
-          "name": "Location_City_View_Down_Arrow",
-          "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646c592760501c687c753cbe",
-              "name": "down_btn_black.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "3p0AHQ6CswRJ7QJ_3jeAf",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_btn_black.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_btn_black.png",
-              "createdAt": "2023-05-23T06:11:51.433Z",
-              "updatedAt": "2023-05-23T06:11:51.433Z",
-              "__v": 0,
-              "uri": "down_btn_black.png"
-            },
-            "rightToRightOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 10,
-            "id": "3p0AHQ6CswRJ7QJ_3jeAf"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-14"
-      },
-      {
         "id": "BmXu3iPjFSUh0RrQjsX8u",
         "type": "VLIST",
         "name": "Prelogin_Location_Atm_List_Vlist",
@@ -1147,8 +661,8 @@
           "name": "Prelogin_Location_Atm_List_Vlist",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
-            "layout_height": "match_parent",
-            "layout_width": "match_parent",
+            "layout_height": "match_constraint",
+            "layout_width": "match_constraint",
             "rows": [
               {
                 "id": "gYuPQMWJW0f8WslGXAY-X",
@@ -1166,7 +680,6 @@
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
             "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
             "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginTop": 0,
             "visibility": false
           },
           "bindingKey": "location_atm_vlist_data",
@@ -1192,7 +705,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -1335,7 +847,6 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -1591,7 +1102,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
@@ -1654,9 +1164,8 @@
               "name": "Location_Top_Green_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "150",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#022E0C",
                 "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
@@ -1740,7 +1249,6 @@
                 "name": "View",
                 "layout_width": "3",
                 "layout_height": "20",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#022E0C",
                 "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -1763,128 +1271,6 @@
             "path": "0-1"
           },
           {
-            "id": "MVka-slvkEbe6oKzOc67Y",
-            "status": "ACTIVE",
-            "name": "Location_Branch_Text",
-            "attributes": {
-              "name": "Location_Branch_Text",
-              "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Branch",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-                "rightToRightOf": "GMdsxuj-I41Q31HVJ-F5y",
-                "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-                "layout_marginBottom": 20,
-                "textStyle": "regular",
-                "textAlignment": "center"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "T3E_PgH6BVIyuLh2_Z21d",
-                "triggerName": "Prelogin_Location_Branch_Onclick_Chain_Trig",
-                "serviceType": "UI",
-                "attributes": {
-                  "serviceName": "Execute chain trigger",
-                  "triggers": [
-                    {
-                      "triggerId": "8f96u73owuCgcPEmZAxEI",
-                      "triggerName": "Prelogin_Location_Branch_Onclick_AllHide"
-                    },
-                    {
-                      "triggerId": "gwjBaMV8L4Za-xWVKOrXm",
-                      "triggerName": "Prelogin_Location_Branch_Onclick_AllShow"
-                    }
-                  ],
-                  "triggerId": [
-                    "8f96u73owuCgcPEmZAxEI",
-                    "gwjBaMV8L4Za-xWVKOrXm"
-                  ]
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
-            "path": "0-2",
-            "edit": true
-          },
-          {
-            "id": "fp6PIx1cVlSeerNtRushL",
-            "status": "ACTIVE",
-            "name": "Location_Atm_Text",
-            "attributes": {
-              "name": "Location_Atm_Text",
-              "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "ATM",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "GMdsxuj-I41Q31HVJ-F5y",
-                "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-                "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-                "layout_marginBottom": 20,
-                "textStyle": "regular",
-                "textAlignment": "center"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "D_TPthbDWIFfrUW4zKZEA",
-                "triggerName": "Prelogin_Location_Atm_Onclick_Chain_Trig",
-                "serviceType": "UI",
-                "attributes": {
-                  "serviceName": "Execute chain trigger",
-                  "triggers": [
-                    {
-                      "triggerId": "NLIMOOnfd-pLs0D-qXLxb",
-                      "triggerName": "Prelogin_Location_Atm_Onclick_AllHide"
-                    },
-                    {
-                      "triggerId": "IfkjtQXdXTa-N4r_fWv82",
-                      "triggerName": "Prelogin_Location_Atm_Onclick_AllShow"
-                    }
-                  ],
-                  "triggerId": [
-                    "NLIMOOnfd-pLs0D-qXLxb",
-                    "IfkjtQXdXTa-N4r_fWv82"
-                  ]
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
-            "path": "0-3",
-            "edit": true
-          },
-          {
             "id": "G3IQza4xIkHlB-S_a4l2s",
             "status": "ACTIVE",
             "name": "Location_Branch_Highlighted_Line",
@@ -1894,7 +1280,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "5",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -1916,134 +1301,6 @@
             "path": "0-4"
           },
           {
-            "id": "XiWu6_d_TnwSv6QgW598C",
-            "status": "ACTIVE",
-            "name": "Location_CityLocation_Btn_View",
-            "attributes": {
-              "name": "Location_CityLocation_Btn_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "110",
-                "layout_height": "40",
-                "borderWidth": 0,
-                "cornerRadius": [30, 30, 30, 30],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-                "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-                "topToTopOf": "1cdnLXCqzheykyuMO9tp9",
-                "layout_marginTop": 30
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "VIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-5"
-          },
-          {
-            "id": "6PiWS-DDo833_QOuJhcFk",
-            "status": "ACTIVE",
-            "name": "Location_CityLocation_DataText",
-            "attributes": {
-              "name": "Location_CityLocation_DataText",
-              "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Karachi",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "XiWu6_d_TnwSv6QgW598C",
-                "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-                "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-                "layout_marginLeft": 20,
-                "textStyle": "regular"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-6",
-            "edit": true
-          },
-          {
-            "id": "vKkUiW5Bojd3iXOCt_MSX",
-            "status": "ACTIVE",
-            "name": "Prelogin_Location_NearBy_View",
-            "attributes": {
-              "name": "Prelogin_Location_NearBy_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "100",
-                "layout_height": "30",
-                "borderWidth": 0,
-                "cornerRadius": [10, 10, 10, 10],
-                "background": "#022E0C",
-                "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
-                "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 10
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "VIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [
-              {
-                "triggerId": "7VTsAFiXUyyxFnCBXESr-",
-                "triggerName": "Prelogin_Location_Vlist_DS_Trig",
-                "serviceType": "DATASTORAGE",
-                "attributes": {
-                  "serviceName": "Update value against binding key",
-                  "bindingKey": "location_vlist_data",
-                  "value": [
-                    {
-                      "location_vlist_titlelocation_text": "Main Branch Karachi",
-                      "location_vlist_fulllocation_text": "Ground Floor, Spencers Building, II Chundrigar Road",
-                      "location_vlist_distance_text": "29 m",
-                      "location_vlist_branchstatus_text": "Open Now"
-                    },
-                    {
-                      "location_vlist_titlelocation_text": "HBZ Plaza Branch",
-                      "location_vlist_fulllocation_text": "H.B.Z Plaza, IIChundrigar Road",
-                      "location_vlist_distance_text": "39 m",
-                      "location_vlist_branchstatus_text": "Open Now"
-                    }
-                  ],
-                  "contentType": "array",
-                  "totalcolumns": "4"
-                },
-                "type": "ONLOAD",
-                "name": "On Load"
-              }
-            ],
-            "path": "0-7",
-            "edit": true
-          },
-          {
             "id": "TRouXVN-PjhDhYwT_FsJb",
             "type": "VLIST",
             "name": "Prelogin_Location_List_Vlist",
@@ -2057,19 +1314,20 @@
                 "rows": [{ "id": "1vIwhYktdyCJazVPmE2kg" }],
                 "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
                 "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
-                "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf"
+                "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
+                "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
+                "layout_marginTop": 60
               },
               "bindingKey": "location_vlist_data",
               "componentId": []
             },
             "events": [],
-            "path": "0-8",
+            "path": "0-4",
             "gridProps": [
               {
                 "id": "1vIwhYktdyCJazVPmE2kg",
                 "name": "List item 0",
-                "path": "0-8-0",
+                "path": "0-4-0",
                 "type": "VLISTITEM",
                 "updatedTimestamp": "0000-00-00T00:00:00+00:00",
                 "gridProps": [
@@ -2083,7 +1341,6 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -2226,16 +1483,12 @@
                         "name": "View",
                         "layout_width": "60",
                         "layout_height": "20",
-                        "borderWidth": 0,
                         "cornerRadius": [5, 5, 5, 5],
                         "background": "#1D6131",
                         "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                         "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                         "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                        "layout_marginLeft": 10,
-                        "layout_marginTop": 0,
-                        "layout_marginRight": 0,
-                        "layout_marginBottom": 0
+                        "layout_marginLeft": 10
                       }
                     },
                     "icon": "FaTabletAlt",
@@ -2476,38 +1729,6 @@
             "edit": true
           },
           {
-            "id": "nfuLTczZ_JrPyoVVUIRV-",
-            "status": "ACTIVE",
-            "name": "Prelogin_Location_NearBy_View_White_View",
-            "attributes": {
-              "name": "Prelogin_Location_NearBy_View_White_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "15",
-                "layout_height": "15",
-                "borderWidth": 0,
-                "cornerRadius": [5, 5, 5, 5],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "layout_marginLeft": 10
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "VIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-9"
-          },
-          {
             "id": "nKBKsVphLHVeXjSAwPWP9",
             "status": "ACTIVE",
             "name": "Prelogin_Location_NearBy_View_NearBy_Text",
@@ -2557,199 +1778,6 @@
             "edit": true
           },
           {
-            "id": "-pOietpS32d29JQANWuyV",
-            "status": "ACTIVE",
-            "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-            "attributes": {
-              "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-              "layoutProperties": {
-                "layout_width": "10",
-                "layout_height": "10",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "646b046360501c687c751e7a",
-                  "name": "down_white_icon.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "1xdiLKzAllgZtoB2rGoiA",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "down_white_icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/down_white_icon.png",
-                  "createdAt": "2023-05-22T05:57:55.536Z",
-                  "updatedAt": "2023-05-22T05:57:55.536Z",
-                  "__v": 0,
-                  "uri": "down_white_icon.png"
-                },
-                "rightToRightOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "layout_marginRight": 9,
-                "id": "1xdiLKzAllgZtoB2rGoiA"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "IMAGEVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-11"
-          },
-          {
-            "id": "wD8OW6rAuX-gz-5OiI9Ii",
-            "status": "ACTIVE",
-            "name": "Location_BackBtn_Icon",
-            "attributes": {
-              "name": "Location_BackBtn_Icon",
-              "layoutProperties": {
-                "layout_width": "40",
-                "layout_height": "40",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "646b2ea860501c687c75259d",
-                  "name": "location_back_btn.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "kbEs-j3rYx3jfCwuMCZF0",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "location_back_btn.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
-                  "createdAt": "2023-05-22T08:58:16.339Z",
-                  "updatedAt": "2023-05-22T08:58:16.339Z",
-                  "__v": 0,
-                  "uri": "location_back_btn.png"
-                },
-                "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-                "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 0,
-                "id": "kbEs-j3rYx3jfCwuMCZF0",
-                "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "IMAGEVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-12",
-            "edit": true,
-            "events": []
-          },
-          {
-            "id": "w4rQh9obGhvZiFpaXEMWt",
-            "status": "ACTIVE",
-            "name": "Location_Search_Icon",
-            "attributes": {
-              "name": "Location_Search_Icon",
-              "layoutProperties": {
-                "layout_width": "40",
-                "layout_height": "40",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "646b2eb260501c687c7525b0",
-                  "name": "location_search_icon.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "R4JmQ5IsSljLFcYC2bBXp",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "location_search_icon.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/location_search_icon.png",
-                  "createdAt": "2023-05-22T08:58:26.492Z",
-                  "updatedAt": "2023-05-22T08:58:26.492Z",
-                  "__v": 0,
-                  "uri": "location_search_icon.png"
-                },
-                "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-                "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-                "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-                "layout_marginRight": 20,
-                "id": "R4JmQ5IsSljLFcYC2bBXp"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "IMAGEVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-13",
-            "edit": true,
-            "events": []
-          },
-          {
-            "id": "LFg2EF3F9c0_Dn2KYhuWp",
-            "status": "ACTIVE",
-            "name": "Location_City_View_Down_Arrow",
-            "attributes": {
-              "name": "Location_City_View_Down_Arrow",
-              "layoutProperties": {
-                "layout_width": "20",
-                "layout_height": "20",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "646c592760501c687c753cbe",
-                  "name": "down_btn_black.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "3p0AHQ6CswRJ7QJ_3jeAf",
-                  "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "down_btn_black.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/down_btn_black.png",
-                  "createdAt": "2023-05-23T06:11:51.433Z",
-                  "updatedAt": "2023-05-23T06:11:51.433Z",
-                  "__v": 0,
-                  "uri": "down_btn_black.png"
-                },
-                "rightToRightOf": "XiWu6_d_TnwSv6QgW598C",
-                "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-                "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-                "layout_marginRight": 10,
-                "id": "3p0AHQ6CswRJ7QJ_3jeAf"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "IMAGEVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-14"
-          },
-          {
             "id": "BmXu3iPjFSUh0RrQjsX8u",
             "type": "VLIST",
             "name": "Prelogin_Location_Atm_List_Vlist",
@@ -2758,8 +1786,8 @@
               "name": "Prelogin_Location_Atm_List_Vlist",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
-                "layout_height": "match_parent",
-                "layout_width": "match_parent",
+                "layout_height": "match_constraint",
+                "layout_width": "match_constraint",
                 "rows": [
                   {
                     "id": "gYuPQMWJW0f8WslGXAY-X",
@@ -2777,7 +1805,6 @@
                 "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
                 "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
                 "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-                "layout_marginTop": 0,
                 "visibility": false
               },
               "bindingKey": "location_atm_vlist_data",
@@ -2803,7 +1830,6 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -2946,7 +1972,6 @@
                         "name": "View",
                         "layout_width": "60",
                         "layout_height": "20",
-                        "borderWidth": 0,
                         "cornerRadius": [5, 5, 5, 5],
                         "background": "#1D6131",
                         "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -3208,7 +2233,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "5",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
@@ -3248,9 +2272,8 @@
       "name": "Location_Top_Green_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "150",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#022E0C",
         "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
@@ -3293,7 +2316,6 @@
         "name": "View",
         "layout_width": "3",
         "layout_height": "20",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#022E0C",
         "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -3320,100 +2342,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "MVka-slvkEbe6oKzOc67Y",
-    "status": "ACTIVE",
-    "name": "Location_Branch_Text",
-    "attributes": {
-      "name": "Location_Branch_Text",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#ffffff",
-        "text": "Branch",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-        "rightToRightOf": "GMdsxuj-I41Q31HVJ-F5y",
-        "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-        "layout_marginBottom": 20,
-        "textStyle": "regular",
-        "textAlignment": "center"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "T3E_PgH6BVIyuLh2_Z21d",
-        "triggerName": "Prelogin_Location_Branch_Onclick_Chain_Trig",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
-    "path": "0-2",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "fp6PIx1cVlSeerNtRushL",
-    "status": "ACTIVE",
-    "name": "Location_Atm_Text",
-    "attributes": {
-      "name": "Location_Atm_Text",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#ffffff",
-        "text": "ATM",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "GMdsxuj-I41Q31HVJ-F5y",
-        "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-        "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-        "layout_marginBottom": 20,
-        "textStyle": "regular",
-        "textAlignment": "center"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "D_TPthbDWIFfrUW4zKZEA",
-        "triggerName": "Prelogin_Location_Atm_Onclick_Chain_Trig",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
-    "path": "0-3",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "G3IQza4xIkHlB-S_a4l2s",
     "status": "ACTIVE",
     "name": "Location_Branch_Highlighted_Line",
@@ -3423,7 +2351,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "5",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -3449,125 +2376,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "XiWu6_d_TnwSv6QgW598C",
-    "status": "ACTIVE",
-    "name": "Location_CityLocation_Btn_View",
-    "attributes": {
-      "name": "Location_CityLocation_Btn_View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "110",
-        "layout_height": "40",
-        "borderWidth": 0,
-        "cornerRadius": [30, 30, 30, 30],
-        "background": "#FFFFFF",
-        "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-        "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-        "topToTopOf": "1cdnLXCqzheykyuMO9tp9",
-        "layout_marginTop": 30
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-5",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "6PiWS-DDo833_QOuJhcFk",
-    "status": "ACTIVE",
-    "name": "Location_CityLocation_DataText",
-    "attributes": {
-      "name": "Location_CityLocation_DataText",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Karachi",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "XiWu6_d_TnwSv6QgW598C",
-        "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-        "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-        "layout_marginLeft": 20,
-        "textStyle": "regular"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-6",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "vKkUiW5Bojd3iXOCt_MSX",
-    "status": "ACTIVE",
-    "name": "Prelogin_Location_NearBy_View",
-    "attributes": {
-      "name": "Prelogin_Location_NearBy_View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "100",
-        "layout_height": "30",
-        "borderWidth": 0,
-        "cornerRadius": [10, 10, 10, 10],
-        "background": "#022E0C",
-        "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
-        "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-        "layout_marginLeft": 20,
-        "layout_marginTop": 10
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [
-      {
-        "triggerId": "7VTsAFiXUyyxFnCBXESr-",
-        "triggerName": "Prelogin_Location_Vlist_DS_Trig",
-        "name": "On Load",
-        "type": "ONLOAD"
-      }
-    ],
-    "path": "0-7",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "TRouXVN-PjhDhYwT_FsJb",
     "type": "VLIST",
     "name": "Prelogin_Location_List_Vlist",
@@ -3581,19 +2389,20 @@
         "rows": [{ "id": "1vIwhYktdyCJazVPmE2kg" }],
         "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
         "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
-        "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf"
+        "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
+        "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
+        "layout_marginTop": 60
       },
       "bindingKey": "location_vlist_data",
       "componentId": ["1vIwhYktdyCJazVPmE2kg"]
     },
     "events": [],
-    "path": "0-8",
+    "path": "0-4",
     "gridProps": [
       {
         "id": "1vIwhYktdyCJazVPmE2kg",
         "name": "List item 0",
-        "path": "0-8-0",
+        "path": "0-4-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
@@ -3607,7 +2416,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -3750,16 +2558,12 @@
                 "name": "View",
                 "layout_width": "60",
                 "layout_height": "20",
-                "borderWidth": 0,
                 "cornerRadius": [5, 5, 5, 5],
                 "background": "#1D6131",
                 "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                 "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                 "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 0,
-                "layout_marginRight": 0,
-                "layout_marginBottom": 0
+                "layout_marginLeft": 10
               }
             },
             "icon": "FaTabletAlt",
@@ -4001,9 +2805,8 @@
           "name": "Location_Top_Green_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "150",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
@@ -4087,7 +2890,6 @@
             "name": "View",
             "layout_width": "3",
             "layout_height": "20",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -4110,122 +2912,6 @@
         "path": "0-1"
       },
       {
-        "id": "MVka-slvkEbe6oKzOc67Y",
-        "status": "ACTIVE",
-        "name": "Location_Branch_Text",
-        "attributes": {
-          "name": "Location_Branch_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Branch",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "T3E_PgH6BVIyuLh2_Z21d",
-            "triggerName": "Prelogin_Location_Branch_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "8f96u73owuCgcPEmZAxEI",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "gwjBaMV8L4Za-xWVKOrXm",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["8f96u73owuCgcPEmZAxEI", "gwjBaMV8L4Za-xWVKOrXm"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-2",
-        "edit": true
-      },
-      {
-        "id": "fp6PIx1cVlSeerNtRushL",
-        "status": "ACTIVE",
-        "name": "Location_Atm_Text",
-        "attributes": {
-          "name": "Location_Atm_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "ATM",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "D_TPthbDWIFfrUW4zKZEA",
-            "triggerName": "Prelogin_Location_Atm_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "NLIMOOnfd-pLs0D-qXLxb",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "IfkjtQXdXTa-N4r_fWv82",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["NLIMOOnfd-pLs0D-qXLxb", "IfkjtQXdXTa-N4r_fWv82"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-3",
-        "edit": true
-      },
-      {
         "id": "G3IQza4xIkHlB-S_a4l2s",
         "status": "ACTIVE",
         "name": "Location_Branch_Highlighted_Line",
@@ -4235,7 +2921,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -4257,134 +2942,6 @@
         "path": "0-4"
       },
       {
-        "id": "XiWu6_d_TnwSv6QgW598C",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_Btn_View",
-        "attributes": {
-          "name": "Location_CityLocation_Btn_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "110",
-            "layout_height": "40",
-            "borderWidth": 0,
-            "cornerRadius": [30, 30, 30, 30],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginTop": 30
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-5"
-      },
-      {
-        "id": "6PiWS-DDo833_QOuJhcFk",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_DataText",
-        "attributes": {
-          "name": "Location_CityLocation_DataText",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Karachi",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "textStyle": "regular"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-6",
-        "edit": true
-      },
-      {
-        "id": "vKkUiW5Bojd3iXOCt_MSX",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "100",
-            "layout_height": "30",
-            "borderWidth": 0,
-            "cornerRadius": [10, 10, 10, 10],
-            "background": "#022E0C",
-            "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [
-          {
-            "triggerId": "7VTsAFiXUyyxFnCBXESr-",
-            "triggerName": "Prelogin_Location_Vlist_DS_Trig",
-            "serviceType": "DATASTORAGE",
-            "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "location_vlist_data",
-              "value": [
-                {
-                  "location_vlist_titlelocation_text": "Main Branch Karachi",
-                  "location_vlist_fulllocation_text": "Ground Floor, Spencers Building, II Chundrigar Road",
-                  "location_vlist_distance_text": "29 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                },
-                {
-                  "location_vlist_titlelocation_text": "HBZ Plaza Branch",
-                  "location_vlist_fulllocation_text": "H.B.Z Plaza, IIChundrigar Road",
-                  "location_vlist_distance_text": "39 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                }
-              ],
-              "contentType": "array",
-              "totalcolumns": "4"
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
-          }
-        ],
-        "path": "0-7",
-        "edit": true
-      },
-      {
         "id": "TRouXVN-PjhDhYwT_FsJb",
         "type": "VLIST",
         "name": "Prelogin_Location_List_Vlist",
@@ -4398,19 +2955,20 @@
             "rows": [{ "id": "1vIwhYktdyCJazVPmE2kg" }],
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf"
+            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
+            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
+            "layout_marginTop": 60
           },
           "bindingKey": "location_vlist_data",
           "componentId": []
         },
         "events": [],
-        "path": "0-8",
+        "path": "0-4",
         "gridProps": [
           {
             "id": "1vIwhYktdyCJazVPmE2kg",
             "name": "List item 0",
-            "path": "0-8-0",
+            "path": "0-4-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
@@ -4424,7 +2982,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -4567,16 +3124,12 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                     "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                     "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 0,
-                    "layout_marginRight": 0,
-                    "layout_marginBottom": 0
+                    "layout_marginLeft": 10
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -4811,38 +3364,6 @@
         "edit": true
       },
       {
-        "id": "nfuLTczZ_JrPyoVVUIRV-",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_White_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_White_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "15",
-            "layout_height": "15",
-            "borderWidth": 0,
-            "cornerRadius": [5, 5, 5, 5],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginLeft": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-9"
-      },
-      {
         "id": "nKBKsVphLHVeXjSAwPWP9",
         "status": "ACTIVE",
         "name": "Prelogin_Location_NearBy_View_NearBy_Text",
@@ -4892,199 +3413,6 @@
         "edit": true
       },
       {
-        "id": "-pOietpS32d29JQANWuyV",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "10",
-            "layout_height": "10",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b046360501c687c751e7a",
-              "name": "down_white_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "1xdiLKzAllgZtoB2rGoiA",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_white_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_white_icon.png",
-              "createdAt": "2023-05-22T05:57:55.536Z",
-              "updatedAt": "2023-05-22T05:57:55.536Z",
-              "__v": 0,
-              "uri": "down_white_icon.png"
-            },
-            "rightToRightOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginRight": 9,
-            "id": "1xdiLKzAllgZtoB2rGoiA"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-11"
-      },
-      {
-        "id": "wD8OW6rAuX-gz-5OiI9Ii",
-        "status": "ACTIVE",
-        "name": "Location_BackBtn_Icon",
-        "attributes": {
-          "name": "Location_BackBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2ea860501c687c75259d",
-              "name": "location_back_btn.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "kbEs-j3rYx3jfCwuMCZF0",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_back_btn.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
-              "createdAt": "2023-05-22T08:58:16.339Z",
-              "updatedAt": "2023-05-22T08:58:16.339Z",
-              "__v": 0,
-              "uri": "location_back_btn.png"
-            },
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 0,
-            "id": "kbEs-j3rYx3jfCwuMCZF0",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-12",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "w4rQh9obGhvZiFpaXEMWt",
-        "status": "ACTIVE",
-        "name": "Location_Search_Icon",
-        "attributes": {
-          "name": "Location_Search_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2eb260501c687c7525b0",
-              "name": "location_search_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "R4JmQ5IsSljLFcYC2bBXp",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_search_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_search_icon.png",
-              "createdAt": "2023-05-22T08:58:26.492Z",
-              "updatedAt": "2023-05-22T08:58:26.492Z",
-              "__v": 0,
-              "uri": "location_search_icon.png"
-            },
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 20,
-            "id": "R4JmQ5IsSljLFcYC2bBXp"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-13",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "LFg2EF3F9c0_Dn2KYhuWp",
-        "status": "ACTIVE",
-        "name": "Location_City_View_Down_Arrow",
-        "attributes": {
-          "name": "Location_City_View_Down_Arrow",
-          "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646c592760501c687c753cbe",
-              "name": "down_btn_black.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "3p0AHQ6CswRJ7QJ_3jeAf",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_btn_black.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_btn_black.png",
-              "createdAt": "2023-05-23T06:11:51.433Z",
-              "updatedAt": "2023-05-23T06:11:51.433Z",
-              "__v": 0,
-              "uri": "down_btn_black.png"
-            },
-            "rightToRightOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 10,
-            "id": "3p0AHQ6CswRJ7QJ_3jeAf"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-14"
-      },
-      {
         "id": "BmXu3iPjFSUh0RrQjsX8u",
         "type": "VLIST",
         "name": "Prelogin_Location_Atm_List_Vlist",
@@ -5093,8 +3421,8 @@
           "name": "Prelogin_Location_Atm_List_Vlist",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
-            "layout_height": "match_parent",
-            "layout_width": "match_parent",
+            "layout_height": "match_constraint",
+            "layout_width": "match_constraint",
             "rows": [
               {
                 "id": "gYuPQMWJW0f8WslGXAY-X",
@@ -5112,7 +3440,6 @@
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
             "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
             "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginTop": 0,
             "visibility": false
           },
           "bindingKey": "location_atm_vlist_data",
@@ -5138,7 +3465,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -5281,7 +3607,6 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -5537,7 +3862,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
@@ -5569,7 +3893,7 @@
   {
     "id": "1vIwhYktdyCJazVPmE2kg",
     "name": "List item 0",
-    "path": "0-8-0",
+    "path": "0-4-0",
     "type": "VLISTITEM",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00",
     "gridProps": [
@@ -5583,7 +3907,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -5726,16 +4049,12 @@
             "name": "View",
             "layout_width": "60",
             "layout_height": "20",
-            "borderWidth": 0,
             "cornerRadius": [5, 5, 5, 5],
             "background": "#1D6131",
             "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
             "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
             "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-            "layout_marginLeft": 10,
-            "layout_marginTop": 0,
-            "layout_marginRight": 0,
-            "layout_marginBottom": 0
+            "layout_marginLeft": 10
           }
         },
         "icon": "FaTabletAlt",
@@ -5980,7 +4299,7 @@
       {
         "id": "1vIwhYktdyCJazVPmE2kg",
         "name": "List item 0",
-        "path": "0-8-0",
+        "path": "0-4-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
@@ -5994,7 +4313,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -6137,16 +4455,12 @@
                 "name": "View",
                 "layout_width": "60",
                 "layout_height": "20",
-                "borderWidth": 0,
                 "cornerRadius": [5, 5, 5, 5],
                 "background": "#1D6131",
                 "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                 "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                 "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 0,
-                "layout_marginRight": 0,
-                "layout_marginBottom": 0
+                "layout_marginLeft": 10
               }
             },
             "icon": "FaTabletAlt",
@@ -6393,7 +4707,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -6552,16 +4865,12 @@
         "name": "View",
         "layout_width": "60",
         "layout_height": "20",
-        "borderWidth": 0,
         "cornerRadius": [5, 5, 5, 5],
         "background": "#1D6131",
         "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
         "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
         "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-        "layout_marginLeft": 10,
-        "layout_marginTop": 0,
-        "layout_marginRight": 0,
-        "layout_marginBottom": 0
+        "layout_marginLeft": 10
       }
     },
     "icon": "FaTabletAlt",
@@ -6803,42 +5112,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "nfuLTczZ_JrPyoVVUIRV-",
-    "status": "ACTIVE",
-    "name": "Prelogin_Location_NearBy_View_White_View",
-    "attributes": {
-      "name": "Prelogin_Location_NearBy_View_White_View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "15",
-        "layout_height": "15",
-        "borderWidth": 0,
-        "cornerRadius": [5, 5, 5, 5],
-        "background": "#FFFFFF",
-        "leftToLeftOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "layout_marginLeft": 10
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-9",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "nKBKsVphLHVeXjSAwPWP9",
     "status": "ACTIVE",
     "name": "Prelogin_Location_NearBy_View_NearBy_Text",
@@ -6886,215 +5159,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "-pOietpS32d29JQANWuyV",
-    "status": "ACTIVE",
-    "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-    "attributes": {
-      "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-      "layoutProperties": {
-        "layout_width": "10",
-        "layout_height": "10",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "646b046360501c687c751e7a",
-          "name": "down_white_icon.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "1xdiLKzAllgZtoB2rGoiA",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "down_white_icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/down_white_icon.png",
-          "createdAt": "2023-05-22T05:57:55.536Z",
-          "updatedAt": "2023-05-22T05:57:55.536Z",
-          "__v": 0,
-          "uri": "down_white_icon.png"
-        },
-        "rightToRightOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "layout_marginRight": 9,
-        "id": "1xdiLKzAllgZtoB2rGoiA"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-11",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "wD8OW6rAuX-gz-5OiI9Ii",
-    "status": "ACTIVE",
-    "name": "Location_BackBtn_Icon",
-    "attributes": {
-      "name": "Location_BackBtn_Icon",
-      "layoutProperties": {
-        "layout_width": "40",
-        "layout_height": "40",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "646b2ea860501c687c75259d",
-          "name": "location_back_btn.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "kbEs-j3rYx3jfCwuMCZF0",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "location_back_btn.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
-          "createdAt": "2023-05-22T08:58:16.339Z",
-          "updatedAt": "2023-05-22T08:58:16.339Z",
-          "__v": 0,
-          "uri": "location_back_btn.png"
-        },
-        "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-        "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-        "layout_marginLeft": 20,
-        "layout_marginTop": 0,
-        "id": "kbEs-j3rYx3jfCwuMCZF0",
-        "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-12",
-    "edit": true,
-    "events": [],
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "w4rQh9obGhvZiFpaXEMWt",
-    "status": "ACTIVE",
-    "name": "Location_Search_Icon",
-    "attributes": {
-      "name": "Location_Search_Icon",
-      "layoutProperties": {
-        "layout_width": "40",
-        "layout_height": "40",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "646b2eb260501c687c7525b0",
-          "name": "location_search_icon.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "R4JmQ5IsSljLFcYC2bBXp",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "location_search_icon.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/location_search_icon.png",
-          "createdAt": "2023-05-22T08:58:26.492Z",
-          "updatedAt": "2023-05-22T08:58:26.492Z",
-          "__v": 0,
-          "uri": "location_search_icon.png"
-        },
-        "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-        "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-        "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-        "layout_marginRight": 20,
-        "id": "R4JmQ5IsSljLFcYC2bBXp"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-13",
-    "edit": true,
-    "events": [],
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "LFg2EF3F9c0_Dn2KYhuWp",
-    "status": "ACTIVE",
-    "name": "Location_City_View_Down_Arrow",
-    "attributes": {
-      "name": "Location_City_View_Down_Arrow",
-      "layoutProperties": {
-        "layout_width": "20",
-        "layout_height": "20",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "646c592760501c687c753cbe",
-          "name": "down_btn_black.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "3p0AHQ6CswRJ7QJ_3jeAf",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "down_btn_black.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/down_btn_black.png",
-          "createdAt": "2023-05-23T06:11:51.433Z",
-          "updatedAt": "2023-05-23T06:11:51.433Z",
-          "__v": 0,
-          "uri": "down_btn_black.png"
-        },
-        "rightToRightOf": "XiWu6_d_TnwSv6QgW598C",
-        "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-        "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-        "layout_marginRight": 10,
-        "id": "3p0AHQ6CswRJ7QJ_3jeAf"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-14",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "BmXu3iPjFSUh0RrQjsX8u",
     "type": "VLIST",
     "name": "Prelogin_Location_Atm_List_Vlist",
@@ -7103,8 +5167,8 @@
       "name": "Prelogin_Location_Atm_List_Vlist",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
-        "layout_height": "match_parent",
-        "layout_width": "match_parent",
+        "layout_height": "match_constraint",
+        "layout_width": "match_constraint",
         "rows": [
           {
             "id": "gYuPQMWJW0f8WslGXAY-X",
@@ -7122,7 +5186,6 @@
         "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
         "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
         "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-        "layout_marginTop": 0,
         "visibility": false
       },
       "bindingKey": "location_atm_vlist_data",
@@ -7148,7 +5211,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -7291,7 +5353,6 @@
                 "name": "View",
                 "layout_width": "60",
                 "layout_height": "20",
-                "borderWidth": 0,
                 "cornerRadius": [5, 5, 5, 5],
                 "background": "#1D6131",
                 "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -7545,9 +5606,8 @@
           "name": "Location_Top_Green_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "150",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
@@ -7631,7 +5691,6 @@
             "name": "View",
             "layout_width": "3",
             "layout_height": "20",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#022E0C",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -7654,122 +5713,6 @@
         "path": "0-1"
       },
       {
-        "id": "MVka-slvkEbe6oKzOc67Y",
-        "status": "ACTIVE",
-        "name": "Location_Branch_Text",
-        "attributes": {
-          "name": "Location_Branch_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Branch",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "T3E_PgH6BVIyuLh2_Z21d",
-            "triggerName": "Prelogin_Location_Branch_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "8f96u73owuCgcPEmZAxEI",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "gwjBaMV8L4Za-xWVKOrXm",
-                  "triggerName": "Prelogin_Location_Branch_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["8f96u73owuCgcPEmZAxEI", "gwjBaMV8L4Za-xWVKOrXm"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-2",
-        "edit": true
-      },
-      {
-        "id": "fp6PIx1cVlSeerNtRushL",
-        "status": "ACTIVE",
-        "name": "Location_Atm_Text",
-        "attributes": {
-          "name": "Location_Atm_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "ATM",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "GMdsxuj-I41Q31HVJ-F5y",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "bottomToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginBottom": 20,
-            "textStyle": "regular",
-            "textAlignment": "center"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "D_TPthbDWIFfrUW4zKZEA",
-            "triggerName": "Prelogin_Location_Atm_Onclick_Chain_Trig",
-            "serviceType": "UI",
-            "attributes": {
-              "serviceName": "Execute chain trigger",
-              "triggers": [
-                {
-                  "triggerId": "NLIMOOnfd-pLs0D-qXLxb",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllHide"
-                },
-                {
-                  "triggerId": "IfkjtQXdXTa-N4r_fWv82",
-                  "triggerName": "Prelogin_Location_Atm_Onclick_AllShow"
-                }
-              ],
-              "triggerId": ["NLIMOOnfd-pLs0D-qXLxb", "IfkjtQXdXTa-N4r_fWv82"]
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-3",
-        "edit": true
-      },
-      {
         "id": "G3IQza4xIkHlB-S_a4l2s",
         "status": "ACTIVE",
         "name": "Location_Branch_Highlighted_Line",
@@ -7779,7 +5722,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
@@ -7801,134 +5743,6 @@
         "path": "0-4"
       },
       {
-        "id": "XiWu6_d_TnwSv6QgW598C",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_Btn_View",
-        "attributes": {
-          "name": "Location_CityLocation_Btn_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "110",
-            "layout_height": "40",
-            "borderWidth": 0,
-            "cornerRadius": [30, 30, 30, 30],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginTop": 30
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-5"
-      },
-      {
-        "id": "6PiWS-DDo833_QOuJhcFk",
-        "status": "ACTIVE",
-        "name": "Location_CityLocation_DataText",
-        "attributes": {
-          "name": "Location_CityLocation_DataText",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Karachi",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "textStyle": "regular"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-6",
-        "edit": true
-      },
-      {
-        "id": "vKkUiW5Bojd3iXOCt_MSX",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "100",
-            "layout_height": "30",
-            "borderWidth": 0,
-            "cornerRadius": [10, 10, 10, 10],
-            "background": "#022E0C",
-            "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [
-          {
-            "triggerId": "7VTsAFiXUyyxFnCBXESr-",
-            "triggerName": "Prelogin_Location_Vlist_DS_Trig",
-            "serviceType": "DATASTORAGE",
-            "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "location_vlist_data",
-              "value": [
-                {
-                  "location_vlist_titlelocation_text": "Main Branch Karachi",
-                  "location_vlist_fulllocation_text": "Ground Floor, Spencers Building, II Chundrigar Road",
-                  "location_vlist_distance_text": "29 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                },
-                {
-                  "location_vlist_titlelocation_text": "HBZ Plaza Branch",
-                  "location_vlist_fulllocation_text": "H.B.Z Plaza, IIChundrigar Road",
-                  "location_vlist_distance_text": "39 m",
-                  "location_vlist_branchstatus_text": "Open Now"
-                }
-              ],
-              "contentType": "array",
-              "totalcolumns": "4"
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
-          }
-        ],
-        "path": "0-7",
-        "edit": true
-      },
-      {
         "id": "TRouXVN-PjhDhYwT_FsJb",
         "type": "VLIST",
         "name": "Prelogin_Location_List_Vlist",
@@ -7942,19 +5756,20 @@
             "rows": [{ "id": "1vIwhYktdyCJazVPmE2kg" }],
             "leftToLeftOf": "KACJ1qnRIapryV_g93vtf",
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
-            "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf"
+            "topToBottomOf": "1cdnLXCqzheykyuMO9tp9",
+            "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
+            "layout_marginTop": 60
           },
           "bindingKey": "location_vlist_data",
           "componentId": []
         },
         "events": [],
-        "path": "0-8",
+        "path": "0-4",
         "gridProps": [
           {
             "id": "1vIwhYktdyCJazVPmE2kg",
             "name": "List item 0",
-            "path": "0-8-0",
+            "path": "0-4-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
@@ -7968,7 +5783,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "1vIwhYktdyCJazVPmE2kg",
@@ -8111,16 +5925,12 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "_XZETHB30x9eCfeCZ1ljg",
                     "topToTopOf": "_XZETHB30x9eCfeCZ1ljg",
                     "bottomToBottomOf": "_XZETHB30x9eCfeCZ1ljg",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 0,
-                    "layout_marginRight": 0,
-                    "layout_marginBottom": 0
+                    "layout_marginLeft": 10
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -8355,38 +6165,6 @@
         "edit": true
       },
       {
-        "id": "nfuLTczZ_JrPyoVVUIRV-",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_White_View",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_White_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "15",
-            "layout_height": "15",
-            "borderWidth": 0,
-            "cornerRadius": [5, 5, 5, 5],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginLeft": 10
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "VIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-9"
-      },
-      {
         "id": "nKBKsVphLHVeXjSAwPWP9",
         "status": "ACTIVE",
         "name": "Prelogin_Location_NearBy_View_NearBy_Text",
@@ -8436,199 +6214,6 @@
         "edit": true
       },
       {
-        "id": "-pOietpS32d29JQANWuyV",
-        "status": "ACTIVE",
-        "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-        "attributes": {
-          "name": "Prelogin_Location_NearBy_View_DownBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "10",
-            "layout_height": "10",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b046360501c687c751e7a",
-              "name": "down_white_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "1xdiLKzAllgZtoB2rGoiA",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_white_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_white_icon.png",
-              "createdAt": "2023-05-22T05:57:55.536Z",
-              "updatedAt": "2023-05-22T05:57:55.536Z",
-              "__v": 0,
-              "uri": "down_white_icon.png"
-            },
-            "rightToRightOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "topToTopOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "bottomToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginRight": 9,
-            "id": "1xdiLKzAllgZtoB2rGoiA"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-11"
-      },
-      {
-        "id": "wD8OW6rAuX-gz-5OiI9Ii",
-        "status": "ACTIVE",
-        "name": "Location_BackBtn_Icon",
-        "attributes": {
-          "name": "Location_BackBtn_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2ea860501c687c75259d",
-              "name": "location_back_btn.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "kbEs-j3rYx3jfCwuMCZF0",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_back_btn.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_back_btn.png",
-              "createdAt": "2023-05-22T08:58:16.339Z",
-              "updatedAt": "2023-05-22T08:58:16.339Z",
-              "__v": 0,
-              "uri": "location_back_btn.png"
-            },
-            "leftToLeftOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 0,
-            "id": "kbEs-j3rYx3jfCwuMCZF0",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-12",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "w4rQh9obGhvZiFpaXEMWt",
-        "status": "ACTIVE",
-        "name": "Location_Search_Icon",
-        "attributes": {
-          "name": "Location_Search_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646b2eb260501c687c7525b0",
-              "name": "location_search_icon.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "R4JmQ5IsSljLFcYC2bBXp",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "location_search_icon.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/location_search_icon.png",
-              "createdAt": "2023-05-22T08:58:26.492Z",
-              "updatedAt": "2023-05-22T08:58:26.492Z",
-              "__v": 0,
-              "uri": "location_search_icon.png"
-            },
-            "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 20,
-            "id": "R4JmQ5IsSljLFcYC2bBXp"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-13",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "LFg2EF3F9c0_Dn2KYhuWp",
-        "status": "ACTIVE",
-        "name": "Location_City_View_Down_Arrow",
-        "attributes": {
-          "name": "Location_City_View_Down_Arrow",
-          "layoutProperties": {
-            "layout_width": "20",
-            "layout_height": "20",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "646c592760501c687c753cbe",
-              "name": "down_btn_black.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "3p0AHQ6CswRJ7QJ_3jeAf",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "down_btn_black.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/down_btn_black.png",
-              "createdAt": "2023-05-23T06:11:51.433Z",
-              "updatedAt": "2023-05-23T06:11:51.433Z",
-              "__v": 0,
-              "uri": "down_btn_black.png"
-            },
-            "rightToRightOf": "XiWu6_d_TnwSv6QgW598C",
-            "topToTopOf": "XiWu6_d_TnwSv6QgW598C",
-            "bottomToBottomOf": "XiWu6_d_TnwSv6QgW598C",
-            "layout_marginRight": 10,
-            "id": "3p0AHQ6CswRJ7QJ_3jeAf"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "IMAGEVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-14"
-      },
-      {
         "id": "BmXu3iPjFSUh0RrQjsX8u",
         "type": "VLIST",
         "name": "Prelogin_Location_Atm_List_Vlist",
@@ -8637,8 +6222,8 @@
           "name": "Prelogin_Location_Atm_List_Vlist",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
-            "layout_height": "match_parent",
-            "layout_width": "match_parent",
+            "layout_height": "match_constraint",
+            "layout_width": "match_constraint",
             "rows": [
               {
                 "id": "gYuPQMWJW0f8WslGXAY-X",
@@ -8656,7 +6241,6 @@
             "rightToRightOf": "KACJ1qnRIapryV_g93vtf",
             "bottomToBottomOf": "KACJ1qnRIapryV_g93vtf",
             "topToBottomOf": "vKkUiW5Bojd3iXOCt_MSX",
-            "layout_marginTop": 0,
             "visibility": false
           },
           "bindingKey": "location_atm_vlist_data",
@@ -8682,7 +6266,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -8825,7 +6408,6 @@
                     "name": "View",
                     "layout_width": "60",
                     "layout_height": "20",
-                    "borderWidth": 0,
                     "cornerRadius": [5, 5, 5, 5],
                     "background": "#1D6131",
                     "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -9081,7 +6663,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "5",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",
@@ -9127,7 +6708,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -9270,7 +6850,6 @@
             "name": "View",
             "layout_width": "60",
             "layout_height": "20",
-            "borderWidth": 0,
             "cornerRadius": [5, 5, 5, 5],
             "background": "#1D6131",
             "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -9541,7 +7120,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -9684,7 +7262,6 @@
                 "name": "View",
                 "layout_width": "60",
                 "layout_height": "20",
-                "borderWidth": 0,
                 "cornerRadius": [5, 5, 5, 5],
                 "background": "#1D6131",
                 "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -9943,7 +7520,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "gYuPQMWJW0f8WslGXAY-X",
@@ -10102,7 +7678,6 @@
         "name": "View",
         "layout_width": "60",
         "layout_height": "20",
-        "borderWidth": 0,
         "cornerRadius": [5, 5, 5, 5],
         "background": "#1D6131",
         "leftToRightOf": "S1Q1AMJE_iovGL5Zg5kBr",
@@ -10357,7 +7932,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "5",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "rightToRightOf": "1cdnLXCqzheykyuMO9tp9",

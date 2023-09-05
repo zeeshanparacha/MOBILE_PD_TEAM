@@ -1,0 +1,48 @@
+{
+  "id": "UeteMmT2S5mKSsfGCtH5N",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_FP_PerformAction",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "$fp_idtype.value",
+          "actions": [
+            {
+              "triggerId": "6JEcz0dMwG2lCZd7NdNiE",
+              "triggerName": "FP_Cnic_Chain_Trig",
+              "value": "CNIC",
+              "type": "string"
+            },
+            {
+              "triggerId": "jS-VkNeF9IOGPpo5wFg8X",
+              "triggerName": "FP_Passport_Chain_Trig",
+              "value": "Passport",
+              "type": "string"
+            }
+          ],
+          "defaultTriggerId": ["D5iFA3yBDXEsC9gROn4Ye"],
+          "defaultTrigger": [
+            {
+              "triggerId": "D5iFA3yBDXEsC9gROn4Ye",
+              "triggerName": "FP_PassportCnic_Default_AllHide"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.xgdktyzsyxoV8Odi_3qf-NP7_mq2TXpQ",
+  "_id": "_kr76if83m4jx785tbIfh",
+  "updatedAt": "9/5/2023",
+  "createdAt": "9/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_FP_PerformAction"
+}

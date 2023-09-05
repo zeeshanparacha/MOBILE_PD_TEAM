@@ -1,0 +1,90 @@
+{
+  "id": "xOxMOKRgegy_EGm3SZQ7H",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_ValidatreRegistration_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "preprocessors": ["firstLevelEncryption", "addCheckSumInterceptor"],
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "8895YMQQ15OH196O856M5KMHLH55KKK6KQK15L65"
+          },
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountNumber": "$register_accountnum",
+            "cardExpiry": null,
+            "cardNumber": null,
+            "cardPin": null,
+            "cnic": null,
+            "cvv": null,
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "1244d1426ebe80d3",
+              "fcmToken": null,
+              "imei": "111111111111111",
+              "ip": "192.168.0.112",
+              "isNotificationEnabled": true,
+              "name": "2201117TG",
+              "os": "Android",
+              "osType": "31"
+            },
+            "email": "$register_email",
+            "flowType": "REGISTERATION",
+            "mobileNumber": "$register_mobile",
+            "registerMode": "ACC",
+            "registrationFlag": true,
+            "tranCode": "0106",
+            "userIdenType": "$register_idtype.value",
+            "userIdenValue": "$register_cnic",
+            "username": ""
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/validateRegistrationGenerateOTP",
+          "responseStateKey": "register_response",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "register_response.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "BeneListFT_OwnAccountVlist_DS_Trig",
+              "triggerId": "jRudn_iFXe3mdesR9n4AN"
+            },
+            {
+              "logic": { "==": [{ "var": "register_response.code" }, 0] },
+              "httpStatus": 200,
+              "triggerName": "HMB_Register_Failure_Error_Trig",
+              "triggerId": "XRQk-PqAiLPc2ru4Hemyu"
+            },
+            {
+              "logic": { "==": [{ "var": "register_response.code" }, 0] },
+              "httpStatus": 400,
+              "triggerName": "HMB_Register_Failure_Error_Trig",
+              "triggerId": "XRQk-PqAiLPc2ru4Hemyu"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.uurdheslukacpdcrhJd3B7EtAUZCcvgt",
+  "_id": "GsX7vp5ud5pKyzv1dbWOx",
+  "updatedAt": "8/18/2023",
+  "createdAt": "8/18/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_ValidatreRegistration_Api_Trig"
+}

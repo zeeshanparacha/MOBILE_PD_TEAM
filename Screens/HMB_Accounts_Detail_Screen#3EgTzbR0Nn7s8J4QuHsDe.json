@@ -47,8 +47,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "4/3/2023",
-    "createdAt": "4/3/2023",
+    "updatedAt": "8/30/2023",
+    "createdAt": "8/30/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -65,13 +65,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "240",
-            "borderWidth": 0,
             "cornerRadius": [8, 8, 8, 8],
             "background": "#1C6030",
             "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "topToTopOf": "3EgTzbR0Nn7s8J4QuHsDe",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 20
@@ -101,13 +99,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "96",
-            "borderWidth": 0,
             "cornerRadius": [12, 12, 12, 12],
             "background": "#1C6030",
             "leftToLeftOf": "qyhE_D0AbsjAUyPgy88gK",
             "rightToRightOf": "qyhE_D0AbsjAUyPgy88gK",
             "topToTopOf": "qyhE_D0AbsjAUyPgy88gK",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "layout_marginLeft": 20,
             "layout_marginTop": 20
@@ -129,7 +125,7 @@
       {
         "id": "mSQNixghXNob0E8SLifg9",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Accounts_Details_AccNum_Text",
         "attributes": {
           "name": "Accounts_Details_AccNum_Text",
           "layoutProperties": {
@@ -146,7 +142,8 @@
             "layout_marginTop": 10,
             "textStyle": "bold",
             "textAlignment": "center"
-          }
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -159,12 +156,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "Ypc6XgBdsEOHMdAJ-ophI",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Account_Detail_Amount_Text",
         "attributes": {
           "name": "Account_Detail_Amount_Text",
           "layoutProperties": {
@@ -181,7 +179,8 @@
             "layout_marginTop": 10,
             "textStyle": "bold",
             "textAlignment": "center"
-          }
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountActualBalance.amount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -194,7 +193,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "QsMVcuCGhg6QOyW8D_N4v",
@@ -212,7 +212,6 @@
             "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
             "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
             "topToBottomOf": "Ypc6XgBdsEOHMdAJ-ophI",
-            "layout_marginBottom": 0,
             "layout_marginTop": 10
           }
         },
@@ -259,7 +258,6 @@
             "leftToLeftOf": "QsMVcuCGhg6QOyW8D_N4v",
             "topToTopOf": "QsMVcuCGhg6QOyW8D_N4v",
             "bottomToBottomOf": "QsMVcuCGhg6QOyW8D_N4v",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 10,
             "id": "El-2RAlt_tEcAPdMeXX8y"
           },
@@ -340,7 +338,6 @@
               "uri": "last_debit.png"
             },
             "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
-            "layout_marginBottom": 0,
             "layout_marginTop": 5,
             "id": "QFR9977OWShqj8ROglZ4w",
             "topToTopOf": "eHzpOQXwCeJ1UWWDjtqgd"
@@ -526,7 +523,6 @@
             },
             "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
             "topToTopOf": "eU3WgEjevPtDZD7Eab3j1",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "id": "pFmSJlcQqqoGEZ2fsMqrz"
           },
@@ -560,7 +556,6 @@
             "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "topToBottomOf": "qyhE_D0AbsjAUyPgy88gK",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "layout_marginLeft": 20,
             "layout_marginTop": 40
@@ -576,8 +571,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-13"
+        "events": [
+          {
+            "triggerId": "b746R4CVk9OkC2VJMknh9",
+            "triggerName": "Navigate_To_MiniStatement_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ydRSfrJLTaKtLy0O3jZzn"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "4n4hjsYAhAda6v582a5gX",
@@ -609,7 +617,6 @@
             "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
             "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
             "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "id": "01BET8tjSERNWON23lLO4"
           },
@@ -644,7 +651,7 @@
             "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
             "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
             "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-            "layout_marginLeft": 40,
+            "layout_marginLeft": 60,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -693,7 +700,6 @@
             "rightToRightOf": "RyrjQG6yMoJCtF5c-5KKW",
             "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
             "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "id": "Mxmbhzss8gC2KwB7wYtVl"
           },
@@ -728,7 +734,6 @@
             "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "topToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 20
@@ -744,7 +749,19 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "qc4oqraicihiOV5k8fxP4",
+            "triggerName": "Navigate_to_FT_Form_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "ofUnj_DC7jujps3pt5nze"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-17",
         "edit": true
       },
@@ -779,7 +796,6 @@
             "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
             "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
             "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "id": "TNgxz_GnfVXo-vwLHHY0Q"
           },
@@ -815,7 +831,7 @@
             "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
             "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
             "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-            "layout_marginLeft": 40,
+            "layout_marginLeft": 60,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -864,7 +880,6 @@
             "rightToRightOf": "SBqX5EMZCYu6mK5enQ7BL",
             "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
             "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "id": "Mxmbhzss8gC2KwB7wYtVl"
           },
@@ -899,7 +914,6 @@
             "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
             "topToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 20
@@ -949,7 +963,6 @@
             "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
             "topToTopOf": "y_Id_vYRooASqMacS0qk6",
             "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "id": "kGU5tPuI_AiuHmSVfn9tP"
           },
@@ -985,7 +998,7 @@
             "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
             "topToTopOf": "y_Id_vYRooASqMacS0qk6",
             "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-            "layout_marginLeft": 40,
+            "layout_marginLeft": 60,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -1035,7 +1048,6 @@
             "rightToRightOf": "y_Id_vYRooASqMacS0qk6",
             "topToTopOf": "y_Id_vYRooASqMacS0qk6",
             "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-            "layout_marginBottom": 0,
             "layout_marginRight": 20,
             "id": "Mxmbhzss8gC2KwB7wYtVl"
           },
@@ -1096,13 +1108,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "240",
-                "borderWidth": 0,
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#1C6030",
                 "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "topToTopOf": "3EgTzbR0Nn7s8J4QuHsDe",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 20
@@ -1132,13 +1142,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "96",
-                "borderWidth": 0,
                 "cornerRadius": [12, 12, 12, 12],
                 "background": "#1C6030",
                 "leftToLeftOf": "qyhE_D0AbsjAUyPgy88gK",
                 "rightToRightOf": "qyhE_D0AbsjAUyPgy88gK",
                 "topToTopOf": "qyhE_D0AbsjAUyPgy88gK",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20
@@ -1160,7 +1168,7 @@
           {
             "id": "mSQNixghXNob0E8SLifg9",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Accounts_Details_AccNum_Text",
             "attributes": {
               "name": "Accounts_Details_AccNum_Text",
               "layoutProperties": {
@@ -1177,7 +1185,8 @@
                 "layout_marginTop": 10,
                 "textStyle": "bold",
                 "textAlignment": "center"
-              }
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1190,12 +1199,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "Ypc6XgBdsEOHMdAJ-ophI",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Account_Detail_Amount_Text",
             "attributes": {
               "name": "Account_Detail_Amount_Text",
               "layoutProperties": {
@@ -1212,7 +1222,8 @@
                 "layout_marginTop": 10,
                 "textStyle": "bold",
                 "textAlignment": "center"
-              }
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountActualBalance.amount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1225,7 +1236,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "QsMVcuCGhg6QOyW8D_N4v",
@@ -1243,7 +1255,6 @@
                 "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
                 "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
                 "topToBottomOf": "Ypc6XgBdsEOHMdAJ-ophI",
-                "layout_marginBottom": 0,
                 "layout_marginTop": 10
               }
             },
@@ -1290,7 +1301,6 @@
                 "leftToLeftOf": "QsMVcuCGhg6QOyW8D_N4v",
                 "topToTopOf": "QsMVcuCGhg6QOyW8D_N4v",
                 "bottomToBottomOf": "QsMVcuCGhg6QOyW8D_N4v",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 10,
                 "id": "El-2RAlt_tEcAPdMeXX8y"
               },
@@ -1371,7 +1381,6 @@
                   "uri": "last_debit.png"
                 },
                 "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
-                "layout_marginBottom": 0,
                 "layout_marginTop": 5,
                 "id": "QFR9977OWShqj8ROglZ4w",
                 "topToTopOf": "eHzpOQXwCeJ1UWWDjtqgd"
@@ -1557,7 +1566,6 @@
                 },
                 "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
                 "topToTopOf": "eU3WgEjevPtDZD7Eab3j1",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "id": "pFmSJlcQqqoGEZ2fsMqrz"
               },
@@ -1591,7 +1599,6 @@
                 "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "topToBottomOf": "qyhE_D0AbsjAUyPgy88gK",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "layout_marginLeft": 20,
                 "layout_marginTop": 40
@@ -1607,8 +1614,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-13"
+            "events": [
+              {
+                "triggerId": "b746R4CVk9OkC2VJMknh9",
+                "triggerName": "Navigate_To_MiniStatement_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ydRSfrJLTaKtLy0O3jZzn"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-13",
+            "edit": true
           },
           {
             "id": "4n4hjsYAhAda6v582a5gX",
@@ -1640,7 +1660,6 @@
                 "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "id": "01BET8tjSERNWON23lLO4"
               },
@@ -1675,7 +1694,7 @@
                 "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-                "layout_marginLeft": 40,
+                "layout_marginLeft": 60,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -1724,7 +1743,6 @@
                 "rightToRightOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
                 "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "id": "Mxmbhzss8gC2KwB7wYtVl"
               },
@@ -1759,7 +1777,6 @@
                 "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "topToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 20
@@ -1775,7 +1792,19 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "qc4oqraicihiOV5k8fxP4",
+                "triggerName": "Navigate_to_FT_Form_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "ofUnj_DC7jujps3pt5nze"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-17",
             "edit": true
           },
@@ -1810,7 +1839,6 @@
                 "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "id": "TNgxz_GnfVXo-vwLHHY0Q"
               },
@@ -1846,7 +1874,7 @@
                 "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-                "layout_marginLeft": 40,
+                "layout_marginLeft": 60,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -1895,7 +1923,6 @@
                 "rightToRightOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
                 "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "id": "Mxmbhzss8gC2KwB7wYtVl"
               },
@@ -1930,7 +1957,6 @@
                 "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
                 "topToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 20
@@ -1980,7 +2006,6 @@
                 "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
                 "topToTopOf": "y_Id_vYRooASqMacS0qk6",
                 "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "id": "kGU5tPuI_AiuHmSVfn9tP"
               },
@@ -2016,7 +2041,7 @@
                 "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
                 "topToTopOf": "y_Id_vYRooASqMacS0qk6",
                 "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-                "layout_marginLeft": 40,
+                "layout_marginLeft": 60,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -2066,7 +2091,6 @@
                 "rightToRightOf": "y_Id_vYRooASqMacS0qk6",
                 "topToTopOf": "y_Id_vYRooASqMacS0qk6",
                 "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-                "layout_marginBottom": 0,
                 "layout_marginRight": 20,
                 "id": "Mxmbhzss8gC2KwB7wYtVl"
               },
@@ -2089,7 +2113,7 @@
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "_id": "3EgTzbR0Nn7s8J4QuHsDe",
     "createdBy": "shaikhahmedraza",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2104,13 +2128,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "240",
-        "borderWidth": 0,
         "cornerRadius": [8, 8, 8, 8],
         "background": "#1C6030",
         "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "topToTopOf": "3EgTzbR0Nn7s8J4QuHsDe",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 20
@@ -2131,7 +2153,7 @@
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2144,13 +2166,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "96",
-        "borderWidth": 0,
         "cornerRadius": [12, 12, 12, 12],
         "background": "#1C6030",
         "leftToLeftOf": "qyhE_D0AbsjAUyPgy88gK",
         "rightToRightOf": "qyhE_D0AbsjAUyPgy88gK",
         "topToTopOf": "qyhE_D0AbsjAUyPgy88gK",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "layout_marginLeft": 20,
         "layout_marginTop": 20
@@ -2170,13 +2190,13 @@
     "path": "0-1",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "mSQNixghXNob0E8SLifg9",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Accounts_Details_AccNum_Text",
     "attributes": {
       "name": "Accounts_Details_AccNum_Text",
       "layoutProperties": {
@@ -2193,7 +2213,8 @@
         "layout_marginTop": 10,
         "textStyle": "bold",
         "textAlignment": "center"
-      }
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2207,15 +2228,16 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "Ypc6XgBdsEOHMdAJ-ophI",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Account_Detail_Amount_Text",
     "attributes": {
       "name": "Account_Detail_Amount_Text",
       "layoutProperties": {
@@ -2232,7 +2254,8 @@
         "layout_marginTop": 10,
         "textStyle": "bold",
         "textAlignment": "center"
-      }
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountActualBalance.amount"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2246,9 +2269,10 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2267,7 +2291,6 @@
         "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
         "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
         "topToBottomOf": "Ypc6XgBdsEOHMdAJ-ophI",
-        "layout_marginBottom": 0,
         "layout_marginTop": 10
       }
     },
@@ -2285,7 +2308,7 @@
     "path": "0-4",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2318,7 +2341,6 @@
         "leftToLeftOf": "QsMVcuCGhg6QOyW8D_N4v",
         "topToTopOf": "QsMVcuCGhg6QOyW8D_N4v",
         "bottomToBottomOf": "QsMVcuCGhg6QOyW8D_N4v",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 10,
         "id": "El-2RAlt_tEcAPdMeXX8y"
       },
@@ -2337,7 +2359,7 @@
     "path": "0-5",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2376,7 +2398,7 @@
     "path": "0-6",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2407,7 +2429,6 @@
           "uri": "last_debit.png"
         },
         "leftToLeftOf": "WGmXW-ppO3uClfiNAsRb3",
-        "layout_marginBottom": 0,
         "layout_marginTop": 5,
         "id": "QFR9977OWShqj8ROglZ4w",
         "topToTopOf": "eHzpOQXwCeJ1UWWDjtqgd"
@@ -2429,7 +2450,7 @@
     "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2463,12 +2484,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-8",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2501,12 +2522,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-9",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2538,12 +2559,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2576,12 +2597,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-11",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2613,7 +2634,6 @@
         },
         "rightToRightOf": "WGmXW-ppO3uClfiNAsRb3",
         "topToTopOf": "eU3WgEjevPtDZD7Eab3j1",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "id": "pFmSJlcQqqoGEZ2fsMqrz"
       },
@@ -2628,11 +2648,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-12",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2651,7 +2671,6 @@
         "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "topToBottomOf": "qyhE_D0AbsjAUyPgy88gK",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "layout_marginLeft": 20,
         "layout_marginTop": 40
@@ -2666,12 +2685,20 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "b746R4CVk9OkC2VJMknh9",
+        "triggerName": "Navigate_To_MiniStatement_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-13",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2704,7 +2731,6 @@
         "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
         "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
         "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "id": "01BET8tjSERNWON23lLO4"
       },
@@ -2719,11 +2745,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-14",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2743,7 +2769,7 @@
         "leftToLeftOf": "RyrjQG6yMoJCtF5c-5KKW",
         "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
         "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-        "layout_marginLeft": 40,
+        "layout_marginLeft": 60,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -2757,13 +2783,13 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-15",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2796,7 +2822,6 @@
         "rightToRightOf": "RyrjQG6yMoJCtF5c-5KKW",
         "topToTopOf": "RyrjQG6yMoJCtF5c-5KKW",
         "bottomToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "id": "Mxmbhzss8gC2KwB7wYtVl"
       },
@@ -2811,11 +2836,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-16",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2834,7 +2859,6 @@
         "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "topToBottomOf": "RyrjQG6yMoJCtF5c-5KKW",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 20
@@ -2849,13 +2873,20 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "qc4oqraicihiOV5k8fxP4",
+        "triggerName": "Navigate_to_FT_Form_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-17",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2888,7 +2919,6 @@
         "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
         "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
         "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "id": "TNgxz_GnfVXo-vwLHHY0Q"
       },
@@ -2903,11 +2933,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-18",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2927,7 +2957,7 @@
         "leftToLeftOf": "SBqX5EMZCYu6mK5enQ7BL",
         "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
         "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-        "layout_marginLeft": 40,
+        "layout_marginLeft": 60,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -2941,12 +2971,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-19",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2979,7 +3009,6 @@
         "rightToRightOf": "SBqX5EMZCYu6mK5enQ7BL",
         "topToTopOf": "SBqX5EMZCYu6mK5enQ7BL",
         "bottomToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "id": "Mxmbhzss8gC2KwB7wYtVl"
       },
@@ -2994,11 +3023,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-20",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3017,7 +3046,6 @@
         "leftToLeftOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "rightToRightOf": "3EgTzbR0Nn7s8J4QuHsDe",
         "topToBottomOf": "SBqX5EMZCYu6mK5enQ7BL",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 20
@@ -3032,12 +3060,12 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-21",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3070,7 +3098,6 @@
         "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
         "topToTopOf": "y_Id_vYRooASqMacS0qk6",
         "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "id": "kGU5tPuI_AiuHmSVfn9tP"
       },
@@ -3085,11 +3112,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-22",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3109,7 +3136,7 @@
         "leftToLeftOf": "y_Id_vYRooASqMacS0qk6",
         "topToTopOf": "y_Id_vYRooASqMacS0qk6",
         "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-        "layout_marginLeft": 40,
+        "layout_marginLeft": 60,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -3123,13 +3150,13 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-23",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3162,7 +3189,6 @@
         "rightToRightOf": "y_Id_vYRooASqMacS0qk6",
         "topToTopOf": "y_Id_vYRooASqMacS0qk6",
         "bottomToBottomOf": "y_Id_vYRooASqMacS0qk6",
-        "layout_marginBottom": 0,
         "layout_marginRight": 20,
         "id": "Mxmbhzss8gC2KwB7wYtVl"
       },
@@ -3177,11 +3203,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-24",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "dev",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

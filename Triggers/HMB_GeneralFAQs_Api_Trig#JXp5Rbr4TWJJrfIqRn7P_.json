@@ -1,0 +1,50 @@
+{
+  "id": "h9ybJo1ZL4HcLyUdvi6qB",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GeneralFAQs_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "Q51YLK615HQ5181K8Y5KL1LYM9885KLMOQO165L5"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getAllFAQs",
+          "requestDataType": "byTable",
+          "requestBody": { "inquiry": "null", "temp": "null" },
+          "responseStateKey": "faq_general_data",
+          "conditions": [
+            {
+              "triggerName": "Navigate_To_GeneralFaqss_Screen",
+              "triggerId": "nNhSwchswQ8169drLWq14",
+              "httpStatus": 200,
+              "logic": { "==": [{ "var": "faq_general_data.code" }, 1] }
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.jd405pozrqJ8UyAyeAWwR4NWTBiFrgz",
+  "_id": "JXp5Rbr4TWJJrfIqRn7P_",
+  "updatedAt": "8/22/2023",
+  "createdAt": "8/22/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GeneralFAQs_Api_Trig"
+}

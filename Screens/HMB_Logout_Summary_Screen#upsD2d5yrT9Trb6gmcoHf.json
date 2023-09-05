@@ -31,7 +31,7 @@
           "__v": 0,
           "uri": "HMB_Bg.png"
         },
-        "navbarHeight": 0,
+        
         "hideNavBar": true
       },
       "componentId": [
@@ -60,8 +60,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/14/2023",
-    "createdAt": "5/14/2023",
+    "updatedAt": "7/10/2023",
+    "createdAt": "7/10/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -78,7 +78,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "165",
-            "borderWidth": 0,
+            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#FFFFFF",
             "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -147,7 +147,7 @@
             "name": "View",
             "layout_width": "10",
             "layout_height": "30",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -214,7 +214,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -256,7 +256,7 @@
             "topToBottomOf": "8Wa5Z05iCZJaa6yZ1biAu",
             "textStyle": "regular",
             "textAlignment": "left",
-            "layout_marginLeft": 0,
+            
             "layout_marginTop": 10
           }
         },
@@ -319,7 +319,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -422,7 +422,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -525,7 +525,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "250",
-            "borderWidth": 0,
+            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#FFFFFF",
             "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -631,7 +631,7 @@
             "name": "View",
             "layout_width": "10",
             "layout_height": "30",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "9WMEYg5YbuipKa8sOuov0",
@@ -732,7 +732,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -764,15 +764,14 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "1",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#EAEDEA",
                     "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
                     "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
                     "topToTopOf": "68mfv5sld27OaSJrCXLeE",
                     "layout_marginLeft": 10,
-                    "layout_marginRight": 10,
-                    "layout_marginTop": 0
+                    "layout_marginRight": 10   
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -806,7 +805,7 @@
                     "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
                     "textStyle": "regular",
                     "textAlignment": "left",
-                    "layout_marginLeft": 0,
+                    
                     "layout_marginTop": 10
                   },
                   "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -834,7 +833,7 @@
                     "name": "View",
                     "layout_width": "20",
                     "layout_height": "30",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#ffffff",
                     "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -918,8 +917,7 @@
             "layout_width": "154",
             "layout_height": "56",
             "layout_marginLeft": 20,
-            "layout_marginRight": 0,
-            "layout_marginTop": 0,
+  
             "layout_marginBottom": 20,
             "text": "Login Again",
             "textSize": 20,
@@ -944,8 +942,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-18"
+        "events": [
+          {
+            "triggerId": "_L3pYfgCXiiFjEpN3VnHo",
+            "triggerName": "Navigate_to_Login_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate",
+              "id": "jIpDVzEOLaRvsEwCZSFzs"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-18",
+        "edit": true
       },
       {
         "id": "Kbrl4jeHrBBla3Xh1EyYn",
@@ -957,9 +968,8 @@
           "layoutProperties": {
             "layout_width": "154",
             "layout_height": "56",
-            "layout_marginLeft": 0,
+            
             "layout_marginRight": 20,
-            "layout_marginTop": 0,
             "layout_marginBottom": 20,
             "text": "Thank you",
             "textSize": 20,
@@ -1022,7 +1032,7 @@
               "__v": 0,
               "uri": "HMB_Bg.png"
             },
-            "navbarHeight": 0,
+            
             "hideNavBar": true
           },
           "componentId": []
@@ -1048,7 +1058,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "165",
-                "borderWidth": 0,
+                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -1117,7 +1127,7 @@
                 "name": "View",
                 "layout_width": "10",
                 "layout_height": "30",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -1184,7 +1194,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -1226,7 +1236,7 @@
                 "topToBottomOf": "8Wa5Z05iCZJaa6yZ1biAu",
                 "textStyle": "regular",
                 "textAlignment": "left",
-                "layout_marginLeft": 0,
+                
                 "layout_marginTop": 10
               }
             },
@@ -1289,7 +1299,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -1392,7 +1402,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -1495,7 +1505,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "250",
-                "borderWidth": 0,
+                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -1601,7 +1611,7 @@
                 "name": "View",
                 "layout_width": "10",
                 "layout_height": "30",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "9WMEYg5YbuipKa8sOuov0",
@@ -1702,7 +1712,7 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                        "borderWidth": 0,
+                        
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -1734,15 +1744,14 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "1",
-                        "borderWidth": 0,
+                        
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#EAEDEA",
                         "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
                         "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
                         "topToTopOf": "68mfv5sld27OaSJrCXLeE",
                         "layout_marginLeft": 10,
-                        "layout_marginRight": 10,
-                        "layout_marginTop": 0
+                        "layout_marginRight": 10
                       }
                     },
                     "icon": "FaTabletAlt",
@@ -1776,7 +1785,7 @@
                         "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
                         "textStyle": "regular",
                         "textAlignment": "left",
-                        "layout_marginLeft": 0,
+                        
                         "layout_marginTop": 10
                       },
                       "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -1804,7 +1813,7 @@
                         "name": "View",
                         "layout_width": "20",
                         "layout_height": "30",
-                        "borderWidth": 0,
+                        
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#ffffff",
                         "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -1888,8 +1897,7 @@
                 "layout_width": "154",
                 "layout_height": "56",
                 "layout_marginLeft": 20,
-                "layout_marginRight": 0,
-                "layout_marginTop": 0,
+               
                 "layout_marginBottom": 20,
                 "text": "Login Again",
                 "textSize": 20,
@@ -1914,8 +1922,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-18"
+            "events": [
+              {
+                "triggerId": "_L3pYfgCXiiFjEpN3VnHo",
+                "triggerName": "Navigate_to_Login_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate",
+                  "id": "jIpDVzEOLaRvsEwCZSFzs"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-18",
+            "edit": true
           },
           {
             "id": "Kbrl4jeHrBBla3Xh1EyYn",
@@ -1927,9 +1948,9 @@
               "layoutProperties": {
                 "layout_width": "154",
                 "layout_height": "56",
-                "layout_marginLeft": 0,
+                
                 "layout_marginRight": 20,
-                "layout_marginTop": 0,
+                   
                 "layout_marginBottom": 20,
                 "text": "Thank you",
                 "textSize": 20,
@@ -1977,7 +1998,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "165",
-        "borderWidth": 0,
+        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#FFFFFF",
         "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -2054,7 +2075,7 @@
         "name": "View",
         "layout_width": "10",
         "layout_height": "30",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#ffffff",
         "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -2129,7 +2150,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -2175,7 +2196,7 @@
         "topToBottomOf": "8Wa5Z05iCZJaa6yZ1biAu",
         "textStyle": "regular",
         "textAlignment": "left",
-        "layout_marginLeft": 0,
+        
         "layout_marginTop": 10
       }
     },
@@ -2246,7 +2267,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -2361,7 +2382,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -2476,7 +2497,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "250",
-        "borderWidth": 0,
+        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#FFFFFF",
         "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -2561,7 +2582,7 @@
         "name": "View",
         "layout_width": "10",
         "layout_height": "30",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "9WMEYg5YbuipKa8sOuov0",
@@ -2670,7 +2691,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -2702,15 +2723,14 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
                 "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
                 "topToTopOf": "68mfv5sld27OaSJrCXLeE",
                 "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "layout_marginTop": 0
+                "layout_marginRight": 10
               }
             },
             "icon": "FaTabletAlt",
@@ -2744,7 +2764,7 @@
                 "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
                 "textStyle": "regular",
                 "textAlignment": "left",
-                "layout_marginLeft": 0,
+                
                 "layout_marginTop": 10
               },
               "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -2772,7 +2792,7 @@
                 "name": "View",
                 "layout_width": "20",
                 "layout_height": "30",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -2855,7 +2875,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "165",
-            "borderWidth": 0,
+            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#FFFFFF",
             "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -2924,7 +2944,7 @@
             "name": "View",
             "layout_width": "10",
             "layout_height": "30",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -2991,7 +3011,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -3033,7 +3053,7 @@
             "topToBottomOf": "8Wa5Z05iCZJaa6yZ1biAu",
             "textStyle": "regular",
             "textAlignment": "left",
-            "layout_marginLeft": 0,
+            
             "layout_marginTop": 10
           }
         },
@@ -3096,7 +3116,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -3199,7 +3219,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "SMCfCI1htPbDHQO-Zz6Cj",
@@ -3302,7 +3322,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "250",
-            "borderWidth": 0,
+            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#FFFFFF",
             "leftToLeftOf": "upsD2d5yrT9Trb6gmcoHf",
@@ -3408,7 +3428,7 @@
             "name": "View",
             "layout_width": "10",
             "layout_height": "30",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "9WMEYg5YbuipKa8sOuov0",
@@ -3509,7 +3529,7 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -3541,15 +3561,14 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "1",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#EAEDEA",
                     "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
                     "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
                     "topToTopOf": "68mfv5sld27OaSJrCXLeE",
                     "layout_marginLeft": 10,
-                    "layout_marginRight": 10,
-                    "layout_marginTop": 0
+                    "layout_marginRight": 10   
                   }
                 },
                 "icon": "FaTabletAlt",
@@ -3583,7 +3602,7 @@
                     "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
                     "textStyle": "regular",
                     "textAlignment": "left",
-                    "layout_marginLeft": 0,
+                    
                     "layout_marginTop": 10
                   },
                   "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -3611,7 +3630,7 @@
                     "name": "View",
                     "layout_width": "20",
                     "layout_height": "30",
-                    "borderWidth": 0,
+                    
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#ffffff",
                     "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -3695,8 +3714,7 @@
             "layout_width": "154",
             "layout_height": "56",
             "layout_marginLeft": 20,
-            "layout_marginRight": 0,
-            "layout_marginTop": 0,
+    
             "layout_marginBottom": 20,
             "text": "Login Again",
             "textSize": 20,
@@ -3721,8 +3739,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-18"
+        "events": [
+          {
+            "triggerId": "_L3pYfgCXiiFjEpN3VnHo",
+            "triggerName": "Navigate_to_Login_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate",
+              "id": "jIpDVzEOLaRvsEwCZSFzs"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-18",
+        "edit": true
       },
       {
         "id": "Kbrl4jeHrBBla3Xh1EyYn",
@@ -3734,9 +3765,9 @@
           "layoutProperties": {
             "layout_width": "154",
             "layout_height": "56",
-            "layout_marginLeft": 0,
+            
             "layout_marginRight": 20,
-            "layout_marginTop": 0,
+            
             "layout_marginBottom": 20,
             "text": "Thank you",
             "textSize": 20,
@@ -3787,7 +3818,7 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -3819,15 +3850,14 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
             "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
             "topToTopOf": "68mfv5sld27OaSJrCXLeE",
             "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "layout_marginTop": 0
+            "layout_marginRight": 10
           }
         },
         "icon": "FaTabletAlt",
@@ -3861,7 +3891,7 @@
             "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
             "textStyle": "regular",
             "textAlignment": "left",
-            "layout_marginLeft": 0,
+            
             "layout_marginTop": 10
           },
           "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -3889,7 +3919,7 @@
             "name": "View",
             "layout_width": "20",
             "layout_height": "30",
-            "borderWidth": 0,
+            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#ffffff",
             "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -3982,7 +4012,7 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -4014,15 +4044,14 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
                 "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
                 "topToTopOf": "68mfv5sld27OaSJrCXLeE",
                 "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "layout_marginTop": 0
+                "layout_marginRight": 10
               }
             },
             "icon": "FaTabletAlt",
@@ -4056,7 +4085,7 @@
                 "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
                 "textStyle": "regular",
                 "textAlignment": "left",
-                "layout_marginLeft": 0,
+                
                 "layout_marginTop": 10
               },
               "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -4084,7 +4113,7 @@
                 "name": "View",
                 "layout_width": "20",
                 "layout_height": "30",
-                "borderWidth": 0,
+                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#ffffff",
                 "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -4170,7 +4199,7 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "sIhfUMSteqYWZThYsZ7eV",
@@ -4206,15 +4235,14 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
         "rightToRightOf": "68mfv5sld27OaSJrCXLeE",
         "topToTopOf": "68mfv5sld27OaSJrCXLeE",
         "layout_marginLeft": 10,
-        "layout_marginRight": 10,
-        "layout_marginTop": 0
+        "layout_marginRight": 10
       }
     },
     "icon": "FaTabletAlt",
@@ -4252,7 +4280,7 @@
         "topToBottomOf": "E3ENnlBMLkYx2-PRM-ILb",
         "textStyle": "regular",
         "textAlignment": "left",
-        "layout_marginLeft": 0,
+        
         "layout_marginTop": 10
       },
       "bindingKey": "logsum_actsum_vlist_activity_data"
@@ -4284,7 +4312,7 @@
         "name": "View",
         "layout_width": "20",
         "layout_height": "30",
-        "borderWidth": 0,
+        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#ffffff",
         "leftToLeftOf": "68mfv5sld27OaSJrCXLeE",
@@ -4359,8 +4387,7 @@
         "layout_width": "154",
         "layout_height": "56",
         "layout_marginLeft": 20,
-        "layout_marginRight": 0,
-        "layout_marginTop": 0,
+
         "layout_marginBottom": 20,
         "text": "Login Again",
         "textSize": 20,
@@ -4384,10 +4411,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "_L3pYfgCXiiFjEpN3VnHo",
+        "triggerName": "Navigate_to_Login_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-18",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -4401,9 +4436,8 @@
       "layoutProperties": {
         "layout_width": "154",
         "layout_height": "56",
-        "layout_marginLeft": 0,
+        
         "layout_marginRight": 20,
-        "layout_marginTop": 0,
         "layout_marginBottom": 20,
         "text": "Thank you",
         "textSize": 20,
@@ -4426,10 +4460,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
     "path": "0-19",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

@@ -1,0 +1,52 @@
+{
+  "id": "MDYaZq1U2aT_yI7mOEO5i",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_MiniStatement_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "8L666YL19YQ56Q8LH1O9M191K5955K51HLL0559L",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/miniStatement",
+          "requestDataType": "byJSON",
+          "requestBody": { "accountNumber": "2512037", "nTransactions": 0 },
+          "responseStateKey": "hmb_ministate_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_ministate_data.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_To_FinalMiniStatement_Screen",
+              "triggerId": "NkG7RZTUswJkVqtT33AtF"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.z24uqu8dt8Cf9rD1lG304duXoBf3ojt",
+  "_id": "y4ElA2SeUXNCWxAIlM8IW",
+  "updatedAt": "8/24/2023",
+  "createdAt": "8/24/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_MiniStatement_Api_Trig"
+}

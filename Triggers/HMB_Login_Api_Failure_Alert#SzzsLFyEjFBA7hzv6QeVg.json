@@ -10,8 +10,15 @@
         "type": "17",
         "attributes": {
           "serviceName": "Show alert",
-          "title": "Alert!",
-          "text": "Login Failed"
+          "title": "Request Failed!",
+          "text": "$hmb_loginKey.message",
+          "buttons": [
+            {
+              "buttonText": "OK",
+              "triggerId": "_L3pYfgCXiiFjEpN3VnHo",
+              "triggerName": "Navigate_to_Login_Screen"
+            }
+          ]
         },
         "returns": []
       }
@@ -19,8 +26,10 @@
   ],
   "gitBranchName": "master",
   "_id": "SzzsLFyEjFBA7hzv6QeVg",
-  "updatedAt": "6/13/2023",
-  "createdAt": "6/13/2023",
+  "updatedAt": "8/22/2023",
+  "createdAt": "8/22/2023",
   "createdBy": "shaikhahmedraza",
-  "updatedBy": "shaikhahmedraza"
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Login_Api_Failure_Alert",
+  "csrf": "0.5tgfhq782294sMnrVQL2nu61A6uAVigg"
 }

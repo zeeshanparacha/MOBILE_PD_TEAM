@@ -1,0 +1,33 @@
+{
+  "id": "g76a1dv_FbOH2iQ-_26GQ",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Register_IDType_CnicPassport_Hide",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+              "triggerName": "HMB_Register_IDType_Passport_Hide"
+            }
+          ],
+          "triggerId": ["6aJHh7IrPaK7D0C25GWfr"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.u64ihpk9vtolIttyeDly9ZXrszZ3Zv-2",
+  "_id": "M9ikMNH5YXZqjH0zFhFpk",
+  "updatedAt": "8/18/2023",
+  "createdAt": "8/18/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_Register_IDType_CnicPassport_Hide"
+}

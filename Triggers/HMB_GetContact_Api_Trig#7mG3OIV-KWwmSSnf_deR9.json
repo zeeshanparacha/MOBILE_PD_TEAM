@@ -1,0 +1,37 @@
+{
+  "id": "xSH1QwVSU40SkbutqFO_L",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetContact_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": { "Content-Type": "application/json" },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getBankContactDetails",
+          "requestBody": { "inquiry": "null", "temp": "null" },
+          "responseStateKey": "getContactData",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "triggerName": "Navigate_To_Contact_Screen",
+              "triggerId": "Do3JyLxH-2t9v6iCFmw5o"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "hmac": "amx TZyLr8qdWnAxISeeOtsGT2BmUy3fNX4tCghR6qmR46o=:QjDwLts2F47bwqx2ltM3MDqNhf2Do5DtpO6/6ASX/cg=:twwbjuqYAIg8oPjxl09Sz:1688534076969",
+  "csrf": "0.19s25g1j4pdeogOtO6pFgKraZTGVqQgY",
+  "_id": "7mG3OIV-KWwmSSnf_deR9",
+  "updatedAt": "7/5/2023",
+  "createdAt": "7/5/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "I1tKMXbaAK_8AE4e0G8WI",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetAllAccounts_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+          "requestBody": { "accountType": "ALL" },
+          "responseStateKey": "hmb_getAllAccounts_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "hmb_getAccountDetails.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
+              "triggerId": "rh821km91VylOo8NBC2Ri"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.rv3rw39q53nPsZQr8zcNNkBJA0dCpFh2",
+  "_id": "5SvT3MDzYlO4D315zWzHc",
+  "updatedAt": "8/25/2023",
+  "createdAt": "8/25/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetAllAccounts_Api_Trig"
+}

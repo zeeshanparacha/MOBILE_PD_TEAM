@@ -32,8 +32,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/17/2023",
-    "createdAt": "5/17/2023",
+    "updatedAt": "8/31/2023",
+    "createdAt": "8/31/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -56,7 +56,6 @@
             "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
             "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
             "topToTopOf": "omr1ONwPaPQHf_4xCl8PK",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 20
@@ -73,7 +72,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-0"
+        "path": "1-0",
+        "edit": true
       },
       {
         "id": "njNCkyWu_U4b7AphbBy-R",
@@ -126,7 +126,6 @@
             "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
             "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
             "topToBottomOf": "nMtJMmGeFJhCJ_YYAUK2w",
-            "layout_marginBottom": 0,
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -142,8 +141,20 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-2",
+        "events": [
+          {
+            "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+            "triggerName": "Navigate_to_QRScannerComp_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "amOGZaRQ8bL7hA3MuP1F6"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "1-2",
         "edit": true
       },
       {
@@ -238,13 +249,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "50",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "pS3aIj3FPQxYQ9o83Bpu0",
                 "rightToRightOf": "pS3aIj3FPQxYQ9o83Bpu0",
-                "topToTopOf": "pS3aIj3FPQxYQ9o83Bpu0",
-                "layout_marginBottom": 0
+                "topToTopOf": "pS3aIj3FPQxYQ9o83Bpu0"
               }
             },
             "icon": "FaTabletAlt",
@@ -384,7 +393,6 @@
                 "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
                 "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
                 "topToTopOf": "omr1ONwPaPQHf_4xCl8PK",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 20
@@ -401,7 +409,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-0"
+            "path": "1-0",
+            "edit": true
           },
           {
             "id": "njNCkyWu_U4b7AphbBy-R",
@@ -454,7 +463,6 @@
                 "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
                 "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
                 "topToBottomOf": "nMtJMmGeFJhCJ_YYAUK2w",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -470,8 +478,20 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-2",
+            "events": [
+              {
+                "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+                "triggerName": "Navigate_to_QRScannerComp_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "amOGZaRQ8bL7hA3MuP1F6"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "1-2",
             "edit": true
           },
           {
@@ -572,7 +592,6 @@
                 "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
                 "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
                 "topToTopOf": "omr1ONwPaPQHf_4xCl8PK",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 20
@@ -642,7 +661,6 @@
                 "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
                 "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
                 "topToBottomOf": "nMtJMmGeFJhCJ_YYAUK2w",
-                "layout_marginBottom": 0,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -723,7 +741,6 @@
         "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
         "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
         "topToTopOf": "omr1ONwPaPQHf_4xCl8PK",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 20
@@ -740,7 +757,8 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-0",
+    "path": "1-0",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -801,7 +819,6 @@
         "leftToLeftOf": "omr1ONwPaPQHf_4xCl8PK",
         "rightToRightOf": "omr1ONwPaPQHf_4xCl8PK",
         "topToBottomOf": "nMtJMmGeFJhCJ_YYAUK2w",
-        "layout_marginBottom": 0,
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -817,8 +834,15 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-2",
+    "events": [
+      {
+        "triggerId": "Nj8yFWoh4bIcUCfF4WD5S",
+        "triggerName": "Navigate_to_QRScannerComp_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "1-2",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",

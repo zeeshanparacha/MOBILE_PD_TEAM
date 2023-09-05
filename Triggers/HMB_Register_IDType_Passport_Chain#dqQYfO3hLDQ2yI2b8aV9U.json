@@ -1,0 +1,36 @@
+{
+  "id": "XvKX-7Wht_bnEdLz3ngWd",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_Register_IDType_Passport_Chain",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "9otaFUHU0Hd0Yj1eGgIpP",
+              "triggerName": "HMB_Register_IDType_Cnic_Hide"
+            },
+            {
+              "triggerId": "kJFGCm9vJQWmebph-gqYv",
+              "triggerName": "HMB_Register_IDType_Passport_Show"
+            }
+          ],
+          "triggerId": ["9otaFUHU0Hd0Yj1eGgIpP", "kJFGCm9vJQWmebph-gqYv"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.tyrujp5sypxvGdbfDwpo8sGO8hpJK2Y",
+  "_id": "dqQYfO3hLDQ2yI2b8aV9U",
+  "updatedAt": "8/18/2023",
+  "createdAt": "8/18/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}

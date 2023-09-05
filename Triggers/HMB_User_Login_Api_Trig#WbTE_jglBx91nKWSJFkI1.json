@@ -10,7 +10,18 @@
         "type": "1",
         "attributes": {
           "serviceName": "POST",
-          "headers": { "Content-Type": "application/json" },
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "CHECKSUM": "LHYQK5KM8KMOK88O885YY6Q15K6KL8KL5HOO8L6Y"
+          },
           "requestBody": {
             "username": "$hmb_username",
             "password": "$hmb_password",
@@ -21,17 +32,17 @@
             "location": "22,34",
             "isVerifyOtp": "0"
           },
-          "url": "/login/faran2tahir",
+          "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
           "responseStateKey": "hmb_loginResponse",
           "conditions": [
             {
-              "logic": { "==": [{ "var": "hmb_loginResponse.status" }, 200] },
+              "logic": { "==": [{ "var": "hmb_loginResponse.code" }, 1] },
               "httpStatus": 200,
               "triggerName": "Navigate_To_Dashboard",
               "triggerId": "4O2zOMOA53rSnkYZGJPGx"
             },
             {
-              "logic": { "!=": [{ "var": "hmb_loginResponse.status" }, 200] },
+              "logic": { "==": [{ "var": "hmb_loginResponse.code" }, 0] },
               "httpStatus": 400,
               "triggerName": "HMB_Login_Api_Failure_Alert",
               "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
@@ -45,9 +56,10 @@
   ],
   "gitBranchName": "master",
   "_id": "WbTE_jglBx91nKWSJFkI1",
-  "updatedAt": "6/13/2023",
-  "createdAt": "6/13/2023",
+  "updatedAt": "7/26/2023",
+  "createdAt": "7/26/2023",
   "createdBy": "shaikhahmedraza",
   "updatedBy": "shaikhahmedraza",
-  "old_name": "HMB_User_Login_Api_Trig"
+  "old_name": "HMB_User_Login_Api_Trig",
+  "csrf": "0.x6gyeaiz4lw07-ae0C3QmRLl4f5ErnQ"
 }

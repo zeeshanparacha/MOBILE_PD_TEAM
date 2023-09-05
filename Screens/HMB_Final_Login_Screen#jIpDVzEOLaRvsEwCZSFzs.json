@@ -10,7 +10,7 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
+        "statusBarColor": "#1D6131",
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
@@ -31,7 +31,6 @@
           "__v": 0,
           "uri": "HMB_Bg.png"
         },
-        "navbarHeight": 0,
         "hideNavBar": true
       },
       "componentId": [
@@ -51,14 +50,15 @@
         "z2QamlRU8A8QpaRZ4rtgq",
         "z_Kcy1BOMBoBdUT1KeJaH",
         "D9fIUs_cvVIHtISeBHKaa",
-        "CtAZioBgSq_6QGLYtxJ_O"
+        "CtAZioBgSq_6QGLYtxJ_O",
+        "4xyFGJvfblm2v3Dz3yPON"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "6/19/2023",
-    "createdAt": "6/19/2023",
+    "updatedAt": "9/5/2023",
+    "createdAt": "9/5/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -148,7 +148,8 @@
             "layout_marginTop": 30,
             "layout_marginLeft": 20,
             "textStyle": "regular",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "fontName": "CircularStd"
           }
         },
         "icon": "FaTextWidth",
@@ -217,7 +218,7 @@
       {
         "id": "-1-qQ55mVlJUFD8W-MpTa",
         "status": "ACTIVE",
-        "name": "Input text",
+        "name": "Login_Username_Input",
         "attributes": {
           "name": "Login_Username_Input",
           "validation": [],
@@ -228,7 +229,7 @@
             "textAlignment": "left",
             "text": "",
             "numberOfLines": 16,
-            "layout_height": "30",
+            "layout_height": "wrap_content",
             "layout_width": "match_parent",
             "placeHolderText": "Username",
             "keyboardType": "alphanumeric",
@@ -236,7 +237,7 @@
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
             "placeHolderTextColor": "#ffffff",
-            "layout_marginLeft": 57,
+            "layout_marginLeft": 60,
             "layout_marginRight": 20,
             "layout_marginTop": 60,
             "style": "SENTENCECASE",
@@ -255,7 +256,8 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "yh39vUKOx1sDCTrHqNfBP",
@@ -288,7 +290,6 @@
             "topToTopOf": "-1-qQ55mVlJUFD8W-MpTa",
             "bottomToBottomOf": "-1-qQ55mVlJUFD8W-MpTa",
             "layout_marginLeft": 20,
-            "layout_marginRight": 0,
             "layout_marginTop": 10,
             "layout_marginBottom": 10,
             "id": "gQ7X2nGiX19-99Wp5DN0v"
@@ -317,7 +318,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -344,7 +344,7 @@
       {
         "id": "awGH8wT9u3ggXqx-bK1G8",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Login_ForgotUser_Text",
         "attributes": {
           "name": "Login_ForgotUser_Text",
           "layoutProperties": {
@@ -373,8 +373,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-6"
+        "events": [
+          {
+            "triggerId": "hcDsmJ1a-0IfcS9lHV5Ep",
+            "triggerName": "Navigate_to_ForgotUsername_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "RY7-q_djpNv4_mPAwLJJW"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-6",
+        "edit": true
       },
       {
         "id": "7ozrRg0XSIM-nAe1Mnqgq",
@@ -388,13 +401,12 @@
             "textColor": "#ffffff",
             "textStyle": "regular",
             "textAlignment": "left",
-            "text": " ",
             "securityCodeChar": "*",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "topToBottomOf": "awGH8wT9u3ggXqx-bK1G8",
             "layout_width": "match_parent",
-            "layout_height": "30",
+            "layout_height": "wrap_content",
             "layout_marginLeft": 55,
             "layout_marginRight": 20,
             "layout_marginTop": 40
@@ -411,7 +423,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Password", "type": "PASSWORDVIEW" },
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true,
+        "events": []
       },
       {
         "id": "6F29s5zxtB_LWymSV2C_S",
@@ -470,7 +484,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -498,7 +511,7 @@
       {
         "id": "LMZgs_a7SmY-Fec1SlYNg",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Login_ForgotPass_Text",
         "attributes": {
           "name": "Login_ForgotPass_Text",
           "layoutProperties": {
@@ -527,8 +540,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-10"
+        "events": [
+          {
+            "triggerId": "KKXxeLhlKyqyopBKMxPoo",
+            "triggerName": "Navigate_to_ForgotPassword_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "niLAKE_2haItrR4u2i-5T"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-10",
+        "edit": true
       },
       {
         "id": "V9Q4mtBQq0NvxO_8Zec10",
@@ -540,9 +566,7 @@
             "layout_width": "154",
             "layout_height": "56",
             "layout_marginLeft": 20,
-            "layout_marginRight": 0,
             "layout_marginTop": 40,
-            "layout_marginBottom": 0,
             "text": "Register",
             "textSize": 20,
             "textColor": "#ffffff",
@@ -591,10 +615,8 @@
           "layoutProperties": {
             "layout_width": "154",
             "layout_height": "56",
-            "layout_marginLeft": 0,
             "layout_marginRight": 20,
             "layout_marginTop": 40,
-            "layout_marginBottom": 0,
             "text": "Login",
             "textSize": 20,
             "textColor": "#005C29",
@@ -619,43 +641,63 @@
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [
           {
-            "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
-            "triggerName": "HMB_User_Login_Api_Trig",
+            "triggerId": "pjhOp8Jc6HC-wux07QlQn",
+            "triggerName": "HMB_Final_Login_Api_Trig",
             "serviceType": "NETWORK",
             "attributes": {
               "serviceName": "POST",
-              "headers": { "Content-Type": "application/json" },
-              "requestBody": {
-                "username": "$hmb_username",
-                "password": "$hmb_password",
-                "imeino": "111111111111111",
-                "osname": "ANDROID",
-                "osversion": "1.0",
-                "ipaddress": "192.168.0.1",
-                "location": "22,34",
-                "isVerifyOtp": "0"
+              "headers": {
+                "Content-Type": "application/json",
+                "Content-Length": "438",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
               },
-              "url": "/login/faran2tahir",
-              "responseStateKey": "hmb_loginResponse",
+              "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "device": {
+                  "countryCode": "PKR",
+                  "deviceKey": "1244d1426ebe80d3",
+                  "fcmToken": null,
+                  "imei": "111111111111111",
+                  "ip": "192.168.0.112",
+                  "isNotificationEnabled": true,
+                  "name": "2201117TG",
+                  "os": "Android",
+                  "osType": "31"
+                },
+                "location": "",
+                "loginPin": "",
+                "loginType": "CREDENTIALS",
+                "password": "$hmb_password",
+                "username": "$hmb_username"
+              },
+              "responseStateKey": "hmb_loginKey",
               "conditions": [
                 {
-                  "logic": {
-                    "==": [{ "var": "hmb_loginResponse.status" }, 200]
-                  },
+                  "logic": { "==": [{ "var": "hmb_loginKey.code" }, 200] },
                   "httpStatus": 200,
                   "triggerName": "Navigate_To_Dashboard",
                   "triggerId": "4O2zOMOA53rSnkYZGJPGx"
                 },
                 {
-                  "logic": {
-                    "!=": [{ "var": "hmb_loginResponse.status" }, 200]
-                  },
+                  "logic": { "==": [{ "var": "hmb_loginKey.code" }, 400] },
                   "httpStatus": 400,
                   "triggerName": "HMB_Login_Api_Failure_Alert",
                   "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
                 }
               ],
-              "baseURL": "6481a1567f12ba699c105149"
+              "preprocessors": [
+                "firstLevelEncryption",
+                "addCheckSumInterceptor"
+              ]
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -674,13 +716,14 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "4",
-            "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FEC20C",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "layout_marginBottom": 60
+            "layout_marginBottom": 59,
+            "layout_marginLeft": 0,
+            "layout_marginTop": 1
           }
         },
         "icon": "FaTabletAlt",
@@ -797,10 +840,11 @@
               "uri": "RDA_Logo_Text.png"
             },
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
             "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
             "layout_marginLeft": 10,
-            "id": "u1Y5I7HgknYSNKvKYrycu"
+            "id": "u1Y5I7HgknYSNKvKYrycu",
+            "layout_marginTop": 0,
+            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
           },
           "contentType": 2
         },
@@ -858,10 +902,10 @@
               "uri": "Digital_Account_Logo_Text.png"
             },
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
             "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
             "layout_marginRight": 10,
-            "id": "TAQ8TR4PTq2UvI1BLjtyS"
+            "id": "TAQ8TR4PTq2UvI1BLjtyS",
+            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
           },
           "contentType": 2
         },
@@ -890,6 +934,70 @@
             "name": "On click"
           }
         ]
+      },
+      {
+        "id": "4xyFGJvfblm2v3Dz3yPON",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Login_Whatsapp_Logo",
+        "attributes": {
+          "name": "HMB_Login_Whatsapp_Logo",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6492aab369bc7727a87475e9",
+              "name": "whatsapp_icon_front.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "LMQlFIcl3gNR0EUvrP7X-",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "whatsapp_icon_front.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/whatsapp_icon_front.png",
+              "createdAt": "2023-06-21T07:45:55.092Z",
+              "updatedAt": "2023-06-21T07:45:55.092Z",
+              "__v": 0,
+              "uri": "whatsapp_icon_front.png"
+            },
+            "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+            "topToTopOf": "ltTwYTHjDZK7Bo2I27Zpf",
+            "layout_marginRight": 20,
+            "id": "LMQlFIcl3gNR0EUvrP7X-"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-17",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "DqQOoCXfBr1bUnlmc6Y78",
+            "triggerName": "Login_Whatsapp_Tirgger",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Open URL",
+              "url": "WHATSAPP",
+              "urlType": "action",
+              "contact": "+9221111142242",
+              "text": "Hi"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "screen",
@@ -906,7 +1014,7 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "statusBarColor": "#093959",
+            "statusBarColor": "#1D6131",
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
@@ -927,7 +1035,6 @@
               "__v": 0,
               "uri": "HMB_Bg.png"
             },
-            "navbarHeight": 0,
             "hideNavBar": true
           },
           "componentId": []
@@ -1026,7 +1133,8 @@
                 "layout_marginTop": 30,
                 "layout_marginLeft": 20,
                 "textStyle": "regular",
-                "textAlignment": "left"
+                "textAlignment": "left",
+                "fontName": "CircularStd"
               }
             },
             "icon": "FaTextWidth",
@@ -1095,7 +1203,7 @@
           {
             "id": "-1-qQ55mVlJUFD8W-MpTa",
             "status": "ACTIVE",
-            "name": "Input text",
+            "name": "Login_Username_Input",
             "attributes": {
               "name": "Login_Username_Input",
               "validation": [],
@@ -1106,7 +1214,7 @@
                 "textAlignment": "left",
                 "text": "",
                 "numberOfLines": 16,
-                "layout_height": "30",
+                "layout_height": "wrap_content",
                 "layout_width": "match_parent",
                 "placeHolderText": "Username",
                 "keyboardType": "alphanumeric",
@@ -1114,7 +1222,7 @@
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
                 "placeHolderTextColor": "#ffffff",
-                "layout_marginLeft": 57,
+                "layout_marginLeft": 60,
                 "layout_marginRight": 20,
                 "layout_marginTop": 60,
                 "style": "SENTENCECASE",
@@ -1133,7 +1241,8 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "yh39vUKOx1sDCTrHqNfBP",
@@ -1166,7 +1275,6 @@
                 "topToTopOf": "-1-qQ55mVlJUFD8W-MpTa",
                 "bottomToBottomOf": "-1-qQ55mVlJUFD8W-MpTa",
                 "layout_marginLeft": 20,
-                "layout_marginRight": 0,
                 "layout_marginTop": 10,
                 "layout_marginBottom": 10,
                 "id": "gQ7X2nGiX19-99Wp5DN0v"
@@ -1195,7 +1303,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "3",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -1222,7 +1329,7 @@
           {
             "id": "awGH8wT9u3ggXqx-bK1G8",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Login_ForgotUser_Text",
             "attributes": {
               "name": "Login_ForgotUser_Text",
               "layoutProperties": {
@@ -1251,8 +1358,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-6"
+            "events": [
+              {
+                "triggerId": "hcDsmJ1a-0IfcS9lHV5Ep",
+                "triggerName": "Navigate_to_ForgotUsername_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "RY7-q_djpNv4_mPAwLJJW"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-6",
+            "edit": true
           },
           {
             "id": "7ozrRg0XSIM-nAe1Mnqgq",
@@ -1266,13 +1386,12 @@
                 "textColor": "#ffffff",
                 "textStyle": "regular",
                 "textAlignment": "left",
-                "text": " ",
                 "securityCodeChar": "*",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "topToBottomOf": "awGH8wT9u3ggXqx-bK1G8",
                 "layout_width": "match_parent",
-                "layout_height": "30",
+                "layout_height": "wrap_content",
                 "layout_marginLeft": 55,
                 "layout_marginRight": 20,
                 "layout_marginTop": 40
@@ -1289,7 +1408,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Password", "type": "PASSWORDVIEW" },
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true,
+            "events": []
           },
           {
             "id": "6F29s5zxtB_LWymSV2C_S",
@@ -1348,7 +1469,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "3",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -1376,7 +1496,7 @@
           {
             "id": "LMZgs_a7SmY-Fec1SlYNg",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Login_ForgotPass_Text",
             "attributes": {
               "name": "Login_ForgotPass_Text",
               "layoutProperties": {
@@ -1405,8 +1525,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-10"
+            "events": [
+              {
+                "triggerId": "KKXxeLhlKyqyopBKMxPoo",
+                "triggerName": "Navigate_to_ForgotPassword_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "niLAKE_2haItrR4u2i-5T"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-10",
+            "edit": true
           },
           {
             "id": "V9Q4mtBQq0NvxO_8Zec10",
@@ -1418,9 +1551,7 @@
                 "layout_width": "154",
                 "layout_height": "56",
                 "layout_marginLeft": 20,
-                "layout_marginRight": 0,
                 "layout_marginTop": 40,
-                "layout_marginBottom": 0,
                 "text": "Register",
                 "textSize": 20,
                 "textColor": "#ffffff",
@@ -1469,10 +1600,8 @@
               "layoutProperties": {
                 "layout_width": "154",
                 "layout_height": "56",
-                "layout_marginLeft": 0,
                 "layout_marginRight": 20,
                 "layout_marginTop": 40,
-                "layout_marginBottom": 0,
                 "text": "Login",
                 "textSize": 20,
                 "textColor": "#005C29",
@@ -1497,43 +1626,63 @@
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [
               {
-                "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
-                "triggerName": "HMB_User_Login_Api_Trig",
+                "triggerId": "pjhOp8Jc6HC-wux07QlQn",
+                "triggerName": "HMB_Final_Login_Api_Trig",
                 "serviceType": "NETWORK",
                 "attributes": {
                   "serviceName": "POST",
-                  "headers": { "Content-Type": "application/json" },
-                  "requestBody": {
-                    "username": "$hmb_username",
-                    "password": "$hmb_password",
-                    "imeino": "111111111111111",
-                    "osname": "ANDROID",
-                    "osversion": "1.0",
-                    "ipaddress": "192.168.0.1",
-                    "location": "22,34",
-                    "isVerifyOtp": "0"
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Content-Length": "438",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
                   },
-                  "url": "/login/faran2tahir",
-                  "responseStateKey": "hmb_loginResponse",
+                  "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "1244d1426ebe80d3",
+                      "fcmToken": null,
+                      "imei": "111111111111111",
+                      "ip": "192.168.0.112",
+                      "isNotificationEnabled": true,
+                      "name": "2201117TG",
+                      "os": "Android",
+                      "osType": "31"
+                    },
+                    "location": "",
+                    "loginPin": "",
+                    "loginType": "CREDENTIALS",
+                    "password": "$hmb_password",
+                    "username": "$hmb_username"
+                  },
+                  "responseStateKey": "hmb_loginKey",
                   "conditions": [
                     {
-                      "logic": {
-                        "==": [{ "var": "hmb_loginResponse.status" }, 200]
-                      },
+                      "logic": { "==": [{ "var": "hmb_loginKey.code" }, 200] },
                       "httpStatus": 200,
                       "triggerName": "Navigate_To_Dashboard",
                       "triggerId": "4O2zOMOA53rSnkYZGJPGx"
                     },
                     {
-                      "logic": {
-                        "!=": [{ "var": "hmb_loginResponse.status" }, 200]
-                      },
+                      "logic": { "==": [{ "var": "hmb_loginKey.code" }, 400] },
                       "httpStatus": 400,
                       "triggerName": "HMB_Login_Api_Failure_Alert",
                       "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
                     }
                   ],
-                  "baseURL": "6481a1567f12ba699c105149"
+                  "preprocessors": [
+                    "firstLevelEncryption",
+                    "addCheckSumInterceptor"
+                  ]
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -1552,13 +1701,14 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "4",
-                "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FEC20C",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "layout_marginBottom": 60
+                "layout_marginBottom": 59,
+                "layout_marginLeft": 0,
+                "layout_marginTop": 1
               }
             },
             "icon": "FaTabletAlt",
@@ -1675,10 +1825,11 @@
                   "uri": "RDA_Logo_Text.png"
                 },
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
                 "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
                 "layout_marginLeft": 10,
-                "id": "u1Y5I7HgknYSNKvKYrycu"
+                "id": "u1Y5I7HgknYSNKvKYrycu",
+                "layout_marginTop": 0,
+                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
               },
               "contentType": 2
             },
@@ -1736,10 +1887,10 @@
                   "uri": "Digital_Account_Logo_Text.png"
                 },
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
                 "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
                 "layout_marginRight": 10,
-                "id": "TAQ8TR4PTq2UvI1BLjtyS"
+                "id": "TAQ8TR4PTq2UvI1BLjtyS",
+                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
               },
               "contentType": 2
             },
@@ -1763,6 +1914,70 @@
                 "attributes": {
                   "serviceName": "Navigate with back stack",
                   "id": "rlziaXnhqtVKjaxyodk4F"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "4xyFGJvfblm2v3Dz3yPON",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "HMB_Login_Whatsapp_Logo",
+            "attributes": {
+              "name": "HMB_Login_Whatsapp_Logo",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6492aab369bc7727a87475e9",
+                  "name": "whatsapp_icon_front.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "LMQlFIcl3gNR0EUvrP7X-",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "whatsapp_icon_front.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/whatsapp_icon_front.png",
+                  "createdAt": "2023-06-21T07:45:55.092Z",
+                  "updatedAt": "2023-06-21T07:45:55.092Z",
+                  "__v": 0,
+                  "uri": "whatsapp_icon_front.png"
+                },
+                "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+                "topToTopOf": "ltTwYTHjDZK7Bo2I27Zpf",
+                "layout_marginRight": 20,
+                "id": "LMQlFIcl3gNR0EUvrP7X-"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-17",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "DqQOoCXfBr1bUnlmc6Y78",
+                "triggerName": "Login_Whatsapp_Tirgger",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Open URL",
+                  "url": "WHATSAPP",
+                  "urlType": "action",
+                  "contact": "+9221111142242",
+                  "text": "Hi"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -1859,7 +2074,8 @@
         "layout_marginTop": 30,
         "layout_marginLeft": 20,
         "textStyle": "regular",
-        "textAlignment": "left"
+        "textAlignment": "left",
+        "fontName": "CircularStd"
       }
     },
     "icon": "FaTextWidth",
@@ -1930,7 +2146,7 @@
   {
     "id": "-1-qQ55mVlJUFD8W-MpTa",
     "status": "ACTIVE",
-    "name": "Input text",
+    "name": "Login_Username_Input",
     "attributes": {
       "name": "Login_Username_Input",
       "validation": [],
@@ -1941,7 +2157,7 @@
         "textAlignment": "left",
         "text": "",
         "numberOfLines": 16,
-        "layout_height": "30",
+        "layout_height": "wrap_content",
         "layout_width": "match_parent",
         "placeHolderText": "Username",
         "keyboardType": "alphanumeric",
@@ -1949,7 +2165,7 @@
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
         "placeHolderTextColor": "#ffffff",
-        "layout_marginLeft": 57,
+        "layout_marginLeft": 60,
         "layout_marginRight": 20,
         "layout_marginTop": 60,
         "style": "SENTENCECASE",
@@ -1969,6 +2185,7 @@
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2005,7 +2222,6 @@
         "topToTopOf": "-1-qQ55mVlJUFD8W-MpTa",
         "bottomToBottomOf": "-1-qQ55mVlJUFD8W-MpTa",
         "layout_marginLeft": 20,
-        "layout_marginRight": 0,
         "layout_marginTop": 10,
         "layout_marginBottom": 10,
         "id": "gQ7X2nGiX19-99Wp5DN0v"
@@ -2038,7 +2254,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "3",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -2069,7 +2284,7 @@
   {
     "id": "awGH8wT9u3ggXqx-bK1G8",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Login_ForgotUser_Text",
     "attributes": {
       "name": "Login_ForgotUser_Text",
       "layoutProperties": {
@@ -2098,8 +2313,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "hcDsmJ1a-0IfcS9lHV5Ep",
+        "triggerName": "Navigate_to_ForgotUsername_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-6",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2117,13 +2340,12 @@
         "textColor": "#ffffff",
         "textStyle": "regular",
         "textAlignment": "left",
-        "text": " ",
         "securityCodeChar": "*",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "topToBottomOf": "awGH8wT9u3ggXqx-bK1G8",
         "layout_width": "match_parent",
-        "layout_height": "30",
+        "layout_height": "wrap_content",
         "layout_marginLeft": 55,
         "layout_marginRight": 20,
         "layout_marginTop": 40
@@ -2141,6 +2363,8 @@
     "projectType": "mobile",
     "component": { "content": "Password", "type": "PASSWORDVIEW" },
     "path": "0-7",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2207,7 +2431,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "3",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -2239,7 +2462,7 @@
   {
     "id": "LMZgs_a7SmY-Fec1SlYNg",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Login_ForgotPass_Text",
     "attributes": {
       "name": "Login_ForgotPass_Text",
       "layoutProperties": {
@@ -2268,8 +2491,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "KKXxeLhlKyqyopBKMxPoo",
+        "triggerName": "Navigate_to_ForgotPassword_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-10",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2285,9 +2516,7 @@
         "layout_width": "154",
         "layout_height": "56",
         "layout_marginLeft": 20,
-        "layout_marginRight": 0,
         "layout_marginTop": 40,
-        "layout_marginBottom": 0,
         "text": "Register",
         "textSize": 20,
         "textColor": "#ffffff",
@@ -2335,10 +2564,8 @@
       "layoutProperties": {
         "layout_width": "154",
         "layout_height": "56",
-        "layout_marginLeft": 0,
         "layout_marginRight": 20,
         "layout_marginTop": 40,
-        "layout_marginBottom": 0,
         "text": "Login",
         "textSize": 20,
         "textColor": "#005C29",
@@ -2363,8 +2590,8 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [
       {
-        "triggerId": "b5rfteB4Lzw7fi0ClAUUF",
-        "triggerName": "HMB_User_Login_Api_Trig",
+        "triggerId": "pjhOp8Jc6HC-wux07QlQn",
+        "triggerName": "HMB_Final_Login_Api_Trig",
         "name": "On click",
         "type": "ONCLICK"
       }
@@ -2386,13 +2613,14 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "4",
-        "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FEC20C",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "layout_marginBottom": 60
+        "layout_marginBottom": 59,
+        "layout_marginLeft": 0,
+        "layout_marginTop": 1
       }
     },
     "icon": "FaTabletAlt",
@@ -2507,10 +2735,11 @@
           "uri": "RDA_Logo_Text.png"
         },
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
         "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
         "layout_marginLeft": 10,
-        "id": "u1Y5I7HgknYSNKvKYrycu"
+        "id": "u1Y5I7HgknYSNKvKYrycu",
+        "layout_marginTop": 0,
+        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
       },
       "contentType": 2
     },
@@ -2567,10 +2796,10 @@
           "uri": "Digital_Account_Logo_Text.png"
         },
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH",
         "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
         "layout_marginRight": 10,
-        "id": "TAQ8TR4PTq2UvI1BLjtyS"
+        "id": "TAQ8TR4PTq2UvI1BLjtyS",
+        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
       },
       "contentType": 2
     },
@@ -2590,6 +2819,65 @@
       {
         "triggerId": "PsmQoS4Rsfi6bdwsICXyj",
         "triggerName": "Navigate_To_DigiAcc_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "4xyFGJvfblm2v3Dz3yPON",
+    "status": "ACTIVE",
+    "name": "HMB_Login_Whatsapp_Logo",
+    "attributes": {
+      "name": "HMB_Login_Whatsapp_Logo",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6492aab369bc7727a87475e9",
+          "name": "whatsapp_icon_front.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "LMQlFIcl3gNR0EUvrP7X-",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "whatsapp_icon_front.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/whatsapp_icon_front.png",
+          "createdAt": "2023-06-21T07:45:55.092Z",
+          "updatedAt": "2023-06-21T07:45:55.092Z",
+          "__v": 0,
+          "uri": "whatsapp_icon_front.png"
+        },
+        "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+        "topToTopOf": "ltTwYTHjDZK7Bo2I27Zpf",
+        "layout_marginRight": 20,
+        "id": "LMQlFIcl3gNR0EUvrP7X-"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-17",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "DqQOoCXfBr1bUnlmc6Y78",
+        "triggerName": "Login_Whatsapp_Tirgger",
         "name": "On click",
         "type": "ONCLICK"
       }
