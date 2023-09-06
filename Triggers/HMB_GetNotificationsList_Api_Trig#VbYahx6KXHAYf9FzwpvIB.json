@@ -1,0 +1,54 @@
+{
+  "id": "n_Lc31Glo3K66LyFx1aqy",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_GetNotificationsList_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "login_id": "$hmb_username",
+            "user_id": "$loginValidate.content.customer.id"
+          },
+          "url": "https://hliteuat.habibmetro.com/common/v1/getUserAlertsHMB",
+          "responseStateKey": "getnotify_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "getnotify_data.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_Notifications_Screen",
+              "triggerId": "1uEpdfSoTbX0pI81BRCQC"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.3c1xzl2uh0mSdFVp4hrGZr1rDtmpkYZQ",
+  "_id": "VbYahx6KXHAYf9FzwpvIB",
+  "updatedAt": "9/6/2023",
+  "createdAt": "9/6/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_GetNotificationsList_Api_Trig"
+}
