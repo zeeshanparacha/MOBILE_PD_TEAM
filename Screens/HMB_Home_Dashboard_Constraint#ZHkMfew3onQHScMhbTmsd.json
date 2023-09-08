@@ -78,7 +78,8 @@
         "RwiI5eFi_G1z-ML7EROO0",
         "A7xjafAeOGwS3dsH0qAUg",
         "1IcxZ_4ajtB6ErElv5WyL",
-        "hbzNDs0-FivOtajGwykAs"
+        "hbzNDs0-FivOtajGwykAs",
+        "O0oPCmdST5WzkPNc3NkTZ"
       ]
     },
     "group": "Layout",
@@ -3869,11 +3870,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -4287,11 +4289,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -4346,11 +4349,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -4364,6 +4368,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -8210,11 +8270,12 @@
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 30,
-                "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+                "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+                "elevation": 60
               },
               "contentType": 2,
               "hideCondition": {
-                "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+                "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
               }
             },
             "icon": "FaRegImage",
@@ -8634,11 +8695,12 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 70,
                 "visibility": true,
-                "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+                "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+                "elevation": 60
               },
               "contentType": 2,
               "hideCondition": {
-                "==": [
+                "!=": [
                   { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
                   ""
                 ]
@@ -8693,11 +8755,12 @@
                 "layout_marginRight": 20,
                 "layout_marginTop": 70,
                 "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-                "visibility": false
+                "visibility": false,
+                "elevation": 60
               },
               "contentType": 2,
               "hideCondition": {
-                "==": [
+                "!=": [
                   { "var": "hmb_getBeneList_data.content.beneficiaries" },
                   ""
                 ]
@@ -8714,6 +8777,62 @@
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-61",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "O0oPCmdST5WzkPNc3NkTZ",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+            "attributes": {
+              "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+              "layoutProperties": {
+                "layout_width": "match_constraint",
+                "layout_height": "150",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "user",
+                  "_id": "64faa5c6683922479c062521",
+                  "name": "NoItemFound_Img.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "NoItemFound_Img.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+                  "createdAt": "2023-09-08T04:40:38.787Z",
+                  "updatedAt": "2023-09-08T04:40:38.787Z",
+                  "__v": 0,
+                  "uri": "NoItemFound_Img.png"
+                },
+                "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+                "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+                "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 60,
+                "elevation": 60,
+                "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+              },
+              "contentType": 2,
+              "hideCondition": {
+                "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+              }
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-62",
             "edit": true,
             "events": []
           }
@@ -13410,11 +13529,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -13828,11 +13948,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -13887,11 +14008,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -13905,6 +14027,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -19790,11 +19968,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -20208,11 +20387,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -20267,11 +20447,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -20285,6 +20466,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -25107,11 +25344,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -25525,11 +25763,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -25584,11 +25823,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -25602,6 +25842,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -30897,11 +31193,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -31315,11 +31612,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -31374,11 +31672,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -31392,6 +31691,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -33318,11 +33673,12 @@
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 30,
-        "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+        "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+        "elevation": 60
       },
       "contentType": 2,
       "hideCondition": {
-        "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+        "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
       }
     },
     "icon": "FaRegImage",
@@ -37482,11 +37838,12 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
+            "!=": [{ "var": "hmb_CardListData.content.debitCardList" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -37900,11 +38257,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "visibility": true,
-            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [
+            "!=": [
               { "var": "hmb_getAllAccounts_data.content.casaAccounts" },
               ""
             ]
@@ -37959,11 +38317,12 @@
             "layout_marginRight": 20,
             "layout_marginTop": 70,
             "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-            "visibility": false
+            "visibility": false,
+            "elevation": 60
           },
           "contentType": 2,
           "hideCondition": {
-            "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+            "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
           }
         },
         "icon": "FaRegImage",
@@ -37977,6 +38336,62 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-61",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "O0oPCmdST5WzkPNc3NkTZ",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+        "attributes": {
+          "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "150",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64faa5c6683922479c062521",
+              "name": "NoItemFound_Img.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "NoItemFound_Img.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+              "createdAt": "2023-09-08T04:40:38.787Z",
+              "updatedAt": "2023-09-08T04:40:38.787Z",
+              "__v": 0,
+              "uri": "NoItemFound_Img.png"
+            },
+            "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+            "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+            "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 60,
+            "elevation": 60,
+            "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+          },
+          "contentType": 2,
+          "hideCondition": {
+            "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
+          }
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-62",
         "edit": true,
         "events": []
       }
@@ -38998,11 +39413,12 @@
         "layout_marginRight": 20,
         "layout_marginTop": 70,
         "visibility": true,
-        "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+        "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+        "elevation": 60
       },
       "contentType": 2,
       "hideCondition": {
-        "==": [{ "var": "hmb_getAllAccounts_data.content.casaAccounts" }, ""]
+        "!=": [{ "var": "hmb_getAllAccounts_data.content.casaAccounts" }, ""]
       }
     },
     "icon": "FaRegImage",
@@ -39014,11 +39430,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-60",
     "edit": true,
     "events": [],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -39057,11 +39473,71 @@
         "layout_marginRight": 20,
         "layout_marginTop": 70,
         "id": "3Xa_EHsWp-G8q1Q0iwk2E",
-        "visibility": false
+        "visibility": false,
+        "elevation": 60
       },
       "contentType": 2,
       "hideCondition": {
-        "==": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+        "!=": [{ "var": "hmb_getBeneList_data.content.beneficiaries" }, ""]
+      }
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-61",
+    "edit": true,
+    "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "O0oPCmdST5WzkPNc3NkTZ",
+    "status": "ACTIVE",
+    "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+    "attributes": {
+      "name": "HMB_Hoem_Dashboard_Bill_EPayment_NoItemFound_Img",
+      "layoutProperties": {
+        "layout_width": "match_constraint",
+        "layout_height": "150",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "user",
+          "_id": "64faa5c6683922479c062521",
+          "name": "NoItemFound_Img.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "3Xa_EHsWp-G8q1Q0iwk2E",
+          "gitBranchName": "master",
+          "folderType": "xxxhdpi",
+          "platform": "Android",
+          "url": "NoItemFound_Img.png",
+          "canvasUrl": "Android/drawable-xxxhdpi/NoItemFound_Img.png",
+          "createdAt": "2023-09-08T04:40:38.787Z",
+          "updatedAt": "2023-09-08T04:40:38.787Z",
+          "__v": 0,
+          "uri": "NoItemFound_Img.png"
+        },
+        "leftToLeftOf": "_AJV80frP-TAsxaJk0Dhj",
+        "rightToRightOf": "_AJV80frP-TAsxaJk0Dhj",
+        "topToBottomOf": "W_DB5iVZdz6PF9tI1N-EQ",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20,
+        "layout_marginTop": 60,
+        "elevation": 60,
+        "id": "3Xa_EHsWp-G8q1Q0iwk2E"
+      },
+      "contentType": 2,
+      "hideCondition": {
+        "!=": [{ "var": "getBillBene_Data.content.consumers" }, ""]
       }
     },
     "icon": "FaRegImage",
@@ -39075,7 +39551,7 @@
     "projectType": "mobile",
     "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-61",
+    "path": "0-62",
     "edit": true,
     "events": [],
     "projectId": "63ef72a290c5800428f84dd9",
