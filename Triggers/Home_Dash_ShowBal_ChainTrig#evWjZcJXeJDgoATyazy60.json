@@ -1,0 +1,36 @@
+{
+  "id": "vCxxsVIqjn99Fx_7x8x2x",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "Home_Dash_ShowBal_ChainTrig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "Nsl5kfHkgjsxTP1kueHma",
+              "triggerName": "Home_Dash_ShowBal_AllHide"
+            },
+            {
+              "triggerId": "cFsmswESHRSreizvA8Roq",
+              "triggerName": "Home_Dash_ShowBal_AllShow"
+            }
+          ],
+          "triggerId": ["Nsl5kfHkgjsxTP1kueHma", "cFsmswESHRSreizvA8Roq"]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.iupcw5nwyzS2Oap8p1CUhLI-ssumfbt",
+  "_id": "evWjZcJXeJDgoATyazy60",
+  "updatedAt": "9/8/2023",
+  "createdAt": "9/8/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza"
+}
