@@ -1,0 +1,50 @@
+{
+  "id": "CwbEC7jDddcNguWZCMOEe",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "HMB_P2PQR_Api_Trig",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/validateP2PQR",
+          "requestDataType": "byJSON",
+          "requestBody": { "qrCode": "$qr_scan" },
+          "responseStateKey": "qrscan_data",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "qrscan_data.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_P2P_RaastPay_Screen",
+              "triggerId": "Zq7sH3gcYltLe2nMLSicK"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.c3e8688feow5UFGf-bN9wi_ga98axVra",
+  "_id": "KvY3_71Zs7aib53iP5UbO",
+  "updatedAt": "9/11/2023",
+  "createdAt": "9/11/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "HMB_P2PQR_Api_Trig"
+}

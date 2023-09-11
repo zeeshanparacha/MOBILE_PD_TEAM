@@ -30,10 +30,8 @@
         "IN0iIgb7h6P3CXcT2IvDM",
         "XgisjpU5cAVtyg87eFhdh",
         "S1LYXn-ZPVl4-443oQVJo",
-        "Ro8MNtA4Ik2zv7qpMnwfo",
         "XXq6Uzy1YXVFgruC-hAge",
         "AzjKYB0oJFJ1Yiqfu0BSY",
-        "slIZY-UnW-DNgIycHSwnD",
         "lv2M7jVsXJy9oZnagma0s",
         "Vwfj3bTXMBhkjpG7LpTWz",
         "d-btlup_j7lOJfOEbPf3m",
@@ -41,14 +39,16 @@
         "yVPcg4AKK7CTGseYGcXBw",
         "DpP558nUwRFgd8n4EA3mg",
         "LQ_U6ot3XNTbMDNS31ez5",
-        "oDjZM3zQewVClnhH1Pz-O"
+        "oDjZM3zQewVClnhH1Pz-O",
+        "ivk8lDn04z4AVgk5ji6GW",
+        "S83aktTbNVzpvi5yleQ9T"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "6/23/2023",
-    "createdAt": "6/23/2023",
+    "updatedAt": "9/11/2023",
+    "createdAt": "9/11/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -295,7 +295,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
             "topToBottomOf": "p9fpHt_JB9s9hYQuedotZ",
-            
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
@@ -325,7 +324,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
@@ -524,7 +522,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
@@ -547,47 +544,6 @@
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
         "path": "0-12"
-      },
-      {
-        "id": "Ro8MNtA4Ik2zv7qpMnwfo",
-        "status": "ACTIVE",
-        "name": "Input text",
-        "attributes": {
-          "name": "RaastId_Input",
-          "validation": [],
-          "layoutProperties": {
-            "textSize": 15,
-            "textColor": "#000000",
-            "textStyle": "regular",
-            "textAlignment": "left",
-            "text": "",
-            "numberOfLines": 1,
-            "layout_height": "wrap_content",
-            "layout_width": "match_parent",
-            "placeHolderText": "03XXXXXXXXX",
-            "keyboardType": "number",
-            "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-            "rightToRightOf": "S1LYXn-ZPVl4-443oQVJo",
-            "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-            "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-            "placeHolderTextColor": "#989898",
-            "style": "SENTENCECASE",
-            "layout_marginLeft": 20,
-            "layout_marginRight": 17
-          }
-        },
-        "icon": "FaRemoveFormat",
-        "group": "Form",
-        "type": "INPUTTEXT",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Input text", "type": "INPUTTEXT" },
-        "events": [],
-        "path": "0-13"
       },
       {
         "id": "XXq6Uzy1YXVFgruC-hAge",
@@ -634,7 +590,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
@@ -657,48 +612,6 @@
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
         "path": "0-15"
-      },
-      {
-        "id": "slIZY-UnW-DNgIycHSwnD",
-        "status": "ACTIVE",
-        "name": "RaastTransfer_Amount_Input",
-        "attributes": {
-          "name": "RaastTransfer_Amount_Input",
-          "validation": [],
-          "layoutProperties": {
-            "textSize": 15,
-            "textColor": "#000000",
-            "textStyle": "regular",
-            "textAlignment": "left",
-            "text": "",
-            "numberOfLines": 1,
-            "layout_height": "wrap_content",
-            "layout_width": "match_parent",
-            "placeHolderText": "Amount",
-            "keyboardType": "number",
-            "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "rightToRightOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "placeHolderTextColor": "#989898",
-            "style": "SENTENCECASE",
-            "layout_marginLeft": 20,
-            "layout_marginRight": 17
-          }
-        },
-        "icon": "FaRemoveFormat",
-        "group": "Form",
-        "type": "INPUTTEXT",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Input text", "type": "INPUTTEXT" },
-        "events": [],
-        "path": "0-16",
-        "edit": true
       },
       {
         "id": "lv2M7jVsXJy9oZnagma0s",
@@ -873,7 +786,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
@@ -943,7 +855,6 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "63",
-            
             "layout_marginTop": 30,
             "text": "Next",
             "textSize": 20,
@@ -1020,6 +931,80 @@
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-24"
+      },
+      {
+        "id": "ivk8lDn04z4AVgk5ji6GW",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "RaastId_Data_Text",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#1d6131",
+            "text": "Hello",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
+            "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
+            "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
+            "layout_marginLeft": 20,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          },
+          "bindingKey": "qrscan_data.content.iban"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-23"
+      },
+      {
+        "id": "S83aktTbNVzpvi5yleQ9T",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Amount_Data_Text",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#A6A8A4",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+            "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+            "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+            "layout_marginLeft": 20,
+            "textStyle": "regular",
+            "textAlignment": "left"
+          },
+          "bindingKey": "qrscan_data.content.amount"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-24"
       }
     ],
     "subType": "screen",
@@ -1070,7 +1055,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToTopOf": "n6lncHJpMG9KJxzS--K8b",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
                 "textStyle": "bold"
@@ -1105,7 +1090,7 @@
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "C8NrqcALI7AimIJrJMolf",
-                    "layout_marginTop": 10,
+                "layout_marginTop": 10,
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20
               }
@@ -1140,7 +1125,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
                 "topToTopOf": "p9fpHt_JB9s9hYQuedotZ",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
@@ -1175,7 +1160,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
                 "topToBottomOf": "8FvHYc4GHrCjb9UPaIK8i",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
@@ -1210,7 +1195,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
                 "topToBottomOf": "t_uJvPanflT7P3CfDhFz4",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
                 "textAlignment": "left"
@@ -1246,7 +1231,7 @@
                 "rightToRightOf": "p9fpHt_JB9s9hYQuedotZ",
                 "topToTopOf": "p9fpHt_JB9s9hYQuedotZ",
                 "bottomToBottomOf": "p9fpHt_JB9s9hYQuedotZ",
-                    "textAlignment": "right",
+                "textAlignment": "right",
                 "textStyle": "bold",
                 "layout_marginRight": 20
               }
@@ -1294,7 +1279,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "p9fpHt_JB9s9hYQuedotZ",
-                    
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
@@ -1324,13 +1308,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "03vznWVNoLG-gFzqsjI7Q",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
               }
@@ -1366,7 +1349,7 @@
                 "leftToLeftOf": "Tk4WSLqa0P9pYyzYUer3P",
                 "topToTopOf": "Tk4WSLqa0P9pYyzYUer3P",
                 "bottomToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -1414,7 +1397,7 @@
                 "rightToRightOf": "Tk4WSLqa0P9pYyzYUer3P",
                 "topToTopOf": "Tk4WSLqa0P9pYyzYUer3P",
                 "bottomToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-                    "layout_marginRight": 20,
+                "layout_marginRight": 20,
                 "id": "TDI6iHI2WebhM0mMtUzEc"
               },
               "contentType": 2
@@ -1446,7 +1429,7 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
                 "textStyle": "bold"
@@ -1494,7 +1477,7 @@
                 },
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToTopOf": "IN0iIgb7h6P3CXcT2IvDM",
-                    "layout_marginRight": 20,
+                "layout_marginRight": 20,
                 "id": "4h2ugQiBWhS6j-pGy5jFZ"
               },
               "contentType": 2
@@ -1523,13 +1506,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "IN0iIgb7h6P3CXcT2IvDM",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
               }
@@ -1548,47 +1530,6 @@
             "path": "0-12"
           },
           {
-            "id": "Ro8MNtA4Ik2zv7qpMnwfo",
-            "status": "ACTIVE",
-            "name": "Input text",
-            "attributes": {
-              "name": "RaastId_Input",
-              "validation": [],
-              "layoutProperties": {
-                "textSize": 15,
-                "textColor": "#000000",
-                "textStyle": "regular",
-                "textAlignment": "left",
-                "text": "",
-                "numberOfLines": 1,
-                "layout_height": "wrap_content",
-                "layout_width": "match_parent",
-                "placeHolderText": "03XXXXXXXXX",
-                "keyboardType": "number",
-                "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-                "rightToRightOf": "S1LYXn-ZPVl4-443oQVJo",
-                "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-                "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-                    "placeHolderTextColor": "#989898",
-                "style": "SENTENCECASE",
-                "layout_marginLeft": 20,
-                "layout_marginRight": 17
-              }
-            },
-            "icon": "FaRemoveFormat",
-            "group": "Form",
-            "type": "INPUTTEXT",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Input text", "type": "INPUTTEXT" },
-            "events": [],
-            "path": "0-13"
-          },
-          {
             "id": "XXq6Uzy1YXVFgruC-hAge",
             "status": "ACTIVE",
             "name": "Text view",
@@ -1604,7 +1545,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
                 "textStyle": "bold"
@@ -1633,13 +1574,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "XXq6Uzy1YXVFgruC-hAge",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
               }
@@ -1658,48 +1598,6 @@
             "path": "0-15"
           },
           {
-            "id": "slIZY-UnW-DNgIycHSwnD",
-            "status": "ACTIVE",
-            "name": "RaastTransfer_Amount_Input",
-            "attributes": {
-              "name": "RaastTransfer_Amount_Input",
-              "validation": [],
-              "layoutProperties": {
-                "textSize": 15,
-                "textColor": "#000000",
-                "textStyle": "regular",
-                "textAlignment": "left",
-                "text": "",
-                "numberOfLines": 1,
-                "layout_height": "wrap_content",
-                "layout_width": "match_parent",
-                "placeHolderText": "Amount",
-                "keyboardType": "number",
-                "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "rightToRightOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                    "placeHolderTextColor": "#989898",
-                "style": "SENTENCECASE",
-                "layout_marginLeft": 20,
-                "layout_marginRight": 17
-              }
-            },
-            "icon": "FaRemoveFormat",
-            "group": "Form",
-            "type": "INPUTTEXT",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Input text", "type": "INPUTTEXT" },
-            "events": [],
-            "path": "0-16",
-            "edit": true
-          },
-          {
             "id": "lv2M7jVsXJy9oZnagma0s",
             "status": "ACTIVE",
             "name": "Text view",
@@ -1714,7 +1612,7 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
                 "textStyle": "bold"
@@ -1749,7 +1647,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "lv2M7jVsXJy9oZnagma0s",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "textStyle": "bold",
                 "textAlignment": "left"
               }
@@ -1783,7 +1681,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "Vwfj3bTXMBhkjpG7LpTWz",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "textStyle": "bold",
                 "textAlignment": "left"
               }
@@ -1830,7 +1728,7 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "d-btlup_j7lOJfOEbPf3m",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
                 "textAlignment": "left"
@@ -1872,13 +1770,12 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
                 "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
                 "topToBottomOf": "sdIknW6-MB3GLj8pifRWt",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
               }
@@ -1913,7 +1810,7 @@
                 "leftToLeftOf": "yVPcg4AKK7CTGseYGcXBw",
                 "topToTopOf": "yVPcg4AKK7CTGseYGcXBw",
                 "bottomToBottomOf": "yVPcg4AKK7CTGseYGcXBw",
-                    "layout_marginLeft": 20,
+                "layout_marginLeft": 20,
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
@@ -1942,9 +1839,8 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "63",
-                    
                 "layout_marginTop": 30,
-                    "text": "Next",
+                "text": "Next",
                 "textSize": 20,
                 "textColor": "#ffffff",
                 "textStyle": "book",
@@ -2019,6 +1915,80 @@
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-24"
+          },
+          {
+            "id": "ivk8lDn04z4AVgk5ji6GW",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "RaastId_Data_Text",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#1d6131",
+                "text": "Hello",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
+                "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
+                "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "qrscan_data.content.iban"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-23"
+          },
+          {
+            "id": "S83aktTbNVzpvi5yleQ9T",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Amount_Data_Text",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#A6A8A4",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+                "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+                "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "qrscan_data.content.amount"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-24"
           }
         ],
         "subType": "screen"
@@ -2046,7 +2016,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToTopOf": "n6lncHJpMG9KJxzS--K8b",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2086,7 +2055,6 @@
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "C8NrqcALI7AimIJrJMolf",
-        
         "layout_marginTop": 10,
         "layout_marginLeft": 20,
         "layout_marginRight": 20
@@ -2126,7 +2094,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
         "topToTopOf": "p9fpHt_JB9s9hYQuedotZ",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textAlignment": "left",
@@ -2166,7 +2133,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
         "topToBottomOf": "8FvHYc4GHrCjb9UPaIK8i",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textAlignment": "left",
@@ -2206,7 +2172,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "p9fpHt_JB9s9hYQuedotZ",
         "topToBottomOf": "t_uJvPanflT7P3CfDhFz4",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textStyle": "regular",
@@ -2247,7 +2212,6 @@
         "rightToRightOf": "p9fpHt_JB9s9hYQuedotZ",
         "topToTopOf": "p9fpHt_JB9s9hYQuedotZ",
         "bottomToBottomOf": "p9fpHt_JB9s9hYQuedotZ",
-        
         "textAlignment": "right",
         "textStyle": "bold",
         "layout_marginRight": 20
@@ -2294,8 +2258,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "p9fpHt_JB9s9hYQuedotZ",
-        
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2329,13 +2291,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "03vznWVNoLG-gFzqsjI7Q",
-        
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2376,7 +2336,6 @@
         "leftToLeftOf": "Tk4WSLqa0P9pYyzYUer3P",
         "topToTopOf": "Tk4WSLqa0P9pYyzYUer3P",
         "bottomToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-        
         "layout_marginLeft": 20,
         "textStyle": "regular",
         "textAlignment": "left"
@@ -2429,7 +2388,6 @@
         "rightToRightOf": "Tk4WSLqa0P9pYyzYUer3P",
         "topToTopOf": "Tk4WSLqa0P9pYyzYUer3P",
         "bottomToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-        
         "layout_marginRight": 20,
         "id": "TDI6iHI2WebhM0mMtUzEc"
       },
@@ -2466,7 +2424,6 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "Tk4WSLqa0P9pYyzYUer3P",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2519,7 +2476,6 @@
         },
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToTopOf": "IN0iIgb7h6P3CXcT2IvDM",
-        
         "layout_marginRight": 20,
         "id": "4h2ugQiBWhS6j-pGy5jFZ"
       },
@@ -2553,13 +2509,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "IN0iIgb7h6P3CXcT2IvDM",
-        
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2583,52 +2537,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Ro8MNtA4Ik2zv7qpMnwfo",
-    "status": "ACTIVE",
-    "name": "Input text",
-    "attributes": {
-      "name": "RaastId_Input",
-      "validation": [],
-      "layoutProperties": {
-        "textSize": 15,
-        "textColor": "#000000",
-        "textStyle": "regular",
-        "textAlignment": "left",
-        "text": "",
-        "numberOfLines": 1,
-        "layout_height": "wrap_content",
-        "layout_width": "match_parent",
-        "placeHolderText": "03XXXXXXXXX",
-        "keyboardType": "number",
-        "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-        "rightToRightOf": "S1LYXn-ZPVl4-443oQVJo",
-        "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-        "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-        
-        "placeHolderTextColor": "#989898",
-        "style": "SENTENCECASE",
-        "layout_marginLeft": 20,
-        "layout_marginRight": 17
-      }
-    },
-    "icon": "FaRemoveFormat",
-    "group": "Form",
-    "type": "INPUTTEXT",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Input text", "type": "INPUTTEXT" },
-    "events": [],
-    "path": "0-13",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "XXq6Uzy1YXVFgruC-hAge",
     "status": "ACTIVE",
     "name": "Text view",
@@ -2644,7 +2552,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2678,13 +2585,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "XXq6Uzy1YXVFgruC-hAge",
-        
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2708,53 +2613,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "slIZY-UnW-DNgIycHSwnD",
-    "status": "ACTIVE",
-    "name": "RaastTransfer_Amount_Input",
-    "attributes": {
-      "name": "RaastTransfer_Amount_Input",
-      "validation": [],
-      "layoutProperties": {
-        "textSize": 15,
-        "textColor": "#000000",
-        "textStyle": "regular",
-        "textAlignment": "left",
-        "text": "",
-        "numberOfLines": 1,
-        "layout_height": "wrap_content",
-        "layout_width": "match_parent",
-        "placeHolderText": "Amount",
-        "keyboardType": "number",
-        "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "rightToRightOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        
-        "placeHolderTextColor": "#989898",
-        "style": "SENTENCECASE",
-        "layout_marginLeft": 20,
-        "layout_marginRight": 17
-      }
-    },
-    "icon": "FaRemoveFormat",
-    "group": "Form",
-    "type": "INPUTTEXT",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Input text", "type": "INPUTTEXT" },
-    "events": [],
-    "path": "0-16",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "lv2M7jVsXJy9oZnagma0s",
     "status": "ACTIVE",
     "name": "Text view",
@@ -2769,7 +2627,6 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2809,7 +2666,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "lv2M7jVsXJy9oZnagma0s",
-        
         "layout_marginLeft": 20,
         "textStyle": "bold",
         "textAlignment": "left"
@@ -2848,7 +2704,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "Vwfj3bTXMBhkjpG7LpTWz",
-        
         "layout_marginLeft": 20,
         "textStyle": "bold",
         "textAlignment": "left"
@@ -2895,7 +2750,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "d-btlup_j7lOJfOEbPf3m",
-        
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
@@ -2937,13 +2791,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
         "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
         "topToBottomOf": "sdIknW6-MB3GLj8pifRWt",
-        
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2983,7 +2835,6 @@
         "leftToLeftOf": "yVPcg4AKK7CTGseYGcXBw",
         "topToTopOf": "yVPcg4AKK7CTGseYGcXBw",
         "bottomToBottomOf": "yVPcg4AKK7CTGseYGcXBw",
-        
         "layout_marginLeft": 20,
         "textAlignment": "left",
         "textStyle": "regular"
@@ -3017,9 +2868,7 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "63",
-        
         "layout_marginTop": 30,
-        
         "text": "Next",
         "textSize": 20,
         "textColor": "#ffffff",
@@ -3096,8 +2945,88 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-24",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ivk8lDn04z4AVgk5ji6GW",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "RaastId_Data_Text",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#1d6131",
+        "text": "Hello",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
+        "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
+        "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
+        "layout_marginLeft": 20,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      },
+      "bindingKey": "qrscan_data.content.iban"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-23",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "S83aktTbNVzpvi5yleQ9T",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Amount_Data_Text",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#A6A8A4",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+        "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+        "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
+        "layout_marginLeft": 20,
+        "textStyle": "regular",
+        "textAlignment": "left"
+      },
+      "bindingKey": "qrscan_data.content.amount"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
     "path": "0-24",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
