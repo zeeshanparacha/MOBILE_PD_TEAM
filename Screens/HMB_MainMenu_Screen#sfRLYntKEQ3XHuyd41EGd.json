@@ -238,8 +238,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "8/31/2023",
-    "createdAt": "8/31/2023",
+    "updatedAt": "9/12/2023",
+    "createdAt": "9/12/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -3629,12 +3629,13 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-88"
+        "path": "0-86",
+        "edit": true
       },
       {
         "id": "Unx9PPPCA7rzMQxqtD7De",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "MainMenu_Other_Expand_DeviceManage_Text",
         "attributes": {
           "name": "MainMenu_Other_Expand_DeviceManage_Text",
           "layoutProperties": {
@@ -3662,8 +3663,45 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-89"
+        "events": [
+          {
+            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
+            "triggerName": "getAllTrustedDevices",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken"
+              },
+              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "responseStateKey": "trustedDevices",
+              "conditions": [
+                {
+                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
+                  "httpStatus": 200,
+                  "triggerName": "navigateToDeviceList",
+                  "triggerId": "1dbBodWrlbu1PijjTQh29"
+                }
+              ],
+              "requestDataType": "byJSON",
+              "requestBody": { "date": null, "time": null }
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-87",
+        "edit": true
       },
       {
         "id": "l00LX4ZcjHXTotr6x6z7v",
@@ -7825,12 +7863,13 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-88"
+            "path": "0-86",
+            "edit": true
           },
           {
             "id": "Unx9PPPCA7rzMQxqtD7De",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "MainMenu_Other_Expand_DeviceManage_Text",
             "attributes": {
               "name": "MainMenu_Other_Expand_DeviceManage_Text",
               "layoutProperties": {
@@ -7858,8 +7897,45 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-89"
+            "events": [
+              {
+                "triggerId": "fEe6GYYW0TV4l_yhz69D-",
+                "triggerName": "getAllTrustedDevices",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+                  "responseStateKey": "trustedDevices",
+                  "conditions": [
+                    {
+                      "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
+                      "httpStatus": 200,
+                      "triggerName": "navigateToDeviceList",
+                      "triggerId": "1dbBodWrlbu1PijjTQh29"
+                    }
+                  ],
+                  "requestDataType": "byJSON",
+                  "requestBody": { "date": null, "time": null }
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-87",
+            "edit": true
           },
           {
             "id": "l00LX4ZcjHXTotr6x6z7v",
@@ -12716,7 +12792,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "sfRLYntKEQ3XHuyd41EGd",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -16421,7 +16497,8 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-88",
+    "path": "0-86",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -16430,7 +16507,7 @@
   {
     "id": "Unx9PPPCA7rzMQxqtD7De",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "MainMenu_Other_Expand_DeviceManage_Text",
     "attributes": {
       "name": "MainMenu_Other_Expand_DeviceManage_Text",
       "layoutProperties": {
@@ -16458,8 +16535,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-89",
+    "events": [
+      {
+        "triggerId": "fEe6GYYW0TV4l_yhz69D-",
+        "triggerName": "getAllTrustedDevices",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-87",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

@@ -1,0 +1,51 @@
+{
+  "id": "fEe6GYYW0TV4l_yhz69D-",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getAllTrustedDevices",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken"
+          },
+          "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+          "responseStateKey": "trustedDevices",
+          "conditions": [
+            {
+              "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "navigateToDeviceList",
+              "triggerId": "1dbBodWrlbu1PijjTQh29"
+            }
+          ],
+          "requestDataType": "byJSON",
+          "requestBody": { "date": null, "time": null }
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.977uwanortpRAbdAwkrtDYg0VmrP-8_",
+  "_id": "iYLIwale8nrNKcIHzu-qh",
+  "updatedAt": "9/12/2023",
+  "createdAt": "9/12/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "getAllTrustedDevices"
+}
