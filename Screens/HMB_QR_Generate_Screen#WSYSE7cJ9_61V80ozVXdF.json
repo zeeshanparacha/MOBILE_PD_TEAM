@@ -25,14 +25,21 @@
         "lVX4nOGNXDQQGNVHrMwlm",
         "KM1y1LoWSnh9zYGGoKg0B",
         "Di0fOyJK3jIeg5TG-HD7i",
-        "pAgRCXKK2BKuBgzHT5jzb"
+        "pAgRCXKK2BKuBgzHT5jzb",
+        "JJ9m4kweHgsK4mPStA81J",
+        "GONvSHjtikFAZ4IXIRMXE",
+        "2ojwdPQq7wFeJsF7OlLJq",
+        "fEfLOcWA7klfmyCd5VbGU",
+        "4WdyBBCuSGj-W31EPtV81",
+        "iQJlNgcBrJ0ENPcDkGKtE",
+        "lTtRuUoclpj-HUbFdVSic"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/17/2023",
-    "createdAt": "5/17/2023",
+    "updatedAt": "9/13/2023",
+    "createdAt": "9/13/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -90,7 +97,6 @@
             "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
             "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
             "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-            
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -156,7 +162,7 @@
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#A6A8A4",
-            "text": "6010152417896325412",
+            "text": "acc",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
             "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
@@ -165,7 +171,8 @@
             "layout_marginLeft": 20,
             "textStyle": "regular",
             "textAlignment": "left"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -178,7 +185,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "5mYH3hcVa2C_rTV7E-mAV",
@@ -253,7 +261,7 @@
       {
         "id": "KM1y1LoWSnh9zYGGoKg0B",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "QRGenerate_Accounts_Change_Text",
         "attributes": {
           "name": "QRGenerate_Accounts_Change_Text",
           "layoutProperties": {
@@ -282,8 +290,59 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-6"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "vRBGH9QRDHNNd42G8LFMr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+            "triggerName": "HMB_GetAllAccounts_Api_Trig",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "requestBody": { "accountType": "ALL" },
+              "responseStateKey": "hmb_getAllAccounts_data",
+              "conditions": [
+                {
+                  "logic": {
+                    "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
+                  },
+                  "httpStatus": 200,
+                  "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
+                  "triggerId": "rh821km91VylOo8NBC2Ri"
+                }
+              ]
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-6",
+        "edit": true
       },
       {
         "id": "Di0fOyJK3jIeg5TG-HD7i",
@@ -294,10 +353,7 @@
           "layoutProperties": {
             "layout_width": "50",
             "layout_height": "22",
-            
             "layout_marginRight": 20,
-            
-            
             "centerX": "",
             "centerY": "",
             "transform": 0.3,
@@ -319,7 +375,42 @@
         "projectType": "mobile",
         "component": { "content": "Switch", "type": "SWITCH" },
         "bindingkey": "qrgenerate_switch",
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "Ejh4Zh2aNL7ESLp9hM0Ac",
+            "triggerName": "QRGenerate_perform_action_trigger",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Perform selected action",
+              "bindingKey": "qrgenerate_switch",
+              "actions": [
+                {
+                  "triggerId": "VZRZyCj3Oo0DnyeZxb1H4",
+                  "triggerName": "allShow_QRGenerate",
+                  "value": true,
+                  "type": "boolean"
+                },
+                {
+                  "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+                  "triggerName": "allHide_QRGenerate",
+                  "value": false,
+                  "type": "boolean"
+                }
+              ],
+              "defaultTriggerId": ["DoSwVTPFSd-JTBhIA4TfV"],
+              "defaultTrigger": [
+                {
+                  "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+                  "triggerName": "allHide_QRGenerate"
+                }
+              ]
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "pAgRCXKK2BKuBgzHT5jzb",
@@ -332,7 +423,6 @@
             "layout_height": "63",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            
             "layout_marginBottom": 40,
             "text": "Generate QR",
             "textSize": 20,
@@ -357,9 +447,325 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "ZGl085mGX_-zIIkN38dxv",
+            "triggerName": "generateP2PQR",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/generateP2PQR",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "amount": "$QRAmount",
+                "expiryDate": "$selectedDate",
+                "formatIndicator": "P2P",
+                "iban": "$selectedAcc_QRGenerate.accountNumber",
+                "size": "407"
+              }
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-8",
         "edit": true
+      },
+      {
+        "id": "JJ9m4kweHgsK4mPStA81J",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "amount label",
+        "attributes": {
+          "name": "amount label",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Amount",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "Di0fOyJK3jIeg5TG-HD7i",
+            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 40
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-9",
+        "edit": true
+      },
+      {
+        "id": "GONvSHjtikFAZ4IXIRMXE",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "amount input view",
+        "attributes": {
+          "name": "amount input view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "50",
+            "borderWidth": 0,
+            "cornerRadius": [4, 4, 4, 4],
+            "background": "#D6D6D6",
+            "topToBottomOf": "JJ9m4kweHgsK4mPStA81J",
+            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 20,
+            "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-10",
+        "edit": true
+      },
+      {
+        "id": "2ojwdPQq7wFeJsF7OlLJq",
+        "status": "ACTIVE",
+        "_id": "61dec716077814a0f374d9f5",
+        "name": "amount input",
+        "attributes": {
+          "name": "amount input",
+          "validation": [],
+          "layoutProperties": {
+            "textSize": 16,
+            "textColor": "#383838",
+            "textStyle": "regular",
+            "textAlignment": "left",
+            "numberOfLines": 1,
+            "layout_height": "50",
+            "layout_width": "match_parent",
+            "placeHolderText": "Amount",
+            "keyboardType": "number",
+            "leftToLeftOf": "GONvSHjtikFAZ4IXIRMXE",
+            "rightToRightOf": "GONvSHjtikFAZ4IXIRMXE",
+            "topToTopOf": "GONvSHjtikFAZ4IXIRMXE",
+            "bottomToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+            "placeHolderTextColor": "#A8A8A8",
+            "layout_marginLeft": 20
+          },
+          "bindingKey": "QRAmount"
+        },
+        "icon": "FaRemoveFormat",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Input text", "type": "INPUTTEXT" },
+        "events": [],
+        "path": "0-11",
+        "edit": true
+      },
+      {
+        "id": "fEfLOcWA7klfmyCd5VbGU",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Expiry date view",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Expiry date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-12"
+      },
+      {
+        "id": "4WdyBBCuSGj-W31EPtV81",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "Expiry date view",
+        "attributes": {
+          "name": "Expiry date view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "50",
+            "borderWidth": 0,
+            "cornerRadius": [4, 4, 4, 4],
+            "background": "#D6D6D6",
+            "topToBottomOf": "fEfLOcWA7klfmyCd5VbGU",
+            "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "layout_marginRight": 20,
+            "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-13",
+        "edit": true
+      },
+      {
+        "id": "iQJlNgcBrJ0ENPcDkGKtE",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Expiry date placeholder",
+        "attributes": {
+          "name": "Expiry date placeholder",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#A8A8A8",
+            "text": "Expiry date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "4WdyBBCuSGj-W31EPtV81",
+            "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+            "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+            "layout_marginLeft": 20
+          },
+          "bindingKey": "selectedDate"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-14",
+        "edit": true
+      },
+      {
+        "id": "lTtRuUoclpj-HUbFdVSic",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "645e47fc4e35ca4a482abb68",
+              "name": "BtmSheet_Arrow.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "V0FHEyra3ZGw_wle8Q7XE",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "BtmSheet_Arrow.png",
+              "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
+              "createdAt": "2023-05-12T14:06:52.205Z",
+              "updatedAt": "2023-05-12T14:06:52.205Z",
+              "__v": 0,
+              "uri": "BtmSheet_Arrow.png"
+            },
+            "rightToRightOf": "4WdyBBCuSGj-W31EPtV81",
+            "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+            "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+            "layout_marginRight": 20,
+            "id": "V0FHEyra3ZGw_wle8Q7XE"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-15",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "RrB_cUtswjx9_v-hGYJml",
+            "triggerName": "open date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDate",
+              "dateFormat": "dd MMM, yyyy",
+              "minimumDate": "1",
+              "maximumDate": "31"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "screen",
@@ -445,7 +851,6 @@
                 "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
                 "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
                 "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-                
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -511,7 +916,7 @@
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#A6A8A4",
-                "text": "6010152417896325412",
+                "text": "acc",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
                 "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
@@ -520,7 +925,8 @@
                 "layout_marginLeft": 20,
                 "textStyle": "regular",
                 "textAlignment": "left"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -533,7 +939,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "5mYH3hcVa2C_rTV7E-mAV",
@@ -608,7 +1015,7 @@
           {
             "id": "KM1y1LoWSnh9zYGGoKg0B",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "QRGenerate_Accounts_Change_Text",
             "attributes": {
               "name": "QRGenerate_Accounts_Change_Text",
               "layoutProperties": {
@@ -637,8 +1044,59 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-6"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "vRBGH9QRDHNNd42G8LFMr"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+                "triggerName": "HMB_GetAllAccounts_Api_Trig",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+                  "requestBody": { "accountType": "ALL" },
+                  "responseStateKey": "hmb_getAllAccounts_data",
+                  "conditions": [
+                    {
+                      "logic": {
+                        "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
+                      },
+                      "httpStatus": 200,
+                      "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
+                      "triggerId": "rh821km91VylOo8NBC2Ri"
+                    }
+                  ]
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-6",
+            "edit": true
           },
           {
             "id": "Di0fOyJK3jIeg5TG-HD7i",
@@ -649,10 +1107,7 @@
               "layoutProperties": {
                 "layout_width": "50",
                 "layout_height": "22",
-                
                 "layout_marginRight": 20,
-                
-                
                 "centerX": "",
                 "centerY": "",
                 "transform": 0.3,
@@ -674,7 +1129,42 @@
             "projectType": "mobile",
             "component": { "content": "Switch", "type": "SWITCH" },
             "bindingkey": "qrgenerate_switch",
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "Ejh4Zh2aNL7ESLp9hM0Ac",
+                "triggerName": "QRGenerate_perform_action_trigger",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Perform selected action",
+                  "bindingKey": "qrgenerate_switch",
+                  "actions": [
+                    {
+                      "triggerId": "VZRZyCj3Oo0DnyeZxb1H4",
+                      "triggerName": "allShow_QRGenerate",
+                      "value": true,
+                      "type": "boolean"
+                    },
+                    {
+                      "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+                      "triggerName": "allHide_QRGenerate",
+                      "value": false,
+                      "type": "boolean"
+                    }
+                  ],
+                  "defaultTriggerId": ["DoSwVTPFSd-JTBhIA4TfV"],
+                  "defaultTrigger": [
+                    {
+                      "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+                      "triggerName": "allHide_QRGenerate"
+                    }
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "pAgRCXKK2BKuBgzHT5jzb",
@@ -687,7 +1177,6 @@
                 "layout_height": "63",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                
                 "layout_marginBottom": 40,
                 "text": "Generate QR",
                 "textSize": 20,
@@ -712,9 +1201,325 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "ZGl085mGX_-zIIkN38dxv",
+                "triggerName": "generateP2PQR",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/account/v1/generateP2PQR",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "amount": "$QRAmount",
+                    "expiryDate": "$selectedDate",
+                    "formatIndicator": "P2P",
+                    "iban": "$selectedAcc_QRGenerate.accountNumber",
+                    "size": "407"
+                  }
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-8",
             "edit": true
+          },
+          {
+            "id": "JJ9m4kweHgsK4mPStA81J",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "amount label",
+            "attributes": {
+              "name": "amount label",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Amount",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "Di0fOyJK3jIeg5TG-HD7i",
+                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 40
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-9",
+            "edit": true
+          },
+          {
+            "id": "GONvSHjtikFAZ4IXIRMXE",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "amount input view",
+            "attributes": {
+              "name": "amount input view",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "borderWidth": 0,
+                "cornerRadius": [4, 4, 4, 4],
+                "background": "#D6D6D6",
+                "topToBottomOf": "JJ9m4kweHgsK4mPStA81J",
+                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 20,
+                "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-10",
+            "edit": true
+          },
+          {
+            "id": "2ojwdPQq7wFeJsF7OlLJq",
+            "status": "ACTIVE",
+            "_id": "61dec716077814a0f374d9f5",
+            "name": "amount input",
+            "attributes": {
+              "name": "amount input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 16,
+                "textColor": "#383838",
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "numberOfLines": 1,
+                "layout_height": "50",
+                "layout_width": "match_parent",
+                "placeHolderText": "Amount",
+                "keyboardType": "number",
+                "leftToLeftOf": "GONvSHjtikFAZ4IXIRMXE",
+                "rightToRightOf": "GONvSHjtikFAZ4IXIRMXE",
+                "topToTopOf": "GONvSHjtikFAZ4IXIRMXE",
+                "bottomToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+                "placeHolderTextColor": "#A8A8A8",
+                "layout_marginLeft": 20
+              },
+              "bindingKey": "QRAmount"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-11",
+            "edit": true
+          },
+          {
+            "id": "fEfLOcWA7klfmyCd5VbGU",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Expiry date view",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Expiry date",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-12"
+          },
+          {
+            "id": "4WdyBBCuSGj-W31EPtV81",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "Expiry date view",
+            "attributes": {
+              "name": "Expiry date view",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "borderWidth": 0,
+                "cornerRadius": [4, 4, 4, 4],
+                "background": "#D6D6D6",
+                "topToBottomOf": "fEfLOcWA7klfmyCd5VbGU",
+                "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "layout_marginRight": 20,
+                "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-13",
+            "edit": true
+          },
+          {
+            "id": "iQJlNgcBrJ0ENPcDkGKtE",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Expiry date placeholder",
+            "attributes": {
+              "name": "Expiry date placeholder",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#A8A8A8",
+                "text": "Expiry date",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "4WdyBBCuSGj-W31EPtV81",
+                "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+                "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+                "layout_marginLeft": 20
+              },
+              "bindingKey": "selectedDate"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-14",
+            "edit": true
+          },
+          {
+            "id": "lTtRuUoclpj-HUbFdVSic",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "645e47fc4e35ca4a482abb68",
+                  "name": "BtmSheet_Arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "V0FHEyra3ZGw_wle8Q7XE",
+                  "gitBranchName": "master",
+                  "folderType": "xhdpi",
+                  "platform": "Android",
+                  "url": "BtmSheet_Arrow.png",
+                  "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
+                  "createdAt": "2023-05-12T14:06:52.205Z",
+                  "updatedAt": "2023-05-12T14:06:52.205Z",
+                  "__v": 0,
+                  "uri": "BtmSheet_Arrow.png"
+                },
+                "rightToRightOf": "4WdyBBCuSGj-W31EPtV81",
+                "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+                "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+                "layout_marginRight": 20,
+                "id": "V0FHEyra3ZGw_wle8Q7XE"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-15",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "RrB_cUtswjx9_v-hGYJml",
+                "triggerName": "open date picker",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": " Date picker",
+                  "bindingKey": "selectedDate",
+                  "dateFormat": "dd MMM, yyyy",
+                  "minimumDate": "1",
+                  "maximumDate": "31"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
         ],
         "subType": "screen"
@@ -723,7 +1528,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "WSYSE7cJ9_61V80ozVXdF",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -781,7 +1586,6 @@
         "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
         "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF",
         "topToBottomOf": "hJequfx6A82jLNO5nkpS-",
-        
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -836,10 +1640,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -855,7 +1659,7 @@
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#A6A8A4",
-        "text": "6010152417896325412",
+        "text": "acc",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
         "leftToLeftOf": "-fnl0EMBecNMyCtxn5_EW",
@@ -864,7 +1668,8 @@
         "layout_marginLeft": 20,
         "textStyle": "regular",
         "textAlignment": "left"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -875,10 +1680,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -914,10 +1720,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-4",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -953,10 +1759,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-5",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -964,7 +1770,7 @@
   {
     "id": "KM1y1LoWSnh9zYGGoKg0B",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "QRGenerate_Accounts_Change_Text",
     "attributes": {
       "name": "QRGenerate_Accounts_Change_Text",
       "layoutProperties": {
@@ -992,10 +1798,24 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+        "triggerName": "HMB_GetAllAccounts_Api_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-6",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1009,10 +1829,7 @@
       "layoutProperties": {
         "layout_width": "50",
         "layout_height": "22",
-        
         "layout_marginRight": 20,
-        
-        
         "centerX": "",
         "centerY": "",
         "transform": 0.3,
@@ -1032,10 +1849,19 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Switch", "type": "SWITCH" },
     "bindingkey": "qrgenerate_switch",
     "path": "0-7",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "Ejh4Zh2aNL7ESLp9hM0Ac",
+        "triggerName": "QRGenerate_perform_action_trigger",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1051,7 +1877,6 @@
         "layout_height": "63",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        
         "layout_marginBottom": 40,
         "text": "Generate QR",
         "textSize": 20,
@@ -1075,11 +1900,314 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "ZGl085mGX_-zIIkN38dxv",
+        "triggerName": "generateP2PQR",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-8",
     "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "JJ9m4kweHgsK4mPStA81J",
+    "status": "ACTIVE",
+    "name": "amount label",
+    "attributes": {
+      "name": "amount label",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Amount",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "Di0fOyJK3jIeg5TG-HD7i",
+        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 40
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-9",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "GONvSHjtikFAZ4IXIRMXE",
+    "status": "ACTIVE",
+    "name": "amount input view",
+    "attributes": {
+      "name": "amount input view",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "50",
+        "borderWidth": 0,
+        "cornerRadius": [4, 4, 4, 4],
+        "background": "#D6D6D6",
+        "topToBottomOf": "JJ9m4kweHgsK4mPStA81J",
+        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20,
+        "layout_marginTop": 20,
+        "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-10",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "2ojwdPQq7wFeJsF7OlLJq",
+    "status": "ACTIVE",
+    "name": "amount input",
+    "attributes": {
+      "name": "amount input",
+      "validation": [],
+      "layoutProperties": {
+        "textSize": 16,
+        "textColor": "#383838",
+        "textStyle": "regular",
+        "textAlignment": "left",
+        "numberOfLines": 1,
+        "layout_height": "50",
+        "layout_width": "match_parent",
+        "placeHolderText": "Amount",
+        "keyboardType": "number",
+        "leftToLeftOf": "GONvSHjtikFAZ4IXIRMXE",
+        "rightToRightOf": "GONvSHjtikFAZ4IXIRMXE",
+        "topToTopOf": "GONvSHjtikFAZ4IXIRMXE",
+        "bottomToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+        "placeHolderTextColor": "#A8A8A8",
+        "layout_marginLeft": 20
+      },
+      "bindingKey": "QRAmount"
+    },
+    "icon": "FaRemoveFormat",
+    "group": "Form",
+    "type": "INPUTTEXT",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Input text", "type": "INPUTTEXT" },
+    "events": [],
+    "path": "0-11",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "fEfLOcWA7klfmyCd5VbGU",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Expiry date view",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Expiry date",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "GONvSHjtikFAZ4IXIRMXE",
+        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-12",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "4WdyBBCuSGj-W31EPtV81",
+    "status": "ACTIVE",
+    "name": "Expiry date view",
+    "attributes": {
+      "name": "Expiry date view",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "50",
+        "borderWidth": 0,
+        "cornerRadius": [4, 4, 4, 4],
+        "background": "#D6D6D6",
+        "topToBottomOf": "fEfLOcWA7klfmyCd5VbGU",
+        "leftToLeftOf": "WSYSE7cJ9_61V80ozVXdF",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20,
+        "layout_marginRight": 20,
+        "rightToRightOf": "WSYSE7cJ9_61V80ozVXdF"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-13",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "iQJlNgcBrJ0ENPcDkGKtE",
+    "status": "ACTIVE",
+    "name": "Expiry date placeholder",
+    "attributes": {
+      "name": "Expiry date placeholder",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#A8A8A8",
+        "text": "Expiry date",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "4WdyBBCuSGj-W31EPtV81",
+        "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+        "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+        "layout_marginLeft": 20
+      },
+      "bindingKey": "selectedDate"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-14",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "lTtRuUoclpj-HUbFdVSic",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "645e47fc4e35ca4a482abb68",
+          "name": "BtmSheet_Arrow.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "V0FHEyra3ZGw_wle8Q7XE",
+          "gitBranchName": "master",
+          "folderType": "xhdpi",
+          "platform": "Android",
+          "url": "BtmSheet_Arrow.png",
+          "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
+          "createdAt": "2023-05-12T14:06:52.205Z",
+          "updatedAt": "2023-05-12T14:06:52.205Z",
+          "__v": 0,
+          "uri": "BtmSheet_Arrow.png"
+        },
+        "rightToRightOf": "4WdyBBCuSGj-W31EPtV81",
+        "topToTopOf": "4WdyBBCuSGj-W31EPtV81",
+        "bottomToBottomOf": "4WdyBBCuSGj-W31EPtV81",
+        "layout_marginRight": 20,
+        "id": "V0FHEyra3ZGw_wle8Q7XE"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-15",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "RrB_cUtswjx9_v-hGYJml",
+        "triggerName": "open date picker",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

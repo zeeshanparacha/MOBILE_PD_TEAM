@@ -1,0 +1,48 @@
+{
+  "id": "ZGl085mGX_-zIIkN38dxv",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "generateP2PQR",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/generateP2PQR",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "amount": "$QRAmount",
+            "expiryDate": "$selectedDate",
+            "formatIndicator": "P2P",
+            "iban": "$selectedAcc_QRGenerate.accountNumber",
+            "size": "407"
+          }
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.hj2ijpcsikHyX3HzMMamQHHocXrzvhL",
+  "_id": "xxAqvSuwJlfID937LJ-0w",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "generateP2PQR"
+}

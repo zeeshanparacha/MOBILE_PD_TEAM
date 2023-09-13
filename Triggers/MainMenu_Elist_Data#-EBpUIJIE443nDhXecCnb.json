@@ -1,0 +1,116 @@
+{
+  "id": "_j2X-azNVi4lDBSGEurq8",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "MainMenu_Elist_Data",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "5",
+        "attributes": {
+          "serviceName": "Parse elist data",
+          "bindingKey": "mainmenu_data",
+          "sections": [
+            {
+              "title": "Transfer",
+              "expand": false,
+              "data": [
+                {
+                  "key": "Beneficiary",
+                  "value1": "Instant Transfer",
+                  "value2": ""
+                },
+                { "key": "Instant Transfer" }
+              ]
+            },
+            {
+              "title": "Raast",
+              "expand": false,
+              "data": [
+                {
+                  "key": "Raast ID Management",
+                  "value1": "Raast Payment",
+                  "value2": "Beneficiary Management",
+                  "value3": "FAQs"
+                },
+                { "key": "Raast Payment" },
+                { "key": "Beneficiary Management" },
+                { "key": "FAQs" }
+              ]
+            },
+            {
+              "title": "Pay Bill",
+              "expand": false,
+              "data": [{ "key": "Beneficiary" }, { "key": "Instant Payment" }]
+            },
+            { "title": "Zakat", "expand": false, "data": [{}] },
+            { "title": "Donation", "expand": false, "data": [{}] },
+            {
+              "title": "Cards",
+              "expand": false,
+              "data": [
+                { "key": "new Card Request" },
+                { "key": "Card Management" }
+              ]
+            },
+            { "title": "Account Management", "expand": false, "data": [{}] },
+            {
+              "title": "Cheque Management",
+              "expand": false,
+              "data": [
+                { "key": "Cheque Book Request" },
+                { "key": "Cheque Summary" },
+                { "key": "Cheque Details" },
+                { "key": "Stop Cheque Payment" }
+              ]
+            },
+            { "title": "Standing Instructions", "expand": false, "data": [{}] },
+            { "title": "Feedback", "expand": false, "data": [{}] },
+            {
+              "title": "Investments",
+              "expand": false,
+              "data": [{ "key": "Stock Market" }]
+            },
+            {
+              "title": "Offers & Promotions",
+              "expand": false,
+              "data": [{ "key": "Debit Card Discounts" }, { "key": "Golootlo" }]
+            },
+            {
+              "title": "Service Request",
+              "expand": false,
+              "data": [
+                { "key": "Pay Order Issuance" },
+                { "key": "Dormancy Removal" },
+                { "key": "E-Statement Registration" },
+                { "key": "SMS Subscription" },
+                { "key": "Account Maintenance Certificate" },
+                { "key": "Withholding Tax Certificate" }
+              ]
+            },
+            {
+              "title": "Other",
+              "expand": false,
+              "data": [{ "key": "Device Management" }]
+            },
+            {
+              "title": "QR Transfer",
+              "expand": false,
+              "data": [{ "key": "Generate QR" }, { "key": "Transfer via QR" }]
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.nu6rovizap1kVooYOsDKZh3RxI_HNPN",
+  "_id": "-EBpUIJIE443nDhXecCnb",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "shaikhahmedraza",
+  "updatedBy": "shaikhahmedraza",
+  "old_name": "MainMenu_Elist_Data"
+}

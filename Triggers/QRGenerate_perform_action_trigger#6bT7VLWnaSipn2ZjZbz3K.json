@@ -1,0 +1,48 @@
+{
+  "id": "Ejh4Zh2aNL7ESLp9hM0Ac",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "QRGenerate_perform_action_trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "qrgenerate_switch",
+          "actions": [
+            {
+              "triggerId": "VZRZyCj3Oo0DnyeZxb1H4",
+              "triggerName": "allShow_QRGenerate",
+              "value": true,
+              "type": "boolean"
+            },
+            {
+              "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+              "triggerName": "allHide_QRGenerate",
+              "value": false,
+              "type": "boolean"
+            }
+          ],
+          "defaultTriggerId": ["DoSwVTPFSd-JTBhIA4TfV"],
+          "defaultTrigger": [
+            {
+              "triggerId": "DoSwVTPFSd-JTBhIA4TfV",
+              "triggerName": "allHide_QRGenerate"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.flwrdwe2jtfbpXfDpR92PcrHzNoXNygE",
+  "_id": "6bT7VLWnaSipn2ZjZbz3K",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "QRGenerate_perform_action_trigger"
+}
