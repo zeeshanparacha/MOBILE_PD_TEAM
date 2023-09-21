@@ -332,8 +332,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/13/2023",
-    "createdAt": "9/13/2023",
+    "updatedAt": "9/20/2023",
+    "createdAt": "9/20/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -437,8 +437,8 @@
                     "numberOfLines": 1,
                     "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
                     "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "layout_marginLeft": 20,
-                    "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+                    "layout_marginLeft": 60,
+                    "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "bindingKey": "name"
                 },
@@ -453,7 +453,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-0-0-1",
+                "path": "1-0-0-1",
                 "edit": true
               },
               {
@@ -526,7 +526,8 @@
                     "id": "5bba_xB5i2gpw0lYpIouB"
                   },
                   "contentType": 2,
-                  "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+                  "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+                  "conditions": []
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -574,10 +575,11 @@
                       "uri": "ios_icon.png"
                     },
                     "id": "PoWta8I648eOQ5l3CPVJd",
-                    "layout_marginLeft": 30
+                    "layout_marginLeft": 20
                   },
                   "contentType": 2,
-                  "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+                  "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+                  "conditions": []
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -770,6 +772,38 @@
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-1"
+          },
+          {
+            "id": "zEnPk4PY0mNDdgFB3rhVJ",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "bottomToBottomOf": null,
+                "centerY": "14ZP73nBasmthqZCyp552"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2",
+            "edit": true
           }
         ],
         "subType": "screen",
@@ -1222,8 +1256,8 @@
                         "numberOfLines": 1,
                         "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
                         "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "layout_marginLeft": 20,
-                        "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+                        "layout_marginLeft": 60,
+                        "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
                       },
                       "bindingKey": "name"
                     },
@@ -1238,7 +1272,7 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-0-0-1",
+                    "path": "1-0-0-1",
                     "edit": true
                   },
                   {
@@ -1311,7 +1345,8 @@
                         "id": "5bba_xB5i2gpw0lYpIouB"
                       },
                       "contentType": 2,
-                      "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+                      "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+                      "conditions": []
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -1362,10 +1397,11 @@
                           "uri": "ios_icon.png"
                         },
                         "id": "PoWta8I648eOQ5l3CPVJd",
-                        "layout_marginLeft": 30
+                        "layout_marginLeft": 20
                       },
                       "contentType": 2,
-                      "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+                      "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+                      "conditions": []
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -1559,8 +1595,8 @@
                 "numberOfLines": 1,
                 "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
                 "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "layout_marginLeft": 20,
-                "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+                "layout_marginLeft": 60,
+                "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "bindingKey": "name"
             },
@@ -1575,7 +1611,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-0-0-1",
+            "path": "1-0-0-1",
             "edit": true
           },
           {
@@ -1648,7 +1684,8 @@
                 "id": "5bba_xB5i2gpw0lYpIouB"
               },
               "contentType": 2,
-              "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+              "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+              "conditions": []
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -1696,10 +1733,11 @@
                   "uri": "ios_icon.png"
                 },
                 "id": "PoWta8I648eOQ5l3CPVJd",
-                "layout_marginLeft": 30
+                "layout_marginLeft": 20
               },
               "contentType": 2,
-              "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+              "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+              "conditions": []
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -1876,8 +1914,8 @@
                     "numberOfLines": 1,
                     "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
                     "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "layout_marginLeft": 20,
-                    "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+                    "layout_marginLeft": 60,
+                    "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "bindingKey": "name"
                 },
@@ -1892,7 +1930,7 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-0-0-1",
+                "path": "1-0-0-1",
                 "edit": true
               },
               {
@@ -1965,7 +2003,8 @@
                     "id": "5bba_xB5i2gpw0lYpIouB"
                   },
                   "contentType": 2,
-                  "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+                  "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+                  "conditions": []
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -2013,10 +2052,11 @@
                       "uri": "ios_icon.png"
                     },
                     "id": "PoWta8I648eOQ5l3CPVJd",
-                    "layout_marginLeft": 30
+                    "layout_marginLeft": 20
                   },
                   "contentType": 2,
-                  "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+                  "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+                  "conditions": []
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -2162,8 +2202,8 @@
             "numberOfLines": 1,
             "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
             "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "layout_marginLeft": 20,
-            "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+            "layout_marginLeft": 60,
+            "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
           },
           "bindingKey": "name"
         },
@@ -2178,7 +2218,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-0-0-1",
+        "path": "1-0-0-1",
         "edit": true
       },
       {
@@ -2251,7 +2291,8 @@
             "id": "5bba_xB5i2gpw0lYpIouB"
           },
           "contentType": 2,
-          "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+          "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+          "conditions": []
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -2299,10 +2340,11 @@
               "uri": "ios_icon.png"
             },
             "id": "PoWta8I648eOQ5l3CPVJd",
-            "layout_marginLeft": 30
+            "layout_marginLeft": 20
           },
           "contentType": 2,
-          "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+          "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+          "conditions": []
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -2445,8 +2487,8 @@
                 "numberOfLines": 1,
                 "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
                 "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "layout_marginLeft": 20,
-                "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+                "layout_marginLeft": 60,
+                "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "bindingKey": "name"
             },
@@ -2461,7 +2503,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-0-0-1",
+            "path": "1-0-0-1",
             "edit": true
           },
           {
@@ -2534,7 +2576,8 @@
                 "id": "5bba_xB5i2gpw0lYpIouB"
               },
               "contentType": 2,
-              "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+              "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+              "conditions": []
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -2582,10 +2625,11 @@
                   "uri": "ios_icon.png"
                 },
                 "id": "PoWta8I648eOQ5l3CPVJd",
-                "layout_marginLeft": 30
+                "layout_marginLeft": 20
               },
               "contentType": 2,
-              "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+              "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+              "conditions": []
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -2722,8 +2766,8 @@
         "numberOfLines": 1,
         "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
         "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "layout_marginLeft": 20,
-        "leftToRightOf": "_pNcucONw6Vgf12KgPReE"
+        "layout_marginLeft": 60,
+        "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi"
       },
       "bindingKey": "name"
     },
@@ -2738,7 +2782,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-0-0-1",
+    "path": "1-0-0-1",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2817,7 +2861,8 @@
         "id": "5bba_xB5i2gpw0lYpIouB"
       },
       "contentType": 2,
-      "hideCondition": { "!=": [{ "var": "os" }, "Android"] }
+      "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
+      "conditions": []
     },
     "icon": "FaRegImage",
     "group": "Form",
@@ -2868,10 +2913,11 @@
           "uri": "ios_icon.png"
         },
         "id": "PoWta8I648eOQ5l3CPVJd",
-        "layout_marginLeft": 30
+        "layout_marginLeft": 20
       },
       "contentType": 2,
-      "hideCondition": { "==": [{ "var": "os" }, "IOS"] }
+      "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
+      "conditions": []
     },
     "icon": "FaRegImage",
     "group": "Form",

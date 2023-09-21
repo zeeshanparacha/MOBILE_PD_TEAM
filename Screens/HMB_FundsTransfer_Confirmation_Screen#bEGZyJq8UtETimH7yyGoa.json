@@ -14,7 +14,9 @@
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "v_VKMvztwSYjXs9U9Nnrp",
@@ -49,9 +51,16 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "8/24/2023",
-    "createdAt": "8/24/2023",
-    "events": [],
+    "updatedAt": "9/14/2023",
+    "createdAt": "9/14/2023",
+    "events": [
+      {
+        "triggerId": "gV9CYKENTone5l-YNwUsK",
+        "triggerName": "FT_form_amount_to_words ",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -148,7 +157,7 @@
             "textAlignment": "right",
             "width_percent": 50
           },
-          "bindingKey": "ft_transferto_itemdata"
+          "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -252,7 +261,8 @@
             "textStyle": "bold",
             "textAlignment": "right",
             "width_percent": 50
-          }
+          },
+          "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1040,6 +1050,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "bEGZyJq8UtETimH7yyGoa",
@@ -1056,7 +1067,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -1065,7 +1078,20 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "gV9CYKENTone5l-YNwUsK",
+            "triggerName": "FT_form_amount_to_words ",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Amount in words",
+              "bindingKey": "ft_amount",
+              "selectedBindingKey": "ft_amount_words"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -1162,7 +1188,7 @@
                 "textAlignment": "right",
                 "width_percent": 50
               },
-              "bindingKey": "ft_transferto_itemdata"
+              "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1266,7 +1292,8 @@
                 "textStyle": "bold",
                 "textAlignment": "right",
                 "width_percent": 50
-              }
+              },
+              "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -2053,13 +2080,14 @@
             "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "bEGZyJq8UtETimH7yyGoa",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2161,7 +2189,7 @@
         "textAlignment": "right",
         "width_percent": 50
       },
-      "bindingKey": "ft_transferto_itemdata"
+      "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2277,7 +2305,8 @@
         "textStyle": "bold",
         "textAlignment": "right",
         "width_percent": 50
-      }
+      },
+      "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",

@@ -27,25 +27,18 @@
           "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
           "requestBody": { "accountType": "ALL" },
           "responseStateKey": "hmb_getAllAccounts_data",
-          "conditions": [
-            {
-              "logic": { "==": [{ "var": "hmb_getAccountDetails.code" }, 1] },
-              "httpStatus": 200,
-              "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
-              "triggerId": "rh821km91VylOo8NBC2Ri"
-            }
-          ]
+          "conditions": []
         },
         "returns": []
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.rv3rw39q53nPsZQr8zcNNkBJA0dCpFh2",
+  "csrf": "0.4t498t7vfeugVZWJC0sHKHp4D-GLyOM4",
   "_id": "5SvT3MDzYlO4D315zWzHc",
-  "updatedAt": "8/25/2023",
-  "createdAt": "8/25/2023",
-  "createdBy": "shaikhahmedraza",
-  "updatedBy": "shaikhahmedraza",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
   "old_name": "HMB_GetAllAccounts_Api_Trig"
 }

@@ -29,19 +29,28 @@
             "amount": "$QRAmount",
             "expiryDate": "$selectedDate",
             "formatIndicator": "P2P",
-            "iban": "$selectedAcc_QRGenerate.accountNumber",
+            "iban": "$selectedAcc_QRGenerate.iban",
             "size": "407"
-          }
+          },
+          "responseStateKey": "QRGenResponse",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "triggerName": "navigate_to_qr",
+              "triggerId": "GzFYqipy6PKfxNmBdeLzW",
+              "logic": { "==": [{ "var": "QRGenResponse.code" }, 1] }
+            }
+          ]
         },
         "returns": []
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.hj2ijpcsikHyX3HzMMamQHHocXrzvhL",
+  "csrf": "0.4t498t7vfeugVZWJC0sHKHp4D-GLyOM4",
   "_id": "xxAqvSuwJlfID937LJ-0w",
-  "updatedAt": "9/13/2023",
-  "createdAt": "9/13/2023",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "generateP2PQR"

@@ -14,7 +14,9 @@
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "xBFud4jvL-puV6_-wLsar",
@@ -46,9 +48,16 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/11/2023",
-    "createdAt": "9/11/2023",
-    "events": [],
+    "updatedAt": "9/15/2023",
+    "createdAt": "9/15/2023",
+    "events": [
+      {
+        "triggerId": "gV9CYKENTone5l-YNwUsK",
+        "triggerName": "FT_form_amount_to_words ",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -147,7 +156,7 @@
             "textStyle": "regular",
             "textAlignment": "right"
           },
-          "bindingKey": "$hmb_getAllAccounts_dataItems.accountTitle"
+          "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -257,7 +266,7 @@
             "textStyle": "regular",
             "textAlignment": "right"
           },
-          "bindingKey": "$hmb_getAllAccounts_dataItems.accountNumber"
+          "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -365,7 +374,7 @@
             "textStyle": "regular",
             "textAlignment": "right"
           },
-          "bindingKey": "$hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -472,7 +481,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -581,7 +591,7 @@
             "textStyle": "regular",
             "textAlignment": "right"
           },
-          "bindingKey": "$ft_amount"
+          "bindingKey": "ft_amount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -689,7 +699,7 @@
             "textAlignment": "right",
             "textStyle": "regular"
           },
-          "bindingKey": "$ft_purpose.value"
+          "bindingKey": "ft_purpose.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -903,7 +913,8 @@
             "rightToRightOf": "SSsor9oVFDdhi0WcrWpxp",
             "bottomToBottomOf": "SSsor9oVFDdhi0WcrWpxp",
             "leftToLeftOf": "MvUiVEo_SqfoBFXtoun-K"
-          }
+          },
+          "conditions": []
         },
         "icon": "FaBimobject",
         "group": "Form",
@@ -999,6 +1010,17 @@
             },
             "type": "ONCLICK",
             "name": "On click"
+          },
+          {
+            "triggerId": "nDokhQIWUijzojKrpOY8o",
+            "triggerName": "navigate_to_ft_receipt_screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate",
+              "id": "0EYgP4dzXyyCXLcP1Dmbo"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
           }
         ],
         "path": "0-23",
@@ -1006,6 +1028,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "SSsor9oVFDdhi0WcrWpxp",
@@ -1022,7 +1045,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -1031,7 +1056,20 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "gV9CYKENTone5l-YNwUsK",
+            "triggerName": "FT_form_amount_to_words ",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Amount in words",
+              "bindingKey": "ft_amount",
+              "selectedBindingKey": "ft_amount_words"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -1130,7 +1168,7 @@
                 "textStyle": "regular",
                 "textAlignment": "right"
               },
-              "bindingKey": "$hmb_getAllAccounts_dataItems.accountTitle"
+              "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1240,7 +1278,7 @@
                 "textStyle": "regular",
                 "textAlignment": "right"
               },
-              "bindingKey": "$hmb_getAllAccounts_dataItems.accountNumber"
+              "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1348,7 +1386,7 @@
                 "textStyle": "regular",
                 "textAlignment": "right"
               },
-              "bindingKey": "$hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1455,7 +1493,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1564,7 +1603,7 @@
                 "textStyle": "regular",
                 "textAlignment": "right"
               },
-              "bindingKey": "$ft_amount"
+              "bindingKey": "ft_amount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1672,7 +1711,7 @@
                 "textAlignment": "right",
                 "textStyle": "regular"
               },
-              "bindingKey": "$ft_purpose.value"
+              "bindingKey": "ft_purpose.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1886,7 +1925,8 @@
                 "rightToRightOf": "SSsor9oVFDdhi0WcrWpxp",
                 "bottomToBottomOf": "SSsor9oVFDdhi0WcrWpxp",
                 "leftToLeftOf": "MvUiVEo_SqfoBFXtoun-K"
-              }
+              },
+              "conditions": []
             },
             "icon": "FaBimobject",
             "group": "Form",
@@ -1982,19 +2022,31 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
+              },
+              {
+                "triggerId": "nDokhQIWUijzojKrpOY8o",
+                "triggerName": "navigate_to_ft_receipt_screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate",
+                  "id": "0EYgP4dzXyyCXLcP1Dmbo"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
               }
             ],
             "path": "0-23",
             "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "SSsor9oVFDdhi0WcrWpxp",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2095,7 +2147,7 @@
         "textStyle": "regular",
         "textAlignment": "right"
       },
-      "bindingKey": "$hmb_getAllAccounts_dataItems.accountTitle"
+      "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2214,7 +2266,7 @@
         "textStyle": "regular",
         "textAlignment": "right"
       },
-      "bindingKey": "$hmb_getAllAccounts_dataItems.accountNumber"
+      "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2331,7 +2383,7 @@
         "textStyle": "regular",
         "textAlignment": "right"
       },
-      "bindingKey": "$hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2447,7 +2499,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2565,7 +2618,7 @@
         "textStyle": "regular",
         "textAlignment": "right"
       },
-      "bindingKey": "$ft_amount"
+      "bindingKey": "ft_amount"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2682,7 +2735,7 @@
         "textAlignment": "right",
         "textStyle": "regular"
       },
-      "bindingKey": "$ft_purpose.value"
+      "bindingKey": "ft_purpose.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2914,7 +2967,8 @@
         "rightToRightOf": "SSsor9oVFDdhi0WcrWpxp",
         "bottomToBottomOf": "SSsor9oVFDdhi0WcrWpxp",
         "leftToLeftOf": "MvUiVEo_SqfoBFXtoun-K"
-      }
+      },
+      "conditions": []
     },
     "icon": "FaBimobject",
     "group": "Form",
@@ -2930,6 +2984,12 @@
       {
         "triggerId": "ZpY4qG6N-RMk-U8I3v6k7",
         "triggerName": "HMB_Transfer_Api_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "nDokhQIWUijzojKrpOY8o",
+        "triggerName": "navigate_to_ft_receipt_screen",
         "name": "On click",
         "type": "ONCLICK"
       }

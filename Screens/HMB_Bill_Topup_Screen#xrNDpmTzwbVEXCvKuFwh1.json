@@ -16,19 +16,13 @@
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0]
       },
-      "componentId": [
-        "D5UbJ8NcN7_-Z2blnpbcv",
-        "dkfcpvZrbN2tYGYMBzux4",
-        "0gSn-odfT27F_wP0Ba9UI",
-        "JFqMSxFxcPE5caPJdD1Rp",
-        "x0q-ItcqwuMfI4MbuhpIJ"
-      ]
+      "componentId": ["D5UbJ8NcN7_-Z2blnpbcv", "phr83OB4iEXdoipmq2kNU"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/11/2023",
-    "createdAt": "9/11/2023",
+    "updatedAt": "9/21/2023",
+    "createdAt": "9/21/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -114,146 +108,163 @@
         "events": []
       },
       {
-        "id": "dkfcpvZrbN2tYGYMBzux4",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "BillTopup_Postpaid_Icon",
+        "id": "phr83OB4iEXdoipmq2kNU",
+        "type": "GLIST",
+        "name": "Grid List View",
+        "component": { "content": "Grid List View", "type": "GLIST" },
         "attributes": {
-          "name": "BillTopup_Postpaid_Icon",
+          "name": "Grid List View",
+          "bindingKey": "topupCategoryGrid",
           "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
+            "layout_width": "match_parent",
+            "column": 2,
+            "layout_height": "wrap_content",
             "cornerRadius": [0, 0, 0, 0],
             "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv",
-            "layout_marginLeft": 0,
-            "layout_marginTop": 20,
-            "leftToLeftOf": "0gSn-odfT27F_wP0Ba9UI",
-            "rightToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-            "elevation": 1
-          },
-          "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png"
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-1",
-        "edit": true,
-        "events": []
-      },
-      {
-        "id": "0gSn-odfT27F_wP0Ba9UI",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "BillTopup_Postpaid_Text",
-        "attributes": {
-          "name": "BillTopup_Postpaid_Text",
-          "layoutProperties": {
-            "textSize": 15,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "MOBILE POSTPAID",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
             "leftToLeftOf": "xrNDpmTzwbVEXCvKuFwh1",
-            "topToBottomOf": "dkfcpvZrbN2tYGYMBzux4",
-            "layout_marginLeft": 20,
+            "rightToRightOf": "xrNDpmTzwbVEXCvKuFwh1",
             "layout_marginTop": 5,
-            "textStyle": "bold",
-            "textAlignment": "left"
-          },
-          "bindingKey": "billtopup_text"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-2",
-        "edit": true
-      },
-      {
-        "id": "JFqMSxFxcPE5caPJdD1Rp",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "BillTopup_Prepaid_Text",
-        "attributes": {
-          "name": "BillTopup_Prepaid_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "MOBILE PREPAID",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-            "topToTopOf": "0gSn-odfT27F_wP0Ba9UI",
             "layout_marginLeft": 20,
-            "textStyle": "bold",
-            "textAlignment": "left"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-3",
-        "edit": true
-      },
-      {
-        "id": "x0q-ItcqwuMfI4MbuhpIJ",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "BillTopupPrepaid_Img",
-        "attributes": {
-          "name": "BillTopupPrepaid_Img",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "40",
-            "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "JFqMSxFxcPE5caPJdD1Rp",
-            "rightToRightOf": "JFqMSxFxcPE5caPJdD1Rp",
-            "layout_marginTop": 20,
-            "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv"
+            "layout_marginRight": 20,
+            "rows": [
+              {
+                "id": "Y-Z5bW-yZKei8d2pZeNPS",
+                "bindingKey": "selectedTopupCategory",
+                "visibility": { "logic": {} },
+                "events": [
+                  {
+                    "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                    "triggerName": "navigate to top up companies",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ]
           },
-          "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png"
+          "componentId": []
         },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-4",
-        "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
+            "triggerName": "top up category grid data",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "topupCategoryGrid",
+              "value": [
+                {
+                  "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
+                  "title": "MOBILE POSTPAID"
+                },
+                {
+                  "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
+                  "title": "MOBILE PREPAID"
+                }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Y-Z5bW-yZKei8d2pZeNPS",
+            "name": "MOBILE_G_LIST_VIEW 0",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "events": [
+              {
+                "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                "triggerName": "navigate to top up companies",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "udliZgXmxlyz9CTYn715k",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "layout_marginTop": 10
+                  },
+                  "contentType": 1,
+                  "bindingKey": "image"
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-0",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "QKb2AWRDupeklFf93oxBp",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 10,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "cat title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+                    "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "layout_marginTop": 10,
+                    "textStyle": "bold"
+                  },
+                  "bindingKey": "title"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-1",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "bindingKey": "selectedTopupCategory",
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent"
+              }
+            }
+          }
+        ],
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -367,146 +378,166 @@
             "events": []
           },
           {
-            "id": "dkfcpvZrbN2tYGYMBzux4",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "BillTopup_Postpaid_Icon",
+            "id": "phr83OB4iEXdoipmq2kNU",
+            "type": "GLIST",
+            "name": "Grid List View",
+            "component": { "content": "Grid List View", "type": "GLIST" },
             "attributes": {
-              "name": "BillTopup_Postpaid_Icon",
+              "name": "Grid List View",
+              "bindingKey": "topupCategoryGrid",
               "layoutProperties": {
-                "layout_width": "40",
-                "layout_height": "40",
+                "layout_width": "match_parent",
+                "column": 2,
+                "layout_height": "wrap_content",
                 "cornerRadius": [0, 0, 0, 0],
                 "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv",
-                "layout_marginLeft": 0,
-                "layout_marginTop": 20,
-                "leftToLeftOf": "0gSn-odfT27F_wP0Ba9UI",
-                "rightToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-                "elevation": 1
-              },
-              "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png"
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1",
-            "edit": true,
-            "events": []
-          },
-          {
-            "id": "0gSn-odfT27F_wP0Ba9UI",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "BillTopup_Postpaid_Text",
-            "attributes": {
-              "name": "BillTopup_Postpaid_Text",
-              "layoutProperties": {
-                "textSize": 15,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "MOBILE POSTPAID",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
                 "leftToLeftOf": "xrNDpmTzwbVEXCvKuFwh1",
-                "topToBottomOf": "dkfcpvZrbN2tYGYMBzux4",
-                "layout_marginLeft": 20,
+                "rightToRightOf": "xrNDpmTzwbVEXCvKuFwh1",
                 "layout_marginTop": 5,
-                "textStyle": "bold",
-                "textAlignment": "left"
-              },
-              "bindingKey": "billtopup_text"
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-2",
-            "edit": true
-          },
-          {
-            "id": "JFqMSxFxcPE5caPJdD1Rp",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "BillTopup_Prepaid_Text",
-            "attributes": {
-              "name": "BillTopup_Prepaid_Text",
-              "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "MOBILE PREPAID",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-                "topToTopOf": "0gSn-odfT27F_wP0Ba9UI",
                 "layout_marginLeft": 20,
-                "textStyle": "bold",
-                "textAlignment": "left"
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-3",
-            "edit": true
-          },
-          {
-            "id": "x0q-ItcqwuMfI4MbuhpIJ",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "BillTopupPrepaid_Img",
-            "attributes": {
-              "name": "BillTopupPrepaid_Img",
-              "layoutProperties": {
-                "layout_width": "40",
-                "layout_height": "40",
-                "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "JFqMSxFxcPE5caPJdD1Rp",
-                "rightToRightOf": "JFqMSxFxcPE5caPJdD1Rp",
-                "layout_marginTop": 20,
-                "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv"
+                "layout_marginRight": 20,
+                "rows": [
+                  {
+                    "id": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "bindingKey": "selectedTopupCategory",
+                    "visibility": { "logic": {} },
+                    "events": [
+                      {
+                        "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                        "triggerName": "navigate to top up companies",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ]
               },
-              "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png"
+              "componentId": []
             },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-4",
-            "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
+                "triggerName": "top up category grid data",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "topupCategoryGrid",
+                  "value": [
+                    {
+                      "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
+                      "title": "MOBILE POSTPAID"
+                    },
+                    {
+                      "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
+                      "title": "MOBILE PREPAID"
+                    }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "2"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "Y-Z5bW-yZKei8d2pZeNPS",
+                "name": "MOBILE_G_LIST_VIEW 0",
+                "path": "0-1-0",
+                "type": "GLISTITEM",
+                "events": [
+                  {
+                    "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                    "triggerName": "navigate to top up companies",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ],
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "udliZgXmxlyz9CTYn715k",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Image View",
+                    "attributes": {
+                      "name": "Image View",
+                      "layoutProperties": {
+                        "layout_width": "40",
+                        "layout_height": "40",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                        "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+                        "layout_marginTop": 10
+                      },
+                      "contentType": 1,
+                      "bindingKey": "image"
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-1-0-0",
+                    "edit": true,
+                    "events": []
+                  },
+                  {
+                    "id": "QKb2AWRDupeklFf93oxBp",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 10,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "cat title",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+                        "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                        "layout_marginTop": 10,
+                        "textStyle": "bold"
+                      },
+                      "bindingKey": "title"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-1",
+                    "edit": true
+                  }
+                ],
+                "attributes": {
+                  "bindingKey": "selectedTopupCategory",
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent"
+                  }
+                }
+              }
+            ],
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -515,7 +546,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "xrNDpmTzwbVEXCvKuFwh1",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -600,140 +631,598 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "dkfcpvZrbN2tYGYMBzux4",
-    "status": "ACTIVE",
-    "name": "BillTopup_Postpaid_Icon",
+    "id": "phr83OB4iEXdoipmq2kNU",
+    "type": "GLIST",
+    "name": "Grid List View",
+    "component": { "content": "Grid List View", "type": "GLIST" },
     "attributes": {
-      "name": "BillTopup_Postpaid_Icon",
+      "name": "Grid List View",
+      "bindingKey": "topupCategoryGrid",
       "layoutProperties": {
-        "layout_width": "40",
-        "layout_height": "40",
+        "layout_width": "match_parent",
+        "column": 2,
+        "layout_height": "wrap_content",
         "cornerRadius": [0, 0, 0, 0],
         "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv",
-        "layout_marginLeft": 0,
-        "layout_marginTop": 20,
-        "leftToLeftOf": "0gSn-odfT27F_wP0Ba9UI",
-        "rightToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-        "elevation": 1
-      },
-      "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png"
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-1",
-    "edit": true,
-    "events": [],
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "0gSn-odfT27F_wP0Ba9UI",
-    "status": "ACTIVE",
-    "name": "BillTopup_Postpaid_Text",
-    "attributes": {
-      "name": "BillTopup_Postpaid_Text",
-      "layoutProperties": {
-        "textSize": 15,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "MOBILE POSTPAID",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
         "leftToLeftOf": "xrNDpmTzwbVEXCvKuFwh1",
-        "topToBottomOf": "dkfcpvZrbN2tYGYMBzux4",
-        "layout_marginLeft": 20,
+        "rightToRightOf": "xrNDpmTzwbVEXCvKuFwh1",
         "layout_marginTop": 5,
-        "textStyle": "bold",
-        "textAlignment": "left"
-      },
-      "bindingKey": "billtopup_text"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-2",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "JFqMSxFxcPE5caPJdD1Rp",
-    "status": "ACTIVE",
-    "name": "BillTopup_Prepaid_Text",
-    "attributes": {
-      "name": "BillTopup_Prepaid_Text",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "MOBILE PREPAID",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToRightOf": "0gSn-odfT27F_wP0Ba9UI",
-        "topToTopOf": "0gSn-odfT27F_wP0Ba9UI",
         "layout_marginLeft": 20,
-        "textStyle": "bold",
-        "textAlignment": "left"
-      }
+        "layout_marginRight": 20,
+        "rows": [
+          {
+            "id": "Y-Z5bW-yZKei8d2pZeNPS",
+            "bindingKey": "selectedTopupCategory",
+            "visibility": { "logic": {} },
+            "events": [
+              {
+                "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                "triggerName": "navigate to top up companies",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ]
+      },
+      "componentId": ["Y-Z5bW-yZKei8d2pZeNPS"]
     },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "subType": "component",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-3",
+    "events": [
+      {
+        "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
+        "triggerName": "top up category grid data",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-1",
+    "gridProps": [
+      {
+        "id": "Y-Z5bW-yZKei8d2pZeNPS",
+        "name": "MOBILE_G_LIST_VIEW 0",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "events": [
+          {
+            "triggerId": "I-FrEavSmWVqSY9VqofNn",
+            "triggerName": "navigate to top up companies",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "udliZgXmxlyz9CTYn715k",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+                "layout_marginTop": 10
+              },
+              "contentType": 1,
+              "bindingKey": "image"
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-0",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "QKb2AWRDupeklFf93oxBp",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 10,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "cat title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+                "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                "layout_marginTop": 10,
+                "textStyle": "bold"
+              },
+              "bindingKey": "title"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-1",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "bindingKey": "selectedTopupCategory",
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent"
+          }
+        }
+      }
+    ],
     "edit": true,
+    "layout": [
+      {
+        "id": "D5UbJ8NcN7_-Z2blnpbcv",
+        "status": "ACTIVE",
+        "_id": "61decfbf077814a0f374da01",
+        "name": "BillTopup_SearchBar",
+        "attributes": {
+          "name": "BillTopup_SearchBar",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "45",
+            "cornerRadius": [0, 0, 0, 0],
+            "textSize": 16,
+            "searchComponentId": "xrNDpmTzwbVEXCvKuFwh1",
+            "placeHolderText": "Search",
+            "bindingKey": "billtopup_text",
+            "leftToLeftOf": "xrNDpmTzwbVEXCvKuFwh1",
+            "rightToRightOf": "xrNDpmTzwbVEXCvKuFwh1",
+            "topToTopOf": "xrNDpmTzwbVEXCvKuFwh1",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginTop": 20,
+            "textColor": "#000000",
+            "placeHolderTextColor": "#A6A8A4",
+            "placeHolderTextSize": 16,
+            "imgAsset": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            },
+            "assetId": "0YHVpR9LJqx6UWKo0NH7E",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6458dfd3badaaa2d6406ae3a",
+              "name": "searchIcon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "0YHVpR9LJqx6UWKo0NH7E",
+              "gitBranchName": "master",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "searchIcon.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/searchIcon.png",
+              "createdAt": "2023-05-08T11:41:07.519Z",
+              "updatedAt": "2023-05-08T11:41:07.519Z",
+              "__v": 0,
+              "uri": "searchIcon.png"
+            },
+            "background": "#FFFFFF"
+          },
+          "validation": [],
+          "searchKey": "billtopup_text"
+        },
+        "icon": "FaSearchengin",
+        "group": "Advanced",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+        "path": "0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "phr83OB4iEXdoipmq2kNU",
+        "type": "GLIST",
+        "name": "Grid List View",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "Grid List View",
+          "bindingKey": "topupCategoryGrid",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 2,
+            "layout_height": "wrap_content",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv",
+            "leftToLeftOf": "xrNDpmTzwbVEXCvKuFwh1",
+            "rightToRightOf": "xrNDpmTzwbVEXCvKuFwh1",
+            "layout_marginTop": 5,
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "rows": [
+              {
+                "id": "Y-Z5bW-yZKei8d2pZeNPS",
+                "bindingKey": "selectedTopupCategory",
+                "visibility": { "logic": {} },
+                "events": [
+                  {
+                    "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                    "triggerName": "navigate to top up companies",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ]
+          },
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
+            "triggerName": "top up category grid data",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "topupCategoryGrid",
+              "value": [
+                {
+                  "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
+                  "title": "MOBILE POSTPAID"
+                },
+                {
+                  "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
+                  "title": "MOBILE PREPAID"
+                }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Y-Z5bW-yZKei8d2pZeNPS",
+            "name": "MOBILE_G_LIST_VIEW 0",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "events": [
+              {
+                "triggerId": "I-FrEavSmWVqSY9VqofNn",
+                "triggerName": "navigate to top up companies",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "udliZgXmxlyz9CTYn715k",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "40",
+                    "layout_height": "40",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "layout_marginTop": 10
+                  },
+                  "contentType": 1,
+                  "bindingKey": "image"
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-0",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "QKb2AWRDupeklFf93oxBp",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 10,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "cat title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+                    "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                    "layout_marginTop": 10,
+                    "textStyle": "bold"
+                  },
+                  "bindingKey": "title"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-1",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "bindingKey": "selectedTopupCategory",
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent"
+              }
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "x0q-ItcqwuMfI4MbuhpIJ",
-    "status": "ACTIVE",
-    "name": "BillTopupPrepaid_Img",
+    "id": "Y-Z5bW-yZKei8d2pZeNPS",
+    "name": "MOBILE_G_LIST_VIEW 0",
+    "path": "0-1-0",
+    "type": "GLISTITEM",
+    "events": [
+      {
+        "triggerId": "I-FrEavSmWVqSY9VqofNn",
+        "triggerName": "navigate to top up companies",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "udliZgXmxlyz9CTYn715k",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+            "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+            "layout_marginTop": 10
+          },
+          "contentType": 1,
+          "bindingKey": "image"
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-1-0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "QKb2AWRDupeklFf93oxBp",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 10,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "cat title",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+            "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+            "layout_marginTop": 10,
+            "textStyle": "bold"
+          },
+          "bindingKey": "title"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-1",
+        "edit": true
+      }
+    ],
     "attributes": {
-      "name": "BillTopupPrepaid_Img",
+      "bindingKey": "selectedTopupCategory",
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent"
+      },
+      "componentId": ["udliZgXmxlyz9CTYn715k", "QKb2AWRDupeklFf93oxBp"]
+    },
+    "layout": [
+      {
+        "id": "Y-Z5bW-yZKei8d2pZeNPS",
+        "name": "MOBILE_G_LIST_VIEW 0",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "events": [
+          {
+            "triggerId": "I-FrEavSmWVqSY9VqofNn",
+            "triggerName": "navigate to top up companies",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "udliZgXmxlyz9CTYn715k",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+                "layout_marginTop": 10
+              },
+              "contentType": 1,
+              "bindingKey": "image"
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-0",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "QKb2AWRDupeklFf93oxBp",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 10,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "cat title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+                "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+                "layout_marginTop": 10,
+                "textStyle": "bold"
+              },
+              "bindingKey": "title"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-1",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "bindingKey": "selectedTopupCategory",
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent"
+          }
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "udliZgXmxlyz9CTYn715k",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
       "layoutProperties": {
         "layout_width": "40",
         "layout_height": "40",
         "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "JFqMSxFxcPE5caPJdD1Rp",
-        "rightToRightOf": "JFqMSxFxcPE5caPJdD1Rp",
-        "layout_marginTop": 20,
-        "topToBottomOf": "D5UbJ8NcN7_-Z2blnpbcv"
+        "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+        "topToTopOf": "Y-Z5bW-yZKei8d2pZeNPS",
+        "layout_marginTop": 10
       },
       "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png"
+      "bindingKey": "image"
     },
     "icon": "FaRegImage",
     "group": "Form",
@@ -744,11 +1233,50 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-4",
+    "path": "0-1-0-0",
     "edit": true,
     "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "QKb2AWRDupeklFf93oxBp",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 10,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "cat title",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "udliZgXmxlyz9CTYn715k",
+        "centerX": "Y-Z5bW-yZKei8d2pZeNPS",
+        "layout_marginTop": 10,
+        "textStyle": "bold"
+      },
+      "bindingKey": "title"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-1",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

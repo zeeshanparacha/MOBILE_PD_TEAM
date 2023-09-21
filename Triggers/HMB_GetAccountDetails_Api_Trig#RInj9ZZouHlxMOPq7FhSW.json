@@ -42,10 +42,10 @@
           "responseStateKey": "hmb_getAccountDetails",
           "conditions": [
             {
-              "logic": { "==": [{ "var": "hmb_getAccountDetails.code" }, 1] },
               "httpStatus": 200,
               "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
-              "triggerId": "WfoRghy24XDRvZ_8GUi1a"
+              "triggerId": "WfoRghy24XDRvZ_8GUi1a",
+              "logic": { "==": [{ "var": "hmb_getAccountDetails.code" }, 1] }
             }
           ]
         },
@@ -54,11 +54,11 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.7z3dkrri4p8bq_8qj7EZxVyWItH-SpC1",
+  "csrf": "0.4t498t7vfeugVZWJC0sHKHp4D-GLyOM4",
   "_id": "RInj9ZZouHlxMOPq7FhSW",
-  "updatedAt": "8/31/2023",
-  "createdAt": "8/31/2023",
-  "createdBy": "shaikhahmedraza",
-  "updatedBy": "shaikhahmedraza",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
   "old_name": "HMB_GetAccountDetails_Api_Trig"
 }
