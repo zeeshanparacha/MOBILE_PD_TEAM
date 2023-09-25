@@ -1,0 +1,41 @@
+{
+  "id": "2h6s0ccF4dbC8dWVmvdIG",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getCategoryAndCompanies",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "Content-Length": "28"
+          },
+          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+          "requestDataType": "byJSON",
+          "requestBody": { "inquiry": null, "temp": null },
+          "responseStateKey": "categoriesAndCompanies"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.0qknjk5zqs8hYCANzBWll7spi8mmUPWHD",
+  "_id": "HuaxRc5-qMA0xJ4FrDFHu",
+  "updatedAt": "9/25/2023",
+  "createdAt": "9/25/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

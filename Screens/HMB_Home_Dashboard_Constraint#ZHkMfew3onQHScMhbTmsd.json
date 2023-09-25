@@ -85,8 +85,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/12/2023",
-    "createdAt": "9/12/2023",
+    "updatedAt": "9/25/2023",
+    "createdAt": "9/25/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -1719,8 +1719,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -6506,8 +6534,36 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-16"
+            "events": [
+              {
+                "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+                "triggerName": "getCategoryAndCompanies",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "Content-Length": "28"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "inquiry": null, "temp": null },
+                  "responseStateKey": "categoriesAndCompanies"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-16",
+            "edit": true
           },
           {
             "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -12527,8 +12583,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -18165,8 +18249,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+        "triggerName": "getCategoryAndCompanies",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-16",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -20265,8 +20357,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -26043,8 +26163,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -32294,8 +32442,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",
@@ -39359,8 +39535,36 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-16"
+        "events": [
+          {
+            "triggerId": "2h6s0ccF4dbC8dWVmvdIG",
+            "triggerName": "getCategoryAndCompanies",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "Content-Length": "28"
+              },
+              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "categoriesAndCompanies"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "01Rn4OUFoBQod99gz5Ss0",

@@ -25,8 +25,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/22/2023",
-    "createdAt": "9/22/2023",
+    "updatedAt": "9/25/2023",
+    "createdAt": "9/25/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -175,6 +175,20 @@
               ],
               "contentType": "array",
               "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "zi4Ootg2OakPm2AfkCNio",
+            "triggerName": "getPostPaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "10" }],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -343,6 +357,20 @@
               ],
               "contentType": "array",
               "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "maJSn44-ZOSDTKLvVJm4o",
+            "triggerName": "getPrePaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "9" }],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -625,6 +653,20 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
+              },
+              {
+                "triggerId": "zi4Ootg2OakPm2AfkCNio",
+                "triggerName": "getPostPaidCategoryCode",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "categoryCode",
+                  "value": [{ "code": "10" }],
+                  "contentType": "array",
+                  "totalcolumns": "1"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
               }
             ],
             "path": "0-1",
@@ -796,6 +838,20 @@
                   ],
                   "contentType": "array",
                   "totalcolumns": "2"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              },
+              {
+                "triggerId": "maJSn44-ZOSDTKLvVJm4o",
+                "triggerName": "getPrePaidCategoryCode",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "categoryCode",
+                  "value": [{ "code": "9" }],
+                  "contentType": "array",
+                  "totalcolumns": "1"
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
@@ -1023,6 +1079,12 @@
       {
         "triggerId": "nVoLtZIUgscP8RDuZy1AQ",
         "triggerName": "top up company list data for Post-Paid",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "zi4Ootg2OakPm2AfkCNio",
+        "triggerName": "getPostPaidCategoryCode",
         "name": "On Load",
         "type": "ONLOAD"
       }
@@ -1266,6 +1328,20 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "zi4Ootg2OakPm2AfkCNio",
+            "triggerName": "getPostPaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "10" }],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ],
         "path": "0-1",
@@ -1431,6 +1507,20 @@
               ],
               "contentType": "array",
               "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "maJSn44-ZOSDTKLvVJm4o",
+            "triggerName": "getPrePaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "9" }],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -1838,6 +1928,12 @@
         "triggerName": "top up company list data for Pre-Paid",
         "name": "On Load",
         "type": "ONLOAD"
+      },
+      {
+        "triggerId": "maJSn44-ZOSDTKLvVJm4o",
+        "triggerName": "getPrePaidCategoryCode",
+        "name": "On Load",
+        "type": "ONLOAD"
       }
     ],
     "path": "0-2",
@@ -2081,6 +2177,20 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "zi4Ootg2OakPm2AfkCNio",
+            "triggerName": "getPostPaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "10" }],
+              "contentType": "array",
+              "totalcolumns": "1"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ],
         "path": "0-1",
@@ -2246,6 +2356,20 @@
               ],
               "contentType": "array",
               "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "maJSn44-ZOSDTKLvVJm4o",
+            "triggerName": "getPrePaidCategoryCode",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "categoryCode",
+              "value": [{ "code": "9" }],
+              "contentType": "array",
+              "totalcolumns": "1"
             },
             "type": "ONLOAD",
             "name": "On Load"

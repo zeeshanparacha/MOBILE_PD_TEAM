@@ -25,7 +25,6 @@
         "Nu_8nla91bzlSWXUpzVlm",
         "w6Fgiozye0eLtPCCgIBSq",
         "-qYE-AY9CcuELCHTifbeY",
-        "FXFch9kESpNcEY7gAWYOy",
         "32vOtEejxOdZphfEBF2Ol",
         "7hiW4krWdaySEZL2cOo0L",
         "HIzC-AWktja9XwCXdpZMU",
@@ -40,8 +39,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/22/2023",
-    "createdAt": "9/22/2023",
+    "updatedAt": "9/25/2023",
+    "createdAt": "9/25/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -341,55 +340,6 @@
         "edit": true
       },
       {
-        "id": "FXFch9kESpNcEY7gAWYOy",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "HMB_BEne_FT_category_Down_Icon",
-        "attributes": {
-          "name": "HMB_BEne_FT_category_Down_Icon",
-          "layoutProperties": {
-            "layout_width": "40",
-            "layout_height": "45",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "645e47fc4e35ca4a482abb68",
-              "name": "BtmSheet_Arrow.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "V0FHEyra3ZGw_wle8Q7XE",
-              "gitBranchName": "master",
-              "folderType": "xhdpi",
-              "platform": "Android",
-              "url": "BtmSheet_Arrow.png",
-              "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
-              "createdAt": "2023-05-12T14:06:52.205Z",
-              "updatedAt": "2023-05-12T14:06:52.205Z",
-              "__v": 0,
-              "uri": "BtmSheet_Arrow.png"
-            },
-            "rightToRightOf": "-qYE-AY9CcuELCHTifbeY",
-            "centerY": "-qYE-AY9CcuELCHTifbeY",
-            "layout_marginRight": 20,
-            "id": "V0FHEyra3ZGw_wle8Q7XE"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-8",
-        "edit": true,
-        "events": []
-      },
-      {
         "id": "32vOtEejxOdZphfEBF2Ol",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
@@ -411,7 +361,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "abc"
+          "bindingKey": "selectedTopupCategory.title"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -424,7 +374,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-9",
+        "path": "0-8",
         "edit": true
       },
       {
@@ -504,7 +454,7 @@
         "id": "ewTco_c6Z2TGHfCRj1fbv",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "HMB_BEne_FT_PurposeofSending_DataText",
         "attributes": {
           "name": "HMB_BEne_FT_PurposeofSending_DataText",
           "layoutProperties": {
@@ -522,7 +472,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "abc"
+          "bindingKey": "selectedCompany.title"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -535,13 +485,14 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-12"
+        "path": "0-11",
+        "edit": true
       },
       {
         "id": "vCFyBqS8rTtDe6uai8ov6",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "HMB_BEne_FT_PurposeofSending_Text",
         "attributes": {
           "name": "HMB_BEne_FT_PurposeofSending_Text",
           "layoutProperties": {
@@ -558,7 +509,8 @@
             "textStyle": "bold",
             "layout_marginLeft": 20,
             "layout_marginTop": 20
-          }
+          },
+          "bindingKey": "selectedCompany"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -571,7 +523,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-13"
+        "path": "0-12",
+        "edit": true
       },
       {
         "id": "0B1_vJSKYvqokJMVjS2YB",
@@ -1046,55 +999,6 @@
             "edit": true
           },
           {
-            "id": "FXFch9kESpNcEY7gAWYOy",
-            "status": "ACTIVE",
-            "_id": "61decd8e077814a0f374d9fc",
-            "name": "HMB_BEne_FT_category_Down_Icon",
-            "attributes": {
-              "name": "HMB_BEne_FT_category_Down_Icon",
-              "layoutProperties": {
-                "layout_width": "40",
-                "layout_height": "45",
-                "cornerRadius": [0, 0, 0, 0],
-                "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "645e47fc4e35ca4a482abb68",
-                  "name": "BtmSheet_Arrow.png",
-                  "type": "png",
-                  "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "V0FHEyra3ZGw_wle8Q7XE",
-                  "gitBranchName": "master",
-                  "folderType": "xhdpi",
-                  "platform": "Android",
-                  "url": "BtmSheet_Arrow.png",
-                  "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
-                  "createdAt": "2023-05-12T14:06:52.205Z",
-                  "updatedAt": "2023-05-12T14:06:52.205Z",
-                  "__v": 0,
-                  "uri": "BtmSheet_Arrow.png"
-                },
-                "rightToRightOf": "-qYE-AY9CcuELCHTifbeY",
-                "centerY": "-qYE-AY9CcuELCHTifbeY",
-                "layout_marginRight": 20,
-                "id": "V0FHEyra3ZGw_wle8Q7XE"
-              },
-              "contentType": 2
-            },
-            "icon": "FaRegImage",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-8",
-            "edit": true,
-            "events": []
-          },
-          {
             "id": "32vOtEejxOdZphfEBF2Ol",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
@@ -1116,7 +1020,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "abc"
+              "bindingKey": "selectedTopupCategory.title"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1129,7 +1033,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-9",
+            "path": "0-8",
             "edit": true
           },
           {
@@ -1209,7 +1113,7 @@
             "id": "ewTco_c6Z2TGHfCRj1fbv",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "HMB_BEne_FT_PurposeofSending_DataText",
             "attributes": {
               "name": "HMB_BEne_FT_PurposeofSending_DataText",
               "layoutProperties": {
@@ -1227,7 +1131,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "abc"
+              "bindingKey": "selectedCompany.title"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1240,13 +1144,14 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-12"
+            "path": "0-11",
+            "edit": true
           },
           {
             "id": "vCFyBqS8rTtDe6uai8ov6",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "HMB_BEne_FT_PurposeofSending_Text",
             "attributes": {
               "name": "HMB_BEne_FT_PurposeofSending_Text",
               "layoutProperties": {
@@ -1263,7 +1168,8 @@
                 "textStyle": "bold",
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20
-              }
+              },
+              "bindingKey": "selectedCompany"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1276,7 +1182,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-13"
+            "path": "0-12",
+            "edit": true
           },
           {
             "id": "0B1_vJSKYvqokJMVjS2YB",
@@ -1752,58 +1659,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "FXFch9kESpNcEY7gAWYOy",
-    "status": "ACTIVE",
-    "name": "HMB_BEne_FT_category_Down_Icon",
-    "attributes": {
-      "name": "HMB_BEne_FT_category_Down_Icon",
-      "layoutProperties": {
-        "layout_width": "40",
-        "layout_height": "45",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "645e47fc4e35ca4a482abb68",
-          "name": "BtmSheet_Arrow.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "V0FHEyra3ZGw_wle8Q7XE",
-          "gitBranchName": "master",
-          "folderType": "xhdpi",
-          "platform": "Android",
-          "url": "BtmSheet_Arrow.png",
-          "canvasUrl": "Android/drawable-xhdpi/BtmSheet_Arrow.png",
-          "createdAt": "2023-05-12T14:06:52.205Z",
-          "updatedAt": "2023-05-12T14:06:52.205Z",
-          "__v": 0,
-          "uri": "BtmSheet_Arrow.png"
-        },
-        "rightToRightOf": "-qYE-AY9CcuELCHTifbeY",
-        "centerY": "-qYE-AY9CcuELCHTifbeY",
-        "layout_marginRight": 20,
-        "id": "V0FHEyra3ZGw_wle8Q7XE"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-8",
-    "edit": true,
-    "events": [],
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "32vOtEejxOdZphfEBF2Ol",
     "status": "ACTIVE",
     "name": "HMB_BEne_FT_PurposeofSending_DataText",
@@ -1824,7 +1679,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "abc"
+      "bindingKey": "selectedTopupCategory.title"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1837,7 +1692,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-9",
+    "path": "0-8",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -1926,7 +1781,7 @@
   {
     "id": "ewTco_c6Z2TGHfCRj1fbv",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_BEne_FT_PurposeofSending_DataText",
     "attributes": {
       "name": "HMB_BEne_FT_PurposeofSending_DataText",
       "layoutProperties": {
@@ -1944,7 +1799,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "abc"
+      "bindingKey": "selectedCompany.title"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1957,7 +1812,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-12",
+    "path": "0-11",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1966,7 +1822,7 @@
   {
     "id": "vCFyBqS8rTtDe6uai8ov6",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_BEne_FT_PurposeofSending_Text",
     "attributes": {
       "name": "HMB_BEne_FT_PurposeofSending_Text",
       "layoutProperties": {
@@ -1983,7 +1839,8 @@
         "textStyle": "bold",
         "layout_marginLeft": 20,
         "layout_marginTop": 20
-      }
+      },
+      "bindingKey": "selectedCompany"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1996,7 +1853,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-13",
+    "path": "0-12",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2110,10 +1968,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-16",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2152,11 +2010,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-17",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
