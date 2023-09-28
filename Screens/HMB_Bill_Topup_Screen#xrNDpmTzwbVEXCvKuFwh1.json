@@ -21,8 +21,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/21/2023",
-    "createdAt": "9/21/2023",
+    "updatedAt": "9/28/2023",
+    "createdAt": "9/28/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -130,7 +130,6 @@
               {
                 "id": "Y-Z5bW-yZKei8d2pZeNPS",
                 "bindingKey": "selectedTopupCategory",
-                "visibility": { "logic": {} },
                 "events": [
                   {
                     "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -146,24 +145,14 @@
         },
         "events": [
           {
-            "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
-            "triggerName": "top up category grid data",
+            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerName": "filterCategories",
             "serviceType": "DATASTORAGE",
             "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "topupCategoryGrid",
-              "value": [
-                {
-                  "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
-                  "title": "MOBILE POSTPAID"
-                },
-                {
-                  "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
-                  "title": "MOBILE PREPAID"
-                }
-              ],
-              "contentType": "array",
-              "totalcolumns": "2"
+              "serviceName": "Filter Array",
+              "source": "categoriesAndCompanies",
+              "destination": "filteredCategories",
+              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -238,7 +227,7 @@
                     "layout_marginTop": 10,
                     "textStyle": "bold"
                   },
-                  "bindingKey": "title"
+                  "bindingKey": "categoryName"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -400,7 +389,6 @@
                   {
                     "id": "Y-Z5bW-yZKei8d2pZeNPS",
                     "bindingKey": "selectedTopupCategory",
-                    "visibility": { "logic": {} },
                     "events": [
                       {
                         "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -416,24 +404,16 @@
             },
             "events": [
               {
-                "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
-                "triggerName": "top up category grid data",
+                "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+                "triggerName": "filterCategories",
                 "serviceType": "DATASTORAGE",
                 "attributes": {
-                  "serviceName": "Update value against binding key",
-                  "bindingKey": "topupCategoryGrid",
-                  "value": [
-                    {
-                      "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
-                      "title": "MOBILE POSTPAID"
-                    },
-                    {
-                      "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
-                      "title": "MOBILE PREPAID"
-                    }
-                  ],
-                  "contentType": "array",
-                  "totalcolumns": "2"
+                  "serviceName": "Filter Array",
+                  "source": "categoriesAndCompanies",
+                  "destination": "filteredCategories",
+                  "filter": {
+                    "content.categoriesCollection.categoryCode": ["9"]
+                  }
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
@@ -511,7 +491,7 @@
                         "layout_marginTop": 10,
                         "textStyle": "bold"
                       },
-                      "bindingKey": "title"
+                      "bindingKey": "categoryName"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -653,7 +633,6 @@
           {
             "id": "Y-Z5bW-yZKei8d2pZeNPS",
             "bindingKey": "selectedTopupCategory",
-            "visibility": { "logic": {} },
             "events": [
               {
                 "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -669,8 +648,8 @@
     },
     "events": [
       {
-        "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
-        "triggerName": "top up category grid data",
+        "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+        "triggerName": "filterCategories",
         "name": "On Load",
         "type": "ONLOAD"
       }
@@ -744,7 +723,7 @@
                 "layout_marginTop": 10,
                 "textStyle": "bold"
               },
-              "bindingKey": "title"
+              "bindingKey": "categoryName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -873,7 +852,6 @@
               {
                 "id": "Y-Z5bW-yZKei8d2pZeNPS",
                 "bindingKey": "selectedTopupCategory",
-                "visibility": { "logic": {} },
                 "events": [
                   {
                     "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -889,24 +867,14 @@
         },
         "events": [
           {
-            "triggerId": "OW8yWXxv0i6aeFlUHEP6M",
-            "triggerName": "top up category grid data",
+            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerName": "filterCategories",
             "serviceType": "DATASTORAGE",
             "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "topupCategoryGrid",
-              "value": [
-                {
-                  "image": "https://hliteuat.habibmetro.com:443/images/Category_10/Category_10.png",
-                  "title": "MOBILE POSTPAID"
-                },
-                {
-                  "image": "https://hliteuat.habibmetro.com:443/images/Category_9/Category_9.png",
-                  "title": "MOBILE PREPAID"
-                }
-              ],
-              "contentType": "array",
-              "totalcolumns": "2"
+              "serviceName": "Filter Array",
+              "source": "categoriesAndCompanies",
+              "destination": "filteredCategories",
+              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -981,7 +949,7 @@
                     "layout_marginTop": 10,
                     "textStyle": "bold"
                   },
-                  "bindingKey": "title"
+                  "bindingKey": "categoryName"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1083,7 +1051,7 @@
             "layout_marginTop": 10,
             "textStyle": "bold"
           },
-          "bindingKey": "title"
+          "bindingKey": "categoryName"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1176,7 +1144,7 @@
                 "layout_marginTop": 10,
                 "textStyle": "bold"
               },
-              "bindingKey": "title"
+              "bindingKey": "categoryName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1261,7 +1229,7 @@
         "layout_marginTop": 10,
         "textStyle": "bold"
       },
-      "bindingKey": "title"
+      "bindingKey": "categoryName"
     },
     "icon": "FaTextWidth",
     "group": "Form",

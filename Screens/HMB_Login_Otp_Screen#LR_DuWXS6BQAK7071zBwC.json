@@ -50,8 +50,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/13/2023",
-    "createdAt": "9/13/2023",
+    "updatedAt": "9/28/2023",
+    "createdAt": "9/28/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -172,14 +172,14 @@
         "id": "ebpL4OHesqXnEaXP-s9YO",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "LoginOtp_Auth_Text",
         "attributes": {
           "name": "LoginOtp_Auth_Text",
           "layoutProperties": {
             "textSize": 16,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
-            "textColor": "#1d6131",
+            "textColor": "#FFFFFF",
             "text": "Authentication",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
@@ -202,7 +202,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "nzMTGuRmiuBjf2EPdoyGW",
@@ -217,7 +218,7 @@
             "layout_height": "2",
             "borderWidth": 0,
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#1D6131",
+            "background": "#FFFFFF",
             "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
             "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
             "topToBottomOf": "ebpL4OHesqXnEaXP-s9YO",
@@ -259,7 +260,7 @@
             "layout_marginTop": 20,
             "activeLineColor": "#ffffff",
             "lineColor": "#ffffff",
-            "textColor": "#1d6131",
+            "textColor": "#FFFFFF",
             "activeLineWidth": 1,
             "lineWidth": 1,
             "textSize": 15,
@@ -290,7 +291,7 @@
         "id": "-ORKkixfgSyEmq4uvGA4l",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "LoginOtp_MarktoSkip_Text",
         "attributes": {
           "name": "LoginOtp_MarktoSkip_Text",
           "layoutProperties": {
@@ -306,7 +307,8 @@
             "layout_marginLeft": 20,
             "layout_marginBottom": 200,
             "textStyle": "bold",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "layout_marginTop": 0
           }
         },
         "icon": "FaTextWidth",
@@ -320,7 +322,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-6"
+        "path": "0-6",
+        "edit": true
       },
       {
         "id": "P6l_lMgee67UjljI5Ef1v",
@@ -340,7 +343,7 @@
             "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
             "topToBottomOf": "-ORKkixfgSyEmq4uvGA4l",
             "layout_marginLeft": 20,
-            "layout_marginTop": 1,
+            "layout_marginTop": 0,
             "textStyle": "regular",
             "textAlignment": "left"
           }
@@ -657,14 +660,14 @@
             "id": "ebpL4OHesqXnEaXP-s9YO",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "LoginOtp_Auth_Text",
             "attributes": {
               "name": "LoginOtp_Auth_Text",
               "layoutProperties": {
                 "textSize": 16,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
-                "textColor": "#1d6131",
+                "textColor": "#FFFFFF",
                 "text": "Authentication",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
@@ -687,7 +690,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "nzMTGuRmiuBjf2EPdoyGW",
@@ -702,7 +706,7 @@
                 "layout_height": "2",
                 "borderWidth": 0,
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
+                "background": "#FFFFFF",
                 "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
                 "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
                 "topToBottomOf": "ebpL4OHesqXnEaXP-s9YO",
@@ -744,7 +748,7 @@
                 "layout_marginTop": 20,
                 "activeLineColor": "#ffffff",
                 "lineColor": "#ffffff",
-                "textColor": "#1d6131",
+                "textColor": "#FFFFFF",
                 "activeLineWidth": 1,
                 "lineWidth": 1,
                 "textSize": 15,
@@ -775,7 +779,7 @@
             "id": "-ORKkixfgSyEmq4uvGA4l",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "LoginOtp_MarktoSkip_Text",
             "attributes": {
               "name": "LoginOtp_MarktoSkip_Text",
               "layoutProperties": {
@@ -791,7 +795,8 @@
                 "layout_marginLeft": 20,
                 "layout_marginBottom": 200,
                 "textStyle": "bold",
-                "textAlignment": "left"
+                "textAlignment": "left",
+                "layout_marginTop": 0
               }
             },
             "icon": "FaTextWidth",
@@ -805,7 +810,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-6"
+            "path": "0-6",
+            "edit": true
           },
           {
             "id": "P6l_lMgee67UjljI5Ef1v",
@@ -825,7 +831,7 @@
                 "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
                 "topToBottomOf": "-ORKkixfgSyEmq4uvGA4l",
                 "layout_marginLeft": 20,
-                "layout_marginTop": 1,
+                "layout_marginTop": 0,
                 "textStyle": "regular",
                 "textAlignment": "left"
               }
@@ -986,7 +992,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "LR_DuWXS6BQAK7071zBwC",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1111,14 +1117,14 @@
   {
     "id": "ebpL4OHesqXnEaXP-s9YO",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "LoginOtp_Auth_Text",
     "attributes": {
       "name": "LoginOtp_Auth_Text",
       "layoutProperties": {
         "textSize": 16,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
-        "textColor": "#1d6131",
+        "textColor": "#FFFFFF",
         "text": "Authentication",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
@@ -1142,6 +1148,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1159,7 +1166,7 @@
         "layout_height": "2",
         "borderWidth": 0,
         "cornerRadius": [0, 0, 0, 0],
-        "background": "#1D6131",
+        "background": "#FFFFFF",
         "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
         "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
         "topToBottomOf": "ebpL4OHesqXnEaXP-s9YO",
@@ -1204,7 +1211,7 @@
         "layout_marginTop": 20,
         "activeLineColor": "#ffffff",
         "lineColor": "#ffffff",
-        "textColor": "#1d6131",
+        "textColor": "#FFFFFF",
         "activeLineWidth": 1,
         "lineWidth": 1,
         "textSize": 15,
@@ -1238,7 +1245,7 @@
   {
     "id": "-ORKkixfgSyEmq4uvGA4l",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "LoginOtp_MarktoSkip_Text",
     "attributes": {
       "name": "LoginOtp_MarktoSkip_Text",
       "layoutProperties": {
@@ -1254,7 +1261,8 @@
         "layout_marginLeft": 20,
         "layout_marginBottom": 200,
         "textStyle": "bold",
-        "textAlignment": "left"
+        "textAlignment": "left",
+        "layout_marginTop": 0
       }
     },
     "icon": "FaTextWidth",
@@ -1269,6 +1277,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-6",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1291,7 +1300,7 @@
         "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
         "topToBottomOf": "-ORKkixfgSyEmq4uvGA4l",
         "layout_marginLeft": 20,
-        "layout_marginTop": 1,
+        "layout_marginTop": 0,
         "textStyle": "regular",
         "textAlignment": "left"
       }
@@ -1395,10 +1404,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Switch", "type": "SWITCH" },
     "bindingkey": "loginotp_switch",
     "path": "0-9",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

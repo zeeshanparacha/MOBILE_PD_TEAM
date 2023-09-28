@@ -21,8 +21,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/22/2023",
-    "createdAt": "9/22/2023",
+    "updatedAt": "9/28/2023",
+    "createdAt": "9/28/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -156,6 +156,19 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerName": "filterCategories",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Filter Array",
+              "source": "categoriesAndCompanies",
+              "destination": "filteredCategories",
+              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ],
         "path": "0-1",
@@ -227,7 +240,7 @@
                     "textStyle": "bold",
                     "layout_marginTop": 10
                   },
-                  "bindingKey": "title"
+                  "bindingKey": "categoryName"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -415,6 +428,21 @@
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
+              },
+              {
+                "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+                "triggerName": "filterCategories",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Filter Array",
+                  "source": "categoriesAndCompanies",
+                  "destination": "filteredCategories",
+                  "filter": {
+                    "content.categoriesCollection.categoryCode": ["9"]
+                  }
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
               }
             ],
             "path": "0-1",
@@ -489,7 +517,7 @@
                         "textStyle": "bold",
                         "layout_marginTop": 10
                       },
-                      "bindingKey": "title"
+                      "bindingKey": "categoryName"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -640,6 +668,12 @@
         "triggerName": "top up category grid data",
         "name": "On Load",
         "type": "ONLOAD"
+      },
+      {
+        "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+        "triggerName": "filterCategories",
+        "name": "On Load",
+        "type": "ONLOAD"
       }
     ],
     "path": "0-1",
@@ -711,7 +745,7 @@
                 "textStyle": "bold",
                 "layout_marginTop": 10
               },
-              "bindingKey": "title"
+              "bindingKey": "categoryName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -866,6 +900,19 @@
             },
             "type": "ONLOAD",
             "name": "On Load"
+          },
+          {
+            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerName": "filterCategories",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Filter Array",
+              "source": "categoriesAndCompanies",
+              "destination": "filteredCategories",
+              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ],
         "path": "0-1",
@@ -937,7 +984,7 @@
                     "textStyle": "bold",
                     "layout_marginTop": 10
                   },
-                  "bindingKey": "title"
+                  "bindingKey": "categoryName"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1039,7 +1086,7 @@
             "textStyle": "bold",
             "layout_marginTop": 10
           },
-          "bindingKey": "title"
+          "bindingKey": "categoryName"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1132,7 +1179,7 @@
                 "textStyle": "bold",
                 "layout_marginTop": 10
               },
-              "bindingKey": "title"
+              "bindingKey": "categoryName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1217,7 +1264,7 @@
         "textStyle": "bold",
         "layout_marginTop": 10
       },
-      "bindingKey": "title"
+      "bindingKey": "categoryName"
     },
     "icon": "FaTextWidth",
     "group": "Form",

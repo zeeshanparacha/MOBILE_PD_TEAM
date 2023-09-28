@@ -13,11 +13,11 @@
           "value": [
             {
               "title": "Own accounts",
-              "childs": "hmb_getAllAccounts_data.content.casaAccounts"
+              "childs": "$hmb_getAllAccounts_data.content.casaAccounts"
             },
             {
               "title": "Beneficiaries",
-              "childs": "hmb_getBeneList_data.content.beneficiaries"
+              "childs": "$hmb_getBeneList_data.content.beneficiaries"
             }
           ],
           "contentType": "array",
@@ -32,5 +32,6 @@
   "updatedAt": "9/26/2023",
   "createdAt": "9/26/2023",
   "createdBy": "ammarahmed",
-  "updatedBy": "ammarahmed"
+  "updatedBy": "ammarahmed",
+  "old_name": "getAccDataForExpList"
 }
