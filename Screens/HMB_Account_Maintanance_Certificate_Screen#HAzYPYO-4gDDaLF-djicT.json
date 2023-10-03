@@ -27,14 +27,15 @@
         "Qzi3ok523HNWyXKqJDZmc",
         "TKvMAUkvYTBbu0X0g8H-z",
         "AzA5pND8W9bBf_74YAS3g",
-        "jpZ-9pmGrR5kSUxdXDTDk"
+        "jpZ-9pmGrR5kSUxdXDTDk",
+        "w20s8uPc4PlYvqG1mz_UX"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/17/2023",
-    "createdAt": "5/17/2023",
+    "updatedAt": "10/2/2023",
+    "createdAt": "10/2/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -218,7 +219,7 @@
       {
         "id": "5AQo8Db4jCB7Nl9SJo4CT",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "AccMainCert_Accounts_Change_Text",
         "attributes": {
           "name": "AccMainCert_Accounts_Change_Text",
           "layoutProperties": {
@@ -247,8 +248,23 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-5"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-5",
+        "edit": true
       },
       {
         "id": "8wxdTGHuUb0qjbotX98mJ",
@@ -342,7 +358,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "2",
-            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
@@ -419,7 +434,6 @@
             "layout_height": "63",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            
             "layout_marginBottom": 40,
             "text": "Generate Certificate",
             "textSize": 20,
@@ -447,6 +461,50 @@
         "events": [],
         "path": "0-10",
         "edit": true
+      },
+      {
+        "id": "w20s8uPc4PlYvqG1mz_UX",
+        "status": "ACTIVE",
+        "_id": "629ee908abfebeb5178b7fb0",
+        "name": "TIMER",
+        "attributes": {
+          "name": "TIMER",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "otpTime": 30,
+            "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+            "layout_width": "80",
+            "layout_height": "60",
+            "textAlignment": "center",
+            "textSize": 14,
+            "layout_marginTop": 10,
+            "spacing": "2",
+            "centerX": "HAzYPYO-4gDDaLF-djicT",
+            "background": "#D9D3D3",
+            "borderColor": "#DEFB4B",
+            "borderWidth": 2,
+            "textColor": "#000000",
+            "lineColor": "#E64C4C",
+            "activeLineColor": "#E26A6A",
+            "lineWidth": 2,
+            "activeLineWidth": 2,
+            "elevation": 10
+          },
+          "bindingKey": "timer"
+        },
+        "icon": "FaShieldAlt",
+        "group": "Security",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Timer", "type": "TIMER" },
+        "path": "0-11",
+        "edit": true,
+        "events": []
       }
     ],
     "subType": "screen",
@@ -658,7 +716,7 @@
           {
             "id": "5AQo8Db4jCB7Nl9SJo4CT",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "AccMainCert_Accounts_Change_Text",
             "attributes": {
               "name": "AccMainCert_Accounts_Change_Text",
               "layoutProperties": {
@@ -687,8 +745,23 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-5"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-5",
+            "edit": true
           },
           {
             "id": "8wxdTGHuUb0qjbotX98mJ",
@@ -782,7 +855,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "2",
-                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
@@ -859,7 +931,6 @@
                 "layout_height": "63",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                
                 "layout_marginBottom": 40,
                 "text": "Generate Certificate",
                 "textSize": 20,
@@ -887,6 +958,50 @@
             "events": [],
             "path": "0-10",
             "edit": true
+          },
+          {
+            "id": "w20s8uPc4PlYvqG1mz_UX",
+            "status": "ACTIVE",
+            "_id": "629ee908abfebeb5178b7fb0",
+            "name": "TIMER",
+            "attributes": {
+              "name": "TIMER",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "otpTime": 30,
+                "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+                "layout_width": "80",
+                "layout_height": "60",
+                "textAlignment": "center",
+                "textSize": 14,
+                "layout_marginTop": 10,
+                "spacing": "2",
+                "centerX": "HAzYPYO-4gDDaLF-djicT",
+                "background": "#D9D3D3",
+                "borderColor": "#DEFB4B",
+                "borderWidth": 2,
+                "textColor": "#000000",
+                "lineColor": "#E64C4C",
+                "activeLineColor": "#E26A6A",
+                "lineWidth": 2,
+                "activeLineWidth": 2,
+                "elevation": 10
+              },
+              "bindingKey": "timer"
+            },
+            "icon": "FaShieldAlt",
+            "group": "Security",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Timer", "type": "TIMER" },
+            "path": "0-11",
+            "edit": true,
+            "events": []
           }
         ],
         "subType": "screen"
@@ -895,7 +1010,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "HAzYPYO-4gDDaLF-djicT",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1095,7 +1210,7 @@
   {
     "id": "5AQo8Db4jCB7Nl9SJo4CT",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "AccMainCert_Accounts_Change_Text",
     "attributes": {
       "name": "AccMainCert_Accounts_Change_Text",
       "layoutProperties": {
@@ -1124,8 +1239,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-5",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1231,7 +1354,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "2",
-        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
@@ -1296,10 +1418,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "OTP", "type": "OTP" },
     "events": [],
     "path": "0-9",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1315,7 +1437,6 @@
         "layout_height": "63",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        
         "layout_marginBottom": 40,
         "text": "Generate Certificate",
         "textSize": 20,
@@ -1339,11 +1460,58 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
     "path": "0-10",
     "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "w20s8uPc4PlYvqG1mz_UX",
+    "status": "ACTIVE",
+    "name": "TIMER",
+    "attributes": {
+      "name": "TIMER",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "otpTime": 30,
+        "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+        "layout_width": "80",
+        "layout_height": "60",
+        "textAlignment": "center",
+        "textSize": 14,
+        "layout_marginTop": 10,
+        "spacing": "2",
+        "centerX": "HAzYPYO-4gDDaLF-djicT",
+        "background": "#D9D3D3",
+        "borderColor": "#DEFB4B",
+        "borderWidth": 2,
+        "textColor": "#000000",
+        "lineColor": "#E64C4C",
+        "activeLineColor": "#E26A6A",
+        "lineWidth": 2,
+        "activeLineWidth": 2,
+        "elevation": 10
+      },
+      "bindingKey": "timer"
+    },
+    "icon": "FaShieldAlt",
+    "group": "Security",
+    "type": "TIMER",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Timer", "type": "TIMER" },
+    "path": "0-11",
+    "edit": true,
+    "events": [],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

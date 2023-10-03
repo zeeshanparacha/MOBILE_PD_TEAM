@@ -50,8 +50,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "10/2/2023",
+    "createdAt": "10/2/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -74,7 +74,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToTopOf": "GMhZUhcHBT0E03rdSeyqe",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textStyle": "bold",
@@ -104,14 +103,13 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "100",
+            "layout_height": "140",
             "borderColor": "#1D6131",
             "borderWidth": 2,
             "cornerRadius": [15, 15, 15, 15],
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "Zn0HfwV51kMU7bg_8Ea4L",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -134,7 +132,7 @@
       {
         "id": "JFusa7FKswukhs87H1Dwb",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Account_Name_Text",
         "attributes": {
           "name": "Account_Name_Text",
           "layoutProperties": {
@@ -146,12 +144,13 @@
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
             "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 10,
             "textStyle": "regular",
-            "textAlignment": "left"
-          }
+            "textAlignment": "left",
+            "numberOfLines": 1
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -164,12 +163,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "D18ueWpZ5WKylojWgLSAU",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Accounts_Num_Text",
         "attributes": {
           "name": "Accounts_Num_Text",
           "layoutProperties": {
@@ -182,12 +182,12 @@
             "numberOfLines": 1,
             "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
             "topToBottomOf": "JFusa7FKswukhs87H1Dwb",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -200,12 +200,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "4Ixb-Nu6zbDdlA-RfmH-D",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Accounts_Type_Text",
         "attributes": {
           "name": "Accounts_Type_Text",
           "layoutProperties": {
@@ -218,12 +219,12 @@
             "numberOfLines": 1,
             "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
             "topToBottomOf": "D18ueWpZ5WKylojWgLSAU",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "accountType"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -236,7 +237,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-4"
+        "path": "0-4",
+        "edit": true
       },
       {
         "id": "9zLJC5mGksEV-7zx51g7V",
@@ -255,7 +257,6 @@
             "rightToRightOf": "SgNcTrm3CYhnQNb8ZXvCn",
             "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
             "bottomToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-           
             "layout_marginRight": 20,
             "textStyle": "bold",
             "textAlignment": "right"
@@ -273,13 +274,14 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [
           {
-            "triggerId": "w2QlB6_OA62Fn2eo1gpLV",
-            "triggerName": "BeneFT_TransferFrom_Change_Btmsht_Trig",
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
             "serviceType": "NAVIGATION",
             "attributes": {
               "serviceName": "Show bottomsheet",
               "bottomsheetType": "Custom Bottomsheet",
-              "componentId": "n-sWzohgPyfrA1u-E7CzV"
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -304,7 +306,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textStyle": "bold",
@@ -336,13 +337,11 @@
             "layout_width": "match_parent",
             "layout_height": "55",
             "borderColor": "#9D9D9D",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "eaaQ64Skck8EWg9vQ_rX7",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -382,7 +381,6 @@
             "rightToRightOf": "2qUm7MR4vQWbZxiLX40pd",
             "topToTopOf": "2qUm7MR4vQWbZxiLX40pd",
             "bottomToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-           
             "placeHolderTextColor": "#989898",
             "style": "SENTENCECASE",
             "layout_marginLeft": 20,
@@ -418,7 +416,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
@@ -448,13 +445,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "iphepZoFc2erESUm6e3PE",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -490,9 +485,7 @@
             "leftToLeftOf": "YSOx9gxAYNtXlzkneXKV3",
             "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
             "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-           
             "layout_marginLeft": 20,
-            
             "textAlignment": "left",
             "textStyle": "regular"
           }
@@ -541,7 +534,6 @@
             "rightToRightOf": "YSOx9gxAYNtXlzkneXKV3",
             "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
             "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-           
             "layout_marginRight": 20,
             "id": "TDI6iHI2WebhM0mMtUzEc"
           },
@@ -557,7 +549,23 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-12"
+        "path": "0-12",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "pQt-yrekEiRsEymKkFxrn",
+            "triggerName": "show_cardReq_ProdType_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "hIvtAgIS3-QDhbQ_0bFOp",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "ilKOvow-6b5qqDSgEVBlf",
@@ -575,7 +583,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
@@ -605,13 +612,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "ilKOvow-6b5qqDSgEVBlf",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -647,7 +652,6 @@
             "leftToLeftOf": "8BM4WbAExrmdcpF7Cd0QO",
             "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
             "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-           
             "layout_marginLeft": 20,
             "textAlignment": "left",
             "textStyle": "regular"
@@ -696,7 +700,6 @@
             "rightToRightOf": "8BM4WbAExrmdcpF7Cd0QO",
             "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
             "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-           
             "layout_marginRight": 16,
             "id": "TDI6iHI2WebhM0mMtUzEc"
           },
@@ -712,7 +715,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-16"
+        "path": "0-16",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "ZPwczisIhr61uowL97sS5",
+            "triggerName": "show_cardReq_cardOpts_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "zoCH6h5XKKXqpJ1B_ZR31"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "VwcMp9JdRUmkWwI6sxT3a",
@@ -730,7 +748,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
@@ -760,13 +777,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "VwcMp9JdRUmkWwI6sxT3a",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -807,7 +822,6 @@
             "rightToRightOf": "BsHDRhwcshE5LYT-rHXA1",
             "topToTopOf": "BsHDRhwcshE5LYT-rHXA1",
             "bottomToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-           
             "placeHolderTextColor": "#989898",
             "layout_marginLeft": 20,
             "layout_marginRight": 19
@@ -841,7 +855,6 @@
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-           
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textAlignment": "left",
@@ -871,7 +884,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "v5bjL5eYmW2nZcAuBsZ9v",
@@ -922,7 +934,6 @@
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "MB0NdaiDk5G51Tp9_DBB8",
-           
             "layout_marginTop": 20,
             "id": "RfDsIFy4Eb5EwFXQFSz1p"
           },
@@ -957,7 +968,6 @@
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "ioDTbdM327yFi0kxnbxaM",
-           
             "layout_marginTop": 10,
             "textAlignment": "center",
             "textStyle": "bold"
@@ -986,13 +996,11 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "2",
-            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "MiGgb2coH39i5iFCB_aPf",
-           
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10
@@ -1022,7 +1030,6 @@
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "pnGTlB77GMJf0Fj9ztSjw",
-           
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "layout_marginLeft": 20,
@@ -1065,7 +1072,6 @@
             "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
             "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
             "topToBottomOf": "YTK7dbacBwzt7Ot6adtxU",
-           
             "layout_width": "match_parent",
             "layout_marginTop": 10,
             "layout_height": "50",
@@ -1099,10 +1105,7 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "63",
-            
-            
             "layout_marginTop": 20,
-           
             "text": "Confirm",
             "textSize": 20,
             "textColor": "#ffffff",
@@ -1180,7 +1183,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToTopOf": "GMhZUhcHBT0E03rdSeyqe",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
@@ -1210,14 +1212,13 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "100",
+                "layout_height": "140",
                 "borderColor": "#1D6131",
                 "borderWidth": 2,
                 "cornerRadius": [15, 15, 15, 15],
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "Zn0HfwV51kMU7bg_8Ea4L",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -1240,7 +1241,7 @@
           {
             "id": "JFusa7FKswukhs87H1Dwb",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Account_Name_Text",
             "attributes": {
               "name": "Account_Name_Text",
               "layoutProperties": {
@@ -1252,12 +1253,13 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
                 "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textStyle": "regular",
-                "textAlignment": "left"
-              }
+                "textAlignment": "left",
+                "numberOfLines": 1
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1270,12 +1272,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "D18ueWpZ5WKylojWgLSAU",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Accounts_Num_Text",
             "attributes": {
               "name": "Accounts_Num_Text",
               "layoutProperties": {
@@ -1288,12 +1291,12 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
                 "topToBottomOf": "JFusa7FKswukhs87H1Dwb",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1306,12 +1309,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "4Ixb-Nu6zbDdlA-RfmH-D",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Accounts_Type_Text",
             "attributes": {
               "name": "Accounts_Type_Text",
               "layoutProperties": {
@@ -1324,12 +1328,12 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
                 "topToBottomOf": "D18ueWpZ5WKylojWgLSAU",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "accountType"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1342,7 +1346,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-4"
+            "path": "0-4",
+            "edit": true
           },
           {
             "id": "9zLJC5mGksEV-7zx51g7V",
@@ -1361,7 +1366,6 @@
                 "rightToRightOf": "SgNcTrm3CYhnQNb8ZXvCn",
                 "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
                 "bottomToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-               
                 "layout_marginRight": 20,
                 "textStyle": "bold",
                 "textAlignment": "right"
@@ -1379,13 +1383,14 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [
               {
-                "triggerId": "w2QlB6_OA62Fn2eo1gpLV",
-                "triggerName": "BeneFT_TransferFrom_Change_Btmsht_Trig",
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
                 "serviceType": "NAVIGATION",
                 "attributes": {
                   "serviceName": "Show bottomsheet",
                   "bottomsheetType": "Custom Bottomsheet",
-                  "componentId": "n-sWzohgPyfrA1u-E7CzV"
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -1410,7 +1415,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
@@ -1442,13 +1446,11 @@
                 "layout_width": "match_parent",
                 "layout_height": "55",
                 "borderColor": "#9D9D9D",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "eaaQ64Skck8EWg9vQ_rX7",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -1488,7 +1490,6 @@
                 "rightToRightOf": "2qUm7MR4vQWbZxiLX40pd",
                 "topToTopOf": "2qUm7MR4vQWbZxiLX40pd",
                 "bottomToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-               
                 "placeHolderTextColor": "#989898",
                 "style": "SENTENCECASE",
                 "layout_marginLeft": 20,
@@ -1524,7 +1525,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
@@ -1554,13 +1554,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "iphepZoFc2erESUm6e3PE",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -1596,9 +1594,7 @@
                 "leftToLeftOf": "YSOx9gxAYNtXlzkneXKV3",
                 "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
                 "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-               
                 "layout_marginLeft": 20,
-                
                 "textAlignment": "left",
                 "textStyle": "regular"
               }
@@ -1647,7 +1643,6 @@
                 "rightToRightOf": "YSOx9gxAYNtXlzkneXKV3",
                 "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
                 "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-               
                 "layout_marginRight": 20,
                 "id": "TDI6iHI2WebhM0mMtUzEc"
               },
@@ -1663,7 +1658,23 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-12"
+            "path": "0-12",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "pQt-yrekEiRsEymKkFxrn",
+                "triggerName": "show_cardReq_ProdType_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "hIvtAgIS3-QDhbQ_0bFOp",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "ilKOvow-6b5qqDSgEVBlf",
@@ -1681,7 +1692,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
@@ -1711,13 +1721,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "ilKOvow-6b5qqDSgEVBlf",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -1753,7 +1761,6 @@
                 "leftToLeftOf": "8BM4WbAExrmdcpF7Cd0QO",
                 "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
                 "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-               
                 "layout_marginLeft": 20,
                 "textAlignment": "left",
                 "textStyle": "regular"
@@ -1802,7 +1809,6 @@
                 "rightToRightOf": "8BM4WbAExrmdcpF7Cd0QO",
                 "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
                 "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-               
                 "layout_marginRight": 16,
                 "id": "TDI6iHI2WebhM0mMtUzEc"
               },
@@ -1818,7 +1824,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-16"
+            "path": "0-16",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "ZPwczisIhr61uowL97sS5",
+                "triggerName": "show_cardReq_cardOpts_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "zoCH6h5XKKXqpJ1B_ZR31"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "VwcMp9JdRUmkWwI6sxT3a",
@@ -1836,7 +1857,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
@@ -1866,13 +1886,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "VwcMp9JdRUmkWwI6sxT3a",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -1913,7 +1931,6 @@
                 "rightToRightOf": "BsHDRhwcshE5LYT-rHXA1",
                 "topToTopOf": "BsHDRhwcshE5LYT-rHXA1",
                 "bottomToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-               
                 "placeHolderTextColor": "#989898",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 19
@@ -1947,7 +1964,6 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-               
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textAlignment": "left",
@@ -1977,7 +1993,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "v5bjL5eYmW2nZcAuBsZ9v",
@@ -2028,7 +2043,6 @@
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "MB0NdaiDk5G51Tp9_DBB8",
-               
                 "layout_marginTop": 20,
                 "id": "RfDsIFy4Eb5EwFXQFSz1p"
               },
@@ -2063,7 +2077,6 @@
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "ioDTbdM327yFi0kxnbxaM",
-               
                 "layout_marginTop": 10,
                 "textAlignment": "center",
                 "textStyle": "bold"
@@ -2092,13 +2105,11 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "2",
-                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "MiGgb2coH39i5iFCB_aPf",
-               
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10
@@ -2128,7 +2139,6 @@
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "pnGTlB77GMJf0Fj9ztSjw",
-               
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "layout_marginLeft": 20,
@@ -2171,7 +2181,6 @@
                 "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
                 "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
                 "topToBottomOf": "YTK7dbacBwzt7Ot6adtxU",
-               
                 "layout_width": "match_parent",
                 "layout_marginTop": 10,
                 "layout_height": "50",
@@ -2205,10 +2214,7 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "63",
-                
-                
                 "layout_marginTop": 20,
-               
                 "text": "Confirm",
                 "textSize": 20,
                 "textColor": "#ffffff",
@@ -2244,7 +2250,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "GMhZUhcHBT0E03rdSeyqe",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2263,7 +2269,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToTopOf": "GMhZUhcHBT0E03rdSeyqe",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
@@ -2297,14 +2302,13 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "100",
+        "layout_height": "140",
         "borderColor": "#1D6131",
         "borderWidth": 2,
         "cornerRadius": [15, 15, 15, 15],
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "Zn0HfwV51kMU7bg_8Ea4L",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2331,7 +2335,7 @@
   {
     "id": "JFusa7FKswukhs87H1Dwb",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Account_Name_Text",
     "attributes": {
       "name": "Account_Name_Text",
       "layoutProperties": {
@@ -2343,12 +2347,13 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
         "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textStyle": "regular",
-        "textAlignment": "left"
-      }
+        "textAlignment": "left",
+        "numberOfLines": 1
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2362,6 +2367,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2370,7 +2376,7 @@
   {
     "id": "D18ueWpZ5WKylojWgLSAU",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Accounts_Num_Text",
     "attributes": {
       "name": "Accounts_Num_Text",
       "layoutProperties": {
@@ -2383,12 +2389,12 @@
         "numberOfLines": 1,
         "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
         "topToBottomOf": "JFusa7FKswukhs87H1Dwb",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2402,6 +2408,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2410,7 +2417,7 @@
   {
     "id": "4Ixb-Nu6zbDdlA-RfmH-D",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Accounts_Type_Text",
     "attributes": {
       "name": "Accounts_Type_Text",
       "layoutProperties": {
@@ -2423,12 +2430,12 @@
         "numberOfLines": 1,
         "leftToLeftOf": "SgNcTrm3CYhnQNb8ZXvCn",
         "topToBottomOf": "D18ueWpZ5WKylojWgLSAU",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "accountType"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2442,6 +2449,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-4",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2464,7 +2472,6 @@
         "rightToRightOf": "SgNcTrm3CYhnQNb8ZXvCn",
         "topToTopOf": "SgNcTrm3CYhnQNb8ZXvCn",
         "bottomToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-       
         "layout_marginRight": 20,
         "textStyle": "bold",
         "textAlignment": "right"
@@ -2482,8 +2489,8 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [
       {
-        "triggerId": "w2QlB6_OA62Fn2eo1gpLV",
-        "triggerName": "BeneFT_TransferFrom_Change_Btmsht_Trig",
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
         "name": "On click",
         "type": "ONCLICK"
       }
@@ -2511,7 +2518,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "SgNcTrm3CYhnQNb8ZXvCn",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
@@ -2547,13 +2553,11 @@
         "layout_width": "match_parent",
         "layout_height": "55",
         "borderColor": "#9D9D9D",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "eaaQ64Skck8EWg9vQ_rX7",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2597,7 +2601,6 @@
         "rightToRightOf": "2qUm7MR4vQWbZxiLX40pd",
         "topToTopOf": "2qUm7MR4vQWbZxiLX40pd",
         "bottomToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-       
         "placeHolderTextColor": "#989898",
         "style": "SENTENCECASE",
         "layout_marginLeft": 20,
@@ -2637,7 +2640,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "2qUm7MR4vQWbZxiLX40pd",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2671,13 +2673,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "iphepZoFc2erESUm6e3PE",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2717,9 +2717,7 @@
         "leftToLeftOf": "YSOx9gxAYNtXlzkneXKV3",
         "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
         "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-       
         "layout_marginLeft": 20,
-        
         "textAlignment": "left",
         "textStyle": "regular"
       }
@@ -2772,7 +2770,6 @@
         "rightToRightOf": "YSOx9gxAYNtXlzkneXKV3",
         "topToTopOf": "YSOx9gxAYNtXlzkneXKV3",
         "bottomToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-       
         "layout_marginRight": 20,
         "id": "TDI6iHI2WebhM0mMtUzEc"
       },
@@ -2789,6 +2786,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-12",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "pQt-yrekEiRsEymKkFxrn",
+        "triggerName": "show_cardReq_ProdType_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2810,7 +2816,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "YSOx9gxAYNtXlzkneXKV3",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -2844,13 +2849,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "ilKOvow-6b5qqDSgEVBlf",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -2890,7 +2893,6 @@
         "leftToLeftOf": "8BM4WbAExrmdcpF7Cd0QO",
         "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
         "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-       
         "layout_marginLeft": 20,
         "textAlignment": "left",
         "textStyle": "regular"
@@ -2943,7 +2945,6 @@
         "rightToRightOf": "8BM4WbAExrmdcpF7Cd0QO",
         "topToTopOf": "8BM4WbAExrmdcpF7Cd0QO",
         "bottomToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-       
         "layout_marginRight": 16,
         "id": "TDI6iHI2WebhM0mMtUzEc"
       },
@@ -2960,6 +2961,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-16",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "ZPwczisIhr61uowL97sS5",
+        "triggerName": "show_cardReq_cardOpts_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2981,7 +2991,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "8BM4WbAExrmdcpF7Cd0QO",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -3015,13 +3024,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "VwcMp9JdRUmkWwI6sxT3a",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -3066,7 +3073,6 @@
         "rightToRightOf": "BsHDRhwcshE5LYT-rHXA1",
         "topToTopOf": "BsHDRhwcshE5LYT-rHXA1",
         "bottomToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-       
         "placeHolderTextColor": "#989898",
         "layout_marginLeft": 20,
         "layout_marginRight": 19
@@ -3104,7 +3110,6 @@
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "BsHDRhwcshE5LYT-rHXA1",
-       
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textAlignment": "left",
@@ -3138,7 +3143,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "v5bjL5eYmW2nZcAuBsZ9v",
@@ -3193,7 +3197,6 @@
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "MB0NdaiDk5G51Tp9_DBB8",
-       
         "layout_marginTop": 20,
         "id": "RfDsIFy4Eb5EwFXQFSz1p"
       },
@@ -3232,7 +3235,6 @@
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "ioDTbdM327yFi0kxnbxaM",
-       
         "layout_marginTop": 10,
         "textAlignment": "center",
         "textStyle": "bold"
@@ -3265,13 +3267,11 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "2",
-        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "MiGgb2coH39i5iFCB_aPf",
-       
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10
@@ -3305,7 +3305,6 @@
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "pnGTlB77GMJf0Fj9ztSjw",
-       
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "layout_marginLeft": 20,
@@ -3352,7 +3351,6 @@
         "leftToLeftOf": "GMhZUhcHBT0E03rdSeyqe",
         "rightToRightOf": "GMhZUhcHBT0E03rdSeyqe",
         "topToBottomOf": "YTK7dbacBwzt7Ot6adtxU",
-       
         "layout_width": "match_parent",
         "layout_marginTop": 10,
         "layout_height": "50",
@@ -3390,10 +3388,7 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "63",
-        
-        
         "layout_marginTop": 20,
-       
         "text": "Confirm",
         "textSize": 20,
         "textColor": "#ffffff",

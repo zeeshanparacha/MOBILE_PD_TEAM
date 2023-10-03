@@ -47,8 +47,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -71,7 +71,6 @@
             "numberOfLines": 1,
             "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
             "topToTopOf": "i5uj220xUOE5gbv8LzHm7",
-               
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textStyle": "bold",
@@ -128,7 +127,7 @@
       {
         "id": "4hPSv-787wlJQBMVMwoSP",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_TransferFrom_AccName_Text",
         "attributes": {
           "name": "Zakat_TransferFrom_AccName_Text",
           "layoutProperties": {
@@ -145,7 +144,8 @@
             "textStyle": "regular",
             "layout_marginTop": 10,
             "layout_marginLeft": 20
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -158,12 +158,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "RANSqMSLSCkYPa44mff1H",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_TransferFrom_AccNum_Text",
         "attributes": {
           "name": "Zakat_TransferFrom_AccNum_Text",
           "layoutProperties": {
@@ -179,7 +180,8 @@
             "textStyle": "regular",
             "textAlignment": "left",
             "layout_marginTop": 10
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -192,7 +194,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "FedXtsxpfdk6bA7DvdFZy",
@@ -231,7 +234,7 @@
       {
         "id": "zmdIF2iBSJVN67K7UgKdS",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_TransferFrom_Change_Text",
         "attributes": {
           "name": "Zakat_TransferFrom_Change_Text",
           "layoutProperties": {
@@ -260,8 +263,23 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-5"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-5",
+        "edit": true
       },
       {
         "id": "3Yy62vFT3qrQ4EZocxSUp",
@@ -335,7 +353,7 @@
       {
         "id": "CVfTDNA8iH_YF0TyFy8Y5",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_TransferTo_OrgName_Text",
         "attributes": {
           "name": "Zakat_TransferTo_OrgName_Text",
           "layoutProperties": {
@@ -353,7 +371,7 @@
             "layout_marginTop": 10,
             "layout_marginLeft": 20
           },
-          "bindingKey": "zaktlist_orgname_data"
+          "bindingKey": "selectedZakatBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -366,12 +384,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-8"
+        "path": "0-8",
+        "edit": true
       },
       {
         "id": "JS8lvjM0HBOcXLxBrLCSb",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_TransferTo_OrgNum_Text",
         "attributes": {
           "name": "Zakat_TransferTo_OrgNum_Text",
           "layoutProperties": {
@@ -388,7 +407,7 @@
             "textStyle": "regular",
             "textAlignment": "left"
           },
-          "bindingKey": "zaktlist_orgnum_data"
+          "bindingKey": "selectedZakatBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -401,7 +420,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-9"
+        "path": "0-9",
+        "edit": true
       },
       {
         "id": "JR-j4LsGVTvJchIMx8FFy",
@@ -448,7 +468,6 @@
             "name": "View",
             "layout_width": "102",
             "layout_height": "55",
-               
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -480,7 +499,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-               
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToRightOf": "OIa1NRddFRtE8PtCRvzd2",
@@ -622,7 +640,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-               
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -775,7 +792,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-               
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -850,10 +866,6 @@
           "layoutProperties": {
             "layout_width": "195",
             "layout_height": "63",
-               
-               
-               
-               
             "text": "Cancel",
             "textSize": 20,
             "textColor": "#1D6131",
@@ -888,10 +900,6 @@
           "layoutProperties": {
             "layout_width": "195",
             "layout_height": "63",
-               
-               
-               
-               
             "text": "Next",
             "textSize": 20,
             "textColor": "#ffffff",
@@ -940,7 +948,6 @@
             "name": "View",
             "layout_width": "100",
             "layout_height": "6",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -1011,7 +1018,6 @@
                 "numberOfLines": 1,
                 "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
                 "topToTopOf": "i5uj220xUOE5gbv8LzHm7",
-                   
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
@@ -1068,7 +1074,7 @@
           {
             "id": "4hPSv-787wlJQBMVMwoSP",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_TransferFrom_AccName_Text",
             "attributes": {
               "name": "Zakat_TransferFrom_AccName_Text",
               "layoutProperties": {
@@ -1085,7 +1091,8 @@
                 "textStyle": "regular",
                 "layout_marginTop": 10,
                 "layout_marginLeft": 20
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1098,12 +1105,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "RANSqMSLSCkYPa44mff1H",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_TransferFrom_AccNum_Text",
             "attributes": {
               "name": "Zakat_TransferFrom_AccNum_Text",
               "layoutProperties": {
@@ -1119,7 +1127,8 @@
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "layout_marginTop": 10
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1132,7 +1141,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "FedXtsxpfdk6bA7DvdFZy",
@@ -1171,7 +1181,7 @@
           {
             "id": "zmdIF2iBSJVN67K7UgKdS",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_TransferFrom_Change_Text",
             "attributes": {
               "name": "Zakat_TransferFrom_Change_Text",
               "layoutProperties": {
@@ -1200,8 +1210,23 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-5"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-5",
+            "edit": true
           },
           {
             "id": "3Yy62vFT3qrQ4EZocxSUp",
@@ -1275,7 +1300,7 @@
           {
             "id": "CVfTDNA8iH_YF0TyFy8Y5",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_TransferTo_OrgName_Text",
             "attributes": {
               "name": "Zakat_TransferTo_OrgName_Text",
               "layoutProperties": {
@@ -1293,7 +1318,7 @@
                 "layout_marginTop": 10,
                 "layout_marginLeft": 20
               },
-              "bindingKey": "zaktlist_orgname_data"
+              "bindingKey": "selectedZakatBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1306,12 +1331,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-8"
+            "path": "0-8",
+            "edit": true
           },
           {
             "id": "JS8lvjM0HBOcXLxBrLCSb",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_TransferTo_OrgNum_Text",
             "attributes": {
               "name": "Zakat_TransferTo_OrgNum_Text",
               "layoutProperties": {
@@ -1328,7 +1354,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "zaktlist_orgnum_data"
+              "bindingKey": "selectedZakatBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1341,7 +1367,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-9"
+            "path": "0-9",
+            "edit": true
           },
           {
             "id": "JR-j4LsGVTvJchIMx8FFy",
@@ -1388,7 +1415,6 @@
                 "name": "View",
                 "layout_width": "102",
                 "layout_height": "55",
-                   
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -1420,7 +1446,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                   
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToRightOf": "OIa1NRddFRtE8PtCRvzd2",
@@ -1562,7 +1587,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                   
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -1715,7 +1739,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                   
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -1790,10 +1813,6 @@
               "layoutProperties": {
                 "layout_width": "195",
                 "layout_height": "63",
-                   
-                   
-                   
-                   
                 "text": "Cancel",
                 "textSize": 20,
                 "textColor": "#1D6131",
@@ -1828,10 +1847,6 @@
               "layoutProperties": {
                 "layout_width": "195",
                 "layout_height": "63",
-                   
-                   
-                   
-                   
                 "text": "Next",
                 "textSize": 20,
                 "textColor": "#ffffff",
@@ -1880,7 +1895,6 @@
                 "name": "View",
                 "layout_width": "100",
                 "layout_height": "6",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F69D26",
                 "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -1909,7 +1923,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "i5uj220xUOE5gbv8LzHm7",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1928,7 +1942,6 @@
         "numberOfLines": 1,
         "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
         "topToTopOf": "i5uj220xUOE5gbv8LzHm7",
-           
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
@@ -1993,7 +2006,7 @@
   {
     "id": "4hPSv-787wlJQBMVMwoSP",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_TransferFrom_AccName_Text",
     "attributes": {
       "name": "Zakat_TransferFrom_AccName_Text",
       "layoutProperties": {
@@ -2010,7 +2023,8 @@
         "textStyle": "regular",
         "layout_marginTop": 10,
         "layout_marginLeft": 20
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2024,6 +2038,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2032,7 +2047,7 @@
   {
     "id": "RANSqMSLSCkYPa44mff1H",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_TransferFrom_AccNum_Text",
     "attributes": {
       "name": "Zakat_TransferFrom_AccNum_Text",
       "layoutProperties": {
@@ -2048,7 +2063,8 @@
         "textStyle": "regular",
         "textAlignment": "left",
         "layout_marginTop": 10
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2062,6 +2078,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2108,7 +2125,7 @@
   {
     "id": "zmdIF2iBSJVN67K7UgKdS",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_TransferFrom_Change_Text",
     "attributes": {
       "name": "Zakat_TransferFrom_Change_Text",
       "layoutProperties": {
@@ -2137,8 +2154,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-5",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2224,7 +2249,7 @@
   {
     "id": "CVfTDNA8iH_YF0TyFy8Y5",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_TransferTo_OrgName_Text",
     "attributes": {
       "name": "Zakat_TransferTo_OrgName_Text",
       "layoutProperties": {
@@ -2242,7 +2267,7 @@
         "layout_marginTop": 10,
         "layout_marginLeft": 20
       },
-      "bindingKey": "zaktlist_orgname_data"
+      "bindingKey": "selectedZakatBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2256,6 +2281,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-8",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2264,7 +2290,7 @@
   {
     "id": "JS8lvjM0HBOcXLxBrLCSb",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_TransferTo_OrgNum_Text",
     "attributes": {
       "name": "Zakat_TransferTo_OrgNum_Text",
       "layoutProperties": {
@@ -2281,7 +2307,7 @@
         "textStyle": "regular",
         "textAlignment": "left"
       },
-      "bindingKey": "zaktlist_orgnum_data"
+      "bindingKey": "selectedZakatBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2295,6 +2321,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-9",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2349,7 +2376,6 @@
         "name": "View",
         "layout_width": "102",
         "layout_height": "55",
-           
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -2385,7 +2411,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-           
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToRightOf": "OIa1NRddFRtE8PtCRvzd2",
@@ -2543,7 +2568,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-           
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -2712,7 +2736,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-           
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",
@@ -2795,10 +2818,6 @@
       "layoutProperties": {
         "layout_width": "195",
         "layout_height": "63",
-           
-           
-           
-           
         "text": "Cancel",
         "textSize": 20,
         "textColor": "#1D6131",
@@ -2837,10 +2856,6 @@
       "layoutProperties": {
         "layout_width": "195",
         "layout_height": "63",
-           
-           
-           
-           
         "text": "Next",
         "textSize": 20,
         "textColor": "#ffffff",
@@ -2888,7 +2903,6 @@
         "name": "View",
         "layout_width": "100",
         "layout_height": "6",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F69D26",
         "leftToLeftOf": "i5uj220xUOE5gbv8LzHm7",

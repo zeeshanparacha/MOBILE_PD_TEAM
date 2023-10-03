@@ -105,7 +105,7 @@
         "component": { "content": "Grid List View", "type": "GLIST" },
         "attributes": {
           "name": "Grid List View",
-          "bindingKey": "topupCategoryGrid",
+          "bindingKey": "filteredCategories",
           "layoutProperties": {
             "layout_width": "match_parent",
             "column": 2,
@@ -115,6 +115,7 @@
               {
                 "id": "RmzQFHg2GCFE2X8u-mReY",
                 "bindingKey": "selectedTopupCategory",
+                "visibility": {},
                 "events": [
                   {
                     "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -158,14 +159,15 @@
             "name": "On Load"
           },
           {
-            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerId": "z9BPhxESqvlr867OZHDDS",
             "triggerName": "filterCategories",
             "serviceType": "DATASTORAGE",
             "attributes": {
               "serviceName": "Filter Array",
-              "source": "categoriesAndCompanies",
-              "destination": "filteredCategories",
-              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
+              "source": "$categoriesAndCompanies.content.categoriesCollection",
+              "destination": "$filteredCategories",
+              "filter": { "categoryCode": ["9", "10"] },
+              "caseInsensitive": true
             },
             "type": "ONLOAD",
             "name": "On Load"
@@ -377,7 +379,7 @@
             "component": { "content": "Grid List View", "type": "GLIST" },
             "attributes": {
               "name": "Grid List View",
-              "bindingKey": "topupCategoryGrid",
+              "bindingKey": "filteredCategories",
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "column": 2,
@@ -387,6 +389,7 @@
                   {
                     "id": "RmzQFHg2GCFE2X8u-mReY",
                     "bindingKey": "selectedTopupCategory",
+                    "visibility": {},
                     "events": [
                       {
                         "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -430,16 +433,15 @@
                 "name": "On Load"
               },
               {
-                "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+                "triggerId": "z9BPhxESqvlr867OZHDDS",
                 "triggerName": "filterCategories",
                 "serviceType": "DATASTORAGE",
                 "attributes": {
                   "serviceName": "Filter Array",
-                  "source": "categoriesAndCompanies",
-                  "destination": "filteredCategories",
-                  "filter": {
-                    "content.categoriesCollection.categoryCode": ["9"]
-                  }
+                  "source": "$categoriesAndCompanies.content.categoriesCollection",
+                  "destination": "$filteredCategories",
+                  "filter": { "categoryCode": ["9", "10"] },
+                  "caseInsensitive": true
                 },
                 "type": "ONLOAD",
                 "name": "On Load"
@@ -552,7 +554,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "SYfJFAgE9Tqc5SgtCoRZb",
-    "createdBy": "ammarahmed",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -634,7 +636,7 @@
     "component": { "content": "Grid List View", "type": "GLIST" },
     "attributes": {
       "name": "Grid List View",
-      "bindingKey": "topupCategoryGrid",
+      "bindingKey": "filteredCategories",
       "layoutProperties": {
         "layout_width": "match_parent",
         "column": 2,
@@ -644,6 +646,7 @@
           {
             "id": "RmzQFHg2GCFE2X8u-mReY",
             "bindingKey": "selectedTopupCategory",
+            "visibility": {},
             "events": [
               {
                 "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -670,7 +673,7 @@
         "type": "ONLOAD"
       },
       {
-        "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+        "triggerId": "z9BPhxESqvlr867OZHDDS",
         "triggerName": "filterCategories",
         "name": "On Load",
         "type": "ONLOAD"
@@ -849,7 +852,7 @@
         "component": { "content": "Grid List View", "type": "GLIST" },
         "attributes": {
           "name": "Grid List View",
-          "bindingKey": "topupCategoryGrid",
+          "bindingKey": "filteredCategories",
           "layoutProperties": {
             "layout_width": "match_parent",
             "column": 2,
@@ -859,6 +862,7 @@
               {
                 "id": "RmzQFHg2GCFE2X8u-mReY",
                 "bindingKey": "selectedTopupCategory",
+                "visibility": {},
                 "events": [
                   {
                     "triggerId": "I-FrEavSmWVqSY9VqofNn",
@@ -902,14 +906,15 @@
             "name": "On Load"
           },
           {
-            "triggerId": "rAT3xezJkd_D4iOl8YsT8",
+            "triggerId": "z9BPhxESqvlr867OZHDDS",
             "triggerName": "filterCategories",
             "serviceType": "DATASTORAGE",
             "attributes": {
               "serviceName": "Filter Array",
-              "source": "categoriesAndCompanies",
-              "destination": "filteredCategories",
-              "filter": { "content.categoriesCollection.categoryCode": ["9"] }
+              "source": "$categoriesAndCompanies.content.categoriesCollection",
+              "destination": "$filteredCategories",
+              "filter": { "categoryCode": ["9", "10"] },
+              "caseInsensitive": true
             },
             "type": "ONLOAD",
             "name": "On Load"

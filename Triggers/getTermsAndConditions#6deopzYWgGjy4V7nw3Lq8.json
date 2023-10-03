@@ -1,0 +1,43 @@
+{
+  "id": "QaIcUMoZGBKvSW_JwIGRF",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getTermsAndConditions",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "Content-Length": "35"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+          "requestDataType": "byJSON",
+          "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
+          "responseStateKey": "termsAndConditions"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.bhmcqphxpbafYMEKeJTCIm8hsyGFQpfv",
+  "_id": "6deopzYWgGjy4V7nw3Lq8",
+  "updatedAt": "10/2/2023",
+  "createdAt": "10/2/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

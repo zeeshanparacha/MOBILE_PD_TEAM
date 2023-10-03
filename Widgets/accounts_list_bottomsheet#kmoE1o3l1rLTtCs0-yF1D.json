@@ -1,24 +1,22 @@
 [
   {
-    "id": "sMmB-LDi8Vfq5tR-Q7yvD",
-    "name": "QRGenerate_btmsheet",
+    "id": "kmoE1o3l1rLTtCs0-yF1D",
+    "name": "accounts_list_bottomsheet",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "QRGenerate_btmsheet",
+      "name": "Constraint Layout",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "statusBarColor": "#093959",
-        "background": "#FFFFFF",
+        "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0],
-        "navbarHeight": 0,
-        "hideNavBar": true
+        "cornerRadius": [0, 0, 0, 0]
       },
-      "componentId": ["Dmjj1t3SKwywYMg4jVCs3", "t-BILKFIf45GQTPbUT25a"]
+      "componentId": ["hIffVbPsI7Rld2sb7ZCBw", "xsKGyZvWZN9BolAIOzusz"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
@@ -32,24 +30,24 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "Dmjj1t3SKwywYMg4jVCs3",
+        "id": "hIffVbPsI7Rld2sb7ZCBw",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Accounts label",
+        "name": "Text view",
         "attributes": {
-          "name": "Accounts label",
+          "name": "Text view",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 18,
             "layout_width": "match_parent",
-            "layout_height": "60",
+            "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Accounts ",
+            "text": "Accounts",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-            "topToTopOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-            "layout_marginTop": 20,
-            "layout_marginLeft": 20
+            "leftToLeftOf": "kmoE1o3l1rLTtCs0-yF1D",
+            "topToTopOf": "kmoE1o3l1rLTtCs0-yF1D",
+            "layout_marginRight": 0,
+            "layout_marginLeft": 10,
+            "layout_marginTop": 10
           }
         },
         "icon": "FaTextWidth",
@@ -62,79 +60,34 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
-            "triggerName": "HMB_GetAllAccounts_Api_Trig",
-            "serviceType": "NETWORK",
-            "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
-              },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
-              "requestBody": { "accountType": "ALL" },
-              "responseStateKey": "hmb_getAllAccounts_data",
-              "conditions": [
-                {
-                  "logic": {
-                    "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
-                  },
-                  "httpStatus": 200,
-                  "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
-                  "triggerId": "rh821km91VylOo8NBC2Ri"
-                }
-              ]
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
-          }
-        ],
-        "path": "0-0",
-        "edit": true
+        "events": [],
+        "path": "0-0"
       },
       {
-        "id": "t-BILKFIf45GQTPbUT25a",
+        "id": "xsKGyZvWZN9BolAIOzusz",
         "type": "VLIST",
-        "name": "list view",
+        "name": "Vertical list view",
         "component": { "type": "VLIST" },
         "attributes": {
-          "name": "list view",
+          "name": "Vertical list view",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "borderColor": "#FFFFFF",
             "layout_height": "wrap_content",
             "layout_width": "match_parent",
-            "bottomToBottomOf": null,
+            "topToBottomOf": "hIffVbPsI7Rld2sb7ZCBw",
             "layout_marginLeft": 0,
-            "layout_marginRight": 0,
             "layout_marginTop": 10,
             "rows": [
               {
-                "id": "ZUrgTlDux5Oaj9spGHIYl",
-                "bindingKey": "selectedAcc_QRGenerate",
-                "events": [
-                  {
-                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                    "triggerName": "abc",
-                    "type": "ONCLICK",
-                    "name": "On click"
-                  }
-                ]
+                "id": "9RF1s-hQg3hFjbFXoM3ul",
+                "bindingKey": "abc",
+                "events": [{}]
               }
             ],
-            "topToBottomOf": "Dmjj1t3SKwywYMg4jVCs3",
-            "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD"
+            "centerX": "kmoE1o3l1rLTtCs0-yF1D",
+            "layout_marginRight": 0
           },
           "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
           "componentId": [],
@@ -144,31 +97,49 @@
         "path": "0-1",
         "gridProps": [
           {
-            "id": "ZUrgTlDux5Oaj9spGHIYl",
+            "id": "9RF1s-hQg3hFjbFXoM3ul",
             "name": "List item 0",
             "path": "0-1-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "S83psbHfqkfMXqkZh5qmQ",
+                "id": "-L-t71l8ByG5R7qoCP3tQ",
                 "status": "ACTIVE",
-                "_id": "61dec691077814a0f374d9f4",
-                "name": "View",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
                 "attributes": {
-                  "name": "View",
+                  "name": "Image View",
                   "layoutProperties": {
-                    "name": "View",
-                    "layout_width": "match_parent",
-                    "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    "layout_width": "40",
+                    "layout_height": "40",
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#FFFFFF",
-                    "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-                    "bottomToBottomOf": null
-                  }
+                    "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+                    "layout_marginLeft": 10,
+                    "layout_marginTop": 10,
+                    "src": {
+                      "createdBy": "user",
+                      "_id": "64b8f8010d25576da0c7b3d3",
+                      "name": "Digital_Account_Logo_Text@2x.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "zb08cGyLT0rjMovHqaffP",
+                      "gitBranchName": "master",
+                      "folderType": "Ios",
+                      "platform": "Ios",
+                      "url": "Ios/Digital_Account_Logo_Text@2x.png",
+                      "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+                      "createdAt": "2023-07-20T09:01:53.907Z",
+                      "updatedAt": "2023-07-20T09:01:53.907Z",
+                      "__v": 0,
+                      "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+                    },
+                    "id": "zb08cGyLT0rjMovHqaffP",
+                    "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+                  },
+                  "contentType": 2
                 },
-                "icon": "FaTabletAlt",
+                "icon": "FaRegImage",
                 "group": "Form",
                 "type": "sidebarItem",
                 "updatedAt": "23-Aug-2021",
@@ -177,31 +148,30 @@
                 "version": "1.0.0",
                 "isLatest": true,
                 "projectType": "mobile",
-                "component": { "content": "View", "type": "VIEW" },
-                "events": [],
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-1-0-0",
-                "edit": true
+                "edit": true,
+                "events": []
               },
               {
-                "id": "JqBfPRGmJ5zYqw9GdtQLM",
+                "id": "iA8kDgGuxHWkFhQ4Qbr4W",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "account title",
+                "name": "Text view",
                 "attributes": {
-                  "name": "account title",
+                  "name": "Text view",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#B30000",
-                    "text": "account",
+                    "textSize": 14,
+                    "layout_width": "150",
+                    "layout_height": "40",
+                    "textColor": "#000000",
+                    "text": "20311-714-441643",
                     "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "bottomToBottomOf": null,
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 5,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+                    "layout_marginTop": -40,
+                    "layout_marginLeft": 20,
+                    "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+                    "textStyle": "bold"
                   },
                   "bindingKey": "accountTitle"
                 },
@@ -220,25 +190,23 @@
                 "edit": true
               },
               {
-                "id": "fKk-Dh9RoalV3IzbNZE05",
+                "id": "wD3KQ_Al4U9BG__QvOf80",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "account num",
+                "name": "Text view2",
                 "attributes": {
-                  "name": "account num",
+                  "name": "Text view2",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#9E9E9E",
-                    "text": "account ",
+                    "textSize": 14,
+                    "layout_width": "200",
+                    "layout_height": "40",
+                    "textColor": "#000000",
+                    "text": "6010120311714441643",
                     "cornerRadius": [0, 0, 0, 0],
                     "numberOfLines": 1,
-                    "bottomToBottomOf": null,
-                    "layout_marginLeft": 10,
-                    "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-                    "layout_marginTop": 2,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                    "layout_marginTop": 0,
+                    "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
                   },
                   "bindingKey": "accountNumber"
                 },
@@ -257,25 +225,22 @@
                 "edit": true
               },
               {
-                "id": "6Tn8NJhQKR1ehH9CY2i7O",
+                "id": "tWsCRccnNlL-FNscltDtu",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "bank name",
+                "name": "Text view3",
                 "attributes": {
-                  "name": "bank name",
+                  "name": "Text view3",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
+                    "textSize": 14,
+                    "layout_width": "150",
+                    "layout_height": "40",
                     "textColor": "#000000",
-                    "text": "HABIBMETRO",
+                    "text": "HABIB METRO",
                     "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-                    "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 2,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+                    "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                    "textStyle": "bold"
                   }
                 },
                 "icon": "FaTextWidth",
@@ -293,37 +258,36 @@
                 "edit": true
               },
               {
-                "id": "OIRRaQ3t7iz7r38wPNTsv",
+                "id": "3zYiNM9dvSQ3SqVtGwwRQ",
                 "status": "ACTIVE",
                 "_id": "61decd8e077814a0f374d9fc",
-                "name": "bank image",
+                "name": "Image View",
                 "attributes": {
-                  "name": "bank image",
+                  "name": "Image View",
                   "layoutProperties": {
                     "layout_width": "40",
                     "layout_height": "40",
                     "cornerRadius": [0, 0, 0, 0],
                     "src": {
-                      "createdBy": "shaikhahmedraza",
-                      "_id": "64783a2c98b87256541b4ade",
-                      "name": "DigiAcc_Logo_Com_Text.png",
+                      "createdBy": "user",
+                      "_id": "651a6e0a2836a142540eb726",
+                      "name": "PD_Delete_Bin_Icon.png",
                       "type": "png",
                       "projectId": "63ef72a290c5800428f84dd9",
-                      "id": "yLRw0CmteYCc3KrmUhYqI",
+                      "id": "fIRVjr2KucdwKgtVssOCY",
                       "gitBranchName": "master",
-                      "folderType": "xxhdpi",
+                      "folderType": "xhdpi",
                       "platform": "Android",
-                      "url": "DigiAcc_Logo_Com_Text.png",
-                      "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-                      "createdAt": "2023-06-01T06:26:52.373Z",
-                      "updatedAt": "2023-06-01T06:26:52.373Z",
+                      "url": "PD_Delete_Bin_Icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                      "createdAt": "2023-10-02T07:15:22.423Z",
+                      "updatedAt": "2023-10-02T07:15:22.423Z",
                       "__v": 0,
-                      "uri": "DigiAcc_Logo_Com_Text.png"
+                      "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "layout_marginLeft": 20,
-                    "layout_marginTop": 5,
-                    "id": "yLRw0CmteYCc3KrmUhYqI"
+                    "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+                    "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+                    "id": "fIRVjr2KucdwKgtVssOCY"
                   },
                   "contentType": 2
                 },
@@ -337,56 +301,44 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
-                "path": "0-1-0-4",
-                "edit": true,
-                "events": []
+                "path": "0-1-0-4"
               }
             ],
+            "events": [{}],
             "attributes": {
               "layoutProperties": {
-                "layout_height": "100",
+                "layout_height": "wrap_content",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
-                "layout_marginTop": 5
+                "borderColor": "#FFFFFF"
               },
-              "bindingKey": "selectedAcc_QRGenerate",
+              "bindingKey": "abc",
               "componentId": [],
               "swipeButtons": []
-            },
-            "events": [
-              {
-                "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                "triggerName": "abc",
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ]
+            }
           }
         ],
         "edit": true
       }
     ],
     "subType": "widget",
-    "edit": true,
     "layout": [
       {
-        "id": "sMmB-LDi8Vfq5tR-Q7yvD",
-        "name": "QRGenerate_btmsheet",
+        "id": "kmoE1o3l1rLTtCs0-yF1D",
+        "name": "accounts_list_bottomsheet",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "QRGenerate_btmsheet",
+          "name": "Constraint Layout",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "statusBarColor": "#093959",
-            "background": "#FFFFFF",
+            "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0],
-            "navbarHeight": 0,
-            "hideNavBar": true
+            "cornerRadius": [0, 0, 0, 0]
           },
           "componentId": []
         },
@@ -402,24 +354,24 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "Dmjj1t3SKwywYMg4jVCs3",
+            "id": "hIffVbPsI7Rld2sb7ZCBw",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Accounts label",
+            "name": "Text view",
             "attributes": {
-              "name": "Accounts label",
+              "name": "Text view",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 18,
                 "layout_width": "match_parent",
-                "layout_height": "60",
+                "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "Accounts ",
+                "text": "Accounts",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-                "topToTopOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-                "layout_marginTop": 20,
-                "layout_marginLeft": 20
+                "leftToLeftOf": "kmoE1o3l1rLTtCs0-yF1D",
+                "topToTopOf": "kmoE1o3l1rLTtCs0-yF1D",
+                "layout_marginRight": 0,
+                "layout_marginLeft": 10,
+                "layout_marginTop": 10
               }
             },
             "icon": "FaTextWidth",
@@ -432,79 +384,34 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
-                "triggerName": "HMB_GetAllAccounts_Api_Trig",
-                "serviceType": "NETWORK",
-                "attributes": {
-                  "serviceName": "POST",
-                  "headers": {
-                    "Content-Type": "application/json",
-                    "Authorization": "$hmb_loginKey.content.token",
-                    "hmbToken": "$hmb_loginKey.content.otpToken",
-                    "version_code": "1",
-                    "channel_key": "006",
-                    "activity_id": "1",
-                    "deviceKey": "1244d1426ebe80d3",
-                    "deviceName": "2201117TG",
-                    "locale": "en",
-                    "entityId": "1",
-                    "app_version": "5.1.0",
-                    "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
-                  },
-                  "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
-                  "requestBody": { "accountType": "ALL" },
-                  "responseStateKey": "hmb_getAllAccounts_data",
-                  "conditions": [
-                    {
-                      "logic": {
-                        "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
-                      },
-                      "httpStatus": 200,
-                      "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
-                      "triggerId": "rh821km91VylOo8NBC2Ri"
-                    }
-                  ]
-                },
-                "type": "ONLOAD",
-                "name": "On Load"
-              }
-            ],
-            "path": "0-0",
-            "edit": true
+            "events": [],
+            "path": "0-0"
           },
           {
-            "id": "t-BILKFIf45GQTPbUT25a",
+            "id": "xsKGyZvWZN9BolAIOzusz",
             "type": "VLIST",
-            "name": "list view",
+            "name": "Vertical list view",
             "component": { "type": "VLIST" },
             "attributes": {
-              "name": "list view",
+              "name": "Vertical list view",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "borderColor": "#FFFFFF",
                 "layout_height": "wrap_content",
                 "layout_width": "match_parent",
-                "bottomToBottomOf": null,
+                "topToBottomOf": "hIffVbPsI7Rld2sb7ZCBw",
                 "layout_marginLeft": 0,
-                "layout_marginRight": 0,
                 "layout_marginTop": 10,
                 "rows": [
                   {
-                    "id": "ZUrgTlDux5Oaj9spGHIYl",
-                    "bindingKey": "selectedAcc_QRGenerate",
-                    "events": [
-                      {
-                        "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                        "triggerName": "abc",
-                        "type": "ONCLICK",
-                        "name": "On click"
-                      }
-                    ]
+                    "id": "9RF1s-hQg3hFjbFXoM3ul",
+                    "bindingKey": "abc",
+                    "events": [{}]
                   }
                 ],
-                "topToBottomOf": "Dmjj1t3SKwywYMg4jVCs3",
-                "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD"
+                "centerX": "kmoE1o3l1rLTtCs0-yF1D",
+                "layout_marginRight": 0
               },
               "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
               "componentId": [],
@@ -514,31 +421,49 @@
             "path": "0-1",
             "gridProps": [
               {
-                "id": "ZUrgTlDux5Oaj9spGHIYl",
+                "id": "9RF1s-hQg3hFjbFXoM3ul",
                 "name": "List item 0",
                 "path": "0-1-0",
                 "type": "VLISTITEM",
                 "updatedTimestamp": "0000-00-00T00:00:00+00:00",
                 "gridProps": [
                   {
-                    "id": "S83psbHfqkfMXqkZh5qmQ",
+                    "id": "-L-t71l8ByG5R7qoCP3tQ",
                     "status": "ACTIVE",
-                    "_id": "61dec691077814a0f374d9f4",
-                    "name": "View",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Image View",
                     "attributes": {
-                      "name": "View",
+                      "name": "Image View",
                       "layoutProperties": {
-                        "name": "View",
-                        "layout_width": "match_parent",
-                        "layout_height": "match_parent",
-                        "borderWidth": 0,
+                        "layout_width": "40",
+                        "layout_height": "40",
                         "cornerRadius": [0, 0, 0, 0],
-                        "background": "#FFFFFF",
-                        "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-                        "bottomToBottomOf": null
-                      }
+                        "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+                        "layout_marginLeft": 10,
+                        "layout_marginTop": 10,
+                        "src": {
+                          "createdBy": "user",
+                          "_id": "64b8f8010d25576da0c7b3d3",
+                          "name": "Digital_Account_Logo_Text@2x.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "zb08cGyLT0rjMovHqaffP",
+                          "gitBranchName": "master",
+                          "folderType": "Ios",
+                          "platform": "Ios",
+                          "url": "Ios/Digital_Account_Logo_Text@2x.png",
+                          "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+                          "createdAt": "2023-07-20T09:01:53.907Z",
+                          "updatedAt": "2023-07-20T09:01:53.907Z",
+                          "__v": 0,
+                          "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+                        },
+                        "id": "zb08cGyLT0rjMovHqaffP",
+                        "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+                      },
+                      "contentType": 2
                     },
-                    "icon": "FaTabletAlt",
+                    "icon": "FaRegImage",
                     "group": "Form",
                     "type": "sidebarItem",
                     "updatedAt": "23-Aug-2021",
@@ -547,31 +472,33 @@
                     "version": "1.0.0",
                     "isLatest": true,
                     "projectType": "mobile",
-                    "component": { "content": "View", "type": "VIEW" },
-                    "events": [],
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
                     "path": "0-1-0-0",
-                    "edit": true
+                    "edit": true,
+                    "events": []
                   },
                   {
-                    "id": "JqBfPRGmJ5zYqw9GdtQLM",
+                    "id": "iA8kDgGuxHWkFhQ4Qbr4W",
                     "status": "ACTIVE",
                     "_id": "61dec5ad077814a0f374d9f3",
-                    "name": "account title",
+                    "name": "Text view",
                     "attributes": {
-                      "name": "account title",
+                      "name": "Text view",
                       "layoutProperties": {
-                        "textSize": 16,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#B30000",
-                        "text": "account",
+                        "textSize": 14,
+                        "layout_width": "150",
+                        "layout_height": "40",
+                        "textColor": "#000000",
+                        "text": "20311-714-441643",
                         "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-                        "bottomToBottomOf": null,
-                        "layout_marginLeft": 10,
-                        "layout_marginTop": 5,
-                        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                        "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+                        "layout_marginTop": -40,
+                        "layout_marginLeft": 20,
+                        "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+                        "textStyle": "bold"
                       },
                       "bindingKey": "accountTitle"
                     },
@@ -590,25 +517,23 @@
                     "edit": true
                   },
                   {
-                    "id": "fKk-Dh9RoalV3IzbNZE05",
+                    "id": "wD3KQ_Al4U9BG__QvOf80",
                     "status": "ACTIVE",
                     "_id": "61dec5ad077814a0f374d9f3",
-                    "name": "account num",
+                    "name": "Text view2",
                     "attributes": {
-                      "name": "account num",
+                      "name": "Text view2",
                       "layoutProperties": {
-                        "textSize": 16,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
-                        "textColor": "#9E9E9E",
-                        "text": "account ",
+                        "textSize": 14,
+                        "layout_width": "200",
+                        "layout_height": "40",
+                        "textColor": "#000000",
+                        "text": "6010120311714441643",
                         "cornerRadius": [0, 0, 0, 0],
                         "numberOfLines": 1,
-                        "bottomToBottomOf": null,
-                        "layout_marginLeft": 10,
-                        "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-                        "layout_marginTop": 2,
-                        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                        "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                        "layout_marginTop": 0,
+                        "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
                       },
                       "bindingKey": "accountNumber"
                     },
@@ -627,25 +552,22 @@
                     "edit": true
                   },
                   {
-                    "id": "6Tn8NJhQKR1ehH9CY2i7O",
+                    "id": "tWsCRccnNlL-FNscltDtu",
                     "status": "ACTIVE",
                     "_id": "61dec5ad077814a0f374d9f3",
-                    "name": "bank name",
+                    "name": "Text view3",
                     "attributes": {
-                      "name": "bank name",
+                      "name": "Text view3",
                       "layoutProperties": {
-                        "textSize": 16,
-                        "layout_width": "wrap_content",
-                        "layout_height": "wrap_content",
+                        "textSize": 14,
+                        "layout_width": "150",
+                        "layout_height": "40",
                         "textColor": "#000000",
-                        "text": "HABIBMETRO",
+                        "text": "HABIB METRO",
                         "cornerRadius": [0, 0, 0, 0],
-                        "numberOfLines": 1,
-                        "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-                        "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-                        "layout_marginLeft": 10,
-                        "layout_marginTop": 2,
-                        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                        "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+                        "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                        "textStyle": "bold"
                       }
                     },
                     "icon": "FaTextWidth",
@@ -663,37 +585,36 @@
                     "edit": true
                   },
                   {
-                    "id": "OIRRaQ3t7iz7r38wPNTsv",
+                    "id": "3zYiNM9dvSQ3SqVtGwwRQ",
                     "status": "ACTIVE",
                     "_id": "61decd8e077814a0f374d9fc",
-                    "name": "bank image",
+                    "name": "Image View",
                     "attributes": {
-                      "name": "bank image",
+                      "name": "Image View",
                       "layoutProperties": {
                         "layout_width": "40",
                         "layout_height": "40",
                         "cornerRadius": [0, 0, 0, 0],
                         "src": {
-                          "createdBy": "shaikhahmedraza",
-                          "_id": "64783a2c98b87256541b4ade",
-                          "name": "DigiAcc_Logo_Com_Text.png",
+                          "createdBy": "user",
+                          "_id": "651a6e0a2836a142540eb726",
+                          "name": "PD_Delete_Bin_Icon.png",
                           "type": "png",
                           "projectId": "63ef72a290c5800428f84dd9",
-                          "id": "yLRw0CmteYCc3KrmUhYqI",
+                          "id": "fIRVjr2KucdwKgtVssOCY",
                           "gitBranchName": "master",
-                          "folderType": "xxhdpi",
+                          "folderType": "xhdpi",
                           "platform": "Android",
-                          "url": "DigiAcc_Logo_Com_Text.png",
-                          "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-                          "createdAt": "2023-06-01T06:26:52.373Z",
-                          "updatedAt": "2023-06-01T06:26:52.373Z",
+                          "url": "PD_Delete_Bin_Icon.png",
+                          "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                          "createdAt": "2023-10-02T07:15:22.423Z",
+                          "updatedAt": "2023-10-02T07:15:22.423Z",
                           "__v": 0,
-                          "uri": "DigiAcc_Logo_Com_Text.png"
+                          "uri": "PD_Delete_Bin_Icon.png"
                         },
-                        "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-                        "layout_marginLeft": 20,
-                        "layout_marginTop": 5,
-                        "id": "yLRw0CmteYCc3KrmUhYqI"
+                        "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+                        "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+                        "id": "fIRVjr2KucdwKgtVssOCY"
                       },
                       "contentType": 2
                     },
@@ -710,63 +631,53 @@
                       "content": "Image view",
                       "type": "IMAGEVIEW"
                     },
-                    "path": "0-1-0-4",
-                    "edit": true,
-                    "events": []
+                    "path": "0-1-0-4"
                   }
                 ],
+                "events": [{}],
                 "attributes": {
                   "layoutProperties": {
-                    "layout_height": "100",
+                    "layout_height": "wrap_content",
                     "layout_width": "match_parent",
                     "cornerRadius": [0, 0, 0, 0],
-                    "layout_marginTop": 5
+                    "borderColor": "#FFFFFF"
                   },
-                  "bindingKey": "selectedAcc_QRGenerate",
+                  "bindingKey": "abc",
                   "componentId": [],
                   "swipeButtons": []
-                },
-                "events": [
-                  {
-                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                    "triggerName": "abc",
-                    "type": "ONCLICK",
-                    "name": "On click"
-                  }
-                ]
+                }
               }
             ],
             "edit": true
           }
         ],
-        "subType": "widget",
-        "edit": true
+        "subType": "widget"
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
-    "_id": "sMmB-LDi8Vfq5tR-Q7yvD",
-    "createdBy": "ammarahmed",
+    "_id": "kmoE1o3l1rLTtCs0-yF1D",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Dmjj1t3SKwywYMg4jVCs3",
+    "id": "hIffVbPsI7Rld2sb7ZCBw",
     "status": "ACTIVE",
-    "name": "Accounts label",
+    "name": "Text view",
     "attributes": {
-      "name": "Accounts label",
+      "name": "Text view",
       "layoutProperties": {
-        "textSize": 16,
+        "textSize": 18,
         "layout_width": "match_parent",
-        "layout_height": "60",
+        "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "Accounts ",
+        "text": "Accounts",
         "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-        "topToTopOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-        "layout_marginTop": 20,
-        "layout_marginLeft": 20
+        "leftToLeftOf": "kmoE1o3l1rLTtCs0-yF1D",
+        "topToTopOf": "kmoE1o3l1rLTtCs0-yF1D",
+        "layout_marginRight": 0,
+        "layout_marginLeft": 10,
+        "layout_marginTop": 10
       }
     },
     "icon": "FaTextWidth",
@@ -778,87 +689,87 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
-        "triggerName": "HMB_GetAllAccounts_Api_Trig",
-        "name": "On Load",
-        "type": "ONLOAD"
-      }
-    ],
-    "path": "0-0",
-    "edit": true,
     "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "t-BILKFIf45GQTPbUT25a",
+    "id": "xsKGyZvWZN9BolAIOzusz",
     "type": "VLIST",
-    "name": "list view",
+    "name": "Vertical list view",
     "component": { "type": "VLIST" },
     "attributes": {
-      "name": "list view",
+      "name": "Vertical list view",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "borderColor": "#FFFFFF",
         "layout_height": "wrap_content",
         "layout_width": "match_parent",
-        "bottomToBottomOf": null,
+        "topToBottomOf": "hIffVbPsI7Rld2sb7ZCBw",
         "layout_marginLeft": 0,
-        "layout_marginRight": 0,
         "layout_marginTop": 10,
         "rows": [
-          {
-            "id": "ZUrgTlDux5Oaj9spGHIYl",
-            "bindingKey": "selectedAcc_QRGenerate",
-            "events": [
-              {
-                "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                "triggerName": "abc",
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ]
-          }
+          { "id": "9RF1s-hQg3hFjbFXoM3ul", "bindingKey": "abc", "events": [{}] }
         ],
-        "topToBottomOf": "Dmjj1t3SKwywYMg4jVCs3",
-        "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD"
+        "centerX": "kmoE1o3l1rLTtCs0-yF1D",
+        "layout_marginRight": 0
       },
       "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
-      "componentId": ["ZUrgTlDux5Oaj9spGHIYl"],
+      "componentId": ["9RF1s-hQg3hFjbFXoM3ul"],
       "conditions": []
     },
     "events": [],
     "path": "0-1",
     "gridProps": [
       {
-        "id": "ZUrgTlDux5Oaj9spGHIYl",
+        "id": "9RF1s-hQg3hFjbFXoM3ul",
         "name": "List item 0",
         "path": "0-1-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "S83psbHfqkfMXqkZh5qmQ",
+            "id": "-L-t71l8ByG5R7qoCP3tQ",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "View",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
             "attributes": {
-              "name": "View",
+              "name": "Image View",
               "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "match_parent",
-                "borderWidth": 0,
+                "layout_width": "40",
+                "layout_height": "40",
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-                "bottomToBottomOf": null
-              }
+                "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+                "layout_marginLeft": 10,
+                "layout_marginTop": 10,
+                "src": {
+                  "createdBy": "user",
+                  "_id": "64b8f8010d25576da0c7b3d3",
+                  "name": "Digital_Account_Logo_Text@2x.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "zb08cGyLT0rjMovHqaffP",
+                  "gitBranchName": "master",
+                  "folderType": "Ios",
+                  "platform": "Ios",
+                  "url": "Ios/Digital_Account_Logo_Text@2x.png",
+                  "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+                  "createdAt": "2023-07-20T09:01:53.907Z",
+                  "updatedAt": "2023-07-20T09:01:53.907Z",
+                  "__v": 0,
+                  "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+                },
+                "id": "zb08cGyLT0rjMovHqaffP",
+                "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+              },
+              "contentType": 2
             },
-            "icon": "FaTabletAlt",
+            "icon": "FaRegImage",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -867,31 +778,30 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-1-0-0",
-            "edit": true
+            "edit": true,
+            "events": []
           },
           {
-            "id": "JqBfPRGmJ5zYqw9GdtQLM",
+            "id": "iA8kDgGuxHWkFhQ4Qbr4W",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "account title",
+            "name": "Text view",
             "attributes": {
-              "name": "account title",
+              "name": "Text view",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#B30000",
-                "text": "account",
+                "textSize": 14,
+                "layout_width": "150",
+                "layout_height": "40",
+                "textColor": "#000000",
+                "text": "20311-714-441643",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-                "bottomToBottomOf": null,
-                "layout_marginLeft": 10,
-                "layout_marginTop": 5,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+                "layout_marginTop": -40,
+                "layout_marginLeft": 20,
+                "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+                "textStyle": "bold"
               },
               "bindingKey": "accountTitle"
             },
@@ -910,25 +820,23 @@
             "edit": true
           },
           {
-            "id": "fKk-Dh9RoalV3IzbNZE05",
+            "id": "wD3KQ_Al4U9BG__QvOf80",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "account num",
+            "name": "Text view2",
             "attributes": {
-              "name": "account num",
+              "name": "Text view2",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#9E9E9E",
-                "text": "account ",
+                "textSize": 14,
+                "layout_width": "200",
+                "layout_height": "40",
+                "textColor": "#000000",
+                "text": "6010120311714441643",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "bottomToBottomOf": null,
-                "layout_marginLeft": 10,
-                "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-                "layout_marginTop": 2,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                "layout_marginTop": 0,
+                "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
               },
               "bindingKey": "accountNumber"
             },
@@ -947,25 +855,22 @@
             "edit": true
           },
           {
-            "id": "6Tn8NJhQKR1ehH9CY2i7O",
+            "id": "tWsCRccnNlL-FNscltDtu",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "bank name",
+            "name": "Text view3",
             "attributes": {
-              "name": "bank name",
+              "name": "Text view3",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "textSize": 14,
+                "layout_width": "150",
+                "layout_height": "40",
                 "textColor": "#000000",
-                "text": "HABIBMETRO",
+                "text": "HABIB METRO",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-                "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 2,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+                "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                "textStyle": "bold"
               }
             },
             "icon": "FaTextWidth",
@@ -983,37 +888,36 @@
             "edit": true
           },
           {
-            "id": "OIRRaQ3t7iz7r38wPNTsv",
+            "id": "3zYiNM9dvSQ3SqVtGwwRQ",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "bank image",
+            "name": "Image View",
             "attributes": {
-              "name": "bank image",
+              "name": "Image View",
               "layoutProperties": {
                 "layout_width": "40",
                 "layout_height": "40",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64783a2c98b87256541b4ade",
-                  "name": "DigiAcc_Logo_Com_Text.png",
+                  "createdBy": "user",
+                  "_id": "651a6e0a2836a142540eb726",
+                  "name": "PD_Delete_Bin_Icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "yLRw0CmteYCc3KrmUhYqI",
+                  "id": "fIRVjr2KucdwKgtVssOCY",
                   "gitBranchName": "master",
-                  "folderType": "xxhdpi",
+                  "folderType": "xhdpi",
                   "platform": "Android",
-                  "url": "DigiAcc_Logo_Com_Text.png",
-                  "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-                  "createdAt": "2023-06-01T06:26:52.373Z",
-                  "updatedAt": "2023-06-01T06:26:52.373Z",
+                  "url": "PD_Delete_Bin_Icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                  "createdAt": "2023-10-02T07:15:22.423Z",
+                  "updatedAt": "2023-10-02T07:15:22.423Z",
                   "__v": 0,
-                  "uri": "DigiAcc_Logo_Com_Text.png"
+                  "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 5,
-                "id": "yLRw0CmteYCc3KrmUhYqI"
+                "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+                "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+                "id": "fIRVjr2KucdwKgtVssOCY"
               },
               "contentType": 2
             },
@@ -1027,53 +931,44 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1-0-4",
-            "edit": true,
-            "events": []
+            "path": "0-1-0-4"
           }
         ],
+        "events": [{}],
         "attributes": {
           "layoutProperties": {
-            "layout_height": "100",
+            "layout_height": "wrap_content",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
-            "layout_marginTop": 5
+            "borderColor": "#FFFFFF"
           },
-          "bindingKey": "selectedAcc_QRGenerate",
+          "bindingKey": "abc",
           "componentId": [],
           "swipeButtons": []
-        },
-        "events": [
-          {
-            "triggerId": "xwNwZIcqa07hpRrikIW0X",
-            "triggerName": "abc",
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ]
+        }
       }
     ],
     "edit": true,
     "layout": [
       {
-        "id": "Dmjj1t3SKwywYMg4jVCs3",
+        "id": "hIffVbPsI7Rld2sb7ZCBw",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Accounts label",
+        "name": "Text view",
         "attributes": {
-          "name": "Accounts label",
+          "name": "Text view",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 18,
             "layout_width": "match_parent",
-            "layout_height": "60",
+            "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Accounts ",
+            "text": "Accounts",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-            "topToTopOf": "sMmB-LDi8Vfq5tR-Q7yvD",
-            "layout_marginTop": 20,
-            "layout_marginLeft": 20
+            "leftToLeftOf": "kmoE1o3l1rLTtCs0-yF1D",
+            "topToTopOf": "kmoE1o3l1rLTtCs0-yF1D",
+            "layout_marginRight": 0,
+            "layout_marginLeft": 10,
+            "layout_marginTop": 10
           }
         },
         "icon": "FaTextWidth",
@@ -1086,79 +981,34 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
-            "triggerName": "HMB_GetAllAccounts_Api_Trig",
-            "serviceType": "NETWORK",
-            "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
-              },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
-              "requestBody": { "accountType": "ALL" },
-              "responseStateKey": "hmb_getAllAccounts_data",
-              "conditions": [
-                {
-                  "logic": {
-                    "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
-                  },
-                  "httpStatus": 200,
-                  "triggerName": "Navigate_to_FT_BeneConfirm_Screen",
-                  "triggerId": "rh821km91VylOo8NBC2Ri"
-                }
-              ]
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
-          }
-        ],
-        "path": "0-0",
-        "edit": true
+        "events": [],
+        "path": "0-0"
       },
       {
-        "id": "t-BILKFIf45GQTPbUT25a",
+        "id": "xsKGyZvWZN9BolAIOzusz",
         "type": "VLIST",
-        "name": "list view",
+        "name": "Vertical list view",
         "component": { "type": "VLIST" },
         "attributes": {
-          "name": "list view",
+          "name": "Vertical list view",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "borderColor": "#FFFFFF",
             "layout_height": "wrap_content",
             "layout_width": "match_parent",
-            "bottomToBottomOf": null,
+            "topToBottomOf": "hIffVbPsI7Rld2sb7ZCBw",
             "layout_marginLeft": 0,
-            "layout_marginRight": 0,
             "layout_marginTop": 10,
             "rows": [
               {
-                "id": "ZUrgTlDux5Oaj9spGHIYl",
-                "bindingKey": "selectedAcc_QRGenerate",
-                "events": [
-                  {
-                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                    "triggerName": "abc",
-                    "type": "ONCLICK",
-                    "name": "On click"
-                  }
-                ]
+                "id": "9RF1s-hQg3hFjbFXoM3ul",
+                "bindingKey": "abc",
+                "events": [{}]
               }
             ],
-            "topToBottomOf": "Dmjj1t3SKwywYMg4jVCs3",
-            "leftToLeftOf": "sMmB-LDi8Vfq5tR-Q7yvD"
+            "centerX": "kmoE1o3l1rLTtCs0-yF1D",
+            "layout_marginRight": 0
           },
           "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
           "componentId": [],
@@ -1168,31 +1018,49 @@
         "path": "0-1",
         "gridProps": [
           {
-            "id": "ZUrgTlDux5Oaj9spGHIYl",
+            "id": "9RF1s-hQg3hFjbFXoM3ul",
             "name": "List item 0",
             "path": "0-1-0",
             "type": "VLISTITEM",
             "updatedTimestamp": "0000-00-00T00:00:00+00:00",
             "gridProps": [
               {
-                "id": "S83psbHfqkfMXqkZh5qmQ",
+                "id": "-L-t71l8ByG5R7qoCP3tQ",
                 "status": "ACTIVE",
-                "_id": "61dec691077814a0f374d9f4",
-                "name": "View",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
                 "attributes": {
-                  "name": "View",
+                  "name": "Image View",
                   "layoutProperties": {
-                    "name": "View",
-                    "layout_width": "match_parent",
-                    "layout_height": "match_parent",
-                    "borderWidth": 0,
+                    "layout_width": "40",
+                    "layout_height": "40",
                     "cornerRadius": [0, 0, 0, 0],
-                    "background": "#FFFFFF",
-                    "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-                    "bottomToBottomOf": null
-                  }
+                    "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+                    "layout_marginLeft": 10,
+                    "layout_marginTop": 10,
+                    "src": {
+                      "createdBy": "user",
+                      "_id": "64b8f8010d25576da0c7b3d3",
+                      "name": "Digital_Account_Logo_Text@2x.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "zb08cGyLT0rjMovHqaffP",
+                      "gitBranchName": "master",
+                      "folderType": "Ios",
+                      "platform": "Ios",
+                      "url": "Ios/Digital_Account_Logo_Text@2x.png",
+                      "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+                      "createdAt": "2023-07-20T09:01:53.907Z",
+                      "updatedAt": "2023-07-20T09:01:53.907Z",
+                      "__v": 0,
+                      "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+                    },
+                    "id": "zb08cGyLT0rjMovHqaffP",
+                    "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+                  },
+                  "contentType": 2
                 },
-                "icon": "FaTabletAlt",
+                "icon": "FaRegImage",
                 "group": "Form",
                 "type": "sidebarItem",
                 "updatedAt": "23-Aug-2021",
@@ -1201,31 +1069,30 @@
                 "version": "1.0.0",
                 "isLatest": true,
                 "projectType": "mobile",
-                "component": { "content": "View", "type": "VIEW" },
-                "events": [],
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
                 "path": "0-1-0-0",
-                "edit": true
+                "edit": true,
+                "events": []
               },
               {
-                "id": "JqBfPRGmJ5zYqw9GdtQLM",
+                "id": "iA8kDgGuxHWkFhQ4Qbr4W",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "account title",
+                "name": "Text view",
                 "attributes": {
-                  "name": "account title",
+                  "name": "Text view",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#B30000",
-                    "text": "account",
+                    "textSize": 14,
+                    "layout_width": "150",
+                    "layout_height": "40",
+                    "textColor": "#000000",
+                    "text": "20311-714-441643",
                     "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "bottomToBottomOf": null,
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 5,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+                    "layout_marginTop": -40,
+                    "layout_marginLeft": 20,
+                    "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+                    "textStyle": "bold"
                   },
                   "bindingKey": "accountTitle"
                 },
@@ -1244,25 +1111,23 @@
                 "edit": true
               },
               {
-                "id": "fKk-Dh9RoalV3IzbNZE05",
+                "id": "wD3KQ_Al4U9BG__QvOf80",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "account num",
+                "name": "Text view2",
                 "attributes": {
-                  "name": "account num",
+                  "name": "Text view2",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
-                    "textColor": "#9E9E9E",
-                    "text": "account ",
+                    "textSize": 14,
+                    "layout_width": "200",
+                    "layout_height": "40",
+                    "textColor": "#000000",
+                    "text": "6010120311714441643",
                     "cornerRadius": [0, 0, 0, 0],
                     "numberOfLines": 1,
-                    "bottomToBottomOf": null,
-                    "layout_marginLeft": 10,
-                    "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-                    "layout_marginTop": 2,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                    "layout_marginTop": 0,
+                    "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
                   },
                   "bindingKey": "accountNumber"
                 },
@@ -1281,25 +1146,22 @@
                 "edit": true
               },
               {
-                "id": "6Tn8NJhQKR1ehH9CY2i7O",
+                "id": "tWsCRccnNlL-FNscltDtu",
                 "status": "ACTIVE",
                 "_id": "61dec5ad077814a0f374d9f3",
-                "name": "bank name",
+                "name": "Text view3",
                 "attributes": {
-                  "name": "bank name",
+                  "name": "Text view3",
                   "layoutProperties": {
-                    "textSize": 16,
-                    "layout_width": "wrap_content",
-                    "layout_height": "wrap_content",
+                    "textSize": 14,
+                    "layout_width": "150",
+                    "layout_height": "40",
                     "textColor": "#000000",
-                    "text": "HABIBMETRO",
+                    "text": "HABIB METRO",
                     "cornerRadius": [0, 0, 0, 0],
-                    "numberOfLines": 1,
-                    "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-                    "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "layout_marginLeft": 10,
-                    "layout_marginTop": 2,
-                    "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                    "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+                    "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                    "textStyle": "bold"
                   }
                 },
                 "icon": "FaTextWidth",
@@ -1317,37 +1179,36 @@
                 "edit": true
               },
               {
-                "id": "OIRRaQ3t7iz7r38wPNTsv",
+                "id": "3zYiNM9dvSQ3SqVtGwwRQ",
                 "status": "ACTIVE",
                 "_id": "61decd8e077814a0f374d9fc",
-                "name": "bank image",
+                "name": "Image View",
                 "attributes": {
-                  "name": "bank image",
+                  "name": "Image View",
                   "layoutProperties": {
                     "layout_width": "40",
                     "layout_height": "40",
                     "cornerRadius": [0, 0, 0, 0],
                     "src": {
-                      "createdBy": "shaikhahmedraza",
-                      "_id": "64783a2c98b87256541b4ade",
-                      "name": "DigiAcc_Logo_Com_Text.png",
+                      "createdBy": "user",
+                      "_id": "651a6e0a2836a142540eb726",
+                      "name": "PD_Delete_Bin_Icon.png",
                       "type": "png",
                       "projectId": "63ef72a290c5800428f84dd9",
-                      "id": "yLRw0CmteYCc3KrmUhYqI",
+                      "id": "fIRVjr2KucdwKgtVssOCY",
                       "gitBranchName": "master",
-                      "folderType": "xxhdpi",
+                      "folderType": "xhdpi",
                       "platform": "Android",
-                      "url": "DigiAcc_Logo_Com_Text.png",
-                      "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-                      "createdAt": "2023-06-01T06:26:52.373Z",
-                      "updatedAt": "2023-06-01T06:26:52.373Z",
+                      "url": "PD_Delete_Bin_Icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                      "createdAt": "2023-10-02T07:15:22.423Z",
+                      "updatedAt": "2023-10-02T07:15:22.423Z",
                       "__v": 0,
-                      "uri": "DigiAcc_Logo_Com_Text.png"
+                      "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-                    "layout_marginLeft": 20,
-                    "layout_marginTop": 5,
-                    "id": "yLRw0CmteYCc3KrmUhYqI"
+                    "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+                    "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+                    "id": "fIRVjr2KucdwKgtVssOCY"
                   },
                   "contentType": 2
                 },
@@ -1361,30 +1222,21 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
-                "path": "0-1-0-4",
-                "edit": true,
-                "events": []
+                "path": "0-1-0-4"
               }
             ],
+            "events": [{}],
             "attributes": {
               "layoutProperties": {
-                "layout_height": "100",
+                "layout_height": "wrap_content",
                 "layout_width": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
-                "layout_marginTop": 5
+                "borderColor": "#FFFFFF"
               },
-              "bindingKey": "selectedAcc_QRGenerate",
+              "bindingKey": "abc",
               "componentId": [],
               "swipeButtons": []
-            },
-            "events": [
-              {
-                "triggerId": "xwNwZIcqa07hpRrikIW0X",
-                "triggerName": "abc",
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ]
+            }
           }
         ],
         "edit": true
@@ -1397,31 +1249,49 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "ZUrgTlDux5Oaj9spGHIYl",
+    "id": "9RF1s-hQg3hFjbFXoM3ul",
     "name": "List item 0",
     "path": "0-1-0",
     "type": "VLISTITEM",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00",
     "gridProps": [
       {
-        "id": "S83psbHfqkfMXqkZh5qmQ",
+        "id": "-L-t71l8ByG5R7qoCP3tQ",
         "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
-        "name": "View",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
         "attributes": {
-          "name": "View",
+          "name": "Image View",
           "layoutProperties": {
-            "name": "View",
-            "layout_width": "match_parent",
-            "layout_height": "match_parent",
-            "borderWidth": 0,
+            "layout_width": "40",
+            "layout_height": "40",
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#FFFFFF",
-            "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-            "bottomToBottomOf": null
-          }
+            "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+            "layout_marginLeft": 10,
+            "layout_marginTop": 10,
+            "src": {
+              "createdBy": "user",
+              "_id": "64b8f8010d25576da0c7b3d3",
+              "name": "Digital_Account_Logo_Text@2x.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "zb08cGyLT0rjMovHqaffP",
+              "gitBranchName": "master",
+              "folderType": "Ios",
+              "platform": "Ios",
+              "url": "Ios/Digital_Account_Logo_Text@2x.png",
+              "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+              "createdAt": "2023-07-20T09:01:53.907Z",
+              "updatedAt": "2023-07-20T09:01:53.907Z",
+              "__v": 0,
+              "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+            },
+            "id": "zb08cGyLT0rjMovHqaffP",
+            "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+          },
+          "contentType": 2
         },
-        "icon": "FaTabletAlt",
+        "icon": "FaRegImage",
         "group": "Form",
         "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
@@ -1430,31 +1300,30 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-1-0-0",
-        "edit": true
+        "edit": true,
+        "events": []
       },
       {
-        "id": "JqBfPRGmJ5zYqw9GdtQLM",
+        "id": "iA8kDgGuxHWkFhQ4Qbr4W",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "account title",
+        "name": "Text view",
         "attributes": {
-          "name": "account title",
+          "name": "Text view",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#B30000",
-            "text": "account",
+            "textSize": 14,
+            "layout_width": "150",
+            "layout_height": "40",
+            "textColor": "#000000",
+            "text": "20311-714-441643",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-            "bottomToBottomOf": null,
-            "layout_marginLeft": 10,
-            "layout_marginTop": 5,
-            "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+            "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+            "layout_marginTop": -40,
+            "layout_marginLeft": 20,
+            "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+            "textStyle": "bold"
           },
           "bindingKey": "accountTitle"
         },
@@ -1473,25 +1342,23 @@
         "edit": true
       },
       {
-        "id": "fKk-Dh9RoalV3IzbNZE05",
+        "id": "wD3KQ_Al4U9BG__QvOf80",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "account num",
+        "name": "Text view2",
         "attributes": {
-          "name": "account num",
+          "name": "Text view2",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#9E9E9E",
-            "text": "account ",
+            "textSize": 14,
+            "layout_width": "200",
+            "layout_height": "40",
+            "textColor": "#000000",
+            "text": "6010120311714441643",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
-            "bottomToBottomOf": null,
-            "layout_marginLeft": 10,
-            "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-            "layout_marginTop": 2,
-            "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+            "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+            "layout_marginTop": 0,
+            "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
           },
           "bindingKey": "accountNumber"
         },
@@ -1510,25 +1377,22 @@
         "edit": true
       },
       {
-        "id": "6Tn8NJhQKR1ehH9CY2i7O",
+        "id": "tWsCRccnNlL-FNscltDtu",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "bank name",
+        "name": "Text view3",
         "attributes": {
-          "name": "bank name",
+          "name": "Text view3",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
+            "textSize": 14,
+            "layout_width": "150",
+            "layout_height": "40",
             "textColor": "#000000",
-            "text": "HABIBMETRO",
+            "text": "HABIB METRO",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-            "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-            "layout_marginLeft": 10,
-            "layout_marginTop": 2,
-            "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+            "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+            "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+            "textStyle": "bold"
           }
         },
         "icon": "FaTextWidth",
@@ -1546,37 +1410,36 @@
         "edit": true
       },
       {
-        "id": "OIRRaQ3t7iz7r38wPNTsv",
+        "id": "3zYiNM9dvSQ3SqVtGwwRQ",
         "status": "ACTIVE",
         "_id": "61decd8e077814a0f374d9fc",
-        "name": "bank image",
+        "name": "Image View",
         "attributes": {
-          "name": "bank image",
+          "name": "Image View",
           "layoutProperties": {
             "layout_width": "40",
             "layout_height": "40",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "64783a2c98b87256541b4ade",
-              "name": "DigiAcc_Logo_Com_Text.png",
+              "createdBy": "user",
+              "_id": "651a6e0a2836a142540eb726",
+              "name": "PD_Delete_Bin_Icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "yLRw0CmteYCc3KrmUhYqI",
+              "id": "fIRVjr2KucdwKgtVssOCY",
               "gitBranchName": "master",
-              "folderType": "xxhdpi",
+              "folderType": "xhdpi",
               "platform": "Android",
-              "url": "DigiAcc_Logo_Com_Text.png",
-              "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-              "createdAt": "2023-06-01T06:26:52.373Z",
-              "updatedAt": "2023-06-01T06:26:52.373Z",
+              "url": "PD_Delete_Bin_Icon.png",
+              "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+              "createdAt": "2023-10-02T07:15:22.423Z",
+              "updatedAt": "2023-10-02T07:15:22.423Z",
               "__v": 0,
-              "uri": "DigiAcc_Logo_Com_Text.png"
+              "uri": "PD_Delete_Bin_Icon.png"
             },
-            "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 5,
-            "id": "yLRw0CmteYCc3KrmUhYqI"
+            "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+            "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+            "id": "fIRVjr2KucdwKgtVssOCY"
           },
           "contentType": 2
         },
@@ -1590,63 +1453,72 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-1-0-4",
-        "edit": true,
-        "events": []
+        "path": "0-1-0-4"
       }
     ],
+    "events": [{}],
     "attributes": {
       "layoutProperties": {
-        "layout_height": "100",
+        "layout_height": "wrap_content",
         "layout_width": "match_parent",
         "cornerRadius": [0, 0, 0, 0],
-        "layout_marginTop": 5
+        "borderColor": "#FFFFFF"
       },
-      "bindingKey": "selectedAcc_QRGenerate",
+      "bindingKey": "abc",
       "componentId": [
-        "S83psbHfqkfMXqkZh5qmQ",
-        "JqBfPRGmJ5zYqw9GdtQLM",
-        "fKk-Dh9RoalV3IzbNZE05",
-        "6Tn8NJhQKR1ehH9CY2i7O",
-        "OIRRaQ3t7iz7r38wPNTsv"
+        "-L-t71l8ByG5R7qoCP3tQ",
+        "iA8kDgGuxHWkFhQ4Qbr4W",
+        "wD3KQ_Al4U9BG__QvOf80",
+        "tWsCRccnNlL-FNscltDtu",
+        "3zYiNM9dvSQ3SqVtGwwRQ"
       ],
       "swipeButtons": []
     },
-    "events": [
-      {
-        "triggerId": "xwNwZIcqa07hpRrikIW0X",
-        "triggerName": "abc",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
     "layout": [
       {
-        "id": "ZUrgTlDux5Oaj9spGHIYl",
+        "id": "9RF1s-hQg3hFjbFXoM3ul",
         "name": "List item 0",
         "path": "0-1-0",
         "type": "VLISTITEM",
         "updatedTimestamp": "0000-00-00T00:00:00+00:00",
         "gridProps": [
           {
-            "id": "S83psbHfqkfMXqkZh5qmQ",
+            "id": "-L-t71l8ByG5R7qoCP3tQ",
             "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "View",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
             "attributes": {
-              "name": "View",
+              "name": "Image View",
               "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "match_parent",
-                "borderWidth": 0,
+                "layout_width": "40",
+                "layout_height": "40",
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#FFFFFF",
-                "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-                "bottomToBottomOf": null
-              }
+                "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+                "layout_marginLeft": 10,
+                "layout_marginTop": 10,
+                "src": {
+                  "createdBy": "user",
+                  "_id": "64b8f8010d25576da0c7b3d3",
+                  "name": "Digital_Account_Logo_Text@2x.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "zb08cGyLT0rjMovHqaffP",
+                  "gitBranchName": "master",
+                  "folderType": "Ios",
+                  "platform": "Ios",
+                  "url": "Ios/Digital_Account_Logo_Text@2x.png",
+                  "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+                  "createdAt": "2023-07-20T09:01:53.907Z",
+                  "updatedAt": "2023-07-20T09:01:53.907Z",
+                  "__v": 0,
+                  "uri": "Ios/Digital_Account_Logo_Text@2x.png"
+                },
+                "id": "zb08cGyLT0rjMovHqaffP",
+                "centerY": "9RF1s-hQg3hFjbFXoM3ul"
+              },
+              "contentType": 2
             },
-            "icon": "FaTabletAlt",
+            "icon": "FaRegImage",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -1655,31 +1527,30 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-1-0-0",
-            "edit": true
+            "edit": true,
+            "events": []
           },
           {
-            "id": "JqBfPRGmJ5zYqw9GdtQLM",
+            "id": "iA8kDgGuxHWkFhQ4Qbr4W",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "account title",
+            "name": "Text view",
             "attributes": {
-              "name": "account title",
+              "name": "Text view",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#B30000",
-                "text": "account",
+                "textSize": 14,
+                "layout_width": "150",
+                "layout_height": "40",
+                "textColor": "#000000",
+                "text": "20311-714-441643",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-                "bottomToBottomOf": null,
-                "layout_marginLeft": 10,
-                "layout_marginTop": 5,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+                "layout_marginTop": -40,
+                "layout_marginLeft": 20,
+                "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+                "textStyle": "bold"
               },
               "bindingKey": "accountTitle"
             },
@@ -1698,25 +1569,23 @@
             "edit": true
           },
           {
-            "id": "fKk-Dh9RoalV3IzbNZE05",
+            "id": "wD3KQ_Al4U9BG__QvOf80",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "account num",
+            "name": "Text view2",
             "attributes": {
-              "name": "account num",
+              "name": "Text view2",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#9E9E9E",
-                "text": "account ",
+                "textSize": 14,
+                "layout_width": "200",
+                "layout_height": "40",
+                "textColor": "#000000",
+                "text": "6010120311714441643",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
-                "bottomToBottomOf": null,
-                "layout_marginLeft": 10,
-                "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-                "layout_marginTop": 2,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                "layout_marginTop": 0,
+                "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
               },
               "bindingKey": "accountNumber"
             },
@@ -1735,25 +1604,22 @@
             "edit": true
           },
           {
-            "id": "6Tn8NJhQKR1ehH9CY2i7O",
+            "id": "tWsCRccnNlL-FNscltDtu",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "bank name",
+            "name": "Text view3",
             "attributes": {
-              "name": "bank name",
+              "name": "Text view3",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "textSize": 14,
+                "layout_width": "150",
+                "layout_height": "40",
                 "textColor": "#000000",
-                "text": "HABIBMETRO",
+                "text": "HABIB METRO",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-                "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-                "layout_marginLeft": 10,
-                "layout_marginTop": 2,
-                "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
+                "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+                "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+                "textStyle": "bold"
               }
             },
             "icon": "FaTextWidth",
@@ -1771,37 +1637,36 @@
             "edit": true
           },
           {
-            "id": "OIRRaQ3t7iz7r38wPNTsv",
+            "id": "3zYiNM9dvSQ3SqVtGwwRQ",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "bank image",
+            "name": "Image View",
             "attributes": {
-              "name": "bank image",
+              "name": "Image View",
               "layoutProperties": {
                 "layout_width": "40",
                 "layout_height": "40",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64783a2c98b87256541b4ade",
-                  "name": "DigiAcc_Logo_Com_Text.png",
+                  "createdBy": "user",
+                  "_id": "651a6e0a2836a142540eb726",
+                  "name": "PD_Delete_Bin_Icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "yLRw0CmteYCc3KrmUhYqI",
+                  "id": "fIRVjr2KucdwKgtVssOCY",
                   "gitBranchName": "master",
-                  "folderType": "xxhdpi",
+                  "folderType": "xhdpi",
                   "platform": "Android",
-                  "url": "DigiAcc_Logo_Com_Text.png",
-                  "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-                  "createdAt": "2023-06-01T06:26:52.373Z",
-                  "updatedAt": "2023-06-01T06:26:52.373Z",
+                  "url": "PD_Delete_Bin_Icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                  "createdAt": "2023-10-02T07:15:22.423Z",
+                  "updatedAt": "2023-10-02T07:15:22.423Z",
                   "__v": 0,
-                  "uri": "DigiAcc_Logo_Com_Text.png"
+                  "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 5,
-                "id": "yLRw0CmteYCc3KrmUhYqI"
+                "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+                "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+                "id": "fIRVjr2KucdwKgtVssOCY"
               },
               "contentType": 2
             },
@@ -1815,30 +1680,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1-0-4",
-            "edit": true,
-            "events": []
+            "path": "0-1-0-4"
           }
         ],
+        "events": [{}],
         "attributes": {
           "layoutProperties": {
-            "layout_height": "100",
+            "layout_height": "wrap_content",
             "layout_width": "match_parent",
             "cornerRadius": [0, 0, 0, 0],
-            "layout_marginTop": 5
+            "borderColor": "#FFFFFF"
           },
-          "bindingKey": "selectedAcc_QRGenerate",
+          "bindingKey": "abc",
           "componentId": [],
           "swipeButtons": []
-        },
-        "events": [
-          {
-            "triggerId": "xwNwZIcqa07hpRrikIW0X",
-            "triggerName": "abc",
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ]
+        }
       }
     ],
     "subType": "component",
@@ -1847,190 +1703,37 @@
     "gitBranchName": "master"
   },
   {
-    "id": "S83psbHfqkfMXqkZh5qmQ",
+    "id": "-L-t71l8ByG5R7qoCP3tQ",
     "status": "ACTIVE",
-    "name": "View",
+    "name": "Image View",
     "attributes": {
-      "name": "View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "match_parent",
-        "layout_height": "match_parent",
-        "borderWidth": 0,
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#FFFFFF",
-        "leftToLeftOf": "ZUrgTlDux5Oaj9spGHIYl",
-        "bottomToBottomOf": null
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-1-0-0",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "JqBfPRGmJ5zYqw9GdtQLM",
-    "status": "ACTIVE",
-    "name": "account title",
-    "attributes": {
-      "name": "account title",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#B30000",
-        "text": "account",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "topToTopOf": "S83psbHfqkfMXqkZh5qmQ",
-        "bottomToBottomOf": null,
-        "layout_marginLeft": 10,
-        "layout_marginTop": 5,
-        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
-      },
-      "bindingKey": "accountTitle"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-1-0-1",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "fKk-Dh9RoalV3IzbNZE05",
-    "status": "ACTIVE",
-    "name": "account num",
-    "attributes": {
-      "name": "account num",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#9E9E9E",
-        "text": "account ",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "bottomToBottomOf": null,
-        "layout_marginLeft": 10,
-        "topToBottomOf": "JqBfPRGmJ5zYqw9GdtQLM",
-        "layout_marginTop": 2,
-        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
-      },
-      "bindingKey": "accountNumber"
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-1-0-2",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "6Tn8NJhQKR1ehH9CY2i7O",
-    "status": "ACTIVE",
-    "name": "bank name",
-    "attributes": {
-      "name": "bank name",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "HABIBMETRO",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "topToBottomOf": "fKk-Dh9RoalV3IzbNZE05",
-        "rightToRightOf": "S83psbHfqkfMXqkZh5qmQ",
-        "layout_marginLeft": 10,
-        "layout_marginTop": 2,
-        "leftToRightOf": "OIRRaQ3t7iz7r38wPNTsv"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-1-0-3",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "OIRRaQ3t7iz7r38wPNTsv",
-    "status": "ACTIVE",
-    "name": "bank image",
-    "attributes": {
-      "name": "bank image",
+      "name": "Image View",
       "layoutProperties": {
         "layout_width": "40",
         "layout_height": "40",
         "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "9RF1s-hQg3hFjbFXoM3ul",
+        "layout_marginLeft": 10,
+        "layout_marginTop": 10,
         "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "64783a2c98b87256541b4ade",
-          "name": "DigiAcc_Logo_Com_Text.png",
+          "createdBy": "user",
+          "_id": "64b8f8010d25576da0c7b3d3",
+          "name": "Digital_Account_Logo_Text@2x.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "yLRw0CmteYCc3KrmUhYqI",
+          "id": "zb08cGyLT0rjMovHqaffP",
           "gitBranchName": "master",
-          "folderType": "xxhdpi",
-          "platform": "Android",
-          "url": "DigiAcc_Logo_Com_Text.png",
-          "canvasUrl": "Android/drawable-xxhdpi/DigiAcc_Logo_Com_Text.png",
-          "createdAt": "2023-06-01T06:26:52.373Z",
-          "updatedAt": "2023-06-01T06:26:52.373Z",
+          "folderType": "Ios",
+          "platform": "Ios",
+          "url": "Ios/Digital_Account_Logo_Text@2x.png",
+          "canvasUrl": "Ios/Digital_Account_Logo_Text@2x.png",
+          "createdAt": "2023-07-20T09:01:53.907Z",
+          "updatedAt": "2023-07-20T09:01:53.907Z",
           "__v": 0,
-          "uri": "DigiAcc_Logo_Com_Text.png"
+          "uri": "Ios/Digital_Account_Logo_Text@2x.png"
         },
-        "leftToLeftOf": "S83psbHfqkfMXqkZh5qmQ",
-        "layout_marginLeft": 20,
-        "layout_marginTop": 5,
-        "id": "yLRw0CmteYCc3KrmUhYqI"
+        "id": "zb08cGyLT0rjMovHqaffP",
+        "centerY": "9RF1s-hQg3hFjbFXoM3ul"
       },
       "contentType": 2
     },
@@ -2043,11 +1746,173 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
+    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-1-0-4",
+    "path": "0-1-0-0",
     "edit": true,
     "events": [],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "iA8kDgGuxHWkFhQ4Qbr4W",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "150",
+        "layout_height": "40",
+        "textColor": "#000000",
+        "text": "20311-714-441643",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToTopOf": "-L-t71l8ByG5R7qoCP3tQ",
+        "layout_marginTop": -40,
+        "layout_marginLeft": 20,
+        "leftToRightOf": "-L-t71l8ByG5R7qoCP3tQ",
+        "textStyle": "bold"
+      },
+      "bindingKey": "accountTitle"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
     "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-1",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "wD3KQ_Al4U9BG__QvOf80",
+    "status": "ACTIVE",
+    "name": "Text view2",
+    "attributes": {
+      "name": "Text view2",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "200",
+        "layout_height": "40",
+        "textColor": "#000000",
+        "text": "6010120311714441643",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+        "layout_marginTop": 0,
+        "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W"
+      },
+      "bindingKey": "accountNumber"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-2",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "tWsCRccnNlL-FNscltDtu",
+    "status": "ACTIVE",
+    "name": "Text view3",
+    "attributes": {
+      "name": "Text view3",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "150",
+        "layout_height": "40",
+        "textColor": "#000000",
+        "text": "HABIB METRO",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToBottomOf": "wD3KQ_Al4U9BG__QvOf80",
+        "leftToLeftOf": "iA8kDgGuxHWkFhQ4Qbr4W",
+        "textStyle": "bold"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-3",
+    "edit": true,
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "3zYiNM9dvSQ3SqVtGwwRQ",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "user",
+          "_id": "651a6e0a2836a142540eb726",
+          "name": "PD_Delete_Bin_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "fIRVjr2KucdwKgtVssOCY",
+          "gitBranchName": "master",
+          "folderType": "xhdpi",
+          "platform": "Android",
+          "url": "PD_Delete_Bin_Icon.png",
+          "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+          "createdAt": "2023-10-02T07:15:22.423Z",
+          "updatedAt": "2023-10-02T07:15:22.423Z",
+          "__v": 0,
+          "uri": "PD_Delete_Bin_Icon.png"
+        },
+        "rightToRightOf": "9RF1s-hQg3hFjbFXoM3ul",
+        "centerY": "9RF1s-hQg3hFjbFXoM3ul",
+        "id": "fIRVjr2KucdwKgtVssOCY"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-1-0-4",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

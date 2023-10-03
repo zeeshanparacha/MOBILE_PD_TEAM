@@ -1,0 +1,44 @@
+{
+  "id": "tT_ROtyhGy0UmWQ-Rutf2",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getZakatBeneficiaryList",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "requestDataType": "byJSON",
+          "requestBody": { "transferType": "ZAKAAT" },
+          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "Content-Length": "25"
+          },
+          "responseStateKey": "zakatBeneficiaries"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.g5n4s9sdg4vfcbuulaUAfjMV1wzc9l08",
+  "_id": "qT51NmHoWIUdKyvbkzx2-",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "getZakatBeneficiaryList"
+}

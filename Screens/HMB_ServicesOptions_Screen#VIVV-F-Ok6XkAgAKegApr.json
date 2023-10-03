@@ -32,8 +32,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "8/30/2023",
-    "createdAt": "8/30/2023",
+    "updatedAt": "10/2/2023",
+    "createdAt": "10/2/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -332,7 +332,7 @@
         "id": "BcmAyZ-osP5xqWi9m189R",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "ServideOptions_AccMain_Text",
         "attributes": {
           "name": "ServideOptions_AccMain_Text",
           "layoutProperties": {
@@ -361,8 +361,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-7"
+        "events": [
+          {
+            "triggerId": "ik-ZEfLQcfMkPsRdV9GO_",
+            "triggerName": "navigate to acc maintenance cert screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "HAzYPYO-4gDDaLF-djicT"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-7",
+        "edit": true
       },
       {
         "id": "RCSeAOrf5OV4pzfYQrhtA",
@@ -773,7 +786,7 @@
             "id": "BcmAyZ-osP5xqWi9m189R",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "ServideOptions_AccMain_Text",
             "attributes": {
               "name": "ServideOptions_AccMain_Text",
               "layoutProperties": {
@@ -802,8 +815,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-7"
+            "events": [
+              {
+                "triggerId": "ik-ZEfLQcfMkPsRdV9GO_",
+                "triggerName": "navigate to acc maintenance cert screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "HAzYPYO-4gDDaLF-djicT"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-7",
+            "edit": true
           },
           {
             "id": "RCSeAOrf5OV4pzfYQrhtA",
@@ -896,7 +922,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "VIVV-F-Ok6XkAgAKegApr",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1196,7 +1222,7 @@
   {
     "id": "BcmAyZ-osP5xqWi9m189R",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "ServideOptions_AccMain_Text",
     "attributes": {
       "name": "ServideOptions_AccMain_Text",
       "layoutProperties": {
@@ -1225,8 +1251,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "ik-ZEfLQcfMkPsRdV9GO_",
+        "triggerName": "navigate to acc maintenance cert screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-7",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

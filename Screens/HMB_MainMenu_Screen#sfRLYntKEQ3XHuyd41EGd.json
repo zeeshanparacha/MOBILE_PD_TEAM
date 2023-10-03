@@ -238,8 +238,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/12/2023",
-    "createdAt": "9/12/2023",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -3022,7 +3022,7 @@
       {
         "id": "kHq6XT59edMi0Mm61BdIW",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "MainMenu_Investments_Expand_NewInvestment_Text",
         "attributes": {
           "name": "MainMenu_Investments_Expand_NewInvestment_Text",
           "layoutProperties": {
@@ -3050,8 +3050,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-73"
+        "events": [
+          {
+            "triggerId": "CYWyOTZZfToxDBr9q1L2C",
+            "triggerName": "navigate to stock market screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "XSC8rjIqiLddsf2DDwFt-"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-71",
+        "edit": true
       },
       {
         "id": "Of1Ni8a_KrDs3-58k3mo6",
@@ -7256,7 +7269,7 @@
           {
             "id": "kHq6XT59edMi0Mm61BdIW",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "MainMenu_Investments_Expand_NewInvestment_Text",
             "attributes": {
               "name": "MainMenu_Investments_Expand_NewInvestment_Text",
               "layoutProperties": {
@@ -7284,8 +7297,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-73"
+            "events": [
+              {
+                "triggerId": "CYWyOTZZfToxDBr9q1L2C",
+                "triggerName": "navigate to stock market screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "XSC8rjIqiLddsf2DDwFt-"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-71",
+            "edit": true
           },
           {
             "id": "Of1Ni8a_KrDs3-58k3mo6",
@@ -15830,7 +15856,7 @@
   {
     "id": "kHq6XT59edMi0Mm61BdIW",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "MainMenu_Investments_Expand_NewInvestment_Text",
     "attributes": {
       "name": "MainMenu_Investments_Expand_NewInvestment_Text",
       "layoutProperties": {
@@ -15858,8 +15884,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-73",
+    "events": [
+      {
+        "triggerId": "CYWyOTZZfToxDBr9q1L2C",
+        "triggerName": "navigate to stock market screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-71",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

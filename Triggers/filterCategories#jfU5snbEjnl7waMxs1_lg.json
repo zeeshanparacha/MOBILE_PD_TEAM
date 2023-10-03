@@ -1,5 +1,5 @@
 {
-  "id": "rAT3xezJkd_D4iOl8YsT8",
+  "id": "z9BPhxESqvlr867OZHDDS",
   "name": "filterCategories",
   "projectId": "63ef72a290c5800428f84dd9",
   "services": [
@@ -9,19 +9,20 @@
         "type": "14",
         "attributes": {
           "serviceName": "Filter Array",
-          "source": "categoriesAndCompanies",
+          "source": "$categoriesAndCompanies.content.categoriesCollection",
           "destination": "filteredCategories",
-          "filter": { "content.categoriesCollection.categoryCode": ["9"] }
+          "filter": { "categoryCode": ["9", "10"] },
+          "caseInsensitive": true
         }
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.t9amfotihm9v_imFbjMkd0SzoiKXcyk",
-  "_id": "47sV0VRqMKB5I1WjS1EiZ",
+  "csrf": "0.eefp8279fxfzbl5l-R0y8shC42Wc92aQ",
+  "_id": "jfU5snbEjnl7waMxs1_lg",
   "updatedAt": "9/28/2023",
   "createdAt": "9/28/2023",
-  "createdBy": "ammarahmed",
-  "updatedBy": "ammarahmed",
-  "old_name": "filterCategoriesAndCompanies"
+  "createdBy": "muzzamil2",
+  "updatedBy": "muzzamil2",
+  "old_name": "filterCategories"
 }

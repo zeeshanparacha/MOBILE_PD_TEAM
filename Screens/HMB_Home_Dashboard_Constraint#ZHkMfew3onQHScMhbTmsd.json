@@ -85,8 +85,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/28/2023",
-    "createdAt": "9/28/2023",
+    "updatedAt": "10/2/2023",
+    "createdAt": "10/2/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -1169,7 +1169,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1494,36 +1495,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -4177,7 +4154,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -5992,7 +5983,8 @@
                         "textStyle": "regular",
                         "elevation": 60,
                         "visibility": false
-                      }
+                      },
+                      "bindingKey": "balanceVisibility"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -6323,36 +6315,12 @@
             "edit": true,
             "events": [
               {
-                "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-                "triggerName": "getAllTrustedDevices",
-                "serviceType": "NETWORK",
+                "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+                "triggerName": "navigate_to_beneft_constraint_COPY",
+                "serviceType": "NAVIGATION",
                 "attributes": {
-                  "serviceName": "POST",
-                  "headers": {
-                    "Content-Type": "application/json",
-                    "version_code": "1",
-                    "channel_key": "006",
-                    "activity_id": "1",
-                    "deviceKey": "1244d1426ebe80d3",
-                    "deviceName": "2201117TG",
-                    "locale": "en",
-                    "entityId": "1",
-                    "app_version": "5.1.0",
-                    "Authorization": "$hmb_loginKey.content.token",
-                    "hmbToken": "$hmb_loginKey.content.otpToken"
-                  },
-                  "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-                  "responseStateKey": "trustedDevices",
-                  "conditions": [
-                    {
-                      "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                      "httpStatus": 200,
-                      "triggerName": "navigateToDeviceList",
-                      "triggerId": "1dbBodWrlbu1PijjTQh29"
-                    }
-                  ],
-                  "requestDataType": "byJSON",
-                  "requestBody": { "date": null, "time": null }
+                  "serviceName": "Navigate with back stack",
+                  "id": "osTHbqlyNhpS9P93oIAVy"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -9030,7 +8998,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-54"
+            "path": "0-54",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "BIHjqldK67-WsUUAALtLS",
+                "triggerName": "navigate to services option screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "VIVV-F-Ok6XkAgAKegApr"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -10742,7 +10724,8 @@
                 "textStyle": "regular",
                 "elevation": 60,
                 "visibility": false
-              }
+              },
+              "bindingKey": "balanceVisibility"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -12061,7 +12044,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -12386,36 +12370,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -15069,7 +15029,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -16299,7 +16273,8 @@
             "textStyle": "regular",
             "elevation": 60,
             "visibility": false
-          }
+          },
+          "bindingKey": "balanceVisibility"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -17084,7 +17059,8 @@
                 "textStyle": "regular",
                 "elevation": 60,
                 "visibility": false
-              }
+              },
+              "bindingKey": "balanceVisibility"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -17820,7 +17796,8 @@
         "textStyle": "regular",
         "elevation": 60,
         "visibility": false
-      }
+      },
+      "bindingKey": "balanceVisibility"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -18080,8 +18057,8 @@
     "edit": true,
     "events": [
       {
-        "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-        "triggerName": "getAllTrustedDevices",
+        "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+        "triggerName": "navigate_to_beneft_constraint_COPY",
         "name": "On click",
         "type": "ONCLICK"
       }
@@ -19849,7 +19826,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -20174,36 +20152,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -22857,7 +22811,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -25669,7 +25637,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -25994,36 +25963,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -28677,7 +28622,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -31962,7 +31921,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -32287,36 +32247,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -34970,7 +34906,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
@@ -37466,6 +37416,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-54",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "BIHjqldK67-WsUUAALtLS",
+        "triggerName": "navigate to services option screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -39078,7 +39037,8 @@
                     "textStyle": "regular",
                     "elevation": 60,
                     "visibility": false
-                  }
+                  },
+                  "bindingKey": "balanceVisibility"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -39403,36 +39363,12 @@
         "edit": true,
         "events": [
           {
-            "triggerId": "fEe6GYYW0TV4l_yhz69D-",
-            "triggerName": "getAllTrustedDevices",
-            "serviceType": "NETWORK",
+            "triggerId": "6Q6KnUrdGWZ4xGaCKeVzJ",
+            "triggerName": "navigate_to_beneft_constraint_COPY",
+            "serviceType": "NAVIGATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken"
-              },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
-              "responseStateKey": "trustedDevices",
-              "conditions": [
-                {
-                  "logic": { "==": [{ "var": "trustedDevices.code" }, 1] },
-                  "httpStatus": 200,
-                  "triggerName": "navigateToDeviceList",
-                  "triggerId": "1dbBodWrlbu1PijjTQh29"
-                }
-              ],
-              "requestDataType": "byJSON",
-              "requestBody": { "date": null, "time": null }
+              "serviceName": "Navigate with back stack",
+              "id": "osTHbqlyNhpS9P93oIAVy"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -42086,7 +42022,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-54"
+        "path": "0-54",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "BIHjqldK67-WsUUAALtLS",
+            "triggerName": "navigate to services option screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "VIVV-F-Ok6XkAgAKegApr"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "8rZp2w9Tj-CN09g-4ELsS",
