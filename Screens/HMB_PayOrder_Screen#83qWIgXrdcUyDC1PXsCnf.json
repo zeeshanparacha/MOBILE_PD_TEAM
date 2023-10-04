@@ -121,8 +121,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "7/12/2023",
-    "createdAt": "7/12/2023",
+    "updatedAt": "10/4/2023",
+    "createdAt": "10/4/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -205,7 +205,7 @@
         "id": "XtFvNwxWvuJdr5SjH0bs2",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_Account_Detail_Title_Text",
         "attributes": {
           "name": "PO_Account_Detail_Title_Text",
           "layoutProperties": {
@@ -222,7 +222,8 @@
             "layout_marginTop": 10,
             "textStyle": "regular",
             "textAlignment": "left"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -235,13 +236,14 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "1-2",
+        "edit": true
       },
       {
         "id": "fE-fbcEoktYD4g5iImebf",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_Acount_Detail_Num_Text",
         "attributes": {
           "name": "PO_Acount_Detail_Num_Text",
           "layoutProperties": {
@@ -256,7 +258,8 @@
             "topToBottomOf": "XtFvNwxWvuJdr5SjH0bs2",
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -269,7 +272,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "1-3",
+        "edit": true
       },
       {
         "id": "YCr59muZmz0Ie9C-VgNPd",
@@ -309,7 +313,7 @@
         "id": "oIqtE5esn6jG4mz3rArR7",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_Account_Change_Text",
         "attributes": {
           "name": "PO_Account_Change_Text",
           "layoutProperties": {
@@ -325,7 +329,8 @@
             "bottomToBottomOf": "iCTXrLfm3ZEksEwPy3_FR",
             "layout_marginRight": 10,
             "textStyle": "bold",
-            "textAlignment": "right"
+            "textAlignment": "right",
+            "layout_marginTop": 0
           }
         },
         "icon": "FaTextWidth",
@@ -338,14 +343,29 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-5"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "1-5",
+        "edit": true
       },
       {
         "id": "CRZKgG03jcgjC6koBLKe2",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_BeneType_Text",
         "attributes": {
           "name": "PO_BeneType_Text",
           "layoutProperties": {
@@ -361,7 +381,8 @@
             "layout_marginLeft": 20,
             "layout_marginTop": 20,
             "textStyle": "bold",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "layout_marginBottom": 0
           }
         },
         "icon": "FaTextWidth",
@@ -375,7 +396,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-6"
+        "path": "1-6",
+        "edit": true
       },
       {
         "id": "d_QfiSMm_vw_aJTFI1oWt",
@@ -388,7 +410,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -416,7 +437,7 @@
         "id": "YWpTRh-PYrhwOAu4B4CeV",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_BeneType_Data_Text",
         "attributes": {
           "name": "PO_BeneType_Data_Text",
           "layoutProperties": {
@@ -433,7 +454,8 @@
             "textStyle": "regular",
             "textAlignment": "left",
             "layout_marginLeft": 10
-          }
+          },
+          "bindingKey": "beneficiariesTypes.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -446,7 +468,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-8"
+        "path": "1-8",
+        "edit": true
       },
       {
         "id": "NitpkpNp2NNVnK1-mVTB_",
@@ -494,7 +517,29 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-9"
+        "path": "1-9",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "aDGenMLINV0B1grbk5MRF",
+            "triggerName": "show_beneficiaries_types_btmSheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "values": [
+                { "code": "01", "name": "Corporate" },
+                { "code": "02", "name": "Individual" }
+              ],
+              "bottomsheetType": "Normal Bottomsheet",
+              "code": "code",
+              "value": "name",
+              "dataType": "static",
+              "selectedBindingKey": "beneficiariesTypes"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "zlo4Z0gtfPqosMW_hkPk_",
@@ -543,7 +588,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -572,7 +616,7 @@
         "id": "pr-eb4RBEWJ7nITreWo29",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_PurposeofRemit_Data_Text",
         "attributes": {
           "name": "PO_PurposeofRemit_Data_Text",
           "layoutProperties": {
@@ -588,7 +632,8 @@
             "bottomToBottomOf": "6pGTpJ1rfV2XS0GGyD692",
             "textStyle": "regular",
             "textAlignment": "left"
-          }
+          },
+          "bindingKey": "remittanceData"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -601,7 +646,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-12"
+        "path": "1-12",
+        "edit": true
       },
       {
         "id": "clNgqHZGRyoCuFxewHFQp",
@@ -649,7 +695,22 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-13"
+        "path": "1-13",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "GPbINUaYEMsRahr4mrXxB",
+            "triggerName": "show_purpose_of_remittance_btmSheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "gN33_8REmgu5rRxjLc3VH"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "-JCkgkXibioNbpe-uv5aY",
@@ -698,7 +759,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -810,7 +870,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -922,7 +981,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1035,7 +1093,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1148,7 +1205,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1261,7 +1317,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1289,7 +1344,7 @@
         "id": "mzPzDDaGC42pjSGylmxE0",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "PO_BeneDob_Data_Text",
         "attributes": {
           "name": "PO_BeneDob_Data_Text",
           "layoutProperties": {
@@ -1306,7 +1361,8 @@
             "textStyle": "regular",
             "textAlignment": "left",
             "layout_marginLeft": 10
-          }
+          },
+          "bindingKey": "selectedDate"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1319,7 +1375,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-31"
+        "path": "1-31",
+        "edit": true
       },
       {
         "id": "ar-kgYZQsz0Wq0KmXt1Bm",
@@ -1333,27 +1390,27 @@
             "layout_height": "35",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "64087882f00f8b3bc0ab36d4",
-              "name": "BtmSheet_Arrow.png",
+              "createdBy": "user",
+              "_id": "64ddc92c8aa7f73e0cb3002a",
+              "name": "Calender_Btn.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "TDI6iHI2WebhM0mMtUzEc",
+              "id": "6BQX67a-RW7sANXJtJa2t",
               "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "BtmSheet_Arrow.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
-              "createdAt": "2023-03-08T11:58:58.504Z",
-              "updatedAt": "2023-03-08T11:58:58.504Z",
+              "folderType": "Ios",
+              "platform": "Ios",
+              "url": "Ios/Calender_Btn.png",
+              "canvasUrl": "Ios/Calender_Btn.png",
+              "createdAt": "2023-08-17T07:15:56.301Z",
+              "updatedAt": "2023-08-17T07:15:56.301Z",
               "__v": 0,
-              "uri": "BtmSheet_Arrow.png"
+              "uri": "Ios/Calender_Btn.png"
             },
             "rightToRightOf": "hbe08Yaigb_CI_U3gR3uN",
             "topToTopOf": "hbe08Yaigb_CI_U3gR3uN",
             "bottomToBottomOf": "hbe08Yaigb_CI_U3gR3uN",
             "layout_marginRight": 10,
-            "id": "TDI6iHI2WebhM0mMtUzEc"
+            "id": "6BQX67a-RW7sANXJtJa2t"
           },
           "contentType": 2
         },
@@ -1367,7 +1424,24 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-32"
+        "path": "1-32",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "RrB_cUtswjx9_v-hGYJml",
+            "triggerName": "open date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDate",
+              "dateFormat": "dd/MM/yyyy",
+              "minimumDate": "1",
+              "maximumDate": "31"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "ybhc5npcHrv5S8cEp8XSd",
@@ -1416,7 +1490,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [8, 8, 8, 8],
             "background": "#F0F2F0",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1529,7 +1602,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "rVcx3OFyAMCR8Ruta5QDx",
@@ -1646,7 +1718,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "2",
-            
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -1720,7 +1791,6 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "50",
-            
             "layout_marginTop": 20,
             "text": "Start Now",
             "textSize": 20,
@@ -1754,12 +1824,12 @@
     "edit": true,
     "layout": [
       {
-        "id": "1ZYGZujvIM2GNDNM2GQc3",
-        "name": "HMB_PayOrder_Navbar",
+        "id": "VdCFH3dNOROmoWq18ODLx",
+        "name": "ABC_Test_Copy",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "Constraint Layout",
+          "name": "ABC_Test_Copy",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -1782,8 +1852,120 @@
         "version": "1.0.0",
         "isLatest": true,
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
-        "gridProps": [],
-        "subType": "component",
+        "gridProps": [
+          {
+            "id": "CrhR7cpcVyQg_oD7j_D4I",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "ABC_View",
+            "attributes": {
+              "name": "ABC_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#093959",
+                "leftToLeftOf": "VdCFH3dNOROmoWq18ODLx",
+                "rightToRightOf": "VdCFH3dNOROmoWq18ODLx",
+                "topToTopOf": "VdCFH3dNOROmoWq18ODLx",
+                "bottomToBottomOf": "VdCFH3dNOROmoWq18ODLx"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "14ZP73nBasmthqZCyp552",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "130",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "64197a9c676c823a449f8251",
+                  "name": "HMB_Dash_Header_Bg.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "h-GOKyw8GtAXD_d4Pd_ys",
+                  "gitBranchName": "dev",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "HMB_Dash_Header_Bg.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Dash_Header_Bg.png",
+                  "createdAt": "2023-03-21T09:36:28.544Z",
+                  "updatedAt": "2023-03-21T09:36:28.544Z",
+                  "__v": 0,
+                  "uri": "HMB_Dash_Header_Bg.png"
+                },
+                "leftToLeftOf": "CrhR7cpcVyQg_oD7j_D4I",
+                "rightToRightOf": "CrhR7cpcVyQg_oD7j_D4I",
+                "topToTopOf": "CrhR7cpcVyQg_oD7j_D4I",
+                "id": "h-GOKyw8GtAXD_d4Pd_ys"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1"
+          },
+          {
+            "id": "yqRTuhL47duHb0M69pcqy",
+            "status": "ACTIVE",
+            "_id": "629ee908abfebeb5178b7fb0",
+            "name": "TIMER",
+            "attributes": {
+              "name": "TIMER",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "otpTime": "100",
+                "topToBottomOf": "14ZP73nBasmthqZCyp552",
+                "leftToLeftOf": "VdCFH3dNOROmoWq18ODLx",
+                "background": "#C9C9C9"
+              },
+              "conditions": [],
+              "bindingKey": "d"
+            },
+            "icon": "FaShieldAlt",
+            "group": "Security",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Timer", "type": "TIMER" },
+            "path": "0-2",
+            "edit": true,
+            "events": []
+          }
+        ],
+        "subType": "screen",
         "isNavbarConstraint": true
       },
       {
@@ -1948,7 +2130,7 @@
             "id": "XtFvNwxWvuJdr5SjH0bs2",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_Account_Detail_Title_Text",
             "attributes": {
               "name": "PO_Account_Detail_Title_Text",
               "layoutProperties": {
@@ -1965,7 +2147,8 @@
                 "layout_marginTop": 10,
                 "textStyle": "regular",
                 "textAlignment": "left"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1978,13 +2161,14 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "1-2",
+            "edit": true
           },
           {
             "id": "fE-fbcEoktYD4g5iImebf",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_Acount_Detail_Num_Text",
             "attributes": {
               "name": "PO_Acount_Detail_Num_Text",
               "layoutProperties": {
@@ -1999,7 +2183,8 @@
                 "topToBottomOf": "XtFvNwxWvuJdr5SjH0bs2",
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -2012,7 +2197,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "1-3",
+            "edit": true
           },
           {
             "id": "YCr59muZmz0Ie9C-VgNPd",
@@ -2052,7 +2238,7 @@
             "id": "oIqtE5esn6jG4mz3rArR7",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_Account_Change_Text",
             "attributes": {
               "name": "PO_Account_Change_Text",
               "layoutProperties": {
@@ -2068,7 +2254,8 @@
                 "bottomToBottomOf": "iCTXrLfm3ZEksEwPy3_FR",
                 "layout_marginRight": 10,
                 "textStyle": "bold",
-                "textAlignment": "right"
+                "textAlignment": "right",
+                "layout_marginTop": 0
               }
             },
             "icon": "FaTextWidth",
@@ -2081,14 +2268,29 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-5"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "1-5",
+            "edit": true
           },
           {
             "id": "CRZKgG03jcgjC6koBLKe2",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_BeneType_Text",
             "attributes": {
               "name": "PO_BeneType_Text",
               "layoutProperties": {
@@ -2104,7 +2306,8 @@
                 "layout_marginLeft": 20,
                 "layout_marginTop": 20,
                 "textStyle": "bold",
-                "textAlignment": "left"
+                "textAlignment": "left",
+                "layout_marginBottom": 0
               }
             },
             "icon": "FaTextWidth",
@@ -2118,7 +2321,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-6"
+            "path": "1-6",
+            "edit": true
           },
           {
             "id": "d_QfiSMm_vw_aJTFI1oWt",
@@ -2131,7 +2335,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2159,7 +2362,7 @@
             "id": "YWpTRh-PYrhwOAu4B4CeV",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_BeneType_Data_Text",
             "attributes": {
               "name": "PO_BeneType_Data_Text",
               "layoutProperties": {
@@ -2176,7 +2379,8 @@
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "layout_marginLeft": 10
-              }
+              },
+              "bindingKey": "beneficiariesTypes.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -2189,7 +2393,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-8"
+            "path": "1-8",
+            "edit": true
           },
           {
             "id": "NitpkpNp2NNVnK1-mVTB_",
@@ -2237,7 +2442,29 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-9"
+            "path": "1-9",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "aDGenMLINV0B1grbk5MRF",
+                "triggerName": "show_beneficiaries_types_btmSheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [
+                    { "code": "01", "name": "Corporate" },
+                    { "code": "02", "name": "Individual" }
+                  ],
+                  "bottomsheetType": "Normal Bottomsheet",
+                  "code": "code",
+                  "value": "name",
+                  "dataType": "static",
+                  "selectedBindingKey": "beneficiariesTypes"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "zlo4Z0gtfPqosMW_hkPk_",
@@ -2286,7 +2513,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2315,7 +2541,7 @@
             "id": "pr-eb4RBEWJ7nITreWo29",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_PurposeofRemit_Data_Text",
             "attributes": {
               "name": "PO_PurposeofRemit_Data_Text",
               "layoutProperties": {
@@ -2331,7 +2557,8 @@
                 "bottomToBottomOf": "6pGTpJ1rfV2XS0GGyD692",
                 "textStyle": "regular",
                 "textAlignment": "left"
-              }
+              },
+              "bindingKey": "remittanceData"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -2344,7 +2571,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-12"
+            "path": "1-12",
+            "edit": true
           },
           {
             "id": "clNgqHZGRyoCuFxewHFQp",
@@ -2392,7 +2620,22 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-13"
+            "path": "1-13",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "GPbINUaYEMsRahr4mrXxB",
+                "triggerName": "show_purpose_of_remittance_btmSheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "gN33_8REmgu5rRxjLc3VH"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "-JCkgkXibioNbpe-uv5aY",
@@ -2441,7 +2684,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2553,7 +2795,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2665,7 +2906,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2778,7 +3018,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -2891,7 +3130,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3004,7 +3242,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3032,7 +3269,7 @@
             "id": "mzPzDDaGC42pjSGylmxE0",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "PO_BeneDob_Data_Text",
             "attributes": {
               "name": "PO_BeneDob_Data_Text",
               "layoutProperties": {
@@ -3049,7 +3286,8 @@
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "layout_marginLeft": 10
-              }
+              },
+              "bindingKey": "selectedDate"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -3062,7 +3300,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-31"
+            "path": "1-31",
+            "edit": true
           },
           {
             "id": "ar-kgYZQsz0Wq0KmXt1Bm",
@@ -3076,27 +3315,27 @@
                 "layout_height": "35",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64087882f00f8b3bc0ab36d4",
-                  "name": "BtmSheet_Arrow.png",
+                  "createdBy": "user",
+                  "_id": "64ddc92c8aa7f73e0cb3002a",
+                  "name": "Calender_Btn.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "TDI6iHI2WebhM0mMtUzEc",
+                  "id": "6BQX67a-RW7sANXJtJa2t",
                   "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
-                  "platform": "Android",
-                  "url": "BtmSheet_Arrow.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
-                  "createdAt": "2023-03-08T11:58:58.504Z",
-                  "updatedAt": "2023-03-08T11:58:58.504Z",
+                  "folderType": "Ios",
+                  "platform": "Ios",
+                  "url": "Ios/Calender_Btn.png",
+                  "canvasUrl": "Ios/Calender_Btn.png",
+                  "createdAt": "2023-08-17T07:15:56.301Z",
+                  "updatedAt": "2023-08-17T07:15:56.301Z",
                   "__v": 0,
-                  "uri": "BtmSheet_Arrow.png"
+                  "uri": "Ios/Calender_Btn.png"
                 },
                 "rightToRightOf": "hbe08Yaigb_CI_U3gR3uN",
                 "topToTopOf": "hbe08Yaigb_CI_U3gR3uN",
                 "bottomToBottomOf": "hbe08Yaigb_CI_U3gR3uN",
                 "layout_marginRight": 10,
-                "id": "TDI6iHI2WebhM0mMtUzEc"
+                "id": "6BQX67a-RW7sANXJtJa2t"
               },
               "contentType": 2
             },
@@ -3110,7 +3349,24 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-32"
+            "path": "1-32",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "RrB_cUtswjx9_v-hGYJml",
+                "triggerName": "open date picker",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": " Date picker",
+                  "bindingKey": "selectedDate",
+                  "dateFormat": "dd/MM/yyyy",
+                  "minimumDate": "1",
+                  "maximumDate": "31"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "ybhc5npcHrv5S8cEp8XSd",
@@ -3159,7 +3415,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [8, 8, 8, 8],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3272,7 +3527,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "rVcx3OFyAMCR8Ruta5QDx",
@@ -3389,7 +3643,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "2",
-                
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3463,7 +3716,6 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "50",
-                
                 "layout_marginTop": 20,
                 "text": "Start Now",
                 "textSize": 20,
@@ -3500,7 +3752,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "83qWIgXrdcUyDC1PXsCnf",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3584,7 +3836,7 @@
   {
     "id": "XtFvNwxWvuJdr5SjH0bs2",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_Account_Detail_Title_Text",
     "attributes": {
       "name": "PO_Account_Detail_Title_Text",
       "layoutProperties": {
@@ -3601,7 +3853,8 @@
         "layout_marginTop": 10,
         "textStyle": "regular",
         "textAlignment": "left"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3614,7 +3867,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-2",
+    "path": "1-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3623,7 +3877,7 @@
   {
     "id": "fE-fbcEoktYD4g5iImebf",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_Acount_Detail_Num_Text",
     "attributes": {
       "name": "PO_Acount_Detail_Num_Text",
       "layoutProperties": {
@@ -3638,7 +3892,8 @@
         "topToBottomOf": "XtFvNwxWvuJdr5SjH0bs2",
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3651,7 +3906,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-3",
+    "path": "1-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3697,7 +3953,7 @@
   {
     "id": "oIqtE5esn6jG4mz3rArR7",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_Account_Change_Text",
     "attributes": {
       "name": "PO_Account_Change_Text",
       "layoutProperties": {
@@ -3713,7 +3969,8 @@
         "bottomToBottomOf": "iCTXrLfm3ZEksEwPy3_FR",
         "layout_marginRight": 10,
         "textStyle": "bold",
-        "textAlignment": "right"
+        "textAlignment": "right",
+        "layout_marginTop": 0
       }
     },
     "icon": "FaTextWidth",
@@ -3726,8 +3983,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-5",
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "1-5",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3736,7 +4001,7 @@
   {
     "id": "CRZKgG03jcgjC6koBLKe2",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_BeneType_Text",
     "attributes": {
       "name": "PO_BeneType_Text",
       "layoutProperties": {
@@ -3752,7 +4017,8 @@
         "layout_marginLeft": 20,
         "layout_marginTop": 20,
         "textStyle": "bold",
-        "textAlignment": "left"
+        "textAlignment": "left",
+        "layout_marginBottom": 0
       }
     },
     "icon": "FaTextWidth",
@@ -3766,7 +4032,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-6",
+    "path": "1-6",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3782,7 +4049,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3813,7 +4079,7 @@
   {
     "id": "YWpTRh-PYrhwOAu4B4CeV",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_BeneType_Data_Text",
     "attributes": {
       "name": "PO_BeneType_Data_Text",
       "layoutProperties": {
@@ -3830,7 +4096,8 @@
         "textStyle": "regular",
         "textAlignment": "left",
         "layout_marginLeft": 10
-      }
+      },
+      "bindingKey": "beneficiariesTypes.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3843,7 +4110,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-8",
+    "path": "1-8",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3894,7 +4162,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-9",
+    "path": "1-9",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "aDGenMLINV0B1grbk5MRF",
+        "triggerName": "show_beneficiaries_types_btmSheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -3949,7 +4226,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -3981,7 +4257,7 @@
   {
     "id": "pr-eb4RBEWJ7nITreWo29",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_PurposeofRemit_Data_Text",
     "attributes": {
       "name": "PO_PurposeofRemit_Data_Text",
       "layoutProperties": {
@@ -3997,7 +4273,8 @@
         "bottomToBottomOf": "6pGTpJ1rfV2XS0GGyD692",
         "textStyle": "regular",
         "textAlignment": "left"
-      }
+      },
+      "bindingKey": "remittanceData"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4010,7 +4287,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-12",
+    "path": "1-12",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4061,7 +4339,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-13",
+    "path": "1-13",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "GPbINUaYEMsRahr4mrXxB",
+        "triggerName": "show_purpose_of_remittance_btmSheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4116,7 +4403,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4237,7 +4523,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4358,7 +4643,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4480,7 +4764,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4602,7 +4885,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4724,7 +5006,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -4755,7 +5036,7 @@
   {
     "id": "mzPzDDaGC42pjSGylmxE0",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "PO_BeneDob_Data_Text",
     "attributes": {
       "name": "PO_BeneDob_Data_Text",
       "layoutProperties": {
@@ -4772,7 +5053,8 @@
         "textStyle": "regular",
         "textAlignment": "left",
         "layout_marginLeft": 10
-      }
+      },
+      "bindingKey": "selectedDate"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -4785,7 +5067,8 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-31",
+    "path": "1-31",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4802,27 +5085,27 @@
         "layout_height": "35",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "64087882f00f8b3bc0ab36d4",
-          "name": "BtmSheet_Arrow.png",
+          "createdBy": "user",
+          "_id": "64ddc92c8aa7f73e0cb3002a",
+          "name": "Calender_Btn.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "TDI6iHI2WebhM0mMtUzEc",
+          "id": "6BQX67a-RW7sANXJtJa2t",
           "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "BtmSheet_Arrow.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
-          "createdAt": "2023-03-08T11:58:58.504Z",
-          "updatedAt": "2023-03-08T11:58:58.504Z",
+          "folderType": "Ios",
+          "platform": "Ios",
+          "url": "Ios/Calender_Btn.png",
+          "canvasUrl": "Ios/Calender_Btn.png",
+          "createdAt": "2023-08-17T07:15:56.301Z",
+          "updatedAt": "2023-08-17T07:15:56.301Z",
           "__v": 0,
-          "uri": "BtmSheet_Arrow.png"
+          "uri": "Ios/Calender_Btn.png"
         },
         "rightToRightOf": "hbe08Yaigb_CI_U3gR3uN",
         "topToTopOf": "hbe08Yaigb_CI_U3gR3uN",
         "bottomToBottomOf": "hbe08Yaigb_CI_U3gR3uN",
         "layout_marginRight": 10,
-        "id": "TDI6iHI2WebhM0mMtUzEc"
+        "id": "6BQX67a-RW7sANXJtJa2t"
       },
       "contentType": 2
     },
@@ -4836,7 +5119,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-32",
+    "path": "1-32",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "RrB_cUtswjx9_v-hGYJml",
+        "triggerName": "open date picker",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4891,7 +5183,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [8, 8, 8, 8],
         "background": "#F0F2F0",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -5013,7 +5304,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "rVcx3OFyAMCR8Ruta5QDx",
@@ -5139,7 +5429,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "2",
-        
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "83qWIgXrdcUyDC1PXsCnf",
@@ -5219,7 +5508,6 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "50",
-        
         "layout_marginTop": 20,
         "text": "Start Now",
         "textSize": 20,

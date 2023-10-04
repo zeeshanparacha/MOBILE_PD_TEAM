@@ -1,0 +1,1763 @@
+[
+  {
+    "id": "PQrLhMwr8pQZg6YrI6Mrqp",
+    "name": "Zakat_beneficiary_list_screen_copy",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Zakat_beneficiary_list_screen_copy",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": ["VwT_9SBxCYVE-TAcIcHlV", "rRMhNi9nmtbwWnaByiDd8"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "VwT_9SBxCYVE-TAcIcHlV",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Donation",
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "topToTopOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "layout_marginLeft": 10,
+            "layout_marginTop": 10,
+            "textStyle": "bold",
+            "textAlignment": "left",
+            "numberOfLines": 1
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "rRMhNi9nmtbwWnaByiDd8",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "borderColor": "#FFFFFF",
+            "layout_height": "wrap_content",
+            "layout_width": "match_parent",
+            "topToBottomOf": "VwT_9SBxCYVE-TAcIcHlV",
+            "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "rightToRightOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "rows": [
+              {
+                "id": "Eph2JjHR3DThdPIm20k_7",
+                "bindingKey": "selectedDonationBeneficiary",
+                "events": [
+                  {
+                    "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                    "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "layout_marginTop": 10
+          },
+          "bindingKey": "zakatBeneficiaries.content.donationOrganizations",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "tT_ROtyhGy0UmWQ-Rutf2",
+            "triggerName": "getZakatBeneficiaryList",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "requestDataType": "byJSON",
+              "requestBody": { "transferType": "ZAKAAT" },
+              "url": "http://172.16.11.52:9000/beneficairy/v1/fetchDonationOrganizationBeneficiaries",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Content-Length": "25"
+              },
+              "responseStateKey": "zakatBeneficiaries"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Eph2JjHR3DThdPIm20k_7",
+            "name": "List item 0",
+            "path": "0-1-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "HBH6t-XEznttVR4gTNFLX",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+                    "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+                    "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+                    "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "ViZ0NrhSL0MNZqBDa7puw",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "50",
+                    "layout_height": "50",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6492ab4069bc7727a8747775",
+                      "name": "twitter_icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "QextW1frS4yRog9zmyAtk",
+                      "gitBranchName": "master",
+                      "folderType": "xhdpi",
+                      "platform": "Android",
+                      "url": "twitter_icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+                      "createdAt": "2023-06-21T07:48:16.754Z",
+                      "updatedAt": "2023-06-21T07:48:16.754Z",
+                      "__v": 0,
+                      "uri": "twitter_icon.png"
+                    },
+                    "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+                    "centerY": "HBH6t-XEznttVR4gTNFLX",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 0,
+                    "id": "QextW1frS4yRog9zmyAtk"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-1",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "CXanrZFjP5Hg6ItlXCLlX",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "account title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "layout_marginLeft": 10
+                  },
+                  "bindingKey": "accountTitle"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2",
+                "edit": true
+              },
+              {
+                "id": "zV0tr1YGvGm3nzKJpXIhy",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#9E9E9E",
+                    "text": "account Number",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+                    "layout_marginTop": 3,
+                    "layout_marginLeft": 10
+                  },
+                  "bindingKey": "accountNumber"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-3",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_marginTop": 5
+              },
+              "bindingKey": "selectedDonationBeneficiary",
+              "componentId": [],
+              "swipeButtons": []
+            },
+            "events": [
+              {
+                "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "PQrLhMwr8pQZg6YrI6Mrqp",
+        "name": "Zakat_beneficiary_list_screen_copy",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Zakat_beneficiary_list_screen_copy",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "VwT_9SBxCYVE-TAcIcHlV",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Donation",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+                "topToTopOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+                "layout_marginLeft": 10,
+                "layout_marginTop": 10,
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "numberOfLines": 1
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "rRMhNi9nmtbwWnaByiDd8",
+            "type": "VLIST",
+            "name": "Vertical list view",
+            "component": { "type": "VLIST" },
+            "attributes": {
+              "name": "Vertical list view",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "borderColor": "#FFFFFF",
+                "layout_height": "wrap_content",
+                "layout_width": "match_parent",
+                "topToBottomOf": "VwT_9SBxCYVE-TAcIcHlV",
+                "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+                "rightToRightOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+                "rows": [
+                  {
+                    "id": "Eph2JjHR3DThdPIm20k_7",
+                    "bindingKey": "selectedDonationBeneficiary",
+                    "events": [
+                      {
+                        "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                        "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "layout_marginTop": 10
+              },
+              "bindingKey": "zakatBeneficiaries.content.donationOrganizations",
+              "componentId": []
+            },
+            "events": [
+              {
+                "triggerId": "tT_ROtyhGy0UmWQ-Rutf2",
+                "triggerName": "getZakatBeneficiaryList",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "transferType": "ZAKAAT" },
+                  "url": "http://172.16.11.52:9000/beneficairy/v1/fetchDonationOrganizationBeneficiaries",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "Content-Length": "25"
+                  },
+                  "responseStateKey": "zakatBeneficiaries"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "Eph2JjHR3DThdPIm20k_7",
+                "name": "List item 0",
+                "path": "0-1-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "HBH6t-XEznttVR4gTNFLX",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "View",
+                    "attributes": {
+                      "name": "View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [0, 0, 0, 0],
+                        "background": "#FFFFFF",
+                        "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+                        "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+                        "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+                        "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-1-0-0"
+                  },
+                  {
+                    "id": "ViZ0NrhSL0MNZqBDa7puw",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Image View",
+                    "attributes": {
+                      "name": "Image View",
+                      "layoutProperties": {
+                        "layout_width": "50",
+                        "layout_height": "50",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "src": {
+                          "createdBy": "shaikhahmedraza",
+                          "_id": "6492ab4069bc7727a8747775",
+                          "name": "twitter_icon.png",
+                          "type": "png",
+                          "projectId": "63ef72a290c5800428f84dd9",
+                          "id": "QextW1frS4yRog9zmyAtk",
+                          "gitBranchName": "master",
+                          "folderType": "xhdpi",
+                          "platform": "Android",
+                          "url": "twitter_icon.png",
+                          "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+                          "createdAt": "2023-06-21T07:48:16.754Z",
+                          "updatedAt": "2023-06-21T07:48:16.754Z",
+                          "__v": 0,
+                          "uri": "twitter_icon.png"
+                        },
+                        "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+                        "centerY": "HBH6t-XEznttVR4gTNFLX",
+                        "layout_marginLeft": 20,
+                        "layout_marginTop": 0,
+                        "id": "QextW1frS4yRog9zmyAtk"
+                      },
+                      "contentType": 2
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-1-0-1",
+                    "edit": true,
+                    "events": []
+                  },
+                  {
+                    "id": "CXanrZFjP5Hg6ItlXCLlX",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 16,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "account title",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                        "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+                        "layout_marginLeft": 10
+                      },
+                      "bindingKey": "accountTitle"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-2",
+                    "edit": true
+                  },
+                  {
+                    "id": "zV0tr1YGvGm3nzKJpXIhy",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 16,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#9E9E9E",
+                        "text": "account Number",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                        "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+                        "layout_marginTop": 3,
+                        "layout_marginLeft": 10
+                      },
+                      "bindingKey": "accountNumber"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-3",
+                    "edit": true
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "layout_marginTop": 5
+                  },
+                  "bindingKey": "selectedDonationBeneficiary",
+                  "componentId": [],
+                  "swipeButtons": []
+                },
+                "events": [
+                  {
+                    "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                    "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "PQrLhMwr8pQZg6YrI6Mrqp",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "VwT_9SBxCYVE-TAcIcHlV",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Donation",
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+        "topToTopOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+        "layout_marginLeft": 10,
+        "layout_marginTop": 10,
+        "textStyle": "bold",
+        "textAlignment": "left",
+        "numberOfLines": 1
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "rRMhNi9nmtbwWnaByiDd8",
+    "type": "VLIST",
+    "name": "Vertical list view",
+    "component": { "type": "VLIST" },
+    "attributes": {
+      "name": "Vertical list view",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "borderColor": "#FFFFFF",
+        "layout_height": "wrap_content",
+        "layout_width": "match_parent",
+        "topToBottomOf": "VwT_9SBxCYVE-TAcIcHlV",
+        "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+        "rightToRightOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+        "rows": [
+          {
+            "id": "Eph2JjHR3DThdPIm20k_7",
+            "bindingKey": "selectedDonationBeneficiary",
+            "events": [
+              {
+                "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "layout_marginTop": 10
+      },
+      "bindingKey": "zakatBeneficiaries.content.donationOrganizations",
+      "componentId": ["Eph2JjHR3DThdPIm20k_7"]
+    },
+    "events": [
+      {
+        "triggerId": "tT_ROtyhGy0UmWQ-Rutf2",
+        "triggerName": "getZakatBeneficiaryList",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-1",
+    "gridProps": [
+      {
+        "id": "Eph2JjHR3DThdPIm20k_7",
+        "name": "List item 0",
+        "path": "0-1-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "HBH6t-XEznttVR4gTNFLX",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+                "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+                "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+                "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "ViZ0NrhSL0MNZqBDa7puw",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "50",
+                "layout_height": "50",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6492ab4069bc7727a8747775",
+                  "name": "twitter_icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "QextW1frS4yRog9zmyAtk",
+                  "gitBranchName": "master",
+                  "folderType": "xhdpi",
+                  "platform": "Android",
+                  "url": "twitter_icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+                  "createdAt": "2023-06-21T07:48:16.754Z",
+                  "updatedAt": "2023-06-21T07:48:16.754Z",
+                  "__v": 0,
+                  "uri": "twitter_icon.png"
+                },
+                "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+                "centerY": "HBH6t-XEznttVR4gTNFLX",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 0,
+                "id": "QextW1frS4yRog9zmyAtk"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-1",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "CXanrZFjP5Hg6ItlXCLlX",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "account title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "layout_marginLeft": 10
+              },
+              "bindingKey": "accountTitle"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2",
+            "edit": true
+          },
+          {
+            "id": "zV0tr1YGvGm3nzKJpXIhy",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#9E9E9E",
+                "text": "account Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+                "layout_marginTop": 3,
+                "layout_marginLeft": 10
+              },
+              "bindingKey": "accountNumber"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-3",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_marginTop": 5
+          },
+          "bindingKey": "selectedDonationBeneficiary",
+          "componentId": [],
+          "swipeButtons": []
+        },
+        "events": [
+          {
+            "triggerId": "Oih89vaS01aoSqxLFcFq-",
+            "triggerName": "Navigate_to_DonationBeneFT_Screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "VwT_9SBxCYVE-TAcIcHlV",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Donation",
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "topToTopOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "layout_marginLeft": 10,
+            "layout_marginTop": 10,
+            "textStyle": "bold",
+            "textAlignment": "left",
+            "numberOfLines": 1
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "rRMhNi9nmtbwWnaByiDd8",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "borderColor": "#FFFFFF",
+            "layout_height": "wrap_content",
+            "layout_width": "match_parent",
+            "topToBottomOf": "VwT_9SBxCYVE-TAcIcHlV",
+            "leftToLeftOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "rightToRightOf": "PQrLhMwr8pQZg6YrI6Mrqp",
+            "rows": [
+              {
+                "id": "Eph2JjHR3DThdPIm20k_7",
+                "bindingKey": "selectedDonationBeneficiary",
+                "events": [
+                  {
+                    "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                    "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "layout_marginTop": 10
+          },
+          "bindingKey": "zakatBeneficiaries.content.donationOrganizations",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "tT_ROtyhGy0UmWQ-Rutf2",
+            "triggerName": "getZakatBeneficiaryList",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "requestDataType": "byJSON",
+              "requestBody": { "transferType": "ZAKAAT" },
+              "url": "http://172.16.11.52:9000/beneficairy/v1/fetchDonationOrganizationBeneficiaries",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Content-Length": "25"
+              },
+              "responseStateKey": "zakatBeneficiaries"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "Eph2JjHR3DThdPIm20k_7",
+            "name": "List item 0",
+            "path": "0-1-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "HBH6t-XEznttVR4gTNFLX",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "match_parent",
+                    "borderWidth": 0,
+                    "cornerRadius": [0, 0, 0, 0],
+                    "background": "#FFFFFF",
+                    "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+                    "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+                    "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+                    "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "ViZ0NrhSL0MNZqBDa7puw",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "50",
+                    "layout_height": "50",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "src": {
+                      "createdBy": "shaikhahmedraza",
+                      "_id": "6492ab4069bc7727a8747775",
+                      "name": "twitter_icon.png",
+                      "type": "png",
+                      "projectId": "63ef72a290c5800428f84dd9",
+                      "id": "QextW1frS4yRog9zmyAtk",
+                      "gitBranchName": "master",
+                      "folderType": "xhdpi",
+                      "platform": "Android",
+                      "url": "twitter_icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+                      "createdAt": "2023-06-21T07:48:16.754Z",
+                      "updatedAt": "2023-06-21T07:48:16.754Z",
+                      "__v": 0,
+                      "uri": "twitter_icon.png"
+                    },
+                    "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+                    "centerY": "HBH6t-XEznttVR4gTNFLX",
+                    "layout_marginLeft": 20,
+                    "layout_marginTop": 0,
+                    "id": "QextW1frS4yRog9zmyAtk"
+                  },
+                  "contentType": 2
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-1",
+                "edit": true,
+                "events": []
+              },
+              {
+                "id": "CXanrZFjP5Hg6ItlXCLlX",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "account title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "layout_marginLeft": 10
+                  },
+                  "bindingKey": "accountTitle"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-2",
+                "edit": true
+              },
+              {
+                "id": "zV0tr1YGvGm3nzKJpXIhy",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 16,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#9E9E9E",
+                    "text": "account Number",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                    "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+                    "layout_marginTop": 3,
+                    "layout_marginLeft": 10
+                  },
+                  "bindingKey": "accountNumber"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-3",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_marginTop": 5
+              },
+              "bindingKey": "selectedDonationBeneficiary",
+              "componentId": [],
+              "swipeButtons": []
+            },
+            "events": [
+              {
+                "triggerId": "Oih89vaS01aoSqxLFcFq-",
+                "triggerName": "Navigate_to_DonationBeneFT_Screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Eph2JjHR3DThdPIm20k_7",
+    "name": "List item 0",
+    "path": "0-1-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "HBH6t-XEznttVR4gTNFLX",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "View",
+        "attributes": {
+          "name": "View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+            "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+            "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+            "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-1-0-0"
+      },
+      {
+        "id": "ViZ0NrhSL0MNZqBDa7puw",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "50",
+            "layout_height": "50",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6492ab4069bc7727a8747775",
+              "name": "twitter_icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "QextW1frS4yRog9zmyAtk",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "twitter_icon.png",
+              "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+              "createdAt": "2023-06-21T07:48:16.754Z",
+              "updatedAt": "2023-06-21T07:48:16.754Z",
+              "__v": 0,
+              "uri": "twitter_icon.png"
+            },
+            "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+            "centerY": "HBH6t-XEznttVR4gTNFLX",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 0,
+            "id": "QextW1frS4yRog9zmyAtk"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-1-0-1",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "CXanrZFjP5Hg6ItlXCLlX",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "account title",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+            "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+            "layout_marginLeft": 10
+          },
+          "bindingKey": "accountTitle"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-2",
+        "edit": true
+      },
+      {
+        "id": "zV0tr1YGvGm3nzKJpXIhy",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 16,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#9E9E9E",
+            "text": "account Number",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+            "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+            "layout_marginTop": 3,
+            "layout_marginLeft": 10
+          },
+          "bindingKey": "accountNumber"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-3",
+        "edit": true
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_marginTop": 5
+      },
+      "bindingKey": "selectedDonationBeneficiary",
+      "componentId": [
+        "HBH6t-XEznttVR4gTNFLX",
+        "ViZ0NrhSL0MNZqBDa7puw",
+        "CXanrZFjP5Hg6ItlXCLlX",
+        "zV0tr1YGvGm3nzKJpXIhy"
+      ],
+      "swipeButtons": []
+    },
+    "events": [
+      {
+        "triggerId": "Oih89vaS01aoSqxLFcFq-",
+        "triggerName": "Navigate_to_DonationBeneFT_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "layout": [
+      {
+        "id": "Eph2JjHR3DThdPIm20k_7",
+        "name": "List item 0",
+        "path": "0-1-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "HBH6t-XEznttVR4gTNFLX",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+                "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+                "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+                "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "ViZ0NrhSL0MNZqBDa7puw",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "50",
+                "layout_height": "50",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6492ab4069bc7727a8747775",
+                  "name": "twitter_icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "QextW1frS4yRog9zmyAtk",
+                  "gitBranchName": "master",
+                  "folderType": "xhdpi",
+                  "platform": "Android",
+                  "url": "twitter_icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+                  "createdAt": "2023-06-21T07:48:16.754Z",
+                  "updatedAt": "2023-06-21T07:48:16.754Z",
+                  "__v": 0,
+                  "uri": "twitter_icon.png"
+                },
+                "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+                "centerY": "HBH6t-XEznttVR4gTNFLX",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 0,
+                "id": "QextW1frS4yRog9zmyAtk"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-1",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "CXanrZFjP5Hg6ItlXCLlX",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "account title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "layout_marginLeft": 10
+              },
+              "bindingKey": "accountTitle"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-2",
+            "edit": true
+          },
+          {
+            "id": "zV0tr1YGvGm3nzKJpXIhy",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#9E9E9E",
+                "text": "account Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+                "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+                "layout_marginTop": 3,
+                "layout_marginLeft": 10
+              },
+              "bindingKey": "accountNumber"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-3",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_marginTop": 5
+          },
+          "bindingKey": "selectedDonationBeneficiary",
+          "componentId": [],
+          "swipeButtons": []
+        },
+        "events": [
+          {
+            "triggerId": "Oih89vaS01aoSqxLFcFq-",
+            "triggerName": "Navigate_to_DonationBeneFT_Screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "HBH6t-XEznttVR4gTNFLX",
+    "status": "ACTIVE",
+    "name": "View",
+    "attributes": {
+      "name": "View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "leftToLeftOf": "Eph2JjHR3DThdPIm20k_7",
+        "rightToRightOf": "Eph2JjHR3DThdPIm20k_7",
+        "topToTopOf": "Eph2JjHR3DThdPIm20k_7",
+        "bottomToBottomOf": "Eph2JjHR3DThdPIm20k_7"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-1-0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ViZ0NrhSL0MNZqBDa7puw",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "50",
+        "layout_height": "50",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6492ab4069bc7727a8747775",
+          "name": "twitter_icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "QextW1frS4yRog9zmyAtk",
+          "gitBranchName": "master",
+          "folderType": "xhdpi",
+          "platform": "Android",
+          "url": "twitter_icon.png",
+          "canvasUrl": "Android/drawable-xhdpi/twitter_icon.png",
+          "createdAt": "2023-06-21T07:48:16.754Z",
+          "updatedAt": "2023-06-21T07:48:16.754Z",
+          "__v": 0,
+          "uri": "twitter_icon.png"
+        },
+        "leftToLeftOf": "HBH6t-XEznttVR4gTNFLX",
+        "centerY": "HBH6t-XEznttVR4gTNFLX",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 0,
+        "id": "QextW1frS4yRog9zmyAtk"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-1-0-1",
+    "edit": true,
+    "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "CXanrZFjP5Hg6ItlXCLlX",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "account title",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+        "topToTopOf": "ViZ0NrhSL0MNZqBDa7puw",
+        "layout_marginLeft": 10
+      },
+      "bindingKey": "accountTitle"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-2",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zV0tr1YGvGm3nzKJpXIhy",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 16,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#9E9E9E",
+        "text": "account Number",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToRightOf": "ViZ0NrhSL0MNZqBDa7puw",
+        "topToBottomOf": "CXanrZFjP5Hg6ItlXCLlX",
+        "layout_marginTop": 3,
+        "layout_marginLeft": 10
+      },
+      "bindingKey": "accountNumber"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-3",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

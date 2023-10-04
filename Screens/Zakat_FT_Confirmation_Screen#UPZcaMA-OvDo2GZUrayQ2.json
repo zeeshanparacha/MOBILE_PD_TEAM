@@ -45,8 +45,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -109,7 +109,7 @@
             "textAlignment": "right",
             "width_percent": 50
           },
-          "bindingKey": "zaktlist_orgname_data"
+          "bindingKey": "selectedZakatBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -121,7 +121,48 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "N1izHJrrcwUFoLOwHqEfd",
+            "triggerName": "getAccountDetails",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "accNo": "$selectedAcc_QRGenerate.accountNumber",
+                "accountId": "$selectedAcc_QRGenerate.accountId",
+                "accountNumber": "$selectedZakatBeneficiary.accountNumber",
+                "amount": "$zakatAmount",
+                "bankIMD": "$selectedAcc_QRGenerate.bankImd",
+                "bankName": null,
+                "fromAccount": null,
+                "purposeCode": "",
+                "purposeDetail": "",
+                "rda": false,
+                "swiftCode": null,
+                "toAccount": null
+              },
+              "responseStateKey": "zakatAccDetails"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "path": "0-1",
         "edit": true
       },
@@ -135,7 +176,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -197,7 +237,7 @@
       {
         "id": "JzfoJ2YXqvHh8mFf3t7v-",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_ToAccount_Data_Text",
         "attributes": {
           "name": "Zakat_ToAccount_Data_Text",
           "layoutProperties": {
@@ -214,7 +254,7 @@
             "textStyle": "bold",
             "textAlignment": "right"
           },
-          "bindingKey": "zaktlist_orgnum_data"
+          "bindingKey": "selectedZakatBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -227,7 +267,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-4"
+        "path": "0-4",
+        "edit": true
       },
       {
         "id": "FwlshLJYpL6MbbfPB5y2C",
@@ -239,7 +280,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -318,7 +358,8 @@
             "textAlignment": "right",
             "textStyle": "bold",
             "width_percent": 60
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -344,7 +385,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -407,7 +447,7 @@
       {
         "id": "EiBIJSD8A0SVuXGjBUtE2",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_Confirm_FromAccNum_DataText",
         "attributes": {
           "name": "Zakat_Confirm_FromAccNum_DataText",
           "layoutProperties": {
@@ -421,10 +461,10 @@
             "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
             "topToTopOf": "oUjY4uLDNCbNeWYr7cgLC",
             "layout_marginRight": 20,
-               
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -437,7 +477,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-10"
+        "path": "0-10",
+        "edit": true
       },
       {
         "id": "7vvONjWXaiU_QrnlSCtkt",
@@ -449,7 +490,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -528,7 +568,8 @@
             "layout_marginRight": 20,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "zakatAmount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -540,7 +581,20 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "WEcrEJDmfSo_aMPulTr50",
+            "triggerName": "Zakat amount to words",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Amount in words",
+              "bindingKey": "zakatAmount",
+              "selectedBindingKey": "zakatAmtToWrds"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "path": "0-13",
         "edit": true
       },
@@ -554,7 +608,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -657,7 +710,6 @@
             "name": "View",
             "layout_width": "195",
             "layout_height": "63",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F5F5F5",
             "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -771,7 +823,6 @@
             "name": "View",
             "layout_width": "195",
             "layout_height": "63",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -825,12 +876,93 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [
           {
-            "triggerId": "AoKTsfAfMKoWylflUynQv",
-            "triggerName": "Navigate_To_ZakatReceipt_Screen",
-            "serviceType": "NAVIGATION",
+            "triggerId": "ghRM07F1_hxIymeCb4pUn",
+            "triggerName": "Zakat transfer API",
+            "serviceType": "NETWORK",
             "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "cBI7Ts9UNoNlbu6ogLO6p"
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/payment/v1/transfer",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "accountId": "$selectedAcc_QRGenerate.accountId",
+                "actualAmount": "2",
+                "amountInWords": "$zakatAmtToWrds",
+                "bankIMD": "selectedAcc_QRGenerate.bankImd",
+                "bankName": null,
+                "beneficiary": true,
+                "beneficiaryEmail": "",
+                "beneficiaryMobile": "",
+                "beneficiaryName": null,
+                "cardTitle": null,
+                "chargesPayInstr": null,
+                "comments": "other",
+                "convertedAmount": null,
+                "endDate": null,
+                "endingOption": null,
+                "exchangeRate": "1",
+                "executionType": "PAY_NOW",
+                "frequency": null,
+                "fromAccountIban": "$selectedAcc_QRGenerate.iban",
+                "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
+                "fromAccountTitle": "selectedAcc_QRGenerate.accountTitle",
+                "fromBranchCode": null,
+                "fromCardNumber": null,
+                "fromCurrency": "PKR",
+                "iban": null,
+                "instrumentType": "A",
+                "namePrm": null,
+                "noOfOccurrences": 0,
+                "orgCode": null,
+                "otpVisible": false,
+                "purposeOfPayment": "$ft_purpose.value",
+                "rda": false,
+                "requestDate": "10-03-2023",
+                "requestNumber": "37089859",
+                "returnBalance": true,
+                "saveAsBene": false,
+                "standingInstructions": null,
+                "startDate": null,
+                "state": false,
+                "swiftCode": null,
+                "toAccountNumber": "$selectedZakatBeneficiary.accountNumber",
+                "toAccountTitle": "$selectedZakatBeneficiary.accountTitle",
+                "toCardNumber": null,
+                "toCountryCode": null,
+                "toCurrency": "PKR",
+                "transactionCurrency": "PKR",
+                "transactionFee": null,
+                "transferToOption": "beneficiary",
+                "transferType": "L",
+                "validation": null,
+                "raast": false,
+                "byCard": false,
+                "isByCard": false,
+                "isRaast": false,
+                "localIsRaast": false,
+                "raastMessageId": null
+              },
+              "responseStateKey": "zakatTransferData",
+              "conditions": [
+                {
+                  "httpStatus": 200,
+                  "triggerName": "Navigate_To_ZakatReceipt_Screen",
+                  "triggerId": "AoKTsfAfMKoWylflUynQv",
+                  "logic": { "==": [{ "var": "zakatTransferData.code" }, 1] }
+                }
+              ]
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -977,7 +1109,7 @@
                 "textAlignment": "right",
                 "width_percent": 50
               },
-              "bindingKey": "zaktlist_orgname_data"
+              "bindingKey": "selectedZakatBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -989,7 +1121,48 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "N1izHJrrcwUFoLOwHqEfd",
+                "triggerName": "getAccountDetails",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accNo": "$selectedAcc_QRGenerate.accountNumber",
+                    "accountId": "$selectedAcc_QRGenerate.accountId",
+                    "accountNumber": "$selectedZakatBeneficiary.accountNumber",
+                    "amount": "$zakatAmount",
+                    "bankIMD": "$selectedAcc_QRGenerate.bankImd",
+                    "bankName": null,
+                    "fromAccount": null,
+                    "purposeCode": "",
+                    "purposeDetail": "",
+                    "rda": false,
+                    "swiftCode": null,
+                    "toAccount": null
+                  },
+                  "responseStateKey": "zakatAccDetails"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
             "path": "0-1",
             "edit": true
           },
@@ -1003,7 +1176,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1065,7 +1237,7 @@
           {
             "id": "JzfoJ2YXqvHh8mFf3t7v-",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_ToAccount_Data_Text",
             "attributes": {
               "name": "Zakat_ToAccount_Data_Text",
               "layoutProperties": {
@@ -1082,7 +1254,7 @@
                 "textStyle": "bold",
                 "textAlignment": "right"
               },
-              "bindingKey": "zaktlist_orgnum_data"
+              "bindingKey": "selectedZakatBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1095,7 +1267,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-4"
+            "path": "0-4",
+            "edit": true
           },
           {
             "id": "FwlshLJYpL6MbbfPB5y2C",
@@ -1107,7 +1280,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1186,7 +1358,8 @@
                 "textAlignment": "right",
                 "textStyle": "bold",
                 "width_percent": 60
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1212,7 +1385,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1275,7 +1447,7 @@
           {
             "id": "EiBIJSD8A0SVuXGjBUtE2",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_Confirm_FromAccNum_DataText",
             "attributes": {
               "name": "Zakat_Confirm_FromAccNum_DataText",
               "layoutProperties": {
@@ -1289,10 +1461,10 @@
                 "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
                 "topToTopOf": "oUjY4uLDNCbNeWYr7cgLC",
                 "layout_marginRight": 20,
-                   
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1305,7 +1477,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10"
+            "path": "0-10",
+            "edit": true
           },
           {
             "id": "7vvONjWXaiU_QrnlSCtkt",
@@ -1317,7 +1490,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1396,7 +1568,8 @@
                 "layout_marginRight": 20,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "zakatAmount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1408,7 +1581,20 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "WEcrEJDmfSo_aMPulTr50",
+                "triggerName": "Zakat amount to words",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Amount in words",
+                  "bindingKey": "zakatAmount",
+                  "selectedBindingKey": "zakatAmtToWrds"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
             "path": "0-13",
             "edit": true
           },
@@ -1422,7 +1608,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1525,7 +1710,6 @@
                 "name": "View",
                 "layout_width": "195",
                 "layout_height": "63",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F5F5F5",
                 "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1639,7 +1823,6 @@
                 "name": "View",
                 "layout_width": "195",
                 "layout_height": "63",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F69D26",
                 "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1693,12 +1876,95 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [
               {
-                "triggerId": "AoKTsfAfMKoWylflUynQv",
-                "triggerName": "Navigate_To_ZakatReceipt_Screen",
-                "serviceType": "NAVIGATION",
+                "triggerId": "ghRM07F1_hxIymeCb4pUn",
+                "triggerName": "Zakat transfer API",
+                "serviceType": "NETWORK",
                 "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "cBI7Ts9UNoNlbu6ogLO6p"
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/payment/v1/transfer",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accountId": "$selectedAcc_QRGenerate.accountId",
+                    "actualAmount": "2",
+                    "amountInWords": "$zakatAmtToWrds",
+                    "bankIMD": "selectedAcc_QRGenerate.bankImd",
+                    "bankName": null,
+                    "beneficiary": true,
+                    "beneficiaryEmail": "",
+                    "beneficiaryMobile": "",
+                    "beneficiaryName": null,
+                    "cardTitle": null,
+                    "chargesPayInstr": null,
+                    "comments": "other",
+                    "convertedAmount": null,
+                    "endDate": null,
+                    "endingOption": null,
+                    "exchangeRate": "1",
+                    "executionType": "PAY_NOW",
+                    "frequency": null,
+                    "fromAccountIban": "$selectedAcc_QRGenerate.iban",
+                    "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
+                    "fromAccountTitle": "selectedAcc_QRGenerate.accountTitle",
+                    "fromBranchCode": null,
+                    "fromCardNumber": null,
+                    "fromCurrency": "PKR",
+                    "iban": null,
+                    "instrumentType": "A",
+                    "namePrm": null,
+                    "noOfOccurrences": 0,
+                    "orgCode": null,
+                    "otpVisible": false,
+                    "purposeOfPayment": "$ft_purpose.value",
+                    "rda": false,
+                    "requestDate": "10-03-2023",
+                    "requestNumber": "37089859",
+                    "returnBalance": true,
+                    "saveAsBene": false,
+                    "standingInstructions": null,
+                    "startDate": null,
+                    "state": false,
+                    "swiftCode": null,
+                    "toAccountNumber": "$selectedZakatBeneficiary.accountNumber",
+                    "toAccountTitle": "$selectedZakatBeneficiary.accountTitle",
+                    "toCardNumber": null,
+                    "toCountryCode": null,
+                    "toCurrency": "PKR",
+                    "transactionCurrency": "PKR",
+                    "transactionFee": null,
+                    "transferToOption": "beneficiary",
+                    "transferType": "L",
+                    "validation": null,
+                    "raast": false,
+                    "byCard": false,
+                    "isByCard": false,
+                    "isRaast": false,
+                    "localIsRaast": false,
+                    "raastMessageId": null
+                  },
+                  "responseStateKey": "zakatTransferData",
+                  "conditions": [
+                    {
+                      "httpStatus": 200,
+                      "triggerName": "Navigate_To_ZakatReceipt_Screen",
+                      "triggerId": "AoKTsfAfMKoWylflUynQv",
+                      "logic": {
+                        "==": [{ "var": "zakatTransferData.code" }, 1]
+                      }
+                    }
+                  ]
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -1763,7 +2029,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "UPZcaMA-OvDo2GZUrayQ2",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1826,7 +2092,7 @@
         "textAlignment": "right",
         "width_percent": 50
       },
-      "bindingKey": "zaktlist_orgname_data"
+      "bindingKey": "selectedZakatBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1838,7 +2104,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "N1izHJrrcwUFoLOwHqEfd",
+        "triggerName": "getAccountDetails",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-1",
     "edit": true,
     "subType": "component",
@@ -1856,7 +2129,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -1926,7 +2198,7 @@
   {
     "id": "JzfoJ2YXqvHh8mFf3t7v-",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_ToAccount_Data_Text",
     "attributes": {
       "name": "Zakat_ToAccount_Data_Text",
       "layoutProperties": {
@@ -1943,7 +2215,7 @@
         "textStyle": "bold",
         "textAlignment": "right"
       },
-      "bindingKey": "zaktlist_orgnum_data"
+      "bindingKey": "selectedZakatBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1957,6 +2229,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-4",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1972,7 +2245,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2059,7 +2331,8 @@
         "textAlignment": "right",
         "textStyle": "bold",
         "width_percent": 60
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2089,7 +2362,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2160,7 +2432,7 @@
   {
     "id": "EiBIJSD8A0SVuXGjBUtE2",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_Confirm_FromAccNum_DataText",
     "attributes": {
       "name": "Zakat_Confirm_FromAccNum_DataText",
       "layoutProperties": {
@@ -2174,10 +2446,10 @@
         "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
         "topToTopOf": "oUjY4uLDNCbNeWYr7cgLC",
         "layout_marginRight": 20,
-           
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2191,6 +2463,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2206,7 +2479,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2293,7 +2565,8 @@
         "layout_marginRight": 20,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "zakatAmount"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2305,7 +2578,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "WEcrEJDmfSo_aMPulTr50",
+        "triggerName": "Zakat amount to words",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-13",
     "edit": true,
     "subType": "component",
@@ -2323,7 +2603,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2438,7 +2717,6 @@
         "name": "View",
         "layout_width": "195",
         "layout_height": "63",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F5F5F5",
         "leftToLeftOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2564,7 +2842,6 @@
         "name": "View",
         "layout_width": "195",
         "layout_height": "63",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F69D26",
         "rightToRightOf": "UPZcaMA-OvDo2GZUrayQ2",
@@ -2622,8 +2899,8 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [
       {
-        "triggerId": "AoKTsfAfMKoWylflUynQv",
-        "triggerName": "Navigate_To_ZakatReceipt_Screen",
+        "triggerId": "ghRM07F1_hxIymeCb4pUn",
+        "triggerName": "Zakat transfer API",
         "name": "On click",
         "type": "ONCLICK"
       }

@@ -43,14 +43,15 @@
         "IZZ9NiawJn2tcYGDT4EIx",
         "dJDpU8VkQ3unPgStTWIsN",
         "7K6p7vPBykxjTmyi4AGjD",
-        "5jYkHVQXZWPGGauMxucGH"
+        "A0sEqgL52D_WvfKBTxsiZ",
+        "_5YP5PUMEWR6I7mpx1nTj"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
+    "updatedAt": "10/4/2023",
+    "createdAt": "10/4/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -151,7 +152,8 @@
             "textStyle": "bold",
             "layout_marginLeft": 10,
             "layout_marginTop": 10
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -187,7 +189,8 @@
             "paddingStart": 0,
             "layout_marginLeft": 10,
             "layout_marginTop": 0
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -379,7 +382,8 @@
             "layout_marginLeft": 10,
             "layout_marginTop": 10,
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "selectedBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -413,7 +417,8 @@
             "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
             "topToBottomOf": "KsGRLX-6bT2PpNG9dZmZd",
             "layout_marginLeft": 10
-          }
+          },
+          "bindingKey": "selectedBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -433,7 +438,7 @@
         "id": "IfF0iILrRTTryOzi6v9wS",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "Text view9",
         "attributes": {
           "name": "Text view9",
           "layoutProperties": {
@@ -441,7 +446,7 @@
             "layout_width": "120",
             "layout_height": "40",
             "textColor": "#000000",
-            "text": "Start Now",
+            "text": "HABIBMETRO",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
             "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
@@ -461,7 +466,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-10"
+        "path": "0-10",
+        "edit": true
       },
       {
         "id": "1Q4Vn-qKWZ4lZOxm1ebnJ",
@@ -742,7 +748,7 @@
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#000000",
-            "text": "Start Now",
+            "text": "Others",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "s1t7xmsCVJ8uxAJVHcbd7",
             "topToTopOf": "s1t7xmsCVJ8uxAJVHcbd7",
@@ -750,8 +756,10 @@
             "layout_marginLeft": 20,
             "textAlignment": "left",
             "textStyle": "regular",
-            "layout_marginRight": 0
-          }
+            "layout_marginRight": 0,
+            "numberOfLines": 1
+          },
+          "bindingKey": "ft_pos_data.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -877,7 +885,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-22",
+        "path": "0-21",
         "edit": true
       },
       {
@@ -902,8 +910,10 @@
             "bottomToBottomOf": "tr8_H72Ak_lAbRsYU3Rqr",
             "placeHolderTextColor": "#A6A8A4",
             "layout_marginLeft": 20,
-            "placeHolderText": "Enter Amount"
-          }
+            "placeHolderText": "Enter Amount",
+            "keyboardType": "number"
+          },
+          "bindingKey": "ft_amount"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -916,7 +926,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-23",
+        "path": "0-22",
         "edit": true
       },
       {
@@ -1067,28 +1077,26 @@
         ]
       },
       {
-        "id": "5jYkHVQXZWPGGauMxucGH",
+        "id": "A0sEqgL52D_WvfKBTxsiZ",
         "status": "ACTIVE",
         "_id": "61dec753077814a0f374d9f6",
         "name": "Button",
         "attributes": {
           "name": "Button",
           "layoutProperties": {
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            "text": "Start Now",
+            "text": "Cancel",
             "textSize": 10,
             "textColor": "#000000",
             "textStyle": "bold",
             "textAlignment": "center",
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#9BB93B",
+            "background": "#F5F5F5",
             "clickable": true,
-            "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+            "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
             "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-            "width_percent": 50,
-            "layout_marginRight": 10,
-            "leftToRightOf": "vY8HRPYp4Wr7PKDtDyzQ3"
+            "width_percent": 50
           }
         },
         "icon": "FaBimobject",
@@ -1102,6 +1110,56 @@
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
+        "path": "0-26",
+        "edit": true
+      },
+      {
+        "id": "_5YP5PUMEWR6I7mpx1nTj",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "55",
+            "text": "Start Now",
+            "textSize": 10,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1D6131",
+            "clickable": true,
+            "leftToRightOf": "A0sEqgL52D_WvfKBTxsiZ",
+            "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
+            "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+            "width_percent": 50
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "N8CoABxzjVwqMwT8wUUws",
+            "triggerName": "naigate_to_ft_confirmation_screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "bEGZyJq8UtETimH7yyGoa"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-27",
         "edit": true
       }
@@ -1232,7 +1290,8 @@
                 "textStyle": "bold",
                 "layout_marginLeft": 10,
                 "layout_marginTop": 10
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1268,7 +1327,8 @@
                 "paddingStart": 0,
                 "layout_marginLeft": 10,
                 "layout_marginTop": 0
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1460,7 +1520,8 @@
                 "layout_marginLeft": 10,
                 "layout_marginTop": 10,
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "selectedBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1494,7 +1555,8 @@
                 "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
                 "topToBottomOf": "KsGRLX-6bT2PpNG9dZmZd",
                 "layout_marginLeft": 10
-              }
+              },
+              "bindingKey": "selectedBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1514,7 +1576,7 @@
             "id": "IfF0iILrRTTryOzi6v9wS",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "Text view9",
             "attributes": {
               "name": "Text view9",
               "layoutProperties": {
@@ -1522,7 +1584,7 @@
                 "layout_width": "120",
                 "layout_height": "40",
                 "textColor": "#000000",
-                "text": "Start Now",
+                "text": "HABIBMETRO",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
                 "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
@@ -1542,7 +1604,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10"
+            "path": "0-10",
+            "edit": true
           },
           {
             "id": "1Q4Vn-qKWZ4lZOxm1ebnJ",
@@ -1823,7 +1886,7 @@
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
-                "text": "Start Now",
+                "text": "Others",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "s1t7xmsCVJ8uxAJVHcbd7",
                 "topToTopOf": "s1t7xmsCVJ8uxAJVHcbd7",
@@ -1831,8 +1894,10 @@
                 "layout_marginLeft": 20,
                 "textAlignment": "left",
                 "textStyle": "regular",
-                "layout_marginRight": 0
-              }
+                "layout_marginRight": 0,
+                "numberOfLines": 1
+              },
+              "bindingKey": "ft_pos_data.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1958,7 +2023,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-22",
+            "path": "0-21",
             "edit": true
           },
           {
@@ -1983,8 +2048,10 @@
                 "bottomToBottomOf": "tr8_H72Ak_lAbRsYU3Rqr",
                 "placeHolderTextColor": "#A6A8A4",
                 "layout_marginLeft": 20,
-                "placeHolderText": "Enter Amount"
-              }
+                "placeHolderText": "Enter Amount",
+                "keyboardType": "number"
+              },
+              "bindingKey": "ft_amount"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1997,7 +2064,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-23",
+            "path": "0-22",
             "edit": true
           },
           {
@@ -2148,28 +2215,26 @@
             ]
           },
           {
-            "id": "5jYkHVQXZWPGGauMxucGH",
+            "id": "A0sEqgL52D_WvfKBTxsiZ",
             "status": "ACTIVE",
             "_id": "61dec753077814a0f374d9f6",
             "name": "Button",
             "attributes": {
               "name": "Button",
               "layoutProperties": {
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                "text": "Start Now",
+                "text": "Cancel",
                 "textSize": 10,
                 "textColor": "#000000",
                 "textStyle": "bold",
                 "textAlignment": "center",
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#9BB93B",
+                "background": "#F5F5F5",
                 "clickable": true,
-                "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+                "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
                 "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-                "width_percent": 50,
-                "layout_marginRight": 10,
-                "leftToRightOf": "vY8HRPYp4Wr7PKDtDyzQ3"
+                "width_percent": 50
               }
             },
             "icon": "FaBimobject",
@@ -2183,6 +2248,56 @@
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
+            "path": "0-26",
+            "edit": true
+          },
+          {
+            "id": "_5YP5PUMEWR6I7mpx1nTj",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "text": "Start Now",
+                "textSize": 10,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "leftToRightOf": "A0sEqgL52D_WvfKBTxsiZ",
+                "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
+                "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "N8CoABxzjVwqMwT8wUUws",
+                "triggerName": "naigate_to_ft_confirmation_screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "bEGZyJq8UtETimH7yyGoa"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-27",
             "edit": true
           }
@@ -2193,7 +2308,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "_4yOlce8rPxi-l-tf5fT7",
-    "createdBy": "muzammil1",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2295,7 +2410,8 @@
         "textStyle": "bold",
         "layout_marginLeft": 10,
         "layout_marginTop": 10
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2334,7 +2450,8 @@
         "paddingStart": 0,
         "layout_marginLeft": 10,
         "layout_marginTop": 0
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2534,7 +2651,8 @@
         "layout_marginLeft": 10,
         "layout_marginTop": 10,
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "selectedBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2571,7 +2689,8 @@
         "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
         "topToBottomOf": "KsGRLX-6bT2PpNG9dZmZd",
         "layout_marginLeft": 10
-      }
+      },
+      "bindingKey": "selectedBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2594,7 +2713,7 @@
   {
     "id": "IfF0iILrRTTryOzi6v9wS",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Text view9",
     "attributes": {
       "name": "Text view9",
       "layoutProperties": {
@@ -2602,7 +2721,7 @@
         "layout_width": "120",
         "layout_height": "40",
         "textColor": "#000000",
-        "text": "Start Now",
+        "text": "HABIBMETRO",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
         "leftToLeftOf": "2Naxg6Vrtf7BD7ktNVsX0",
@@ -2623,6 +2742,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2862,11 +2982,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-16",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2901,11 +3021,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-17",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2921,7 +3041,7 @@
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#000000",
-        "text": "Start Now",
+        "text": "Others",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "s1t7xmsCVJ8uxAJVHcbd7",
         "topToTopOf": "s1t7xmsCVJ8uxAJVHcbd7",
@@ -2929,8 +3049,10 @@
         "layout_marginLeft": 20,
         "textAlignment": "left",
         "textStyle": "regular",
-        "layout_marginRight": 0
-      }
+        "layout_marginRight": 0,
+        "numberOfLines": 1
+      },
+      "bindingKey": "ft_pos_data.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2941,11 +3063,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-18",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2981,11 +3103,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-19",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3020,11 +3142,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
     "path": "0-21",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3063,11 +3185,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-22",
+    "path": "0-21",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3093,8 +3215,10 @@
         "bottomToBottomOf": "tr8_H72Ak_lAbRsYU3Rqr",
         "placeHolderTextColor": "#A6A8A4",
         "layout_marginLeft": 20,
-        "placeHolderText": "Enter Amount"
-      }
+        "placeHolderText": "Enter Amount",
+        "keyboardType": "number"
+      },
+      "bindingKey": "ft_amount"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -3105,11 +3229,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-23",
+    "path": "0-22",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3144,11 +3268,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-23",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3183,10 +3307,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Switch", "type": "SWITCH" },
     "bindingkey": "ft_schedule_payment",
     "path": "0-25",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3238,7 +3362,6 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-25",
     "edit": true,
@@ -3250,32 +3373,31 @@
         "type": "ONCLICK"
       }
     ],
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "5jYkHVQXZWPGGauMxucGH",
+    "id": "A0sEqgL52D_WvfKBTxsiZ",
     "status": "ACTIVE",
     "name": "Button",
     "attributes": {
       "name": "Button",
       "layoutProperties": {
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        "text": "Start Now",
+        "text": "Cancel",
         "textSize": 10,
         "textColor": "#000000",
         "textStyle": "bold",
         "textAlignment": "center",
         "cornerRadius": [0, 0, 0, 0],
-        "background": "#9BB93B",
+        "background": "#F5F5F5",
         "clickable": true,
-        "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+        "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
         "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-        "width_percent": 50,
-        "layout_marginRight": 10,
-        "leftToRightOf": "vY8HRPYp4Wr7PKDtDyzQ3"
+        "width_percent": 50
       }
     },
     "icon": "FaBimobject",
@@ -3287,11 +3409,59 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
+    "path": "0-26",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "_5YP5PUMEWR6I7mpx1nTj",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "match_constraint",
+        "layout_height": "55",
+        "text": "Start Now",
+        "textSize": 10,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1D6131",
+        "clickable": true,
+        "leftToRightOf": "A0sEqgL52D_WvfKBTxsiZ",
+        "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
+        "rightToRightOf": "_4yOlce8rPxi-l-tf5fT7",
+        "width_percent": 50
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "N8CoABxzjVwqMwT8wUUws",
+        "triggerName": "naigate_to_ft_confirmation_screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-27",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

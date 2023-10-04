@@ -14,7 +14,9 @@
         "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "nB8Au3vcJ7ff9qJQUtZkp",
@@ -25,9 +27,16 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
-    "events": [],
+    "updatedAt": "10/4/2023",
+    "createdAt": "10/4/2023",
+    "events": [
+      {
+        "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
+        "triggerName": "getTermsAndConditions",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -68,7 +77,36 @@
         "component": { "content": "Web view", "type": "WEBVIEW" },
         "path": "0-0",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
+            "triggerName": "getTermsAndConditions",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Content-Length": "35"
+              },
+              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+              "requestDataType": "byJSON",
+              "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
+              "responseStateKey": "termsAndConditions"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ]
       },
       {
         "id": "LQHygcYywh0IQZvSqtfKo",
@@ -139,12 +177,25 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "fvt0tTKkkqNDij4hIjlCO",
+            "triggerName": "navigate to stock submit screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "wwbgMF6R7E5wHjbPTnR-E"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-2",
         "edit": true
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "NL2yQRHDuEn6tUvBfo23e",
@@ -161,7 +212,9 @@
             "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -170,7 +223,36 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
+            "triggerName": "getTermsAndConditions",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "Content-Length": "35"
+              },
+              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+              "requestDataType": "byJSON",
+              "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
+              "responseStateKey": "termsAndConditions"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -211,7 +293,36 @@
             "component": { "content": "Web view", "type": "WEBVIEW" },
             "path": "0-0",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
+                "triggerName": "getTermsAndConditions",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "Content-Length": "35"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
+                  "responseStateKey": "termsAndConditions"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ]
           },
           {
             "id": "LQHygcYywh0IQZvSqtfKo",
@@ -282,18 +393,31 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "fvt0tTKkkqNDij4hIjlCO",
+                "triggerName": "navigate to stock submit screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "wwbgMF6R7E5wHjbPTnR-E"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-2",
             "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "NL2yQRHDuEn6tUvBfo23e",
-    "createdBy": "ammarahmed",
+    "createdBy": "muzzamil",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -330,7 +454,14 @@
     "component": { "content": "Web view", "type": "WEBVIEW" },
     "path": "0-0",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
+        "triggerName": "getTermsAndConditions",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -367,10 +498,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
     "path": "0-1",
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -406,11 +537,18 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "fvt0tTKkkqNDij4hIjlCO",
+        "triggerName": "navigate to stock submit screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-2",
     "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

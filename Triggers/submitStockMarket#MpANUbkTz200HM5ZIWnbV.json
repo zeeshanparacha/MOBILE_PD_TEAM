@@ -1,0 +1,57 @@
+{
+  "id": "NS2fPO8Pp9F7mOwDPynTy",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "submitStockMarket",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com:443/account/v1/cdc/submit",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "investmentTypeCode": "0",
+            "emailAddress": "fkmirza75@gmail.com",
+            "borkerName": "$seelctedBroker.participantName",
+            "accountId": "$selectedAcc_QRGenerate.accountId",
+            "userConsent": true,
+            "mobileNumber": "03002533013",
+            "otpInfo": {
+              "splitOtp": false,
+              "validationType": "OTP",
+              "smsPin": "12345",
+              "emailPin": ""
+            },
+            "investmentTypeValue": "Stocks",
+            "brokerId": "$seelctedBroker.brokerId"
+          },
+          "responseStateKey": "submitStock"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.uhg3m3ed73IAwBu7Ih1kRIew2GTqj46",
+  "_id": "MpANUbkTz200HM5ZIWnbV",
+  "updatedAt": "10/4/2023",
+  "createdAt": "10/4/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

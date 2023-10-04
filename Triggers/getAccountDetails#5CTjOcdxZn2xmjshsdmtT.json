@@ -1,0 +1,56 @@
+{
+  "id": "N1izHJrrcwUFoLOwHqEfd",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getAccountDetails",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accNo": "$selectedAcc_QRGenerate.accountNumber",
+            "accountId": "$selectedAcc_QRGenerate.accountId",
+            "accountNumber": "$selectedZakatBeneficiary.accountNumber",
+            "amount": "$zakatAmount",
+            "bankIMD": "$selectedAcc_QRGenerate.bankImd",
+            "bankName": null,
+            "fromAccount": null,
+            "purposeCode": "",
+            "purposeDetail": "$ft_pos_data.value",
+            "rda": false,
+            "swiftCode": null,
+            "toAccount": null
+          },
+          "responseStateKey": "zakatAccDetails"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.83zbdxdwtxm8otEMycMlIoxQ6pGzYAp2",
+  "_id": "5CTjOcdxZn2xmjshsdmtT",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "getAccountDetails"
+}

@@ -49,8 +49,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -269,7 +269,7 @@
             "textStyle": "bold",
             "textAlignment": "right"
           },
-          "bindingKey": "zaktlist_orgname_data"
+          "bindingKey": "selectedZakatBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -282,7 +282,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-5"
+        "path": "0-5",
+        "edit": true
       },
       {
         "id": "iyRUQ0iId6HPlc21kuJft",
@@ -294,7 +295,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -374,7 +374,7 @@
             "textStyle": "bold",
             "width_percent": 60
           },
-          "bindingKey": "zaktlist_orgnum_data"
+          "bindingKey": "selectedZakatBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -400,7 +400,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -476,11 +475,11 @@
             "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",
             "topToTopOf": "tTq61BeLvzlS-o8r9ckiC",
             "layout_marginRight": 20,
-               
             "textStyle": "bold",
             "textAlignment": "right",
             "width_percent": 60
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -506,7 +505,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -584,7 +582,8 @@
             "layout_marginRight": 20,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "zakatAmount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -610,7 +609,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -713,7 +711,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "1",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#EAEDEA",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -775,7 +772,7 @@
       {
         "id": "lFQZl6ekggJszXPLseHYV",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "Zakat_Receipt_Comment_DataText",
         "attributes": {
           "name": "Zakat_Receipt_Comment_DataText",
           "layoutProperties": {
@@ -791,7 +788,8 @@
             "layout_marginRight": 20,
             "textAlignment": "right",
             "textStyle": "bold"
-          }
+          },
+          "bindingKey": "zakatComment"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -804,7 +802,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-20"
+        "path": "0-20",
+        "edit": true
       },
       {
         "id": "jxquWg9onpxmU8TZpZUN_",
@@ -817,7 +816,6 @@
             "name": "View",
             "layout_width": "200",
             "layout_height": "63",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#F69D26",
             "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -932,7 +930,6 @@
             "name": "View",
             "layout_width": "200",
             "layout_height": "63",
-               
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1282,7 +1279,7 @@
                 "textStyle": "bold",
                 "textAlignment": "right"
               },
-              "bindingKey": "zaktlist_orgname_data"
+              "bindingKey": "selectedZakatBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1295,7 +1292,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-5"
+            "path": "0-5",
+            "edit": true
           },
           {
             "id": "iyRUQ0iId6HPlc21kuJft",
@@ -1307,7 +1305,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1387,7 +1384,7 @@
                 "textStyle": "bold",
                 "width_percent": 60
               },
-              "bindingKey": "zaktlist_orgnum_data"
+              "bindingKey": "selectedZakatBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1413,7 +1410,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1489,11 +1485,11 @@
                 "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",
                 "topToTopOf": "tTq61BeLvzlS-o8r9ckiC",
                 "layout_marginRight": 20,
-                   
                 "textStyle": "bold",
                 "textAlignment": "right",
                 "width_percent": 60
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1519,7 +1515,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1597,7 +1592,8 @@
                 "layout_marginRight": 20,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "zakatAmount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1623,7 +1619,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1726,7 +1721,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "1",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#EAEDEA",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1788,7 +1782,7 @@
           {
             "id": "lFQZl6ekggJszXPLseHYV",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "Zakat_Receipt_Comment_DataText",
             "attributes": {
               "name": "Zakat_Receipt_Comment_DataText",
               "layoutProperties": {
@@ -1804,7 +1798,8 @@
                 "layout_marginRight": 20,
                 "textAlignment": "right",
                 "textStyle": "bold"
-              }
+              },
+              "bindingKey": "zakatComment"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1817,7 +1812,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-20"
+            "path": "0-20",
+            "edit": true
           },
           {
             "id": "jxquWg9onpxmU8TZpZUN_",
@@ -1830,7 +1826,6 @@
                 "name": "View",
                 "layout_width": "200",
                 "layout_height": "63",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#F69D26",
                 "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -1945,7 +1940,6 @@
                 "name": "View",
                 "layout_width": "200",
                 "layout_height": "63",
-                   
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2057,7 +2051,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "cBI7Ts9UNoNlbu6ogLO6p",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2292,7 +2286,7 @@
         "textStyle": "bold",
         "textAlignment": "right"
       },
-      "bindingKey": "zaktlist_orgname_data"
+      "bindingKey": "selectedZakatBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2306,6 +2300,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-5",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2321,7 +2316,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2409,7 +2403,7 @@
         "textStyle": "bold",
         "width_percent": 60
       },
-      "bindingKey": "zaktlist_orgnum_data"
+      "bindingKey": "selectedZakatBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2439,7 +2433,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2523,11 +2516,11 @@
         "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",
         "topToTopOf": "tTq61BeLvzlS-o8r9ckiC",
         "layout_marginRight": 20,
-           
         "textStyle": "bold",
         "textAlignment": "right",
         "width_percent": 60
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2557,7 +2550,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2643,7 +2635,8 @@
         "layout_marginRight": 20,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "zakatAmount"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2673,7 +2666,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2788,7 +2780,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "1",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#EAEDEA",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -2858,7 +2849,7 @@
   {
     "id": "lFQZl6ekggJszXPLseHYV",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Zakat_Receipt_Comment_DataText",
     "attributes": {
       "name": "Zakat_Receipt_Comment_DataText",
       "layoutProperties": {
@@ -2874,7 +2865,8 @@
         "layout_marginRight": 20,
         "textAlignment": "right",
         "textStyle": "bold"
-      }
+      },
+      "bindingKey": "zakatComment"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2888,6 +2880,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-20",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2903,7 +2896,6 @@
         "name": "View",
         "layout_width": "200",
         "layout_height": "63",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#F69D26",
         "leftToLeftOf": "cBI7Ts9UNoNlbu6ogLO6p",
@@ -3027,7 +3019,6 @@
         "name": "View",
         "layout_width": "200",
         "layout_height": "63",
-           
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "rightToRightOf": "cBI7Ts9UNoNlbu6ogLO6p",

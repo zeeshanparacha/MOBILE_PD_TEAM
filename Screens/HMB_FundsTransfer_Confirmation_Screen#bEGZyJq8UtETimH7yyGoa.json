@@ -51,8 +51,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/14/2023",
-    "createdAt": "9/14/2023",
+    "updatedAt": "10/4/2023",
+    "createdAt": "10/4/2023",
     "events": [
       {
         "triggerId": "gV9CYKENTone5l-YNwUsK",
@@ -157,7 +157,7 @@
             "textAlignment": "right",
             "width_percent": 50
           },
-          "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
+          "bindingKey": "selectedBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -262,7 +262,7 @@
             "textAlignment": "right",
             "width_percent": 50
           },
-          "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
+          "bindingKey": "selectedBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -470,7 +470,7 @@
             "textStyle": "bold",
             "width_percent": 50
           },
-          "bindingKey": "ft_transferfrom_itemdata"
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -574,7 +574,8 @@
             "textStyle": "bold",
             "textAlignment": "right",
             "width_percent": 50
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -678,7 +679,7 @@
             "textAlignment": "right",
             "textStyle": "bold"
           },
-          "bindingKey": "ft_amount_data"
+          "bindingKey": "ft_amount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1188,7 +1189,7 @@
                 "textAlignment": "right",
                 "width_percent": 50
               },
-              "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
+              "bindingKey": "selectedBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1293,7 +1294,7 @@
                 "textAlignment": "right",
                 "width_percent": 50
               },
-              "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
+              "bindingKey": "selectedBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1501,7 +1502,7 @@
                 "textStyle": "bold",
                 "width_percent": 50
               },
-              "bindingKey": "ft_transferfrom_itemdata"
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1605,7 +1606,8 @@
                 "textStyle": "bold",
                 "textAlignment": "right",
                 "width_percent": 50
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1709,7 +1711,7 @@
                 "textAlignment": "right",
                 "textStyle": "bold"
               },
-              "bindingKey": "ft_amount_data"
+              "bindingKey": "ft_amount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -2189,7 +2191,7 @@
         "textAlignment": "right",
         "width_percent": 50
       },
-      "bindingKey": "hmb_getAllAccounts_dataItems.accountTitle"
+      "bindingKey": "selectedBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2306,7 +2308,7 @@
         "textAlignment": "right",
         "width_percent": 50
       },
-      "bindingKey": "hmb_getAllAccounts_dataItems.accountNumber"
+      "bindingKey": "selectedBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2538,7 +2540,7 @@
         "textStyle": "bold",
         "width_percent": 50
       },
-      "bindingKey": "ft_transferfrom_itemdata"
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2654,7 +2656,8 @@
         "textStyle": "bold",
         "textAlignment": "right",
         "width_percent": 50
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2770,7 +2773,7 @@
         "textAlignment": "right",
         "textStyle": "bold"
       },
-      "bindingKey": "ft_amount_data"
+      "bindingKey": "ft_amount"
     },
     "icon": "FaTextWidth",
     "group": "Form",

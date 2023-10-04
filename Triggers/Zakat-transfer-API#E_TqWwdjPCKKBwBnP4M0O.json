@@ -1,7 +1,7 @@
 {
-  "id": "ZpY4qG6N-RMk-U8I3v6k7",
+  "id": "ghRM07F1_hxIymeCb4pUn",
   "projectId": "63ef72a290c5800428f84dd9",
-  "name": "HMB_Transfer_Api_Trig",
+  "name": "Zakat transfer API",
   "status": "ACTIVE",
   "services": [
     {
@@ -27,8 +27,8 @@
           "requestDataType": "byJSON",
           "requestBody": {
             "accountId": "$selectedAcc_QRGenerate.accountId",
-            "actualAmount": "$ft_amount",
-            "amountInWords": "$ft_amount_words",
+            "actualAmount": "2",
+            "amountInWords": "$zakatAmtToWrds",
             "bankIMD": "$selectedAcc_QRGenerate.bankImd",
             "bankName": null,
             "beneficiary": true,
@@ -83,13 +83,13 @@
             "localIsRaast": false,
             "raastMessageId": null
           },
-          "responseStateKey": "hmb_transfer_data",
+          "responseStateKey": "zakatTransferData",
           "conditions": [
             {
               "httpStatus": 200,
-              "triggerName": "navigate_to_ft_receipt_screen",
-              "triggerId": "nDokhQIWUijzojKrpOY8o",
-              "logic": { "==": [{ "var": "hmb_transfer_data.code" }, 1] }
+              "triggerName": "Navigate_To_ZakatReceipt_Screen",
+              "triggerId": "AoKTsfAfMKoWylflUynQv",
+              "logic": { "==": [{ "var": "zakatTransferData.code" }, 1] }
             }
           ]
         },
@@ -98,11 +98,11 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.a7s97wfjztdzB27I382kbbU6_bMvf0DL",
-  "_id": "zjT3LlaQ7IHwSFEvw54lI",
-  "updatedAt": "10/4/2023",
-  "createdAt": "10/4/2023",
+  "csrf": "0.uduvvh3r1gmIAWBHde2eQFn2G1ocLUg",
+  "_id": "E_TqWwdjPCKKBwBnP4M0O",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
-  "old_name": "HMB_Transfer_Api_Trig"
+  "old_name": "Zakat transfer API"
 }

@@ -26,8 +26,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/8/2023",
-    "createdAt": "5/8/2023",
+    "updatedAt": "10/4/2023",
+    "createdAt": "10/4/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -120,7 +120,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-             
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "WdsgE1BIGxlEPHugag0n5",
@@ -224,18 +223,31 @@
         "id": "SqjUGwNYLgL9qUU6j29hB",
         "type": "VLIST",
         "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
-        "component": { "content": "List view", "type": "VLIST" },
+        "component": { "type": "VLIST" },
         "attributes": {
           "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "layout_height": "wrap_content",
             "layout_width": "match_parent",
-            "rows": [{ "id": "x-f9lJGP_Y0eC9oGk6Odm" }],
+            "rows": [
+              {
+                "id": "x-f9lJGP_Y0eC9oGk6Odm",
+                "bindingKey": "selectedBeneficiary",
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
             "leftToLeftOf": "7Wk7lZ9QQc4YsAEbxMOzK",
             "topToBottomOf": "zo58c6GDpmE_gcAUIaS5M"
           },
-          "bindingKey": "beneft_btmsht_bene_data",
+          "bindingKey": "hmb_getBeneList_data.content.beneficiaries",
           "componentId": []
         },
         "events": [],
@@ -258,7 +270,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                     
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -283,7 +294,7 @@
               {
                 "id": "_vjGLZjcuLFwCl38qY9MD",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                   "layoutProperties": {
@@ -301,7 +312,7 @@
                     "textStyle": "regular",
                     "textAlignment": "left"
                   },
-                  "bindingKey": "beneft_btmsht_bene_accname"
+                  "bindingKey": "alias"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -314,12 +325,13 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-1"
+                "path": "0-3-0-1",
+                "edit": true
               },
               {
                 "id": "SyweYMVL74EQrWixXyRhR",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                   "layoutProperties": {
@@ -336,7 +348,7 @@
                     "textStyle": "regular",
                     "textAlignment": "left"
                   },
-                  "bindingKey": "beneft_btmsht_bene_accnum"
+                  "bindingKey": "accountNumber"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -349,12 +361,13 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-2"
+                "path": "0-3-0-2",
+                "edit": true
               },
               {
                 "id": "S1Jn-PAKn_qzyU7jRAHCb",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                   "layoutProperties": {
@@ -370,8 +383,7 @@
                     "layout_marginTop": 5,
                     "textStyle": "regular",
                     "textAlignment": "left"
-                  },
-                  "bindingKey": "beneft_btmsht_bene_bankname"
+                  }
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -384,7 +396,8 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-3"
+                "path": "0-3-0-3",
+                "edit": true
               }
             ],
             "attributes": {
@@ -398,10 +411,20 @@
                 "layout_marginRight": 10,
                 "background": "#0573E8"
               },
-              "componentId": []
-            }
+              "componentId": [],
+              "bindingKey": "selectedBeneficiary"
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
-        ]
+        ],
+        "edit": true
       }
     ],
     "subType": "widget",
@@ -522,7 +545,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "3",
-                 
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#1D6131",
                 "leftToLeftOf": "WdsgE1BIGxlEPHugag0n5",
@@ -626,18 +648,31 @@
             "id": "SqjUGwNYLgL9qUU6j29hB",
             "type": "VLIST",
             "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
-            "component": { "content": "List view", "type": "VLIST" },
+            "component": { "type": "VLIST" },
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
                 "layout_height": "wrap_content",
                 "layout_width": "match_parent",
-                "rows": [{ "id": "x-f9lJGP_Y0eC9oGk6Odm" }],
+                "rows": [
+                  {
+                    "id": "x-f9lJGP_Y0eC9oGk6Odm",
+                    "bindingKey": "selectedBeneficiary",
+                    "events": [
+                      {
+                        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                        "triggerName": "abc",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
                 "leftToLeftOf": "7Wk7lZ9QQc4YsAEbxMOzK",
                 "topToBottomOf": "zo58c6GDpmE_gcAUIaS5M"
               },
-              "bindingKey": "beneft_btmsht_bene_data",
+              "bindingKey": "hmb_getBeneList_data.content.beneficiaries",
               "componentId": []
             },
             "events": [],
@@ -660,7 +695,6 @@
                         "name": "View",
                         "layout_width": "match_parent",
                         "layout_height": "match_parent",
-                         
                         "cornerRadius": [0, 0, 0, 0],
                         "background": "#FFFFFF",
                         "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -685,7 +719,7 @@
                   {
                     "id": "_vjGLZjcuLFwCl38qY9MD",
                     "status": "ACTIVE",
-                    "name": "Text view",
+                    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                     "attributes": {
                       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                       "layoutProperties": {
@@ -703,7 +737,7 @@
                         "textStyle": "regular",
                         "textAlignment": "left"
                       },
-                      "bindingKey": "beneft_btmsht_bene_accname"
+                      "bindingKey": "alias"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -716,12 +750,13 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-3-0-1"
+                    "path": "0-3-0-1",
+                    "edit": true
                   },
                   {
                     "id": "SyweYMVL74EQrWixXyRhR",
                     "status": "ACTIVE",
-                    "name": "Text view",
+                    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                     "attributes": {
                       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                       "layoutProperties": {
@@ -738,7 +773,7 @@
                         "textStyle": "regular",
                         "textAlignment": "left"
                       },
-                      "bindingKey": "beneft_btmsht_bene_accnum"
+                      "bindingKey": "accountNumber"
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -751,12 +786,13 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-3-0-2"
+                    "path": "0-3-0-2",
+                    "edit": true
                   },
                   {
                     "id": "S1Jn-PAKn_qzyU7jRAHCb",
                     "status": "ACTIVE",
-                    "name": "Text view",
+                    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                     "attributes": {
                       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                       "layoutProperties": {
@@ -772,8 +808,7 @@
                         "layout_marginTop": 5,
                         "textStyle": "regular",
                         "textAlignment": "left"
-                      },
-                      "bindingKey": "beneft_btmsht_bene_bankname"
+                      }
                     },
                     "icon": "FaTextWidth",
                     "group": "Form",
@@ -786,7 +821,8 @@
                     "projectType": "mobile",
                     "component": { "content": "Text view", "type": "TEXTVIEW" },
                     "events": [],
-                    "path": "0-3-0-3"
+                    "path": "0-3-0-3",
+                    "edit": true
                   }
                 ],
                 "attributes": {
@@ -800,10 +836,20 @@
                     "layout_marginRight": 10,
                     "background": "#0573E8"
                   },
-                  "componentId": []
-                }
+                  "componentId": [],
+                  "bindingKey": "selectedBeneficiary"
+                },
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
               }
-            ]
+            ],
+            "edit": true
           }
         ],
         "subType": "widget"
@@ -812,7 +858,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "7Wk7lZ9QQc4YsAEbxMOzK",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -905,7 +951,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "3",
-         
         "cornerRadius": [0, 0, 0, 0],
         "background": "#1D6131",
         "leftToLeftOf": "WdsgE1BIGxlEPHugag0n5",
@@ -983,18 +1028,31 @@
     "id": "SqjUGwNYLgL9qUU6j29hB",
     "type": "VLIST",
     "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
-    "component": { "content": "List view", "type": "VLIST" },
+    "component": { "type": "VLIST" },
     "attributes": {
       "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
         "layout_height": "wrap_content",
         "layout_width": "match_parent",
-        "rows": [{ "id": "x-f9lJGP_Y0eC9oGk6Odm" }],
+        "rows": [
+          {
+            "id": "x-f9lJGP_Y0eC9oGk6Odm",
+            "bindingKey": "selectedBeneficiary",
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
         "leftToLeftOf": "7Wk7lZ9QQc4YsAEbxMOzK",
         "topToBottomOf": "zo58c6GDpmE_gcAUIaS5M"
       },
-      "bindingKey": "beneft_btmsht_bene_data",
+      "bindingKey": "hmb_getBeneList_data.content.beneficiaries",
       "componentId": ["x-f9lJGP_Y0eC9oGk6Odm"]
     },
     "events": [],
@@ -1017,7 +1075,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                 
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1042,7 +1099,7 @@
           {
             "id": "_vjGLZjcuLFwCl38qY9MD",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
               "layoutProperties": {
@@ -1060,7 +1117,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "beneft_btmsht_bene_accname"
+              "bindingKey": "alias"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1073,12 +1130,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-1"
+            "path": "0-3-0-1",
+            "edit": true
           },
           {
             "id": "SyweYMVL74EQrWixXyRhR",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
               "layoutProperties": {
@@ -1095,7 +1153,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "beneft_btmsht_bene_accnum"
+              "bindingKey": "accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1108,12 +1166,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-2"
+            "path": "0-3-0-2",
+            "edit": true
           },
           {
             "id": "S1Jn-PAKn_qzyU7jRAHCb",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
               "layoutProperties": {
@@ -1129,8 +1188,7 @@
                 "layout_marginTop": 5,
                 "textStyle": "regular",
                 "textAlignment": "left"
-              },
-              "bindingKey": "beneft_btmsht_bene_bankname"
+              }
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1143,7 +1201,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-3"
+            "path": "0-3-0-3",
+            "edit": true
           }
         ],
         "attributes": {
@@ -1157,10 +1216,20 @@
             "layout_marginRight": 10,
             "background": "#0573E8"
           },
-          "componentId": []
-        }
+          "componentId": [],
+          "bindingKey": "selectedBeneficiary"
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
+    "edit": true,
     "layout": [
       {
         "id": "WdsgE1BIGxlEPHugag0n5",
@@ -1248,7 +1317,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "3",
-             
             "cornerRadius": [0, 0, 0, 0],
             "background": "#1D6131",
             "leftToLeftOf": "WdsgE1BIGxlEPHugag0n5",
@@ -1352,18 +1420,31 @@
         "id": "SqjUGwNYLgL9qUU6j29hB",
         "type": "VLIST",
         "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
-        "component": { "content": "List view", "type": "VLIST" },
+        "component": { "type": "VLIST" },
         "attributes": {
           "name": "BeneFT_AccList_Btmsht_Bene_Vlist",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
             "layout_height": "wrap_content",
             "layout_width": "match_parent",
-            "rows": [{ "id": "x-f9lJGP_Y0eC9oGk6Odm" }],
+            "rows": [
+              {
+                "id": "x-f9lJGP_Y0eC9oGk6Odm",
+                "bindingKey": "selectedBeneficiary",
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
             "leftToLeftOf": "7Wk7lZ9QQc4YsAEbxMOzK",
             "topToBottomOf": "zo58c6GDpmE_gcAUIaS5M"
           },
-          "bindingKey": "beneft_btmsht_bene_data",
+          "bindingKey": "hmb_getBeneList_data.content.beneficiaries",
           "componentId": []
         },
         "events": [],
@@ -1386,7 +1467,6 @@
                     "name": "View",
                     "layout_width": "match_parent",
                     "layout_height": "match_parent",
-                     
                     "cornerRadius": [0, 0, 0, 0],
                     "background": "#FFFFFF",
                     "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1411,7 +1491,7 @@
               {
                 "id": "_vjGLZjcuLFwCl38qY9MD",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
                   "layoutProperties": {
@@ -1429,7 +1509,7 @@
                     "textStyle": "regular",
                     "textAlignment": "left"
                   },
-                  "bindingKey": "beneft_btmsht_bene_accname"
+                  "bindingKey": "alias"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1442,12 +1522,13 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-1"
+                "path": "0-3-0-1",
+                "edit": true
               },
               {
                 "id": "SyweYMVL74EQrWixXyRhR",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
                   "layoutProperties": {
@@ -1464,7 +1545,7 @@
                     "textStyle": "regular",
                     "textAlignment": "left"
                   },
-                  "bindingKey": "beneft_btmsht_bene_accnum"
+                  "bindingKey": "accountNumber"
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1477,12 +1558,13 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-2"
+                "path": "0-3-0-2",
+                "edit": true
               },
               {
                 "id": "S1Jn-PAKn_qzyU7jRAHCb",
                 "status": "ACTIVE",
-                "name": "Text view",
+                "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                 "attributes": {
                   "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
                   "layoutProperties": {
@@ -1498,8 +1580,7 @@
                     "layout_marginTop": 5,
                     "textStyle": "regular",
                     "textAlignment": "left"
-                  },
-                  "bindingKey": "beneft_btmsht_bene_bankname"
+                  }
                 },
                 "icon": "FaTextWidth",
                 "group": "Form",
@@ -1512,7 +1593,8 @@
                 "projectType": "mobile",
                 "component": { "content": "Text view", "type": "TEXTVIEW" },
                 "events": [],
-                "path": "0-3-0-3"
+                "path": "0-3-0-3",
+                "edit": true
               }
             ],
             "attributes": {
@@ -1526,10 +1608,20 @@
                 "layout_marginRight": 10,
                 "background": "#0573E8"
               },
-              "componentId": []
-            }
+              "componentId": [],
+              "bindingKey": "selectedBeneficiary"
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
-        ]
+        ],
+        "edit": true
       }
     ],
     "subType": "component",
@@ -1555,7 +1647,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-             
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1580,7 +1671,7 @@
       {
         "id": "_vjGLZjcuLFwCl38qY9MD",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
         "attributes": {
           "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
           "layoutProperties": {
@@ -1598,7 +1689,7 @@
             "textStyle": "regular",
             "textAlignment": "left"
           },
-          "bindingKey": "beneft_btmsht_bene_accname"
+          "bindingKey": "alias"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1611,12 +1702,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3-0-1"
+        "path": "0-3-0-1",
+        "edit": true
       },
       {
         "id": "SyweYMVL74EQrWixXyRhR",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
         "attributes": {
           "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
           "layoutProperties": {
@@ -1633,7 +1725,7 @@
             "textStyle": "regular",
             "textAlignment": "left"
           },
-          "bindingKey": "beneft_btmsht_bene_accnum"
+          "bindingKey": "accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1646,12 +1738,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3-0-2"
+        "path": "0-3-0-2",
+        "edit": true
       },
       {
         "id": "S1Jn-PAKn_qzyU7jRAHCb",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
         "attributes": {
           "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
           "layoutProperties": {
@@ -1667,8 +1760,7 @@
             "layout_marginTop": 5,
             "textStyle": "regular",
             "textAlignment": "left"
-          },
-          "bindingKey": "beneft_btmsht_bene_bankname"
+          }
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -1681,7 +1773,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3-0-3"
+        "path": "0-3-0-3",
+        "edit": true
       }
     ],
     "attributes": {
@@ -1700,8 +1793,17 @@
         "_vjGLZjcuLFwCl38qY9MD",
         "SyweYMVL74EQrWixXyRhR",
         "S1Jn-PAKn_qzyU7jRAHCb"
-      ]
+      ],
+      "bindingKey": "selectedBeneficiary"
     },
+    "events": [
+      {
+        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+        "triggerName": "abc",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "layout": [
       {
         "id": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1720,7 +1822,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                 
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1745,7 +1846,7 @@
           {
             "id": "_vjGLZjcuLFwCl38qY9MD",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
               "layoutProperties": {
@@ -1763,7 +1864,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "beneft_btmsht_bene_accname"
+              "bindingKey": "alias"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1776,12 +1877,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-1"
+            "path": "0-3-0-1",
+            "edit": true
           },
           {
             "id": "SyweYMVL74EQrWixXyRhR",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
               "layoutProperties": {
@@ -1798,7 +1900,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "beneft_btmsht_bene_accnum"
+              "bindingKey": "accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1811,12 +1913,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-2"
+            "path": "0-3-0-2",
+            "edit": true
           },
           {
             "id": "S1Jn-PAKn_qzyU7jRAHCb",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
             "attributes": {
               "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
               "layoutProperties": {
@@ -1832,8 +1935,7 @@
                 "layout_marginTop": 5,
                 "textStyle": "regular",
                 "textAlignment": "left"
-              },
-              "bindingKey": "beneft_btmsht_bene_bankname"
+              }
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1846,7 +1948,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3-0-3"
+            "path": "0-3-0-3",
+            "edit": true
           }
         ],
         "attributes": {
@@ -1860,8 +1963,17 @@
             "layout_marginRight": 10,
             "background": "#0573E8"
           },
-          "componentId": []
-        }
+          "componentId": [],
+          "bindingKey": "selectedBeneficiary"
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "component",
@@ -1879,7 +1991,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-         
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "x-f9lJGP_Y0eC9oGk6Odm",
@@ -1908,7 +2019,7 @@
   {
     "id": "_vjGLZjcuLFwCl38qY9MD",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
     "attributes": {
       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccName_Text",
       "layoutProperties": {
@@ -1926,7 +2037,7 @@
         "textStyle": "regular",
         "textAlignment": "left"
       },
-      "bindingKey": "beneft_btmsht_bene_accname"
+      "bindingKey": "alias"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1940,6 +2051,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3-0-1",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1948,7 +2060,7 @@
   {
     "id": "SyweYMVL74EQrWixXyRhR",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
     "attributes": {
       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_AccNum_Text",
       "layoutProperties": {
@@ -1965,7 +2077,7 @@
         "textStyle": "regular",
         "textAlignment": "left"
       },
-      "bindingKey": "beneft_btmsht_bene_accnum"
+      "bindingKey": "accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1979,6 +2091,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3-0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1987,7 +2100,7 @@
   {
     "id": "S1Jn-PAKn_qzyU7jRAHCb",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
     "attributes": {
       "name": "BeneFT_AccList_Btmsht_Bene_VlistItem_BankName_Text",
       "layoutProperties": {
@@ -2003,8 +2116,7 @@
         "layout_marginTop": 5,
         "textStyle": "regular",
         "textAlignment": "left"
-      },
-      "bindingKey": "beneft_btmsht_bene_bankname"
+      }
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2018,6 +2130,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3-0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

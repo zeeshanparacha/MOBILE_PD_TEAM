@@ -40,8 +40,8 @@
         "hMXBBwjC2C3iWZJXkPqnr",
         "D-A9gx6JJOTY2kW5Kv31M",
         "ZWQvY8Mz3yCpgZ3IJeXEX",
-        "C-wwUe93SVmAxd0fuK2j3",
-        "WEgBvMLRqZDXv-aXP7SyW"
+        "WEgBvMLRqZDXv-aXP7SyW",
+        "-SxK9fH9z7GMESXT4Mlr2"
       ]
     },
     "group": "Layout",
@@ -560,7 +560,7 @@
       {
         "id": "drzpcz2Y_oUclck0mBodF",
         "status": "ACTIVE",
-        "name": "Input text",
+        "name": "Zakat_TransferAmount_Amount_input",
         "attributes": {
           "name": "Zakat_TransferAmount_Amount_input",
           "validation": [],
@@ -580,7 +580,8 @@
             "bottomToBottomOf": "xnfajDrcnaeARlO3OH9bh",
             "placeHolderTextColor": "#A6A8A4",
             "layout_marginLeft": 20
-          }
+          },
+          "bindingKey": "zakatAmount"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -593,7 +594,8 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-14"
+        "path": "0-14",
+        "edit": true
       },
       {
         "id": "SxIOwZn9hyqtML13ezsRK",
@@ -744,7 +746,32 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-18"
+        "path": "0-18",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "0AlTc9immUBgpwrZVpfNU",
+            "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "values": [
+                { "code": "code", "name": "Personal loan" },
+                { "code": "code", "name": "Family" },
+                { "code": "code", "name": "Gift" },
+                { "code": "code", "name": "Other" }
+              ],
+              "bottomsheetType": "Normal Bottomsheet",
+              "code": "code",
+              "value": "name",
+              "title": "Purpose of Sending",
+              "selectedBindingKey": "ft_pos_data",
+              "dataType": "static"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "Ro0YS9NEuC08brILOKAFl",
@@ -841,7 +868,8 @@
             "placeHolderTextColor": "#A6A8A4",
             "rightToRightOf": "hMXBBwjC2C3iWZJXkPqnr",
             "layout_marginRight": 20
-          }
+          },
+          "bindingKey": "zakatComment"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -892,53 +920,6 @@
         "path": "0-22"
       },
       {
-        "id": "C-wwUe93SVmAxd0fuK2j3",
-        "status": "ACTIVE",
-        "name": "Zakat_Next_Btn",
-        "attributes": {
-          "name": "Zakat_Next_Btn",
-          "layoutProperties": {
-            "layout_width": "195",
-            "layout_height": "63",
-            "text": "Next",
-            "textSize": 20,
-            "textColor": "#ffffff",
-            "textStyle": "medium",
-            "textAlignment": "center",
-            "cornerRadius": [0, 0, 0, 0],
-            "background": "#1D6131",
-            "clickable": true,
-            "rightToRightOf": "i5uj220xUOE5gbv8LzHm7",
-            "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7"
-          }
-        },
-        "icon": "FaBimobject",
-        "group": "Form",
-        "type": "BUTTON",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Button", "type": "BUTTON" },
-        "events": [
-          {
-            "triggerId": "K3_9O8acrw_2T9xjYox21",
-            "triggerName": "Navigate_To_ZakatConfirm_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "UPZcaMA-OvDo2GZUrayQ2"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-23",
-        "edit": true
-      },
-      {
         "id": "WEgBvMLRqZDXv-aXP7SyW",
         "status": "ACTIVE",
         "name": "Zakat_Loading_View",
@@ -968,6 +949,53 @@
         "events": [],
         "path": "0-24",
         "edit": true
+      },
+      {
+        "id": "-SxK9fH9z7GMESXT4Mlr2",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Next button",
+        "attributes": {
+          "name": "Next button",
+          "layoutProperties": {
+            "layout_width": "195",
+            "layout_height": "63",
+            "text": "Next",
+            "textSize": 10,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#9BB93B",
+            "clickable": true,
+            "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7",
+            "rightToRightOf": "i5uj220xUOE5gbv8LzHm7"
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "K3_9O8acrw_2T9xjYox21",
+            "triggerName": "Navigate_To_ZakatConfirm_Screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "UPZcaMA-OvDo2GZUrayQ2"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24"
       }
     ],
     "subType": "screen",
@@ -1507,7 +1535,7 @@
           {
             "id": "drzpcz2Y_oUclck0mBodF",
             "status": "ACTIVE",
-            "name": "Input text",
+            "name": "Zakat_TransferAmount_Amount_input",
             "attributes": {
               "name": "Zakat_TransferAmount_Amount_input",
               "validation": [],
@@ -1527,7 +1555,8 @@
                 "bottomToBottomOf": "xnfajDrcnaeARlO3OH9bh",
                 "placeHolderTextColor": "#A6A8A4",
                 "layout_marginLeft": 20
-              }
+              },
+              "bindingKey": "zakatAmount"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1540,7 +1569,8 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-14"
+            "path": "0-14",
+            "edit": true
           },
           {
             "id": "SxIOwZn9hyqtML13ezsRK",
@@ -1691,7 +1721,32 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-18"
+            "path": "0-18",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "0AlTc9immUBgpwrZVpfNU",
+                "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [
+                    { "code": "code", "name": "Personal loan" },
+                    { "code": "code", "name": "Family" },
+                    { "code": "code", "name": "Gift" },
+                    { "code": "code", "name": "Other" }
+                  ],
+                  "bottomsheetType": "Normal Bottomsheet",
+                  "code": "code",
+                  "value": "name",
+                  "title": "Purpose of Sending",
+                  "selectedBindingKey": "ft_pos_data",
+                  "dataType": "static"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "Ro0YS9NEuC08brILOKAFl",
@@ -1788,7 +1843,8 @@
                 "placeHolderTextColor": "#A6A8A4",
                 "rightToRightOf": "hMXBBwjC2C3iWZJXkPqnr",
                 "layout_marginRight": 20
-              }
+              },
+              "bindingKey": "zakatComment"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1839,53 +1895,6 @@
             "path": "0-22"
           },
           {
-            "id": "C-wwUe93SVmAxd0fuK2j3",
-            "status": "ACTIVE",
-            "name": "Zakat_Next_Btn",
-            "attributes": {
-              "name": "Zakat_Next_Btn",
-              "layoutProperties": {
-                "layout_width": "195",
-                "layout_height": "63",
-                "text": "Next",
-                "textSize": 20,
-                "textColor": "#ffffff",
-                "textStyle": "medium",
-                "textAlignment": "center",
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
-                "clickable": true,
-                "rightToRightOf": "i5uj220xUOE5gbv8LzHm7",
-                "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7"
-              }
-            },
-            "icon": "FaBimobject",
-            "group": "Form",
-            "type": "BUTTON",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Button", "type": "BUTTON" },
-            "events": [
-              {
-                "triggerId": "K3_9O8acrw_2T9xjYox21",
-                "triggerName": "Navigate_To_ZakatConfirm_Screen",
-                "serviceType": "NAVIGATION",
-                "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "UPZcaMA-OvDo2GZUrayQ2"
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
-            "path": "0-23",
-            "edit": true
-          },
-          {
             "id": "WEgBvMLRqZDXv-aXP7SyW",
             "status": "ACTIVE",
             "name": "Zakat_Loading_View",
@@ -1915,6 +1924,53 @@
             "events": [],
             "path": "0-24",
             "edit": true
+          },
+          {
+            "id": "-SxK9fH9z7GMESXT4Mlr2",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Next button",
+            "attributes": {
+              "name": "Next button",
+              "layoutProperties": {
+                "layout_width": "195",
+                "layout_height": "63",
+                "text": "Next",
+                "textSize": 10,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#9BB93B",
+                "clickable": true,
+                "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7",
+                "rightToRightOf": "i5uj220xUOE5gbv8LzHm7"
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "K3_9O8acrw_2T9xjYox21",
+                "triggerName": "Navigate_To_ZakatConfirm_Screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "UPZcaMA-OvDo2GZUrayQ2"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-24"
           }
         ],
         "subType": "screen"
@@ -2480,7 +2536,7 @@
   {
     "id": "drzpcz2Y_oUclck0mBodF",
     "status": "ACTIVE",
-    "name": "Input text",
+    "name": "Zakat_TransferAmount_Amount_input",
     "attributes": {
       "name": "Zakat_TransferAmount_Amount_input",
       "validation": [],
@@ -2500,7 +2556,8 @@
         "bottomToBottomOf": "xnfajDrcnaeARlO3OH9bh",
         "placeHolderTextColor": "#A6A8A4",
         "layout_marginLeft": 20
-      }
+      },
+      "bindingKey": "zakatAmount"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -2514,6 +2571,7 @@
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-14",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2681,6 +2739,15 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-18",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "0AlTc9immUBgpwrZVpfNU",
+        "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2789,7 +2856,8 @@
         "placeHolderTextColor": "#A6A8A4",
         "rightToRightOf": "hMXBBwjC2C3iWZJXkPqnr",
         "layout_marginRight": 20
-      }
+      },
+      "bindingKey": "zakatComment"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -2848,52 +2916,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "C-wwUe93SVmAxd0fuK2j3",
-    "status": "ACTIVE",
-    "name": "Zakat_Next_Btn",
-    "attributes": {
-      "name": "Zakat_Next_Btn",
-      "layoutProperties": {
-        "layout_width": "195",
-        "layout_height": "63",
-        "text": "Next",
-        "textSize": 20,
-        "textColor": "#ffffff",
-        "textStyle": "medium",
-        "textAlignment": "center",
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#1D6131",
-        "clickable": true,
-        "rightToRightOf": "i5uj220xUOE5gbv8LzHm7",
-        "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7"
-      }
-    },
-    "icon": "FaBimobject",
-    "group": "Form",
-    "type": "BUTTON",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Button", "type": "BUTTON" },
-    "events": [
-      {
-        "triggerId": "K3_9O8acrw_2T9xjYox21",
-        "triggerName": "Navigate_To_ZakatConfirm_Screen",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
-    "path": "0-23",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "WEgBvMLRqZDXv-aXP7SyW",
     "status": "ACTIVE",
     "name": "Zakat_Loading_View",
@@ -2924,6 +2946,51 @@
     "path": "0-24",
     "edit": true,
     "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "-SxK9fH9z7GMESXT4Mlr2",
+    "status": "ACTIVE",
+    "name": "Next button",
+    "attributes": {
+      "name": "Next button",
+      "layoutProperties": {
+        "layout_width": "195",
+        "layout_height": "63",
+        "text": "Next",
+        "textSize": 10,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#9BB93B",
+        "clickable": true,
+        "bottomToBottomOf": "i5uj220xUOE5gbv8LzHm7",
+        "rightToRightOf": "i5uj220xUOE5gbv8LzHm7"
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "K3_9O8acrw_2T9xjYox21",
+        "triggerName": "Navigate_To_ZakatConfirm_Screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-24",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
