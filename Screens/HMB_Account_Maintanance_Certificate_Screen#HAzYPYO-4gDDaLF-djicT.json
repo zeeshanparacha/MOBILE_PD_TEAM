@@ -14,7 +14,9 @@
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "JS0mWAPBv6C9oZbjzvcFE",
@@ -28,15 +30,29 @@
         "TKvMAUkvYTBbu0X0g8H-z",
         "AzA5pND8W9bBf_74YAS3g",
         "jpZ-9pmGrR5kSUxdXDTDk",
-        "w20s8uPc4PlYvqG1mz_UX"
+        "w20s8uPc4PlYvqG1mz_UX",
+        "Em744bB5O5EXV0D-sLAbO"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
-    "events": [],
+    "updatedAt": "10/9/2023",
+    "createdAt": "10/9/2023",
+    "events": [
+      {
+        "triggerId": "xIOQeUcXP-MN1XrPTunSN",
+        "triggerName": "hide_regenerate_otp_btn",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "rNgHywRv1NJ8TbqBuI6Fi",
+        "triggerName": "generateOTP",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -45,7 +61,7 @@
       {
         "id": "JS0mWAPBv6C9oZbjzvcFE",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "AccMainCert_Accounts_Text",
         "attributes": {
           "name": "AccMainCert_Accounts_Text",
           "layoutProperties": {
@@ -74,8 +90,26 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-0"
+        "events": [
+          {
+            "triggerId": "1Np3oM1qrAv0jhoGlEc2Y",
+            "triggerName": "hide_something",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "HAzYPYO-4gDDaLF-djicT",
+              "component": [
+                { "id": "Em744bB5O5EXV0D-sLAbO", "name": "Button" }
+              ],
+              "componentId": ["Em744bB5O5EXV0D-sLAbO"],
+              "visibility": false
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-0",
+        "edit": true
       },
       {
         "id": "B8w4YoCYAZFlEryPqljOx",
@@ -108,8 +142,23 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-1"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-1",
+        "edit": true
       },
       {
         "id": "fVeocwqPQupbqS4cF5aOp",
@@ -166,7 +215,8 @@
             "layout_marginLeft": 20,
             "textStyle": "regular",
             "textAlignment": "left"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -179,7 +229,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "paTSpSZ75sqaWKKA01Bj1",
@@ -236,7 +287,8 @@
             "textStyle": "regular",
             "textAlignment": "right",
             "layout_marginRight": 20
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -389,8 +441,6 @@
           "name": "AccMainCert_OTP",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
-            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
             "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
@@ -406,8 +456,12 @@
             "activeLineWidth": 30,
             "textSize": 20,
             "textStyle": "regular",
-            "secureText": "*"
-          }
+            "secureText": "*",
+            "centerX": "HAzYPYO-4gDDaLF-djicT",
+            "keyboardType": "number",
+            "length": "5"
+          },
+          "bindingKey": "accMaintOTP"
         },
         "icon": "FaShieldAlt",
         "group": "Security",
@@ -420,7 +474,8 @@
         "projectType": "mobile",
         "component": { "content": "OTP", "type": "OTP" },
         "events": [],
-        "path": "0-9"
+        "path": "0-9",
+        "edit": true
       },
       {
         "id": "jpZ-9pmGrR5kSUxdXDTDk",
@@ -434,7 +489,7 @@
             "layout_height": "63",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
-            "layout_marginBottom": 40,
+            "layout_marginBottom": 0,
             "text": "Generate Certificate",
             "textSize": 20,
             "textColor": "#ffffff",
@@ -458,7 +513,64 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "qbNFVaAILq0aDoOtRdWuD",
+            "triggerName": "accountMaintenanceGenerate",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/accountMaintenance/statement",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "accountId": "selectedAcc_QRGenerate.accountId",
+                "dateFrom": null,
+                "dateTo": null,
+                "device": {
+                  "countryCode": "PKR",
+                  "deviceKey": "21e1949ae8532b66",
+                  "fcmToken": null,
+                  "imei": "111111111111111",
+                  "ip": "192.168.0.112",
+                  "isNotificationEnabled": true,
+                  "name": "Pixel 2 XL",
+                  "os": "Android",
+                  "osType": "30"
+                },
+                "otpInfo": {
+                  "emailPin": "",
+                  "smsPin": "$accMaintOTP",
+                  "splitOtp": true,
+                  "validationType": ""
+                },
+                "user_id": null
+              },
+              "responseStateKey": "accountMaintenanceGenerateRes",
+              "conditions": [
+                {
+                  "httpStatus": 200,
+                  "triggerName": "show_generate_certificate_popup",
+                  "triggerId": "kAJkEul0ufvTbK_ckIfZY"
+                }
+              ]
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-10",
         "edit": true
       },
@@ -471,27 +583,23 @@
           "name": "TIMER",
           "layoutProperties": {
             "cornerRadius": [0, 0, 0, 0],
-            "otpTime": 30,
+            "otpTime": 1,
             "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
             "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
+            "layout_height": "40",
             "textAlignment": "center",
             "textSize": 14,
             "layout_marginTop": 10,
             "spacing": "2",
-            "background": "#D9D3D3",
-            "borderColor": "#DEFB4B",
-            "borderWidth": 2,
             "textColor": "#000000",
             "lineColor": "#E64C4C",
             "activeLineColor": "#E26A6A",
             "lineWidth": 2,
             "activeLineWidth": 2,
             "elevation": 10,
-            "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-            "rightToRightOf": "HAzYPYO-4gDDaLF-djicT"
+            "centerX": "HAzYPYO-4gDDaLF-djicT"
           },
-          "bindingKey": "timer",
+          "bindingKey": "otpTime",
           "conditions": []
         },
         "icon": "FaShieldAlt",
@@ -506,10 +614,153 @@
         "component": { "content": "Timer", "type": "TIMER" },
         "path": "0-11",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "659cPoxYfxkbUglLkX5JI",
+            "triggerName": "show_regen_btn_hide_timer_trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Execute chain trigger",
+              "triggers": [
+                {
+                  "triggerId": "fmeAwGZdIFgBoO8327d70",
+                  "triggerName": "show_regenerate_otp_btn"
+                },
+                {
+                  "triggerId": "rkuiZNQa6nYPBNvl0jiLb",
+                  "triggerName": "hide_otp_timer"
+                }
+              ],
+              "triggerId": ["fmeAwGZdIFgBoO8327d70", "rkuiZNQa6nYPBNvl0jiLb"]
+            },
+            "type": "ONFINISH",
+            "name": "On Finish"
+          },
+          {
+            "triggerId": "3NWxth4jyIIwUAs6JR518",
+            "triggerName": "show_otp_timer",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "HAzYPYO-4gDDaLF-djicT",
+              "component": [{ "id": "w20s8uPc4PlYvqG1mz_UX", "name": "TIMER" }],
+              "componentId": ["w20s8uPc4PlYvqG1mz_UX"],
+              "visibility": true
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ]
+      },
+      {
+        "id": "Em744bB5O5EXV0D-sLAbO",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "150",
+            "layout_height": "30",
+            "text": "Regenerate OTP",
+            "textSize": 14,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [20, 20, 20, 20],
+            "background": "#36501B",
+            "clickable": true,
+            "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+            "paddingStart": 0,
+            "layout_marginLeft": 0,
+            "layout_marginTop": 10,
+            "centerX": "HAzYPYO-4gDDaLF-djicT",
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "paddingEnd": 0,
+            "layout_marginRight": 0
+          },
+          "conditions": []
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "z88DwpwB2BdbbuaReLnmA",
+            "triggerName": "show_otp_hide_btn_trig",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Execute chain trigger",
+              "triggers": [
+                {
+                  "triggerId": "3NWxth4jyIIwUAs6JR518",
+                  "triggerName": "show_otp_timer"
+                },
+                {
+                  "triggerId": "xIOQeUcXP-MN1XrPTunSN",
+                  "triggerName": "hide_regenerate_otp_btn"
+                }
+              ],
+              "triggerId": ["3NWxth4jyIIwUAs6JR518", "xIOQeUcXP-MN1XrPTunSN"]
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "mJhvNUYoh7FkRm3TEqp11",
+            "triggerName": "update_otp_timer",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "otpTime",
+              "value": "1",
+              "contentType": "string"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "rNgHywRv1NJ8TbqBuI6Fi",
+            "triggerName": "generateOTP",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/security/v1/generateOTP",
+              "requestDataType": "byJSON",
+              "requestBody": { "tranCode": "0093" },
+              "responseStateKey": "generateOtpRes"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-12",
+        "edit": true
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "HAzYPYO-4gDDaLF-djicT",
@@ -526,7 +777,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -535,7 +788,51 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "xIOQeUcXP-MN1XrPTunSN",
+            "triggerName": "hide_regenerate_otp_btn",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "HAzYPYO-4gDDaLF-djicT",
+              "component": [
+                { "id": "Em744bB5O5EXV0D-sLAbO", "name": "Button" }
+              ],
+              "componentId": ["Em744bB5O5EXV0D-sLAbO"],
+              "visibility": false
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "rNgHywRv1NJ8TbqBuI6Fi",
+            "triggerName": "generateOTP",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/security/v1/generateOTP",
+              "requestDataType": "byJSON",
+              "requestBody": { "tranCode": "0093" },
+              "responseStateKey": "generateOtp"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -544,7 +841,7 @@
           {
             "id": "JS0mWAPBv6C9oZbjzvcFE",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "AccMainCert_Accounts_Text",
             "attributes": {
               "name": "AccMainCert_Accounts_Text",
               "layoutProperties": {
@@ -573,8 +870,26 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-0"
+            "events": [
+              {
+                "triggerId": "1Np3oM1qrAv0jhoGlEc2Y",
+                "triggerName": "hide_something",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "HAzYPYO-4gDDaLF-djicT",
+                  "component": [
+                    { "id": "Em744bB5O5EXV0D-sLAbO", "name": "Button" }
+                  ],
+                  "componentId": ["Em744bB5O5EXV0D-sLAbO"],
+                  "visibility": false
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-0",
+            "edit": true
           },
           {
             "id": "B8w4YoCYAZFlEryPqljOx",
@@ -607,8 +922,23 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-1"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
           },
           {
             "id": "fVeocwqPQupbqS4cF5aOp",
@@ -665,7 +995,8 @@
                 "layout_marginLeft": 20,
                 "textStyle": "regular",
                 "textAlignment": "left"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -678,7 +1009,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "paTSpSZ75sqaWKKA01Bj1",
@@ -735,7 +1067,8 @@
                 "textStyle": "regular",
                 "textAlignment": "right",
                 "layout_marginRight": 20
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -888,8 +1221,6 @@
               "name": "AccMainCert_OTP",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
-                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
                 "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
@@ -905,8 +1236,12 @@
                 "activeLineWidth": 30,
                 "textSize": 20,
                 "textStyle": "regular",
-                "secureText": "*"
-              }
+                "secureText": "*",
+                "centerX": "HAzYPYO-4gDDaLF-djicT",
+                "keyboardType": "number",
+                "length": "5"
+              },
+              "bindingKey": "accMaintOTP"
             },
             "icon": "FaShieldAlt",
             "group": "Security",
@@ -919,7 +1254,8 @@
             "projectType": "mobile",
             "component": { "content": "OTP", "type": "OTP" },
             "events": [],
-            "path": "0-9"
+            "path": "0-9",
+            "edit": true
           },
           {
             "id": "jpZ-9pmGrR5kSUxdXDTDk",
@@ -933,7 +1269,7 @@
                 "layout_height": "63",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
-                "layout_marginBottom": 40,
+                "layout_marginBottom": 0,
                 "text": "Generate Certificate",
                 "textSize": 20,
                 "textColor": "#ffffff",
@@ -957,7 +1293,64 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "qbNFVaAILq0aDoOtRdWuD",
+                "triggerName": "accountMaintenanceGenerate",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/account/v1/accountMaintenance/statement",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accountId": "selectedAcc_QRGenerate.accountId",
+                    "dateFrom": null,
+                    "dateTo": null,
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "21e1949ae8532b66",
+                      "fcmToken": null,
+                      "imei": "111111111111111",
+                      "ip": "192.168.0.112",
+                      "isNotificationEnabled": true,
+                      "name": "Pixel 2 XL",
+                      "os": "Android",
+                      "osType": "30"
+                    },
+                    "otpInfo": {
+                      "emailPin": "",
+                      "smsPin": "$accMaintOTP",
+                      "splitOtp": true,
+                      "validationType": ""
+                    },
+                    "user_id": null
+                  },
+                  "responseStateKey": "accountMaintenanceGenerateRes",
+                  "conditions": [
+                    {
+                      "httpStatus": 200,
+                      "triggerName": "show_generate_certificate_popup",
+                      "triggerId": "kAJkEul0ufvTbK_ckIfZY"
+                    }
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-10",
             "edit": true
           },
@@ -970,27 +1363,23 @@
               "name": "TIMER",
               "layoutProperties": {
                 "cornerRadius": [0, 0, 0, 0],
-                "otpTime": 30,
+                "otpTime": 1,
                 "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
                 "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "layout_height": "40",
                 "textAlignment": "center",
                 "textSize": 14,
                 "layout_marginTop": 10,
                 "spacing": "2",
-                "background": "#D9D3D3",
-                "borderColor": "#DEFB4B",
-                "borderWidth": 2,
                 "textColor": "#000000",
                 "lineColor": "#E64C4C",
                 "activeLineColor": "#E26A6A",
                 "lineWidth": 2,
                 "activeLineWidth": 2,
                 "elevation": 10,
-                "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-                "rightToRightOf": "HAzYPYO-4gDDaLF-djicT"
+                "centerX": "HAzYPYO-4gDDaLF-djicT"
               },
-              "bindingKey": "timer",
+              "bindingKey": "otpTime",
               "conditions": []
             },
             "icon": "FaShieldAlt",
@@ -1005,10 +1394,161 @@
             "component": { "content": "Timer", "type": "TIMER" },
             "path": "0-11",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "659cPoxYfxkbUglLkX5JI",
+                "triggerName": "show_regen_btn_hide_timer_trig",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Execute chain trigger",
+                  "triggers": [
+                    {
+                      "triggerId": "fmeAwGZdIFgBoO8327d70",
+                      "triggerName": "show_regenerate_otp_btn"
+                    },
+                    {
+                      "triggerId": "rkuiZNQa6nYPBNvl0jiLb",
+                      "triggerName": "hide_otp_timer"
+                    }
+                  ],
+                  "triggerId": [
+                    "fmeAwGZdIFgBoO8327d70",
+                    "rkuiZNQa6nYPBNvl0jiLb"
+                  ]
+                },
+                "type": "ONFINISH",
+                "name": "On Finish"
+              },
+              {
+                "triggerId": "3NWxth4jyIIwUAs6JR518",
+                "triggerName": "show_otp_timer",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "HAzYPYO-4gDDaLF-djicT",
+                  "component": [
+                    { "id": "w20s8uPc4PlYvqG1mz_UX", "name": "TIMER" }
+                  ],
+                  "componentId": ["w20s8uPc4PlYvqG1mz_UX"],
+                  "visibility": true
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ]
+          },
+          {
+            "id": "Em744bB5O5EXV0D-sLAbO",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "150",
+                "layout_height": "30",
+                "text": "Regenerate OTP",
+                "textSize": 14,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [20, 20, 20, 20],
+                "background": "#36501B",
+                "clickable": true,
+                "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+                "paddingStart": 0,
+                "layout_marginLeft": 0,
+                "layout_marginTop": 10,
+                "centerX": "HAzYPYO-4gDDaLF-djicT",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "paddingEnd": 0,
+                "layout_marginRight": 0
+              },
+              "conditions": []
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "z88DwpwB2BdbbuaReLnmA",
+                "triggerName": "show_otp_hide_btn_trig",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Execute chain trigger",
+                  "triggers": [
+                    {
+                      "triggerId": "3NWxth4jyIIwUAs6JR518",
+                      "triggerName": "show_otp_timer"
+                    },
+                    {
+                      "triggerId": "xIOQeUcXP-MN1XrPTunSN",
+                      "triggerName": "hide_regenerate_otp_btn"
+                    }
+                  ],
+                  "triggerId": [
+                    "3NWxth4jyIIwUAs6JR518",
+                    "xIOQeUcXP-MN1XrPTunSN"
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "mJhvNUYoh7FkRm3TEqp11",
+                "triggerName": "update_otp_timer",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "otpTime",
+                  "value": "1",
+                  "contentType": "string"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "rNgHywRv1NJ8TbqBuI6Fi",
+                "triggerName": "generateOTP",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/security/v1/generateOTP",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "tranCode": "0093" },
+                  "responseStateKey": "generateOtpRes"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-12",
+            "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
@@ -1020,7 +1560,7 @@
   {
     "id": "JS0mWAPBv6C9oZbjzvcFE",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "AccMainCert_Accounts_Text",
     "attributes": {
       "name": "AccMainCert_Accounts_Text",
       "layoutProperties": {
@@ -1049,8 +1589,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "1Np3oM1qrAv0jhoGlEc2Y",
+        "triggerName": "hide_something",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-0",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1087,8 +1635,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-1",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1153,7 +1709,8 @@
         "layout_marginLeft": 20,
         "textStyle": "regular",
         "textAlignment": "left"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1167,6 +1724,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1231,7 +1789,8 @@
         "textStyle": "regular",
         "textAlignment": "right",
         "layout_marginRight": 20
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1393,8 +1952,6 @@
       "name": "AccMainCert_OTP",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
-        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT",
         "topToBottomOf": "TKvMAUkvYTBbu0X0g8H-z",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
@@ -1410,8 +1967,12 @@
         "activeLineWidth": 30,
         "textSize": 20,
         "textStyle": "regular",
-        "secureText": "*"
-      }
+        "secureText": "*",
+        "centerX": "HAzYPYO-4gDDaLF-djicT",
+        "keyboardType": "number",
+        "length": "5"
+      },
+      "bindingKey": "accMaintOTP"
     },
     "icon": "FaShieldAlt",
     "group": "Security",
@@ -1425,6 +1986,7 @@
     "component": { "content": "OTP", "type": "OTP" },
     "events": [],
     "path": "0-9",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1441,7 +2003,7 @@
         "layout_height": "63",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
-        "layout_marginBottom": 40,
+        "layout_marginBottom": 0,
         "text": "Generate Certificate",
         "textSize": 20,
         "textColor": "#ffffff",
@@ -1465,7 +2027,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "qbNFVaAILq0aDoOtRdWuD",
+        "triggerName": "accountMaintenanceGenerate",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-10",
     "edit": true,
     "subType": "component",
@@ -1481,27 +2050,23 @@
       "name": "TIMER",
       "layoutProperties": {
         "cornerRadius": [0, 0, 0, 0],
-        "otpTime": 30,
+        "otpTime": 1,
         "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
         "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
+        "layout_height": "40",
         "textAlignment": "center",
         "textSize": 14,
         "layout_marginTop": 10,
         "spacing": "2",
-        "background": "#D9D3D3",
-        "borderColor": "#DEFB4B",
-        "borderWidth": 2,
         "textColor": "#000000",
         "lineColor": "#E64C4C",
         "activeLineColor": "#E26A6A",
         "lineWidth": 2,
         "activeLineWidth": 2,
         "elevation": 10,
-        "leftToLeftOf": "HAzYPYO-4gDDaLF-djicT",
-        "rightToRightOf": "HAzYPYO-4gDDaLF-djicT"
+        "centerX": "HAzYPYO-4gDDaLF-djicT"
       },
-      "bindingKey": "timer",
+      "bindingKey": "otpTime",
       "conditions": []
     },
     "icon": "FaShieldAlt",
@@ -1516,7 +2081,86 @@
     "component": { "content": "Timer", "type": "TIMER" },
     "path": "0-11",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "659cPoxYfxkbUglLkX5JI",
+        "triggerName": "show_regen_btn_hide_timer_trig",
+        "name": "On Finish",
+        "type": "ONFINISH"
+      },
+      {
+        "triggerId": "3NWxth4jyIIwUAs6JR518",
+        "triggerName": "show_otp_timer",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Em744bB5O5EXV0D-sLAbO",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "150",
+        "layout_height": "30",
+        "text": "Regenerate OTP",
+        "textSize": 14,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [20, 20, 20, 20],
+        "background": "#36501B",
+        "clickable": true,
+        "topToBottomOf": "AzA5pND8W9bBf_74YAS3g",
+        "paddingStart": 0,
+        "layout_marginLeft": 0,
+        "layout_marginTop": 10,
+        "centerX": "HAzYPYO-4gDDaLF-djicT",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "paddingEnd": 0,
+        "layout_marginRight": 0
+      },
+      "conditions": []
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "z88DwpwB2BdbbuaReLnmA",
+        "triggerName": "show_otp_hide_btn_trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "mJhvNUYoh7FkRm3TEqp11",
+        "triggerName": "update_otp_timer",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "rNgHywRv1NJ8TbqBuI6Fi",
+        "triggerName": "generateOTP",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-12",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

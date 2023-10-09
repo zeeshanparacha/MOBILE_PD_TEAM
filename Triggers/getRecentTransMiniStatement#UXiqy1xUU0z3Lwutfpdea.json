@@ -1,7 +1,7 @@
 {
-  "id": "g6qXVk1_HBFJw8PeANLaj",
+  "id": "Wz8rXTKVTHtOvw6Qomgl2",
   "projectId": "63ef72a290c5800428f84dd9",
-  "name": "HMB_TitleSearch_Api_Trig",
+  "name": "getRecentTransMiniStatement",
   "status": "ACTIVE",
   "services": [
     {
@@ -23,31 +23,33 @@
             "entityId": "1",
             "app_version": "5.1.0"
           },
-          "url": "https://hliteuat.habibmetro.com/account/v1/raast/titlesearch",
+          "url": "https://hliteuat.habibmetro.com/card/v1/miniStatement",
           "requestDataType": "byJSON",
           "requestBody": {
-            "aliasType": null,
-            "aliasValue": null,
-            "amount": "$ft_amount",
-            "fromAccount": "$selectedAcc_QRGenerate.accountId",
-            "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
-            "iban": null,
-            "purpose": "Others",
-            "rda": false,
-            "toAccount": "PK88AIIN0000103542254010"
+            "cardNature": "",
+            "cardNumber": "$selectedCard.cardNumber",
+            "cardaType": "",
+            "displayOption": null,
+            "duration": "20",
+            "fromDate": null,
+            "noOfTransactions": 0,
+            "quickRange": null,
+            "searchCriteria": null,
+            "statementmMonth": 0,
+            "toDate": null,
+            "statementMonth": 0
           },
-          "responseStateKey": "titlesearch_data"
+          "responseStateKey": "recentTransMiniStatement"
         },
         "returns": []
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.tjjq4b84outLKh1-LLw9s7gaGcgq6GH",
-  "_id": "G7EzpIbgPGx7_uSy084T_",
+  "csrf": "0.j3gx3p40xus1BSlC3TFXdgXlUdHGug7i",
+  "_id": "UXiqy1xUU0z3Lwutfpdea",
   "updatedAt": "10/5/2023",
   "createdAt": "10/5/2023",
   "createdBy": "ammarahmed",
-  "updatedBy": "ammarahmed",
-  "old_name": "HMB_TitleSearch_Api_Trig"
+  "updatedBy": "ammarahmed"
 }

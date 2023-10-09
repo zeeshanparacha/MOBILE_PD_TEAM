@@ -38,8 +38,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/15/2023",
-    "createdAt": "9/15/2023",
+    "updatedAt": "10/6/2023",
+    "createdAt": "10/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -112,7 +112,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-1",
         "edit": true
       },
@@ -867,7 +881,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-1",
             "edit": true
           },
@@ -1603,7 +1631,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-1",
     "edit": true,
     "subType": "component",

@@ -48,8 +48,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "8/29/2023",
-    "createdAt": "8/29/2023",
+    "updatedAt": "10/6/2023",
+    "createdAt": "10/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -131,11 +131,11 @@
               "__v": 0,
               "uri": "habibmetro_logo.png"
             },
-            "rightToRightOf": "0EYgP4dzXyyCXLcP1Dmbo",
-            "topToTopOf": "0EYgP4dzXyyCXLcP1Dmbo",
-            "layout_marginRight": 20,
-            "layout_marginTop": 20,
-            "id": "f6SBtIbmfv1K6CzxeL36w"
+            "layout_marginRight": 0,
+            "layout_marginTop": 10,
+            "id": "f6SBtIbmfv1K6CzxeL36w",
+            "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
+            "centerX": "0EYgP4dzXyyCXLcP1Dmbo"
           },
           "contentType": 2
         },
@@ -149,7 +149,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-1"
+        "path": "0-1",
+        "edit": true,
+        "events": []
       },
       {
         "id": "t2mP1HHZae2DRMXi4hwGa",
@@ -165,13 +167,16 @@
             "textColor": "#000000",
             "text": "Request Successfully Processed",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
+            "numberOfLines": 2,
             "centerX": "0EYgP4dzXyyCXLcP1Dmbo",
-            "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
-            "layout_marginTop": 20,
+            "topToBottomOf": "-uaIpDTXQnrkoNFkXc28z",
+            "layout_marginTop": 10,
             "textStyle": "bold",
-            "textAlignment": "center"
-          }
+            "textAlignment": "center",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10
+          },
+          "bindingKey": "hmb_transfer_data.message"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -206,8 +211,12 @@
             "topToBottomOf": "t2mP1HHZae2DRMXi4hwGa",
             "textStyle": "bold",
             "textAlignment": "center",
-            "layout_marginTop": 5
-          }
+            "layout_marginTop": 5,
+            "isDate": true,
+            "dateFormat": "MM-dd-yyyy",
+            "displayDateFormat": "MM-dd-yyyy"
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.requestDate"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -334,7 +343,7 @@
         "id": "OpjGTRguMwRTX3NbtiS8z",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_SentTo_Data_Text",
         "attributes": {
           "name": "FT_Receipt_SentTo_Data_Text",
           "layoutProperties": {
@@ -350,7 +359,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "selectedBeneficiary.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -363,7 +373,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-7"
+        "path": "0-7",
+        "edit": true
       },
       {
         "id": "WiteasYA6rYjxtSTXtpPc",
@@ -440,7 +451,7 @@
         "id": "i33Zm0Cw864tZnwDPVJLw",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_ToAccNum_Data_Text",
         "attributes": {
           "name": "FT_Receipt_ToAccNum_Data_Text",
           "layoutProperties": {
@@ -456,7 +467,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "selectedBeneficiary.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -469,7 +481,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-10"
+        "path": "0-10",
+        "edit": true
       },
       {
         "id": "XwzPYToiIIcTn8i05cyfk",
@@ -546,7 +559,7 @@
         "id": "FpCKCizvgp3pS8y9XBQK3",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_FromAcc_Data_Text",
         "attributes": {
           "name": "FT_Receipt_FromAcc_Data_Text",
           "layoutProperties": {
@@ -562,7 +575,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -575,7 +589,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-13"
+        "path": "0-13",
+        "edit": true
       },
       {
         "id": "_DMgTwlcCuIWD4y-9gkDe",
@@ -668,7 +683,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -681,7 +697,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-16"
+        "path": "0-16",
+        "edit": true
       },
       {
         "id": "Me8XwAnxn_Kq-PQxJOx2y",
@@ -758,7 +775,7 @@
         "id": "GHxFbd5BmALUgY7xJGmWV",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_Amount_Dat_Text",
         "attributes": {
           "name": "FT_Receipt_Amount_Dat_Text",
           "layoutProperties": {
@@ -774,7 +791,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "ft_amount"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -787,7 +805,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-19"
+        "path": "0-19",
+        "edit": true
       },
       {
         "id": "YandkkAKVHXOP-OaPUX1M",
@@ -864,7 +883,7 @@
         "id": "XIp9Opf3UD7Gh57DkItpu",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_Purpose_Data_Text",
         "attributes": {
           "name": "FT_Receipt_Purpose_Data_Text",
           "layoutProperties": {
@@ -880,7 +899,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "ft_pos_data.value"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -893,7 +913,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-22"
+        "path": "0-22",
+        "edit": true
       },
       {
         "id": "6eEovJl2Y45KKHDh8J9bV",
@@ -970,7 +991,7 @@
         "id": "B2YUt-8DO1zejPvOVSU8s",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "FT_Receipt_Comment_Data_Text",
         "attributes": {
           "name": "FT_Receipt_Comment_Data_Text",
           "layoutProperties": {
@@ -986,7 +1007,8 @@
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
-          }
+          },
+          "bindingKey": "ft_comments"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -999,7 +1021,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-25"
+        "path": "0-25",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -1109,11 +1132,11 @@
                   "__v": 0,
                   "uri": "habibmetro_logo.png"
                 },
-                "rightToRightOf": "0EYgP4dzXyyCXLcP1Dmbo",
-                "topToTopOf": "0EYgP4dzXyyCXLcP1Dmbo",
-                "layout_marginRight": 20,
-                "layout_marginTop": 20,
-                "id": "f6SBtIbmfv1K6CzxeL36w"
+                "layout_marginRight": 0,
+                "layout_marginTop": 10,
+                "id": "f6SBtIbmfv1K6CzxeL36w",
+                "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
+                "centerX": "0EYgP4dzXyyCXLcP1Dmbo"
               },
               "contentType": 2
             },
@@ -1127,7 +1150,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1"
+            "path": "0-1",
+            "edit": true,
+            "events": []
           },
           {
             "id": "t2mP1HHZae2DRMXi4hwGa",
@@ -1143,13 +1168,16 @@
                 "textColor": "#000000",
                 "text": "Request Successfully Processed",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
+                "numberOfLines": 2,
                 "centerX": "0EYgP4dzXyyCXLcP1Dmbo",
-                "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
-                "layout_marginTop": 20,
+                "topToBottomOf": "-uaIpDTXQnrkoNFkXc28z",
+                "layout_marginTop": 10,
                 "textStyle": "bold",
-                "textAlignment": "center"
-              }
+                "textAlignment": "center",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10
+              },
+              "bindingKey": "hmb_transfer_data.message"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1184,8 +1212,12 @@
                 "topToBottomOf": "t2mP1HHZae2DRMXi4hwGa",
                 "textStyle": "bold",
                 "textAlignment": "center",
-                "layout_marginTop": 5
-              }
+                "layout_marginTop": 5,
+                "isDate": true,
+                "dateFormat": "MM-dd-yyyy",
+                "displayDateFormat": "MM-dd-yyyy"
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.requestDate"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1312,7 +1344,7 @@
             "id": "OpjGTRguMwRTX3NbtiS8z",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_SentTo_Data_Text",
             "attributes": {
               "name": "FT_Receipt_SentTo_Data_Text",
               "layoutProperties": {
@@ -1328,7 +1360,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "selectedBeneficiary.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1341,7 +1374,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-7"
+            "path": "0-7",
+            "edit": true
           },
           {
             "id": "WiteasYA6rYjxtSTXtpPc",
@@ -1418,7 +1452,7 @@
             "id": "i33Zm0Cw864tZnwDPVJLw",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_ToAccNum_Data_Text",
             "attributes": {
               "name": "FT_Receipt_ToAccNum_Data_Text",
               "layoutProperties": {
@@ -1434,7 +1468,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "selectedBeneficiary.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1447,7 +1482,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-10"
+            "path": "0-10",
+            "edit": true
           },
           {
             "id": "XwzPYToiIIcTn8i05cyfk",
@@ -1524,7 +1560,7 @@
             "id": "FpCKCizvgp3pS8y9XBQK3",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_FromAcc_Data_Text",
             "attributes": {
               "name": "FT_Receipt_FromAcc_Data_Text",
               "layoutProperties": {
@@ -1540,7 +1576,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1553,7 +1590,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-13"
+            "path": "0-13",
+            "edit": true
           },
           {
             "id": "_DMgTwlcCuIWD4y-9gkDe",
@@ -1646,7 +1684,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1659,7 +1698,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-16"
+            "path": "0-16",
+            "edit": true
           },
           {
             "id": "Me8XwAnxn_Kq-PQxJOx2y",
@@ -1736,7 +1776,7 @@
             "id": "GHxFbd5BmALUgY7xJGmWV",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_Amount_Dat_Text",
             "attributes": {
               "name": "FT_Receipt_Amount_Dat_Text",
               "layoutProperties": {
@@ -1752,7 +1792,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "ft_amount"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1765,7 +1806,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-19"
+            "path": "0-19",
+            "edit": true
           },
           {
             "id": "YandkkAKVHXOP-OaPUX1M",
@@ -1842,7 +1884,7 @@
             "id": "XIp9Opf3UD7Gh57DkItpu",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_Purpose_Data_Text",
             "attributes": {
               "name": "FT_Receipt_Purpose_Data_Text",
               "layoutProperties": {
@@ -1858,7 +1900,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "ft_pos_data.value"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1871,7 +1914,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-22"
+            "path": "0-22",
+            "edit": true
           },
           {
             "id": "6eEovJl2Y45KKHDh8J9bV",
@@ -1948,7 +1992,7 @@
             "id": "B2YUt-8DO1zejPvOVSU8s",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "FT_Receipt_Comment_Data_Text",
             "attributes": {
               "name": "FT_Receipt_Comment_Data_Text",
               "layoutProperties": {
@@ -1964,7 +2008,8 @@
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
-              }
+              },
+              "bindingKey": "ft_comments"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1977,7 +2022,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-25"
+            "path": "0-25",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -1986,7 +2032,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "0EYgP4dzXyyCXLcP1Dmbo",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2066,11 +2112,11 @@
           "__v": 0,
           "uri": "habibmetro_logo.png"
         },
-        "rightToRightOf": "0EYgP4dzXyyCXLcP1Dmbo",
-        "topToTopOf": "0EYgP4dzXyyCXLcP1Dmbo",
-        "layout_marginRight": 20,
-        "layout_marginTop": 20,
-        "id": "f6SBtIbmfv1K6CzxeL36w"
+        "layout_marginRight": 0,
+        "layout_marginTop": 10,
+        "id": "f6SBtIbmfv1K6CzxeL36w",
+        "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
+        "centerX": "0EYgP4dzXyyCXLcP1Dmbo"
       },
       "contentType": 2
     },
@@ -2085,6 +2131,8 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-1",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2103,13 +2151,16 @@
         "textColor": "#000000",
         "text": "Request Successfully Processed",
         "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
+        "numberOfLines": 2,
         "centerX": "0EYgP4dzXyyCXLcP1Dmbo",
-        "topToBottomOf": "DkAXxpKGytrzAHLZMvC5d",
-        "layout_marginTop": 20,
+        "topToBottomOf": "-uaIpDTXQnrkoNFkXc28z",
+        "layout_marginTop": 10,
         "textStyle": "bold",
-        "textAlignment": "center"
-      }
+        "textAlignment": "center",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10
+      },
+      "bindingKey": "hmb_transfer_data.message"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2147,8 +2198,12 @@
         "topToBottomOf": "t2mP1HHZae2DRMXi4hwGa",
         "textStyle": "bold",
         "textAlignment": "center",
-        "layout_marginTop": 5
-      }
+        "layout_marginTop": 5,
+        "isDate": true,
+        "dateFormat": "MM-dd-yyyy",
+        "displayDateFormat": "MM-dd-yyyy"
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.requestDate"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2287,7 +2342,7 @@
   {
     "id": "OpjGTRguMwRTX3NbtiS8z",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_SentTo_Data_Text",
     "attributes": {
       "name": "FT_Receipt_SentTo_Data_Text",
       "layoutProperties": {
@@ -2303,7 +2358,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "selectedBeneficiary.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2317,6 +2373,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-7",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2402,7 +2459,7 @@
   {
     "id": "i33Zm0Cw864tZnwDPVJLw",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_ToAccNum_Data_Text",
     "attributes": {
       "name": "FT_Receipt_ToAccNum_Data_Text",
       "layoutProperties": {
@@ -2418,7 +2475,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "selectedBeneficiary.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2432,6 +2490,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-10",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2517,7 +2576,7 @@
   {
     "id": "FpCKCizvgp3pS8y9XBQK3",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_FromAcc_Data_Text",
     "attributes": {
       "name": "FT_Receipt_FromAcc_Data_Text",
       "layoutProperties": {
@@ -2533,7 +2592,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2547,6 +2607,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-13",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2648,7 +2709,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2662,6 +2724,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-16",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2747,7 +2810,7 @@
   {
     "id": "GHxFbd5BmALUgY7xJGmWV",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_Amount_Dat_Text",
     "attributes": {
       "name": "FT_Receipt_Amount_Dat_Text",
       "layoutProperties": {
@@ -2763,7 +2826,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "ft_amount"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2777,6 +2841,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-19",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2862,7 +2927,7 @@
   {
     "id": "XIp9Opf3UD7Gh57DkItpu",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_Purpose_Data_Text",
     "attributes": {
       "name": "FT_Receipt_Purpose_Data_Text",
       "layoutProperties": {
@@ -2878,7 +2943,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "ft_pos_data.value"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2892,6 +2958,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-22",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2977,7 +3044,7 @@
   {
     "id": "B2YUt-8DO1zejPvOVSU8s",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "FT_Receipt_Comment_Data_Text",
     "attributes": {
       "name": "FT_Receipt_Comment_Data_Text",
       "layoutProperties": {
@@ -2993,7 +3060,8 @@
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
-      }
+      },
+      "bindingKey": "ft_comments"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3007,6 +3075,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-25",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

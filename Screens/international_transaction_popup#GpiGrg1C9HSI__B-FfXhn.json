@@ -1,0 +1,335 @@
+[
+  {
+    "id": "GpiGrg1C9HSI__B-FfXhn",
+    "name": "international_transaction_popup",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "international_transaction_popup",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "150",
+        "statusBarColor": "#1D6131",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true,
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20
+      },
+      "componentId": ["tOOWHfxUFC8uRa-an6-_E", "NOdXM3otSaZoFq5Da-5jt"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/6/2023",
+    "createdAt": "10/6/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "tOOWHfxUFC8uRa-an6-_E",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "match_parent",
+            "layout_height": "60",
+            "textColor": "#000000",
+            "text": "Success!",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "GpiGrg1C9HSI__B-FfXhn",
+            "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+            "centerY": "GpiGrg1C9HSI__B-FfXhn",
+            "textAlignment": "center"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "NOdXM3otSaZoFq5Da-5jt",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "50",
+            "textColor": "#000000",
+            "text": "Ok",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+            "bottomToBottomOf": "GpiGrg1C9HSI__B-FfXhn",
+            "layout_marginRight": 15,
+            "layout_marginBottom": 15,
+            "textAlignment": "right"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [
+          {
+            "triggerId": "y0SrQMZqd8I2anlTyPkw7",
+            "triggerName": "navigate_to_country_list_screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "0hz3c4wF7uWXLQm7mkhnO"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-1",
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "edit": true,
+    "layout": [
+      {
+        "id": "GpiGrg1C9HSI__B-FfXhn",
+        "name": "international_transaction_popup",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "international_transaction_popup",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "150",
+            "statusBarColor": "#1D6131",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true,
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "tOOWHfxUFC8uRa-an6-_E",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "match_parent",
+                "layout_height": "60",
+                "textColor": "#000000",
+                "text": "Success!",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "GpiGrg1C9HSI__B-FfXhn",
+                "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+                "centerY": "GpiGrg1C9HSI__B-FfXhn",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "NOdXM3otSaZoFq5Da-5jt",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "50",
+                "textColor": "#000000",
+                "text": "Ok",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+                "bottomToBottomOf": "GpiGrg1C9HSI__B-FfXhn",
+                "layout_marginRight": 15,
+                "layout_marginBottom": 15,
+                "textAlignment": "right"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [
+              {
+                "triggerId": "y0SrQMZqd8I2anlTyPkw7",
+                "triggerName": "navigate_to_country_list_screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "0hz3c4wF7uWXLQm7mkhnO"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "GpiGrg1C9HSI__B-FfXhn",
+    "createdBy": "muzammil1",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "tOOWHfxUFC8uRa-an6-_E",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "match_parent",
+        "layout_height": "60",
+        "textColor": "#000000",
+        "text": "Success!",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "GpiGrg1C9HSI__B-FfXhn",
+        "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+        "centerY": "GpiGrg1C9HSI__B-FfXhn",
+        "textAlignment": "center"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "NOdXM3otSaZoFq5Da-5jt",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "50",
+        "textColor": "#000000",
+        "text": "Ok",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "rightToRightOf": "GpiGrg1C9HSI__B-FfXhn",
+        "bottomToBottomOf": "GpiGrg1C9HSI__B-FfXhn",
+        "layout_marginRight": 15,
+        "layout_marginBottom": 15,
+        "textAlignment": "right"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [
+      {
+        "triggerId": "y0SrQMZqd8I2anlTyPkw7",
+        "triggerName": "navigate_to_country_list_screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

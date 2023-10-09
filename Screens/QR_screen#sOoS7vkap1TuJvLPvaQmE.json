@@ -8,21 +8,23 @@
       "name": "QR_screen",
       "layoutProperties": {
         "orientation": "vertical",
-        "layout_width": "match_parent",
-        "layout_height": "wrap_content",
+        "layout_width": "300",
+        "layout_height": "150",
         "statusBarColor": "#093959",
         "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": ["ZQYUvPvnpDfwoth-4-Uw6"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/14/2023",
-    "createdAt": "9/14/2023",
+    "updatedAt": "10/6/2023",
+    "createdAt": "10/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -64,6 +66,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "sOoS7vkap1TuJvLPvaQmE",
@@ -74,13 +77,15 @@
           "name": "QR_screen",
           "layoutProperties": {
             "orientation": "vertical",
-            "layout_width": "match_parent",
-            "layout_height": "wrap_content",
+            "layout_width": "300",
+            "layout_height": "150",
             "statusBarColor": "#093959",
             "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -132,7 +137,8 @@
             "edit": true
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",

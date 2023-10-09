@@ -1,0 +1,1318 @@
+[
+  {
+    "id": "rPO3Vd2fHnAoTwC_zhly0",
+    "name": "Mini statement screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Mini statement screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
+      },
+      "componentId": [
+        "EimnEV1dQvcxYaz47ps5S",
+        "jY55ruvD5n_hvjEpn1o8b",
+        "tke6x5m3Mmfs3jazfW5Ih",
+        "l-zg1vNkfSzyfLAocx8nv",
+        "wI_J04f05f-kILuz30DM5"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
+    "events": [
+      {
+        "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+        "triggerName": "HMB_GetAllAccounts_Api_Trig",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "EimnEV1dQvcxYaz47ps5S",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "View",
+        "attributes": {
+          "name": "View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "200",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#00801A",
+            "topToTopOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "jY55ruvD5n_hvjEpn1o8b",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Current Balance",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToTopOf": "EimnEV1dQvcxYaz47ps5S",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "textStyle": "bold",
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "tke6x5m3Mmfs3jazfW5Ih",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "rNYYmO8JEM7rDn-jVhS_m",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "layout_marginTop": 5
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountTitle"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-3"
+      },
+      {
+        "id": "l-zg1vNkfSzyfLAocx8nv",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "tke6x5m3Mmfs3jazfW5Ih",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "layout_marginTop": 5
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-4"
+      },
+      {
+        "id": "wI_J04f05f-kILuz30DM5",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "content": "List view", "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "OTmX6gpzW8qRumiwLk1W1",
+                "bindingKey": "selectedMiniStatement",
+                "[object Object]": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "bottomToBottomOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "topToBottomOf": "EimnEV1dQvcxYaz47ps5S"
+          },
+          "bindingKey": "recentTransMiniStatement.content.transactions",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "Wz8rXTKVTHtOvw6Qomgl2",
+            "triggerName": "getRecentTransMiniStatement",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/card/v1/miniStatement",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "cardNature": "",
+                "cardNumber": "$selectedCard.cardNumber",
+                "cardaType": "",
+                "displayOption": null,
+                "duration": "20",
+                "fromDate": null,
+                "noOfTransactions": 0,
+                "quickRange": null,
+                "searchCriteria": null,
+                "statementmMonth": 0,
+                "toDate": null,
+                "statementMonth": 0
+              },
+              "responseStateKey": "recentTransMiniStatement"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-5",
+        "gridProps": [
+          {
+            "id": "OTmX6gpzW8qRumiwLk1W1",
+            "name": "List item 0",
+            "path": "0-5-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "9oSn8wztB3JnIcCEb-N_P",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 18,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+                    "centerY": "OTmX6gpzW8qRumiwLk1W1"
+                  },
+                  "bindingKey": "description"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-5-0-0"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedMiniStatement",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ]
+      }
+    ],
+    "subType": "screen",
+    "edit": true,
+    "layout": [
+      {
+        "id": "rPO3Vd2fHnAoTwC_zhly0",
+        "name": "Mini statement screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Mini statement screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+            "triggerName": "HMB_GetAllAccounts_Api_Trig",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "requestBody": { "accountType": "ALL" },
+              "responseStateKey": "hmb_getAllAccounts_data",
+              "conditions": []
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "EimnEV1dQvcxYaz47ps5S",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "200",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#00801A",
+                "topToTopOf": "rPO3Vd2fHnAoTwC_zhly0",
+                "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+                "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "jY55ruvD5n_hvjEpn1o8b",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Current Balance",
+                "cornerRadius": [0, 0, 0, 0],
+                "topToTopOf": "EimnEV1dQvcxYaz47ps5S",
+                "centerX": "EimnEV1dQvcxYaz47ps5S",
+                "textStyle": "bold",
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "tke6x5m3Mmfs3jazfW5Ih",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "rNYYmO8JEM7rDn-jVhS_m",
+                "centerX": "EimnEV1dQvcxYaz47ps5S",
+                "layout_marginTop": 5
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountTitle"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3"
+          },
+          {
+            "id": "l-zg1vNkfSzyfLAocx8nv",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "tke6x5m3Mmfs3jazfW5Ih",
+                "centerX": "EimnEV1dQvcxYaz47ps5S",
+                "layout_marginTop": 5
+              },
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-4"
+          },
+          {
+            "id": "wI_J04f05f-kILuz30DM5",
+            "type": "VLIST",
+            "name": "Vertical list view",
+            "component": { "content": "List view", "type": "VLIST" },
+            "attributes": {
+              "name": "Vertical list view",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_height": "match_parent",
+                "layout_width": "match_parent",
+                "rows": [
+                  {
+                    "id": "OTmX6gpzW8qRumiwLk1W1",
+                    "bindingKey": "selectedMiniStatement",
+                    "[object Object]": [
+                      {
+                        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                        "triggerName": "abc",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+                "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0",
+                "bottomToBottomOf": "rPO3Vd2fHnAoTwC_zhly0",
+                "topToBottomOf": "EimnEV1dQvcxYaz47ps5S"
+              },
+              "bindingKey": "recentTransMiniStatement.content.transactions",
+              "componentId": []
+            },
+            "events": [
+              {
+                "triggerId": "Wz8rXTKVTHtOvw6Qomgl2",
+                "triggerName": "getRecentTransMiniStatement",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/card/v1/miniStatement",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "cardNature": "",
+                    "cardNumber": "$selectedCard.cardNumber",
+                    "cardaType": "",
+                    "displayOption": null,
+                    "duration": "20",
+                    "fromDate": null,
+                    "noOfTransactions": 0,
+                    "quickRange": null,
+                    "searchCriteria": null,
+                    "statementmMonth": 0,
+                    "toDate": null,
+                    "statementMonth": 0
+                  },
+                  "responseStateKey": "recentTransMiniStatement"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-5",
+            "gridProps": [
+              {
+                "id": "OTmX6gpzW8qRumiwLk1W1",
+                "name": "List item 0",
+                "path": "0-5-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "9oSn8wztB3JnIcCEb-N_P",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 18,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+                        "centerY": "OTmX6gpzW8qRumiwLk1W1"
+                      },
+                      "bindingKey": "description"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-5-0-0"
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0]
+                  },
+                  "bindingKey": "selectedMiniStatement",
+                  "componentId": [],
+                  "swipeButtons": []
+                }
+              }
+            ]
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "rPO3Vd2fHnAoTwC_zhly0",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "EimnEV1dQvcxYaz47ps5S",
+    "status": "ACTIVE",
+    "name": "View",
+    "attributes": {
+      "name": "View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "200",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#00801A",
+        "topToTopOf": "rPO3Vd2fHnAoTwC_zhly0",
+        "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+        "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "jY55ruvD5n_hvjEpn1o8b",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#FFFFFF",
+        "text": "Current Balance",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToTopOf": "EimnEV1dQvcxYaz47ps5S",
+        "centerX": "EimnEV1dQvcxYaz47ps5S",
+        "textStyle": "bold",
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "tke6x5m3Mmfs3jazfW5Ih",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#FFFFFF",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "rNYYmO8JEM7rDn-jVhS_m",
+        "centerX": "EimnEV1dQvcxYaz47ps5S",
+        "layout_marginTop": 5
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountTitle"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-3",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "l-zg1vNkfSzyfLAocx8nv",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#FFFFFF",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "tke6x5m3Mmfs3jazfW5Ih",
+        "centerX": "EimnEV1dQvcxYaz47ps5S",
+        "layout_marginTop": 5
+      },
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-4",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "wI_J04f05f-kILuz30DM5",
+    "type": "VLIST",
+    "name": "Vertical list view",
+    "component": { "content": "List view", "type": "VLIST" },
+    "attributes": {
+      "name": "Vertical list view",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "rows": [
+          {
+            "id": "OTmX6gpzW8qRumiwLk1W1",
+            "bindingKey": "selectedMiniStatement",
+            "[object Object]": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+        "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0",
+        "bottomToBottomOf": "rPO3Vd2fHnAoTwC_zhly0",
+        "topToBottomOf": "EimnEV1dQvcxYaz47ps5S"
+      },
+      "bindingKey": "recentTransMiniStatement.content.transactions",
+      "componentId": ["OTmX6gpzW8qRumiwLk1W1"]
+    },
+    "events": [
+      {
+        "triggerId": "Wz8rXTKVTHtOvw6Qomgl2",
+        "triggerName": "getRecentTransMiniStatement",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-5",
+    "gridProps": [
+      {
+        "id": "OTmX6gpzW8qRumiwLk1W1",
+        "name": "List item 0",
+        "path": "0-5-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "9oSn8wztB3JnIcCEb-N_P",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+                "centerY": "OTmX6gpzW8qRumiwLk1W1"
+              },
+              "bindingKey": "description"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-5-0-0"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedMiniStatement",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "layout": [
+      {
+        "id": "EimnEV1dQvcxYaz47ps5S",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "View",
+        "attributes": {
+          "name": "View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "200",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#00801A",
+            "topToTopOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "jY55ruvD5n_hvjEpn1o8b",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Current Balance",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToTopOf": "EimnEV1dQvcxYaz47ps5S",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "textStyle": "bold",
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "tke6x5m3Mmfs3jazfW5Ih",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "rNYYmO8JEM7rDn-jVhS_m",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "layout_marginTop": 5
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountTitle"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-3"
+      },
+      {
+        "id": "l-zg1vNkfSzyfLAocx8nv",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "tke6x5m3Mmfs3jazfW5Ih",
+            "centerX": "EimnEV1dQvcxYaz47ps5S",
+            "layout_marginTop": 5
+          },
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.accountNumber"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-4"
+      },
+      {
+        "id": "wI_J04f05f-kILuz30DM5",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "content": "List view", "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "OTmX6gpzW8qRumiwLk1W1",
+                "bindingKey": "selectedMiniStatement",
+                "[object Object]": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "leftToLeftOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "rightToRightOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "bottomToBottomOf": "rPO3Vd2fHnAoTwC_zhly0",
+            "topToBottomOf": "EimnEV1dQvcxYaz47ps5S"
+          },
+          "bindingKey": "recentTransMiniStatement.content.transactions",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "Wz8rXTKVTHtOvw6Qomgl2",
+            "triggerName": "getRecentTransMiniStatement",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/card/v1/miniStatement",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "cardNature": "",
+                "cardNumber": "$selectedCard.cardNumber",
+                "cardaType": "",
+                "displayOption": null,
+                "duration": "20",
+                "fromDate": null,
+                "noOfTransactions": 0,
+                "quickRange": null,
+                "searchCriteria": null,
+                "statementmMonth": 0,
+                "toDate": null,
+                "statementMonth": 0
+              },
+              "responseStateKey": "recentTransMiniStatement"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-5",
+        "gridProps": [
+          {
+            "id": "OTmX6gpzW8qRumiwLk1W1",
+            "name": "List item 0",
+            "path": "0-5-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "9oSn8wztB3JnIcCEb-N_P",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 18,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+                    "centerY": "OTmX6gpzW8qRumiwLk1W1"
+                  },
+                  "bindingKey": "description"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-5-0-0"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedMiniStatement",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ]
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "OTmX6gpzW8qRumiwLk1W1",
+    "name": "List item 0",
+    "path": "0-5-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "9oSn8wztB3JnIcCEb-N_P",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+            "centerY": "OTmX6gpzW8qRumiwLk1W1"
+          },
+          "bindingKey": "description"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-5-0-0"
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "bindingKey": "selectedMiniStatement",
+      "componentId": ["9oSn8wztB3JnIcCEb-N_P"],
+      "swipeButtons": []
+    },
+    "layout": [
+      {
+        "id": "OTmX6gpzW8qRumiwLk1W1",
+        "name": "List item 0",
+        "path": "0-5-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "9oSn8wztB3JnIcCEb-N_P",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+                "centerY": "OTmX6gpzW8qRumiwLk1W1"
+              },
+              "bindingKey": "description"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-5-0-0"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedMiniStatement",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "9oSn8wztB3JnIcCEb-N_P",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "OTmX6gpzW8qRumiwLk1W1",
+        "centerY": "OTmX6gpzW8qRumiwLk1W1"
+      },
+      "bindingKey": "description"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-5-0-0",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

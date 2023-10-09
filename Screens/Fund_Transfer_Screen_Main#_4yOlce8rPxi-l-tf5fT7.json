@@ -50,8 +50,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/4/2023",
-    "createdAt": "10/4/2023",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -1096,7 +1096,8 @@
             "clickable": true,
             "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
             "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-            "width_percent": 50
+            "width_percent": 50,
+            "layout_marginBottom": 0
           }
         },
         "icon": "FaBimobject",
@@ -1155,6 +1156,56 @@
             "attributes": {
               "serviceName": "Navigate with back stack",
               "id": "bEGZyJq8UtETimH7yyGoa"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
+            "triggerName": "HMB_GetAccountDetails_Api_Trig",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "requestDataType": "byJSON",
+              "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+              "requestBody": {
+                "accNo": "$selectedAcc_QRGenerate.accountNumber",
+                "accountId": "$selectedAcc_QRGenerate.accountId",
+                "accountNumber": "$selectedBeneficiary.accountNumber",
+                "amount": "$ft_amount",
+                "bankIMD": "$selectedBeneficiary.bankIMD",
+                "bankName": null,
+                "fromAccount": null,
+                "purposeCode": "",
+                "purposeDetail": "$ft_purpose.value",
+                "rda": false,
+                "swiftCode": null,
+                "toAccount": null
+              },
+              "responseStateKey": "hmb_getAccountDetails",
+              "conditions": [
+                {
+                  "httpStatus": 200,
+                  "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
+                  "triggerId": "WfoRghy24XDRvZ_8GUi1a",
+                  "logic": {
+                    "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
+                  }
+                }
+              ]
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -2234,7 +2285,8 @@
                 "clickable": true,
                 "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
                 "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-                "width_percent": 50
+                "width_percent": 50,
+                "layout_marginBottom": 0
               }
             },
             "icon": "FaBimobject",
@@ -2293,6 +2345,56 @@
                 "attributes": {
                   "serviceName": "Navigate with back stack",
                   "id": "bEGZyJq8UtETimH7yyGoa"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
+                "triggerName": "HMB_GetAccountDetails_Api_Trig",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "requestDataType": "byJSON",
+                  "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+                  "requestBody": {
+                    "accNo": "$selectedAcc_QRGenerate.accountNumber",
+                    "accountId": "$selectedAcc_QRGenerate.accountId",
+                    "accountNumber": "$selectedBeneficiary.accountNumber",
+                    "amount": "$ft_amount",
+                    "bankIMD": "$selectedBeneficiary.bankIMD",
+                    "bankName": null,
+                    "fromAccount": null,
+                    "purposeCode": "",
+                    "purposeDetail": "$ft_purpose.value",
+                    "rda": false,
+                    "swiftCode": null,
+                    "toAccount": null
+                  },
+                  "responseStateKey": "hmb_getAccountDetails",
+                  "conditions": [
+                    {
+                      "httpStatus": 200,
+                      "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
+                      "triggerId": "WfoRghy24XDRvZ_8GUi1a",
+                      "logic": {
+                        "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
+                      }
+                    }
+                  ]
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -3397,7 +3499,8 @@
         "clickable": true,
         "leftToLeftOf": "_4yOlce8rPxi-l-tf5fT7",
         "topToBottomOf": "IZZ9NiawJn2tcYGDT4EIx",
-        "width_percent": 50
+        "width_percent": 50,
+        "layout_marginBottom": 0
       }
     },
     "icon": "FaBimobject",
@@ -3455,6 +3558,12 @@
       {
         "triggerId": "N8CoABxzjVwqMwT8wUUws",
         "triggerName": "naigate_to_ft_confirmation_screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
+        "triggerName": "HMB_GetAccountDetails_Api_Trig",
         "name": "On click",
         "type": "ONCLICK"
       }

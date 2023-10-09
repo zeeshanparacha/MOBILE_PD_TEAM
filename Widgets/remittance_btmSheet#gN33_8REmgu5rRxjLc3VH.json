@@ -26,8 +26,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/4/2023",
-    "createdAt": "10/4/2023",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -190,8 +190,8 @@
             "rows": [
               {
                 "id": "Mp9toeUIVdNb2-_RGZG4r",
-                "bindingKey": "remittanceData",
-                "[object Object]": [
+                "bindingKey": "selectedRemittanceData",
+                "events": [
                   {
                     "triggerId": "xwNwZIcqa07hpRrikIW0X",
                     "triggerName": "abc",
@@ -212,23 +212,23 @@
         },
         "events": [
           {
-            "triggerId": "6o3j-vmtvOQw9GLDbQ4-z",
-            "triggerName": "getPayorderBeneficiaryApiTrig",
+            "triggerId": "gV5hUs51HQ3YruNzXNrjD",
+            "triggerName": "getPayorderBeneficiaryTrig",
             "serviceType": "NETWORK",
             "attributes": {
-              "serviceName": "GET",
+              "serviceName": "POST",
               "headers": {
                 "Content-Type": "application/json",
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
                 "activity_id": "1",
                 "deviceKey": "1244d1426ebe80d3",
                 "deviceName": "2201117TG",
                 "locale": "en",
                 "entityId": "1",
-                "app_version": "5.1.0",
-                "version_code": "1",
-                "channel_key": "006"
+                "app_version": "5.1.0"
               },
               "url": "https://hliteuat.habibmetro.com/common/v1/getPayorderBeneficiary",
               "requestDataType": "byJSON",
@@ -325,10 +325,18 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "borderColor": "#FFFFFF"
               },
-              "bindingKey": "remittanceData",
+              "bindingKey": "selectedRemittanceData",
               "componentId": [],
               "swipeButtons": []
-            }
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
         ],
         "edit": true
@@ -522,8 +530,8 @@
                 "rows": [
                   {
                     "id": "Mp9toeUIVdNb2-_RGZG4r",
-                    "bindingKey": "remittanceData",
-                    "[object Object]": [
+                    "bindingKey": "selectedRemittanceData",
+                    "events": [
                       {
                         "triggerId": "xwNwZIcqa07hpRrikIW0X",
                         "triggerName": "abc",
@@ -544,23 +552,23 @@
             },
             "events": [
               {
-                "triggerId": "6o3j-vmtvOQw9GLDbQ4-z",
-                "triggerName": "getPayorderBeneficiaryApiTrig",
+                "triggerId": "gV5hUs51HQ3YruNzXNrjD",
+                "triggerName": "getPayorderBeneficiaryTrig",
                 "serviceType": "NETWORK",
                 "attributes": {
-                  "serviceName": "GET",
+                  "serviceName": "POST",
                   "headers": {
                     "Content-Type": "application/json",
                     "Authorization": "$hmb_loginKey.content.token",
                     "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
                     "activity_id": "1",
                     "deviceKey": "1244d1426ebe80d3",
                     "deviceName": "2201117TG",
                     "locale": "en",
                     "entityId": "1",
-                    "app_version": "5.1.0",
-                    "version_code": "1",
-                    "channel_key": "006"
+                    "app_version": "5.1.0"
                   },
                   "url": "https://hliteuat.habibmetro.com/common/v1/getPayorderBeneficiary",
                   "requestDataType": "byJSON",
@@ -657,10 +665,18 @@
                     "cornerRadius": [0, 0, 0, 0],
                     "borderColor": "#FFFFFF"
                   },
-                  "bindingKey": "remittanceData",
+                  "bindingKey": "selectedRemittanceData",
                   "componentId": [],
                   "swipeButtons": []
-                }
+                },
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
               }
             ],
             "edit": true
@@ -672,7 +688,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "gN33_8REmgu5rRxjLc3VH",
-    "createdBy": "ammarahmed",
+    "createdBy": "muzammil1",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -840,8 +856,8 @@
         "rows": [
           {
             "id": "Mp9toeUIVdNb2-_RGZG4r",
-            "bindingKey": "remittanceData",
-            "[object Object]": [
+            "bindingKey": "selectedRemittanceData",
+            "events": [
               {
                 "triggerId": "xwNwZIcqa07hpRrikIW0X",
                 "triggerName": "abc",
@@ -862,8 +878,8 @@
     },
     "events": [
       {
-        "triggerId": "6o3j-vmtvOQw9GLDbQ4-z",
-        "triggerName": "getPayorderBeneficiaryApiTrig",
+        "triggerId": "gV5hUs51HQ3YruNzXNrjD",
+        "triggerName": "getPayorderBeneficiaryTrig",
         "name": "On Load",
         "type": "ONLOAD"
       }
@@ -954,10 +970,18 @@
             "cornerRadius": [0, 0, 0, 0],
             "borderColor": "#FFFFFF"
           },
-          "bindingKey": "remittanceData",
+          "bindingKey": "selectedRemittanceData",
           "componentId": [],
           "swipeButtons": []
-        }
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "edit": true,
@@ -1118,8 +1142,8 @@
             "rows": [
               {
                 "id": "Mp9toeUIVdNb2-_RGZG4r",
-                "bindingKey": "remittanceData",
-                "[object Object]": [
+                "bindingKey": "selectedRemittanceData",
+                "events": [
                   {
                     "triggerId": "xwNwZIcqa07hpRrikIW0X",
                     "triggerName": "abc",
@@ -1140,23 +1164,23 @@
         },
         "events": [
           {
-            "triggerId": "6o3j-vmtvOQw9GLDbQ4-z",
-            "triggerName": "getPayorderBeneficiaryApiTrig",
+            "triggerId": "gV5hUs51HQ3YruNzXNrjD",
+            "triggerName": "getPayorderBeneficiaryTrig",
             "serviceType": "NETWORK",
             "attributes": {
-              "serviceName": "GET",
+              "serviceName": "POST",
               "headers": {
                 "Content-Type": "application/json",
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
                 "activity_id": "1",
                 "deviceKey": "1244d1426ebe80d3",
                 "deviceName": "2201117TG",
                 "locale": "en",
                 "entityId": "1",
-                "app_version": "5.1.0",
-                "version_code": "1",
-                "channel_key": "006"
+                "app_version": "5.1.0"
               },
               "url": "https://hliteuat.habibmetro.com/common/v1/getPayorderBeneficiary",
               "requestDataType": "byJSON",
@@ -1253,10 +1277,18 @@
                 "cornerRadius": [0, 0, 0, 0],
                 "borderColor": "#FFFFFF"
               },
-              "bindingKey": "remittanceData",
+              "bindingKey": "selectedRemittanceData",
               "componentId": [],
               "swipeButtons": []
-            }
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           }
         ],
         "edit": true
@@ -1352,10 +1384,18 @@
         "cornerRadius": [0, 0, 0, 0],
         "borderColor": "#FFFFFF"
       },
-      "bindingKey": "remittanceData",
+      "bindingKey": "selectedRemittanceData",
       "componentId": ["P3u2XVgG1fMpc7rfPpbij", "qq-XWjJXJPUmPBY0ZLVoR"],
       "swipeButtons": []
     },
+    "events": [
+      {
+        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+        "triggerName": "abc",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "layout": [
       {
         "id": "Mp9toeUIVdNb2-_RGZG4r",
@@ -1441,10 +1481,18 @@
             "cornerRadius": [0, 0, 0, 0],
             "borderColor": "#FFFFFF"
           },
-          "bindingKey": "remittanceData",
+          "bindingKey": "selectedRemittanceData",
           "componentId": [],
           "swipeButtons": []
-        }
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       }
     ],
     "subType": "component",

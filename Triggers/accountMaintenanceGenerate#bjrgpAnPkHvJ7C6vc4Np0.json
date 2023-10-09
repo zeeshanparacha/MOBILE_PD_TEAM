@@ -1,0 +1,72 @@
+{
+  "id": "qbNFVaAILq0aDoOtRdWuD",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "accountMaintenanceGenerate",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/accountMaintenance/statement",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountId": "$selectedAcc_QRGenerate.accountId",
+            "dateFrom": null,
+            "dateTo": null,
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "21e1949ae8532b66",
+              "fcmToken": null,
+              "imei": "111111111111111",
+              "ip": "192.168.0.112",
+              "isNotificationEnabled": true,
+              "name": "Pixel 2 XL",
+              "os": "Android",
+              "osType": "30"
+            },
+            "otpInfo": {
+              "emailPin": "",
+              "smsPin": "$accMaintOTP",
+              "splitOtp": true,
+              "validationType": ""
+            },
+            "user_id": null
+          },
+          "responseStateKey": "accountMaintenanceGenerateRes",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "triggerName": "show_generate_certificate_popup",
+              "triggerId": "kAJkEul0ufvTbK_ckIfZY"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.dphep6z06hBoEc9yiU-ndpirj0OvtxV",
+  "_id": "bjrgpAnPkHvJ7C6vc4Np0",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "accountMaintenanceGenerate"
+}

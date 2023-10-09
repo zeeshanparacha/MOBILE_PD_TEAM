@@ -39,8 +39,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/26/2023",
-    "createdAt": "9/26/2023",
+    "updatedAt": "10/6/2023",
+    "createdAt": "10/6/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -116,7 +116,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-1",
         "edit": true
       },
@@ -124,7 +138,7 @@
         "id": "XlYL25XKovGRvrM2wQt9h",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "HMB_BEne_FT_TransferTo_Name_Text",
         "attributes": {
           "name": "HMB_BEne_FT_TransferTo_Name_Text",
           "layoutProperties": {
@@ -142,7 +156,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -155,7 +169,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "3cqdXXKsG2XlBNST4VmDw",
@@ -179,7 +194,7 @@
             "textStyle": "regular",
             "textAlignment": "left"
           },
-          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -199,7 +214,7 @@
         "id": "HcbvUq28-RsBytg_2hrsp",
         "status": "ACTIVE",
         "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "name": "HMB_BEne_FT_TransferTo_Change_Text",
         "attributes": {
           "name": "HMB_BEne_FT_TransferTo_Change_Text",
           "layoutProperties": {
@@ -228,8 +243,23 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-4"
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-4",
+        "edit": true
       },
       {
         "id": "Nu_8nla91bzlSWXUpzVlm",
@@ -361,7 +391,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "selectedTopupCategory.title"
+          "bindingKey": "selectedTopupCategory.categoryName"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -472,7 +502,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "selectedCompany.title"
+          "bindingKey": "selectedTopupCompany.companyName"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -594,8 +624,46 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-15"
+        "events": [
+          {
+            "triggerId": "IObd0ss1yjLmMnFnsqXYq",
+            "triggerName": "getBillInquiryAPIForTopUp",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/payment/v1/billInquiry",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "accountNo": "$selectedAcc_QRGenerate.accountId",
+                "categoryCode": "$selectedTopupCategory.categoryCode",
+                "categoryName": "$selectedTopupCategory.categoryName",
+                "companyCode": "$selectedTopupCompany.companyCode",
+                "companyName": "$selectedTopupCompany.companyName",
+                "consumerNick": null,
+                "consumerNumber": "$topupConsumerNo",
+                "serviceCode": null
+              },
+              "responseStateKey": "billInquiryAPIForTopUp"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-14",
+        "edit": true
       },
       {
         "id": "UGnCeUXEgFvPWSUQs5ejt",
@@ -656,7 +724,8 @@
             "layout_marginLeft": 20,
             "width_percent": 70,
             "placeHolderText": "03xxxxxxxxx"
-          }
+          },
+          "bindingKey": "topupConsumerNo"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -669,7 +738,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-17",
+        "path": "0-16",
         "edit": true
       }
     ],
@@ -774,7 +843,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-1",
             "edit": true
           },
@@ -782,7 +865,7 @@
             "id": "XlYL25XKovGRvrM2wQt9h",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "HMB_BEne_FT_TransferTo_Name_Text",
             "attributes": {
               "name": "HMB_BEne_FT_TransferTo_Name_Text",
               "layoutProperties": {
@@ -800,7 +883,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -813,7 +896,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "3cqdXXKsG2XlBNST4VmDw",
@@ -837,7 +921,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left"
               },
-              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -857,7 +941,7 @@
             "id": "HcbvUq28-RsBytg_2hrsp",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "HMB_BEne_FT_TransferTo_Change_Text",
             "attributes": {
               "name": "HMB_BEne_FT_TransferTo_Change_Text",
               "layoutProperties": {
@@ -886,8 +970,23 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-4"
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-4",
+            "edit": true
           },
           {
             "id": "Nu_8nla91bzlSWXUpzVlm",
@@ -1019,7 +1118,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "selectedTopupCategory.title"
+              "bindingKey": "selectedTopupCategory.categoryName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1130,7 +1229,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "selectedCompany.title"
+              "bindingKey": "selectedTopupCompany.companyName"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1252,8 +1351,46 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-15"
+            "events": [
+              {
+                "triggerId": "IObd0ss1yjLmMnFnsqXYq",
+                "triggerName": "getBillInquiryAPIForTopUp",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/payment/v1/billInquiry",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accountNo": "$selectedAcc_QRGenerate.accountId",
+                    "categoryCode": "$selectedTopupCategory.categoryCode",
+                    "categoryName": "$selectedTopupCategory.categoryName",
+                    "companyCode": "$selectedTopupCompany.companyCode",
+                    "companyName": "$selectedTopupCompany.companyName",
+                    "consumerNick": null,
+                    "consumerNumber": "$topupConsumerNo",
+                    "serviceCode": null
+                  },
+                  "responseStateKey": "billInquiryAPIForTopUp"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-14",
+            "edit": true
           },
           {
             "id": "UGnCeUXEgFvPWSUQs5ejt",
@@ -1314,7 +1451,8 @@
                 "layout_marginLeft": 20,
                 "width_percent": 70,
                 "placeHolderText": "03xxxxxxxxx"
-              }
+              },
+              "bindingKey": "topupConsumerNo"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -1327,7 +1465,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-17",
+            "path": "0-16",
             "edit": true
           }
         ],
@@ -1411,7 +1549,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-1",
     "edit": true,
     "subType": "component",
@@ -1422,7 +1567,7 @@
   {
     "id": "XlYL25XKovGRvrM2wQt9h",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_BEne_FT_TransferTo_Name_Text",
     "attributes": {
       "name": "HMB_BEne_FT_TransferTo_Name_Text",
       "layoutProperties": {
@@ -1440,7 +1585,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountTitle"
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1454,6 +1599,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1480,7 +1626,7 @@
         "textStyle": "regular",
         "textAlignment": "left"
       },
-      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts.0.accountNumber"
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1503,7 +1649,7 @@
   {
     "id": "HcbvUq28-RsBytg_2hrsp",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "HMB_BEne_FT_TransferTo_Change_Text",
     "attributes": {
       "name": "HMB_BEne_FT_TransferTo_Change_Text",
       "layoutProperties": {
@@ -1532,8 +1678,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-4",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1677,7 +1831,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "selectedTopupCategory.title"
+      "bindingKey": "selectedTopupCategory.categoryName"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1797,7 +1951,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "selectedCompany.title"
+      "bindingKey": "selectedTopupCompany.companyName"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -1928,8 +2082,16 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
-    "path": "0-15",
+    "events": [
+      {
+        "triggerId": "IObd0ss1yjLmMnFnsqXYq",
+        "triggerName": "getBillInquiryAPIForTopUp",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-14",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -1996,7 +2158,8 @@
         "layout_marginLeft": 20,
         "width_percent": 70,
         "placeHolderText": "03xxxxxxxxx"
-      }
+      },
+      "bindingKey": "topupConsumerNo"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -2009,7 +2172,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-17",
+    "path": "0-16",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
