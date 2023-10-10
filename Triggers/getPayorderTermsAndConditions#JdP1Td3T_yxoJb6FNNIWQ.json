@@ -1,0 +1,44 @@
+{
+  "id": "BZ4Toczx9KdZi1x15kG24",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getPayorderTermsAndConditions",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+          "requestDataType": "byJSON",
+          "requestBody": { "entityId": "TERMS_CONDITIONS_PO" },
+          "responseStateKey": "payorderTermsAndConditions",
+          "conditions": []
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.pz65scg9728jG_foWsD7hHSoy2H7-coC",
+  "_id": "JdP1Td3T_yxoJb6FNNIWQ",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "getPayorderTermsAndConditions"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "dFFrcof4ewbd-PAQ0DqXo",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "payOrderApi",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/common/v1/payOrder",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountId": "$selectedAcc_QRGenerate.accountId",
+            "address": "$payOrderBeneAddr",
+            "amount": "$payOrderAmount",
+            "beneDOB": "$selectedDate",
+            "beneNTN": "",
+            "beneRelation": "$payOrderBeneRelation",
+            "cnic": "$payOrderBeneCNIC",
+            "contactNumber": "$payOrderBeneContact",
+            "favouring": "gg",
+            "otpInfo": {
+              "emailPin": "",
+              "smsPin": "$payOrderOTP",
+              "splitOtp": false,
+              "validationType": ""
+            },
+            "payorderType": "",
+            "providedpin": "",
+            "purposeCode": "106",
+            "for": "106"
+          },
+          "responseStateKey": "payOrderApiData"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.f08vmta9k4mj_7SlAZIexL2CQFfknSDp",
+  "_id": "qawWn48Pxuz4hS--0ULt4",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
+  "createdBy": "muzammil1",
+  "updatedBy": "muzammil1"
+}

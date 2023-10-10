@@ -121,8 +121,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/5/2023",
-    "createdAt": "10/5/2023",
+    "updatedAt": "10/9/2023",
+    "createdAt": "10/9/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -787,7 +787,7 @@
         "id": "KaFVmOeSgttbsCH1H25rn",
         "status": "ACTIVE",
         "_id": "61dec716077814a0f374d9f5",
-        "name": "Input text",
+        "name": "PO_BeneName_Input",
         "attributes": {
           "name": "PO_BeneName_Input",
           "validation": [],
@@ -809,7 +809,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginLeft": 10,
             "layout_marginRight": 10
-          }
+          },
+          "bindingKey": "payOrderBeneName"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -822,7 +823,8 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-16"
+        "path": "1-16",
+        "edit": true
       },
       {
         "id": "RDUseAXQCvgbHtzKUXYTr",
@@ -898,7 +900,7 @@
         "id": "OWQJi6Pa3G4R7D3lhicZC",
         "status": "ACTIVE",
         "_id": "61dec716077814a0f374d9f5",
-        "name": "Input text",
+        "name": "PO_BeneAdd_Input",
         "attributes": {
           "name": "PO_BeneAdd_Input",
           "validation": [],
@@ -920,7 +922,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginLeft": 10,
             "layout_marginRight": 10
-          }
+          },
+          "bindingKey": "payOrderBeneAddr"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -933,7 +936,8 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-19"
+        "path": "1-19",
+        "edit": true
       },
       {
         "id": "SCpRESVoAMqR3xx0gI4io",
@@ -1031,7 +1035,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginRight": 10,
             "layout_marginLeft": 10
-          }
+          },
+          "bindingKey": "payOrderBeneRelation"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -1044,7 +1049,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-22",
+        "path": "1-22",
         "edit": true
       },
       {
@@ -1143,7 +1148,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginLeft": 10,
             "layout_marginRight": 10
-          }
+          },
+          "bindingKey": "payOrderBeneCNIC"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -1156,7 +1162,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-25",
+        "path": "1-25",
         "edit": true
       },
       {
@@ -1255,7 +1261,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginLeft": 10,
             "layout_marginRight": 10
-          }
+          },
+          "bindingKey": "payOrderBeneContact"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -1268,7 +1275,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-28",
+        "path": "1-28",
         "edit": true
       },
       {
@@ -1540,7 +1547,8 @@
             "placeHolderTextColor": "#ADADAD",
             "layout_marginLeft": 10,
             "layout_marginRight": 10
-          }
+          },
+          "bindingKey": "payOrderAmount"
         },
         "icon": "FaRemoveFormat",
         "group": "Form",
@@ -1553,7 +1561,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-35",
+        "path": "1-35",
         "edit": true
       },
       {
@@ -1766,8 +1774,11 @@
             "textStyle": "regular",
             "textAlignment": "center",
             "activeLineColor": "#000000",
-            "lineColor": "#000000"
-          }
+            "lineColor": "#000000",
+            "length": "5",
+            "keyboardType": "number"
+          },
+          "bindingKey": "payOrderOTP"
         },
         "icon": "FaShieldAlt",
         "group": "Security",
@@ -1780,7 +1791,8 @@
         "projectType": "mobile",
         "component": { "content": "OTP", "type": "OTP" },
         "events": [],
-        "path": "0-41"
+        "path": "1-41",
+        "edit": true
       },
       {
         "id": "JNk8-8w8S3ObvBkDTMCb9",
@@ -1816,8 +1828,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-42",
+        "events": [
+          {
+            "triggerId": "L5CNp_ae8p-wfMt8DWmvY",
+            "triggerName": "navigate_to_Payorder_TermsAndConditions",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "wrvQIQvceph7QYCTqCfLc",
+              "type": "push"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "1-42",
         "edit": true
       }
     ],
@@ -2713,7 +2738,7 @@
             "id": "KaFVmOeSgttbsCH1H25rn",
             "status": "ACTIVE",
             "_id": "61dec716077814a0f374d9f5",
-            "name": "Input text",
+            "name": "PO_BeneName_Input",
             "attributes": {
               "name": "PO_BeneName_Input",
               "validation": [],
@@ -2735,7 +2760,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
-              }
+              },
+              "bindingKey": "payOrderBeneName"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -2748,7 +2774,8 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-16"
+            "path": "1-16",
+            "edit": true
           },
           {
             "id": "RDUseAXQCvgbHtzKUXYTr",
@@ -2824,7 +2851,7 @@
             "id": "OWQJi6Pa3G4R7D3lhicZC",
             "status": "ACTIVE",
             "_id": "61dec716077814a0f374d9f5",
-            "name": "Input text",
+            "name": "PO_BeneAdd_Input",
             "attributes": {
               "name": "PO_BeneAdd_Input",
               "validation": [],
@@ -2846,7 +2873,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
-              }
+              },
+              "bindingKey": "payOrderBeneAddr"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -2859,7 +2887,8 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-19"
+            "path": "1-19",
+            "edit": true
           },
           {
             "id": "SCpRESVoAMqR3xx0gI4io",
@@ -2957,7 +2986,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginRight": 10,
                 "layout_marginLeft": 10
-              }
+              },
+              "bindingKey": "payOrderBeneRelation"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -2970,7 +3000,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-22",
+            "path": "1-22",
             "edit": true
           },
           {
@@ -3069,7 +3099,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
-              }
+              },
+              "bindingKey": "payOrderBeneCNIC"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -3082,7 +3113,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-25",
+            "path": "1-25",
             "edit": true
           },
           {
@@ -3181,7 +3212,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
-              }
+              },
+              "bindingKey": "payOrderBeneContact"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -3194,7 +3226,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-28",
+            "path": "1-28",
             "edit": true
           },
           {
@@ -3466,7 +3498,8 @@
                 "placeHolderTextColor": "#ADADAD",
                 "layout_marginLeft": 10,
                 "layout_marginRight": 10
-              }
+              },
+              "bindingKey": "payOrderAmount"
             },
             "icon": "FaRemoveFormat",
             "group": "Form",
@@ -3479,7 +3512,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-35",
+            "path": "1-35",
             "edit": true
           },
           {
@@ -3692,8 +3725,11 @@
                 "textStyle": "regular",
                 "textAlignment": "center",
                 "activeLineColor": "#000000",
-                "lineColor": "#000000"
-              }
+                "lineColor": "#000000",
+                "length": "5",
+                "keyboardType": "number"
+              },
+              "bindingKey": "payOrderOTP"
             },
             "icon": "FaShieldAlt",
             "group": "Security",
@@ -3706,7 +3742,8 @@
             "projectType": "mobile",
             "component": { "content": "OTP", "type": "OTP" },
             "events": [],
-            "path": "0-41"
+            "path": "1-41",
+            "edit": true
           },
           {
             "id": "JNk8-8w8S3ObvBkDTMCb9",
@@ -3742,8 +3779,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-42",
+            "events": [
+              {
+                "triggerId": "L5CNp_ae8p-wfMt8DWmvY",
+                "triggerName": "navigate_to_Payorder_TermsAndConditions",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "wrvQIQvceph7QYCTqCfLc",
+                  "type": "push"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "1-42",
             "edit": true
           }
         ],
@@ -3754,7 +3804,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "83qWIgXrdcUyDC1PXsCnf",
-    "createdBy": "muzammil1",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4436,7 +4486,7 @@
   {
     "id": "KaFVmOeSgttbsCH1H25rn",
     "status": "ACTIVE",
-    "name": "Input text",
+    "name": "PO_BeneName_Input",
     "attributes": {
       "name": "PO_BeneName_Input",
       "validation": [],
@@ -4458,7 +4508,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginLeft": 10,
         "layout_marginRight": 10
-      }
+      },
+      "bindingKey": "payOrderBeneName"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -4471,7 +4522,8 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-16",
+    "path": "1-16",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4556,7 +4608,7 @@
   {
     "id": "OWQJi6Pa3G4R7D3lhicZC",
     "status": "ACTIVE",
-    "name": "Input text",
+    "name": "PO_BeneAdd_Input",
     "attributes": {
       "name": "PO_BeneAdd_Input",
       "validation": [],
@@ -4578,7 +4630,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginLeft": 10,
         "layout_marginRight": 10
-      }
+      },
+      "bindingKey": "payOrderBeneAddr"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -4591,7 +4644,8 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-19",
+    "path": "1-19",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -4698,7 +4752,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginRight": 10,
         "layout_marginLeft": 10
-      }
+      },
+      "bindingKey": "payOrderBeneRelation"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -4711,7 +4766,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-22",
+    "path": "1-22",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4819,7 +4874,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginLeft": 10,
         "layout_marginRight": 10
-      }
+      },
+      "bindingKey": "payOrderBeneCNIC"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -4832,7 +4888,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-25",
+    "path": "1-25",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -4940,7 +4996,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginLeft": 10,
         "layout_marginRight": 10
-      }
+      },
+      "bindingKey": "payOrderBeneContact"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -4953,7 +5010,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-28",
+    "path": "1-28",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -5238,7 +5295,8 @@
         "placeHolderTextColor": "#ADADAD",
         "layout_marginLeft": 10,
         "layout_marginRight": 10
-      }
+      },
+      "bindingKey": "payOrderAmount"
     },
     "icon": "FaRemoveFormat",
     "group": "Form",
@@ -5251,7 +5309,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-35",
+    "path": "1-35",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -5482,8 +5540,11 @@
         "textStyle": "regular",
         "textAlignment": "center",
         "activeLineColor": "#000000",
-        "lineColor": "#000000"
-      }
+        "lineColor": "#000000",
+        "length": "5",
+        "keyboardType": "number"
+      },
+      "bindingKey": "payOrderOTP"
     },
     "icon": "FaShieldAlt",
     "group": "Security",
@@ -5496,7 +5557,8 @@
     "projectType": "mobile",
     "component": { "content": "OTP", "type": "OTP" },
     "events": [],
-    "path": "0-41",
+    "path": "1-41",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -5535,8 +5597,15 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
-    "path": "0-42",
+    "events": [
+      {
+        "triggerId": "L5CNp_ae8p-wfMt8DWmvY",
+        "triggerName": "navigate_to_Payorder_TermsAndConditions",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "1-42",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",

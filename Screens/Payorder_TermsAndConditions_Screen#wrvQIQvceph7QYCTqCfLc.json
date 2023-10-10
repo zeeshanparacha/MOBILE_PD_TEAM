@@ -1,0 +1,487 @@
+[
+  {
+    "id": "wrvQIQvceph7QYCTqCfLc",
+    "name": "Payorder_TermsAndConditions_Screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Payorder_TermsAndConditions_Screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": [
+        "cAxuL7pZHdaLg33axcOAY",
+        "Q0KIVIuz-42iz_McQ0HVD",
+        "aXN7QpApkvrmOrRfKP1PS"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/9/2023",
+    "createdAt": "10/9/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "cAxuL7pZHdaLg33axcOAY",
+        "status": "ACTIVE",
+        "_id": "61ded106077814a0f374da04",
+        "name": "WEB VIEW",
+        "attributes": {
+          "name": "WEB VIEW",
+          "layoutProperties": {
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textSize": 12,
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": null,
+            "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+            "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+            "topToTopOf": "wrvQIQvceph7QYCTqCfLc",
+            "textColor": "#000000",
+            "textAlignment": "left",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10
+          },
+          "bindingKey": "payorderTermsAndConditions.content.htmlContent",
+          "contentType": "State based"
+        },
+        "icon": "FaTenge",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Web view", "type": "WEBVIEW" },
+        "events": [
+          {
+            "triggerId": "BZ4Toczx9KdZi1x15kG24",
+            "triggerName": "getPayorderTermsAndConditions",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+              "requestDataType": "byJSON",
+              "requestBody": { "entityId": "TERMS_CONDITIONS_PO" },
+              "responseStateKey": "payorderTermsAndConditions"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-0",
+        "edit": true
+      },
+      {
+        "id": "Q0KIVIuz-42iz_McQ0HVD",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "55",
+            "text": "Cancel",
+            "textSize": 10,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#9BB93B",
+            "clickable": true,
+            "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+            "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+            "width_percent": 50
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "aXN7QpApkvrmOrRfKP1PS",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "55",
+            "text": "Accept",
+            "textSize": 10,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#404D14",
+            "clickable": true,
+            "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+            "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+            "width_percent": 50
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-2",
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "wrvQIQvceph7QYCTqCfLc",
+        "name": "Payorder_TermsAndConditions_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Payorder_TermsAndConditions_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "cAxuL7pZHdaLg33axcOAY",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "WEB VIEW",
+            "attributes": {
+              "name": "WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textSize": 12,
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": null,
+                "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+                "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+                "topToTopOf": "wrvQIQvceph7QYCTqCfLc",
+                "textColor": "#000000",
+                "textAlignment": "left",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10
+              },
+              "bindingKey": "payorderTermsAndConditions.content.htmlContent",
+              "contentType": "State based"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "BZ4Toczx9KdZi1x15kG24",
+                "triggerName": "getPayorderTermsAndConditions",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "TERMS_CONDITIONS_PO" },
+                  "responseStateKey": "payorderTermsAndConditions"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "Q0KIVIuz-42iz_McQ0HVD",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "55",
+                "text": "Cancel",
+                "textSize": 10,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#9BB93B",
+                "clickable": true,
+                "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+                "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "aXN7QpApkvrmOrRfKP1PS",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "55",
+                "text": "Accept",
+                "textSize": 10,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#404D14",
+                "clickable": true,
+                "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+                "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-2",
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "wrvQIQvceph7QYCTqCfLc",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "cAxuL7pZHdaLg33axcOAY",
+    "status": "ACTIVE",
+    "name": "WEB VIEW",
+    "attributes": {
+      "name": "WEB VIEW",
+      "layoutProperties": {
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textSize": 12,
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": null,
+        "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+        "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+        "topToTopOf": "wrvQIQvceph7QYCTqCfLc",
+        "textColor": "#000000",
+        "textAlignment": "left",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10
+      },
+      "bindingKey": "payorderTermsAndConditions.content.htmlContent",
+      "contentType": "State based"
+    },
+    "icon": "FaTenge",
+    "group": "Form",
+    "type": "WEBVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Web view", "type": "WEBVIEW" },
+    "events": [
+      {
+        "triggerId": "BZ4Toczx9KdZi1x15kG24",
+        "triggerName": "getPayorderTermsAndConditions",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Q0KIVIuz-42iz_McQ0HVD",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "55",
+        "text": "Cancel",
+        "textSize": 10,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#9BB93B",
+        "clickable": true,
+        "leftToLeftOf": "wrvQIQvceph7QYCTqCfLc",
+        "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+        "width_percent": 50
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [],
+    "path": "0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "aXN7QpApkvrmOrRfKP1PS",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "55",
+        "text": "Accept",
+        "textSize": 10,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#404D14",
+        "clickable": true,
+        "rightToRightOf": "wrvQIQvceph7QYCTqCfLc",
+        "bottomToBottomOf": "wrvQIQvceph7QYCTqCfLc",
+        "width_percent": 50
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [],
+    "path": "0-2",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]
