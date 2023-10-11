@@ -45,6 +45,14 @@
               },
               "triggerName": "navigate to raast payment otp screen",
               "triggerId": "_to29cPKA1z8108GqQb9O"
+            },
+            {
+              "httpStatus": 400,
+              "triggerName": "show raast payment title search modal",
+              "triggerId": "yeJluW4wn2nHJdH1PkmB8",
+              "logic": {
+                "==": [{ "var": "TitleSearchRaastPaymentRes.code" }, 0]
+              }
             }
           ]
         },
@@ -53,7 +61,7 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.u95slh818i9C705txxgd9Q8S3SA6RNXq",
+  "csrf": "0.7rsdxwee3etDALlw8oPloXf2GsrVyFj1",
   "_id": "9O7VQe_LzofB9GOfeVvVm",
   "updatedAt": "10/11/2023",
   "createdAt": "10/11/2023",

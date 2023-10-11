@@ -1,0 +1,948 @@
+[
+  {
+    "id": "ydba_uc6-1QOe03liis12",
+    "name": "Raast ID management screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Constraint Layout",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": ["EHQfTSdFR4o2SCA6hk7w3"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/11/2023",
+    "createdAt": "10/11/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "EHQfTSdFR4o2SCA6hk7w3",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "wrap_content",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "zIj74kbty55MkKB1xc0qh",
+                "bindingKey": "selectedRasstLinkedAcc",
+                "visibility": {
+                  "logic": {
+                    "==": [
+                      {
+                        "var": "hmb_getAllAccounts_data.content.casaAccounts.raast"
+                      },
+                      true
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToTopOf": "ydba_uc6-1QOe03liis12",
+            "leftToLeftOf": "ydba_uc6-1QOe03liis12",
+            "rightToRightOf": "ydba_uc6-1QOe03liis12",
+            "centerX": "ydba_uc6-1QOe03liis12",
+            "bottomToBottomOf": "ydba_uc6-1QOe03liis12",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10,
+            "layout_marginTop": 20
+          },
+          "conditions": [],
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-0",
+        "gridProps": [
+          {
+            "id": "zIj74kbty55MkKB1xc0qh",
+            "name": "List item 0",
+            "path": "0-0-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "PKRzNKyLwdGki_RysSl0u",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "100",
+                    "borderColor": "#9D9D9D",
+                    "borderWidth": 2,
+                    "cornerRadius": [4, 4, 4, 4],
+                    "bottomToBottomOf": null,
+                    "centerX": "zIj74kbty55MkKB1xc0qh",
+                    "centerY": "zIj74kbty55MkKB1xc0qh",
+                    "layout_marginLeft": 10,
+                    "layout_marginRight": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-0-0-0",
+                "edit": true
+              },
+              {
+                "id": "l7HshwwtScG5aXK6tvEd_",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 18,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "centerX": "PKRzNKyLwdGki_RysSl0u",
+                    "centerY": "PKRzNKyLwdGki_RysSl0u"
+                  },
+                  "bindingKey": "accountTitle"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-0-0-1"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "120",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedRasstLinkedAcc",
+              "componentId": [],
+              "swipeButtons": []
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "ydba_uc6-1QOe03liis12",
+        "name": "Raast ID management screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Constraint Layout",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "EHQfTSdFR4o2SCA6hk7w3",
+            "type": "VLIST",
+            "name": "Vertical list view",
+            "component": { "type": "VLIST" },
+            "attributes": {
+              "name": "Vertical list view",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_height": "wrap_content",
+                "layout_width": "match_parent",
+                "rows": [
+                  {
+                    "id": "zIj74kbty55MkKB1xc0qh",
+                    "bindingKey": "selectedRasstLinkedAcc",
+                    "visibility": {
+                      "logic": {
+                        "==": [
+                          {
+                            "var": "hmb_getAllAccounts_data.content.casaAccounts.raast"
+                          },
+                          true
+                        ]
+                      }
+                    },
+                    "events": [
+                      {
+                        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                        "triggerName": "abc",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "topToTopOf": "ydba_uc6-1QOe03liis12",
+                "leftToLeftOf": "ydba_uc6-1QOe03liis12",
+                "rightToRightOf": "ydba_uc6-1QOe03liis12",
+                "centerX": "ydba_uc6-1QOe03liis12",
+                "bottomToBottomOf": "ydba_uc6-1QOe03liis12",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 20
+              },
+              "conditions": [],
+              "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-0",
+            "gridProps": [
+              {
+                "id": "zIj74kbty55MkKB1xc0qh",
+                "name": "List item 0",
+                "path": "0-0-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "PKRzNKyLwdGki_RysSl0u",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "View",
+                    "attributes": {
+                      "name": "View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "100",
+                        "borderColor": "#9D9D9D",
+                        "borderWidth": 2,
+                        "cornerRadius": [4, 4, 4, 4],
+                        "bottomToBottomOf": null,
+                        "centerX": "zIj74kbty55MkKB1xc0qh",
+                        "centerY": "zIj74kbty55MkKB1xc0qh",
+                        "layout_marginLeft": 10,
+                        "layout_marginRight": 10
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-0-0-0",
+                    "edit": true
+                  },
+                  {
+                    "id": "l7HshwwtScG5aXK6tvEd_",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 18,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "centerX": "PKRzNKyLwdGki_RysSl0u",
+                        "centerY": "PKRzNKyLwdGki_RysSl0u"
+                      },
+                      "bindingKey": "accountTitle"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-0-0-1"
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "120",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0]
+                  },
+                  "bindingKey": "selectedRasstLinkedAcc",
+                  "componentId": [],
+                  "swipeButtons": []
+                },
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "ydba_uc6-1QOe03liis12",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "EHQfTSdFR4o2SCA6hk7w3",
+    "type": "VLIST",
+    "name": "Vertical list view",
+    "component": { "type": "VLIST" },
+    "attributes": {
+      "name": "Vertical list view",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_height": "wrap_content",
+        "layout_width": "match_parent",
+        "rows": [
+          {
+            "id": "zIj74kbty55MkKB1xc0qh",
+            "bindingKey": "selectedRasstLinkedAcc",
+            "visibility": {
+              "logic": {
+                "==": [
+                  {
+                    "var": "hmb_getAllAccounts_data.content.casaAccounts.raast"
+                  },
+                  true
+                ]
+              }
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "topToTopOf": "ydba_uc6-1QOe03liis12",
+        "leftToLeftOf": "ydba_uc6-1QOe03liis12",
+        "rightToRightOf": "ydba_uc6-1QOe03liis12",
+        "centerX": "ydba_uc6-1QOe03liis12",
+        "bottomToBottomOf": "ydba_uc6-1QOe03liis12",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10,
+        "layout_marginTop": 20
+      },
+      "conditions": [],
+      "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
+      "componentId": ["zIj74kbty55MkKB1xc0qh"]
+    },
+    "events": [],
+    "path": "0-0",
+    "gridProps": [
+      {
+        "id": "zIj74kbty55MkKB1xc0qh",
+        "name": "List item 0",
+        "path": "0-0-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "PKRzNKyLwdGki_RysSl0u",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "100",
+                "borderColor": "#9D9D9D",
+                "borderWidth": 2,
+                "cornerRadius": [4, 4, 4, 4],
+                "bottomToBottomOf": null,
+                "centerX": "zIj74kbty55MkKB1xc0qh",
+                "centerY": "zIj74kbty55MkKB1xc0qh",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0-0-0",
+            "edit": true
+          },
+          {
+            "id": "l7HshwwtScG5aXK6tvEd_",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "centerX": "PKRzNKyLwdGki_RysSl0u",
+                "centerY": "PKRzNKyLwdGki_RysSl0u"
+              },
+              "bindingKey": "accountTitle"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0-0-1"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "120",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedRasstLinkedAcc",
+          "componentId": [],
+          "swipeButtons": []
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "EHQfTSdFR4o2SCA6hk7w3",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "wrap_content",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "zIj74kbty55MkKB1xc0qh",
+                "bindingKey": "selectedRasstLinkedAcc",
+                "visibility": {
+                  "logic": {
+                    "==": [
+                      {
+                        "var": "hmb_getAllAccounts_data.content.casaAccounts.raast"
+                      },
+                      true
+                    ]
+                  }
+                },
+                "events": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToTopOf": "ydba_uc6-1QOe03liis12",
+            "leftToLeftOf": "ydba_uc6-1QOe03liis12",
+            "rightToRightOf": "ydba_uc6-1QOe03liis12",
+            "centerX": "ydba_uc6-1QOe03liis12",
+            "bottomToBottomOf": "ydba_uc6-1QOe03liis12",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10,
+            "layout_marginTop": 20
+          },
+          "conditions": [],
+          "bindingKey": "hmb_getAllAccounts_data.content.casaAccounts",
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-0",
+        "gridProps": [
+          {
+            "id": "zIj74kbty55MkKB1xc0qh",
+            "name": "List item 0",
+            "path": "0-0-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "PKRzNKyLwdGki_RysSl0u",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "100",
+                    "borderColor": "#9D9D9D",
+                    "borderWidth": 2,
+                    "cornerRadius": [4, 4, 4, 4],
+                    "bottomToBottomOf": null,
+                    "centerX": "zIj74kbty55MkKB1xc0qh",
+                    "centerY": "zIj74kbty55MkKB1xc0qh",
+                    "layout_marginLeft": 10,
+                    "layout_marginRight": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-0-0-0",
+                "edit": true
+              },
+              {
+                "id": "l7HshwwtScG5aXK6tvEd_",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 18,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "Start Now",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "centerX": "PKRzNKyLwdGki_RysSl0u",
+                    "centerY": "PKRzNKyLwdGki_RysSl0u"
+                  },
+                  "bindingKey": "accountTitle"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-0-0-1"
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "120",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedRasstLinkedAcc",
+              "componentId": [],
+              "swipeButtons": []
+            },
+            "events": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zIj74kbty55MkKB1xc0qh",
+    "name": "List item 0",
+    "path": "0-0-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "PKRzNKyLwdGki_RysSl0u",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "View",
+        "attributes": {
+          "name": "View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "100",
+            "borderColor": "#9D9D9D",
+            "borderWidth": 2,
+            "cornerRadius": [4, 4, 4, 4],
+            "bottomToBottomOf": null,
+            "centerX": "zIj74kbty55MkKB1xc0qh",
+            "centerY": "zIj74kbty55MkKB1xc0qh",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-0-0-0",
+        "edit": true
+      },
+      {
+        "id": "l7HshwwtScG5aXK6tvEd_",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "centerX": "PKRzNKyLwdGki_RysSl0u",
+            "centerY": "PKRzNKyLwdGki_RysSl0u"
+          },
+          "bindingKey": "accountTitle"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0-0-1"
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "120",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "bindingKey": "selectedRasstLinkedAcc",
+      "componentId": ["PKRzNKyLwdGki_RysSl0u", "l7HshwwtScG5aXK6tvEd_"],
+      "swipeButtons": []
+    },
+    "events": [
+      {
+        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+        "triggerName": "abc",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "layout": [
+      {
+        "id": "zIj74kbty55MkKB1xc0qh",
+        "name": "List item 0",
+        "path": "0-0-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "PKRzNKyLwdGki_RysSl0u",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "100",
+                "borderColor": "#9D9D9D",
+                "borderWidth": 2,
+                "cornerRadius": [4, 4, 4, 4],
+                "bottomToBottomOf": null,
+                "centerX": "zIj74kbty55MkKB1xc0qh",
+                "centerY": "zIj74kbty55MkKB1xc0qh",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-0-0-0",
+            "edit": true
+          },
+          {
+            "id": "l7HshwwtScG5aXK6tvEd_",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "centerX": "PKRzNKyLwdGki_RysSl0u",
+                "centerY": "PKRzNKyLwdGki_RysSl0u"
+              },
+              "bindingKey": "accountTitle"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0-0-1"
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "120",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedRasstLinkedAcc",
+          "componentId": [],
+          "swipeButtons": []
+        },
+        "events": [
+          {
+            "triggerId": "xwNwZIcqa07hpRrikIW0X",
+            "triggerName": "abc",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "PKRzNKyLwdGki_RysSl0u",
+    "status": "ACTIVE",
+    "name": "View",
+    "attributes": {
+      "name": "View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "100",
+        "borderColor": "#9D9D9D",
+        "borderWidth": 2,
+        "cornerRadius": [4, 4, 4, 4],
+        "bottomToBottomOf": null,
+        "centerX": "zIj74kbty55MkKB1xc0qh",
+        "centerY": "zIj74kbty55MkKB1xc0qh",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-0-0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "l7HshwwtScG5aXK6tvEd_",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "centerX": "PKRzNKyLwdGki_RysSl0u",
+        "centerY": "PKRzNKyLwdGki_RysSl0u"
+      },
+      "bindingKey": "accountTitle"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0-0-1",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]
