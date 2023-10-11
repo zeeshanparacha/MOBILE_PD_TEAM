@@ -1,0 +1,57 @@
+{
+  "id": "SP-mVobdUcS3jambabGm6",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "transferRaastPayment",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/payment/v1/raast/transfer",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountNumber": "$selectedAcc_QRGenerate.accountNumber",
+            "amount": "$raastPaymentAmount",
+            "otpInfo": {
+              "emailPin": "12345",
+              "smsPin": "12345",
+              "splitOtp": false,
+              "validationType": "OTP"
+            },
+            "rda": false,
+            "requestNumber": "$TitleSearchRaastPaymentRes.content.requestNumber",
+            "raast": false,
+            "beneficiary": false,
+            "isBeneficiary": false,
+            "isRaast": false
+          },
+          "responseStateKey": "transferRaastPaymentRes"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.37ccgdf31lcG7DjMLGZrbN8cpGQ99nMr",
+  "_id": "ki2z2D2r3Pp0p-dZ3UASg",
+  "updatedAt": "10/10/2023",
+  "createdAt": "10/10/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

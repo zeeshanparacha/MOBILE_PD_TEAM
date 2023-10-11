@@ -1,0 +1,63 @@
+{
+  "id": "aR0nD-aJCv45ap2nYruFl",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "TitleSearchRaastPayment",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/account/v1/raast/titlesearch",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "aliasType": null,
+            "aliasValue": null,
+            "amount": "$raastPaymentAmount",
+            "fromAccount": "$selectedAcc_QRGenerate.accountId",
+            "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
+            "iban": null,
+            "purpose": "Others",
+            "rda": false,
+            "toAccount": "$transferTypeInput"
+          },
+          "responseStateKey": "TitleSearchRaastPaymentRes",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "logic": {
+                "==": [{ "var": "TitleSearchRaastPaymentRes.code" }, 1]
+              },
+              "triggerName": "navigate to raast payment otp screen",
+              "triggerId": "_to29cPKA1z8108GqQb9O"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.u95slh818i9C705txxgd9Q8S3SA6RNXq",
+  "_id": "9O7VQe_LzofB9GOfeVvVm",
+  "updatedAt": "10/11/2023",
+  "createdAt": "10/11/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "TitleSearchRaastPayment"
+}

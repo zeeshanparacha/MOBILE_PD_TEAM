@@ -38,17 +38,17 @@
         "sdIknW6-MB3GLj8pifRWt",
         "yVPcg4AKK7CTGseYGcXBw",
         "DpP558nUwRFgd8n4EA3mg",
-        "LQ_U6ot3XNTbMDNS31ez5",
         "oDjZM3zQewVClnhH1Pz-O",
-        "ivk8lDn04z4AVgk5ji6GW",
-        "S83aktTbNVzpvi5yleQ9T"
+        "0VSribAUTLpxvWMOnAzpT",
+        "aU3rGHX5nRupAp33JT8nx",
+        "0mkSsI8d2rJNpDapEl6mY"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/10/2023",
-    "createdAt": "10/10/2023",
+    "updatedAt": "10/11/2023",
+    "createdAt": "10/11/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -128,7 +128,7 @@
       {
         "id": "8FvHYc4GHrCjb9UPaIK8i",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "TransferFrom_Name_Text",
         "attributes": {
           "name": "TransferFrom_Name_Text",
           "layoutProperties": {
@@ -145,7 +145,8 @@
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountTitle"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -158,12 +159,13 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-2"
+        "path": "0-2",
+        "edit": true
       },
       {
         "id": "t_uJvPanflT7P3CfDhFz4",
         "status": "ACTIVE",
-        "name": "Text view",
+        "name": "TransferFrom_AccNum_Text",
         "attributes": {
           "name": "TransferFrom_AccNum_Text",
           "layoutProperties": {
@@ -180,7 +182,8 @@
             "layout_marginTop": 10,
             "textAlignment": "left",
             "textStyle": "regular"
-          }
+          },
+          "bindingKey": "selectedAcc_QRGenerate.accountNumber"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -193,7 +196,8 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-3"
+        "path": "0-3",
+        "edit": true
       },
       {
         "id": "jKl10_9M1yB4KKVZ65_Pw",
@@ -867,44 +871,6 @@
         "edit": true
       },
       {
-        "id": "LQ_U6ot3XNTbMDNS31ez5",
-        "status": "ACTIVE",
-        "name": "RaastTransfer_NextBtn",
-        "attributes": {
-          "name": "RaastTransfer_NextBtn",
-          "layoutProperties": {
-            "layout_width": "match_parent",
-            "layout_height": "63",
-            "layout_marginTop": 30,
-            "text": "Next",
-            "textSize": 20,
-            "textColor": "#ffffff",
-            "textStyle": "book",
-            "textAlignment": "center",
-            "cornerRadius": [0, 0, 0, 0],
-            "background": "#1D6131",
-            "clickable": true,
-            "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
-            "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
-            "topToBottomOf": "S5FbVrnc2775QidWtxOrL",
-            "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b"
-          }
-        },
-        "icon": "FaBimobject",
-        "group": "Form",
-        "type": "BUTTON",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
-        "path": "0-24",
-        "edit": true
-      },
-      {
         "id": "oDjZM3zQewVClnhH1Pz-O",
         "status": "ACTIVE",
         "_id": "61decd8e077814a0f374d9fc",
@@ -981,30 +947,31 @@
         ]
       },
       {
-        "id": "ivk8lDn04z4AVgk5ji6GW",
+        "id": "0VSribAUTLpxvWMOnAzpT",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "RaastId_Data_Text",
+        "_id": "61dec716077814a0f374d9f5",
+        "name": "Input text",
         "attributes": {
-          "name": "RaastId_Data_Text",
+          "name": "Input text",
+          "validation": [],
           "layoutProperties": {
             "textSize": 15,
-            "layout_width": "wrap_content",
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "left",
+            "numberOfLines": 15,
             "layout_height": "wrap_content",
-            "textColor": "#1d6131",
-            "text": "Hello",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
+            "layout_width": "wrap_content",
+            "keyboardType": "alphanumeric",
+            "placeHolderText": "Raast Id",
             "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-            "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-            "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-            "layout_marginLeft": 20,
-            "textStyle": "regular",
-            "textAlignment": "left"
+            "centerY": "S1LYXn-ZPVl4-443oQVJo",
+            "placeHolderTextColor": "#B0B0B0",
+            "layout_marginLeft": 20
           },
-          "bindingKey": "raastId.title"
+          "bindingKey": "transferTypeInput"
         },
-        "icon": "FaTextWidth",
+        "icon": "FaRemoveFormat",
         "group": "Form",
         "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
@@ -1013,36 +980,37 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-23",
+        "path": "0-22",
         "edit": true
       },
       {
-        "id": "S83aktTbNVzpvi5yleQ9T",
+        "id": "aU3rGHX5nRupAp33JT8nx",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "_id": "61dec716077814a0f374d9f5",
+        "name": "Input text",
         "attributes": {
-          "name": "Amount_Data_Text",
+          "name": "Input text",
+          "validation": [],
           "layoutProperties": {
             "textSize": 15,
-            "layout_width": "wrap_content",
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "left",
+            "numberOfLines": 15,
             "layout_height": "wrap_content",
-            "textColor": "#A6A8A4",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
+            "layout_width": "wrap_content",
+            "placeHolderText": "Enter Amount Here",
+            "keyboardType": "number",
             "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-            "layout_marginLeft": 20,
-            "textStyle": "regular",
-            "textAlignment": "left"
+            "centerY": "AzjKYB0oJFJ1Yiqfu0BSY",
+            "placeHolderTextColor": "#C7C7C7",
+            "layout_marginLeft": 20
           },
-          "bindingKey": "qrscan_data.content.amount"
+          "bindingKey": "raastPaymentAmount"
         },
-        "icon": "FaTextWidth",
+        "icon": "FaRemoveFormat",
         "group": "Form",
         "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
@@ -1051,9 +1019,85 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
         "path": "0-24"
+      },
+      {
+        "id": "0mkSsI8d2rJNpDapEl6mY",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "RaastTransfer_NextBtn",
+        "attributes": {
+          "name": "RaastTransfer_NextBtn",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "63",
+            "text": "Next",
+            "textSize": 20,
+            "textColor": "#FCFCFC",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1D6131",
+            "clickable": true,
+            "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
+            "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
+            "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b",
+            "layout_marginTop": 30
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "aR0nD-aJCv45ap2nYruFl",
+            "triggerName": "TitleSearchRaastPayment",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/account/v1/raast/titlesearch",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "aliasType": null,
+                "aliasValue": null,
+                "amount": "$raastPaymentAmount",
+                "fromAccount": "$selectedAcc_QRGenerate.accountId",
+                "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
+                "iban": null,
+                "purpose": "Others",
+                "rda": false,
+                "toAccount": "$transferTypeInput"
+              },
+              "responseStateKey": "TitleSearchRaastPaymentRes"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-24",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -1161,7 +1205,7 @@
           {
             "id": "8FvHYc4GHrCjb9UPaIK8i",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "TransferFrom_Name_Text",
             "attributes": {
               "name": "TransferFrom_Name_Text",
               "layoutProperties": {
@@ -1178,7 +1222,8 @@
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1191,12 +1236,13 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
           },
           {
             "id": "t_uJvPanflT7P3CfDhFz4",
             "status": "ACTIVE",
-            "name": "Text view",
+            "name": "TransferFrom_AccNum_Text",
             "attributes": {
               "name": "TransferFrom_AccNum_Text",
               "layoutProperties": {
@@ -1213,7 +1259,8 @@
                 "layout_marginTop": 10,
                 "textAlignment": "left",
                 "textStyle": "regular"
-              }
+              },
+              "bindingKey": "selectedAcc_QRGenerate.accountNumber"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1226,7 +1273,8 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-3"
+            "path": "0-3",
+            "edit": true
           },
           {
             "id": "jKl10_9M1yB4KKVZ65_Pw",
@@ -1900,44 +1948,6 @@
             "edit": true
           },
           {
-            "id": "LQ_U6ot3XNTbMDNS31ez5",
-            "status": "ACTIVE",
-            "name": "RaastTransfer_NextBtn",
-            "attributes": {
-              "name": "RaastTransfer_NextBtn",
-              "layoutProperties": {
-                "layout_width": "match_parent",
-                "layout_height": "63",
-                "layout_marginTop": 30,
-                "text": "Next",
-                "textSize": 20,
-                "textColor": "#ffffff",
-                "textStyle": "book",
-                "textAlignment": "center",
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#1D6131",
-                "clickable": true,
-                "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
-                "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
-                "topToBottomOf": "S5FbVrnc2775QidWtxOrL",
-                "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b"
-              }
-            },
-            "icon": "FaBimobject",
-            "group": "Form",
-            "type": "BUTTON",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
-            "path": "0-24",
-            "edit": true
-          },
-          {
             "id": "oDjZM3zQewVClnhH1Pz-O",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
@@ -2014,30 +2024,31 @@
             ]
           },
           {
-            "id": "ivk8lDn04z4AVgk5ji6GW",
+            "id": "0VSribAUTLpxvWMOnAzpT",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "RaastId_Data_Text",
+            "_id": "61dec716077814a0f374d9f5",
+            "name": "Input text",
             "attributes": {
-              "name": "RaastId_Data_Text",
+              "name": "Input text",
+              "validation": [],
               "layoutProperties": {
                 "textSize": 15,
-                "layout_width": "wrap_content",
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "numberOfLines": 15,
                 "layout_height": "wrap_content",
-                "textColor": "#1d6131",
-                "text": "Hello",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
+                "layout_width": "wrap_content",
+                "keyboardType": "alphanumeric",
+                "placeHolderText": "Raast Id",
                 "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-                "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-                "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-                "layout_marginLeft": 20,
-                "textStyle": "regular",
-                "textAlignment": "left"
+                "centerY": "S1LYXn-ZPVl4-443oQVJo",
+                "placeHolderTextColor": "#B0B0B0",
+                "layout_marginLeft": 20
               },
-              "bindingKey": "raastId.title"
+              "bindingKey": "transferTypeInput"
             },
-            "icon": "FaTextWidth",
+            "icon": "FaRemoveFormat",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -2046,36 +2057,37 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-23",
+            "path": "0-22",
             "edit": true
           },
           {
-            "id": "S83aktTbNVzpvi5yleQ9T",
+            "id": "aU3rGHX5nRupAp33JT8nx",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "_id": "61dec716077814a0f374d9f5",
+            "name": "Input text",
             "attributes": {
-              "name": "Amount_Data_Text",
+              "name": "Input text",
+              "validation": [],
               "layoutProperties": {
                 "textSize": 15,
-                "layout_width": "wrap_content",
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "numberOfLines": 15,
                 "layout_height": "wrap_content",
-                "textColor": "#A6A8A4",
-                "text": "Start Now",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
+                "layout_width": "wrap_content",
+                "placeHolderText": "Enter Amount Here",
+                "keyboardType": "number",
                 "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-                "layout_marginLeft": 20,
-                "textStyle": "regular",
-                "textAlignment": "left"
+                "centerY": "AzjKYB0oJFJ1Yiqfu0BSY",
+                "placeHolderTextColor": "#C7C7C7",
+                "layout_marginLeft": 20
               },
-              "bindingKey": "qrscan_data.content.amount"
+              "bindingKey": "raastPaymentAmount"
             },
-            "icon": "FaTextWidth",
+            "icon": "FaRemoveFormat",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -2084,9 +2096,85 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
             "path": "0-24"
+          },
+          {
+            "id": "0mkSsI8d2rJNpDapEl6mY",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "RaastTransfer_NextBtn",
+            "attributes": {
+              "name": "RaastTransfer_NextBtn",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Next",
+                "textSize": 20,
+                "textColor": "#FCFCFC",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
+                "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
+                "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b",
+                "layout_marginTop": 30
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "aR0nD-aJCv45ap2nYruFl",
+                "triggerName": "TitleSearchRaastPayment",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/account/v1/raast/titlesearch",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "aliasType": null,
+                    "aliasValue": null,
+                    "amount": "$raastPaymentAmount",
+                    "fromAccount": "$selectedAcc_QRGenerate.accountId",
+                    "fromAccountNumber": "$selectedAcc_QRGenerate.accountNumber",
+                    "iban": null,
+                    "purpose": "Others",
+                    "rda": false,
+                    "toAccount": "$transferTypeInput"
+                  },
+                  "responseStateKey": "TitleSearchRaastPaymentRes"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-24",
+            "edit": true
           }
         ],
         "subType": "screen"
@@ -2179,7 +2267,7 @@
   {
     "id": "8FvHYc4GHrCjb9UPaIK8i",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "TransferFrom_Name_Text",
     "attributes": {
       "name": "TransferFrom_Name_Text",
       "layoutProperties": {
@@ -2196,7 +2284,8 @@
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountTitle"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2210,6 +2299,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-2",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2218,7 +2308,7 @@
   {
     "id": "t_uJvPanflT7P3CfDhFz4",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "TransferFrom_AccNum_Text",
     "attributes": {
       "name": "TransferFrom_AccNum_Text",
       "layoutProperties": {
@@ -2235,7 +2325,8 @@
         "layout_marginTop": 10,
         "textAlignment": "left",
         "textStyle": "regular"
-      }
+      },
+      "bindingKey": "selectedAcc_QRGenerate.accountNumber"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -2249,6 +2340,7 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-3",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2971,48 +3063,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "LQ_U6ot3XNTbMDNS31ez5",
-    "status": "ACTIVE",
-    "name": "RaastTransfer_NextBtn",
-    "attributes": {
-      "name": "RaastTransfer_NextBtn",
-      "layoutProperties": {
-        "layout_width": "match_parent",
-        "layout_height": "63",
-        "layout_marginTop": 30,
-        "text": "Next",
-        "textSize": 20,
-        "textColor": "#ffffff",
-        "textStyle": "book",
-        "textAlignment": "center",
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#1D6131",
-        "clickable": true,
-        "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
-        "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
-        "topToBottomOf": "S5FbVrnc2775QidWtxOrL",
-        "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b"
-      }
-    },
-    "icon": "FaBimobject",
-    "group": "Form",
-    "type": "BUTTON",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
-    "path": "0-24",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "oDjZM3zQewVClnhH1Pz-O",
     "status": "ACTIVE",
     "name": "Raast_Purpose_Btmsht_Btn",
@@ -3073,40 +3123,41 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "ivk8lDn04z4AVgk5ji6GW",
+    "id": "0VSribAUTLpxvWMOnAzpT",
     "status": "ACTIVE",
-    "name": "RaastId_Data_Text",
+    "name": "Input text",
     "attributes": {
-      "name": "RaastId_Data_Text",
+      "name": "Input text",
+      "validation": [],
       "layoutProperties": {
         "textSize": 15,
-        "layout_width": "wrap_content",
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "left",
+        "numberOfLines": 15,
         "layout_height": "wrap_content",
-        "textColor": "#1d6131",
-        "text": "Hello",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
+        "layout_width": "wrap_content",
+        "keyboardType": "alphanumeric",
+        "placeHolderText": "Raast Id",
         "leftToLeftOf": "S1LYXn-ZPVl4-443oQVJo",
-        "topToTopOf": "S1LYXn-ZPVl4-443oQVJo",
-        "bottomToBottomOf": "S1LYXn-ZPVl4-443oQVJo",
-        "layout_marginLeft": 20,
-        "textStyle": "regular",
-        "textAlignment": "left"
+        "centerY": "S1LYXn-ZPVl4-443oQVJo",
+        "placeHolderTextColor": "#B0B0B0",
+        "layout_marginLeft": 20
       },
-      "bindingKey": "raastId.title"
+      "bindingKey": "transferTypeInput"
     },
-    "icon": "FaTextWidth",
+    "icon": "FaRemoveFormat",
     "group": "Form",
-    "type": "TEXTVIEW",
+    "type": "INPUTTEXT",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-23",
+    "path": "0-22",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -3114,40 +3165,89 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "S83aktTbNVzpvi5yleQ9T",
+    "id": "aU3rGHX5nRupAp33JT8nx",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Input text",
     "attributes": {
-      "name": "Amount_Data_Text",
+      "name": "Input text",
+      "validation": [],
       "layoutProperties": {
         "textSize": 15,
-        "layout_width": "wrap_content",
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "left",
+        "numberOfLines": 15,
         "layout_height": "wrap_content",
-        "textColor": "#A6A8A4",
-        "text": "Start Now",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
+        "layout_width": "wrap_content",
+        "placeHolderText": "Enter Amount Here",
+        "keyboardType": "number",
         "leftToLeftOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "topToTopOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "bottomToBottomOf": "AzjKYB0oJFJ1Yiqfu0BSY",
-        "layout_marginLeft": 20,
-        "textStyle": "regular",
-        "textAlignment": "left"
+        "centerY": "AzjKYB0oJFJ1Yiqfu0BSY",
+        "placeHolderTextColor": "#C7C7C7",
+        "layout_marginLeft": 20
       },
-      "bindingKey": "qrscan_data.content.amount"
+      "bindingKey": "raastPaymentAmount"
     },
-    "icon": "FaTextWidth",
+    "icon": "FaRemoveFormat",
     "group": "Form",
-    "type": "TEXTVIEW",
+    "type": "INPUTTEXT",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
     "path": "0-24",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "0mkSsI8d2rJNpDapEl6mY",
+    "status": "ACTIVE",
+    "name": "RaastTransfer_NextBtn",
+    "attributes": {
+      "name": "RaastTransfer_NextBtn",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "63",
+        "text": "Next",
+        "textSize": 20,
+        "textColor": "#FCFCFC",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1D6131",
+        "clickable": true,
+        "leftToLeftOf": "n6lncHJpMG9KJxzS--K8b",
+        "rightToRightOf": "n6lncHJpMG9KJxzS--K8b",
+        "bottomToBottomOf": "n6lncHJpMG9KJxzS--K8b",
+        "layout_marginTop": 30
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "aR0nD-aJCv45ap2nYruFl",
+        "triggerName": "TitleSearchRaastPayment",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-24",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
