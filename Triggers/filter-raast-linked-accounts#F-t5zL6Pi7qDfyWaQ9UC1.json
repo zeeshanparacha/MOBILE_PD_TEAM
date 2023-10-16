@@ -1,0 +1,28 @@
+{
+  "id": "az6QaGc1ikvKoB7VHqkMc",
+  "name": "filter raast linked accounts",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "services": [
+    {
+      "type": "DATASTORAGE",
+      "command": {
+        "type": "14",
+        "attributes": {
+          "serviceName": "Filter Array",
+          "filter": { "raast": ["true"] },
+          "source": "$hmb_getAllAccounts_data.content.casaAccounts",
+          "destination": "filteredRaastLinkedAccounts",
+          "caseInsensitive": true
+        }
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.ux8mthbwyu8SJSUEEWvyYDcvjTZmMhig",
+  "_id": "F-t5zL6Pi7qDfyWaQ9UC1",
+  "updatedAt": "10/13/2023",
+  "createdAt": "10/13/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "filter raast linked accounts"
+}

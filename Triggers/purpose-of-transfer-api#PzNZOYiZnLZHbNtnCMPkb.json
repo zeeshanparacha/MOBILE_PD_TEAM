@@ -1,0 +1,58 @@
+{
+  "id": "dj60hedClHze-qe3Bbvox",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "purpose of transfer api",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "deviceKey": "1244d1426ebe80d3",
+            "deviceName": "2201117TG",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "f36835ed557746f5",
+              "fcmToken": null,
+              "imei": "111111111111111",
+              "ip": "192.168.8.106",
+              "isNotificationEnabled": true,
+              "name": "Mi A2 Lite",
+              "os": "Android",
+              "osType": "29"
+            },
+            "lookUps": ["CHARGES_PAY_INSTRUCT", "TRANSFER_REASONS"],
+            "isSecurityConfiguration": false,
+            "isSystemConfiguration": false
+          },
+          "responseStateKey": "purposeOfTransfer"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.e1ukzh5xykUv31c3RHjQhq69Gtt3Am5",
+  "_id": "PzNZOYiZnLZHbNtnCMPkb",
+  "updatedAt": "10/12/2023",
+  "createdAt": "10/12/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "purpose of transfer api"
+}

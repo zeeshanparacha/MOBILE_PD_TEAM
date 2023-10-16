@@ -1,0 +1,2968 @@
+[
+  {
+    "id": "NqvP_UN_JUpMvDOZC-OFo",
+    "name": "Debit card usage screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Constraint Layout",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": [
+        "lOGCzh_1m9AFPqAK0_Oem",
+        "RhvEcEOdM0xOBlRK8F6N_",
+        "Zjy57g01peJ7x8CrgHYCD",
+        "ZGPxSiLWl26RnjeKcDlg1",
+        "O6qN1kAXNJn4ckslIcrci",
+        "Flggvstb4YwGjPxpluSu3",
+        "mOFnO5rC53f_msnIrjmMl",
+        "8gARTC7YCBOmXnGzP5wdh",
+        "ggnohXzMZh-PYBarxYqRA",
+        "d6EGdizKpEQeAfiLtRDq2",
+        "MXzCT2MweW-bC6XAlT0on",
+        "JADkLgIDoHxWgYJjI3UnQ"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/13/2023",
+    "createdAt": "10/13/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "lOGCzh_1m9AFPqAK0_Oem",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Please Select Date Range",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToTopOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginTop": 20,
+            "layout_marginLeft": 20,
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0"
+      },
+      {
+        "id": "RhvEcEOdM0xOBlRK8F6N_",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "FROM",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "lOGCzh_1m9AFPqAK0_Oem",
+            "layout_marginTop": 20,
+            "layout_marginLeft": 20,
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1"
+      },
+      {
+        "id": "Zjy57g01peJ7x8CrgHYCD",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Select Date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
+            "textAlignment": "left"
+          },
+          "bindingKey": "selectedDebitCardUsageFromDate"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-2"
+      },
+      {
+        "id": "ZGPxSiLWl26RnjeKcDlg1",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 150,
+            "src": {
+              "createdBy": "user",
+              "_id": "64ddc8798aa7f73e0cb2fff6",
+              "name": "Calender_Btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "lJitnzVsoNu2MA4Ih3nUg",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "Calender_Btn.png",
+              "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+              "createdAt": "2023-08-17T07:12:57.755Z",
+              "updatedAt": "2023-08-17T07:12:57.755Z",
+              "__v": 0,
+              "uri": "Calender_Btn.png"
+            },
+            "id": "lJitnzVsoNu2MA4Ih3nUg"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-3",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "G3WQ93bkpoX8G5oSgmTqh",
+            "triggerName": "open debit card usage date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDebitCardUsageFromDate",
+              "dateFormat": "dd/mm/yyyy",
+              "minimumDate": "01/01/2000",
+              "maximumDate": "31/10/2023"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      },
+      {
+        "id": "O6qN1kAXNJn4ckslIcrci",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "To",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "layout_marginLeft": 200,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-4"
+      },
+      {
+        "id": "Flggvstb4YwGjPxpluSu3",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Select Date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToTopOf": "Zjy57g01peJ7x8CrgHYCD",
+            "layout_marginLeft": 200
+          },
+          "bindingKey": "selectedDebitCardUsageToDate"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-5"
+      },
+      {
+        "id": "mOFnO5rC53f_msnIrjmMl",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64ddc8798aa7f73e0cb2fff6",
+              "name": "Calender_Btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "lJitnzVsoNu2MA4Ih3nUg",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "Calender_Btn.png",
+              "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+              "createdAt": "2023-08-17T07:12:57.755Z",
+              "updatedAt": "2023-08-17T07:12:57.755Z",
+              "__v": 0,
+              "uri": "Calender_Btn.png"
+            },
+            "topToTopOf": "O6qN1kAXNJn4ckslIcrci",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 350,
+            "id": "lJitnzVsoNu2MA4Ih3nUg"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-6",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "s0qFEAZnR6cGKA1gwz7JS",
+            "triggerName": "open debit card usage TO date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDebitCardUsageToDate",
+              "dateFormat": "dd/mm/yyyy",
+              "minimumDate": "01/01/2000",
+              "maximumDate": "31/10/203"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      },
+      {
+        "id": "8gARTC7YCBOmXnGzP5wdh",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "60",
+            "text": "Reset Date",
+            "textSize": 16,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "clickable": true,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+            "width_percent": 50,
+            "layout_marginLeft": 0,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-7",
+        "edit": true
+      },
+      {
+        "id": "ggnohXzMZh-PYBarxYqRA",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "60",
+            "text": "Submit Request",
+            "textSize": 16,
+            "textColor": "#FFFFFF",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#519400",
+            "clickable": true,
+            "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+            "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "width_percent": 50,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "c11gwDx97yS7Y-TwHaidM",
+            "triggerName": "debit card usage api",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/card/v1/cardusage",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "cardNumber": "$selectedCard",
+                "fromDate": "$selectedDebitCardUsageFromDate",
+                "toDate": "$selectedDebitCardUsageToDate"
+              },
+              "responseStateKey": "debitCardUsageRes"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-8",
+        "edit": true
+      },
+      {
+        "id": "d6EGdizKpEQeAfiLtRDq2",
+        "status": "ACTIVE",
+        "_id": "61decdcb077814a0f374d9fd",
+        "name": "Radio Group",
+        "attributes": {
+          "name": "Radio Group",
+          "layoutProperties": {
+            "items": [
+              {
+                "name": "Show Percentage",
+                "value": "Show Percentage",
+                "checked": true,
+                "selected": false
+              },
+              {
+                "name": "Show Amount",
+                "value": "Show Amount",
+                "checked": false,
+                "selected": true
+              }
+            ],
+            "orientation": "vertical",
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "ggnohXzMZh-PYBarxYqRA",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20
+          }
+        },
+        "icon": "FaDotCircle",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Radio Group", "type": "RADIOGROUP" },
+        "events": [],
+        "path": "0-9",
+        "edit": true
+      },
+      {
+        "id": "MXzCT2MweW-bC6XAlT0on",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "pie chart",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "d6EGdizKpEQeAfiLtRDq2",
+            "centerX": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 0,
+            "layout_marginTop": 40
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-10",
+        "edit": true
+      },
+      {
+        "id": "JADkLgIDoHxWgYJjI3UnQ",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "ko16IQW5a9AJAp6cWC-wJ",
+                "bindingKey": "selectedDebitCardOpt",
+                "[object Object]": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToBottomOf": "MXzCT2MweW-bC6XAlT0on",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginTop": 40,
+            "bottomToBottomOf": "NqvP_UN_JUpMvDOZC-OFo"
+          },
+          "bindingKey": "debitCardUsageOpts",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "kDTb4wQcKXlKDhMDs7sMU",
+            "triggerName": "load debit card usage options",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "debitCardUsageOpts",
+              "value": [
+                {
+                  "title": "ATM Transactions",
+                  "trigger": "navigate to ATM transactions"
+                },
+                {
+                  "title": "POS Transactions",
+                  "trigger": "navigate to POS transactions"
+                },
+                {
+                  "title": "E-Commerce Transactions",
+                  "trigger": "navigate to E-commerce Transactions"
+                },
+                {
+                  "title": "Frequent Merchants",
+                  "trigger": "navigate to Frequent Merchants"
+                },
+                { "title": "ATM Average Ticket Size", "trigger": "" },
+                { "title": "POS Average Ticket Size", "trigger": "" },
+                { "title": "E-Commerce Average Ticket Size", "trigger": "" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-11",
+        "gridProps": [
+          {
+            "id": "ko16IQW5a9AJAp6cWC-wJ",
+            "name": "List item 0",
+            "path": "0-11-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "VSFkj6T7A5XIViiDPWPmn",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "50",
+                    "borderColor": "#C2C2C2",
+                    "borderWidth": 2,
+                    "cornerRadius": [8, 8, 8, 8],
+                    "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "layout_marginLeft": 20,
+                    "layout_marginRight": 20,
+                    "layout_marginBottom": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-11-0-0",
+                "edit": true
+              },
+              {
+                "id": "2TpsDJ8T7B01kivfTHlpq",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+                    "layout_marginTop": 0,
+                    "layout_marginLeft": 20,
+                    "centerY": "VSFkj6T7A5XIViiDPWPmn"
+                  },
+                  "bindingKey": "title"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-11-0-1",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "60",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedDebitCardOpt",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "NqvP_UN_JUpMvDOZC-OFo",
+        "name": "Debit card usage screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Constraint Layout",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "lOGCzh_1m9AFPqAK0_Oem",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Please Select Date Range",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToTopOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginTop": 20,
+                "layout_marginLeft": 20,
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0"
+          },
+          {
+            "id": "RhvEcEOdM0xOBlRK8F6N_",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "FROM",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToBottomOf": "lOGCzh_1m9AFPqAK0_Oem",
+                "layout_marginTop": 20,
+                "layout_marginLeft": 20,
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1"
+          },
+          {
+            "id": "Zjy57g01peJ7x8CrgHYCD",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Select Date",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToBottomOf": "RhvEcEOdM0xOBlRK8F6N_",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 10,
+                "textAlignment": "left"
+              },
+              "bindingKey": "selectedDebitCardUsageFromDate"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          },
+          {
+            "id": "ZGPxSiLWl26RnjeKcDlg1",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginLeft": 150,
+                "src": {
+                  "createdBy": "user",
+                  "_id": "64ddc8798aa7f73e0cb2fff6",
+                  "name": "Calender_Btn.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "lJitnzVsoNu2MA4Ih3nUg",
+                  "gitBranchName": "master",
+                  "folderType": "xhdpi",
+                  "platform": "Android",
+                  "url": "Calender_Btn.png",
+                  "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+                  "createdAt": "2023-08-17T07:12:57.755Z",
+                  "updatedAt": "2023-08-17T07:12:57.755Z",
+                  "__v": 0,
+                  "uri": "Calender_Btn.png"
+                },
+                "id": "lJitnzVsoNu2MA4Ih3nUg"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-3",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "G3WQ93bkpoX8G5oSgmTqh",
+                "triggerName": "open debit card usage date picker",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": " Date picker",
+                  "bindingKey": "selectedDebitCardUsageFromDate",
+                  "dateFormat": "dd/mm/yyyy",
+                  "minimumDate": "01/01/2000",
+                  "maximumDate": "31/10/2023"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "O6qN1kAXNJn4ckslIcrci",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "To",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+                "layout_marginLeft": 200,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-4"
+          },
+          {
+            "id": "Flggvstb4YwGjPxpluSu3",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Select Date",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToTopOf": "Zjy57g01peJ7x8CrgHYCD",
+                "layout_marginLeft": 200
+              },
+              "bindingKey": "selectedDebitCardUsageToDate"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-5"
+          },
+          {
+            "id": "mOFnO5rC53f_msnIrjmMl",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "user",
+                  "_id": "64ddc8798aa7f73e0cb2fff6",
+                  "name": "Calender_Btn.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "lJitnzVsoNu2MA4Ih3nUg",
+                  "gitBranchName": "master",
+                  "folderType": "xhdpi",
+                  "platform": "Android",
+                  "url": "Calender_Btn.png",
+                  "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+                  "createdAt": "2023-08-17T07:12:57.755Z",
+                  "updatedAt": "2023-08-17T07:12:57.755Z",
+                  "__v": 0,
+                  "uri": "Calender_Btn.png"
+                },
+                "topToTopOf": "O6qN1kAXNJn4ckslIcrci",
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginLeft": 350,
+                "id": "lJitnzVsoNu2MA4Ih3nUg"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-6",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "s0qFEAZnR6cGKA1gwz7JS",
+                "triggerName": "open debit card usage TO date picker",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": " Date picker",
+                  "bindingKey": "selectedDebitCardUsageToDate",
+                  "dateFormat": "dd/mm/yyyy",
+                  "minimumDate": "01/01/2000",
+                  "maximumDate": "31/10/203"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "8gARTC7YCBOmXnGzP5wdh",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "match_constraint",
+                "layout_height": "60",
+                "text": "Reset Date",
+                "textSize": 16,
+                "textColor": "#000000",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "clickable": true,
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+                "width_percent": 50,
+                "layout_marginLeft": 0,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-7",
+            "edit": true
+          },
+          {
+            "id": "ggnohXzMZh-PYBarxYqRA",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Button",
+            "attributes": {
+              "name": "Button",
+              "layoutProperties": {
+                "layout_width": "match_constraint",
+                "layout_height": "60",
+                "text": "Submit Request",
+                "textSize": 16,
+                "textColor": "#FFFFFF",
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#519400",
+                "clickable": true,
+                "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+                "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
+                "width_percent": 50,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "c11gwDx97yS7Y-TwHaidM",
+                "triggerName": "debit card usage api",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/card/v1/cardusage",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "cardNumber": "$selectedCard",
+                    "fromDate": "$selectedDebitCardUsageFromDate",
+                    "toDate": "$selectedDebitCardUsageToDate"
+                  },
+                  "responseStateKey": "debitCardUsageRes"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-8",
+            "edit": true
+          },
+          {
+            "id": "d6EGdizKpEQeAfiLtRDq2",
+            "status": "ACTIVE",
+            "_id": "61decdcb077814a0f374d9fd",
+            "name": "Radio Group",
+            "attributes": {
+              "name": "Radio Group",
+              "layoutProperties": {
+                "items": [
+                  {
+                    "name": "Show Percentage",
+                    "value": "Show Percentage",
+                    "checked": true,
+                    "selected": false
+                  },
+                  {
+                    "name": "Show Amount",
+                    "value": "Show Amount",
+                    "checked": false,
+                    "selected": true
+                  }
+                ],
+                "orientation": "vertical",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "topToBottomOf": "ggnohXzMZh-PYBarxYqRA",
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20
+              }
+            },
+            "icon": "FaDotCircle",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Radio Group", "type": "RADIOGROUP" },
+            "events": [],
+            "path": "0-9",
+            "edit": true
+          },
+          {
+            "id": "MXzCT2MweW-bC6XAlT0on",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "pie chart",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "topToBottomOf": "d6EGdizKpEQeAfiLtRDq2",
+                "centerX": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginLeft": 0,
+                "layout_marginTop": 40
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-10",
+            "edit": true
+          },
+          {
+            "id": "JADkLgIDoHxWgYJjI3UnQ",
+            "type": "VLIST",
+            "name": "Vertical list view",
+            "component": { "type": "VLIST" },
+            "attributes": {
+              "name": "Vertical list view",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "layout_height": "match_parent",
+                "layout_width": "match_parent",
+                "rows": [
+                  {
+                    "id": "ko16IQW5a9AJAp6cWC-wJ",
+                    "bindingKey": "selectedDebitCardOpt",
+                    "[object Object]": [
+                      {
+                        "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                        "triggerName": "abc",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "topToBottomOf": "MXzCT2MweW-bC6XAlT0on",
+                "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+                "layout_marginTop": 40,
+                "bottomToBottomOf": "NqvP_UN_JUpMvDOZC-OFo"
+              },
+              "bindingKey": "debitCardUsageOpts",
+              "componentId": []
+            },
+            "events": [
+              {
+                "triggerId": "kDTb4wQcKXlKDhMDs7sMU",
+                "triggerName": "load debit card usage options",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "debitCardUsageOpts",
+                  "value": [
+                    {
+                      "title": "ATM Transactions",
+                      "trigger": "navigate to ATM transactions"
+                    },
+                    {
+                      "title": "POS Transactions",
+                      "trigger": "navigate to POS transactions"
+                    },
+                    {
+                      "title": "E-Commerce Transactions",
+                      "trigger": "navigate to E-commerce Transactions"
+                    },
+                    {
+                      "title": "Frequent Merchants",
+                      "trigger": "navigate to Frequent Merchants"
+                    },
+                    { "title": "ATM Average Ticket Size", "trigger": "" },
+                    { "title": "POS Average Ticket Size", "trigger": "" },
+                    { "title": "E-Commerce Average Ticket Size", "trigger": "" }
+                  ],
+                  "contentType": "array",
+                  "totalcolumns": "2"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-11",
+            "gridProps": [
+              {
+                "id": "ko16IQW5a9AJAp6cWC-wJ",
+                "name": "List item 0",
+                "path": "0-11-0",
+                "type": "VLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "VSFkj6T7A5XIViiDPWPmn",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "View",
+                    "attributes": {
+                      "name": "View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "50",
+                        "borderColor": "#C2C2C2",
+                        "borderWidth": 2,
+                        "cornerRadius": [8, 8, 8, 8],
+                        "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+                        "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+                        "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+                        "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+                        "layout_marginLeft": 20,
+                        "layout_marginRight": 20,
+                        "layout_marginBottom": 10
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-11-0-0",
+                    "edit": true
+                  },
+                  {
+                    "id": "2TpsDJ8T7B01kivfTHlpq",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 14,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "title",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 1,
+                        "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+                        "layout_marginTop": 0,
+                        "layout_marginLeft": 20,
+                        "centerY": "VSFkj6T7A5XIViiDPWPmn"
+                      },
+                      "bindingKey": "title"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-11-0-1",
+                    "edit": true
+                  }
+                ],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_height": "60",
+                    "layout_width": "match_parent",
+                    "cornerRadius": [0, 0, 0, 0]
+                  },
+                  "bindingKey": "selectedDebitCardOpt",
+                  "componentId": [],
+                  "swipeButtons": []
+                }
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "NqvP_UN_JUpMvDOZC-OFo",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "lOGCzh_1m9AFPqAK0_Oem",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Please Select Date Range",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToTopOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginTop": 20,
+        "layout_marginLeft": 20,
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "RhvEcEOdM0xOBlRK8F6N_",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "FROM",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToBottomOf": "lOGCzh_1m9AFPqAK0_Oem",
+        "layout_marginTop": 20,
+        "layout_marginLeft": 20,
+        "textAlignment": "left"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Zjy57g01peJ7x8CrgHYCD",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Select Date",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToBottomOf": "RhvEcEOdM0xOBlRK8F6N_",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 10,
+        "textAlignment": "left"
+      },
+      "bindingKey": "selectedDebitCardUsageFromDate"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-2",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ZGPxSiLWl26RnjeKcDlg1",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginLeft": 150,
+        "src": {
+          "createdBy": "user",
+          "_id": "64ddc8798aa7f73e0cb2fff6",
+          "name": "Calender_Btn.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "lJitnzVsoNu2MA4Ih3nUg",
+          "gitBranchName": "master",
+          "folderType": "xhdpi",
+          "platform": "Android",
+          "url": "Calender_Btn.png",
+          "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+          "createdAt": "2023-08-17T07:12:57.755Z",
+          "updatedAt": "2023-08-17T07:12:57.755Z",
+          "__v": 0,
+          "uri": "Calender_Btn.png"
+        },
+        "id": "lJitnzVsoNu2MA4Ih3nUg"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-3",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "G3WQ93bkpoX8G5oSgmTqh",
+        "triggerName": "open debit card usage date picker",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "O6qN1kAXNJn4ckslIcrci",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "To",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+        "layout_marginLeft": 200,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-4",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Flggvstb4YwGjPxpluSu3",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Select Date",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToTopOf": "Zjy57g01peJ7x8CrgHYCD",
+        "layout_marginLeft": 200
+      },
+      "bindingKey": "selectedDebitCardUsageToDate"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-5",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "mOFnO5rC53f_msnIrjmMl",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "40",
+        "layout_height": "40",
+        "cornerRadius": [0, 0, 0, 0],
+        "src": {
+          "createdBy": "user",
+          "_id": "64ddc8798aa7f73e0cb2fff6",
+          "name": "Calender_Btn.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "lJitnzVsoNu2MA4Ih3nUg",
+          "gitBranchName": "master",
+          "folderType": "xhdpi",
+          "platform": "Android",
+          "url": "Calender_Btn.png",
+          "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+          "createdAt": "2023-08-17T07:12:57.755Z",
+          "updatedAt": "2023-08-17T07:12:57.755Z",
+          "__v": 0,
+          "uri": "Calender_Btn.png"
+        },
+        "topToTopOf": "O6qN1kAXNJn4ckslIcrci",
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginLeft": 350,
+        "id": "lJitnzVsoNu2MA4Ih3nUg"
+      },
+      "contentType": 2
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-6",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "s0qFEAZnR6cGKA1gwz7JS",
+        "triggerName": "open debit card usage TO date picker",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "8gARTC7YCBOmXnGzP5wdh",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "match_constraint",
+        "layout_height": "60",
+        "text": "Reset Date",
+        "textSize": 16,
+        "textColor": "#000000",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#FFFFFF",
+        "clickable": true,
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+        "width_percent": 50,
+        "layout_marginLeft": 0,
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [],
+    "path": "0-7",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ggnohXzMZh-PYBarxYqRA",
+    "status": "ACTIVE",
+    "name": "Button",
+    "attributes": {
+      "name": "Button",
+      "layoutProperties": {
+        "layout_width": "match_constraint",
+        "layout_height": "60",
+        "text": "Submit Request",
+        "textSize": 16,
+        "textColor": "#FFFFFF",
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#519400",
+        "clickable": true,
+        "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+        "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginLeft": 0,
+        "layout_marginRight": 0,
+        "width_percent": 50,
+        "layout_marginTop": 10
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "c11gwDx97yS7Y-TwHaidM",
+        "triggerName": "debit card usage api",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-8",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "d6EGdizKpEQeAfiLtRDq2",
+    "status": "ACTIVE",
+    "name": "Radio Group",
+    "attributes": {
+      "name": "Radio Group",
+      "layoutProperties": {
+        "items": [
+          {
+            "name": "Show Percentage",
+            "value": "Show Percentage",
+            "checked": true,
+            "selected": false
+          },
+          {
+            "name": "Show Amount",
+            "value": "Show Amount",
+            "checked": false,
+            "selected": true
+          }
+        ],
+        "orientation": "vertical",
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "topToBottomOf": "ggnohXzMZh-PYBarxYqRA",
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20
+      }
+    },
+    "icon": "FaDotCircle",
+    "group": "Form",
+    "type": "RADIOGROUP",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Radio Group", "type": "RADIOGROUP" },
+    "events": [],
+    "path": "0-9",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "MXzCT2MweW-bC6XAlT0on",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "pie chart",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "topToBottomOf": "d6EGdizKpEQeAfiLtRDq2",
+        "centerX": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginLeft": 0,
+        "layout_marginTop": 40
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-10",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "JADkLgIDoHxWgYJjI3UnQ",
+    "type": "VLIST",
+    "name": "Vertical list view",
+    "component": { "type": "VLIST" },
+    "attributes": {
+      "name": "Vertical list view",
+      "layoutProperties": {
+        "cornerRadius": [0, 0, 0, 0],
+        "layout_height": "match_parent",
+        "layout_width": "match_parent",
+        "rows": [
+          {
+            "id": "ko16IQW5a9AJAp6cWC-wJ",
+            "bindingKey": "selectedDebitCardOpt",
+            "[object Object]": [
+              {
+                "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                "triggerName": "abc",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "topToBottomOf": "MXzCT2MweW-bC6XAlT0on",
+        "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+        "layout_marginTop": 40,
+        "bottomToBottomOf": "NqvP_UN_JUpMvDOZC-OFo"
+      },
+      "bindingKey": "debitCardUsageOpts",
+      "componentId": ["ko16IQW5a9AJAp6cWC-wJ"]
+    },
+    "events": [
+      {
+        "triggerId": "kDTb4wQcKXlKDhMDs7sMU",
+        "triggerName": "load debit card usage options",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-11",
+    "gridProps": [
+      {
+        "id": "ko16IQW5a9AJAp6cWC-wJ",
+        "name": "List item 0",
+        "path": "0-11-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "VSFkj6T7A5XIViiDPWPmn",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "borderColor": "#C2C2C2",
+                "borderWidth": 2,
+                "cornerRadius": [8, 8, 8, 8],
+                "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginBottom": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-11-0-0",
+            "edit": true
+          },
+          {
+            "id": "2TpsDJ8T7B01kivfTHlpq",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+                "layout_marginTop": 0,
+                "layout_marginLeft": 20,
+                "centerY": "VSFkj6T7A5XIViiDPWPmn"
+              },
+              "bindingKey": "title"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-11-0-1",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "60",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedDebitCardOpt",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "lOGCzh_1m9AFPqAK0_Oem",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Please Select Date Range",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToTopOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginTop": 20,
+            "layout_marginLeft": 20,
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-0"
+      },
+      {
+        "id": "RhvEcEOdM0xOBlRK8F6N_",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "FROM",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "lOGCzh_1m9AFPqAK0_Oem",
+            "layout_marginTop": 20,
+            "layout_marginLeft": 20,
+            "textAlignment": "left"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1"
+      },
+      {
+        "id": "Zjy57g01peJ7x8CrgHYCD",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Select Date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 10,
+            "textAlignment": "left"
+          },
+          "bindingKey": "selectedDebitCardUsageFromDate"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-2"
+      },
+      {
+        "id": "ZGPxSiLWl26RnjeKcDlg1",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 150,
+            "src": {
+              "createdBy": "user",
+              "_id": "64ddc8798aa7f73e0cb2fff6",
+              "name": "Calender_Btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "lJitnzVsoNu2MA4Ih3nUg",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "Calender_Btn.png",
+              "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+              "createdAt": "2023-08-17T07:12:57.755Z",
+              "updatedAt": "2023-08-17T07:12:57.755Z",
+              "__v": 0,
+              "uri": "Calender_Btn.png"
+            },
+            "id": "lJitnzVsoNu2MA4Ih3nUg"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-3",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "G3WQ93bkpoX8G5oSgmTqh",
+            "triggerName": "open debit card usage date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDebitCardUsageFromDate",
+              "dateFormat": "dd/mm/yyyy",
+              "minimumDate": "01/01/2000",
+              "maximumDate": "31/10/2023"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      },
+      {
+        "id": "O6qN1kAXNJn4ckslIcrci",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "To",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToTopOf": "RhvEcEOdM0xOBlRK8F6N_",
+            "layout_marginLeft": 200,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-4"
+      },
+      {
+        "id": "Flggvstb4YwGjPxpluSu3",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Select Date",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToTopOf": "Zjy57g01peJ7x8CrgHYCD",
+            "layout_marginLeft": 200
+          },
+          "bindingKey": "selectedDebitCardUsageToDate"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-5"
+      },
+      {
+        "id": "mOFnO5rC53f_msnIrjmMl",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "40",
+            "layout_height": "40",
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "user",
+              "_id": "64ddc8798aa7f73e0cb2fff6",
+              "name": "Calender_Btn.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "lJitnzVsoNu2MA4Ih3nUg",
+              "gitBranchName": "master",
+              "folderType": "xhdpi",
+              "platform": "Android",
+              "url": "Calender_Btn.png",
+              "canvasUrl": "Android/drawable-xhdpi/Calender_Btn.png",
+              "createdAt": "2023-08-17T07:12:57.755Z",
+              "updatedAt": "2023-08-17T07:12:57.755Z",
+              "__v": 0,
+              "uri": "Calender_Btn.png"
+            },
+            "topToTopOf": "O6qN1kAXNJn4ckslIcrci",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 350,
+            "id": "lJitnzVsoNu2MA4Ih3nUg"
+          },
+          "contentType": 2
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-6",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "s0qFEAZnR6cGKA1gwz7JS",
+            "triggerName": "open debit card usage TO date picker",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": " Date picker",
+              "bindingKey": "selectedDebitCardUsageToDate",
+              "dateFormat": "dd/mm/yyyy",
+              "minimumDate": "01/01/2000",
+              "maximumDate": "31/10/203"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      },
+      {
+        "id": "8gARTC7YCBOmXnGzP5wdh",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "60",
+            "text": "Reset Date",
+            "textSize": 16,
+            "textColor": "#000000",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#FFFFFF",
+            "clickable": true,
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+            "width_percent": 50,
+            "layout_marginLeft": 0,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [],
+        "path": "0-7",
+        "edit": true
+      },
+      {
+        "id": "ggnohXzMZh-PYBarxYqRA",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Button",
+        "attributes": {
+          "name": "Button",
+          "layoutProperties": {
+            "layout_width": "match_constraint",
+            "layout_height": "60",
+            "text": "Submit Request",
+            "textSize": 16,
+            "textColor": "#FFFFFF",
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#519400",
+            "clickable": true,
+            "topToBottomOf": "Flggvstb4YwGjPxpluSu3",
+            "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "width_percent": 50,
+            "layout_marginTop": 10
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "c11gwDx97yS7Y-TwHaidM",
+            "triggerName": "debit card usage api",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/card/v1/cardusage",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "cardNumber": "$selectedCard",
+                "fromDate": "$selectedDebitCardUsageFromDate",
+                "toDate": "$selectedDebitCardUsageToDate"
+              },
+              "responseStateKey": "debitCardUsageRes"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-8",
+        "edit": true
+      },
+      {
+        "id": "d6EGdizKpEQeAfiLtRDq2",
+        "status": "ACTIVE",
+        "_id": "61decdcb077814a0f374d9fd",
+        "name": "Radio Group",
+        "attributes": {
+          "name": "Radio Group",
+          "layoutProperties": {
+            "items": [
+              {
+                "name": "Show Percentage",
+                "value": "Show Percentage",
+                "checked": true,
+                "selected": false
+              },
+              {
+                "name": "Show Amount",
+                "value": "Show Amount",
+                "checked": false,
+                "selected": true
+              }
+            ],
+            "orientation": "vertical",
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "topToBottomOf": "ggnohXzMZh-PYBarxYqRA",
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20
+          }
+        },
+        "icon": "FaDotCircle",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Radio Group", "type": "RADIOGROUP" },
+        "events": [],
+        "path": "0-9",
+        "edit": true
+      },
+      {
+        "id": "MXzCT2MweW-bC6XAlT0on",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "pie chart",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "topToBottomOf": "d6EGdizKpEQeAfiLtRDq2",
+            "centerX": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginLeft": 0,
+            "layout_marginTop": 40
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-10",
+        "edit": true
+      },
+      {
+        "id": "JADkLgIDoHxWgYJjI3UnQ",
+        "type": "VLIST",
+        "name": "Vertical list view",
+        "component": { "type": "VLIST" },
+        "attributes": {
+          "name": "Vertical list view",
+          "layoutProperties": {
+            "cornerRadius": [0, 0, 0, 0],
+            "layout_height": "match_parent",
+            "layout_width": "match_parent",
+            "rows": [
+              {
+                "id": "ko16IQW5a9AJAp6cWC-wJ",
+                "bindingKey": "selectedDebitCardOpt",
+                "[object Object]": [
+                  {
+                    "triggerId": "xwNwZIcqa07hpRrikIW0X",
+                    "triggerName": "abc",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToBottomOf": "MXzCT2MweW-bC6XAlT0on",
+            "leftToLeftOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "rightToRightOf": "NqvP_UN_JUpMvDOZC-OFo",
+            "layout_marginTop": 40,
+            "bottomToBottomOf": "NqvP_UN_JUpMvDOZC-OFo"
+          },
+          "bindingKey": "debitCardUsageOpts",
+          "componentId": []
+        },
+        "events": [
+          {
+            "triggerId": "kDTb4wQcKXlKDhMDs7sMU",
+            "triggerName": "load debit card usage options",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "debitCardUsageOpts",
+              "value": [
+                {
+                  "title": "ATM Transactions",
+                  "trigger": "navigate to ATM transactions"
+                },
+                {
+                  "title": "POS Transactions",
+                  "trigger": "navigate to POS transactions"
+                },
+                {
+                  "title": "E-Commerce Transactions",
+                  "trigger": "navigate to E-commerce Transactions"
+                },
+                {
+                  "title": "Frequent Merchants",
+                  "trigger": "navigate to Frequent Merchants"
+                },
+                { "title": "ATM Average Ticket Size", "trigger": "" },
+                { "title": "POS Average Ticket Size", "trigger": "" },
+                { "title": "E-Commerce Average Ticket Size", "trigger": "" }
+              ],
+              "contentType": "array",
+              "totalcolumns": "2"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-11",
+        "gridProps": [
+          {
+            "id": "ko16IQW5a9AJAp6cWC-wJ",
+            "name": "List item 0",
+            "path": "0-11-0",
+            "type": "VLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "VSFkj6T7A5XIViiDPWPmn",
+                "status": "ACTIVE",
+                "_id": "61dec691077814a0f374d9f4",
+                "name": "View",
+                "attributes": {
+                  "name": "View",
+                  "layoutProperties": {
+                    "name": "View",
+                    "layout_width": "match_parent",
+                    "layout_height": "50",
+                    "borderColor": "#C2C2C2",
+                    "borderWidth": 2,
+                    "cornerRadius": [8, 8, 8, 8],
+                    "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+                    "layout_marginLeft": 20,
+                    "layout_marginRight": 20,
+                    "layout_marginBottom": 10
+                  }
+                },
+                "icon": "FaTabletAlt",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "View", "type": "VIEW" },
+                "events": [],
+                "path": "0-11-0-0",
+                "edit": true
+              },
+              {
+                "id": "2TpsDJ8T7B01kivfTHlpq",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 14,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "title",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "numberOfLines": 1,
+                    "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+                    "layout_marginTop": 0,
+                    "layout_marginLeft": 20,
+                    "centerY": "VSFkj6T7A5XIViiDPWPmn"
+                  },
+                  "bindingKey": "title"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-11-0-1",
+                "edit": true
+              }
+            ],
+            "attributes": {
+              "layoutProperties": {
+                "layout_height": "60",
+                "layout_width": "match_parent",
+                "cornerRadius": [0, 0, 0, 0]
+              },
+              "bindingKey": "selectedDebitCardOpt",
+              "componentId": [],
+              "swipeButtons": []
+            }
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ko16IQW5a9AJAp6cWC-wJ",
+    "name": "List item 0",
+    "path": "0-11-0",
+    "type": "VLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "VSFkj6T7A5XIViiDPWPmn",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "View",
+        "attributes": {
+          "name": "View",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "50",
+            "borderColor": "#C2C2C2",
+            "borderWidth": 2,
+            "cornerRadius": [8, 8, 8, 8],
+            "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+            "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+            "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+            "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+            "layout_marginLeft": 20,
+            "layout_marginRight": 20,
+            "layout_marginBottom": 10
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-11-0-0",
+        "edit": true
+      },
+      {
+        "id": "2TpsDJ8T7B01kivfTHlpq",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 14,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "title",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+            "layout_marginTop": 0,
+            "layout_marginLeft": 20,
+            "centerY": "VSFkj6T7A5XIViiDPWPmn"
+          },
+          "bindingKey": "title"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-11-0-1",
+        "edit": true
+      }
+    ],
+    "attributes": {
+      "layoutProperties": {
+        "layout_height": "60",
+        "layout_width": "match_parent",
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "bindingKey": "selectedDebitCardOpt",
+      "componentId": ["VSFkj6T7A5XIViiDPWPmn", "2TpsDJ8T7B01kivfTHlpq"],
+      "swipeButtons": []
+    },
+    "layout": [
+      {
+        "id": "ko16IQW5a9AJAp6cWC-wJ",
+        "name": "List item 0",
+        "path": "0-11-0",
+        "type": "VLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "VSFkj6T7A5XIViiDPWPmn",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "View",
+            "attributes": {
+              "name": "View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "50",
+                "borderColor": "#C2C2C2",
+                "borderWidth": 2,
+                "cornerRadius": [8, 8, 8, 8],
+                "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginBottom": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-11-0-0",
+            "edit": true
+          },
+          {
+            "id": "2TpsDJ8T7B01kivfTHlpq",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "title",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+                "layout_marginTop": 0,
+                "layout_marginLeft": 20,
+                "centerY": "VSFkj6T7A5XIViiDPWPmn"
+              },
+              "bindingKey": "title"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-11-0-1",
+            "edit": true
+          }
+        ],
+        "attributes": {
+          "layoutProperties": {
+            "layout_height": "60",
+            "layout_width": "match_parent",
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "bindingKey": "selectedDebitCardOpt",
+          "componentId": [],
+          "swipeButtons": []
+        }
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "VSFkj6T7A5XIViiDPWPmn",
+    "status": "ACTIVE",
+    "name": "View",
+    "attributes": {
+      "name": "View",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "50",
+        "borderColor": "#C2C2C2",
+        "borderWidth": 2,
+        "cornerRadius": [8, 8, 8, 8],
+        "leftToLeftOf": "ko16IQW5a9AJAp6cWC-wJ",
+        "rightToRightOf": "ko16IQW5a9AJAp6cWC-wJ",
+        "topToTopOf": "ko16IQW5a9AJAp6cWC-wJ",
+        "bottomToBottomOf": "ko16IQW5a9AJAp6cWC-wJ",
+        "layout_marginLeft": 20,
+        "layout_marginRight": 20,
+        "layout_marginBottom": 10
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-11-0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "2TpsDJ8T7B01kivfTHlpq",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 14,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "title",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "VSFkj6T7A5XIViiDPWPmn",
+        "layout_marginTop": 0,
+        "layout_marginLeft": 20,
+        "centerY": "VSFkj6T7A5XIViiDPWPmn"
+      },
+      "bindingKey": "title"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-11-0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

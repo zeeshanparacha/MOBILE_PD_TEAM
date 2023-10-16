@@ -1,0 +1,47 @@
+{
+  "id": "kDTb4wQcKXlKDhMDs7sMU",
+  "name": "load debit card usage options",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "services": [
+    {
+      "type": "DATASTORAGE",
+      "command": {
+        "type": "3",
+        "attributes": {
+          "serviceName": "Update value against binding key",
+          "bindingKey": "debitCardUsageOpts",
+          "value": [
+            {
+              "title": "ATM Transactions",
+              "trigger": "navigate to ATM transactions"
+            },
+            {
+              "title": "POS Transactions",
+              "trigger": "navigate to POS transactions"
+            },
+            {
+              "title": "E-Commerce Transactions",
+              "trigger": "navigate to E-commerce Transactions"
+            },
+            {
+              "title": "Frequent Merchants",
+              "trigger": "navigate to Frequent Merchants"
+            },
+            { "title": "ATM Average Ticket Size", "trigger": "" },
+            { "title": "POS Average Ticket Size", "trigger": "" },
+            { "title": "E-Commerce Average Ticket Size", "trigger": "" }
+          ],
+          "contentType": "array",
+          "totalcolumns": "2"
+        }
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.kud9ikytznhSGrIN-PNTFCXSN26aUEsl",
+  "_id": "UveuJx5Eoi49zuh89tVeU",
+  "updatedAt": "10/13/2023",
+  "createdAt": "10/13/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

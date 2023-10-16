@@ -47,8 +47,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/11/2023",
-    "createdAt": "10/11/2023",
+    "updatedAt": "10/12/2023",
+    "createdAt": "10/12/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -750,20 +750,8 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "yApE9crHqTLB7ha97swhe",
-            "triggerName": "Navigate_To_RaastConfirm_Screen",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Navigate with back stack",
-              "id": "NEvaMD3VL292kEjpATZXX"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-19",
+        "events": [],
+        "path": "0-17",
         "edit": true
       },
       {
@@ -868,7 +856,7 @@
             "textAlignment": "left",
             "textStyle": "regular"
           },
-          "bindingKey": "raast_ft_purpose_data.value"
+          "bindingKey": "selectedPurpose"
         },
         "icon": "FaTextWidth",
         "group": "Form",
@@ -881,7 +869,7 @@
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
-        "path": "0-22",
+        "path": "0-20",
         "edit": true
       },
       {
@@ -930,30 +918,65 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-22",
+        "path": "0-21",
         "edit": true,
         "events": [
           {
-            "triggerId": "0AlTc9immUBgpwrZVpfNU",
-            "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+            "triggerId": "dj60hedClHze-qe3Bbvox",
+            "triggerName": "purpose of transfer api",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "deviceKey": "1244d1426ebe80d3",
+                "deviceName": "2201117TG",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0"
+              },
+              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "device": {
+                  "countryCode": "PKR",
+                  "deviceKey": "f36835ed557746f5",
+                  "fcmToken": null,
+                  "imei": "111111111111111",
+                  "ip": "192.168.8.106",
+                  "isNotificationEnabled": true,
+                  "name": "Mi A2 Lite",
+                  "os": "Android",
+                  "osType": "29"
+                },
+                "lookUps": ["CHARGES_PAY_INSTRUCT", "TRANSFER_REASONS"],
+                "isSecurityConfiguration": false,
+                "isSystemConfiguration": false
+              },
+              "responseStateKey": "purposeOfTransfer"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "WdQv-UGWkgJD9if06ArYB",
+            "triggerName": "purpose of transfer bottom sheet",
             "serviceType": "NAVIGATION",
             "attributes": {
               "serviceName": "Show bottomsheet",
-              "values": [
-                { "code": "code", "name": "Other" },
-                { "code": "code ", "name": "Tax Payments" },
-                { "code": "code", "name": "Rental Payments" },
-                { "code": "code ", "name": "Fee Payments" },
-                { "code": "code", "name": "Salary Disbursements" },
-                { "code": "code", "name": "Loan Payment" },
-                { "code": "code", "name": "Family Support" }
-              ],
+              "values": [],
               "bottomsheetType": "Normal Bottomsheet",
               "code": "code",
               "value": "name",
               "title": "Purpose of Sending",
-              "selectedBindingKey": "ft_pos_data",
-              "dataType": "static"
+              "dataType": "dynamic",
+              "selectedBindingKey": "selectedPurpose",
+              "bindingKey": "purposeOfTransfer.content.lookups.reasonOfTransfer"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -1841,20 +1864,8 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "yApE9crHqTLB7ha97swhe",
-                "triggerName": "Navigate_To_RaastConfirm_Screen",
-                "serviceType": "NAVIGATION",
-                "attributes": {
-                  "serviceName": "Navigate with back stack",
-                  "id": "NEvaMD3VL292kEjpATZXX"
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
-            "path": "0-19",
+            "events": [],
+            "path": "0-17",
             "edit": true
           },
           {
@@ -1959,7 +1970,7 @@
                 "textAlignment": "left",
                 "textStyle": "regular"
               },
-              "bindingKey": "raast_ft_purpose_data.value"
+              "bindingKey": "selectedPurpose"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -1972,7 +1983,7 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-22",
+            "path": "0-20",
             "edit": true
           },
           {
@@ -2021,30 +2032,65 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-22",
+            "path": "0-21",
             "edit": true,
             "events": [
               {
-                "triggerId": "0AlTc9immUBgpwrZVpfNU",
-                "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+                "triggerId": "dj60hedClHze-qe3Bbvox",
+                "triggerName": "purpose of transfer api",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "f36835ed557746f5",
+                      "fcmToken": null,
+                      "imei": "111111111111111",
+                      "ip": "192.168.8.106",
+                      "isNotificationEnabled": true,
+                      "name": "Mi A2 Lite",
+                      "os": "Android",
+                      "osType": "29"
+                    },
+                    "lookUps": ["CHARGES_PAY_INSTRUCT", "TRANSFER_REASONS"],
+                    "isSecurityConfiguration": false,
+                    "isSystemConfiguration": false
+                  },
+                  "responseStateKey": "purposeOfTransfer"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              },
+              {
+                "triggerId": "WdQv-UGWkgJD9if06ArYB",
+                "triggerName": "purpose of transfer bottom sheet",
                 "serviceType": "NAVIGATION",
                 "attributes": {
                   "serviceName": "Show bottomsheet",
-                  "values": [
-                    { "code": "code", "name": "Other" },
-                    { "code": "code ", "name": "Tax Payments" },
-                    { "code": "code", "name": "Rental Payments" },
-                    { "code": "code ", "name": "Fee Payments" },
-                    { "code": "code", "name": "Salary Disbursements" },
-                    { "code": "code", "name": "Loan Payment" },
-                    { "code": "code", "name": "Family Support" }
-                  ],
+                  "values": [],
                   "bottomsheetType": "Normal Bottomsheet",
                   "code": "code",
                   "value": "name",
                   "title": "Purpose of Sending",
-                  "selectedBindingKey": "ft_pos_data",
-                  "dataType": "static"
+                  "dataType": "dynamic",
+                  "selectedBindingKey": "selectedPurpose",
+                  "bindingKey": "purposeOfTransfer.content.lookups.reasonOfTransfer"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
@@ -2957,15 +3003,8 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "yApE9crHqTLB7ha97swhe",
-        "triggerName": "Navigate_To_RaastConfirm_Screen",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
-    "path": "0-19",
+    "events": [],
+    "path": "0-17",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -3077,7 +3116,7 @@
         "textAlignment": "left",
         "textStyle": "regular"
       },
-      "bindingKey": "raast_ft_purpose_data.value"
+      "bindingKey": "selectedPurpose"
     },
     "icon": "FaTextWidth",
     "group": "Form",
@@ -3090,7 +3129,7 @@
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
-    "path": "0-22",
+    "path": "0-20",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -3142,12 +3181,18 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-22",
+    "path": "0-21",
     "edit": true,
     "events": [
       {
-        "triggerId": "0AlTc9immUBgpwrZVpfNU",
-        "triggerName": "FT_PurposeofSending_Btmsht_Trig",
+        "triggerId": "dj60hedClHze-qe3Bbvox",
+        "triggerName": "purpose of transfer api",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "WdQv-UGWkgJD9if06ArYB",
+        "triggerName": "purpose of transfer bottom sheet",
         "name": "On click",
         "type": "ONCLICK"
       }

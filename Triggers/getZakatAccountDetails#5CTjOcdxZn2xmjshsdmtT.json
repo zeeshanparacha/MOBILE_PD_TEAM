@@ -1,7 +1,7 @@
 {
   "id": "N1izHJrrcwUFoLOwHqEfd",
   "projectId": "63ef72a290c5800428f84dd9",
-  "name": "getAccountDetails",
+  "name": "getZakatAccountDetails",
   "status": "ACTIVE",
   "services": [
     {
@@ -39,18 +39,26 @@
             "swiftCode": null,
             "toAccount": null
           },
-          "responseStateKey": "zakatAccDetails"
+          "responseStateKey": "zakatAccDetails",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "triggerName": "Navigate_To_ZakatConfirm_Screen",
+              "triggerId": "K3_9O8acrw_2T9xjYox21",
+              "logic": { "==": [{ "var": "zakatAccDetails.code" }, 1] }
+            }
+          ]
         },
         "returns": []
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.83zbdxdwtxm8otEMycMlIoxQ6pGzYAp2",
+  "csrf": "0.csc8yaeoa5dZIm_td4U4-51huHx45l0S",
   "_id": "5CTjOcdxZn2xmjshsdmtT",
-  "updatedAt": "10/3/2023",
-  "createdAt": "10/3/2023",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
-  "old_name": "getAccountDetails"
+  "old_name": "getZakatAccountDetails"
 }
