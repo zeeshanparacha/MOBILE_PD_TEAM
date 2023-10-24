@@ -44,14 +44,15 @@
         "-ORKkixfgSyEmq4uvGA4l",
         "P6l_lMgee67UjljI5Ef1v",
         "YHNbUxvxCSUxofjEl__xS",
-        "ecv5s_lv67vEp6_0eLiID"
+        "dtm62GCP48v7XW7JSGfSe",
+        "zTSC8GwRSa_sRgdwVqSK1"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/28/2023",
-    "createdAt": "9/28/2023",
+    "updatedAt": "10/20/2023",
+    "createdAt": "10/20/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -421,7 +422,7 @@
               "url": "https://hliteuat.habibmetro.com/security/v2/deviceManagement",
               "requestDataType": "byJSON",
               "requestBody": {
-                "action": "V",
+                "action": "$deviceMgmtAction",
                 "otpToken": "$hmb_loginKey.content.otpToken",
                 "trustedDevice": {
                   "countryCode": "PKR",
@@ -459,27 +460,27 @@
         "edit": true
       },
       {
-        "id": "ecv5s_lv67vEp6_0eLiID",
+        "id": "dtm62GCP48v7XW7JSGfSe",
         "status": "ACTIVE",
         "_id": "61ded150077814a0f374da05",
-        "name": "LoginOtp_Switch",
+        "name": "Switch",
         "attributes": {
-          "name": "LoginOtp_Switch",
+          "name": "Switch",
           "layoutProperties": {
-            "layout_width": "60",
-            "layout_height": "35",
+            "layout_width": "50",
+            "layout_height": "40",
             "layout_marginLeft": 0,
             "layout_marginRight": 20,
             "layout_marginTop": 0,
             "layout_marginBottom": 0,
-            "transform": "0.6",
-            "selectedTintColor": "#1d6131",
+            "transform": "0.3",
+            "selectedTintColor": "#FFFFFF",
             "cornerRadius": [0, 0, 0, 0],
             "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-            "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
-            "bottomToBottomOf": "P6l_lMgee67UjljI5Ef1v"
+            "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
           },
-          "bindingkey": "loginotp_switch"
+          "bindingkey": "abc",
+          "conditions": []
         },
         "icon": "FaToggleOn",
         "group": "Form",
@@ -491,8 +492,74 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Switch", "type": "SWITCH" },
-        "bindingkey": "loginotp_switch",
-        "path": "0-9"
+        "bindingkey": "abc",
+        "path": "0-9",
+        "edit": true,
+        "events": [
+          {
+            "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+            "triggerName": "default device details",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "deviceMgmtAction",
+              "value": "V",
+              "contentType": "string"
+            },
+            "type": "UNCHECKED",
+            "name": "Un checked"
+          },
+          {
+            "triggerId": "rvsQBxdIWSBuKudrp2Qjs",
+            "triggerName": "save device details",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "deviceMgmtAction",
+              "value": "A",
+              "contentType": "string"
+            },
+            "type": "ONCHECKED",
+            "name": "On checked"
+          }
+        ]
+      },
+      {
+        "id": "zTSC8GwRSa_sRgdwVqSK1",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#FFFFFF",
+            "text": "Start Now",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToBottomOf": "dtm62GCP48v7XW7JSGfSe",
+            "layout_marginTop": 5,
+            "textStyle": "bold",
+            "textAlignment": "center",
+            "layout_marginRight": 20,
+            "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
+          },
+          "bindingKey": "deviceMgmtAction"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-10",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -909,7 +976,7 @@
                   "url": "https://hliteuat.habibmetro.com/security/v2/deviceManagement",
                   "requestDataType": "byJSON",
                   "requestBody": {
-                    "action": "V",
+                    "action": "$deviceMgmtAction",
                     "otpToken": "$hmb_loginKey.content.otpToken",
                     "trustedDevice": {
                       "countryCode": "PKR",
@@ -949,27 +1016,27 @@
             "edit": true
           },
           {
-            "id": "ecv5s_lv67vEp6_0eLiID",
+            "id": "dtm62GCP48v7XW7JSGfSe",
             "status": "ACTIVE",
             "_id": "61ded150077814a0f374da05",
-            "name": "LoginOtp_Switch",
+            "name": "Switch",
             "attributes": {
-              "name": "LoginOtp_Switch",
+              "name": "Switch",
               "layoutProperties": {
-                "layout_width": "60",
-                "layout_height": "35",
+                "layout_width": "50",
+                "layout_height": "40",
                 "layout_marginLeft": 0,
                 "layout_marginRight": 20,
                 "layout_marginTop": 0,
                 "layout_marginBottom": 0,
-                "transform": "0.6",
-                "selectedTintColor": "#1d6131",
+                "transform": "0.3",
+                "selectedTintColor": "#FFFFFF",
                 "cornerRadius": [0, 0, 0, 0],
                 "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-                "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
-                "bottomToBottomOf": "P6l_lMgee67UjljI5Ef1v"
+                "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
               },
-              "bindingkey": "loginotp_switch"
+              "bindingkey": "abc",
+              "conditions": []
             },
             "icon": "FaToggleOn",
             "group": "Form",
@@ -981,8 +1048,74 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Switch", "type": "SWITCH" },
-            "bindingkey": "loginotp_switch",
-            "path": "0-9"
+            "bindingkey": "abc",
+            "path": "0-9",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+                "triggerName": "default device details",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "deviceMgmtAction",
+                  "value": "V",
+                  "contentType": "string"
+                },
+                "type": "UNCHECKED",
+                "name": "Un checked"
+              },
+              {
+                "triggerId": "rvsQBxdIWSBuKudrp2Qjs",
+                "triggerName": "save device details",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "deviceMgmtAction",
+                  "value": "A",
+                  "contentType": "string"
+                },
+                "type": "ONCHECKED",
+                "name": "On checked"
+              }
+            ]
+          },
+          {
+            "id": "zTSC8GwRSa_sRgdwVqSK1",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Start Now",
+                "cornerRadius": [0, 0, 0, 0],
+                "topToBottomOf": "dtm62GCP48v7XW7JSGfSe",
+                "layout_marginTop": 5,
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "layout_marginRight": 20,
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
+              },
+              "bindingKey": "deviceMgmtAction"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-10",
+            "edit": true
           }
         ],
         "subType": "screen",
@@ -992,7 +1125,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "LR_DuWXS6BQAK7071zBwC",
-    "createdBy": "muzammil1",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1374,26 +1507,26 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "ecv5s_lv67vEp6_0eLiID",
+    "id": "dtm62GCP48v7XW7JSGfSe",
     "status": "ACTIVE",
-    "name": "LoginOtp_Switch",
+    "name": "Switch",
     "attributes": {
-      "name": "LoginOtp_Switch",
+      "name": "Switch",
       "layoutProperties": {
-        "layout_width": "60",
-        "layout_height": "35",
+        "layout_width": "50",
+        "layout_height": "40",
         "layout_marginLeft": 0,
         "layout_marginRight": 20,
         "layout_marginTop": 0,
         "layout_marginBottom": 0,
-        "transform": "0.6",
-        "selectedTintColor": "#1d6131",
+        "transform": "0.3",
+        "selectedTintColor": "#FFFFFF",
         "cornerRadius": [0, 0, 0, 0],
         "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-        "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
-        "bottomToBottomOf": "P6l_lMgee67UjljI5Ef1v"
+        "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
       },
-      "bindingkey": "loginotp_switch"
+      "bindingkey": "abc",
+      "conditions": []
     },
     "icon": "FaToggleOn",
     "group": "Form",
@@ -1405,8 +1538,63 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Switch", "type": "SWITCH" },
-    "bindingkey": "loginotp_switch",
+    "bindingkey": "abc",
     "path": "0-9",
+    "edit": true,
+    "events": [
+      {
+        "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+        "triggerName": "default device details",
+        "name": "Un checked",
+        "type": "UNCHECKED"
+      },
+      {
+        "triggerId": "rvsQBxdIWSBuKudrp2Qjs",
+        "triggerName": "save device details",
+        "name": "On checked",
+        "type": "ONCHECKED"
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zTSC8GwRSa_sRgdwVqSK1",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#FFFFFF",
+        "text": "Start Now",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToBottomOf": "dtm62GCP48v7XW7JSGfSe",
+        "layout_marginTop": 5,
+        "textStyle": "bold",
+        "textAlignment": "center",
+        "layout_marginRight": 20,
+        "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
+      },
+      "bindingKey": "deviceMgmtAction"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-10",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

@@ -1,0 +1,37 @@
+{
+  "id": "1HMDP7JDNALBxxucWnrbR",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "deviceMgmtMockApi",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "serviceName": "GET",
+          "url": "https://otpmock.free.beeceptor.com",
+          "requestDataType": "byTable",
+          "responseStateKey": "devicemanage_data",
+          "conditions": [
+            {
+              "httpStatus": 200,
+              "triggerName": "Navigate_to_HMB_Tabbar_Final",
+              "triggerId": "-Os20THea9S8z99YkrzXE",
+              "logic": { "==": [{ "var": "devicemanage_data.code" }, 1] }
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.utximekcrvpju6xv5Kepwzpo8IP8itmX",
+  "_id": "sBkTTwYZ9VnfQGsDKrAax",
+  "updatedAt": "10/17/2023",
+  "createdAt": "10/17/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "deviceMgmtMockApi"
+}

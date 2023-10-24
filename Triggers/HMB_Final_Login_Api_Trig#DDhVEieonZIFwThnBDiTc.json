@@ -12,30 +12,29 @@
           "serviceName": "POST",
           "headers": {
             "Content-Type": "application/json",
-            "Content-Length": "438",
             "version_code": "1",
             "channel_key": "006",
             "activity_id": "1",
-            "deviceKey": "1244d1426ebe80d3",
-            "deviceName": "2201117TG",
             "locale": "en",
             "entityId": "1",
             "app_version": "5.1.0",
-            "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
+            "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895",
+            "deviceKey": "$device.deviceKey",
+            "deviceName": "$device.deviceName"
           },
           "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
           "requestDataType": "byJSON",
           "requestBody": {
             "device": {
               "countryCode": "PKR",
-              "deviceKey": "1244d1426ebe80d3",
+              "deviceKey": "$device.deviceKey",
               "fcmToken": null,
-              "imei": "111111111111111",
-              "ip": "192.168.0.112",
+              "imei": "$device.deviceIMEI",
+              "ip": "$device.deviceIP",
               "isNotificationEnabled": true,
-              "name": "2201117TG",
-              "os": "Android",
-              "osType": "31"
+              "name": "$device.deviceName",
+              "os": "$device.deviceOS",
+              "osType": "30"
             },
             "location": "",
             "loginPin": "",
@@ -74,11 +73,11 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.vl2n4nm9erg2AshWktyFS3EZInP1LX5",
+  "csrf": "0.wsdzeadeojeqljH-G4wTgxTHgc9pyLPl",
   "_id": "DDhVEieonZIFwThnBDiTc",
-  "updatedAt": "9/5/2023",
-  "createdAt": "9/5/2023",
-  "createdBy": "shaikhahmedraza",
-  "updatedBy": "shaikhahmedraza",
+  "updatedAt": "10/23/2023",
+  "createdAt": "10/23/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
   "old_name": "HMB_Final_Login_Api_Trig"
 }

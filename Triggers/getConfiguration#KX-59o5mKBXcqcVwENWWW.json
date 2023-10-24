@@ -1,0 +1,68 @@
+{
+  "id": "gg58b4ynbrs073e4Q48dv",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "getConfiguration",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "deviceKey": "$device.deviceKey",
+            "deviceName": "$device.deviceName"
+          },
+          "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "$device.deviceKey",
+              "fcmToken": null,
+              "imei": "$device.deviceIMEI",
+              "ip": "$device.deviceIP",
+              "isNotificationEnabled": true,
+              "name": "$device.deviceName",
+              "os": "$device.deviceOS",
+              "osType": "30"
+            },
+            "lookUps": [
+              "ACCOUNT_STATUS",
+              "ACCOUNT_TYPE",
+              "CHARGES_PAY_INSTRUCT",
+              "COUNTRY",
+              "CREDIT_CARD_TYPE",
+              "CURRENCY",
+              "REGISTER_CARD_TYPES",
+              "USER_IDEN_TYPE",
+              "PASSWORD_POLICY"
+            ],
+            "isSecurityConfiguration": true,
+            "isSystemConfiguration": true
+          },
+          "responseStateKey": "getConfigurationRes"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.wsdzeadeojeqljH-G4wTgxTHgc9pyLPl",
+  "_id": "KX-59o5mKBXcqcVwENWWW",
+  "updatedAt": "10/23/2023",
+  "createdAt": "10/23/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "getConfiguration"
+}

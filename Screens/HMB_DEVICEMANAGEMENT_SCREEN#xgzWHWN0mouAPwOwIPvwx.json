@@ -332,8 +332,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/20/2023",
-    "createdAt": "9/20/2023",
+    "updatedAt": "10/19/2023",
+    "createdAt": "10/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -520,10 +520,10 @@
                       "uri": "android_icon.png"
                     },
                     "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "layout_marginLeft": 20,
-                    "id": "5bba_xB5i2gpw0lYpIouB"
+                    "id": "5bba_xB5i2gpw0lYpIouB",
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2,
                   "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -555,8 +555,7 @@
                     "layout_height": "20",
                     "cornerRadius": [0, 0, 0, 0],
                     "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "src": {
                       "createdBy": "user",
                       "_id": "65004ba161f0645ad866dd6b",
@@ -575,7 +574,8 @@
                       "uri": "ios_icon.png"
                     },
                     "id": "PoWta8I648eOQ5l3CPVJd",
-                    "layout_marginLeft": 20
+                    "layout_marginLeft": 20,
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2,
                   "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -607,27 +607,26 @@
                     "layout_height": "20",
                     "cornerRadius": [0, 0, 0, 0],
                     "src": {
-                      "createdBy": "shaikhahmedraza",
-                      "_id": "64100b306ead56231ce86f52",
-                      "name": "black_close_btn.png",
+                      "createdBy": "user",
+                      "_id": "651a6e0a2836a142540eb726",
+                      "name": "PD_Delete_Bin_Icon.png",
                       "type": "png",
                       "projectId": "63ef72a290c5800428f84dd9",
-                      "id": "YPJdwgcz-aRbKeOYmNEcs",
-                      "gitBranchName": "dev",
+                      "id": "fIRVjr2KucdwKgtVssOCY",
+                      "gitBranchName": "master",
                       "folderType": "xhdpi",
                       "platform": "Android",
-                      "url": "black_close_btn.png",
-                      "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-                      "createdAt": "2023-03-14T05:50:40.172Z",
-                      "updatedAt": "2023-03-14T05:50:40.172Z",
+                      "url": "PD_Delete_Bin_Icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                      "createdAt": "2023-10-02T07:15:22.423Z",
+                      "updatedAt": "2023-10-02T07:15:22.423Z",
                       "__v": 0,
-                      "uri": "black_close_btn.png"
+                      "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "layout_marginRight": 20,
-                    "id": "YPJdwgcz-aRbKeOYmNEcs"
+                    "id": "fIRVjr2KucdwKgtVssOCY",
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2
                 },
@@ -641,7 +640,9 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
-                "path": "1-0-0-5"
+                "path": "1-0-0-5",
+                "edit": true,
+                "events": []
               }
             ],
             "attributes": {
@@ -665,11 +666,11 @@
     "layout": [
       {
         "id": "VdCFH3dNOROmoWq18ODLx",
-        "name": "ABC_Tesstt",
+        "name": "ABC_Test_Copy",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "ABC_Tesstt",
+          "name": "ABC_Test_Copy",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -774,25 +775,24 @@
             "path": "0-1"
           },
           {
-            "id": "zEnPk4PY0mNDdgFB3rhVJ",
+            "id": "yqRTuhL47duHb0M69pcqy",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "_id": "629ee908abfebeb5178b7fb0",
+            "name": "TIMER",
             "attributes": {
-              "name": "Text view",
+              "name": "TIMER",
               "layoutProperties": {
-                "textSize": 18,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Start Now",
                 "cornerRadius": [0, 0, 0, 0],
-                "bottomToBottomOf": null,
-                "centerY": "14ZP73nBasmthqZCyp552"
-              }
+                "otpTime": "100",
+                "topToBottomOf": "14ZP73nBasmthqZCyp552",
+                "leftToLeftOf": "VdCFH3dNOROmoWq18ODLx",
+                "background": "#C9C9C9"
+              },
+              "conditions": [],
+              "bindingKey": "d"
             },
-            "icon": "FaTextWidth",
-            "group": "Form",
+            "icon": "FaShieldAlt",
+            "group": "Security",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
@@ -800,10 +800,10 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
+            "component": { "content": "Timer", "type": "TIMER" },
             "path": "0-2",
-            "edit": true
+            "edit": true,
+            "events": []
           }
         ],
         "subType": "screen",
@@ -1339,10 +1339,10 @@
                           "uri": "android_icon.png"
                         },
                         "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                        "bottomToBottomOf": null,
                         "layout_marginLeft": 20,
-                        "id": "5bba_xB5i2gpw0lYpIouB"
+                        "id": "5bba_xB5i2gpw0lYpIouB",
+                        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                       },
                       "contentType": 2,
                       "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -1377,8 +1377,7 @@
                         "layout_height": "20",
                         "cornerRadius": [0, 0, 0, 0],
                         "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                        "bottomToBottomOf": null,
                         "src": {
                           "createdBy": "user",
                           "_id": "65004ba161f0645ad866dd6b",
@@ -1397,7 +1396,8 @@
                           "uri": "ios_icon.png"
                         },
                         "id": "PoWta8I648eOQ5l3CPVJd",
-                        "layout_marginLeft": 20
+                        "layout_marginLeft": 20,
+                        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                       },
                       "contentType": 2,
                       "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -1432,27 +1432,26 @@
                         "layout_height": "20",
                         "cornerRadius": [0, 0, 0, 0],
                         "src": {
-                          "createdBy": "shaikhahmedraza",
-                          "_id": "64100b306ead56231ce86f52",
-                          "name": "black_close_btn.png",
+                          "createdBy": "user",
+                          "_id": "651a6e0a2836a142540eb726",
+                          "name": "PD_Delete_Bin_Icon.png",
                           "type": "png",
                           "projectId": "63ef72a290c5800428f84dd9",
-                          "id": "YPJdwgcz-aRbKeOYmNEcs",
-                          "gitBranchName": "dev",
+                          "id": "fIRVjr2KucdwKgtVssOCY",
+                          "gitBranchName": "master",
                           "folderType": "xhdpi",
                           "platform": "Android",
-                          "url": "black_close_btn.png",
-                          "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-                          "createdAt": "2023-03-14T05:50:40.172Z",
-                          "updatedAt": "2023-03-14T05:50:40.172Z",
+                          "url": "PD_Delete_Bin_Icon.png",
+                          "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                          "createdAt": "2023-10-02T07:15:22.423Z",
+                          "updatedAt": "2023-10-02T07:15:22.423Z",
                           "__v": 0,
-                          "uri": "black_close_btn.png"
+                          "uri": "PD_Delete_Bin_Icon.png"
                         },
-                        "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                        "bottomToBottomOf": null,
                         "layout_marginRight": 20,
-                        "id": "YPJdwgcz-aRbKeOYmNEcs"
+                        "id": "fIRVjr2KucdwKgtVssOCY",
+                        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                       },
                       "contentType": 2
                     },
@@ -1469,7 +1468,9 @@
                       "content": "Image view",
                       "type": "IMAGEVIEW"
                     },
-                    "path": "1-0-0-5"
+                    "path": "1-0-0-5",
+                    "edit": true,
+                    "events": []
                   }
                 ],
                 "attributes": {
@@ -1678,10 +1679,10 @@
                   "uri": "android_icon.png"
                 },
                 "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "layout_marginLeft": 20,
-                "id": "5bba_xB5i2gpw0lYpIouB"
+                "id": "5bba_xB5i2gpw0lYpIouB",
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2,
               "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -1713,8 +1714,7 @@
                 "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "src": {
                   "createdBy": "user",
                   "_id": "65004ba161f0645ad866dd6b",
@@ -1733,7 +1733,8 @@
                   "uri": "ios_icon.png"
                 },
                 "id": "PoWta8I648eOQ5l3CPVJd",
-                "layout_marginLeft": 20
+                "layout_marginLeft": 20,
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2,
               "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -1765,27 +1766,26 @@
                 "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64100b306ead56231ce86f52",
-                  "name": "black_close_btn.png",
+                  "createdBy": "user",
+                  "_id": "651a6e0a2836a142540eb726",
+                  "name": "PD_Delete_Bin_Icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "YPJdwgcz-aRbKeOYmNEcs",
-                  "gitBranchName": "dev",
+                  "id": "fIRVjr2KucdwKgtVssOCY",
+                  "gitBranchName": "master",
                   "folderType": "xhdpi",
                   "platform": "Android",
-                  "url": "black_close_btn.png",
-                  "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-                  "createdAt": "2023-03-14T05:50:40.172Z",
-                  "updatedAt": "2023-03-14T05:50:40.172Z",
+                  "url": "PD_Delete_Bin_Icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                  "createdAt": "2023-10-02T07:15:22.423Z",
+                  "updatedAt": "2023-10-02T07:15:22.423Z",
                   "__v": 0,
-                  "uri": "black_close_btn.png"
+                  "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "layout_marginRight": 20,
-                "id": "YPJdwgcz-aRbKeOYmNEcs"
+                "id": "fIRVjr2KucdwKgtVssOCY",
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2
             },
@@ -1799,7 +1799,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "1-0-0-5"
+            "path": "1-0-0-5",
+            "edit": true,
+            "events": []
           }
         ],
         "attributes": {
@@ -1997,10 +1999,10 @@
                       "uri": "android_icon.png"
                     },
                     "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "layout_marginLeft": 20,
-                    "id": "5bba_xB5i2gpw0lYpIouB"
+                    "id": "5bba_xB5i2gpw0lYpIouB",
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2,
                   "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -2032,8 +2034,7 @@
                     "layout_height": "20",
                     "cornerRadius": [0, 0, 0, 0],
                     "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "src": {
                       "createdBy": "user",
                       "_id": "65004ba161f0645ad866dd6b",
@@ -2052,7 +2053,8 @@
                       "uri": "ios_icon.png"
                     },
                     "id": "PoWta8I648eOQ5l3CPVJd",
-                    "layout_marginLeft": 20
+                    "layout_marginLeft": 20,
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2,
                   "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -2084,27 +2086,26 @@
                     "layout_height": "20",
                     "cornerRadius": [0, 0, 0, 0],
                     "src": {
-                      "createdBy": "shaikhahmedraza",
-                      "_id": "64100b306ead56231ce86f52",
-                      "name": "black_close_btn.png",
+                      "createdBy": "user",
+                      "_id": "651a6e0a2836a142540eb726",
+                      "name": "PD_Delete_Bin_Icon.png",
                       "type": "png",
                       "projectId": "63ef72a290c5800428f84dd9",
-                      "id": "YPJdwgcz-aRbKeOYmNEcs",
-                      "gitBranchName": "dev",
+                      "id": "fIRVjr2KucdwKgtVssOCY",
+                      "gitBranchName": "master",
                       "folderType": "xhdpi",
                       "platform": "Android",
-                      "url": "black_close_btn.png",
-                      "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-                      "createdAt": "2023-03-14T05:50:40.172Z",
-                      "updatedAt": "2023-03-14T05:50:40.172Z",
+                      "url": "PD_Delete_Bin_Icon.png",
+                      "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                      "createdAt": "2023-10-02T07:15:22.423Z",
+                      "updatedAt": "2023-10-02T07:15:22.423Z",
                       "__v": 0,
-                      "uri": "black_close_btn.png"
+                      "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                    "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "bottomToBottomOf": null,
                     "layout_marginRight": 20,
-                    "id": "YPJdwgcz-aRbKeOYmNEcs"
+                    "id": "fIRVjr2KucdwKgtVssOCY",
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
                   },
                   "contentType": 2
                 },
@@ -2118,7 +2119,9 @@
                 "isLatest": true,
                 "projectType": "mobile",
                 "component": { "content": "Image view", "type": "IMAGEVIEW" },
-                "path": "1-0-0-5"
+                "path": "1-0-0-5",
+                "edit": true,
+                "events": []
               }
             ],
             "attributes": {
@@ -2285,10 +2288,10 @@
               "uri": "android_icon.png"
             },
             "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+            "bottomToBottomOf": null,
             "layout_marginLeft": 20,
-            "id": "5bba_xB5i2gpw0lYpIouB"
+            "id": "5bba_xB5i2gpw0lYpIouB",
+            "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
           },
           "contentType": 2,
           "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -2320,8 +2323,7 @@
             "layout_height": "20",
             "cornerRadius": [0, 0, 0, 0],
             "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+            "bottomToBottomOf": null,
             "src": {
               "createdBy": "user",
               "_id": "65004ba161f0645ad866dd6b",
@@ -2340,7 +2342,8 @@
               "uri": "ios_icon.png"
             },
             "id": "PoWta8I648eOQ5l3CPVJd",
-            "layout_marginLeft": 20
+            "layout_marginLeft": 20,
+            "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
           },
           "contentType": 2,
           "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -2372,27 +2375,26 @@
             "layout_height": "20",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "64100b306ead56231ce86f52",
-              "name": "black_close_btn.png",
+              "createdBy": "user",
+              "_id": "651a6e0a2836a142540eb726",
+              "name": "PD_Delete_Bin_Icon.png",
               "type": "png",
               "projectId": "63ef72a290c5800428f84dd9",
-              "id": "YPJdwgcz-aRbKeOYmNEcs",
-              "gitBranchName": "dev",
+              "id": "fIRVjr2KucdwKgtVssOCY",
+              "gitBranchName": "master",
               "folderType": "xhdpi",
               "platform": "Android",
-              "url": "black_close_btn.png",
-              "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-              "createdAt": "2023-03-14T05:50:40.172Z",
-              "updatedAt": "2023-03-14T05:50:40.172Z",
+              "url": "PD_Delete_Bin_Icon.png",
+              "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+              "createdAt": "2023-10-02T07:15:22.423Z",
+              "updatedAt": "2023-10-02T07:15:22.423Z",
               "__v": 0,
-              "uri": "black_close_btn.png"
+              "uri": "PD_Delete_Bin_Icon.png"
             },
-            "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-            "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+            "bottomToBottomOf": null,
             "layout_marginRight": 20,
-            "id": "YPJdwgcz-aRbKeOYmNEcs"
+            "id": "fIRVjr2KucdwKgtVssOCY",
+            "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
           },
           "contentType": 2
         },
@@ -2406,7 +2408,9 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "1-0-0-5"
+        "path": "1-0-0-5",
+        "edit": true,
+        "events": []
       }
     ],
     "attributes": {
@@ -2570,10 +2574,10 @@
                   "uri": "android_icon.png"
                 },
                 "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "layout_marginLeft": 20,
-                "id": "5bba_xB5i2gpw0lYpIouB"
+                "id": "5bba_xB5i2gpw0lYpIouB",
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2,
               "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -2605,8 +2609,7 @@
                 "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
                 "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "src": {
                   "createdBy": "user",
                   "_id": "65004ba161f0645ad866dd6b",
@@ -2625,7 +2628,8 @@
                   "uri": "ios_icon.png"
                 },
                 "id": "PoWta8I648eOQ5l3CPVJd",
-                "layout_marginLeft": 20
+                "layout_marginLeft": 20,
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2,
               "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -2657,27 +2661,26 @@
                 "layout_height": "20",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64100b306ead56231ce86f52",
-                  "name": "black_close_btn.png",
+                  "createdBy": "user",
+                  "_id": "651a6e0a2836a142540eb726",
+                  "name": "PD_Delete_Bin_Icon.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "YPJdwgcz-aRbKeOYmNEcs",
-                  "gitBranchName": "dev",
+                  "id": "fIRVjr2KucdwKgtVssOCY",
+                  "gitBranchName": "master",
                   "folderType": "xhdpi",
                   "platform": "Android",
-                  "url": "black_close_btn.png",
-                  "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-                  "createdAt": "2023-03-14T05:50:40.172Z",
-                  "updatedAt": "2023-03-14T05:50:40.172Z",
+                  "url": "PD_Delete_Bin_Icon.png",
+                  "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+                  "createdAt": "2023-10-02T07:15:22.423Z",
+                  "updatedAt": "2023-10-02T07:15:22.423Z",
                   "__v": 0,
-                  "uri": "black_close_btn.png"
+                  "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-                "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+                "bottomToBottomOf": null,
                 "layout_marginRight": 20,
-                "id": "YPJdwgcz-aRbKeOYmNEcs"
+                "id": "fIRVjr2KucdwKgtVssOCY",
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
               },
               "contentType": 2
             },
@@ -2691,7 +2694,9 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "1-0-0-5"
+            "path": "1-0-0-5",
+            "edit": true,
+            "events": []
           }
         ],
         "attributes": {
@@ -2855,10 +2860,10 @@
           "uri": "android_icon.png"
         },
         "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+        "bottomToBottomOf": null,
         "layout_marginLeft": 20,
-        "id": "5bba_xB5i2gpw0lYpIouB"
+        "id": "5bba_xB5i2gpw0lYpIouB",
+        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
       },
       "contentType": 2,
       "hideCondition": { "!=": [{ "var": "os" }, "Android"] },
@@ -2893,8 +2898,7 @@
         "layout_height": "20",
         "cornerRadius": [0, 0, 0, 0],
         "leftToLeftOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+        "bottomToBottomOf": null,
         "src": {
           "createdBy": "user",
           "_id": "65004ba161f0645ad866dd6b",
@@ -2913,7 +2917,8 @@
           "uri": "ios_icon.png"
         },
         "id": "PoWta8I648eOQ5l3CPVJd",
-        "layout_marginLeft": 20
+        "layout_marginLeft": 20,
+        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
       },
       "contentType": 2,
       "hideCondition": { "!=": [{ "var": "os" }, "IOS"] },
@@ -2948,27 +2953,26 @@
         "layout_height": "20",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "64100b306ead56231ce86f52",
-          "name": "black_close_btn.png",
+          "createdBy": "user",
+          "_id": "651a6e0a2836a142540eb726",
+          "name": "PD_Delete_Bin_Icon.png",
           "type": "png",
           "projectId": "63ef72a290c5800428f84dd9",
-          "id": "YPJdwgcz-aRbKeOYmNEcs",
-          "gitBranchName": "dev",
+          "id": "fIRVjr2KucdwKgtVssOCY",
+          "gitBranchName": "master",
           "folderType": "xhdpi",
           "platform": "Android",
-          "url": "black_close_btn.png",
-          "canvasUrl": "Android/drawable-xhdpi/black_close_btn.png",
-          "createdAt": "2023-03-14T05:50:40.172Z",
-          "updatedAt": "2023-03-14T05:50:40.172Z",
+          "url": "PD_Delete_Bin_Icon.png",
+          "canvasUrl": "Android/drawable-xhdpi/PD_Delete_Bin_Icon.png",
+          "createdAt": "2023-10-02T07:15:22.423Z",
+          "updatedAt": "2023-10-02T07:15:22.423Z",
           "__v": 0,
-          "uri": "black_close_btn.png"
+          "uri": "PD_Delete_Bin_Icon.png"
         },
-        "rightToRightOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "topToTopOf": "BRxJ8ucwsnOPBFtY4ugfi",
-        "bottomToBottomOf": "BRxJ8ucwsnOPBFtY4ugfi",
+        "bottomToBottomOf": null,
         "layout_marginRight": 20,
-        "id": "YPJdwgcz-aRbKeOYmNEcs"
+        "id": "fIRVjr2KucdwKgtVssOCY",
+        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
       },
       "contentType": 2
     },
@@ -2983,6 +2987,8 @@
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "1-0-0-5",
+    "edit": true,
+    "events": [],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

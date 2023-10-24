@@ -10,7 +10,6 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "400",
-        "statusBarColor": "#093959",
         "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
@@ -18,7 +17,8 @@
         "navbarHeight": 0,
         "hideNavBar": true,
         "layout_marginLeft": 5,
-        "layout_marginRight": 5
+        "layout_marginRight": 5,
+        "fullScreen": true
       },
       "componentId": [
         "ZQYUvPvnpDfwoth-4-Uw6",
@@ -27,14 +27,16 @@
         "UATTaY3bhFyaXjUZEksJQ",
         "ieDy-kA0Q5a9JJQir2qR8",
         "ywq8Yb6Z8QiLue2T0kA_b",
-        "QuTK-2wXHuNsmX5J1vCyx"
+        "QuTK-2wXHuNsmX5J1vCyx",
+        "bY91tix34CWkXMhE7p1AL",
+        "2zd6KZsDJQWX3mjfzAmod"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/19/2023",
+    "createdAt": "10/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -116,8 +118,8 @@
         "attributes": {
           "name": "Text view",
           "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
+            "textSize": 15,
+            "layout_width": "match_constraint",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "Expiry Date",
@@ -126,7 +128,8 @@
             "topToBottomOf": "QuTK-2wXHuNsmX5J1vCyx",
             "layout_marginTop": 5,
             "textAlignment": "left",
-            "centerX": "sOoS7vkap1TuJvLPvaQmE"
+            "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
+            "width_percent": 49
           },
           "bindingKey": "selectedDate"
         },
@@ -152,7 +155,7 @@
         "attributes": {
           "name": "share button",
           "layoutProperties": {
-            "layout_width": "match_contraint",
+            "layout_width": "match_parent",
             "layout_height": "40",
             "text": "Share",
             "textSize": 15,
@@ -180,7 +183,7 @@
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
-        "path": "0-4",
+        "path": "0-3",
         "edit": true
       },
       {
@@ -191,7 +194,7 @@
         "attributes": {
           "name": "Download button",
           "layoutProperties": {
-            "layout_width": "match_contraint",
+            "layout_width": "match_parent",
             "layout_height": "40",
             "text": "Download ",
             "textSize": 15,
@@ -204,7 +207,7 @@
             "topToTopOf": "UATTaY3bhFyaXjUZEksJQ",
             "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
             "layout_marginRight": 10,
-            "layout_marginTop": null,
+            "layout_marginTop": 1,
             "width_percent": 45
           }
         },
@@ -219,7 +222,7 @@
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
-        "path": "0-5",
+        "path": "0-4",
         "edit": true
       },
       {
@@ -271,15 +274,16 @@
           "name": "Text view",
           "layoutProperties": {
             "textSize": 15,
-            "layout_width": "wrap_content",
+            "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "textColor": "#000000",
             "text": "amount",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 1,
             "textAlignment": "left",
-            "centerX": "sOoS7vkap1TuJvLPvaQmE",
-            "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU"
+            "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+            "width_percent": 50,
+            "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE"
           },
           "bindingKey": "QRAmount"
         },
@@ -295,6 +299,77 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-6",
+        "edit": true
+      },
+      {
+        "id": "bY91tix34CWkXMhE7p1AL",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view Amount",
+        "attributes": {
+          "name": "Text view Amount",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Amount:",
+            "cornerRadius": [0, 0, 0, 0],
+            "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+            "width_percent": 49,
+            "numberOfLines": 1,
+            "textAlignment": "right",
+            "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-7",
+        "edit": true
+      },
+      {
+        "id": "2zd6KZsDJQWX3mjfzAmod",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 15,
+            "layout_width": "match_constraint",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Expiry Date:",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE",
+            "topToBottomOf": "bY91tix34CWkXMhE7p1AL",
+            "width_percent": 49,
+            "layout_marginTop": 5,
+            "textAlignment": "right"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-8",
         "edit": true
       }
     ],
@@ -312,7 +387,6 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "400",
-            "statusBarColor": "#093959",
             "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
@@ -320,7 +394,8 @@
             "navbarHeight": 0,
             "hideNavBar": true,
             "layout_marginLeft": 5,
-            "layout_marginRight": 5
+            "layout_marginRight": 5,
+            "fullScreen": true
           },
           "componentId": []
         },
@@ -413,8 +488,8 @@
             "attributes": {
               "name": "Text view",
               "layoutProperties": {
-                "textSize": 16,
-                "layout_width": "wrap_content",
+                "textSize": 15,
+                "layout_width": "match_constraint",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "Expiry Date",
@@ -423,7 +498,8 @@
                 "topToBottomOf": "QuTK-2wXHuNsmX5J1vCyx",
                 "layout_marginTop": 5,
                 "textAlignment": "left",
-                "centerX": "sOoS7vkap1TuJvLPvaQmE"
+                "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
+                "width_percent": 49
               },
               "bindingKey": "selectedDate"
             },
@@ -449,7 +525,7 @@
             "attributes": {
               "name": "share button",
               "layoutProperties": {
-                "layout_width": "match_contraint",
+                "layout_width": "match_parent",
                 "layout_height": "40",
                 "text": "Share",
                 "textSize": 15,
@@ -477,7 +553,7 @@
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
-            "path": "0-4",
+            "path": "0-3",
             "edit": true
           },
           {
@@ -488,7 +564,7 @@
             "attributes": {
               "name": "Download button",
               "layoutProperties": {
-                "layout_width": "match_contraint",
+                "layout_width": "match_parent",
                 "layout_height": "40",
                 "text": "Download ",
                 "textSize": 15,
@@ -501,7 +577,7 @@
                 "topToTopOf": "UATTaY3bhFyaXjUZEksJQ",
                 "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
                 "layout_marginRight": 10,
-                "layout_marginTop": null,
+                "layout_marginTop": 1,
                 "width_percent": 45
               }
             },
@@ -516,7 +592,7 @@
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
-            "path": "0-5",
+            "path": "0-4",
             "edit": true
           },
           {
@@ -568,15 +644,16 @@
               "name": "Text view",
               "layoutProperties": {
                 "textSize": 15,
-                "layout_width": "wrap_content",
+                "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "textColor": "#000000",
                 "text": "amount",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 1,
                 "textAlignment": "left",
-                "centerX": "sOoS7vkap1TuJvLPvaQmE",
-                "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU"
+                "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+                "width_percent": 50,
+                "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE"
               },
               "bindingKey": "QRAmount"
             },
@@ -593,6 +670,77 @@
             "events": [],
             "path": "0-6",
             "edit": true
+          },
+          {
+            "id": "bY91tix34CWkXMhE7p1AL",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view Amount",
+            "attributes": {
+              "name": "Text view Amount",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Amount:",
+                "cornerRadius": [0, 0, 0, 0],
+                "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+                "width_percent": 49,
+                "numberOfLines": 1,
+                "textAlignment": "right",
+                "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-7",
+            "edit": true
+          },
+          {
+            "id": "2zd6KZsDJQWX3mjfzAmod",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "match_constraint",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Expiry Date:",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE",
+                "topToBottomOf": "bY91tix34CWkXMhE7p1AL",
+                "width_percent": 49,
+                "layout_marginTop": 5,
+                "textAlignment": "right"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-8",
+            "edit": true
           }
         ],
         "subType": "screen",
@@ -602,7 +750,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "sOoS7vkap1TuJvLPvaQmE",
-    "createdBy": "ammarahmed",
+    "createdBy": "faiqtalat",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -685,8 +833,8 @@
     "attributes": {
       "name": "Text view",
       "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
+        "textSize": 15,
+        "layout_width": "match_constraint",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "Expiry Date",
@@ -695,7 +843,8 @@
         "topToBottomOf": "QuTK-2wXHuNsmX5J1vCyx",
         "layout_marginTop": 5,
         "textAlignment": "left",
-        "centerX": "sOoS7vkap1TuJvLPvaQmE"
+        "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
+        "width_percent": 49
       },
       "bindingKey": "selectedDate"
     },
@@ -724,7 +873,7 @@
     "attributes": {
       "name": "share button",
       "layoutProperties": {
-        "layout_width": "match_contraint",
+        "layout_width": "match_parent",
         "layout_height": "40",
         "text": "Share",
         "textSize": 15,
@@ -752,7 +901,7 @@
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
-    "path": "0-4",
+    "path": "0-3",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -766,7 +915,7 @@
     "attributes": {
       "name": "Download button",
       "layoutProperties": {
-        "layout_width": "match_contraint",
+        "layout_width": "match_parent",
         "layout_height": "40",
         "text": "Download ",
         "textSize": 15,
@@ -779,7 +928,7 @@
         "topToTopOf": "UATTaY3bhFyaXjUZEksJQ",
         "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE",
         "layout_marginRight": 10,
-        "layout_marginTop": null,
+        "layout_marginTop": 1,
         "width_percent": 45
       }
     },
@@ -794,7 +943,7 @@
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
-    "path": "0-5",
+    "path": "0-4",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -852,15 +1001,16 @@
       "name": "Text view",
       "layoutProperties": {
         "textSize": 15,
-        "layout_width": "wrap_content",
+        "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "textColor": "#000000",
         "text": "amount",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 1,
         "textAlignment": "left",
-        "centerX": "sOoS7vkap1TuJvLPvaQmE",
-        "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU"
+        "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+        "width_percent": 50,
+        "rightToRightOf": "sOoS7vkap1TuJvLPvaQmE"
       },
       "bindingKey": "QRAmount"
     },
@@ -876,6 +1026,83 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-6",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "bY91tix34CWkXMhE7p1AL",
+    "status": "ACTIVE",
+    "name": "Text view Amount",
+    "attributes": {
+      "name": "Text view Amount",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Amount:",
+        "cornerRadius": [0, 0, 0, 0],
+        "topToBottomOf": "m4bLZ_YLuvR4hHmOyaOQU",
+        "width_percent": 49,
+        "numberOfLines": 1,
+        "textAlignment": "right",
+        "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-7",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "2zd6KZsDJQWX3mjfzAmod",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 15,
+        "layout_width": "match_constraint",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Expiry Date:",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "sOoS7vkap1TuJvLPvaQmE",
+        "topToBottomOf": "bY91tix34CWkXMhE7p1AL",
+        "width_percent": 49,
+        "layout_marginTop": 5,
+        "textAlignment": "right"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-8",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",

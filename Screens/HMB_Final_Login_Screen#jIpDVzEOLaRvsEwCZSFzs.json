@@ -31,7 +31,9 @@
           "__v": 0,
           "uri": "HMB_Bg.png"
         },
-        "hideNavBar": true
+        "hideNavBar": true,
+        "background": "#007022",
+        "navbarHeight": 0
       },
       "componentId": [
         "RT1-FYgpREV8tStMl-b3H",
@@ -57,8 +59,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/5/2023",
-    "createdAt": "9/5/2023",
+    "updatedAt": "10/23/2023",
+    "createdAt": "10/23/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -126,6 +128,19 @@
             },
             "type": "ONCLICK",
             "name": "On click"
+          },
+          {
+            "triggerId": "QtdC7KEADfilW6qtfdV1E",
+            "triggerName": "setBaseMockUrl",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "baseMockUrl",
+              "value": "http://172.16.11.52:9000/",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ]
       },
@@ -871,6 +886,58 @@
             },
             "type": "ONCLICK",
             "name": "On click"
+          },
+          {
+            "triggerId": "gg58b4ynbrs073e4Q48dv",
+            "triggerName": "getConfiguration",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "deviceKey": "$device.deviceKey",
+                "deviceName": "$device.deviceName"
+              },
+              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "device": {
+                  "countryCode": "PKR",
+                  "deviceKey": "$device.deviceKey",
+                  "fcmToken": null,
+                  "imei": "$device.deviceIMEI",
+                  "ip": "$device.deviceIP",
+                  "isNotificationEnabled": true,
+                  "name": "$device.deviceName",
+                  "os": "$device.deviceOS",
+                  "osType": "30"
+                },
+                "lookUps": [
+                  "ACCOUNT_STATUS",
+                  "ACCOUNT_TYPE",
+                  "CHARGES_PAY_INSTRUCT",
+                  "COUNTRY",
+                  "CREDIT_CARD_TYPE",
+                  "CURRENCY",
+                  "REGISTER_CARD_TYPES",
+                  "USER_IDEN_TYPE",
+                  "PASSWORD_POLICY"
+                ],
+                "isSecurityConfiguration": true,
+                "isSystemConfiguration": true
+              },
+              "responseStateKey": "getConfigurationRes"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ]
       },
@@ -1035,7 +1102,9 @@
               "__v": 0,
               "uri": "HMB_Bg.png"
             },
-            "hideNavBar": true
+            "hideNavBar": true,
+            "background": "#007022",
+            "navbarHeight": 0
           },
           "componentId": []
         },
@@ -1111,6 +1180,19 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
+              },
+              {
+                "triggerId": "QtdC7KEADfilW6qtfdV1E",
+                "triggerName": "setBaseMockUrl",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "baseMockUrl",
+                  "value": "http://172.16.11.52:9000/",
+                  "contentType": "string"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
               }
             ]
           },
@@ -1856,6 +1938,58 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
+              },
+              {
+                "triggerId": "gg58b4ynbrs073e4Q48dv",
+                "triggerName": "getConfiguration",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "$device.deviceKey",
+                      "fcmToken": null,
+                      "imei": "$device.deviceIMEI",
+                      "ip": "$device.deviceIP",
+                      "isNotificationEnabled": true,
+                      "name": "$device.deviceName",
+                      "os": "$device.deviceOS",
+                      "osType": "30"
+                    },
+                    "lookUps": [
+                      "ACCOUNT_STATUS",
+                      "ACCOUNT_TYPE",
+                      "CHARGES_PAY_INSTRUCT",
+                      "COUNTRY",
+                      "CREDIT_CARD_TYPE",
+                      "CURRENCY",
+                      "REGISTER_CARD_TYPES",
+                      "USER_IDEN_TYPE",
+                      "PASSWORD_POLICY"
+                    ],
+                    "isSecurityConfiguration": true,
+                    "isSystemConfiguration": true
+                  },
+                  "responseStateKey": "getConfigurationRes"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
               }
             ]
           },
@@ -1992,7 +2126,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "jIpDVzEOLaRvsEwCZSFzs",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2048,6 +2182,12 @@
         "triggerName": "Prelogin_Whatsapp_Trig",
         "name": "On click",
         "type": "ONCLICK"
+      },
+      {
+        "triggerId": "QtdC7KEADfilW6qtfdV1E",
+        "triggerName": "setBaseMockUrl",
+        "name": "On Load",
+        "type": "ONLOAD"
       }
     ],
     "subType": "component",
@@ -2761,6 +2901,12 @@
         "triggerName": "Navigate_To_RDA_Screen",
         "name": "On click",
         "type": "ONCLICK"
+      },
+      {
+        "triggerId": "gg58b4ynbrs073e4Q48dv",
+        "triggerName": "getConfiguration",
+        "name": "On Load",
+        "type": "ONLOAD"
       }
     ],
     "subType": "component",

@@ -50,8 +50,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/19/2023",
+    "createdAt": "10/19/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -128,7 +128,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "giqlQG9a7iDGW3isEIjlo",
+            "triggerName": "QRGenerate_show_btmsheet",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-1",
         "edit": true
       },
@@ -165,7 +179,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "73TueXVVCyeRiAWBJZZN5",
+            "triggerName": "own account default value",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "selectedAcc_QRGenerate.accountTitle",
+              "value": "$selectedAcc_QRGenerate.accountTitle",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "path": "0-2",
         "edit": true
       },
@@ -358,7 +386,21 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "-0A1MIzP6nH0FwPTUliMv",
+            "triggerName": "BeneFT_TransferTo_Btmsht_Bene_Change_Trig",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Show bottomsheet",
+              "bottomsheetType": "Custom Bottomsheet",
+              "componentId": "7Wk7lZ9QQc4YsAEbxMOzK",
+              "values": []
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       },
@@ -1355,7 +1397,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "giqlQG9a7iDGW3isEIjlo",
+                "triggerName": "QRGenerate_show_btmsheet",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "sMmB-LDi8Vfq5tR-Q7yvD",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-1",
             "edit": true
           },
@@ -1392,7 +1448,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "73TueXVVCyeRiAWBJZZN5",
+                "triggerName": "own account default value",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "selectedAcc_QRGenerate.accountTitle",
+                  "value": "$selectedAcc_QRGenerate.accountTitle",
+                  "contentType": "string"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
             "path": "0-2",
             "edit": true
           },
@@ -1585,7 +1655,21 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "-0A1MIzP6nH0FwPTUliMv",
+                "triggerName": "BeneFT_TransferTo_Btmsht_Bene_Change_Trig",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "bottomsheetType": "Custom Bottomsheet",
+                  "componentId": "7Wk7lZ9QQc4YsAEbxMOzK",
+                  "values": []
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-7",
             "edit": true
           },
@@ -2561,7 +2645,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "giqlQG9a7iDGW3isEIjlo",
+        "triggerName": "QRGenerate_show_btmsheet",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-1",
     "edit": true,
     "subType": "component",
@@ -2601,7 +2692,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "73TueXVVCyeRiAWBJZZN5",
+        "triggerName": "own account default value",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "path": "0-2",
     "edit": true,
     "subType": "component",
@@ -2802,7 +2900,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "-0A1MIzP6nH0FwPTUliMv",
+        "triggerName": "BeneFT_TransferTo_Btmsht_Bene_Change_Trig",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-7",
     "edit": true,
     "subType": "component",
