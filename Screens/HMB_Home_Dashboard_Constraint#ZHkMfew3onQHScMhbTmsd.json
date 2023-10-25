@@ -487,7 +487,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -523,7 +523,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -555,7 +555,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -587,7 +587,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -1396,7 +1396,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -1636,7 +1636,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -2007,7 +2007,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -2553,7 +2553,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -3045,7 +3045,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -4367,7 +4367,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -5224,7 +5224,7 @@
                     "app_version": "5.1.0",
                     "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
                   },
-                  "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+                  "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
                   "requestBody": { "accountType": "ALL" },
                   "responseStateKey": "hmb_getAllAccounts_data",
                   "conditions": [
@@ -5260,7 +5260,7 @@
                     "entityId": "1",
                     "app_version": "5.1.0"
                   },
-                  "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+                  "url": "$baseMockUrl++/card/v1/cardList",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "cardNature": "ALL",
@@ -5292,7 +5292,7 @@
                     "Authorization": "$hmb_loginKey.content.token",
                     "hmbToken": "$hmb_loginKey.content.otpToken"
                   },
-                  "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+                  "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "inquiry": true,
@@ -5324,7 +5324,7 @@
                     "Authorization": "$hmb_loginKey.content.token",
                     "hmbToken": "$hmb_loginKey.content.otpToken"
                   },
-                  "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+                  "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
                   "responseStateKey": "getBillBene_Data",
                   "requestDataType": "byJSON",
                   "requestBody": { "inquiry": true, "temp": null }
@@ -6145,7 +6145,7 @@
                     "Authorization": "$hmb_loginKey.content.token",
                     "hmbToken": "$hmb_loginKey.content.otpToken"
                   },
-                  "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+                  "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
                   "responseStateKey": "trustedDevices",
                   "conditions": [
                     {
@@ -6385,7 +6385,7 @@
                     "locale": "en",
                     "Content-Length": "28"
                   },
-                  "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+                  "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
                   "requestDataType": "byJSON",
                   "requestBody": { "inquiry": null, "temp": null },
                   "responseStateKey": "categoriesAndCompanies"
@@ -6756,7 +6756,7 @@
                         "elevation": 60
                       },
                       "contentType": 1,
-                      "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                      "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -7314,7 +7314,7 @@
                         "elevation": 60
                       },
                       "contentType": 1,
-                      "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                      "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -7812,7 +7812,7 @@
                         "elevation": 60
                       },
                       "contentType": 1,
-                      "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                      "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -9140,7 +9140,7 @@
                         "elevation": 60
                       },
                       "contentType": 1,
-                      "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                      "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                     },
                     "icon": "FaRegImage",
                     "group": "Form",
@@ -11109,7 +11109,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -11145,7 +11145,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -11177,7 +11177,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -11209,7 +11209,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -12018,7 +12018,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -12258,7 +12258,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -12629,7 +12629,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -13175,7 +13175,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -13667,7 +13667,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -14989,7 +14989,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -18097,7 +18097,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+              "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -18575,7 +18575,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -18611,7 +18611,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -18643,7 +18643,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -18675,7 +18675,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -19484,7 +19484,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -19724,7 +19724,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -20095,7 +20095,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -20641,7 +20641,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -21133,7 +21133,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -22455,7 +22455,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -22920,7 +22920,7 @@
             "elevation": 60
           },
           "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+          "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -23027,7 +23027,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+              "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -23134,7 +23134,7 @@
         "elevation": 60
       },
       "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+      "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
     },
     "icon": "FaRegImage",
     "group": "Form",
@@ -23660,7 +23660,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+              "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -24321,7 +24321,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -24357,7 +24357,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -24389,7 +24389,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -24421,7 +24421,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -25230,7 +25230,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -25470,7 +25470,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -25841,7 +25841,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -26387,7 +26387,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -26879,7 +26879,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -28201,7 +28201,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -28704,7 +28704,7 @@
             "elevation": 60
           },
           "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+          "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -29043,7 +29043,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+              "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -29374,7 +29374,7 @@
         "elevation": 60
       },
       "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+      "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
     },
     "icon": "FaRegImage",
     "group": "Form",
@@ -29882,7 +29882,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+              "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -30540,7 +30540,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -30576,7 +30576,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -30608,7 +30608,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -30640,7 +30640,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -31449,7 +31449,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -31689,7 +31689,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -32060,7 +32060,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -32606,7 +32606,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -33098,7 +33098,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -34420,7 +34420,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -34922,7 +34922,7 @@
             "elevation": 60
           },
           "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+          "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -35258,7 +35258,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+              "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -35586,7 +35586,7 @@
         "elevation": 60
       },
       "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+      "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
     },
     "icon": "FaRegImage",
     "group": "Form",
@@ -36949,7 +36949,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+              "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -37600,7 +37600,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "L5HQ1O998QK1QQYO160K0YM0Q1QO8O8L95Y1QY10"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAllAccountsWithBalance",
+              "url": "$baseMockUrl++/account/v1/getAllAccountsWithBalance",
               "requestBody": { "accountType": "ALL" },
               "responseStateKey": "hmb_getAllAccounts_data",
               "conditions": [
@@ -37636,7 +37636,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/card/v1/cardList",
+              "url": "$baseMockUrl++/card/v1/cardList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "cardNature": "ALL",
@@ -37668,7 +37668,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+              "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
               "requestDataType": "byJSON",
               "requestBody": {
                 "inquiry": true,
@@ -37700,7 +37700,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchBillBeneficiaries",
+              "url": "$baseMockUrl++/beneficiary/v1/fetchBillBeneficiaries",
               "responseStateKey": "getBillBene_Data",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": true, "temp": null }
@@ -38509,7 +38509,7 @@
                 "Authorization": "$hmb_loginKey.content.token",
                 "hmbToken": "$hmb_loginKey.content.otpToken"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+              "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
               "responseStateKey": "trustedDevices",
               "conditions": [
                 {
@@ -38749,7 +38749,7 @@
                 "locale": "en",
                 "Content-Length": "28"
               },
-              "url": "https://hliteuat.habibmetro.com/beneficiary/v1/getCategoryAndCompanies",
+              "url": "$baseMockUrl++/beneficiary/v1/getCategoryAndCompanies",
               "requestDataType": "byJSON",
               "requestBody": { "inquiry": null, "temp": null },
               "responseStateKey": "categoriesAndCompanies"
@@ -39120,7 +39120,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/++$cardType.cardType"
+                  "bindingKey": "$baseMockUrl++/images/++$cardType.cardType"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -39666,7 +39666,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankImd++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankImd++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -40158,7 +40158,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
+                  "bindingKey": "$baseMockUrl++/images/Category_++$billCategoryCode++/Company_++$companyCode++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -41480,7 +41480,7 @@
                     "elevation": 60
                   },
                   "contentType": 1,
-                  "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+                  "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
                 },
                 "icon": "FaRegImage",
                 "group": "Form",
@@ -41982,7 +41982,7 @@
             "elevation": 60
           },
           "contentType": 1,
-          "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+          "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
         },
         "icon": "FaRegImage",
         "group": "Form",
@@ -42310,7 +42310,7 @@
                 "elevation": 60
               },
               "contentType": 1,
-              "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+              "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
             },
             "icon": "FaRegImage",
             "group": "Form",
@@ -42630,7 +42630,7 @@
         "elevation": 60
       },
       "contentType": 1,
-      "bindingKey": "https://hliteuat.habibmetro.com/images/Bank_IMD_++$bankIMD++.png"
+      "bindingKey": "$baseMockUrl++/images/Bank_IMD_++$bankIMD++.png"
     },
     "icon": "FaRegImage",
     "group": "Form",

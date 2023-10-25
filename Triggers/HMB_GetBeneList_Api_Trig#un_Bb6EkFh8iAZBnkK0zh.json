@@ -24,7 +24,7 @@
             "Authorization": "$hmb_loginKey.content.token",
             "hmbToken": "$hmb_loginKey.content.otpToken"
           },
-          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/beneficiaryList",
+          "url": "$baseMockUrl++/beneficiary/v1/beneficiaryList",
           "requestDataType": "byJSON",
           "requestBody": {
             "inquiry": true,

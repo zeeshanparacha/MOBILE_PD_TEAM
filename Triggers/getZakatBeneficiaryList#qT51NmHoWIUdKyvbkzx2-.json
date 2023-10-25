@@ -12,7 +12,7 @@
           "serviceName": "POST",
           "requestDataType": "byJSON",
           "requestBody": { "transferType": "ZAKAAT" },
-          "url": "https://hliteuat.habibmetro.com/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
+          "url": "$baseMockUrl++/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
           "headers": {
             "Content-Type": "application/json",
             "Authorization": "$hmb_loginKey.content.token",

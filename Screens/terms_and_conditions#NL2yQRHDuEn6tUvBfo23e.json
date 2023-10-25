@@ -27,8 +27,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/4/2023",
-    "createdAt": "10/4/2023",
+    "updatedAt": "10/25/2023",
+    "createdAt": "10/25/2023",
     "events": [
       {
         "triggerId": "QaIcUMoZGBKvSW_JwIGRF",
@@ -51,7 +51,7 @@
           "name": "WEB VIEW",
           "layoutProperties": {
             "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
+            "layout_height": " ",
             "textSize": 12,
             "cornerRadius": [0, 0, 0, 0],
             "topToTopOf": "NL2yQRHDuEn6tUvBfo23e",
@@ -60,10 +60,11 @@
             "textColor": "#000000",
             "textAlignment": "left",
             "layout_marginLeft": 10,
-            "layout_marginRight": 10
+            "layout_marginRight": 10,
+            "bottomToTopOf": "c-ImTE1rHMMmiKZxOR4OF"
           },
-          "bindingKey": "termsAndConditions.content.htmlContent",
-          "contentType": "State based"
+          "contentType": "State based",
+          "bindingKey": "termsAndConditions.content.htmlContent"
         },
         "icon": "FaTenge",
         "group": "Form",
@@ -98,7 +99,7 @@
                 "app_version": "5.1.0",
                 "Content-Length": "35"
               },
-              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+              "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
               "requestDataType": "byJSON",
               "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
               "responseStateKey": "termsAndConditions"
@@ -116,7 +117,7 @@
         "attributes": {
           "name": "cancel button",
           "layoutProperties": {
-            "layout_width": "match_constraint",
+            "layout_width": " ",
             "layout_height": "50",
             "text": "Cancel",
             "textSize": 20,
@@ -128,7 +129,7 @@
             "clickable": true,
             "leftToLeftOf": "NL2yQRHDuEn6tUvBfo23e",
             "bottomToBottomOf": "NL2yQRHDuEn6tUvBfo23e",
-            "width_percent": 50
+            "rightToLeftOf": "c-ImTE1rHMMmiKZxOR4OF"
           }
         },
         "icon": "FaBimobject",
@@ -142,7 +143,8 @@
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
-        "path": "0-1"
+        "path": "0-1",
+        "edit": true
       },
       {
         "id": "c-ImTE1rHMMmiKZxOR4OF",
@@ -152,7 +154,7 @@
         "attributes": {
           "name": "Agree button",
           "layoutProperties": {
-            "layout_width": "match_constraint",
+            "layout_width": "match_parent",
             "layout_height": "50",
             "text": "Agree",
             "textSize": 20,
@@ -244,7 +246,7 @@
                 "app_version": "5.1.0",
                 "Content-Length": "35"
               },
-              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+              "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
               "requestDataType": "byJSON",
               "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
               "responseStateKey": "termsAndConditions"
@@ -267,7 +269,7 @@
               "name": "WEB VIEW",
               "layoutProperties": {
                 "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "layout_height": " ",
                 "textSize": 12,
                 "cornerRadius": [0, 0, 0, 0],
                 "topToTopOf": "NL2yQRHDuEn6tUvBfo23e",
@@ -276,10 +278,11 @@
                 "textColor": "#000000",
                 "textAlignment": "left",
                 "layout_marginLeft": 10,
-                "layout_marginRight": 10
+                "layout_marginRight": 10,
+                "bottomToTopOf": "c-ImTE1rHMMmiKZxOR4OF"
               },
-              "bindingKey": "termsAndConditions.content.htmlContent",
-              "contentType": "State based"
+              "contentType": "State based",
+              "bindingKey": "termsAndConditions.content.htmlContent"
             },
             "icon": "FaTenge",
             "group": "Form",
@@ -314,7 +317,7 @@
                     "app_version": "5.1.0",
                     "Content-Length": "35"
                   },
-                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getTermsAndConditions",
+                  "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
                   "requestDataType": "byJSON",
                   "requestBody": { "entityId": "TERMS_CONDITIONS_PSX" },
                   "responseStateKey": "termsAndConditions"
@@ -332,7 +335,7 @@
             "attributes": {
               "name": "cancel button",
               "layoutProperties": {
-                "layout_width": "match_constraint",
+                "layout_width": " ",
                 "layout_height": "50",
                 "text": "Cancel",
                 "textSize": 20,
@@ -344,7 +347,7 @@
                 "clickable": true,
                 "leftToLeftOf": "NL2yQRHDuEn6tUvBfo23e",
                 "bottomToBottomOf": "NL2yQRHDuEn6tUvBfo23e",
-                "width_percent": 50
+                "rightToLeftOf": "c-ImTE1rHMMmiKZxOR4OF"
               }
             },
             "icon": "FaBimobject",
@@ -358,7 +361,8 @@
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
-            "path": "0-1"
+            "path": "0-1",
+            "edit": true
           },
           {
             "id": "c-ImTE1rHMMmiKZxOR4OF",
@@ -368,7 +372,7 @@
             "attributes": {
               "name": "Agree button",
               "layoutProperties": {
-                "layout_width": "match_constraint",
+                "layout_width": "match_parent",
                 "layout_height": "50",
                 "text": "Agree",
                 "textSize": 20,
@@ -417,7 +421,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "NL2yQRHDuEn6tUvBfo23e",
-    "createdBy": "muzzamil",
+    "createdBy": "faiqtalat",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -428,7 +432,7 @@
       "name": "WEB VIEW",
       "layoutProperties": {
         "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
+        "layout_height": " ",
         "textSize": 12,
         "cornerRadius": [0, 0, 0, 0],
         "topToTopOf": "NL2yQRHDuEn6tUvBfo23e",
@@ -437,10 +441,11 @@
         "textColor": "#000000",
         "textAlignment": "left",
         "layout_marginLeft": 10,
-        "layout_marginRight": 10
+        "layout_marginRight": 10,
+        "bottomToTopOf": "c-ImTE1rHMMmiKZxOR4OF"
       },
-      "bindingKey": "termsAndConditions.content.htmlContent",
-      "contentType": "State based"
+      "contentType": "State based",
+      "bindingKey": "termsAndConditions.content.htmlContent"
     },
     "icon": "FaTenge",
     "group": "Form",
@@ -474,7 +479,7 @@
     "attributes": {
       "name": "cancel button",
       "layoutProperties": {
-        "layout_width": "match_constraint",
+        "layout_width": " ",
         "layout_height": "50",
         "text": "Cancel",
         "textSize": 20,
@@ -486,7 +491,7 @@
         "clickable": true,
         "leftToLeftOf": "NL2yQRHDuEn6tUvBfo23e",
         "bottomToBottomOf": "NL2yQRHDuEn6tUvBfo23e",
-        "width_percent": 50
+        "rightToLeftOf": "c-ImTE1rHMMmiKZxOR4OF"
       }
     },
     "icon": "FaBimobject",
@@ -501,6 +506,7 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
     "path": "0-1",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -513,7 +519,7 @@
     "attributes": {
       "name": "Agree button",
       "layoutProperties": {
-        "layout_width": "match_constraint",
+        "layout_width": "match_parent",
         "layout_height": "50",
         "text": "Agree",
         "textSize": 20,

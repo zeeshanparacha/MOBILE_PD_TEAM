@@ -782,7 +782,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+              "url": "$baseMockUrl++/prelogin/v1/getConfiguration",
               "requestDataType": "byJSON",
               "requestBody": {
                 "device": {
@@ -1026,7 +1026,7 @@
                 "entityId": "1",
                 "app_version": "5.1.0"
               },
-              "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+              "url": "$baseMockUrl++/account/v1/getAccountDetails",
               "requestDataType": "byJSON",
               "requestBody": {
                 "accNo": "$selectedAcc_QRGenerate.accountNumber",
@@ -1812,7 +1812,7 @@
                     "entityId": "1",
                     "app_version": "5.1.0"
                   },
-                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+                  "url": "$baseMockUrl++/prelogin/v1/getConfiguration",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "device": {
@@ -2056,7 +2056,7 @@
                     "entityId": "1",
                     "app_version": "5.1.0"
                   },
-                  "url": "https://hliteuat.habibmetro.com/account/v1/getAccountDetails",
+                  "url": "$baseMockUrl++/account/v1/getAccountDetails",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "accNo": "$selectedAcc_QRGenerate.accountNumber",

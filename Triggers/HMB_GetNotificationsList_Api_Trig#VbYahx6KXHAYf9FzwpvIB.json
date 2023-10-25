@@ -28,7 +28,7 @@
             "login_id": "$hmb_username",
             "user_id": "$loginValidate.content.customer.id"
           },
-          "url": "https://hliteuat.habibmetro.com/common/v1/getUserAlertsHMB",
+          "url": "$baseMockUrl++/common/v1/getUserAlertsHMB",
           "responseStateKey": "getnotify_data",
           "conditions": [
             {

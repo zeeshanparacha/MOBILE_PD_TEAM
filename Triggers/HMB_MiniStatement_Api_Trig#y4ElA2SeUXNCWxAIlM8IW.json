@@ -24,7 +24,7 @@
             "Authorization": "$hmb_loginKey.content.token",
             "hmbToken": "$hmb_loginKey.content.otpToken"
           },
-          "url": "https://hliteuat.habibmetro.com/account/v1/miniStatement",
+          "url": "$baseMockUrl++/account/v1/miniStatement",
           "requestDataType": "byJSON",
           "requestBody": { "accountNumber": "2512037", "nTransactions": 0 },
           "responseStateKey": "hmb_ministate_data",

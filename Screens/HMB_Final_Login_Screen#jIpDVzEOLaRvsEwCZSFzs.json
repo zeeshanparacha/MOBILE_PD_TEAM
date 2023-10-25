@@ -32,13 +32,12 @@
           "uri": "HMB_Bg.png"
         },
         "hideNavBar": true,
-        "background": "#007022",
+        "background": "#002E0C",
         "navbarHeight": 0
       },
       "componentId": [
         "RT1-FYgpREV8tStMl-b3H",
         "ltTwYTHjDZK7Bo2I27Zpf",
-        "9hl0ekOkAJAqPxKezb3kQ",
         "-1-qQ55mVlJUFD8W-MpTa",
         "yh39vUKOx1sDCTrHqNfBP",
         "f_O77KX5764GaIuSnzS_O",
@@ -53,15 +52,23 @@
         "z_Kcy1BOMBoBdUT1KeJaH",
         "D9fIUs_cvVIHtISeBHKaa",
         "CtAZioBgSq_6QGLYtxJ_O",
-        "4xyFGJvfblm2v3Dz3yPON"
+        "4xyFGJvfblm2v3Dz3yPON",
+        "wIU6NdTpZrt6fMlY1OAov"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/23/2023",
-    "createdAt": "10/23/2023",
-    "events": [],
+    "updatedAt": "10/25/2023",
+    "createdAt": "10/25/2023",
+    "events": [
+      {
+        "triggerId": "QtdC7KEADfilW6qtfdV1E",
+        "triggerName": "setBaseMockUrl",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -128,19 +135,6 @@
             },
             "type": "ONCLICK",
             "name": "On click"
-          },
-          {
-            "triggerId": "QtdC7KEADfilW6qtfdV1E",
-            "triggerName": "setBaseMockUrl",
-            "serviceType": "DATASTORAGE",
-            "attributes": {
-              "serviceName": "Update value against binding key",
-              "bindingKey": "baseMockUrl",
-              "value": "http://172.16.11.52:9000/",
-              "contentType": "string"
-            },
-            "type": "ONLOAD",
-            "name": "On Load"
           }
         ]
       },
@@ -152,16 +146,16 @@
           "name": "Login_Welcome_Text",
           "layoutProperties": {
             "textSize": 24,
-            "layout_width": "wrap_content",
+            "layout_width": "200",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
-            "text": "Welcome,",
+            "text": "Welcome, Sign In To Continue",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
+            "numberOfLines": 2,
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
             "topToBottomOf": "RT1-FYgpREV8tStMl-b3H",
-            "layout_marginTop": 30,
-            "layout_marginLeft": 20,
+            "layout_marginTop": 35,
+            "layout_marginLeft": 22,
             "textStyle": "regular",
             "textAlignment": "left",
             "fontName": "CircularStd"
@@ -179,55 +173,6 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-1",
-        "edit": true
-      },
-      {
-        "id": "9hl0ekOkAJAqPxKezb3kQ",
-        "status": "ACTIVE",
-        "name": "Login_SignIn_Text",
-        "attributes": {
-          "name": "Login_SignIn_Text",
-          "layoutProperties": {
-            "textSize": 24,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Sign In To Continue",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
-            "layout_marginTop": 5,
-            "textStyle": "regular",
-            "textAlignment": "left",
-            "layout_marginLeft": 20
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "TEXTVIEW",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [
-          {
-            "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
-            "triggerName": "Prelogin_Url_Nav",
-            "serviceType": "NAVIGATION",
-            "attributes": {
-              "serviceName": "Open URL",
-              "url": "https://www.habibmetro.com/e-services/mobile-banking/",
-              "urlType": "url"
-            },
-            "type": "ONCLICK",
-            "name": "On click"
-          }
-        ],
-        "path": "0-2",
         "edit": true
       },
       {
@@ -250,11 +195,11 @@
             "keyboardType": "alphanumeric",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
+            "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
             "placeHolderTextColor": "#ffffff",
             "layout_marginLeft": 60,
             "layout_marginRight": 20,
-            "layout_marginTop": 60,
+            "layout_marginTop": 55,
             "style": "SENTENCECASE",
             "fontName": "CircularStd"
           },
@@ -271,7 +216,7 @@
         "projectType": "mobile",
         "component": { "content": "Input text", "type": "INPUTTEXT" },
         "events": [],
-        "path": "0-3",
+        "path": "0-2",
         "edit": true
       },
       {
@@ -332,7 +277,7 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "3",
+            "layout_height": "1",
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -354,7 +299,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-5"
+        "path": "0-4",
+        "edit": true
       },
       {
         "id": "awGH8wT9u3ggXqx-bK1G8",
@@ -363,7 +309,7 @@
         "attributes": {
           "name": "Login_ForgotUser_Text",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 11,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
@@ -372,7 +318,7 @@
             "numberOfLines": 1,
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "topToBottomOf": "f_O77KX5764GaIuSnzS_O",
-            "layout_marginTop": 8,
+            "layout_marginTop": 10,
             "layout_marginRight": 20,
             "textStyle": "regular",
             "textAlignment": "right"
@@ -401,7 +347,7 @@
             "name": "On click"
           }
         ],
-        "path": "0-6",
+        "path": "0-5",
         "edit": true
       },
       {
@@ -424,7 +370,7 @@
             "layout_height": "wrap_content",
             "layout_marginLeft": 55,
             "layout_marginRight": 20,
-            "layout_marginTop": 40
+            "layout_marginTop": 30
           },
           "bindingKey": "hmb_password"
         },
@@ -438,7 +384,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Password", "type": "PASSWORDVIEW" },
-        "path": "0-7",
+        "path": "0-6",
         "edit": true,
         "events": []
       },
@@ -498,7 +444,7 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "3",
+            "layout_height": "1",
             "cornerRadius": [0, 0, 0, 0],
             "background": "#FFFFFF",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -520,7 +466,7 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-9",
+        "path": "0-8",
         "edit": true
       },
       {
@@ -530,7 +476,7 @@
         "attributes": {
           "name": "Login_ForgotPass_Text",
           "layoutProperties": {
-            "textSize": 16,
+            "textSize": 11,
             "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
@@ -540,7 +486,7 @@
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "topToBottomOf": "biBrgFg9UnXxYFnuIqHd5",
             "layout_marginRight": 20,
-            "layout_marginTop": 8,
+            "layout_marginTop": 10,
             "textStyle": "regular",
             "textAlignment": "right"
           }
@@ -568,7 +514,7 @@
             "name": "On click"
           }
         ],
-        "path": "0-10",
+        "path": "0-9",
         "edit": true
       },
       {
@@ -634,7 +580,7 @@
             "layout_marginTop": 40,
             "text": "Login",
             "textSize": 20,
-            "textColor": "#005C29",
+            "textColor": "#000000",
             "textStyle": "bold",
             "textAlignment": "center",
             "cornerRadius": [10, 10, 10, 10],
@@ -674,7 +620,7 @@
                 "app_version": "5.1.0",
                 "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
               },
-              "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
+              "url": "$baseMockUrl++/security/v5/validateLoginPassword",
               "requestDataType": "byJSON",
               "requestBody": {
                 "device": {
@@ -718,7 +664,7 @@
             "name": "On click"
           }
         ],
-        "path": "0-12",
+        "path": "0-11",
         "edit": true
       },
       {
@@ -730,15 +676,15 @@
           "layoutProperties": {
             "name": "View",
             "layout_width": "match_parent",
-            "layout_height": "4",
+            "layout_height": "56",
             "cornerRadius": [0, 0, 0, 0],
-            "background": "#FEC20C",
+            "background": "#002E0C",
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
             "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
             "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "layout_marginBottom": 59,
+            "layout_marginBottom": 0,
             "layout_marginLeft": 0,
-            "layout_marginTop": 1
+            "layout_marginTop": 0
           }
         },
         "icon": "FaTabletAlt",
@@ -764,7 +710,7 @@
             "name": "On click"
           }
         ],
-        "path": "0-13",
+        "path": "0-12",
         "edit": true
       },
       {
@@ -835,7 +781,7 @@
           "name": "Login_Rda_Logo",
           "layoutProperties": {
             "layout_width": "120",
-            "layout_height": "120",
+            "layout_height": "wrap_content",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -855,11 +801,11 @@
               "uri": "RDA_Logo_Text.png"
             },
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-            "layout_marginLeft": 10,
+            "bottomToBottomOf": null,
+            "layout_marginLeft": 22,
             "id": "u1Y5I7HgknYSNKvKYrycu",
             "layout_marginTop": 0,
-            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+            "centerY": "z2QamlRU8A8QpaRZ4rtgq"
           },
           "contentType": 2
         },
@@ -873,7 +819,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-15",
+        "path": "0-14",
         "edit": true,
         "events": [
           {
@@ -906,7 +852,7 @@
                 "deviceKey": "$device.deviceKey",
                 "deviceName": "$device.deviceName"
               },
-              "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+              "url": "$baseMockUrl++/prelogin/v1/getConfiguration",
               "requestDataType": "byJSON",
               "requestBody": {
                 "device": {
@@ -949,7 +895,7 @@
           "name": "Login_DigitalAccount_Logo",
           "layoutProperties": {
             "layout_width": "120",
-            "layout_height": "120",
+            "layout_height": "wrap_content",
             "cornerRadius": [0, 0, 0, 0],
             "src": {
               "createdBy": "shaikhahmedraza",
@@ -968,11 +914,10 @@
               "__v": 0,
               "uri": "Digital_Account_Logo_Text.png"
             },
-            "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-            "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-            "layout_marginRight": 10,
+            "bottomToBottomOf": null,
+            "layout_marginRight": 22,
             "id": "TAQ8TR4PTq2UvI1BLjtyS",
-            "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+            "centerY": "z2QamlRU8A8QpaRZ4rtgq"
           },
           "contentType": 2
         },
@@ -986,7 +931,7 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-16",
+        "path": "0-15",
         "edit": true,
         "events": [
           {
@@ -1065,6 +1010,40 @@
             "name": "On click"
           }
         ]
+      },
+      {
+        "id": "wIU6NdTpZrt6fMlY1OAov",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "yellow bottom line",
+        "attributes": {
+          "name": "yellow bottom line",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "1",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#F69D26",
+            "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
+            "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
+            "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+            "layout_marginBottom": 56
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [],
+        "path": "0-17",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -1103,7 +1082,7 @@
               "uri": "HMB_Bg.png"
             },
             "hideNavBar": true,
-            "background": "#007022",
+            "background": "#002E0C",
             "navbarHeight": 0
           },
           "componentId": []
@@ -1113,7 +1092,21 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "QtdC7KEADfilW6qtfdV1E",
+            "triggerName": "setBaseMockUrl",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "baseMockUrl",
+              "value": "http://172.16.11.52:9000/",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -1180,19 +1173,6 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
-              },
-              {
-                "triggerId": "QtdC7KEADfilW6qtfdV1E",
-                "triggerName": "setBaseMockUrl",
-                "serviceType": "DATASTORAGE",
-                "attributes": {
-                  "serviceName": "Update value against binding key",
-                  "bindingKey": "baseMockUrl",
-                  "value": "http://172.16.11.52:9000/",
-                  "contentType": "string"
-                },
-                "type": "ONLOAD",
-                "name": "On Load"
               }
             ]
           },
@@ -1204,16 +1184,16 @@
               "name": "Login_Welcome_Text",
               "layoutProperties": {
                 "textSize": 24,
-                "layout_width": "wrap_content",
+                "layout_width": "200",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
-                "text": "Welcome,",
+                "text": "Welcome, Sign In To Continue",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
+                "numberOfLines": 2,
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "topToBottomOf": "RT1-FYgpREV8tStMl-b3H",
-                "layout_marginTop": 30,
-                "layout_marginLeft": 20,
+                "layout_marginTop": 35,
+                "layout_marginLeft": 22,
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "fontName": "CircularStd"
@@ -1231,55 +1211,6 @@
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
             "path": "0-1",
-            "edit": true
-          },
-          {
-            "id": "9hl0ekOkAJAqPxKezb3kQ",
-            "status": "ACTIVE",
-            "name": "Login_SignIn_Text",
-            "attributes": {
-              "name": "Login_SignIn_Text",
-              "layoutProperties": {
-                "textSize": 24,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Sign In To Continue",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
-                "layout_marginTop": 5,
-                "textStyle": "regular",
-                "textAlignment": "left",
-                "layout_marginLeft": 20
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "TEXTVIEW",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [
-              {
-                "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
-                "triggerName": "Prelogin_Url_Nav",
-                "serviceType": "NAVIGATION",
-                "attributes": {
-                  "serviceName": "Open URL",
-                  "url": "https://www.habibmetro.com/e-services/mobile-banking/",
-                  "urlType": "url"
-                },
-                "type": "ONCLICK",
-                "name": "On click"
-              }
-            ],
-            "path": "0-2",
             "edit": true
           },
           {
@@ -1302,11 +1233,11 @@
                 "keyboardType": "alphanumeric",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
+                "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
                 "placeHolderTextColor": "#ffffff",
                 "layout_marginLeft": 60,
                 "layout_marginRight": 20,
-                "layout_marginTop": 60,
+                "layout_marginTop": 55,
                 "style": "SENTENCECASE",
                 "fontName": "CircularStd"
               },
@@ -1323,7 +1254,7 @@
             "projectType": "mobile",
             "component": { "content": "Input text", "type": "INPUTTEXT" },
             "events": [],
-            "path": "0-3",
+            "path": "0-2",
             "edit": true
           },
           {
@@ -1384,7 +1315,7 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "3",
+                "layout_height": "1",
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -1406,7 +1337,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-5"
+            "path": "0-4",
+            "edit": true
           },
           {
             "id": "awGH8wT9u3ggXqx-bK1G8",
@@ -1415,7 +1347,7 @@
             "attributes": {
               "name": "Login_ForgotUser_Text",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 11,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
@@ -1424,7 +1356,7 @@
                 "numberOfLines": 1,
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "topToBottomOf": "f_O77KX5764GaIuSnzS_O",
-                "layout_marginTop": 8,
+                "layout_marginTop": 10,
                 "layout_marginRight": 20,
                 "textStyle": "regular",
                 "textAlignment": "right"
@@ -1453,7 +1385,7 @@
                 "name": "On click"
               }
             ],
-            "path": "0-6",
+            "path": "0-5",
             "edit": true
           },
           {
@@ -1476,7 +1408,7 @@
                 "layout_height": "wrap_content",
                 "layout_marginLeft": 55,
                 "layout_marginRight": 20,
-                "layout_marginTop": 40
+                "layout_marginTop": 30
               },
               "bindingKey": "hmb_password"
             },
@@ -1490,7 +1422,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Password", "type": "PASSWORDVIEW" },
-            "path": "0-7",
+            "path": "0-6",
             "edit": true,
             "events": []
           },
@@ -1550,7 +1482,7 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "3",
+                "layout_height": "1",
                 "cornerRadius": [0, 0, 0, 0],
                 "background": "#FFFFFF",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -1572,7 +1504,7 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-9",
+            "path": "0-8",
             "edit": true
           },
           {
@@ -1582,7 +1514,7 @@
             "attributes": {
               "name": "Login_ForgotPass_Text",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 11,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
@@ -1592,7 +1524,7 @@
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "topToBottomOf": "biBrgFg9UnXxYFnuIqHd5",
                 "layout_marginRight": 20,
-                "layout_marginTop": 8,
+                "layout_marginTop": 10,
                 "textStyle": "regular",
                 "textAlignment": "right"
               }
@@ -1620,7 +1552,7 @@
                 "name": "On click"
               }
             ],
-            "path": "0-10",
+            "path": "0-9",
             "edit": true
           },
           {
@@ -1686,7 +1618,7 @@
                 "layout_marginTop": 40,
                 "text": "Login",
                 "textSize": 20,
-                "textColor": "#005C29",
+                "textColor": "#000000",
                 "textStyle": "bold",
                 "textAlignment": "center",
                 "cornerRadius": [10, 10, 10, 10],
@@ -1726,7 +1658,7 @@
                     "app_version": "5.1.0",
                     "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895"
                   },
-                  "url": "https://hliteuat.habibmetro.com/security/v5/validateLoginPassword",
+                  "url": "$baseMockUrl++/security/v5/validateLoginPassword",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "device": {
@@ -1770,7 +1702,7 @@
                 "name": "On click"
               }
             ],
-            "path": "0-12",
+            "path": "0-11",
             "edit": true
           },
           {
@@ -1782,15 +1714,15 @@
               "layoutProperties": {
                 "name": "View",
                 "layout_width": "match_parent",
-                "layout_height": "4",
+                "layout_height": "56",
                 "cornerRadius": [0, 0, 0, 0],
-                "background": "#FEC20C",
+                "background": "#002E0C",
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
                 "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "layout_marginBottom": 59,
+                "layout_marginBottom": 0,
                 "layout_marginLeft": 0,
-                "layout_marginTop": 1
+                "layout_marginTop": 0
               }
             },
             "icon": "FaTabletAlt",
@@ -1816,7 +1748,7 @@
                 "name": "On click"
               }
             ],
-            "path": "0-13",
+            "path": "0-12",
             "edit": true
           },
           {
@@ -1887,7 +1819,7 @@
               "name": "Login_Rda_Logo",
               "layoutProperties": {
                 "layout_width": "120",
-                "layout_height": "120",
+                "layout_height": "wrap_content",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
@@ -1907,11 +1839,11 @@
                   "uri": "RDA_Logo_Text.png"
                 },
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-                "layout_marginLeft": 10,
+                "bottomToBottomOf": null,
+                "layout_marginLeft": 22,
                 "id": "u1Y5I7HgknYSNKvKYrycu",
                 "layout_marginTop": 0,
-                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+                "centerY": "z2QamlRU8A8QpaRZ4rtgq"
               },
               "contentType": 2
             },
@@ -1925,7 +1857,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-15",
+            "path": "0-14",
             "edit": true,
             "events": [
               {
@@ -1958,7 +1890,7 @@
                     "deviceKey": "$device.deviceKey",
                     "deviceName": "$device.deviceName"
                   },
-                  "url": "https://hliteuat.habibmetro.com/prelogin/v1/getConfiguration",
+                  "url": "$baseMockUrl++/prelogin/v1/getConfiguration",
                   "requestDataType": "byJSON",
                   "requestBody": {
                     "device": {
@@ -2001,7 +1933,7 @@
               "name": "Login_DigitalAccount_Logo",
               "layoutProperties": {
                 "layout_width": "120",
-                "layout_height": "120",
+                "layout_height": "wrap_content",
                 "cornerRadius": [0, 0, 0, 0],
                 "src": {
                   "createdBy": "shaikhahmedraza",
@@ -2020,11 +1952,10 @@
                   "__v": 0,
                   "uri": "Digital_Account_Logo_Text.png"
                 },
-                "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-                "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-                "layout_marginRight": 10,
+                "bottomToBottomOf": null,
+                "layout_marginRight": 22,
                 "id": "TAQ8TR4PTq2UvI1BLjtyS",
-                "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+                "centerY": "z2QamlRU8A8QpaRZ4rtgq"
               },
               "contentType": 2
             },
@@ -2038,7 +1969,7 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-16",
+            "path": "0-15",
             "edit": true,
             "events": [
               {
@@ -2117,6 +2048,40 @@
                 "name": "On click"
               }
             ]
+          },
+          {
+            "id": "wIU6NdTpZrt6fMlY1OAov",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "yellow bottom line",
+            "attributes": {
+              "name": "yellow bottom line",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "1",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#F69D26",
+                "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
+                "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
+                "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+                "layout_marginBottom": 56
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-17",
+            "edit": true
           }
         ],
         "subType": "screen",
@@ -2182,12 +2147,6 @@
         "triggerName": "Prelogin_Whatsapp_Trig",
         "name": "On click",
         "type": "ONCLICK"
-      },
-      {
-        "triggerId": "QtdC7KEADfilW6qtfdV1E",
-        "triggerName": "setBaseMockUrl",
-        "name": "On Load",
-        "type": "ONLOAD"
       }
     ],
     "subType": "component",
@@ -2203,16 +2162,16 @@
       "name": "Login_Welcome_Text",
       "layoutProperties": {
         "textSize": 24,
-        "layout_width": "wrap_content",
+        "layout_width": "200",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
-        "text": "Welcome,",
+        "text": "Welcome, Sign In To Continue",
         "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
+        "numberOfLines": 2,
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
         "topToBottomOf": "RT1-FYgpREV8tStMl-b3H",
-        "layout_marginTop": 30,
-        "layout_marginLeft": 20,
+        "layout_marginTop": 35,
+        "layout_marginLeft": 22,
         "textStyle": "regular",
         "textAlignment": "left",
         "fontName": "CircularStd"
@@ -2230,53 +2189,6 @@
     "component": { "content": "Text view", "type": "TEXTVIEW" },
     "events": [],
     "path": "0-1",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "9hl0ekOkAJAqPxKezb3kQ",
-    "status": "ACTIVE",
-    "name": "Login_SignIn_Text",
-    "attributes": {
-      "name": "Login_SignIn_Text",
-      "layoutProperties": {
-        "textSize": 24,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#ffffff",
-        "text": "Sign In To Continue",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
-        "layout_marginTop": 5,
-        "textStyle": "regular",
-        "textAlignment": "left",
-        "layout_marginLeft": 20
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [
-      {
-        "triggerId": "SZ_9o3jAgW03lkn6Xl9ZU",
-        "triggerName": "Prelogin_Url_Nav",
-        "name": "On click",
-        "type": "ONCLICK"
-      }
-    ],
-    "path": "0-2",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2303,11 +2215,11 @@
         "keyboardType": "alphanumeric",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "topToBottomOf": "9hl0ekOkAJAqPxKezb3kQ",
+        "topToBottomOf": "ltTwYTHjDZK7Bo2I27Zpf",
         "placeHolderTextColor": "#ffffff",
         "layout_marginLeft": 60,
         "layout_marginRight": 20,
-        "layout_marginTop": 60,
+        "layout_marginTop": 55,
         "style": "SENTENCECASE",
         "fontName": "CircularStd"
       },
@@ -2324,7 +2236,7 @@
     "projectType": "mobile",
     "component": { "content": "Input text", "type": "INPUTTEXT" },
     "events": [],
-    "path": "0-3",
+    "path": "0-2",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2393,7 +2305,7 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "3",
+        "layout_height": "1",
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -2415,7 +2327,8 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-5",
+    "path": "0-4",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -2428,7 +2341,7 @@
     "attributes": {
       "name": "Login_ForgotUser_Text",
       "layoutProperties": {
-        "textSize": 16,
+        "textSize": 11,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
@@ -2437,7 +2350,7 @@
         "numberOfLines": 1,
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "topToBottomOf": "f_O77KX5764GaIuSnzS_O",
-        "layout_marginTop": 8,
+        "layout_marginTop": 10,
         "layout_marginRight": 20,
         "textStyle": "regular",
         "textAlignment": "right"
@@ -2461,7 +2374,7 @@
         "type": "ONCLICK"
       }
     ],
-    "path": "0-6",
+    "path": "0-5",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2488,7 +2401,7 @@
         "layout_height": "wrap_content",
         "layout_marginLeft": 55,
         "layout_marginRight": 20,
-        "layout_marginTop": 40
+        "layout_marginTop": 30
       },
       "bindingKey": "hmb_password"
     },
@@ -2502,7 +2415,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Password", "type": "PASSWORDVIEW" },
-    "path": "0-7",
+    "path": "0-6",
     "edit": true,
     "events": [],
     "subType": "component",
@@ -2570,7 +2483,7 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "3",
+        "layout_height": "1",
         "cornerRadius": [0, 0, 0, 0],
         "background": "#FFFFFF",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -2592,7 +2505,7 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-9",
+    "path": "0-8",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2606,7 +2519,7 @@
     "attributes": {
       "name": "Login_ForgotPass_Text",
       "layoutProperties": {
-        "textSize": 16,
+        "textSize": 11,
         "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
@@ -2616,7 +2529,7 @@
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "topToBottomOf": "biBrgFg9UnXxYFnuIqHd5",
         "layout_marginRight": 20,
-        "layout_marginTop": 8,
+        "layout_marginTop": 10,
         "textStyle": "regular",
         "textAlignment": "right"
       }
@@ -2639,7 +2552,7 @@
         "type": "ONCLICK"
       }
     ],
-    "path": "0-10",
+    "path": "0-9",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2708,7 +2621,7 @@
         "layout_marginTop": 40,
         "text": "Login",
         "textSize": 20,
-        "textColor": "#005C29",
+        "textColor": "#000000",
         "textStyle": "bold",
         "textAlignment": "center",
         "cornerRadius": [10, 10, 10, 10],
@@ -2736,7 +2649,7 @@
         "type": "ONCLICK"
       }
     ],
-    "path": "0-12",
+    "path": "0-11",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2752,15 +2665,15 @@
       "layoutProperties": {
         "name": "View",
         "layout_width": "match_parent",
-        "layout_height": "4",
+        "layout_height": "56",
         "cornerRadius": [0, 0, 0, 0],
-        "background": "#FEC20C",
+        "background": "#002E0C",
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
         "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
         "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "layout_marginBottom": 59,
+        "layout_marginBottom": 0,
         "layout_marginLeft": 0,
-        "layout_marginTop": 1
+        "layout_marginTop": 0
       }
     },
     "icon": "FaTabletAlt",
@@ -2781,7 +2694,7 @@
         "type": "ONCLICK"
       }
     ],
-    "path": "0-13",
+    "path": "0-12",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2855,7 +2768,7 @@
       "name": "Login_Rda_Logo",
       "layoutProperties": {
         "layout_width": "120",
-        "layout_height": "120",
+        "layout_height": "wrap_content",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
@@ -2875,11 +2788,11 @@
           "uri": "RDA_Logo_Text.png"
         },
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-        "layout_marginLeft": 10,
+        "bottomToBottomOf": null,
+        "layout_marginLeft": 22,
         "id": "u1Y5I7HgknYSNKvKYrycu",
         "layout_marginTop": 0,
-        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+        "centerY": "z2QamlRU8A8QpaRZ4rtgq"
       },
       "contentType": 2
     },
@@ -2893,7 +2806,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-15",
+    "path": "0-14",
     "edit": true,
     "events": [
       {
@@ -2922,7 +2835,7 @@
       "name": "Login_DigitalAccount_Logo",
       "layoutProperties": {
         "layout_width": "120",
-        "layout_height": "120",
+        "layout_height": "wrap_content",
         "cornerRadius": [0, 0, 0, 0],
         "src": {
           "createdBy": "shaikhahmedraza",
@@ -2941,11 +2854,10 @@
           "__v": 0,
           "uri": "Digital_Account_Logo_Text.png"
         },
-        "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
-        "bottomToBottomOf": "z_Kcy1BOMBoBdUT1KeJaH",
-        "layout_marginRight": 10,
+        "bottomToBottomOf": null,
+        "layout_marginRight": 22,
         "id": "TAQ8TR4PTq2UvI1BLjtyS",
-        "topToTopOf": "z_Kcy1BOMBoBdUT1KeJaH"
+        "centerY": "z2QamlRU8A8QpaRZ4rtgq"
       },
       "contentType": 2
     },
@@ -2959,7 +2871,7 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-16",
+    "path": "0-15",
     "edit": true,
     "events": [
       {
@@ -3028,6 +2940,43 @@
         "type": "ONCLICK"
       }
     ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "wIU6NdTpZrt6fMlY1OAov",
+    "status": "ACTIVE",
+    "name": "yellow bottom line",
+    "attributes": {
+      "name": "yellow bottom line",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "1",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#F69D26",
+        "bottomToBottomOf": "jIpDVzEOLaRvsEwCZSFzs",
+        "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
+        "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs",
+        "layout_marginBottom": 56
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [],
+    "path": "0-17",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

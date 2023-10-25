@@ -23,7 +23,7 @@
             "Authorization": "$hmb_loginKey.content.token",
             "hmbToken": "$hmb_loginKey.content.otpToken"
           },
-          "url": "https://hliteuat.habibmetro.com/security/v1/getAllTrustedDevices",
+          "url": "$baseMockUrl++/security/v1/getAllTrustedDevices",
           "responseStateKey": "trustedDevices",
           "conditions": [
             {

@@ -23,7 +23,7 @@
             "Authorization": "$hmb_loginKey.content.token",
             "hmbToken": "$hmb_loginKey.content.otpToken"
           },
-          "url": "https://hliteuat.habibmetro.com/account/v1/generateP2PQR",
+          "url": "$baseMockUrl++/account/v1/generateP2PQR",
           "requestDataType": "byJSON",
           "requestBody": {
             "amount": "$QRAmount",
