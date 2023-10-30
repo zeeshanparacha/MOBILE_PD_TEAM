@@ -52,15 +52,9 @@
             "userIdenValue": "$register_cnic",
             "username": ""
           },
-          "url": "$baseMockUrl++/prelogin/v1/validateRegistrationGenerateOTP",
+          "url": "http://172.16.11.52:9000/prelogin/v1/validateRegistrationGenerateOTP",
           "responseStateKey": "register_response",
           "conditions": [
-            {
-              "logic": { "==": [{ "var": "register_response.code" }, 1] },
-              "httpStatus": 200,
-              "triggerName": "BeneListFT_OwnAccountVlist_DS_Trig",
-              "triggerId": "jRudn_iFXe3mdesR9n4AN"
-            },
             {
               "logic": { "==": [{ "var": "register_response.code" }, 0] },
               "httpStatus": 200,
@@ -72,6 +66,12 @@
               "httpStatus": 400,
               "triggerName": "HMB_Register_Failure_Error_Trig",
               "triggerId": "XRQk-PqAiLPc2ru4Hemyu"
+            },
+            {
+              "logic": { "==": [{ "var": "register_response.code" }, 1] },
+              "httpStatus": 200,
+              "triggerName": "navigate to register otp screen",
+              "triggerId": "oPBoPIXYTpPcjZAMOoj1-"
             }
           ]
         },
@@ -80,11 +80,11 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.uurdheslukacpdcrhJd3B7EtAUZCcvgt",
+  "csrf": "0.mfceknnjdcGxr2ffNYFgWW0nQSRqJsM",
   "_id": "GsX7vp5ud5pKyzv1dbWOx",
-  "updatedAt": "8/18/2023",
-  "createdAt": "8/18/2023",
-  "createdBy": "shaikhahmedraza",
-  "updatedBy": "shaikhahmedraza",
+  "updatedAt": "10/25/2023",
+  "createdAt": "10/25/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
   "old_name": "HMB_ValidatreRegistration_Api_Trig"
 }

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "0Mr5aVyBHfk43FzBVHTaT",
+    "name": "Security guidelines screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Constraint Layout",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "statusBarColor": "#093959",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0]
+      },
+      "componentId": ["HAwohtOS4iV2UxR7u8I_d"]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "10/26/2023",
+    "createdAt": "10/26/2023",
+    "events": [],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "HAwohtOS4iV2UxR7u8I_d",
+        "status": "ACTIVE",
+        "_id": "61ded106077814a0f374da04",
+        "name": "security guidelines WEB VIEW",
+        "attributes": {
+          "name": "security guidelines WEB VIEW",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "textSize": 18,
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "0Mr5aVyBHfk43FzBVHTaT",
+            "rightToRightOf": "0Mr5aVyBHfk43FzBVHTaT",
+            "topToTopOf": "0Mr5aVyBHfk43FzBVHTaT",
+            "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
+            "textStyle": "regular",
+            "textColor": "#000000",
+            "textAlignment": "left"
+          },
+          "bindingKey": "SecurityGuidelines.content.htmlContent",
+          "contentType": "State based",
+          "conditions": []
+        },
+        "icon": "FaTenge",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Web view", "type": "WEBVIEW" },
+        "events": [
+          {
+            "triggerId": "vG1WfQQY_hx6QCwkn9W7E",
+            "triggerName": "getSecurityGuidelines",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "deviceKey": "$device.deviceKey",
+                "deviceName": "$device.deviceName"
+              },
+              "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
+              "requestDataType": "byJSON",
+              "requestBody": { "entityId": "SECURITY_TIPS" },
+              "responseStateKey": "SecurityGuidelines"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-0",
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "layout": [
+      {
+        "id": "0Mr5aVyBHfk43FzBVHTaT",
+        "name": "Security guidelines screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Constraint Layout",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0]
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "HAwohtOS4iV2UxR7u8I_d",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "security guidelines WEB VIEW",
+            "attributes": {
+              "name": "security guidelines WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 18,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "rightToRightOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "topToTopOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "textStyle": "regular",
+                "textColor": "#000000",
+                "textAlignment": "left"
+              },
+              "bindingKey": "SecurityGuidelines.content.htmlContent",
+              "contentType": "State based",
+              "conditions": []
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "vG1WfQQY_hx6QCwkn9W7E",
+                "triggerName": "getSecurityGuidelines",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "SECURITY_TIPS" },
+                  "responseStateKey": "SecurityGuidelines"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-0",
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "0Mr5aVyBHfk43FzBVHTaT",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "HAwohtOS4iV2UxR7u8I_d",
+    "status": "ACTIVE",
+    "name": "security guidelines WEB VIEW",
+    "attributes": {
+      "name": "security guidelines WEB VIEW",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "textSize": 18,
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "0Mr5aVyBHfk43FzBVHTaT",
+        "rightToRightOf": "0Mr5aVyBHfk43FzBVHTaT",
+        "topToTopOf": "0Mr5aVyBHfk43FzBVHTaT",
+        "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
+        "textStyle": "regular",
+        "textColor": "#000000",
+        "textAlignment": "left"
+      },
+      "bindingKey": "SecurityGuidelines.content.htmlContent",
+      "contentType": "State based",
+      "conditions": []
+    },
+    "icon": "FaTenge",
+    "group": "Form",
+    "type": "WEBVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Web view", "type": "WEBVIEW" },
+    "events": [
+      {
+        "triggerId": "vG1WfQQY_hx6QCwkn9W7E",
+        "triggerName": "getSecurityGuidelines",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-0",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

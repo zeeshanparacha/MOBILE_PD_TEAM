@@ -1,0 +1,80 @@
+{
+  "id": "q5UmV0ZK6QA69S2X1Xfdd",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "validateRegistrationOTP",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "deviceKey": "$device.deviceKey",
+            "deviceName": "$device.deviceName"
+          },
+          "url": "http://172.16.11.52:9000/prelogin/v1/validateRegistrationOTP",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountId": "4287404",
+            "accountNumber": null,
+            "choosePassword": null,
+            "confirmPassword": null,
+            "device": {
+              "countryCode": "PKR",
+              "deviceKey": "$device.deviceKey",
+              "fcmToken": null,
+              "imei": "$device.deviceIMEI",
+              "ip": "$device.deviceIP",
+              "isNotificationEnabled": true,
+              "name": "$device.deviceName",
+              "os": "$device.deviceOS",
+              "osType": "29"
+            },
+            "mobileNumber": null,
+            "newPassword": null,
+            "userIdenType": null,
+            "userIdenValue": null,
+            "userName": null,
+            "validation": {
+              "emailPin": "$registerEmailOtp",
+              "smsPin": "$registerSmsOtp",
+              "splitOtp": true,
+              "validationType": "OTP"
+            }
+          },
+          "responseStateKey": "validateRegistrationOTPRes",
+          "conditions": [
+            {
+              "triggerName": "navigate to complete registration screen",
+              "triggerId": "7ehklWOOe5bJiF7GDMnt-",
+              "httpStatus": 200,
+              "logic": {
+                "==": [{ "var": "validateRegistrationOTPRes.code" }, 1]
+              }
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.3pm91wqi5jxEcLQN1GngtxhiKJ0EOZnk",
+  "_id": "BxA-_ZlVKffET5he2jCDd",
+  "updatedAt": "10/25/2023",
+  "createdAt": "10/25/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "validateRegistrationOTP"
+}

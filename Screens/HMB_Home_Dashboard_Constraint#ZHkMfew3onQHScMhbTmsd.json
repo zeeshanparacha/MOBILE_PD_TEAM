@@ -14,7 +14,9 @@
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navbarHeight": 0,
+        "hideNavBar": true
       },
       "componentId": [
         "2wdtriEth3JsSlDFaYkri",
@@ -85,9 +87,16 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/19/2023",
-    "createdAt": "10/19/2023",
-    "events": [],
+    "updatedAt": "10/30/2023",
+    "createdAt": "10/30/2023",
+    "events": [
+      {
+        "triggerId": "eEHQDnTXE5s-cMlMUNpPS",
+        "triggerName": "getProfile",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -4799,6 +4808,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "ZHkMfew3onQHScMhbTmsd",
@@ -4815,7 +4825,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": 0,
+            "hideNavBar": true
           },
           "componentId": []
         },
@@ -4824,7 +4836,35 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "eEHQDnTXE5s-cMlMUNpPS",
+            "triggerName": "getProfile",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "deviceKey": "$device.deviceKey",
+                "deviceName": "$device.deviceName"
+              },
+              "url": "http://172.16.11.52:9000/user/v1/profile",
+              "requestDataType": "byJSON",
+              "requestBody": { "inquiry": null, "temp": null },
+              "responseStateKey": "profileRes"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -9580,7 +9620,8 @@
             "events": []
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",

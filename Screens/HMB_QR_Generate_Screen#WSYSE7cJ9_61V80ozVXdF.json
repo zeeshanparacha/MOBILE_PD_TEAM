@@ -38,8 +38,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/27/2023",
+    "createdAt": "10/27/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -490,6 +490,18 @@
                 "iban": "$selectedAcc_QRGenerate.accountNumber",
                 "size": "407"
               }
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          },
+          {
+            "triggerId": "kzXZhrDCkV3EZzIqsYONG",
+            "triggerName": "navigate to qr popup",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate with back stack",
+              "id": "sOoS7vkap1TuJvLPvaQmE",
+              "type": "popup"
             },
             "type": "ONCLICK",
             "name": "On click"
@@ -1262,6 +1274,18 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
+              },
+              {
+                "triggerId": "kzXZhrDCkV3EZzIqsYONG",
+                "triggerName": "navigate to qr popup",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate with back stack",
+                  "id": "sOoS7vkap1TuJvLPvaQmE",
+                  "type": "popup"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
               }
             ],
             "path": "0-8",
@@ -1942,6 +1966,12 @@
       {
         "triggerId": "ZGl085mGX_-zIIkN38dxv",
         "triggerName": "generateP2PQR",
+        "name": "On click",
+        "type": "ONCLICK"
+      },
+      {
+        "triggerId": "kzXZhrDCkV3EZzIqsYONG",
+        "triggerName": "navigate to qr popup",
         "name": "On click",
         "type": "ONCLICK"
       }

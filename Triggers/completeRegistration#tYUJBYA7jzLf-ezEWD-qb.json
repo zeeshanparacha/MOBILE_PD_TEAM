@@ -1,0 +1,54 @@
+{
+  "id": "rLmUQ9P1D8MhNNRWJz7n3",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "completeRegistration",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "NETWORK",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "serviceName": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
+            "version_code": "1",
+            "channel_key": "006",
+            "activity_id": "1",
+            "locale": "en",
+            "entityId": "1",
+            "app_version": "5.1.0",
+            "deviceKey": "$device.deviceKey",
+            "deviceName": "$device.deviceName"
+          },
+          "url": "http://172.16.11.52:9000/prelogin/v1/completeRegistration",
+          "requestDataType": "byJSON",
+          "requestBody": {
+            "accountId": "4287404",
+            "accountNumber": "6044420311714111683",
+            "choosePassword": "Mallick@2022",
+            "confirmPassword": "Mallick@2022",
+            "device": null,
+            "mobileNumber": "923090078601",
+            "newPassword": null,
+            "userIdenType": "CNIC",
+            "userIdenValue": "3330140691089",
+            "userName": "faran9tahir",
+            "validation": null
+          },
+          "responseStateKey": "completeRegistrationRes"
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.3pm91wqi5jxEcLQN1GngtxhiKJ0EOZnk",
+  "_id": "tYUJBYA7jzLf-ezEWD-qb",
+  "updatedAt": "10/25/2023",
+  "createdAt": "10/25/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed"
+}

@@ -10,12 +10,14 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "background": "#FFFFFF",
-        "navBarColor": "#093959",
+        "navBarColor": "#004D39",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "hideNavBar": true
+        "hideNavBar": true,
+        "fullScreen": false,
+        "navbarHeight": 0,
+        "statusBarColor": "#004708"
       },
       "componentId": [
         "ZaQGfH-wTzPYVuZM2_ZYN",
@@ -35,16 +37,16 @@
         "ms-2GOvgyLoPBbZ1Ks7Md",
         "KPsqRfZ9dvKsKwqceJPuQ",
         "tb-ud0Z18SrH2MoxwqPxN",
-        "L_DNcdKgZl1VNMXt4mVRa",
         "3yAbA3tg1VM2V_mius9Kc",
-        "8_cgTMxhlUhi_u1ScIL48"
+        "8_cgTMxhlUhi_u1ScIL48",
+        "1I9h5RWAwWIt8eBu2ne05"
       ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "8/18/2023",
-    "createdAt": "8/18/2023",
+    "updatedAt": "10/26/2023",
+    "createdAt": "10/26/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -678,6 +680,34 @@
             },
             "type": "ONCLICK",
             "name": "On click"
+          },
+          {
+            "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+            "triggerName": "HMB_Register_IDType_Passport_Hide",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Toggle visibility",
+              "screenId": "LuqT0odLSGTL_5JtRzTis",
+              "component": [
+                {
+                  "id": "3yAbA3tg1VM2V_mius9Kc",
+                  "name": "HMB_Reigster_PassportNum_Input_View"
+                },
+                {
+                  "id": "8_cgTMxhlUhi_u1ScIL48",
+                  "name": "HMB_Register_PassportNum_Input"
+                },
+                { "id": "1I9h5RWAwWIt8eBu2ne05", "name": "Text view" }
+              ],
+              "componentId": [
+                "3yAbA3tg1VM2V_mius9Kc",
+                "8_cgTMxhlUhi_u1ScIL48",
+                "1I9h5RWAwWIt8eBu2ne05"
+              ],
+              "visibility": false
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
           }
         ],
         "path": "0-13",
@@ -797,44 +827,6 @@
         "path": "0-16"
       },
       {
-        "id": "L_DNcdKgZl1VNMXt4mVRa",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "HMB_Register_Passport_Text",
-        "attributes": {
-          "name": "HMB_Register_Passport_Text",
-          "layoutProperties": {
-            "textSize": 18,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#000000",
-            "text": "Passport Number",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-            "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
-            "layout_marginLeft": 20,
-            "layout_marginTop": 20,
-            "textStyle": "bold",
-            "textAlignment": "left",
-            "visibility": false
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-17",
-        "edit": true
-      },
-      {
         "id": "3yAbA3tg1VM2V_mius9Kc",
         "status": "ACTIVE",
         "_id": "61dec691077814a0f374d9f4",
@@ -849,7 +841,7 @@
             "background": "#F0F2F0",
             "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
             "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-            "topToBottomOf": "L_DNcdKgZl1VNMXt4mVRa",
+            "topToBottomOf": "1I9h5RWAwWIt8eBu2ne05",
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 10,
@@ -867,7 +859,7 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-18",
+        "path": "0-17",
         "edit": true
       },
       {
@@ -913,6 +905,42 @@
         "events": [],
         "path": "0-19",
         "edit": true
+      },
+      {
+        "id": "1I9h5RWAwWIt8eBu2ne05",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "HMB_Register_Passport_Text",
+          "layoutProperties": {
+            "textSize": 18,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "Passport Number",
+            "cornerRadius": [0, 0, 0, 0],
+            "numberOfLines": 1,
+            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+            "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+            "layout_marginLeft": 20,
+            "layout_marginTop": 20,
+            "textAlignment": "left",
+            "textStyle": "bold"
+          }
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-19"
       }
     ],
     "subType": "screen",
@@ -929,12 +957,14 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "statusBarColor": "#093959",
             "background": "#FFFFFF",
-            "navBarColor": "#093959",
+            "navBarColor": "#004D39",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "hideNavBar": true
+            "hideNavBar": true,
+            "fullScreen": false,
+            "navbarHeight": 0,
+            "statusBarColor": "#004708"
           },
           "componentId": []
         },
@@ -1578,6 +1608,34 @@
                 },
                 "type": "ONCLICK",
                 "name": "On click"
+              },
+              {
+                "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+                "triggerName": "HMB_Register_IDType_Passport_Hide",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "LuqT0odLSGTL_5JtRzTis",
+                  "component": [
+                    {
+                      "id": "3yAbA3tg1VM2V_mius9Kc",
+                      "name": "HMB_Reigster_PassportNum_Input_View"
+                    },
+                    {
+                      "id": "8_cgTMxhlUhi_u1ScIL48",
+                      "name": "HMB_Register_PassportNum_Input"
+                    },
+                    { "id": "1I9h5RWAwWIt8eBu2ne05", "name": "Text view" }
+                  ],
+                  "componentId": [
+                    "3yAbA3tg1VM2V_mius9Kc",
+                    "8_cgTMxhlUhi_u1ScIL48",
+                    "1I9h5RWAwWIt8eBu2ne05"
+                  ],
+                  "visibility": false
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
               }
             ],
             "path": "0-13",
@@ -1697,44 +1755,6 @@
             "path": "0-16"
           },
           {
-            "id": "L_DNcdKgZl1VNMXt4mVRa",
-            "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "HMB_Register_Passport_Text",
-            "attributes": {
-              "name": "HMB_Register_Passport_Text",
-              "layoutProperties": {
-                "textSize": 18,
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
-                "textColor": "#000000",
-                "text": "Passport Number",
-                "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-                "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
-                "layout_marginLeft": 20,
-                "layout_marginTop": 20,
-                "textStyle": "bold",
-                "textAlignment": "left",
-                "visibility": false
-              }
-            },
-            "icon": "FaTextWidth",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
-            "events": [],
-            "path": "0-17",
-            "edit": true
-          },
-          {
             "id": "3yAbA3tg1VM2V_mius9Kc",
             "status": "ACTIVE",
             "_id": "61dec691077814a0f374d9f4",
@@ -1749,7 +1769,7 @@
                 "background": "#F0F2F0",
                 "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
                 "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-                "topToBottomOf": "L_DNcdKgZl1VNMXt4mVRa",
+                "topToBottomOf": "1I9h5RWAwWIt8eBu2ne05",
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 10,
@@ -1767,7 +1787,7 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-18",
+            "path": "0-17",
             "edit": true
           },
           {
@@ -1813,6 +1833,42 @@
             "events": [],
             "path": "0-19",
             "edit": true
+          },
+          {
+            "id": "1I9h5RWAwWIt8eBu2ne05",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "HMB_Register_Passport_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Passport Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textAlignment": "left",
+                "textStyle": "bold"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-19"
           }
         ],
         "subType": "screen",
@@ -1822,7 +1878,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "LuqT0odLSGTL_5JtRzTis",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2431,6 +2487,12 @@
         "triggerName": "HMB_ValidatreRegistration_Api_Trig",
         "name": "On click",
         "type": "ONCLICK"
+      },
+      {
+        "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+        "triggerName": "HMB_Register_IDType_Passport_Hide",
+        "name": "On Load",
+        "type": "ONLOAD"
       }
     ],
     "path": "0-13",
@@ -2563,47 +2625,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "L_DNcdKgZl1VNMXt4mVRa",
-    "status": "ACTIVE",
-    "name": "HMB_Register_Passport_Text",
-    "attributes": {
-      "name": "HMB_Register_Passport_Text",
-      "layoutProperties": {
-        "textSize": 18,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#000000",
-        "text": "Passport Number",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
-        "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
-        "layout_marginLeft": 20,
-        "layout_marginTop": 20,
-        "textStyle": "bold",
-        "textAlignment": "left",
-        "visibility": false
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-17",
-    "edit": true,
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "3yAbA3tg1VM2V_mius9Kc",
     "status": "ACTIVE",
     "name": "HMB_Reigster_PassportNum_Input_View",
@@ -2617,7 +2638,7 @@
         "background": "#F0F2F0",
         "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
         "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
-        "topToBottomOf": "L_DNcdKgZl1VNMXt4mVRa",
+        "topToBottomOf": "1I9h5RWAwWIt8eBu2ne05",
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 10,
@@ -2635,7 +2656,7 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-18",
+    "path": "0-17",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2684,6 +2705,45 @@
     "events": [],
     "path": "0-19",
     "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "1I9h5RWAwWIt8eBu2ne05",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "HMB_Register_Passport_Text",
+      "layoutProperties": {
+        "textSize": 18,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "Passport Number",
+        "cornerRadius": [0, 0, 0, 0],
+        "numberOfLines": 1,
+        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+        "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+        "layout_marginLeft": 20,
+        "layout_marginTop": 20,
+        "textAlignment": "left",
+        "textStyle": "bold"
+      }
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-19",
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

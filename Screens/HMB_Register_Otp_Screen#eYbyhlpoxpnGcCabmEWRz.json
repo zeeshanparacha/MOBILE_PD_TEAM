@@ -15,7 +15,6 @@
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        
         "hideNavBar": true
       },
       "componentId": [
@@ -32,8 +31,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "5/15/2023",
-    "createdAt": "5/15/2023",
+    "updatedAt": "10/26/2023",
+    "createdAt": "10/26/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -83,9 +82,8 @@
           "name": "EmailOtp_Input_View",
           "layoutProperties": {
             "name": "View",
-            "layout_width": "match_parent",
+            "layout_width": "match_constraint",
             "layout_height": "55",
-            
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -120,8 +118,8 @@
           "layoutProperties": {
             "textSize": 15,
             "textColor": "#989898",
-            "textStyle": "bold",
-            "textAlignment": "center",
+            "textStyle": "regular",
+            "textAlignment": "left",
             "text": "",
             "numberOfLines": 15,
             "layout_height": "wrap_content",
@@ -195,7 +193,6 @@
             "name": "View",
             "layout_width": "match_parent",
             "layout_height": "55",
-            
             "cornerRadius": [10, 10, 10, 10],
             "background": "#F0F2F0",
             "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -274,7 +271,6 @@
             "layout_marginLeft": 20,
             "layout_marginRight": 20,
             "layout_marginTop": 30,
-            
             "text": "Generate OTP",
             "textSize": 16,
             "textColor": "#000000",
@@ -313,7 +309,6 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "63",
-            
             "text": "Next",
             "textSize": 20,
             "textColor": "#ffffff",
@@ -337,7 +332,72 @@
         "isLatest": true,
         "projectType": "mobile",
         "component": { "content": "Button", "type": "BUTTON" },
-        "events": [],
+        "events": [
+          {
+            "triggerId": "q5UmV0ZK6QA69S2X1Xfdd",
+            "triggerName": "validateRegistrationOTP",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "deviceKey": "$device.deviceKey",
+                "deviceName": "$device.deviceName"
+              },
+              "url": "$baseMockUrl++/prelogin/v1/validateRegistrationOTP",
+              "requestDataType": "byJSON",
+              "requestBody": {
+                "accountId": "4287404",
+                "accountNumber": null,
+                "choosePassword": null,
+                "confirmPassword": null,
+                "device": {
+                  "countryCode": "PKR",
+                  "deviceKey": "$device.deviceKey",
+                  "fcmToken": null,
+                  "imei": "$device.deviceIMEI",
+                  "ip": "$device.deviceIP",
+                  "isNotificationEnabled": true,
+                  "name": "$device.deviceName",
+                  "os": "$device.deviceOS",
+                  "osType": "29"
+                },
+                "mobileNumber": null,
+                "newPassword": null,
+                "userIdenType": null,
+                "userIdenValue": null,
+                "userName": null,
+                "validation": {
+                  "emailPin": "$registerEmailOtp",
+                  "smsPin": "$registerSmsOtp",
+                  "splitOtp": true,
+                  "validationType": "OTP"
+                }
+              },
+              "responseStateKey": "validateRegistrationOTPRes",
+              "conditions": [
+                {
+                  "triggerName": "navigate to complete registration screen",
+                  "triggerId": "7ehklWOOe5bJiF7GDMnt-",
+                  "httpStatus": 200,
+                  "logic": {
+                    "==": [{ "var": "validateRegistrationOTPRes.code" }, 1]
+                  }
+                }
+              ]
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
         "path": "0-7",
         "edit": true
       }
@@ -360,7 +420,6 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            
             "hideNavBar": true
           },
           "componentId": []
@@ -419,9 +478,8 @@
               "name": "EmailOtp_Input_View",
               "layoutProperties": {
                 "name": "View",
-                "layout_width": "match_parent",
+                "layout_width": "match_constraint",
                 "layout_height": "55",
-                
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -456,8 +514,8 @@
               "layoutProperties": {
                 "textSize": 15,
                 "textColor": "#989898",
-                "textStyle": "bold",
-                "textAlignment": "center",
+                "textStyle": "regular",
+                "textAlignment": "left",
                 "text": "",
                 "numberOfLines": 15,
                 "layout_height": "wrap_content",
@@ -531,7 +589,6 @@
                 "name": "View",
                 "layout_width": "match_parent",
                 "layout_height": "55",
-                
                 "cornerRadius": [10, 10, 10, 10],
                 "background": "#F0F2F0",
                 "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -610,7 +667,6 @@
                 "layout_marginLeft": 20,
                 "layout_marginRight": 20,
                 "layout_marginTop": 30,
-                
                 "text": "Generate OTP",
                 "textSize": 16,
                 "textColor": "#000000",
@@ -649,7 +705,6 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "63",
-                
                 "text": "Next",
                 "textSize": 20,
                 "textColor": "#ffffff",
@@ -673,7 +728,72 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Button", "type": "BUTTON" },
-            "events": [],
+            "events": [
+              {
+                "triggerId": "q5UmV0ZK6QA69S2X1Xfdd",
+                "triggerName": "validateRegistrationOTP",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "$baseMockUrl++/prelogin/v1/validateRegistrationOTP",
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accountId": "4287404",
+                    "accountNumber": null,
+                    "choosePassword": null,
+                    "confirmPassword": null,
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "$device.deviceKey",
+                      "fcmToken": null,
+                      "imei": "$device.deviceIMEI",
+                      "ip": "$device.deviceIP",
+                      "isNotificationEnabled": true,
+                      "name": "$device.deviceName",
+                      "os": "$device.deviceOS",
+                      "osType": "29"
+                    },
+                    "mobileNumber": null,
+                    "newPassword": null,
+                    "userIdenType": null,
+                    "userIdenValue": null,
+                    "userName": null,
+                    "validation": {
+                      "emailPin": "$registerEmailOtp",
+                      "smsPin": "$registerSmsOtp",
+                      "splitOtp": true,
+                      "validationType": "OTP"
+                    }
+                  },
+                  "responseStateKey": "validateRegistrationOTPRes",
+                  "conditions": [
+                    {
+                      "triggerName": "navigate to complete registration screen",
+                      "triggerId": "7ehklWOOe5bJiF7GDMnt-",
+                      "httpStatus": 200,
+                      "logic": {
+                        "==": [{ "var": "validateRegistrationOTPRes.code" }, 1]
+                      }
+                    }
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
             "path": "0-7",
             "edit": true
           }
@@ -684,7 +804,7 @@
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "eYbyhlpoxpnGcCabmEWRz",
-    "createdBy": "shaikhahmedraza",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -734,9 +854,8 @@
       "name": "EmailOtp_Input_View",
       "layoutProperties": {
         "name": "View",
-        "layout_width": "match_parent",
+        "layout_width": "match_constraint",
         "layout_height": "55",
-        
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -775,8 +894,8 @@
       "layoutProperties": {
         "textSize": 15,
         "textColor": "#989898",
-        "textStyle": "bold",
-        "textAlignment": "center",
+        "textStyle": "regular",
+        "textAlignment": "left",
         "text": "",
         "numberOfLines": 15,
         "layout_height": "wrap_content",
@@ -828,7 +947,6 @@
         "layout_marginTop": 20,
         "textAlignment": "left",
         "textStyle": "regular"
-        
       }
     },
     "icon": "FaTextWidth",
@@ -859,7 +977,6 @@
         "name": "View",
         "layout_width": "match_parent",
         "layout_height": "55",
-        
         "cornerRadius": [10, 10, 10, 10],
         "background": "#F0F2F0",
         "leftToLeftOf": "eYbyhlpoxpnGcCabmEWRz",
@@ -946,7 +1063,6 @@
         "layout_marginLeft": 20,
         "layout_marginRight": 20,
         "layout_marginTop": 30,
-        
         "text": "Generate OTP",
         "textSize": 16,
         "textColor": "#000000",
@@ -989,7 +1105,6 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "63",
-        
         "text": "Next",
         "textSize": 20,
         "textColor": "#ffffff",
@@ -1013,7 +1128,14 @@
     "isLatest": true,
     "projectType": "mobile",
     "component": { "content": "Button", "type": "BUTTON" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "q5UmV0ZK6QA69S2X1Xfdd",
+        "triggerName": "validateRegistrationOTP",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "path": "0-7",
     "edit": true,
     "subType": "component",

@@ -16,7 +16,11 @@
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0]
       },
-      "componentId": ["zV_xTkttYumzbUjr06EJR"]
+      "componentId": [
+        "p7CywMVTX6HjTYverYC0s",
+        "MNKCqaDBnc_o4fU1QNLIZ",
+        "F9j0Qnfz92c7L7ck5Iz6w"
+      ]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
@@ -30,24 +34,29 @@
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
       {
-        "id": "zV_xTkttYumzbUjr06EJR",
+        "id": "p7CywMVTX6HjTYverYC0s",
         "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Decline button",
         "attributes": {
-          "name": "Text view",
+          "name": "Decline button",
           "layoutProperties": {
-            "textSize": 18,
             "layout_width": "match_parent",
-            "layout_height": "60",
+            "layout_height": "63",
+            "text": "Decline",
+            "textSize": 20,
             "textColor": "#000000",
-            "text": "T&C",
+            "textStyle": "regular",
+            "textAlignment": "center",
             "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9"
+            "background": "#F5F5F5",
+            "clickable": true,
+            "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "width_percent": 50,
+            "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9"
           }
         },
-        "icon": "FaTextWidth",
+        "icon": "FaBimobject",
         "group": "Form",
         "type": "sidebarItem",
         "updatedAt": "23-Aug-2021",
@@ -56,9 +65,126 @@
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "component": { "content": "Button", "type": "BUTTON" },
         "events": [],
-        "path": "0-0",
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "MNKCqaDBnc_o4fU1QNLIZ",
+        "status": "ACTIVE",
+        "_id": "61dec753077814a0f374d9f6",
+        "name": "Accept button",
+        "attributes": {
+          "name": "Accept button",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "63",
+            "text": "Accept",
+            "textSize": 20,
+            "textColor": "#FFFFFF",
+            "textStyle": "regular",
+            "textAlignment": "center",
+            "cornerRadius": [0, 0, 0, 0],
+            "background": "#1D6131",
+            "clickable": true,
+            "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "width_percent": 50
+          }
+        },
+        "icon": "FaBimobject",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Button", "type": "BUTTON" },
+        "events": [
+          {
+            "triggerId": "3RBJilewixCXTNJ0t7l_P",
+            "triggerName": "navigate to register form screen",
+            "serviceType": "NAVIGATION",
+            "attributes": {
+              "serviceName": "Navigate",
+              "id": "LuqT0odLSGTL_5JtRzTis"
+            },
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ],
+        "path": "0-1",
+        "edit": true
+      },
+      {
+        "id": "F9j0Qnfz92c7L7ck5Iz6w",
+        "status": "ACTIVE",
+        "_id": "61ded106077814a0f374da04",
+        "name": "register terms WEB VIEW",
+        "attributes": {
+          "name": "register terms WEB VIEW",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "match_parent",
+            "textSize": 18,
+            "cornerRadius": [0, 0, 0, 0],
+            "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9",
+            "bottomToTopOf": "MNKCqaDBnc_o4fU1QNLIZ",
+            "textColor": "#000000",
+            "textAlignment": "left",
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10,
+            "layout_marginTop": 0,
+            "textStyle": "regular"
+          },
+          "bindingKey": "registerTermsAndConditions.content.htmlContent",
+          "contentType": "State based"
+        },
+        "icon": "FaTenge",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Web view", "type": "WEBVIEW" },
+        "events": [
+          {
+            "triggerId": "pvYW-sTJZf0cPk089b1_h",
+            "triggerName": "getRegisterTermsAndConditions",
+            "serviceType": "NETWORK",
+            "attributes": {
+              "serviceName": "POST",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "$hmb_loginKey.content.token",
+                "hmbToken": "$hmb_loginKey.content.otpToken",
+                "version_code": "1",
+                "channel_key": "006",
+                "activity_id": "1",
+                "locale": "en",
+                "entityId": "1",
+                "app_version": "5.1.0",
+                "deviceKey": "$device.deviceKey",
+                "deviceName": "$device.deviceName"
+              },
+              "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+              "requestDataType": "byJSON",
+              "requestBody": { "entityId": "TERMS_CONDITIONS" },
+              "responseStateKey": "registerTermsAndConditions"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-2",
         "edit": true
       }
     ],
@@ -95,24 +221,29 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "zV_xTkttYumzbUjr06EJR",
+            "id": "p7CywMVTX6HjTYverYC0s",
             "status": "ACTIVE",
-            "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Decline button",
             "attributes": {
-              "name": "Text view",
+              "name": "Decline button",
               "layoutProperties": {
-                "textSize": 18,
                 "layout_width": "match_parent",
-                "layout_height": "60",
+                "layout_height": "63",
+                "text": "Decline",
+                "textSize": 20,
                 "textColor": "#000000",
-                "text": "T&C",
+                "textStyle": "regular",
+                "textAlignment": "center",
                 "cornerRadius": [0, 0, 0, 0],
-                "numberOfLines": 1,
-                "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9"
+                "background": "#F5F5F5",
+                "clickable": true,
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50,
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9"
               }
             },
-            "icon": "FaTextWidth",
+            "icon": "FaBimobject",
             "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
@@ -121,9 +252,126 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "component": { "content": "Button", "type": "BUTTON" },
             "events": [],
-            "path": "0-0",
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "MNKCqaDBnc_o4fU1QNLIZ",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Accept button",
+            "attributes": {
+              "name": "Accept button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Accept",
+                "textSize": 20,
+                "textColor": "#FFFFFF",
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "3RBJilewixCXTNJ0t7l_P",
+                "triggerName": "navigate to register form screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate",
+                  "id": "LuqT0odLSGTL_5JtRzTis"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "F9j0Qnfz92c7L7ck5Iz6w",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "register terms WEB VIEW",
+            "attributes": {
+              "name": "register terms WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 18,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToTopOf": "MNKCqaDBnc_o4fU1QNLIZ",
+                "textColor": "#000000",
+                "textAlignment": "left",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 0,
+                "textStyle": "regular"
+              },
+              "bindingKey": "registerTermsAndConditions.content.htmlContent",
+              "contentType": "State based"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "pvYW-sTJZf0cPk089b1_h",
+                "triggerName": "getRegisterTermsAndConditions",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "TERMS_CONDITIONS" },
+                  "responseStateKey": "registerTermsAndConditions"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-2",
             "edit": true
           }
         ],
@@ -137,36 +385,138 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "zV_xTkttYumzbUjr06EJR",
+    "id": "p7CywMVTX6HjTYverYC0s",
     "status": "ACTIVE",
-    "name": "Text view",
+    "name": "Decline button",
     "attributes": {
-      "name": "Text view",
+      "name": "Decline button",
       "layoutProperties": {
-        "textSize": 18,
         "layout_width": "match_parent",
-        "layout_height": "60",
+        "layout_height": "63",
+        "text": "Decline",
+        "textSize": 20,
         "textColor": "#000000",
-        "text": "T&C",
+        "textStyle": "regular",
+        "textAlignment": "center",
         "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9"
+        "background": "#F5F5F5",
+        "clickable": true,
+        "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "width_percent": 50,
+        "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9"
       }
     },
-    "icon": "FaTextWidth",
+    "icon": "FaBimobject",
     "group": "Form",
-    "type": "TEXTVIEW",
+    "type": "BUTTON",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
     "order": 20,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "mobile",
-    "subType": "component",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "component": { "content": "Button", "type": "BUTTON" },
     "events": [],
-    "path": "0-0",
+    "path": "0-1",
     "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "MNKCqaDBnc_o4fU1QNLIZ",
+    "status": "ACTIVE",
+    "name": "Accept button",
+    "attributes": {
+      "name": "Accept button",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "63",
+        "text": "Accept",
+        "textSize": 20,
+        "textColor": "#FFFFFF",
+        "textStyle": "regular",
+        "textAlignment": "center",
+        "cornerRadius": [0, 0, 0, 0],
+        "background": "#1D6131",
+        "clickable": true,
+        "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "width_percent": 50
+      }
+    },
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "BUTTON",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Button", "type": "BUTTON" },
+    "events": [
+      {
+        "triggerId": "3RBJilewixCXTNJ0t7l_P",
+        "triggerName": "navigate to register form screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "path": "0-1",
+    "edit": true,
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "F9j0Qnfz92c7L7ck5Iz6w",
+    "status": "ACTIVE",
+    "name": "register terms WEB VIEW",
+    "attributes": {
+      "name": "register terms WEB VIEW",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "match_parent",
+        "textSize": 18,
+        "cornerRadius": [0, 0, 0, 0],
+        "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9",
+        "bottomToTopOf": "MNKCqaDBnc_o4fU1QNLIZ",
+        "textColor": "#000000",
+        "textAlignment": "left",
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10,
+        "layout_marginTop": 0,
+        "textStyle": "regular"
+      },
+      "bindingKey": "registerTermsAndConditions.content.htmlContent",
+      "contentType": "State based"
+    },
+    "icon": "FaTenge",
+    "group": "Form",
+    "type": "WEBVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Web view", "type": "WEBVIEW" },
+    "events": [
+      {
+        "triggerId": "pvYW-sTJZf0cPk089b1_h",
+        "triggerName": "getRegisterTermsAndConditions",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-2",
+    "edit": true,
+    "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

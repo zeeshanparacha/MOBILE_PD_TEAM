@@ -1,7 +1,7 @@
 {
-  "id": "tT_ROtyhGy0UmWQ-Rutf2",
+  "id": "pvYW-sTJZf0cPk089b1_h",
   "projectId": "63ef72a290c5800428f84dd9",
-  "name": "getZakatBeneficiaryList",
+  "name": "getRegisterTermsAndConditions",
   "status": "ACTIVE",
   "services": [
     {
@@ -10,9 +10,6 @@
         "type": "1",
         "attributes": {
           "serviceName": "POST",
-          "requestDataType": "byJSON",
-          "requestBody": { "transferType": "ZAKAAT" },
-          "url": "http://172.16.11.52:9000/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
           "headers": {
             "Content-Type": "application/json",
             "Authorization": "$hmb_loginKey.content.token",
@@ -20,25 +17,27 @@
             "version_code": "1",
             "channel_key": "006",
             "activity_id": "1",
-            "deviceKey": "1244d1426ebe80d3",
-            "deviceName": "2201117TG",
             "locale": "en",
             "entityId": "1",
             "app_version": "5.1.0",
-            "Content-Length": "25"
+            "deviceKey": "$device.deviceKey",
+            "deviceName": "$device.deviceName"
           },
-          "responseStateKey": "zakatBeneficiaries"
+          "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+          "requestDataType": "byJSON",
+          "requestBody": { "entityId": "TERMS_CONDITIONS" },
+          "responseStateKey": "registerTermsAndConditions"
         },
         "returns": []
       }
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.usiqe5qtsaas4IQRW7qvhE6ysSgLODNp",
-  "_id": "qT51NmHoWIUdKyvbkzx2-",
-  "updatedAt": "10/26/2023",
-  "createdAt": "10/26/2023",
+  "csrf": "0.mfceknnjdcGxr2ffNYFgWW0nQSRqJsM",
+  "_id": "bV52M2R3aneNiqh_grq5n",
+  "updatedAt": "10/25/2023",
+  "createdAt": "10/25/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
-  "old_name": "getZakatBeneficiaryList"
+  "old_name": "getRegisterTermsAndConditions"
 }

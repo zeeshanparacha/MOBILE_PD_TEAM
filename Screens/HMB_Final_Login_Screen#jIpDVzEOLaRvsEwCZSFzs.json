@@ -10,8 +10,7 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#1D6131",
-        "navBarColor": "#093959",
+        "navBarColor": "#8F8F8F",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
         "src": {
@@ -32,8 +31,9 @@
           "uri": "HMB_Bg.png"
         },
         "hideNavBar": true,
-        "background": "#002E0C",
-        "navbarHeight": 0
+        "navbarHeight": 0,
+        "fullScreen": false,
+        "statusBarColor": "#005711"
       },
       "componentId": [
         "RT1-FYgpREV8tStMl-b3H",
@@ -59,8 +59,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/25/2023",
-    "createdAt": "10/25/2023",
+    "updatedAt": "10/27/2023",
+    "createdAt": "10/27/2023",
     "events": [
       {
         "triggerId": "QtdC7KEADfilW6qtfdV1E",
@@ -146,10 +146,10 @@
           "name": "Login_Welcome_Text",
           "layoutProperties": {
             "textSize": 24,
-            "layout_width": "200",
+            "layout_width": "wrap_content",
             "layout_height": "wrap_content",
             "textColor": "#ffffff",
-            "text": "Welcome, Sign In To Continue",
+            "text": "Welcome,\\nSign In To Continue",
             "cornerRadius": [0, 0, 0, 0],
             "numberOfLines": 2,
             "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -553,18 +553,19 @@
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [
           {
-            "triggerId": "CN7LUyAQ043rhiZICC3-Z",
-            "triggerName": "Navigate_To_Register_Screen",
+            "triggerId": "-agKNF5eEZm5734kihKZH",
+            "triggerName": "navigate to register terms and conditions",
             "serviceType": "NAVIGATION",
             "attributes": {
               "serviceName": "Navigate with back stack",
-              "id": "LuqT0odLSGTL_5JtRzTis"
+              "id": "hyqhdH9I7xTx7cY7UwxY9",
+              "type": "push"
             },
             "type": "ONCLICK",
             "name": "On click"
           }
         ],
-        "path": "0-11",
+        "path": "0-10",
         "edit": true
       },
       {
@@ -914,10 +915,10 @@
               "__v": 0,
               "uri": "Digital_Account_Logo_Text.png"
             },
-            "bottomToBottomOf": null,
             "layout_marginRight": 22,
             "id": "TAQ8TR4PTq2UvI1BLjtyS",
-            "centerY": "z2QamlRU8A8QpaRZ4rtgq"
+            "centerY": "z2QamlRU8A8QpaRZ4rtgq",
+            "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs"
           },
           "contentType": 2
         },
@@ -1060,8 +1061,7 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "statusBarColor": "#1D6131",
-            "navBarColor": "#093959",
+            "navBarColor": "#8F8F8F",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
             "src": {
@@ -1082,8 +1082,9 @@
               "uri": "HMB_Bg.png"
             },
             "hideNavBar": true,
-            "background": "#002E0C",
-            "navbarHeight": 0
+            "navbarHeight": 0,
+            "fullScreen": false,
+            "statusBarColor": "#005711"
           },
           "componentId": []
         },
@@ -1184,10 +1185,10 @@
               "name": "Login_Welcome_Text",
               "layoutProperties": {
                 "textSize": 24,
-                "layout_width": "200",
+                "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
                 "textColor": "#ffffff",
-                "text": "Welcome, Sign In To Continue",
+                "text": "Welcome,\\nSign In To Continue",
                 "cornerRadius": [0, 0, 0, 0],
                 "numberOfLines": 2,
                 "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -1591,18 +1592,19 @@
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [
               {
-                "triggerId": "CN7LUyAQ043rhiZICC3-Z",
-                "triggerName": "Navigate_To_Register_Screen",
+                "triggerId": "-agKNF5eEZm5734kihKZH",
+                "triggerName": "navigate to register terms and conditions",
                 "serviceType": "NAVIGATION",
                 "attributes": {
                   "serviceName": "Navigate with back stack",
-                  "id": "LuqT0odLSGTL_5JtRzTis"
+                  "id": "hyqhdH9I7xTx7cY7UwxY9",
+                  "type": "push"
                 },
                 "type": "ONCLICK",
                 "name": "On click"
               }
             ],
-            "path": "0-11",
+            "path": "0-10",
             "edit": true
           },
           {
@@ -1952,10 +1954,10 @@
                   "__v": 0,
                   "uri": "Digital_Account_Logo_Text.png"
                 },
-                "bottomToBottomOf": null,
                 "layout_marginRight": 22,
                 "id": "TAQ8TR4PTq2UvI1BLjtyS",
-                "centerY": "z2QamlRU8A8QpaRZ4rtgq"
+                "centerY": "z2QamlRU8A8QpaRZ4rtgq",
+                "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs"
               },
               "contentType": 2
             },
@@ -2162,10 +2164,10 @@
       "name": "Login_Welcome_Text",
       "layoutProperties": {
         "textSize": 24,
-        "layout_width": "200",
+        "layout_width": "wrap_content",
         "layout_height": "wrap_content",
         "textColor": "#ffffff",
-        "text": "Welcome, Sign In To Continue",
+        "text": "Welcome,\\nSign In To Continue",
         "cornerRadius": [0, 0, 0, 0],
         "numberOfLines": 2,
         "leftToLeftOf": "jIpDVzEOLaRvsEwCZSFzs",
@@ -2595,13 +2597,13 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [
       {
-        "triggerId": "CN7LUyAQ043rhiZICC3-Z",
-        "triggerName": "Navigate_To_Register_Screen",
+        "triggerId": "-agKNF5eEZm5734kihKZH",
+        "triggerName": "navigate to register terms and conditions",
         "name": "On click",
         "type": "ONCLICK"
       }
     ],
-    "path": "0-11",
+    "path": "0-10",
     "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
@@ -2854,10 +2856,10 @@
           "__v": 0,
           "uri": "Digital_Account_Logo_Text.png"
         },
-        "bottomToBottomOf": null,
         "layout_marginRight": 22,
         "id": "TAQ8TR4PTq2UvI1BLjtyS",
-        "centerY": "z2QamlRU8A8QpaRZ4rtgq"
+        "centerY": "z2QamlRU8A8QpaRZ4rtgq",
+        "rightToRightOf": "jIpDVzEOLaRvsEwCZSFzs"
       },
       "contentType": 2
     },
