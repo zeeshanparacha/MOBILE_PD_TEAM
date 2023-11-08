@@ -12,7 +12,7 @@
           "serviceName": "POST",
           "requestDataType": "byJSON",
           "requestBody": { "transferType": "ZAKAAT" },
-          "url": "http://172.16.11.52:9000/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
+          "url": "$baseMockUrl++/beneficiary/v1/fetchDonationOrganizationBeneficiaries",
           "headers": {
             "Content-Type": "application/json",
             "Authorization": "$hmb_loginKey.content.token",
@@ -34,10 +34,10 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.usiqe5qtsaas4IQRW7qvhE6ysSgLODNp",
+  "csrf": "0.s4g3h6sazh8VPxy8u-VhKGG4BK1utZS4",
   "_id": "qT51NmHoWIUdKyvbkzx2-",
-  "updatedAt": "10/26/2023",
-  "createdAt": "10/26/2023",
+  "updatedAt": "11/8/2023",
+  "createdAt": "11/8/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "getZakatBeneficiaryList"

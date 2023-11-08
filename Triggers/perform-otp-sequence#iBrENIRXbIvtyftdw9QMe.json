@@ -1,0 +1,48 @@
+{
+  "id": "zL-HeEyNNU2QS-7jj-XbO",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "perform otp sequence",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "8",
+        "attributes": {
+          "serviceName": "Perform selected action",
+          "bindingKey": "loadingFirstTime",
+          "actions": [
+            {
+              "triggerId": "-EP7LVoO-JxblBbracLqn",
+              "triggerName": "otp timer chain trigger",
+              "value": 1,
+              "type": "number"
+            },
+            {
+              "triggerId": "FNvxbTdnS3pFArrRVPAyj",
+              "triggerName": "regen button chain trigger",
+              "value": 2,
+              "type": "number"
+            }
+          ],
+          "defaultTriggerId": ["-EP7LVoO-JxblBbracLqn"],
+          "defaultTrigger": [
+            {
+              "triggerId": "-EP7LVoO-JxblBbracLqn",
+              "triggerName": "otp timer chain trigger"
+            }
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.1s5lae54tnnnscfRzmik_8pByLFpH6z1",
+  "_id": "iBrENIRXbIvtyftdw9QMe",
+  "updatedAt": "10/30/2023",
+  "createdAt": "10/30/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "perform otp sequence"
+}

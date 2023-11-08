@@ -23,7 +23,7 @@
             "Authorization": "$hmb_loginKey.content.token",
             "hmbToken": "$hmb_loginKey.content.otpToken"
           },
-          "url": "http:172.16.11.52:9000/account/v1/generateP2PQR",
+          "url": "$baseMockUrl++/account/v1/generateP2PQR",
           "requestDataType": "byJSON",
           "requestBody": {
             "amount": "$QRAmount",
@@ -47,10 +47,10 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.j5s4t26b9xopO7KHyqQQxelfOz0QexpQ",
+  "csrf": "0.s4g3h6sazh8VPxy8u-VhKGG4BK1utZS4",
   "_id": "xxAqvSuwJlfID937LJ-0w",
-  "updatedAt": "10/27/2023",
-  "createdAt": "10/27/2023",
+  "updatedAt": "11/8/2023",
+  "createdAt": "11/8/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "generateP2PQR"

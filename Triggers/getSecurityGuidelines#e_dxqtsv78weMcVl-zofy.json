@@ -23,7 +23,7 @@
             "deviceKey": "$device.deviceKey",
             "deviceName": "$device.deviceName"
           },
-          "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+          "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
           "requestDataType": "byJSON",
           "requestBody": { "entityId": "SECURITY_TIPS" },
           "responseStateKey": "SecurityGuidelines"
@@ -33,10 +33,10 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.ikeqj14aiqihYOqShheEGLBrx8RKfMS",
+  "csrf": "0.s4g3h6sazh8VPxy8u-VhKGG4BK1utZS4",
   "_id": "e_dxqtsv78weMcVl-zofy",
-  "updatedAt": "10/26/2023",
-  "createdAt": "10/26/2023",
+  "updatedAt": "11/8/2023",
+  "createdAt": "11/8/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "getSecurityGuidelines"
