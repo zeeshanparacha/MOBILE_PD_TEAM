@@ -1,0 +1,55 @@
+{
+  "id": "89y-e3D5MpjRnKBgaD-Ik",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "execute dashboard apis",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "I1tKMXbaAK_8AE4e0G8WI",
+              "triggerName": "HMB_GetAllAccounts_Api_Trig"
+            },
+            {
+              "triggerId": "VNIHCYpYy9FhiKpvGHhSz",
+              "triggerName": "HMB_GetCardList_Api_Trig"
+            },
+            {
+              "triggerId": "bRJQvQzYctUffiaeF-jql",
+              "triggerName": "HMB_GetBeneList_Api_Trig"
+            },
+            {
+              "triggerId": "zT9olvS3WmSDZTovHUjGU",
+              "triggerName": "HMB_GetBillBene_Api_Trig"
+            },
+            {
+              "triggerId": "eEHQDnTXE5s-cMlMUNpPS",
+              "triggerName": "getProfile"
+            }
+          ],
+          "triggerId": [
+            "I1tKMXbaAK_8AE4e0G8WI",
+            "VNIHCYpYy9FhiKpvGHhSz",
+            "bRJQvQzYctUffiaeF-jql",
+            "zT9olvS3WmSDZTovHUjGU",
+            "eEHQDnTXE5s-cMlMUNpPS"
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.fljfw76brxJBzLWpWq-CUcNWXoMHYwk",
+  "_id": "qn62Z3WyespmKzZOKJd9B",
+  "updatedAt": "11/16/2023",
+  "createdAt": "11/16/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "execute dashboard apis"
+}

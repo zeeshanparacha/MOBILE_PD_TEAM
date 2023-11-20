@@ -17,10 +17,10 @@
             "activity_id": "1",
             "locale": "en",
             "entityId": "1",
-            "app_version": "5.1.0",
             "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895",
             "deviceKey": "$device.deviceKey",
-            "deviceName": "$device.deviceName"
+            "deviceName": "$device.deviceName",
+            "app_version": "5.1.3"
           },
           "url": "$baseMockUrl++/security/v5/validateLoginPassword",
           "requestDataType": "byJSON",
@@ -29,18 +29,18 @@
               "countryCode": "PKR",
               "deviceKey": "$device.deviceKey",
               "fcmToken": null,
-              "imei": "$device.deviceIMEI",
-              "ip": "$device.deviceIP",
+              "imei": "$device.imei",
+              "ip": "172.16.10.65",
               "isNotificationEnabled": true,
               "name": "$device.deviceName",
-              "os": "$device.deviceOS",
-              "osType": "30"
+              "os": "$device.os",
+              "osType": "$device.osType"
             },
             "location": "",
             "loginPin": "",
             "loginType": "CREDENTIALS",
-            "password": "$hmb_password",
-            "username": "$hmb_username"
+            "password": "Mallick@2022",
+            "username": "fahadmirza"
           },
           "responseStateKey": "hmb_loginKey",
           "conditions": [
@@ -73,10 +73,10 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.s0jlcpm4g51XRUJ1Cz6jgdHZ3R75tfw",
+  "csrf": "0.ocnws0xwf4pn_oF4Rm6uJs5kVeVbnO1H",
   "_id": "DDhVEieonZIFwThnBDiTc",
-  "updatedAt": "10/25/2023",
-  "createdAt": "10/25/2023",
+  "updatedAt": "11/16/2023",
+  "createdAt": "11/16/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "HMB_Final_Login_Api_Trig"

@@ -12,16 +12,14 @@
           "serviceName": "POST",
           "headers": {
             "Content-Type": "application/json",
-            "Authorization": "$hmb_loginKey.content.token",
-            "hmbToken": "$hmb_loginKey.content.otpToken",
             "version_code": "1",
-            "channel_key": "006",
             "activity_id": "1",
             "locale": "en",
             "entityId": "1",
             "app_version": "5.1.0",
             "deviceKey": "$device.deviceKey",
-            "deviceName": "$device.deviceName"
+            "deviceName": "$device.deviceName",
+            "channel_key": "005"
           },
           "url": "$baseMockUrl++/prelogin/v1/getConfiguration",
           "requestDataType": "byJSON",
@@ -30,12 +28,12 @@
               "countryCode": "PKR",
               "deviceKey": "$device.deviceKey",
               "fcmToken": null,
-              "imei": "$device.deviceIMEI",
+              "imei": "$device.imei",
               "ip": "$device.deviceIP",
               "isNotificationEnabled": true,
               "name": "$device.deviceName",
-              "os": "$device.deviceOS",
-              "osType": "30"
+              "os": "$device.os",
+              "osType": "$device.osType"
             },
             "lookUps": [
               "ACCOUNT_STATUS",
@@ -58,10 +56,10 @@
     }
   ],
   "gitBranchName": "master",
-  "csrf": "0.s4g3h6sazh8VPxy8u-VhKGG4BK1utZS4",
+  "csrf": "0.jlazn0qimvDhbi1--x9DOKdx3wzm9-s",
   "_id": "KX-59o5mKBXcqcVwENWWW",
-  "updatedAt": "11/8/2023",
-  "createdAt": "11/8/2023",
+  "updatedAt": "11/14/2023",
+  "createdAt": "11/14/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
   "old_name": "getConfiguration"

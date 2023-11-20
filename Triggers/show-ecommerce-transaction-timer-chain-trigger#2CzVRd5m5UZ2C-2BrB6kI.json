@@ -1,0 +1,45 @@
+{
+  "id": "WiNTejtv0yIU5MDOTTRd4",
+  "projectId": "63ef72a290c5800428f84dd9",
+  "name": "show ecommerce transaction timer chain trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "UI",
+      "command": {
+        "type": "11",
+        "attributes": {
+          "serviceName": "Execute chain trigger",
+          "triggers": [
+            {
+              "triggerId": "Ovol3eIDTxNAI2B-_HhKN",
+              "triggerName": "show ecommerce transaction timer"
+            },
+            {
+              "triggerId": "qOSi1jV_okfCihqPLh9xG",
+              "triggerName": "hide ecommerce transaction regen otp button"
+            },
+            {
+              "triggerId": "Q5B7NHWX55qxg1MXI7E17",
+              "triggerName": "set dummy ecom timer data"
+            }
+          ],
+          "triggerId": [
+            "Ovol3eIDTxNAI2B-_HhKN",
+            "qOSi1jV_okfCihqPLh9xG",
+            "Q5B7NHWX55qxg1MXI7E17"
+          ]
+        },
+        "returns": []
+      }
+    }
+  ],
+  "gitBranchName": "master",
+  "csrf": "0.2vj27q8fz7eVtxhE8o1VHxQnrEguxXwM",
+  "_id": "2CzVRd5m5UZ2C-2BrB6kI",
+  "updatedAt": "11/15/2023",
+  "createdAt": "11/15/2023",
+  "createdBy": "ammarahmed",
+  "updatedBy": "ammarahmed",
+  "old_name": "show ecommerce transaction timer chain trigger"
+}
