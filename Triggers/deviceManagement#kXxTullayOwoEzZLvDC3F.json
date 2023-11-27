@@ -1,7 +1,7 @@
 {
-  "id": "pjhOp8Jc6HC-wux07QlQn",
+  "id": "r3L2GRI0JNgGfYef4lvOa",
   "projectId": "63ef72a290c5800428f84dd9",
-  "name": "HMB_Final_Login_Api_Trig",
+  "name": "deviceManagement",
   "status": "ACTIVE",
   "services": [
     {
@@ -12,20 +12,22 @@
           "serviceName": "POST",
           "headers": {
             "Content-Type": "application/json",
+            "Authorization": "$hmb_loginKey.content.token",
+            "hmbToken": "$hmb_loginKey.content.otpToken",
             "version_code": "1",
             "channel_key": "006",
             "activity_id": "1",
             "locale": "en",
             "entityId": "1",
-            "CHECKSUM": "9K56L85KK55M0055KH59LKQMHH59QKO86Y1H5895",
             "deviceKey": "$device.deviceKey",
             "deviceName": "$device.deviceName",
             "app_version": "5.1.3"
           },
-          "url": "$baseMockUrl++/security/v5/validateLoginPassword",
           "requestDataType": "byJSON",
           "requestBody": {
-            "device": {
+            "action": "$deviceMgmtAction",
+            "otpToken": "$hmb_loginKey.content.otpToken",
+            "trustedDevice": {
               "countryCode": "PKR",
               "deviceKey": "$device.deviceKey",
               "fcmToken": null,
@@ -36,35 +38,21 @@
               "os": "$device.os",
               "osType": "$device.osType"
             },
-            "location": "",
-            "loginPin": "",
-            "loginType": "CREDENTIALS",
-            "password": "Mallick@2022",
-            "username": "fahadmirza"
+            "validation": {
+              "emailPin": "",
+              "smsPin": "$sms_otp",
+              "splitOtp": false,
+              "validationType": "OTP"
+            }
           },
-          "responseStateKey": "hmb_loginKey",
+          "url": "$baseMockUrl++/security/v2/deviceManagement",
+          "responseStateKey": "devicemanage_data",
           "conditions": [
             {
-              "logic": {
-                "==": [{ "var": "hmb_loginKey.content.isTrustedDevice" }, true]
-              },
+              "logic": { "==": [{ "var": "devicemanage_data.code" }, 1] },
               "httpStatus": 200,
               "triggerName": "Navigate_to_HMB_Tabbar_Final",
               "triggerId": "-Os20THea9S8z99YkrzXE"
-            },
-            {
-              "logic": {
-                "==": [{ "var": "hmb_loginKey.content.isTrustedDevice" }, false]
-              },
-              "httpStatus": 200,
-              "triggerName": "Navigate_to_Login_OTP_Screen",
-              "triggerId": "ZHyZ1fqWJOGrkpy2_UGmz"
-            },
-            {
-              "logic": { "==": [{ "var": "hmb_loginKey.code" }, 0] },
-              "httpStatus": 200,
-              "triggerName": "HMB_Login_Api_Failure_Alert",
-              "triggerId": "9jLh4-yzYfLVGA4uJPVQy"
             }
           ]
         },
@@ -74,10 +62,10 @@
   ],
   "gitBranchName": "master",
   "csrf": "0.ex2j321hzwmLbYS72e57129vsnnMjEjf",
-  "_id": "DDhVEieonZIFwThnBDiTc",
+  "_id": "kXxTullayOwoEzZLvDC3F",
   "updatedAt": "11/27/2023",
   "createdAt": "11/27/2023",
   "createdBy": "ammarahmed",
   "updatedBy": "ammarahmed",
-  "old_name": "HMB_Final_Login_Api_Trig"
+  "old_name": "deviceManagement"
 }

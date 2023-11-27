@@ -1,11 +1,11 @@
 [
   {
     "id": "dt2SnPWXYhmWzp7Fle8Ng",
-    "name": "contact screen navbar",
+    "name": "general navbar new",
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "contact screen navbar",
+      "name": "general navbar new",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
@@ -25,8 +25,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "11/14/2023",
-    "createdAt": "11/14/2023",
+    "updatedAt": "11/23/2023",
+    "createdAt": "11/23/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -95,8 +95,8 @@
         "attributes": {
           "name": "Image View",
           "layoutProperties": {
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
+            "layout_width": "30",
+            "layout_height": "30",
             "cornerRadius": [0, 0, 0, 0],
             "unify_layout_width": "30",
             "unify_layout_height": "30",
@@ -137,7 +137,16 @@
         "component": { "content": "Image view", "type": "IMAGEVIEW" },
         "path": "0-1",
         "edit": true,
-        "events": []
+        "events": [
+          {
+            "triggerId": "Xji_n1WHYmxK4ptfnfakA",
+            "triggerName": "On tool bar back pressed",
+            "serviceType": "NAVIGATION",
+            "attributes": {},
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
       },
       {
         "id": "ZuKSy0Cyc7edqYakff1Qe",
@@ -161,7 +170,7 @@
             "textStyle": "regular",
             "textAlignment": "left",
             "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
-            "layout_marginBottom": 14
+            "layout_marginBottom": 15
           },
           "bindingKey": "navHeading"
         },
@@ -184,11 +193,11 @@
     "layout": [
       {
         "id": "dt2SnPWXYhmWzp7Fle8Ng",
-        "name": "contact screen navbar",
+        "name": "general navbar new",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "contact screen navbar",
+          "name": "general navbar new",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -274,8 +283,8 @@
             "attributes": {
               "name": "Image View",
               "layoutProperties": {
-                "layout_width": "wrap_content",
-                "layout_height": "wrap_content",
+                "layout_width": "30",
+                "layout_height": "30",
                 "cornerRadius": [0, 0, 0, 0],
                 "unify_layout_width": "30",
                 "unify_layout_height": "30",
@@ -316,7 +325,16 @@
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
             "path": "0-1",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "Xji_n1WHYmxK4ptfnfakA",
+                "triggerName": "On tool bar back pressed",
+                "serviceType": "NAVIGATION",
+                "attributes": {},
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
           },
           {
             "id": "ZuKSy0Cyc7edqYakff1Qe",
@@ -340,7 +358,7 @@
                 "textStyle": "regular",
                 "textAlignment": "left",
                 "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
-                "layout_marginBottom": 14
+                "layout_marginBottom": 15
               },
               "bindingKey": "navHeading"
             },
@@ -432,8 +450,8 @@
     "attributes": {
       "name": "Image View",
       "layoutProperties": {
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
+        "layout_width": "30",
+        "layout_height": "30",
         "cornerRadius": [0, 0, 0, 0],
         "unify_layout_width": "30",
         "unify_layout_height": "30",
@@ -474,7 +492,14 @@
     "component": { "content": "Image view", "type": "IMAGEVIEW" },
     "path": "0-1",
     "edit": true,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "Xji_n1WHYmxK4ptfnfakA",
+        "triggerName": "On tool bar back pressed",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
@@ -501,7 +526,7 @@
         "textStyle": "regular",
         "textAlignment": "left",
         "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
-        "layout_marginBottom": 14
+        "layout_marginBottom": 15
       },
       "bindingKey": "navHeading"
     },
