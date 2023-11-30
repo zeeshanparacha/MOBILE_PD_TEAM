@@ -1,0 +1,1550 @@
+[
+  {
+    "id": "PT52aDhTPtzG2k4dYGn9U",
+    "name": "Instant bill payment select category screen",
+    "icon": "FaGripHorizontal",
+    "path": "0",
+    "attributes": {
+      "name": "Instant bill payment select category screen",
+      "layoutProperties": {
+        "orientation": "vertical",
+        "layout_width": "match_parent",
+        "layout_height": "wrap_content",
+        "background": "#F8F8F8",
+        "navBarColor": "#093959",
+        "hideNavbar": true,
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true
+      },
+      "componentId": [
+        "joczQQH24ZyeW0bk0iA58",
+        "j7a5fz_dtfNqn12kypGLH",
+        "joczQQH24ZyeW0bk0iA58",
+        "j7a5fz_dtfNqn12kypGLH"
+      ]
+    },
+    "group": "Layout",
+    "type": "CONSTRAINT",
+    "status": "ACTIVE",
+    "updatedAt": "11/30/2023",
+    "createdAt": "11/30/2023",
+    "events": [
+      {
+        "triggerId": "D8iZ5RqfA0NV7iB75LpWj",
+        "triggerName": "set instant bill payment select category nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+    "gridProps": [
+      {
+        "id": "joczQQH24ZyeW0bk0iA58",
+        "status": "ACTIVE",
+        "_id": "61decfbf077814a0f374da01",
+        "name": "Search Bar",
+        "attributes": {
+          "name": "Search Bar",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "55",
+            "cornerRadius": [0, 0, 0, 0],
+            "textSize": 14,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "55",
+            "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+            "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+            "layout_marginLeft": 16,
+            "layout_marginRight": 16,
+            "layout_marginTop": 20,
+            "placeHolderTextSize": 14,
+            "textColor": "#000000",
+            "placeHolderTextColor": "#D1D1D1",
+            "searchComponentId": "PT52aDhTPtzG2k4dYGn9U",
+            "bindingKey": "abc",
+            "imgAsset": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6461bee34e35ca4a482afaf6",
+              "name": "Search_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "rOZJPpPU3wASeeUo_Q5Gw",
+              "gitBranchName": "master",
+              "folderType": "mdpi",
+              "platform": "Android",
+              "url": "Search_Icon.png",
+              "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+              "createdAt": "2023-05-15T05:10:59.310Z",
+              "updatedAt": "2023-05-15T05:10:59.310Z",
+              "__v": 0,
+              "uri": "Search_Icon.png"
+            },
+            "assetId": "rOZJPpPU3wASeeUo_Q5Gw",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6461bee34e35ca4a482afaf6",
+              "name": "Search_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "rOZJPpPU3wASeeUo_Q5Gw",
+              "gitBranchName": "master",
+              "folderType": "mdpi",
+              "platform": "Android",
+              "url": "Search_Icon.png",
+              "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+              "createdAt": "2023-05-15T05:10:59.310Z",
+              "updatedAt": "2023-05-15T05:10:59.310Z",
+              "__v": 0,
+              "uri": "Search_Icon.png"
+            },
+            "topToTopOf": "PT52aDhTPtzG2k4dYGn9U"
+          },
+          "validation": [],
+          "searchKey": "abc"
+        },
+        "icon": "FaSearchengin",
+        "group": "Advanced",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+        "path": "0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "j7a5fz_dtfNqn12kypGLH",
+        "type": "GLIST",
+        "name": "bill categories Grid List View",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "bill categories Grid List View",
+          "bindingKey": "categoriesAndCompanies.content.categoriesCollection",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 3,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "match_parent",
+            "rows": [
+              {
+                "id": "ujZWO5EKk_5A7YLuyEBWP",
+                "bindingKey": "selectedBillCategory",
+                "events": [
+                  {
+                    "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                    "triggerName": "navigate to instant bill companies screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToBottomOf": "joczQQH24ZyeW0bk0iA58",
+            "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+            "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+            "bottomToBottomOf": "PT52aDhTPtzG2k4dYGn9U",
+            "layout_marginLeft": 16,
+            "layout_marginRight": 16,
+            "layout_marginTop": null
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "ujZWO5EKk_5A7YLuyEBWP",
+            "name": "MOBILE_G_LIST_VIEW 0",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "M-CsIdEVvnPJwZZIbieP4",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "60",
+                    "layout_height": "60",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "unify_layout_width": "60",
+                    "unify_layout_height": "60",
+                    "url": "https://hliteuat.habibmetro.com/unify/images/",
+                    "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                    "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                    "layout_marginTop": 10,
+                    "scale": "aspectFit"
+                  },
+                  "contentType": 3
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "Pei3cm5GgD-t9MZxAt7-a",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 12,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "NAME",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "unify_layout_width": "wrap_content",
+                    "unify_layout_height": "wrap_content",
+                    "numberOfLines": 1,
+                    "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                    "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                    "layout_marginTop": 10,
+                    "textStyle": "regular",
+                    "textAlignment": "center"
+                  },
+                  "bindingKey": "categoryName"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-1"
+              }
+            ],
+            "attributes": {
+              "bindingKey": "selectedBillCategory",
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "width_percent": 33,
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "100"
+              }
+            },
+            "events": [
+              {
+                "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                "triggerName": "navigate to instant bill companies screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "screen",
+    "edit": true,
+    "layout": [
+      {
+        "id": "PT52aDhTPtzG2k4dYGn9U",
+        "name": "Instant bill payment select category screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Instant bill payment select category screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "D8iZ5RqfA0NV7iB75LpWj",
+            "triggerName": "set instant bill payment select category nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Select Category",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "joczQQH24ZyeW0bk0iA58",
+            "status": "ACTIVE",
+            "_id": "61decfbf077814a0f374da01",
+            "name": "Search Bar",
+            "attributes": {
+              "name": "Search Bar",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "55",
+                "cornerRadius": [0, 0, 0, 0],
+                "textSize": 14,
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "55",
+                "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+                "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+                "layout_marginLeft": 16,
+                "layout_marginRight": 16,
+                "layout_marginTop": 20,
+                "placeHolderTextSize": 14,
+                "textColor": "#000000",
+                "placeHolderTextColor": "#D1D1D1",
+                "searchComponentId": "PT52aDhTPtzG2k4dYGn9U",
+                "bindingKey": "abc",
+                "imgAsset": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6461bee34e35ca4a482afaf6",
+                  "name": "Search_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "rOZJPpPU3wASeeUo_Q5Gw",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "Search_Icon.png",
+                  "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+                  "createdAt": "2023-05-15T05:10:59.310Z",
+                  "updatedAt": "2023-05-15T05:10:59.310Z",
+                  "__v": 0,
+                  "uri": "Search_Icon.png"
+                },
+                "assetId": "rOZJPpPU3wASeeUo_Q5Gw",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6461bee34e35ca4a482afaf6",
+                  "name": "Search_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "rOZJPpPU3wASeeUo_Q5Gw",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "Search_Icon.png",
+                  "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+                  "createdAt": "2023-05-15T05:10:59.310Z",
+                  "updatedAt": "2023-05-15T05:10:59.310Z",
+                  "__v": 0,
+                  "uri": "Search_Icon.png"
+                },
+                "topToTopOf": "PT52aDhTPtzG2k4dYGn9U"
+              },
+              "validation": [],
+              "searchKey": "abc"
+            },
+            "icon": "FaSearchengin",
+            "group": "Advanced",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+            "path": "0-0",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "j7a5fz_dtfNqn12kypGLH",
+            "type": "GLIST",
+            "name": "bill categories Grid List View",
+            "component": { "content": "Grid List View", "type": "GLIST" },
+            "attributes": {
+              "name": "bill categories Grid List View",
+              "bindingKey": "categoriesAndCompanies.content.categoriesCollection",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "column": 3,
+                "layout_height": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "rows": [
+                  {
+                    "id": "ujZWO5EKk_5A7YLuyEBWP",
+                    "bindingKey": "selectedBillCategory",
+                    "events": [
+                      {
+                        "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                        "triggerName": "navigate to instant bill companies screen",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "topToBottomOf": "joczQQH24ZyeW0bk0iA58",
+                "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+                "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+                "bottomToBottomOf": "PT52aDhTPtzG2k4dYGn9U",
+                "layout_marginLeft": 16,
+                "layout_marginRight": 16,
+                "layout_marginTop": null
+              },
+              "componentId": []
+            },
+            "events": [],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "ujZWO5EKk_5A7YLuyEBWP",
+                "name": "MOBILE_G_LIST_VIEW 0",
+                "path": "0-1-0",
+                "type": "GLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "M-CsIdEVvnPJwZZIbieP4",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Image View",
+                    "attributes": {
+                      "name": "Image View",
+                      "layoutProperties": {
+                        "layout_width": "60",
+                        "layout_height": "60",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "unify_layout_width": "60",
+                        "unify_layout_height": "60",
+                        "url": "https://hliteuat.habibmetro.com/unify/images/",
+                        "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                        "layout_marginTop": 10,
+                        "scale": "aspectFit"
+                      },
+                      "contentType": 3
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-1-0-0"
+                  },
+                  {
+                    "id": "Pei3cm5GgD-t9MZxAt7-a",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 12,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "NAME",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "unify_layout_width": "wrap_content",
+                        "unify_layout_height": "wrap_content",
+                        "numberOfLines": 1,
+                        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                        "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                        "layout_marginTop": 10,
+                        "textStyle": "regular",
+                        "textAlignment": "center"
+                      },
+                      "bindingKey": "categoryName"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-1"
+                  }
+                ],
+                "attributes": {
+                  "bindingKey": "selectedBillCategory",
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "width_percent": 33,
+                    "unify_layout_width": "match_parent",
+                    "unify_layout_height": "100"
+                  }
+                },
+                "events": [
+                  {
+                    "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                    "triggerName": "navigate to instant bill companies screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "PT52aDhTPtzG2k4dYGn9U",
+        "name": "Instant bill payment select category screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Instant bill payment select category screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "joczQQH24ZyeW0bk0iA58",
+            "status": "ACTIVE",
+            "_id": "61decfbf077814a0f374da01",
+            "name": "Search Bar",
+            "attributes": {
+              "name": "Search Bar",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "55",
+                "cornerRadius": [0, 0, 0, 0],
+                "textSize": 14,
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "55",
+                "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+                "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+                "layout_marginLeft": 16,
+                "layout_marginRight": 16,
+                "layout_marginTop": 20,
+                "placeHolderTextSize": 14,
+                "textColor": "#000000",
+                "placeHolderTextColor": "#D1D1D1",
+                "searchComponentId": "PT52aDhTPtzG2k4dYGn9U",
+                "bindingKey": "abc",
+                "imgAsset": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6461bee34e35ca4a482afaf6",
+                  "name": "Search_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "rOZJPpPU3wASeeUo_Q5Gw",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "Search_Icon.png",
+                  "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+                  "createdAt": "2023-05-15T05:10:59.310Z",
+                  "updatedAt": "2023-05-15T05:10:59.310Z",
+                  "__v": 0,
+                  "uri": "Search_Icon.png"
+                },
+                "assetId": "rOZJPpPU3wASeeUo_Q5Gw",
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "6461bee34e35ca4a482afaf6",
+                  "name": "Search_Icon.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "rOZJPpPU3wASeeUo_Q5Gw",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "Search_Icon.png",
+                  "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+                  "createdAt": "2023-05-15T05:10:59.310Z",
+                  "updatedAt": "2023-05-15T05:10:59.310Z",
+                  "__v": 0,
+                  "uri": "Search_Icon.png"
+                },
+                "topToTopOf": "PT52aDhTPtzG2k4dYGn9U"
+              },
+              "validation": [],
+              "searchKey": "abc"
+            },
+            "icon": "FaSearchengin",
+            "group": "Advanced",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+            "path": "0-0",
+            "edit": true,
+            "events": []
+          },
+          {
+            "id": "j7a5fz_dtfNqn12kypGLH",
+            "type": "GLIST",
+            "name": "bill categories Grid List View",
+            "component": { "content": "Grid List View", "type": "GLIST" },
+            "attributes": {
+              "name": "bill categories Grid List View",
+              "bindingKey": "categoriesAndCompanies.content.categoriesCollection",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "column": 3,
+                "layout_height": "match_parent",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "rows": [
+                  {
+                    "id": "ujZWO5EKk_5A7YLuyEBWP",
+                    "bindingKey": "selectedBillCategory",
+                    "events": [
+                      {
+                        "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                        "triggerName": "navigate to instant bill companies screen",
+                        "type": "ONCLICK",
+                        "name": "On click"
+                      }
+                    ]
+                  }
+                ],
+                "topToBottomOf": "joczQQH24ZyeW0bk0iA58",
+                "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+                "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+                "bottomToBottomOf": "PT52aDhTPtzG2k4dYGn9U",
+                "layout_marginLeft": 16,
+                "layout_marginRight": 16,
+                "layout_marginTop": null
+              },
+              "componentId": ["ujZWO5EKk_5A7YLuyEBWP"]
+            },
+            "events": [],
+            "path": "0-1",
+            "gridProps": [
+              {
+                "id": "ujZWO5EKk_5A7YLuyEBWP",
+                "name": "MOBILE_G_LIST_VIEW 0",
+                "path": "0-1-0",
+                "type": "GLISTITEM",
+                "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+                "gridProps": [
+                  {
+                    "id": "M-CsIdEVvnPJwZZIbieP4",
+                    "status": "ACTIVE",
+                    "_id": "61decd8e077814a0f374d9fc",
+                    "name": "Image View",
+                    "attributes": {
+                      "name": "Image View",
+                      "layoutProperties": {
+                        "layout_width": "60",
+                        "layout_height": "60",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "unify_layout_width": "60",
+                        "unify_layout_height": "60",
+                        "url": "https://hliteuat.habibmetro.com/unify/images/",
+                        "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                        "layout_marginTop": 10,
+                        "scale": "aspectFit"
+                      },
+                      "contentType": 3
+                    },
+                    "icon": "FaRegImage",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": {
+                      "content": "Image view",
+                      "type": "IMAGEVIEW"
+                    },
+                    "path": "0-1-0-0"
+                  },
+                  {
+                    "id": "Pei3cm5GgD-t9MZxAt7-a",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Text view",
+                    "attributes": {
+                      "name": "Text view",
+                      "layoutProperties": {
+                        "textSize": 12,
+                        "layout_width": "wrap_content",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "NAME",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "unify_layout_width": "wrap_content",
+                        "unify_layout_height": "wrap_content",
+                        "numberOfLines": 1,
+                        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                        "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                        "layout_marginTop": 10,
+                        "textStyle": "regular",
+                        "textAlignment": "center"
+                      },
+                      "bindingKey": "categoryName"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-1"
+                  }
+                ],
+                "attributes": {
+                  "bindingKey": "selectedBillCategory",
+                  "layoutProperties": {
+                    "layout_height": "100",
+                    "layout_width": "match_parent",
+                    "width_percent": 33,
+                    "unify_layout_width": "match_parent",
+                    "unify_layout_height": "100"
+                  }
+                },
+                "events": [
+                  {
+                    "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                    "triggerName": "navigate to instant bill companies screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      }
+    ],
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "_id": "PT52aDhTPtzG2k4dYGn9U",
+    "createdBy": "ammarahmed",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "joczQQH24ZyeW0bk0iA58",
+    "status": "ACTIVE",
+    "name": "Search Bar",
+    "attributes": {
+      "name": "Search Bar",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "layout_height": "55",
+        "cornerRadius": [0, 0, 0, 0],
+        "textSize": 14,
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "55",
+        "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+        "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+        "layout_marginLeft": 16,
+        "layout_marginRight": 16,
+        "layout_marginTop": 20,
+        "placeHolderTextSize": 14,
+        "textColor": "#000000",
+        "placeHolderTextColor": "#D1D1D1",
+        "searchComponentId": "PT52aDhTPtzG2k4dYGn9U",
+        "bindingKey": "abc",
+        "imgAsset": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6461bee34e35ca4a482afaf6",
+          "name": "Search_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "rOZJPpPU3wASeeUo_Q5Gw",
+          "gitBranchName": "master",
+          "folderType": "mdpi",
+          "platform": "Android",
+          "url": "Search_Icon.png",
+          "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+          "createdAt": "2023-05-15T05:10:59.310Z",
+          "updatedAt": "2023-05-15T05:10:59.310Z",
+          "__v": 0,
+          "uri": "Search_Icon.png"
+        },
+        "assetId": "rOZJPpPU3wASeeUo_Q5Gw",
+        "srcTemp": {
+          "createdBy": "shaikhahmedraza",
+          "_id": "6461bee34e35ca4a482afaf6",
+          "name": "Search_Icon.png",
+          "type": "png",
+          "projectId": "63ef72a290c5800428f84dd9",
+          "id": "rOZJPpPU3wASeeUo_Q5Gw",
+          "gitBranchName": "master",
+          "folderType": "mdpi",
+          "platform": "Android",
+          "url": "Search_Icon.png",
+          "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+          "createdAt": "2023-05-15T05:10:59.310Z",
+          "updatedAt": "2023-05-15T05:10:59.310Z",
+          "__v": 0,
+          "uri": "Search_Icon.png"
+        },
+        "topToTopOf": "PT52aDhTPtzG2k4dYGn9U"
+      },
+      "validation": [],
+      "searchKey": "abc"
+    },
+    "icon": "FaSearchengin",
+    "group": "Advanced",
+    "type": "SEARCHBAR",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+    "path": "0-0",
+    "edit": true,
+    "events": [],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "j7a5fz_dtfNqn12kypGLH",
+    "type": "GLIST",
+    "name": "bill categories Grid List View",
+    "component": { "content": "Grid List View", "type": "GLIST" },
+    "attributes": {
+      "name": "bill categories Grid List View",
+      "bindingKey": "categoriesAndCompanies.content.categoriesCollection",
+      "layoutProperties": {
+        "layout_width": "match_parent",
+        "column": 3,
+        "layout_height": "match_parent",
+        "cornerRadius": [0, 0, 0, 0],
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "match_parent",
+        "rows": [
+          {
+            "id": "ujZWO5EKk_5A7YLuyEBWP",
+            "bindingKey": "selectedBillCategory",
+            "events": [
+              {
+                "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                "triggerName": "navigate to instant bill companies screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "topToBottomOf": "joczQQH24ZyeW0bk0iA58",
+        "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+        "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+        "bottomToBottomOf": "PT52aDhTPtzG2k4dYGn9U",
+        "layout_marginLeft": 16,
+        "layout_marginRight": 16,
+        "layout_marginTop": null
+      },
+      "componentId": ["ujZWO5EKk_5A7YLuyEBWP", "ujZWO5EKk_5A7YLuyEBWP"]
+    },
+    "events": [],
+    "path": "0-1",
+    "gridProps": [
+      {
+        "id": "ujZWO5EKk_5A7YLuyEBWP",
+        "name": "MOBILE_G_LIST_VIEW 0",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "M-CsIdEVvnPJwZZIbieP4",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "60",
+                "layout_height": "60",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "60",
+                "unify_layout_height": "60",
+                "url": "https://hliteuat.habibmetro.com/unify/images/",
+                "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                "layout_marginTop": 10,
+                "scale": "aspectFit"
+              },
+              "contentType": 3
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "Pei3cm5GgD-t9MZxAt7-a",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 12,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "NAME",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "wrap_content",
+                "unify_layout_height": "wrap_content",
+                "numberOfLines": 1,
+                "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                "layout_marginTop": 10,
+                "textStyle": "regular",
+                "textAlignment": "center"
+              },
+              "bindingKey": "categoryName"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-1"
+          }
+        ],
+        "attributes": {
+          "bindingKey": "selectedBillCategory",
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "width_percent": 33,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "100"
+          }
+        },
+        "events": [
+          {
+            "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+            "triggerName": "navigate to instant bill companies screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "edit": true,
+    "layout": [
+      {
+        "id": "joczQQH24ZyeW0bk0iA58",
+        "status": "ACTIVE",
+        "_id": "61decfbf077814a0f374da01",
+        "name": "Search Bar",
+        "attributes": {
+          "name": "Search Bar",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "layout_height": "55",
+            "cornerRadius": [0, 0, 0, 0],
+            "textSize": 14,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "55",
+            "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+            "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+            "layout_marginLeft": 16,
+            "layout_marginRight": 16,
+            "layout_marginTop": 20,
+            "placeHolderTextSize": 14,
+            "textColor": "#000000",
+            "placeHolderTextColor": "#D1D1D1",
+            "searchComponentId": "PT52aDhTPtzG2k4dYGn9U",
+            "bindingKey": "abc",
+            "imgAsset": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6461bee34e35ca4a482afaf6",
+              "name": "Search_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "rOZJPpPU3wASeeUo_Q5Gw",
+              "gitBranchName": "master",
+              "folderType": "mdpi",
+              "platform": "Android",
+              "url": "Search_Icon.png",
+              "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+              "createdAt": "2023-05-15T05:10:59.310Z",
+              "updatedAt": "2023-05-15T05:10:59.310Z",
+              "__v": 0,
+              "uri": "Search_Icon.png"
+            },
+            "assetId": "rOZJPpPU3wASeeUo_Q5Gw",
+            "srcTemp": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6461bee34e35ca4a482afaf6",
+              "name": "Search_Icon.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "rOZJPpPU3wASeeUo_Q5Gw",
+              "gitBranchName": "master",
+              "folderType": "mdpi",
+              "platform": "Android",
+              "url": "Search_Icon.png",
+              "canvasUrl": "Android/drawable-mdpi/Search_Icon.png",
+              "createdAt": "2023-05-15T05:10:59.310Z",
+              "updatedAt": "2023-05-15T05:10:59.310Z",
+              "__v": 0,
+              "uri": "Search_Icon.png"
+            },
+            "topToTopOf": "PT52aDhTPtzG2k4dYGn9U"
+          },
+          "validation": [],
+          "searchKey": "abc"
+        },
+        "icon": "FaSearchengin",
+        "group": "Advanced",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Search Bar", "type": "SEARCHBAR" },
+        "path": "0-0",
+        "edit": true,
+        "events": []
+      },
+      {
+        "id": "j7a5fz_dtfNqn12kypGLH",
+        "type": "GLIST",
+        "name": "bill categories Grid List View",
+        "component": { "content": "Grid List View", "type": "GLIST" },
+        "attributes": {
+          "name": "bill categories Grid List View",
+          "bindingKey": "categoriesAndCompanies.content.categoriesCollection",
+          "layoutProperties": {
+            "layout_width": "match_parent",
+            "column": 3,
+            "layout_height": "match_parent",
+            "cornerRadius": [0, 0, 0, 0],
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "match_parent",
+            "rows": [
+              {
+                "id": "ujZWO5EKk_5A7YLuyEBWP",
+                "bindingKey": "selectedBillCategory",
+                "events": [
+                  {
+                    "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                    "triggerName": "navigate to instant bill companies screen",
+                    "type": "ONCLICK",
+                    "name": "On click"
+                  }
+                ]
+              }
+            ],
+            "topToBottomOf": "joczQQH24ZyeW0bk0iA58",
+            "leftToLeftOf": "PT52aDhTPtzG2k4dYGn9U",
+            "rightToRightOf": "PT52aDhTPtzG2k4dYGn9U",
+            "bottomToBottomOf": "PT52aDhTPtzG2k4dYGn9U",
+            "layout_marginLeft": 16,
+            "layout_marginRight": 16,
+            "layout_marginTop": null
+          },
+          "componentId": []
+        },
+        "events": [],
+        "path": "0-1",
+        "gridProps": [
+          {
+            "id": "ujZWO5EKk_5A7YLuyEBWP",
+            "name": "MOBILE_G_LIST_VIEW 0",
+            "path": "0-1-0",
+            "type": "GLISTITEM",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+            "gridProps": [
+              {
+                "id": "M-CsIdEVvnPJwZZIbieP4",
+                "status": "ACTIVE",
+                "_id": "61decd8e077814a0f374d9fc",
+                "name": "Image View",
+                "attributes": {
+                  "name": "Image View",
+                  "layoutProperties": {
+                    "layout_width": "60",
+                    "layout_height": "60",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "unify_layout_width": "60",
+                    "unify_layout_height": "60",
+                    "url": "https://hliteuat.habibmetro.com/unify/images/",
+                    "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                    "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                    "layout_marginTop": 10,
+                    "scale": "aspectFit"
+                  },
+                  "contentType": 3
+                },
+                "icon": "FaRegImage",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Image view", "type": "IMAGEVIEW" },
+                "path": "0-1-0-0"
+              },
+              {
+                "id": "Pei3cm5GgD-t9MZxAt7-a",
+                "status": "ACTIVE",
+                "_id": "61dec5ad077814a0f374d9f3",
+                "name": "Text view",
+                "attributes": {
+                  "name": "Text view",
+                  "layoutProperties": {
+                    "textSize": 12,
+                    "layout_width": "wrap_content",
+                    "layout_height": "wrap_content",
+                    "textColor": "#000000",
+                    "text": "NAME",
+                    "cornerRadius": [0, 0, 0, 0],
+                    "unify_layout_width": "wrap_content",
+                    "unify_layout_height": "wrap_content",
+                    "numberOfLines": 1,
+                    "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                    "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                    "layout_marginTop": 10,
+                    "textStyle": "regular",
+                    "textAlignment": "center"
+                  },
+                  "bindingKey": "categoryName"
+                },
+                "icon": "FaTextWidth",
+                "group": "Form",
+                "type": "sidebarItem",
+                "updatedAt": "23-Aug-2021",
+                "createdAt": "23-Aug-2021",
+                "order": 20,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "mobile",
+                "component": { "content": "Text view", "type": "TEXTVIEW" },
+                "events": [],
+                "path": "0-1-0-1"
+              }
+            ],
+            "attributes": {
+              "bindingKey": "selectedBillCategory",
+              "layoutProperties": {
+                "layout_height": "100",
+                "layout_width": "match_parent",
+                "width_percent": 33,
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "100"
+              }
+            },
+            "events": [
+              {
+                "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+                "triggerName": "navigate to instant bill companies screen",
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          }
+        ],
+        "edit": true
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ujZWO5EKk_5A7YLuyEBWP",
+    "name": "MOBILE_G_LIST_VIEW 0",
+    "path": "0-1-0",
+    "type": "GLISTITEM",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+    "gridProps": [
+      {
+        "id": "M-CsIdEVvnPJwZZIbieP4",
+        "status": "ACTIVE",
+        "_id": "61decd8e077814a0f374d9fc",
+        "name": "Image View",
+        "attributes": {
+          "name": "Image View",
+          "layoutProperties": {
+            "layout_width": "60",
+            "layout_height": "60",
+            "cornerRadius": [0, 0, 0, 0],
+            "unify_layout_width": "60",
+            "unify_layout_height": "60",
+            "url": "https://hliteuat.habibmetro.com/unify/images/",
+            "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+            "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+            "layout_marginTop": 10,
+            "scale": "aspectFit"
+          },
+          "contentType": 3
+        },
+        "icon": "FaRegImage",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Image view", "type": "IMAGEVIEW" },
+        "path": "0-1-0-0"
+      },
+      {
+        "id": "Pei3cm5GgD-t9MZxAt7-a",
+        "status": "ACTIVE",
+        "_id": "61dec5ad077814a0f374d9f3",
+        "name": "Text view",
+        "attributes": {
+          "name": "Text view",
+          "layoutProperties": {
+            "textSize": 12,
+            "layout_width": "wrap_content",
+            "layout_height": "wrap_content",
+            "textColor": "#000000",
+            "text": "NAME",
+            "cornerRadius": [0, 0, 0, 0],
+            "unify_layout_width": "wrap_content",
+            "unify_layout_height": "wrap_content",
+            "numberOfLines": 1,
+            "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+            "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+            "layout_marginTop": 10,
+            "textStyle": "regular",
+            "textAlignment": "center"
+          },
+          "bindingKey": "categoryName"
+        },
+        "icon": "FaTextWidth",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "Text view", "type": "TEXTVIEW" },
+        "events": [],
+        "path": "0-1-0-1"
+      }
+    ],
+    "attributes": {
+      "bindingKey": "selectedBillCategory",
+      "layoutProperties": {
+        "layout_height": "100",
+        "layout_width": "match_parent",
+        "width_percent": 33,
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "100"
+      },
+      "componentId": [
+        "M-CsIdEVvnPJwZZIbieP4",
+        "Pei3cm5GgD-t9MZxAt7-a"
+      ]
+    },
+    "events": [
+      {
+        "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+        "triggerName": "navigate to instant bill companies screen",
+        "name": "On click",
+        "type": "ONCLICK"
+      }
+    ],
+    "layout": [
+      {
+        "id": "ujZWO5EKk_5A7YLuyEBWP",
+        "name": "MOBILE_G_LIST_VIEW 0",
+        "path": "0-1-0",
+        "type": "GLISTITEM",
+        "updatedTimestamp": "0000-00-00T00:00:00+00:00",
+        "gridProps": [
+          {
+            "id": "M-CsIdEVvnPJwZZIbieP4",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "60",
+                "layout_height": "60",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "60",
+                "unify_layout_height": "60",
+                "url": "https://hliteuat.habibmetro.com/unify/images/",
+                "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+                "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                "layout_marginTop": 10,
+                "scale": "aspectFit"
+              },
+              "contentType": 3
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1-0-0"
+          },
+          {
+            "id": "Pei3cm5GgD-t9MZxAt7-a",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "Text view",
+              "layoutProperties": {
+                "textSize": 12,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "NAME",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "wrap_content",
+                "unify_layout_height": "wrap_content",
+                "numberOfLines": 1,
+                "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+                "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+                "layout_marginTop": 10,
+                "textStyle": "regular",
+                "textAlignment": "center"
+              },
+              "bindingKey": "categoryName"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1-0-1"
+          }
+        ],
+        "attributes": {
+          "bindingKey": "selectedBillCategory",
+          "layoutProperties": {
+            "layout_height": "100",
+            "layout_width": "match_parent",
+            "width_percent": 33,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "100"
+          }
+        },
+        "events": [
+          {
+            "triggerId": "Fo_tBV3XWs_29QmY8HfLW",
+            "triggerName": "navigate to instant bill companies screen",
+            "type": "ONCLICK",
+            "name": "On click"
+          }
+        ]
+      }
+    ],
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "version": "1.0.0",
+    "gitBranchName": "master"
+  },
+  {
+    "id": "M-CsIdEVvnPJwZZIbieP4",
+    "status": "ACTIVE",
+    "name": "Image View",
+    "attributes": {
+      "name": "Image View",
+      "layoutProperties": {
+        "layout_width": "60",
+        "layout_height": "60",
+        "cornerRadius": [0, 0, 0, 0],
+        "unify_layout_width": "60",
+        "unify_layout_height": "60",
+        "url": "https://hliteuat.habibmetro.com/unify/images/",
+        "topToTopOf": "ujZWO5EKk_5A7YLuyEBWP",
+        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+        "layout_marginTop": 10,
+        "scale": "aspectFit"
+      },
+      "contentType": 3
+    },
+    "icon": "FaRegImage",
+    "group": "Form",
+    "type": "IMAGEVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Image view", "type": "IMAGEVIEW" },
+    "path": "0-1-0-0",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Pei3cm5GgD-t9MZxAt7-a",
+    "status": "ACTIVE",
+    "name": "Text view",
+    "attributes": {
+      "name": "Text view",
+      "layoutProperties": {
+        "textSize": 12,
+        "layout_width": "wrap_content",
+        "layout_height": "wrap_content",
+        "textColor": "#000000",
+        "text": "NAME",
+        "cornerRadius": [0, 0, 0, 0],
+        "unify_layout_width": "wrap_content",
+        "unify_layout_height": "wrap_content",
+        "numberOfLines": 1,
+        "centerX": "ujZWO5EKk_5A7YLuyEBWP",
+        "topToBottomOf": "M-CsIdEVvnPJwZZIbieP4",
+        "layout_marginTop": 10,
+        "textStyle": "regular",
+        "textAlignment": "center"
+      },
+      "bindingKey": "categoryName"
+    },
+    "icon": "FaTextWidth",
+    "group": "Form",
+    "type": "TEXTVIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "component": { "content": "Text view", "type": "TEXTVIEW" },
+    "events": [],
+    "path": "0-1-0-1",
+    "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

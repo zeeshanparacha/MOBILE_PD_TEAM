@@ -332,8 +332,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/19/2023",
-    "createdAt": "10/19/2023",
+    "updatedAt": "11/28/2023",
+    "createdAt": "11/28/2023",
     "events": [],
     "order": 1,
     "version": "1.0.0",
@@ -623,10 +623,12 @@
                       "__v": 0,
                       "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "bottomToBottomOf": null,
                     "layout_marginRight": 20,
                     "id": "fIRVjr2KucdwKgtVssOCY",
-                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "unify_layout_width": "20",
+                    "unify_layout_height": "20",
+                    "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
                   },
                   "contentType": 2
                 },
@@ -665,16 +667,16 @@
     "edit": true,
     "layout": [
       {
-        "id": "VdCFH3dNOROmoWq18ODLx",
-        "name": "ABC_Test_Copy",
+        "id": "dt2SnPWXYhmWzp7Fle8Ng",
+        "name": "general navbar new",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "ABC_Test_Copy",
+          "name": "general navbar new",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
-            "layout_height": "wrap_content",
+            "layout_height": "88",
             "statusBarColor": "#093959",
             "background": "#F8F8F8",
             "navBarColor": "#093959",
@@ -695,70 +697,42 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "CrhR7cpcVyQg_oD7j_D4I",
-            "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "ABC_View",
-            "attributes": {
-              "name": "ABC_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "match_parent",
-                "borderWidth": 0,
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#093959",
-                "leftToLeftOf": "VdCFH3dNOROmoWq18ODLx",
-                "rightToRightOf": "VdCFH3dNOROmoWq18ODLx",
-                "topToTopOf": "VdCFH3dNOROmoWq18ODLx",
-                "bottomToBottomOf": "VdCFH3dNOROmoWq18ODLx"
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-0"
-          },
-          {
-            "id": "14ZP73nBasmthqZCyp552",
+            "id": "ctQDPTyLPb7tqBKulXsBb",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "Image View",
+            "name": "bg image",
             "attributes": {
-              "name": "Image View",
+              "name": "bg image",
               "layoutProperties": {
                 "layout_width": "match_parent",
-                "layout_height": "130",
+                "layout_height": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "scale": "aspectFill",
+                "scaleType": "fitxy",
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "rightToRightOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "topToTopOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "id": "EUH9vvcCeZEdMNKFnr_xS",
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "64197a9c676c823a449f8251",
-                  "name": "HMB_Dash_Header_Bg.png",
+                  "createdBy": "user",
+                  "_id": "655323dd47bd902a3086e2b4",
+                  "name": "navbar.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "h-GOKyw8GtAXD_d4Pd_ys",
-                  "gitBranchName": "dev",
-                  "folderType": "xxxhdpi",
+                  "id": "EUH9vvcCeZEdMNKFnr_xS",
+                  "gitBranchName": "master",
+                  "folderType": "hdpi",
                   "platform": "Android",
-                  "url": "HMB_Dash_Header_Bg.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Dash_Header_Bg.png",
-                  "createdAt": "2023-03-21T09:36:28.544Z",
-                  "updatedAt": "2023-03-21T09:36:28.544Z",
+                  "url": "navbar.png",
+                  "canvasUrl": "Android/drawable-hdpi/navbar.png",
+                  "createdAt": "2023-11-14T07:38:05.677Z",
+                  "updatedAt": "2023-11-14T07:38:05.677Z",
                   "__v": 0,
-                  "uri": "HMB_Dash_Header_Bg.png"
-                },
-                "leftToLeftOf": "CrhR7cpcVyQg_oD7j_D4I",
-                "rightToRightOf": "CrhR7cpcVyQg_oD7j_D4I",
-                "topToTopOf": "CrhR7cpcVyQg_oD7j_D4I",
-                "id": "h-GOKyw8GtAXD_d4Pd_ys"
+                  "uri": "navbar.png"
+                }
               },
               "contentType": 2
             },
@@ -772,27 +746,50 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1"
+            "path": "0-0",
+            "edit": true,
+            "events": []
           },
           {
-            "id": "yqRTuhL47duHb0M69pcqy",
+            "id": "9My2hpI-qOjHGVLan0bxL",
             "status": "ACTIVE",
-            "_id": "629ee908abfebeb5178b7fb0",
-            "name": "TIMER",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
             "attributes": {
-              "name": "TIMER",
+              "name": "Image View",
               "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
                 "cornerRadius": [0, 0, 0, 0],
-                "otpTime": "100",
-                "topToBottomOf": "14ZP73nBasmthqZCyp552",
-                "leftToLeftOf": "VdCFH3dNOROmoWq18ODLx",
-                "background": "#C9C9C9"
+                "unify_layout_width": "30",
+                "unify_layout_height": "30",
+                "src": {
+                  "createdBy": "user",
+                  "_id": "65530cc747bd902a3086df08",
+                  "name": "close.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "xFd8JvM_Iapo5WLzQk70K",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "close.png",
+                  "canvasUrl": "Android/drawable-mdpi/close.png",
+                  "createdAt": "2023-11-14T05:59:35.608Z",
+                  "updatedAt": "2023-11-14T05:59:35.608Z",
+                  "__v": 0,
+                  "uri": "close.png"
+                },
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "centerY": "ZuKSy0Cyc7edqYakff1Qe",
+                "scale": "aspectFit",
+                "id": "xFd8JvM_Iapo5WLzQk70K",
+                "layout_marginLeft": 16
               },
-              "conditions": [],
-              "bindingKey": "d"
+              "contentType": 2
             },
-            "icon": "FaShieldAlt",
-            "group": "Security",
+            "icon": "FaRegImage",
+            "group": "Form",
             "type": "sidebarItem",
             "updatedAt": "23-Aug-2021",
             "createdAt": "23-Aug-2021",
@@ -800,13 +797,62 @@
             "version": "1.0.0",
             "isLatest": true,
             "projectType": "mobile",
-            "component": { "content": "Timer", "type": "TIMER" },
-            "path": "0-2",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1",
             "edit": true,
-            "events": []
+            "events": [
+              {
+                "triggerId": "Xji_n1WHYmxK4ptfnfakA",
+                "triggerName": "On tool bar back pressed",
+                "serviceType": "NAVIGATION",
+                "attributes": {},
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "ZuKSy0Cyc7edqYakff1Qe",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "nav heading",
+            "attributes": {
+              "name": "nav heading",
+              "layoutProperties": {
+                "textSize": 20,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Heading",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "wrap_content",
+                "unify_layout_height": "wrap_content",
+                "numberOfLines": 1,
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "layout_marginLeft": 55,
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "layout_marginBottom": 15
+              },
+              "bindingKey": "navHeading"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2",
+            "edit": true
           }
         ],
-        "subType": "screen",
+        "subType": "component",
         "isNavbarConstraint": true
       },
       {
@@ -1448,10 +1494,12 @@
                           "__v": 0,
                           "uri": "PD_Delete_Bin_Icon.png"
                         },
-                        "bottomToBottomOf": null,
                         "layout_marginRight": 20,
                         "id": "fIRVjr2KucdwKgtVssOCY",
-                        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+                        "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+                        "unify_layout_width": "20",
+                        "unify_layout_height": "20",
+                        "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
                       },
                       "contentType": 2
                     },
@@ -1782,10 +1830,12 @@
                   "__v": 0,
                   "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "bottomToBottomOf": null,
                 "layout_marginRight": 20,
                 "id": "fIRVjr2KucdwKgtVssOCY",
-                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+                "unify_layout_width": "20",
+                "unify_layout_height": "20",
+                "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
               },
               "contentType": 2
             },
@@ -2102,10 +2152,12 @@
                       "__v": 0,
                       "uri": "PD_Delete_Bin_Icon.png"
                     },
-                    "bottomToBottomOf": null,
                     "layout_marginRight": 20,
                     "id": "fIRVjr2KucdwKgtVssOCY",
-                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+                    "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+                    "unify_layout_width": "20",
+                    "unify_layout_height": "20",
+                    "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
                   },
                   "contentType": 2
                 },
@@ -2391,10 +2443,12 @@
               "__v": 0,
               "uri": "PD_Delete_Bin_Icon.png"
             },
-            "bottomToBottomOf": null,
             "layout_marginRight": 20,
             "id": "fIRVjr2KucdwKgtVssOCY",
-            "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+            "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+            "unify_layout_width": "20",
+            "unify_layout_height": "20",
+            "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
           },
           "contentType": 2
         },
@@ -2677,10 +2731,12 @@
                   "__v": 0,
                   "uri": "PD_Delete_Bin_Icon.png"
                 },
-                "bottomToBottomOf": null,
                 "layout_marginRight": 20,
                 "id": "fIRVjr2KucdwKgtVssOCY",
-                "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+                "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+                "unify_layout_width": "20",
+                "unify_layout_height": "20",
+                "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
               },
               "contentType": 2
             },
@@ -2969,10 +3025,12 @@
           "__v": 0,
           "uri": "PD_Delete_Bin_Icon.png"
         },
-        "bottomToBottomOf": null,
         "layout_marginRight": 20,
         "id": "fIRVjr2KucdwKgtVssOCY",
-        "centerY": "BRxJ8ucwsnOPBFtY4ugfi"
+        "centerY": "BRxJ8ucwsnOPBFtY4ugfi",
+        "unify_layout_width": "20",
+        "unify_layout_height": "20",
+        "rightToRightOf": "vE7BLBXfV7o3XQoHl3j_T"
       },
       "contentType": 2
     },

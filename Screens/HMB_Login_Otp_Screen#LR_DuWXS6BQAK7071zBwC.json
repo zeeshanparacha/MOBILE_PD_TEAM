@@ -10,7 +10,6 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
@@ -31,10 +30,24 @@
           "__v": 0,
           "uri": "HMB_Bg.png"
         },
-        "navbarHeight": 0,
-        "hideNavBar": true
+        "navbarHeight": "88",
+        "hideNavBar": false,
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true,
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng"
       },
       "componentId": [
+        "ZPswZL5ogemLZgffNpVhI",
+        "1HA6Demq_cznZm6OiS0q9",
+        "Eb3u0I1Mfp3GseafiZqzi",
+        "ebpL4OHesqXnEaXP-s9YO",
+        "nzMTGuRmiuBjf2EPdoyGW",
+        "cOlPWKL367tZjP_qBheFE",
+        "-ORKkixfgSyEmq4uvGA4l",
+        "P6l_lMgee67UjljI5Ef1v",
+        "YHNbUxvxCSUxofjEl__xS",
+        "dtm62GCP48v7XW7JSGfSe",
         "ZPswZL5ogemLZgffNpVhI",
         "1HA6Demq_cznZm6OiS0q9",
         "Eb3u0I1Mfp3GseafiZqzi",
@@ -51,9 +64,22 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "11/27/2023",
-    "createdAt": "11/27/2023",
-    "events": [],
+    "updatedAt": "11/30/2023",
+    "createdAt": "11/30/2023",
+    "events": [
+      {
+        "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+        "triggerName": "default device details",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "P3wCgNun5p7pgQ2OIhk3D",
+        "triggerName": "set login otp verification nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -480,7 +506,9 @@
             "selectedTintColor": "#FFFFFF",
             "cornerRadius": [0, 0, 0, 0],
             "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-            "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
+            "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
+            "unify_layout_width": "50",
+            "unify_layout_height": "40"
           },
           "bindingkey": "abc",
           "conditions": []
@@ -526,43 +554,6 @@
             "name": "On checked"
           }
         ]
-      },
-      {
-        "id": "zTSC8GwRSa_sRgdwVqSK1",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
-        "attributes": {
-          "name": "Text view",
-          "layoutProperties": {
-            "textSize": 18,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#FFFFFF",
-            "text": "Start Now",
-            "cornerRadius": [0, 0, 0, 0],
-            "topToBottomOf": "dtm62GCP48v7XW7JSGfSe",
-            "layout_marginTop": 5,
-            "textStyle": "bold",
-            "textAlignment": "center",
-            "layout_marginRight": 20,
-            "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
-          },
-          "bindingKey": "deviceMgmtAction"
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-10",
-        "edit": true
       }
     ],
     "subType": "screen",
@@ -579,7 +570,6 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "statusBarColor": "#093959",
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
@@ -600,8 +590,12 @@
               "__v": 0,
               "uri": "HMB_Bg.png"
             },
-            "navbarHeight": 0,
-            "hideNavBar": true
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng"
           },
           "componentId": []
         },
@@ -610,7 +604,34 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+            "triggerName": "default device details",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "deviceMgmtAction",
+              "value": "V",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "P3wCgNun5p7pgQ2OIhk3D",
+            "triggerName": "set login otp verification nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Verification",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -1039,7 +1060,550 @@
                 "selectedTintColor": "#FFFFFF",
                 "cornerRadius": [0, 0, 0, 0],
                 "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-                "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
+                "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
+                "unify_layout_width": "50",
+                "unify_layout_height": "40"
+              },
+              "bindingkey": "abc",
+              "conditions": []
+            },
+            "icon": "FaToggleOn",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Switch", "type": "SWITCH" },
+            "bindingkey": "abc",
+            "path": "0-9",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+                "triggerName": "default device details",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "deviceMgmtAction",
+                  "value": "V",
+                  "contentType": "string"
+                },
+                "type": "UNCHECKED",
+                "name": "Un checked"
+              },
+              {
+                "triggerId": "rvsQBxdIWSBuKudrp2Qjs",
+                "triggerName": "save device details",
+                "serviceType": "DATASTORAGE",
+                "attributes": {
+                  "serviceName": "Update value against binding key",
+                  "bindingKey": "deviceMgmtAction",
+                  "value": "A",
+                  "contentType": "string"
+                },
+                "type": "ONCHECKED",
+                "name": "On checked"
+              }
+            ]
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "LR_DuWXS6BQAK7071zBwC",
+        "name": "HMB_Login_Otp_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Login_Otp_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "src": {
+              "createdBy": "shaikhahmedraza",
+              "_id": "6410189d6ead56231ce8737e",
+              "name": "HMB_Bg.png",
+              "type": "png",
+              "projectId": "63ef72a290c5800428f84dd9",
+              "id": "vmlo5FoO7swshMZGO7iGH",
+              "gitBranchName": "dev",
+              "folderType": "xxxhdpi",
+              "platform": "Android",
+              "url": "HMB_Bg.png",
+              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Bg.png",
+              "createdAt": "2023-03-14T06:47:57.803Z",
+              "updatedAt": "2023-03-14T06:47:57.803Z",
+              "__v": 0,
+              "uri": "HMB_Bg.png"
+            },
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "OMsSDXEsgqPR7UKt4McwG",
+            "triggerName": "default device details",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "deviceMgmtAction",
+              "value": "V",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "ZPswZL5ogemLZgffNpVhI",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "LoginOtp_PleaseEnter_Text",
+            "attributes": {
+              "name": "LoginOtp_PleaseEnter_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Please Enter The Verification Code",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToTopOf": "LR_DuWXS6BQAK7071zBwC",
+                "layout_marginTop": 40,
+                "textStyle": "bold",
+                "textAlignment": "center",
+                "layout_marginRight": 0
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "1HA6Demq_cznZm6OiS0q9",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "LoginOtp_SendAt_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Sent At Your Registered",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "ZPswZL5ogemLZgffNpVhI",
+                "layout_marginTop": 0,
+                "textStyle": "bold",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-1"
+          },
+          {
+            "id": "Eb3u0I1Mfp3GseafiZqzi",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "LoginOtp_MobileEmail_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Mobile Or Email",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "1HA6Demq_cznZm6OiS0q9",
+                "layout_marginTop": -1,
+                "textStyle": "bold",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2"
+          },
+          {
+            "id": "ebpL4OHesqXnEaXP-s9YO",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "LoginOtp_Auth_Text",
+            "attributes": {
+              "name": "LoginOtp_Auth_Text",
+              "layoutProperties": {
+                "textSize": 16,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#FFFFFF",
+                "text": "Authentication",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "Eb3u0I1Mfp3GseafiZqzi",
+                "layout_marginTop": 78,
+                "textStyle": "bold",
+                "textAlignment": "center"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-3",
+            "edit": true
+          },
+          {
+            "id": "nzMTGuRmiuBjf2EPdoyGW",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "LoginOtp_Auth_Btmline_View",
+            "attributes": {
+              "name": "LoginOtp_Auth_Btmline_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "2",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#FFFFFF",
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "ebpL4OHesqXnEaXP-s9YO",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-4",
+            "edit": true
+          },
+          {
+            "id": "cOlPWKL367tZjP_qBheFE",
+            "status": "ACTIVE",
+            "_id": "61ded22f077814a0f374da07",
+            "name": "LoginOtp_Otp",
+            "attributes": {
+              "name": "LoginOtp_Otp",
+              "layoutProperties": {
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "nzMTGuRmiuBjf2EPdoyGW",
+                "layout_width": "match_constraint",
+                "layout_height": "40",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 20,
+                "activeLineColor": "#ffffff",
+                "lineColor": "#ffffff",
+                "textColor": "#FFFFFF",
+                "activeLineWidth": 1,
+                "lineWidth": 1,
+                "textSize": 15,
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "secureText": "*",
+                "length": "5",
+                "spacing": 10,
+                "keyboardType": "number"
+              },
+              "bindingKey": "sms_otp"
+            },
+            "icon": "FaShieldAlt",
+            "group": "Security",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "OTP", "type": "OTP" },
+            "events": [],
+            "path": "0-5",
+            "edit": true
+          },
+          {
+            "id": "-ORKkixfgSyEmq4uvGA4l",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "LoginOtp_MarktoSkip_Text",
+            "attributes": {
+              "name": "LoginOtp_MarktoSkip_Text",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "Mark to skip verification",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "bottomToBottomOf": "LR_DuWXS6BQAK7071zBwC",
+                "layout_marginLeft": 20,
+                "layout_marginBottom": 200,
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "layout_marginTop": 0
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-6",
+            "edit": true
+          },
+          {
+            "id": "P6l_lMgee67UjljI5Ef1v",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "LoginOtp_AvoidVerif_Text",
+            "attributes": {
+              "name": "LoginOtp_AvoidVerif_Text",
+              "layoutProperties": {
+                "textSize": 14,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#ffffff",
+                "text": "avoid verification on next login",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToBottomOf": "-ORKkixfgSyEmq4uvGA4l",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 0,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-7",
+            "edit": true
+          },
+          {
+            "id": "YHNbUxvxCSUxofjEl__xS",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "LoginOTP_Verify_Btn",
+            "attributes": {
+              "name": "LoginOTP_Verify_Btn",
+              "layoutProperties": {
+                "layout_width": "match_constraint",
+                "layout_height": "40",
+                "text": "VERIFY",
+                "textSize": 12,
+                "textColor": "#1d6131",
+                "textStyle": "medium",
+                "textAlignment": "center",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#FFFFFF",
+                "clickable": true,
+                "leftToLeftOf": "LR_DuWXS6BQAK7071zBwC",
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "bottomToBottomOf": "LR_DuWXS6BQAK7071zBwC",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 20,
+                "unify_layout_width": "match_constraint",
+                "unify_layout_height": "40"
+              },
+              "conditions": []
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "r3L2GRI0JNgGfYef4lvOa",
+                "triggerName": "deviceManagement",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName",
+                    "app_version": "5.1.3"
+                  },
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "action": "$deviceMgmtAction",
+                    "otpToken": "$hmb_loginKey.content.otpToken",
+                    "trustedDevice": {
+                      "countryCode": "PKR",
+                      "deviceKey": "$device.deviceKey",
+                      "fcmToken": null,
+                      "imei": "111111111111111",
+                      "ip": "$device.deviceIP",
+                      "isNotificationEnabled": true,
+                      "name": "$device.deviceName",
+                      "os": "$device.os",
+                      "osType": "$device.osType"
+                    },
+                    "validation": {
+                      "emailPin": "",
+                      "smsPin": "$sms_otp",
+                      "splitOtp": false,
+                      "validationType": "OTP"
+                    }
+                  },
+                  "url": "$baseMockUrl++/security/v2/deviceManagement",
+                  "responseStateKey": "devicemanage_data",
+                  "conditions": [
+                    {
+                      "logic": {
+                        "==": [{ "var": "devicemanage_data.code" }, 1]
+                      },
+                      "httpStatus": 200,
+                      "triggerName": "Navigate_to_HMB_Tabbar_Final",
+                      "triggerId": "-Os20THea9S8z99YkrzXE"
+                    }
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-8",
+            "edit": true
+          },
+          {
+            "id": "dtm62GCP48v7XW7JSGfSe",
+            "status": "ACTIVE",
+            "_id": "61ded150077814a0f374da05",
+            "name": "Switch",
+            "attributes": {
+              "name": "Switch",
+              "layoutProperties": {
+                "layout_width": "50",
+                "layout_height": "40",
+                "layout_marginLeft": 0,
+                "layout_marginRight": 20,
+                "layout_marginTop": 0,
+                "layout_marginBottom": 0,
+                "transform": "0.3",
+                "selectedTintColor": "#FFFFFF",
+                "cornerRadius": [0, 0, 0, 0],
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
+                "unify_layout_width": "50",
+                "unify_layout_height": "40"
               },
               "bindingkey": "abc",
               "conditions": []
@@ -1105,7 +1669,9 @@
                 "textStyle": "bold",
                 "textAlignment": "center",
                 "layout_marginRight": 20,
-                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
+                "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+                "unify_layout_width": "wrap_content",
+                "unify_layout_height": "wrap_content"
               },
               "bindingKey": "deviceMgmtAction"
             },
@@ -1532,7 +2098,9 @@
         "selectedTintColor": "#FFFFFF",
         "cornerRadius": [0, 0, 0, 0],
         "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
-        "topToTopOf": "-ORKkixfgSyEmq4uvGA4l"
+        "topToTopOf": "-ORKkixfgSyEmq4uvGA4l",
+        "unify_layout_width": "50",
+        "unify_layout_height": "40"
       },
       "bindingkey": "abc",
       "conditions": []
@@ -1587,7 +2155,9 @@
         "textStyle": "bold",
         "textAlignment": "center",
         "layout_marginRight": 20,
-        "rightToRightOf": "LR_DuWXS6BQAK7071zBwC"
+        "rightToRightOf": "LR_DuWXS6BQAK7071zBwC",
+        "unify_layout_width": "wrap_content",
+        "unify_layout_height": "wrap_content"
       },
       "bindingKey": "deviceMgmtAction"
     },
