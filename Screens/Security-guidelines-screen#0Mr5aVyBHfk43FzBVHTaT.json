@@ -5,25 +5,36 @@
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "Constraint Layout",
+      "name": "Security guidelines screen",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true
       },
-      "componentId": ["HAwohtOS4iV2UxR7u8I_d"]
+      "componentId": ["HAwohtOS4iV2UxR7u8I_d", "HAwohtOS4iV2UxR7u8I_d"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/26/2023",
-    "createdAt": "10/26/2023",
-    "events": [],
+    "updatedAt": "12/12/2023",
+    "createdAt": "12/12/2023",
+    "events": [
+      {
+        "triggerId": "q2m-PKyJ-m-iW1CLUX3gm",
+        "triggerName": "set security guidelines nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -47,7 +58,9 @@
             "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
             "textStyle": "regular",
             "textColor": "#000000",
-            "textAlignment": "left"
+            "textAlignment": "left",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "match_parent"
           },
           "bindingKey": "SecurityGuidelines.content.htmlContent",
           "contentType": "State based",
@@ -97,6 +110,7 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
         "id": "0Mr5aVyBHfk43FzBVHTaT",
@@ -104,7 +118,127 @@
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "Constraint Layout",
+          "name": "Security guidelines screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "q2m-PKyJ-m-iW1CLUX3gm",
+            "triggerName": "set security guidelines nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Security Guidelines",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "HAwohtOS4iV2UxR7u8I_d",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "security guidelines WEB VIEW",
+            "attributes": {
+              "name": "security guidelines WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 18,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "rightToRightOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "topToTopOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
+                "textStyle": "regular",
+                "textColor": "#000000",
+                "textAlignment": "left",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent"
+              },
+              "bindingKey": "SecurityGuidelines.content.htmlContent",
+              "contentType": "State based",
+              "conditions": []
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "vG1WfQQY_hx6QCwkn9W7E",
+                "triggerName": "getSecurityGuidelines",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "$baseMockUrl++/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "SECURITY_TIPS" },
+                  "responseStateKey": "SecurityGuidelines"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-0",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "0Mr5aVyBHfk43FzBVHTaT",
+        "name": "Security guidelines screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Security guidelines screen",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
@@ -113,7 +247,9 @@
             "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88"
           },
           "componentId": []
         },
@@ -146,7 +282,9 @@
                 "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
                 "textStyle": "regular",
                 "textColor": "#000000",
-                "textAlignment": "left"
+                "textAlignment": "left",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent"
               },
               "bindingKey": "SecurityGuidelines.content.htmlContent",
               "contentType": "State based",
@@ -221,7 +359,9 @@
         "bottomToBottomOf": "0Mr5aVyBHfk43FzBVHTaT",
         "textStyle": "regular",
         "textColor": "#000000",
-        "textAlignment": "left"
+        "textAlignment": "left",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "match_parent"
       },
       "bindingKey": "SecurityGuidelines.content.htmlContent",
       "contentType": "State based",

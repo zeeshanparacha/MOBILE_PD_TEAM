@@ -10,22 +10,32 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navbarHeight": 0,
-        "hideNavBar": true
+        "navbarHeight": "88",
+        "hideNavBar": false,
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true
       },
-      "componentId": ["fV4wN1JxM0ko77IzPZGvV"]
+      "componentId": ["fV4wN1JxM0ko77IzPZGvV", "fV4wN1JxM0ko77IzPZGvV"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/27/2023",
-    "createdAt": "10/27/2023",
-    "events": [],
+    "updatedAt": "12/12/2023",
+    "createdAt": "12/12/2023",
+    "events": [
+      {
+        "triggerId": "xEmVWZlKJ38zlJXFydVn9",
+        "triggerName": "set general faqs nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -51,11 +61,13 @@
             "leftToLeftOf": "wOizm4GV0qLmZXsXKAJCZ",
             "rightToRightOf": "wOizm4GV0qLmZXsXKAJCZ",
             "topToTopOf": "wOizm4GV0qLmZXsXKAJCZ",
-            "layout_marginTop": 20,
-            "layout_marginRight": 15,
-            "layout_marginLeft": 15,
-            "layout_marginBottom": 90,
-            "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ"
+            "layout_marginTop": null,
+            "layout_marginRight": 0,
+            "layout_marginLeft": 0,
+            "layout_marginBottom": null,
+            "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "500"
           },
           "componentId": [],
           "bindingKey": "faq_general_data.content.0.groupFAQ"
@@ -73,10 +85,12 @@
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "clickable": true,
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
                 "layout_marginTop": 10,
-                "background": "#F1F1F1"
+                "background": "#F1F1F1",
+                "unify_layout_height": "100",
+                "unify_layout_width": "match_parent"
               },
               "componentId": []
             },
@@ -170,9 +184,11 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "background": "#F1F1F1"
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
+                "background": "#F1F1F1",
+                "unify_layout_height": "100",
+                "unify_layout_width": "match_parent"
               },
               "componentId": []
             },
@@ -275,13 +291,16 @@
             "orientation": "vertical",
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "statusBarColor": "#093959",
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navbarHeight": 0,
-            "hideNavBar": true
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true
           },
           "componentId": []
         },
@@ -290,7 +309,21 @@
         "status": "ACTIVE",
         "updatedAt": "2021-09-23T15:17:45.489Z",
         "createdAt": "2021-08-24T06:05:50.559Z",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "xEmVWZlKJ38zlJXFydVn9",
+            "triggerName": "set general faqs nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "General FAQs",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -316,11 +349,13 @@
                 "leftToLeftOf": "wOizm4GV0qLmZXsXKAJCZ",
                 "rightToRightOf": "wOizm4GV0qLmZXsXKAJCZ",
                 "topToTopOf": "wOizm4GV0qLmZXsXKAJCZ",
-                "layout_marginTop": 20,
-                "layout_marginRight": 15,
-                "layout_marginLeft": 15,
-                "layout_marginBottom": 90,
-                "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ"
+                "layout_marginTop": null,
+                "layout_marginRight": 0,
+                "layout_marginLeft": 0,
+                "layout_marginBottom": null,
+                "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "500"
               },
               "componentId": [],
               "bindingKey": "faq_general_data.content.0.groupFAQ"
@@ -338,10 +373,12 @@
                     "layout_width": "match_parent",
                     "layout_height": "wrap_content",
                     "clickable": true,
-                    "layout_marginLeft": 10,
-                    "layout_marginRight": 10,
+                    "layout_marginLeft": 0,
+                    "layout_marginRight": 0,
                     "layout_marginTop": 10,
-                    "background": "#F1F1F1"
+                    "background": "#F1F1F1",
+                    "unify_layout_height": "100",
+                    "unify_layout_width": "match_parent"
                   },
                   "componentId": []
                 },
@@ -435,9 +472,283 @@
                   "layoutProperties": {
                     "layout_width": "match_parent",
                     "layout_height": "wrap_content",
-                    "layout_marginLeft": 10,
-                    "layout_marginRight": 10,
-                    "background": "#F1F1F1"
+                    "layout_marginLeft": 0,
+                    "layout_marginRight": 0,
+                    "background": "#F1F1F1",
+                    "unify_layout_height": "100",
+                    "unify_layout_width": "match_parent"
+                  },
+                  "componentId": []
+                },
+                "path": "0-1-1",
+                "gridProps": [
+                  {
+                    "id": "f3g8hMAPxsTlu_LSoSOpX",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "Faq_Elist_Child_View",
+                    "attributes": {
+                      "name": "Faq_Elist_Child_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [0, 0, 0, 0],
+                        "background": "#F1F1F1",
+                        "leftToLeftOf": "8KYpiIfS0VNy-iipgp7tU",
+                        "rightToRightOf": "8KYpiIfS0VNy-iipgp7tU",
+                        "topToTopOf": "8KYpiIfS0VNy-iipgp7tU",
+                        "bottomToBottomOf": "8KYpiIfS0VNy-iipgp7tU"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-1-1-0"
+                  },
+                  {
+                    "id": "8eiid-trnKq770tHBgP7q",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Faq_Elist_Child_Text",
+                    "attributes": {
+                      "name": "Faq_Elist_Child_Text",
+                      "layoutProperties": {
+                        "textSize": 14,
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "textColor": "#868985",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 100,
+                        "leftToLeftOf": "f3g8hMAPxsTlu_LSoSOpX",
+                        "rightToRightOf": "f3g8hMAPxsTlu_LSoSOpX",
+                        "topToTopOf": "f3g8hMAPxsTlu_LSoSOpX",
+                        "layout_marginLeft": 10,
+                        "layout_marginRight": 10,
+                        "textStyle": "regular",
+                        "textAlignment": "left",
+                        "layout_marginTop": 5,
+                        "tag": "answer",
+                        "bottomToBottomOf": "f3g8hMAPxsTlu_LSoSOpX",
+                        "layout_marginBottom": 5,
+                        "elevation": 20
+                      },
+                      "bindingKey": "answer"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-1-1",
+                    "edit": true
+                  }
+                ]
+              }
+            ],
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "wOizm4GV0qLmZXsXKAJCZ",
+        "name": "HMB_Prleogin_Faqs_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Prleogin_Faqs_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "fV4wN1JxM0ko77IzPZGvV",
+            "type": "sidebarItem",
+            "name": "Faq_Elist",
+            "component": { "content": "Expandible List View", "type": "ELIST" },
+            "attributes": {
+              "name": "Faq_Elist",
+              "layoutProperties": {
+                "bindingKey": "",
+                "groupTitleKey": "question",
+                "groupItemsKey": "answer",
+                "bounce": false,
+                "spacing": "20",
+                "parentId": "_vQ98NnboqJIzt7M6buWc",
+                "childId": "8KYpiIfS0VNy-iipgp7tU",
+                "layout_width": "match_parent",
+                "layout_height": "wrap_content",
+                "leftToLeftOf": "wOizm4GV0qLmZXsXKAJCZ",
+                "rightToRightOf": "wOizm4GV0qLmZXsXKAJCZ",
+                "topToTopOf": "wOizm4GV0qLmZXsXKAJCZ",
+                "layout_marginTop": null,
+                "layout_marginRight": 0,
+                "layout_marginLeft": 0,
+                "layout_marginBottom": null,
+                "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "500"
+              },
+              "componentId": [],
+              "bindingKey": "faq_general_data.content.0.groupFAQ"
+            },
+            "events": [],
+            "path": "0-0",
+            "gridProps": [
+              {
+                "id": "_vQ98NnboqJIzt7M6buWc",
+                "type": "ELISTITEM",
+                "name": "ELIST Parent",
+                "events": [],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "clickable": true,
+                    "layout_marginLeft": 0,
+                    "layout_marginRight": 0,
+                    "layout_marginTop": 10,
+                    "background": "#F1F1F1",
+                    "unify_layout_height": "100",
+                    "unify_layout_width": "match_parent"
+                  },
+                  "componentId": []
+                },
+                "path": "0-1-0",
+                "gridProps": [
+                  {
+                    "id": "yWsSlmxxfTbaXj1Qj5kvQ",
+                    "status": "ACTIVE",
+                    "_id": "61dec691077814a0f374d9f4",
+                    "name": "Faq_Elist_Parent_View",
+                    "attributes": {
+                      "name": "Faq_Elist_Parent_View",
+                      "layoutProperties": {
+                        "name": "View",
+                        "layout_width": "match_parent",
+                        "layout_height": "match_parent",
+                        "borderWidth": 0,
+                        "cornerRadius": [0, 0, 0, 0],
+                        "background": "#F1F1F1",
+                        "leftToLeftOf": "_vQ98NnboqJIzt7M6buWc",
+                        "rightToRightOf": "_vQ98NnboqJIzt7M6buWc",
+                        "topToTopOf": "_vQ98NnboqJIzt7M6buWc",
+                        "bottomToBottomOf": "_vQ98NnboqJIzt7M6buWc"
+                      }
+                    },
+                    "icon": "FaTabletAlt",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "View", "type": "VIEW" },
+                    "events": [],
+                    "path": "0-1-0-0"
+                  },
+                  {
+                    "id": "uaGZHLM6STZziygP0C3sL",
+                    "status": "ACTIVE",
+                    "_id": "61dec5ad077814a0f374d9f3",
+                    "name": "Faq_Elist_Parent_Title_Text",
+                    "attributes": {
+                      "name": "Faq_Elist_Parent_Title_Text",
+                      "layoutProperties": {
+                        "textSize": 14,
+                        "layout_width": "match_parent",
+                        "layout_height": "wrap_content",
+                        "textColor": "#000000",
+                        "text": "Start Now",
+                        "cornerRadius": [0, 0, 0, 0],
+                        "numberOfLines": 100,
+                        "leftToLeftOf": "yWsSlmxxfTbaXj1Qj5kvQ",
+                        "rightToRightOf": "yWsSlmxxfTbaXj1Qj5kvQ",
+                        "topToTopOf": "yWsSlmxxfTbaXj1Qj5kvQ",
+                        "bottomToBottomOf": "yWsSlmxxfTbaXj1Qj5kvQ",
+                        "layout_marginLeft": 10,
+                        "layout_marginRight": 10,
+                        "textStyle": "regular",
+                        "textAlignment": "left",
+                        "layout_marginTop": 5,
+                        "layout_marginBottom": 5,
+                        "tag": "question",
+                        "elevation": 20
+                      },
+                      "bindingKey": "question"
+                    },
+                    "icon": "FaTextWidth",
+                    "group": "Form",
+                    "type": "sidebarItem",
+                    "updatedAt": "23-Aug-2021",
+                    "createdAt": "23-Aug-2021",
+                    "order": 20,
+                    "version": "1.0.0",
+                    "isLatest": true,
+                    "projectType": "mobile",
+                    "component": { "content": "Text view", "type": "TEXTVIEW" },
+                    "events": [],
+                    "path": "0-1-0-1",
+                    "edit": true
+                  }
+                ]
+              },
+              {
+                "id": "8KYpiIfS0VNy-iipgp7tU",
+                "name": "ELIST Child",
+                "type": "ELISTITEM",
+                "events": [],
+                "attributes": {
+                  "layoutProperties": {
+                    "layout_width": "match_parent",
+                    "layout_height": "wrap_content",
+                    "layout_marginLeft": 0,
+                    "layout_marginRight": 0,
+                    "background": "#F1F1F1",
+                    "unify_layout_height": "100",
+                    "unify_layout_width": "match_parent"
                   },
                   "componentId": []
                 },
@@ -556,13 +867,20 @@
         "leftToLeftOf": "wOizm4GV0qLmZXsXKAJCZ",
         "rightToRightOf": "wOizm4GV0qLmZXsXKAJCZ",
         "topToTopOf": "wOizm4GV0qLmZXsXKAJCZ",
-        "layout_marginTop": 20,
-        "layout_marginRight": 15,
-        "layout_marginLeft": 15,
-        "layout_marginBottom": 90,
-        "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ"
+        "layout_marginTop": null,
+        "layout_marginRight": 0,
+        "layout_marginLeft": 0,
+        "layout_marginBottom": null,
+        "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "500"
       },
-      "componentId": ["_vQ98NnboqJIzt7M6buWc", "8KYpiIfS0VNy-iipgp7tU"],
+      "componentId": [
+        "_vQ98NnboqJIzt7M6buWc",
+        "8KYpiIfS0VNy-iipgp7tU",
+        "_vQ98NnboqJIzt7M6buWc",
+        "8KYpiIfS0VNy-iipgp7tU"
+      ],
       "bindingKey": "faq_general_data.content.0.groupFAQ"
     },
     "events": [],
@@ -578,10 +896,12 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "clickable": true,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
             "layout_marginTop": 10,
-            "background": "#F1F1F1"
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },
@@ -675,9 +995,11 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "background": "#F1F1F1"
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },
@@ -785,11 +1107,13 @@
             "leftToLeftOf": "wOizm4GV0qLmZXsXKAJCZ",
             "rightToRightOf": "wOizm4GV0qLmZXsXKAJCZ",
             "topToTopOf": "wOizm4GV0qLmZXsXKAJCZ",
-            "layout_marginTop": 20,
-            "layout_marginRight": 15,
-            "layout_marginLeft": 15,
-            "layout_marginBottom": 90,
-            "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ"
+            "layout_marginTop": null,
+            "layout_marginRight": 0,
+            "layout_marginLeft": 0,
+            "layout_marginBottom": null,
+            "bottomToBottomOf": "wOizm4GV0qLmZXsXKAJCZ",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "500"
           },
           "componentId": [],
           "bindingKey": "faq_general_data.content.0.groupFAQ"
@@ -807,10 +1131,12 @@
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
                 "clickable": true,
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
                 "layout_marginTop": 10,
-                "background": "#F1F1F1"
+                "background": "#F1F1F1",
+                "unify_layout_height": "100",
+                "unify_layout_width": "match_parent"
               },
               "componentId": []
             },
@@ -904,9 +1230,11 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "wrap_content",
-                "layout_marginLeft": 10,
-                "layout_marginRight": 10,
-                "background": "#F1F1F1"
+                "layout_marginLeft": 0,
+                "layout_marginRight": 0,
+                "background": "#F1F1F1",
+                "unify_layout_height": "100",
+                "unify_layout_width": "match_parent"
               },
               "componentId": []
             },
@@ -1011,12 +1339,19 @@
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "clickable": true,
-        "layout_marginLeft": 10,
-        "layout_marginRight": 10,
+        "layout_marginLeft": 0,
+        "layout_marginRight": 0,
         "layout_marginTop": 10,
-        "background": "#F1F1F1"
+        "background": "#F1F1F1",
+        "unify_layout_height": "100",
+        "unify_layout_width": "match_parent"
       },
-      "componentId": ["yWsSlmxxfTbaXj1Qj5kvQ", "uaGZHLM6STZziygP0C3sL"]
+      "componentId": [
+        "yWsSlmxxfTbaXj1Qj5kvQ",
+        "uaGZHLM6STZziygP0C3sL",
+        "yWsSlmxxfTbaXj1Qj5kvQ",
+        "uaGZHLM6STZziygP0C3sL"
+      ]
     },
     "path": "0-1-0",
     "gridProps": [
@@ -1109,10 +1444,12 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "clickable": true,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
             "layout_marginTop": 10,
-            "background": "#F1F1F1"
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },
@@ -1206,9 +1543,11 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "background": "#F1F1F1"
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },
@@ -1392,11 +1731,18 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "layout_marginLeft": 10,
-        "layout_marginRight": 10,
-        "background": "#F1F1F1"
+        "layout_marginLeft": 0,
+        "layout_marginRight": 0,
+        "background": "#F1F1F1",
+        "unify_layout_height": "100",
+        "unify_layout_width": "match_parent"
       },
-      "componentId": ["f3g8hMAPxsTlu_LSoSOpX", "8eiid-trnKq770tHBgP7q"]
+      "componentId": [
+        "f3g8hMAPxsTlu_LSoSOpX",
+        "8eiid-trnKq770tHBgP7q",
+        "f3g8hMAPxsTlu_LSoSOpX",
+        "8eiid-trnKq770tHBgP7q"
+      ]
     },
     "path": "0-1-1",
     "gridProps": [
@@ -1489,10 +1835,12 @@
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
             "clickable": true,
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
             "layout_marginTop": 10,
-            "background": "#F1F1F1"
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },
@@ -1586,9 +1934,11 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "wrap_content",
-            "layout_marginLeft": 10,
-            "layout_marginRight": 10,
-            "background": "#F1F1F1"
+            "layout_marginLeft": 0,
+            "layout_marginRight": 0,
+            "background": "#F1F1F1",
+            "unify_layout_height": "100",
+            "unify_layout_width": "match_parent"
           },
           "componentId": []
         },

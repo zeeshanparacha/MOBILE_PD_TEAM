@@ -55,8 +55,8 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "11/30/2023",
-    "createdAt": "11/30/2023",
+    "updatedAt": "12/1/2023",
+    "createdAt": "12/1/2023",
     "events": [
       {
         "triggerId": "AR8n5Ab_XFyOYMpqSZ69h",
@@ -743,7 +743,13 @@
             "placeHolderTextColor": "#989898",
             "fontName": "Circular Std",
             "layout_marginLeft": 16,
-            "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-"
+            "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-",
+            "required": {
+              "validationType": "required",
+              "value": true,
+              "errorMessage": "Enter Amount",
+              "validationTypeName": "Required"
+            }
           },
           "bindingKey": "ft_amount"
         },
@@ -1325,7 +1331,8 @@
             "leftToRightOf": "0AWLQ4Mmvzrr6amempWV5",
             "bottomToBottomOf": "eTekI6McU8G9y1I6Qm3uA",
             "rightToRightOf": "eTekI6McU8G9y1I6Qm3uA"
-          }
+          },
+          "conditions": []
         },
         "icon": "FaBimobject",
         "group": "Form",
@@ -1339,50 +1346,15 @@
         "component": { "content": "Button", "type": "BUTTON" },
         "events": [
           {
-            "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
-            "triggerName": "HMB_GetAccountDetails_Api_Trig",
-            "serviceType": "NETWORK",
+            "triggerId": "GqszJN3gDv4XVsjE4UXiY",
+            "triggerName": "getAccountDetailsValidation",
+            "serviceType": "VALIDATION",
             "attributes": {
-              "serviceName": "POST",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "$hmb_loginKey.content.token",
-                "hmbToken": "$hmb_loginKey.content.otpToken",
-                "version_code": "1",
-                "channel_key": "006",
-                "activity_id": "1",
-                "deviceKey": "1244d1426ebe80d3",
-                "deviceName": "2201117TG",
-                "locale": "en",
-                "entityId": "1",
-                "app_version": "5.1.0"
-              },
-              "requestDataType": "byJSON",
-              "url": "$baseMockUrl++/account/v1/getAccountDetails",
-              "requestBody": {
-                "accNo": "$selectedAcc_QRGenerate.accountNumber",
-                "accountId": "$selectedAcc_QRGenerate.accountId",
-                "accountNumber": "$selectedBeneficiary.accountNumber",
-                "amount": "$ft_amount",
-                "bankIMD": "$selectedBeneficiary.bankIMD",
-                "bankName": null,
-                "fromAccount": null,
-                "purposeCode": "",
-                "purposeDetail": "$ft_purpose.value",
-                "rda": false,
-                "swiftCode": null,
-                "toAccount": null
-              },
-              "responseStateKey": "hmb_getAccountDetails",
-              "conditions": [
-                {
-                  "httpStatus": 200,
-                  "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
-                  "triggerId": "WfoRghy24XDRvZ_8GUi1a",
-                  "logic": {
-                    "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
-                  }
-                }
+              "serviceName": "Validation",
+              "selectedTriggerId": "rZ_OGL6wTp0jscUSRrK8N",
+              "componentId": ["a7g7oKk37GF0B7Cc1oua1"],
+              "component": [
+                { "id": "a7g7oKk37GF0B7Cc1oua1", "name": "Amount input" }
               ]
             },
             "type": "ONCLICK",
@@ -2341,7 +2313,13 @@
                 "placeHolderTextColor": "#989898",
                 "fontName": "Circular Std",
                 "layout_marginLeft": 16,
-                "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-"
+                "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-",
+                "required": {
+                  "validationType": "required",
+                  "value": true,
+                  "errorMessage": "Enter Amount",
+                  "validationTypeName": "Required"
+                }
               },
               "bindingKey": "ft_amount"
             },
@@ -2923,7 +2901,8 @@
                 "leftToRightOf": "0AWLQ4Mmvzrr6amempWV5",
                 "bottomToBottomOf": "eTekI6McU8G9y1I6Qm3uA",
                 "rightToRightOf": "eTekI6McU8G9y1I6Qm3uA"
-              }
+              },
+              "conditions": []
             },
             "icon": "FaBimobject",
             "group": "Form",
@@ -2937,50 +2916,15 @@
             "component": { "content": "Button", "type": "BUTTON" },
             "events": [
               {
-                "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
-                "triggerName": "HMB_GetAccountDetails_Api_Trig",
-                "serviceType": "NETWORK",
+                "triggerId": "GqszJN3gDv4XVsjE4UXiY",
+                "triggerName": "getAccountDetailsValidation",
+                "serviceType": "VALIDATION",
                 "attributes": {
-                  "serviceName": "POST",
-                  "headers": {
-                    "Content-Type": "application/json",
-                    "Authorization": "$hmb_loginKey.content.token",
-                    "hmbToken": "$hmb_loginKey.content.otpToken",
-                    "version_code": "1",
-                    "channel_key": "006",
-                    "activity_id": "1",
-                    "deviceKey": "1244d1426ebe80d3",
-                    "deviceName": "2201117TG",
-                    "locale": "en",
-                    "entityId": "1",
-                    "app_version": "5.1.0"
-                  },
-                  "requestDataType": "byJSON",
-                  "url": "$baseMockUrl++/account/v1/getAccountDetails",
-                  "requestBody": {
-                    "accNo": "$selectedAcc_QRGenerate.accountNumber",
-                    "accountId": "$selectedAcc_QRGenerate.accountId",
-                    "accountNumber": "$selectedBeneficiary.accountNumber",
-                    "amount": "$ft_amount",
-                    "bankIMD": "$selectedBeneficiary.bankIMD",
-                    "bankName": null,
-                    "fromAccount": null,
-                    "purposeCode": "",
-                    "purposeDetail": "$ft_purpose.value",
-                    "rda": false,
-                    "swiftCode": null,
-                    "toAccount": null
-                  },
-                  "responseStateKey": "hmb_getAccountDetails",
-                  "conditions": [
-                    {
-                      "httpStatus": 200,
-                      "triggerName": "Navigate_to_FT_ConfirmDetails_Screen",
-                      "triggerId": "WfoRghy24XDRvZ_8GUi1a",
-                      "logic": {
-                        "==": [{ "var": "hmb_getAccountDetails.code" }, 1]
-                      }
-                    }
+                  "serviceName": "Validation",
+                  "selectedTriggerId": "rZ_OGL6wTp0jscUSRrK8N",
+                  "componentId": ["a7g7oKk37GF0B7Cc1oua1"],
+                  "component": [
+                    { "id": "a7g7oKk37GF0B7Cc1oua1", "name": "Amount input" }
                   ]
                 },
                 "type": "ONCLICK",
@@ -3742,7 +3686,13 @@
         "placeHolderTextColor": "#989898",
         "fontName": "Circular Std",
         "layout_marginLeft": 16,
-        "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-"
+        "rightToRightOf": "SW8gtrVK3OAe0wgsXrdC-",
+        "required": {
+          "validationType": "required",
+          "value": true,
+          "errorMessage": "Enter Amount",
+          "validationTypeName": "Required"
+        }
       },
       "bindingKey": "ft_amount"
     },
@@ -4259,7 +4209,8 @@
         "leftToRightOf": "0AWLQ4Mmvzrr6amempWV5",
         "bottomToBottomOf": "eTekI6McU8G9y1I6Qm3uA",
         "rightToRightOf": "eTekI6McU8G9y1I6Qm3uA"
-      }
+      },
+      "conditions": []
     },
     "icon": "FaBimobject",
     "group": "Form",
@@ -4273,8 +4224,8 @@
     "component": { "content": "Button", "type": "BUTTON" },
     "events": [
       {
-        "triggerId": "rZ_OGL6wTp0jscUSRrK8N",
-        "triggerName": "HMB_GetAccountDetails_Api_Trig",
+        "triggerId": "GqszJN3gDv4XVsjE4UXiY",
+        "triggerName": "getAccountDetailsValidation",
         "name": "On click",
         "type": "ONCLICK"
       }

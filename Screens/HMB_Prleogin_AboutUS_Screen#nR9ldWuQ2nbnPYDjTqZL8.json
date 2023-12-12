@@ -15,17 +15,27 @@
         "navBarColor": "#093959",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "navbarHeight": 0,
-        "hideNavBar": true
+        "navbarHeight": "88",
+        "hideNavBar": false,
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content"
       },
-      "componentId": ["UZGd1GEOZftLOo2EoyUqF"]
+      "componentId": ["UZGd1GEOZftLOo2EoyUqF", "UZGd1GEOZftLOo2EoyUqF"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/26/2023",
-    "createdAt": "10/26/2023",
-    "events": [],
+    "updatedAt": "12/12/2023",
+    "createdAt": "12/12/2023",
+    "events": [
+      {
+        "triggerId": "7U2LU_qF6lr2bVp5aSCUN",
+        "triggerName": "set prelogin about us nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -87,8 +97,98 @@
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "navbarHeight": 0,
-            "hideNavBar": true
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "7U2LU_qF6lr2bVp5aSCUN",
+            "triggerName": "set prelogin about us nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "About Us",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "UZGd1GEOZftLOo2EoyUqF",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "AboutUs_Webview",
+            "attributes": {
+              "name": "AboutUs_Webview",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 12,
+                "cornerRadius": [0, 0, 0, 0],
+                "url": "https://www.habibmetro.com/about/profile/",
+                "selectable": true,
+                "isHTML": true,
+                "scroll": true,
+                "leftToLeftOf": "nR9ldWuQ2nbnPYDjTqZL8",
+                "rightToRightOf": "nR9ldWuQ2nbnPYDjTqZL8",
+                "topToTopOf": "nR9ldWuQ2nbnPYDjTqZL8",
+                "bottomToBottomOf": "nR9ldWuQ2nbnPYDjTqZL8",
+                "layout_marginTop": 20
+              },
+              "contentType": "url"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "path": "0-0"
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "nR9ldWuQ2nbnPYDjTqZL8",
+        "name": "HMB_Prleogin_AboutUS_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Prleogin_AboutUS_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navbarHeight": "88",
+            "hideNavBar": false,
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng"
           },
           "componentId": []
         },

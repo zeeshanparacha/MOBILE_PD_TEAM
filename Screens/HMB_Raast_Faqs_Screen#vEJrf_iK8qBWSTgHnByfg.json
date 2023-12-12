@@ -10,20 +10,31 @@
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "background": "#FFFFFF",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true
       },
-      "componentId": ["VcGHe_NToXrBy1TcS9nI0"]
+      "componentId": ["VcGHe_NToXrBy1TcS9nI0", "VcGHe_NToXrBy1TcS9nI0"]
     },
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/27/2023",
-    "createdAt": "10/27/2023",
-    "events": [],
+    "updatedAt": "12/12/2023",
+    "createdAt": "12/12/2023",
+    "events": [
+      {
+        "triggerId": "KDRxzYcOl6vGBRXRhzIEb",
+        "triggerName": "set raast faqs nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -39,14 +50,17 @@
           "layoutProperties": {
             "layout_width": "match_parent",
             "layout_height": "match_parent",
-            "textSize": 16,
+            "textSize": null,
             "cornerRadius": [0, 0, 0, 0],
-            "textColor": "#000000",
-            "textAlignment": "left",
             "leftToLeftOf": "vEJrf_iK8qBWSTgHnByfg",
             "rightToRightOf": "vEJrf_iK8qBWSTgHnByfg",
             "topToTopOf": "vEJrf_iK8qBWSTgHnByfg",
-            "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg"
+            "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "match_parent",
+            "selectable": true,
+            "isHTML": true,
+            "scroll": true
           },
           "bindingKey": "hmb_terms_data.content.htmlContent",
           "contentType": "State based"
@@ -67,7 +81,99 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
+      {
+        "id": "vEJrf_iK8qBWSTgHnByfg",
+        "name": "HMB_Raast_Faqs_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Raast_Faqs_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#FFFFFF",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "KDRxzYcOl6vGBRXRhzIEb",
+            "triggerName": "set raast faqs nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Raast FAQs",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "VcGHe_NToXrBy1TcS9nI0",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "raast faqs WEB VIEW",
+            "attributes": {
+              "name": "raast faqs WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": null,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "vEJrf_iK8qBWSTgHnByfg",
+                "rightToRightOf": "vEJrf_iK8qBWSTgHnByfg",
+                "topToTopOf": "vEJrf_iK8qBWSTgHnByfg",
+                "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "selectable": true,
+                "isHTML": true,
+                "scroll": true
+              },
+              "bindingKey": "hmb_terms_data.content.htmlContent",
+              "contentType": "State based"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
       {
         "id": "vEJrf_iK8qBWSTgHnByfg",
         "name": "HMB_Raast_Faqs_Screen",
@@ -83,7 +189,9 @@
             "background": "#FFFFFF",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88"
           },
           "componentId": []
         },
@@ -108,14 +216,17 @@
               "layoutProperties": {
                 "layout_width": "match_parent",
                 "layout_height": "match_parent",
-                "textSize": 16,
+                "textSize": null,
                 "cornerRadius": [0, 0, 0, 0],
-                "textColor": "#000000",
-                "textAlignment": "left",
                 "leftToLeftOf": "vEJrf_iK8qBWSTgHnByfg",
                 "rightToRightOf": "vEJrf_iK8qBWSTgHnByfg",
                 "topToTopOf": "vEJrf_iK8qBWSTgHnByfg",
-                "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg"
+                "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg",
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "selectable": true,
+                "isHTML": true,
+                "scroll": true
               },
               "bindingKey": "hmb_terms_data.content.htmlContent",
               "contentType": "State based"
@@ -153,14 +264,17 @@
       "layoutProperties": {
         "layout_width": "match_parent",
         "layout_height": "match_parent",
-        "textSize": 16,
+        "textSize": null,
         "cornerRadius": [0, 0, 0, 0],
-        "textColor": "#000000",
-        "textAlignment": "left",
         "leftToLeftOf": "vEJrf_iK8qBWSTgHnByfg",
         "rightToRightOf": "vEJrf_iK8qBWSTgHnByfg",
         "topToTopOf": "vEJrf_iK8qBWSTgHnByfg",
-        "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg"
+        "bottomToBottomOf": "vEJrf_iK8qBWSTgHnByfg",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "match_parent",
+        "selectable": true,
+        "isHTML": true,
+        "scroll": true
       },
       "bindingKey": "hmb_terms_data.content.htmlContent",
       "contentType": "State based"
