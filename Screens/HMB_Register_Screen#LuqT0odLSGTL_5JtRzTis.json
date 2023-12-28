@@ -14,12 +14,35 @@
         "navBarColor": "#004D39",
         "hideNavbar": true,
         "cornerRadius": [0, 0, 0, 0],
-        "hideNavBar": true,
-        "fullScreen": false,
-        "navbarHeight": 0,
-        "statusBarColor": "#004708"
+        "hideNavBar": false,
+        "fullScreen": true,
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "navBarId": "fgu_CECWORM2CDx0HBYWx"
       },
       "componentId": [
+        "ZaQGfH-wTzPYVuZM2_ZYN",
+        "8b0c5_N7ErnaSOv7YzaMm",
+        "1SXQS42eARxnb1aCDcDFz",
+        "T4HCexvPhmA4k3Bc95Joy",
+        "ADlXoSSx6qSgKdfmt3iCr",
+        "trukJngGz--eYR9duuSoa",
+        "gUd-aqrxkv36Px6MsmOr5",
+        "PlopqjQP-LbFK7gzlPAPn",
+        "BJLtynh5yJNkD6tSK_zOL",
+        "wk4b-uLdtlRkcShoSu7tI",
+        "sLrpKI96XQN9XcEFxc4SH",
+        "ygRgbIHt04UPaGxH91jWb",
+        "nH7SFl3QglfiZjMqYFoPe",
+        "ciFpgdkFbiNs_Np6dsRIo",
+        "ms-2GOvgyLoPBbZ1Ks7Md",
+        "KPsqRfZ9dvKsKwqceJPuQ",
+        "tb-ud0Z18SrH2MoxwqPxN",
+        "3yAbA3tg1VM2V_mius9Kc",
+        "8_cgTMxhlUhi_u1ScIL48",
+        "1I9h5RWAwWIt8eBu2ne05",
+        "z9DCuxoxaoVxp8QGeoNZl",
         "ZaQGfH-wTzPYVuZM2_ZYN",
         "8b0c5_N7ErnaSOv7YzaMm",
         "1SXQS42eARxnb1aCDcDFz",
@@ -45,9 +68,16 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/26/2023",
-    "createdAt": "10/26/2023",
-    "events": [],
+    "updatedAt": "12/28/2023",
+    "createdAt": "12/28/2023",
+    "events": [
+      {
+        "triggerId": "QI1sr84ldpShYZzh0oKxF",
+        "triggerName": "set registration step 2",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -941,6 +971,58 @@
         "component": { "content": "Text view", "type": "TEXTVIEW" },
         "events": [],
         "path": "0-19"
+      },
+      {
+        "id": "z9DCuxoxaoVxp8QGeoNZl",
+        "status": "ACTIVE",
+        "_id": "61dec691077814a0f374d9f4",
+        "name": "dummy view",
+        "attributes": {
+          "name": "dummy view",
+          "layoutProperties": {
+            "name": "View",
+            "layout_width": "match_parent",
+            "layout_height": "2",
+            "borderWidth": 0,
+            "cornerRadius": [0, 0, 0, 0],
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "5",
+            "bottomToBottomOf": "LuqT0odLSGTL_5JtRzTis",
+            "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+            "rightToRightOf": "LuqT0odLSGTL_5JtRzTis"
+          }
+        },
+        "icon": "FaTabletAlt",
+        "group": "Form",
+        "type": "sidebarItem",
+        "updatedAt": "23-Aug-2021",
+        "createdAt": "23-Aug-2021",
+        "order": 20,
+        "version": "1.0.0",
+        "isLatest": true,
+        "projectType": "mobile",
+        "component": { "content": "View", "type": "VIEW" },
+        "events": [
+          {
+            "triggerId": "g76a1dv_FbOH2iQ-_26GQ",
+            "triggerName": "HMB_Register_IDType_CnicPassport_Hide",
+            "serviceType": "UI",
+            "attributes": {
+              "serviceName": "Execute chain trigger",
+              "triggers": [
+                {
+                  "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+                  "triggerName": "HMB_Register_IDType_Passport_Hide"
+                }
+              ],
+              "triggerId": ["6aJHh7IrPaK7D0C25GWfr"]
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "path": "0-20",
+        "edit": true
       }
     ],
     "subType": "screen",
@@ -961,10 +1043,1008 @@
             "navBarColor": "#004D39",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0],
-            "hideNavBar": true,
-            "fullScreen": false,
-            "navbarHeight": 0,
-            "statusBarColor": "#004708"
+            "hideNavBar": false,
+            "fullScreen": true,
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "navBarId": "fgu_CECWORM2CDx0HBYWx"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "QI1sr84ldpShYZzh0oKxF",
+            "triggerName": "set registration step 2",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "regStep",
+              "value": "2",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "ZaQGfH-wTzPYVuZM2_ZYN",
+            "status": "ACTIVE",
+            "name": "Register_IdType_Name",
+            "attributes": {
+              "name": "Register_IdType_Name",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "ID Type",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToTopOf": "LuqT0odLSGTL_5JtRzTis",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 19,
+                "textStyle": "bold",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-0",
+            "edit": true
+          },
+          {
+            "id": "8b0c5_N7ErnaSOv7YzaMm",
+            "status": "ACTIVE",
+            "name": "Register_IdType_Input_View",
+            "attributes": {
+              "name": "Register_IdType_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "ZaQGfH-wTzPYVuZM2_ZYN",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "1SXQS42eARxnb1aCDcDFz",
+            "status": "ACTIVE",
+            "name": "Register_IdType_Input_Text",
+            "attributes": {
+              "name": "Register_IdType_Input_Text",
+              "layoutProperties": {
+                "textSize": 15,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#989898",
+                "text": "CNIC",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "topToTopOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "bottomToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginLeft": 20,
+                "textStyle": "regular",
+                "textAlignment": "left"
+              },
+              "bindingKey": "register_idtype.value"
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-2",
+            "edit": true
+          },
+          {
+            "id": "T4HCexvPhmA4k3Bc95Joy",
+            "status": "ACTIVE",
+            "name": "Register_IdType_Btmsht_Icon",
+            "attributes": {
+              "name": "Register_IdType_Btmsht_Icon",
+              "layoutProperties": {
+                "layout_width": "40",
+                "layout_height": "40",
+                "cornerRadius": [0, 0, 0, 0],
+                "src": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "64087882f00f8b3bc0ab36d4",
+                  "name": "BtmSheet_Arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "TDI6iHI2WebhM0mMtUzEc",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "BtmSheet_Arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
+                  "createdAt": "2023-03-08T11:58:58.504Z",
+                  "updatedAt": "2023-03-08T11:58:58.504Z",
+                  "__v": 0,
+                  "uri": "BtmSheet_Arrow.png"
+                },
+                "srcTemp": {
+                  "createdBy": "shaikhahmedraza",
+                  "_id": "64087882f00f8b3bc0ab36d4",
+                  "name": "BtmSheet_Arrow.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "TDI6iHI2WebhM0mMtUzEc",
+                  "gitBranchName": "master",
+                  "folderType": "xxxhdpi",
+                  "platform": "Android",
+                  "url": "BtmSheet_Arrow.png",
+                  "canvasUrl": "Android/drawable-xxxhdpi/BtmSheet_Arrow.png",
+                  "createdAt": "2023-03-08T11:58:58.504Z",
+                  "updatedAt": "2023-03-08T11:58:58.504Z",
+                  "__v": 0,
+                  "uri": "BtmSheet_Arrow.png"
+                },
+                "rightToRightOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "topToTopOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "bottomToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginRight": 10,
+                "id": "TDI6iHI2WebhM0mMtUzEc"
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "IMAGEVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-3",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "-QRyEQu8bsVO1V7zPBkUe",
+                "triggerName": "HMB_Register_IDType_Btmsht",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Show bottomsheet",
+                  "values": [
+                    { "code": "code", "name": "CNIC" },
+                    { "code": "code", "name": "Passport" }
+                  ],
+                  "bottomsheetType": "Normal Bottomsheet",
+                  "code": "code",
+                  "value": "name",
+                  "title": "User Type",
+                  "selectedBindingKey": "register_idtype",
+                  "dataType": "static"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "ADlXoSSx6qSgKdfmt3iCr",
+            "status": "ACTIVE",
+            "name": "Register_IdNum_Text",
+            "attributes": {
+              "name": "Register_IdNum_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "CNIC Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "numberOfLines": 1,
+                "visibility": true
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-4",
+            "edit": true
+          },
+          {
+            "id": "trukJngGz--eYR9duuSoa",
+            "status": "ACTIVE",
+            "name": "Register_IdNum_Input_View",
+            "attributes": {
+              "name": "Register_IdNum_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "ADlXoSSx6qSgKdfmt3iCr",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10,
+                "visibility": true
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-5",
+            "edit": true
+          },
+          {
+            "id": "gUd-aqrxkv36Px6MsmOr5",
+            "status": "ACTIVE",
+            "name": "Register_AccNum_Text",
+            "attributes": {
+              "name": "Register_AccNum_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Account Number / IBAN",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 130,
+                "textAlignment": "left",
+                "textStyle": "bold",
+                "numberOfLines": 1
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-6",
+            "edit": true
+          },
+          {
+            "id": "PlopqjQP-LbFK7gzlPAPn",
+            "status": "ACTIVE",
+            "name": "Register_AccNum_Input_View",
+            "attributes": {
+              "name": "Register_AccNum_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "gUd-aqrxkv36Px6MsmOr5",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-7",
+            "edit": true
+          },
+          {
+            "id": "BJLtynh5yJNkD6tSK_zOL",
+            "status": "ACTIVE",
+            "name": "Register_AccNum_Input",
+            "attributes": {
+              "name": "Register_AccNum_Input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 15,
+                "textColor": "#989898",
+                "textStyle": "bold",
+                "textAlignment": "left",
+                "numberOfLines": 15,
+                "layout_height": "wrap_content",
+                "layout_width": "match_constraint",
+                "placeHolderText": "Enter Account Number / IBAN",
+                "keyboardType": "number",
+                "leftToLeftOf": "PlopqjQP-LbFK7gzlPAPn",
+                "rightToRightOf": "PlopqjQP-LbFK7gzlPAPn",
+                "topToTopOf": "PlopqjQP-LbFK7gzlPAPn",
+                "bottomToBottomOf": "PlopqjQP-LbFK7gzlPAPn",
+                "placeHolderTextColor": "#989898",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20
+              },
+              "bindingKey": "register_accountnum"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "INPUTTEXT",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-8",
+            "edit": true
+          },
+          {
+            "id": "wk4b-uLdtlRkcShoSu7tI",
+            "status": "ACTIVE",
+            "name": "Register_IdNum_Input",
+            "attributes": {
+              "name": "Register_IdNum_Input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 15,
+                "textColor": "#989898",
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "text": "",
+                "numberOfLines": 15,
+                "layout_height": "wrap_content",
+                "layout_width": "match_constraint",
+                "placeHolderText": "CNIC Number",
+                "keyboardType": "number",
+                "leftToLeftOf": "trukJngGz--eYR9duuSoa",
+                "rightToRightOf": "trukJngGz--eYR9duuSoa",
+                "topToTopOf": "trukJngGz--eYR9duuSoa",
+                "bottomToBottomOf": "trukJngGz--eYR9duuSoa",
+                "placeHolderTextColor": "#989898",
+                "style": "SENTENCECASE",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 19,
+                "visibility": true
+              },
+              "bindingKey": "register_cnic"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "INPUTTEXT",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-9",
+            "edit": true
+          },
+          {
+            "id": "sLrpKI96XQN9XcEFxc4SH",
+            "status": "ACTIVE",
+            "name": "Rgister_Mobile_Text",
+            "attributes": {
+              "name": "Rgister_Mobile_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Email",
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "PlopqjQP-LbFK7gzlPAPn",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textAlignment": "left",
+                "textStyle": "bold"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "TEXTVIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-10",
+            "edit": true
+          },
+          {
+            "id": "ygRgbIHt04UPaGxH91jWb",
+            "status": "ACTIVE",
+            "name": "Register_Mobile_Input_View",
+            "attributes": {
+              "name": "Register_Mobile_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "sLrpKI96XQN9XcEFxc4SH",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "VIEW",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-11",
+            "edit": true
+          },
+          {
+            "id": "nH7SFl3QglfiZjMqYFoPe",
+            "status": "ACTIVE",
+            "name": "Register_Mobile_Input",
+            "attributes": {
+              "name": "Register_Mobile_Input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 15,
+                "textColor": "#989898",
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "text": "",
+                "numberOfLines": 15,
+                "layout_height": "wrap_content",
+                "layout_width": "match_constraint",
+                "placeHolderText": "xxx@example.com",
+                "keyboardType": "email",
+                "leftToLeftOf": "ygRgbIHt04UPaGxH91jWb",
+                "rightToRightOf": "ygRgbIHt04UPaGxH91jWb",
+                "topToTopOf": "ygRgbIHt04UPaGxH91jWb",
+                "bottomToBottomOf": "ygRgbIHt04UPaGxH91jWb",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "placeHolderTextColor": "#989898"
+              },
+              "bindingKey": "register_email"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "INPUTTEXT",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-12",
+            "edit": true
+          },
+          {
+            "id": "ciFpgdkFbiNs_Np6dsRIo",
+            "status": "ACTIVE",
+            "name": "Register_Next_Btn",
+            "attributes": {
+              "name": "Register_Next_Btn",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "SUBMIT",
+                "textSize": 20,
+                "textColor": "#ffffff",
+                "textStyle": "book",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "bottomToBottomOf": "LuqT0odLSGTL_5JtRzTis"
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "BUTTON",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "xOxMOKRgegy_EGm3SZQ7H",
+                "triggerName": "HMB_ValidatreRegistration_Api_Trig",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "preprocessors": [
+                    "firstLevelEncryption",
+                    "addCheckSumInterceptor"
+                  ],
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "deviceKey": "1244d1426ebe80d3",
+                    "deviceName": "2201117TG",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "CHECKSUM": "8895YMQQ15OH196O856M5KMHLH55KKK6KQK15L65"
+                  },
+                  "requestDataType": "byJSON",
+                  "requestBody": {
+                    "accountNumber": "$register_accountnum",
+                    "cardExpiry": null,
+                    "cardNumber": null,
+                    "cardPin": null,
+                    "cnic": null,
+                    "cvv": null,
+                    "device": {
+                      "countryCode": "PKR",
+                      "deviceKey": "1244d1426ebe80d3",
+                      "fcmToken": null,
+                      "imei": "111111111111111",
+                      "ip": "192.168.0.112",
+                      "isNotificationEnabled": true,
+                      "name": "2201117TG",
+                      "os": "Android",
+                      "osType": "31"
+                    },
+                    "email": "$register_email",
+                    "flowType": "REGISTERATION",
+                    "mobileNumber": "$register_mobile",
+                    "registerMode": "ACC",
+                    "registrationFlag": true,
+                    "tranCode": "0106",
+                    "userIdenType": "$register_type",
+                    "userIdenValue": "$register_cnic",
+                    "username": ""
+                  },
+                  "url": "$baseMockUrl++/prelogin/v1/validateRegistrationGenerateOTP",
+                  "responseStateKey": "register_response",
+                  "conditions": [
+                    {
+                      "logic": {
+                        "==": [{ "var": "register_response.code" }, 1]
+                      },
+                      "httpStatus": 200,
+                      "triggerName": "BeneListFT_OwnAccountVlist_DS_Trig",
+                      "triggerId": "jRudn_iFXe3mdesR9n4AN"
+                    }
+                  ]
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              },
+              {
+                "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+                "triggerName": "HMB_Register_IDType_Passport_Hide",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Toggle visibility",
+                  "screenId": "LuqT0odLSGTL_5JtRzTis",
+                  "component": [
+                    {
+                      "id": "3yAbA3tg1VM2V_mius9Kc",
+                      "name": "HMB_Reigster_PassportNum_Input_View"
+                    },
+                    {
+                      "id": "8_cgTMxhlUhi_u1ScIL48",
+                      "name": "HMB_Register_PassportNum_Input"
+                    },
+                    { "id": "1I9h5RWAwWIt8eBu2ne05", "name": "Text view" }
+                  ],
+                  "componentId": [
+                    "3yAbA3tg1VM2V_mius9Kc",
+                    "8_cgTMxhlUhi_u1ScIL48",
+                    "1I9h5RWAwWIt8eBu2ne05"
+                  ],
+                  "visibility": false
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-13",
+            "edit": true
+          },
+          {
+            "id": "ms-2GOvgyLoPBbZ1Ks7Md",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "HMB_Register_MobileNum_Text",
+            "attributes": {
+              "name": "HMB_Register_MobileNum_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Mobile Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "ygRgbIHt04UPaGxH91jWb",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textStyle": "bold",
+                "textAlignment": "left"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-14",
+            "edit": true
+          },
+          {
+            "id": "KPsqRfZ9dvKsKwqceJPuQ",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "HMB_MobileNum_Input_View",
+            "attributes": {
+              "name": "HMB_MobileNum_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "ms-2GOvgyLoPBbZ1Ks7Md",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-15"
+          },
+          {
+            "id": "tb-ud0Z18SrH2MoxwqPxN",
+            "status": "ACTIVE",
+            "_id": "61dec716077814a0f374d9f5",
+            "name": "Input text",
+            "attributes": {
+              "name": "HMB_Register_MobileNum_Input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 15,
+                "textColor": "#A39999",
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "text": "",
+                "numberOfLines": 15,
+                "layout_height": "wrap_content",
+                "layout_width": "match_constraint",
+                "keyboardType": "number",
+                "leftToLeftOf": "KPsqRfZ9dvKsKwqceJPuQ",
+                "rightToRightOf": "KPsqRfZ9dvKsKwqceJPuQ",
+                "topToTopOf": "KPsqRfZ9dvKsKwqceJPuQ",
+                "bottomToBottomOf": "KPsqRfZ9dvKsKwqceJPuQ",
+                "placeHolderTextColor": "#A39999",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "placeHolderText": "92XXXXXXXXXX"
+              },
+              "bindingKey": "register_mobile"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-16"
+          },
+          {
+            "id": "3yAbA3tg1VM2V_mius9Kc",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "HMB_Reigster_PassportNum_Input_View",
+            "attributes": {
+              "name": "HMB_Reigster_PassportNum_Input_View",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_constraint",
+                "layout_height": "55",
+                "cornerRadius": [10, 10, 10, 10],
+                "background": "#F0F2F0",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "1I9h5RWAwWIt8eBu2ne05",
+                "layout_marginLeft": 20,
+                "layout_marginRight": 20,
+                "layout_marginTop": 10,
+                "visibility": false
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [],
+            "path": "0-17",
+            "edit": true
+          },
+          {
+            "id": "8_cgTMxhlUhi_u1ScIL48",
+            "status": "ACTIVE",
+            "_id": "61dec716077814a0f374d9f5",
+            "name": "HMB_Register_PassportNum_Input",
+            "attributes": {
+              "name": "HMB_Register_PassportNum_Input",
+              "validation": [],
+              "layoutProperties": {
+                "textSize": 15,
+                "textColor": "#989898",
+                "textStyle": "regular",
+                "textAlignment": "left",
+                "text": "",
+                "numberOfLines": 15,
+                "layout_height": "wrap_content",
+                "layout_width": "match_constraint",
+                "placeHolderText": "Passport Number",
+                "keyboardType": "number",
+                "leftToLeftOf": "3yAbA3tg1VM2V_mius9Kc",
+                "rightToRightOf": "3yAbA3tg1VM2V_mius9Kc",
+                "topToTopOf": "3yAbA3tg1VM2V_mius9Kc",
+                "bottomToBottomOf": "3yAbA3tg1VM2V_mius9Kc",
+                "placeHolderTextColor": "#989898",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "visibility": false
+              },
+              "bindingKey": "register_cnic"
+            },
+            "icon": "FaRemoveFormat",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Input text", "type": "INPUTTEXT" },
+            "events": [],
+            "path": "0-19",
+            "edit": true
+          },
+          {
+            "id": "1I9h5RWAwWIt8eBu2ne05",
+            "status": "ACTIVE",
+            "_id": "61dec5ad077814a0f374d9f3",
+            "name": "Text view",
+            "attributes": {
+              "name": "HMB_Register_Passport_Text",
+              "layoutProperties": {
+                "textSize": 18,
+                "layout_width": "wrap_content",
+                "layout_height": "wrap_content",
+                "textColor": "#000000",
+                "text": "Passport Number",
+                "cornerRadius": [0, 0, 0, 0],
+                "numberOfLines": 1,
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "topToBottomOf": "8b0c5_N7ErnaSOv7YzaMm",
+                "layout_marginLeft": 20,
+                "layout_marginTop": 20,
+                "textAlignment": "left",
+                "textStyle": "bold"
+              }
+            },
+            "icon": "FaTextWidth",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Text view", "type": "TEXTVIEW" },
+            "events": [],
+            "path": "0-19"
+          },
+          {
+            "id": "z9DCuxoxaoVxp8QGeoNZl",
+            "status": "ACTIVE",
+            "_id": "61dec691077814a0f374d9f4",
+            "name": "dummy view",
+            "attributes": {
+              "name": "dummy view",
+              "layoutProperties": {
+                "name": "View",
+                "layout_width": "match_parent",
+                "layout_height": "2",
+                "borderWidth": 0,
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "5",
+                "bottomToBottomOf": "LuqT0odLSGTL_5JtRzTis",
+                "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+                "rightToRightOf": "LuqT0odLSGTL_5JtRzTis"
+              }
+            },
+            "icon": "FaTabletAlt",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "View", "type": "VIEW" },
+            "events": [
+              {
+                "triggerId": "g76a1dv_FbOH2iQ-_26GQ",
+                "triggerName": "HMB_Register_IDType_CnicPassport_Hide",
+                "serviceType": "UI",
+                "attributes": {
+                  "serviceName": "Execute chain trigger",
+                  "triggers": [
+                    {
+                      "triggerId": "6aJHh7IrPaK7D0C25GWfr",
+                      "triggerName": "HMB_Register_IDType_Passport_Hide"
+                    }
+                  ],
+                  "triggerId": ["6aJHh7IrPaK7D0C25GWfr"]
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-20",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "LuqT0odLSGTL_5JtRzTis",
+        "name": "HMB_Register_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "HMB_Register_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#FFFFFF",
+            "navBarColor": "#004D39",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "hideNavBar": false,
+            "fullScreen": true,
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "navBarId": "fgu_CECWORM2CDx0HBYWx"
           },
           "componentId": []
         },
@@ -2745,6 +3825,50 @@
     "events": [],
     "path": "0-19",
     "subType": "component",
+    "projectId": "63ef72a290c5800428f84dd9",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "z9DCuxoxaoVxp8QGeoNZl",
+    "status": "ACTIVE",
+    "name": "dummy view",
+    "attributes": {
+      "name": "dummy view",
+      "layoutProperties": {
+        "name": "View",
+        "layout_width": "match_parent",
+        "layout_height": "2",
+        "borderWidth": 0,
+        "cornerRadius": [0, 0, 0, 0],
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "5",
+        "bottomToBottomOf": "LuqT0odLSGTL_5JtRzTis",
+        "leftToLeftOf": "LuqT0odLSGTL_5JtRzTis",
+        "rightToRightOf": "LuqT0odLSGTL_5JtRzTis"
+      }
+    },
+    "icon": "FaTabletAlt",
+    "group": "Form",
+    "type": "VIEW",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "mobile",
+    "subType": "component",
+    "component": { "content": "View", "type": "VIEW" },
+    "events": [
+      {
+        "triggerId": "g76a1dv_FbOH2iQ-_26GQ",
+        "triggerName": "HMB_Register_IDType_CnicPassport_Hide",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
+    "path": "0-20",
+    "edit": true,
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

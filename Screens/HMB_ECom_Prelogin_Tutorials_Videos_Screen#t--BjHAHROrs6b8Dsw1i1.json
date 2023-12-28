@@ -3,7 +3,7 @@
     "id": "t--BjHAHROrs6b8Dsw1i1",
     "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
     "icon": "FaGripHorizontal",
-    "path": "0",
+    "path": "1",
     "attributes": {
       "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
       "layoutProperties": {
@@ -11,16 +11,16 @@
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
         "statusBarColor": "#093959",
-        "background": "#FFFFFF",
+        "background": "#1D6131",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content"
       },
       "componentId": [
-        "KJgwkbxqr2rLbnUgl2xr8",
-        "myroVPy-BxmYufDSB2pw2",
-        "1umTMTnYmk5B76OzZrtZc",
-        "n0VsjKS0hxvvarI3R2Xmr",
         "waWDCzMDDRinSrmE8ZulB",
         "3QhUGA7Pli32xWCvDR0sm",
         "ppKTCMEebHntWmSthiugX"
@@ -29,162 +29,21 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "9/6/2023",
-    "createdAt": "9/6/2023",
-    "events": [],
+    "updatedAt": "12/13/2023",
+    "createdAt": "12/13/2023",
+    "events": [
+      {
+        "triggerId": "eybOnBKrMIu_G7BsCrrh0",
+        "triggerName": "set tutorials nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
     "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
     "gridProps": [
-      {
-        "id": "KJgwkbxqr2rLbnUgl2xr8",
-        "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
-        "name": "Tutorials_Ecom_Top_View",
-        "attributes": {
-          "name": "Tutorials_Ecom_Top_View",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "match_constraint",
-            "layout_height": "100",
-            "borderWidth": 0,
-            "cornerRadius": [0, 0, 0, 0],
-            "background": "#164E26",
-            "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-            "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-            "topToTopOf": "t--BjHAHROrs6b8Dsw1i1"
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-0"
-      },
-      {
-        "id": "myroVPy-BxmYufDSB2pw2",
-        "status": "ACTIVE",
-        "_id": "61decd8e077814a0f374d9fc",
-        "name": "Tutorials_Ecom_Back_Btn",
-        "attributes": {
-          "name": "Tutorials_Ecom_Back_Btn",
-          "layoutProperties": {
-            "layout_width": "22",
-            "layout_height": "22",
-            "cornerRadius": [0, 0, 0, 0],
-            "src": {
-              "createdBy": "shaikhahmedraza",
-              "_id": "63f8597bbf8c983b9cc00fd5",
-              "name": "HMB_Back.png",
-              "type": "png",
-              "projectId": "63ef72a290c5800428f84dd9",
-              "id": "1d8bk13Zt-VqOzmOlGNvr",
-              "gitBranchName": "master",
-              "folderType": "xxxhdpi",
-              "platform": "Android",
-              "url": "HMB_Back.png",
-              "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
-              "createdAt": "2023-02-24T06:30:19.246Z",
-              "updatedAt": "2023-02-24T06:30:19.246Z",
-              "__v": 0,
-              "uri": "HMB_Back.png"
-            },
-            "leftToLeftOf": "KJgwkbxqr2rLbnUgl2xr8",
-            "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-            "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-            "layout_marginLeft": 10,
-            "id": "1d8bk13Zt-VqOzmOlGNvr"
-          },
-          "contentType": 2
-        },
-        "icon": "FaRegImage",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Image view", "type": "IMAGEVIEW" },
-        "path": "0-1"
-      },
-      {
-        "id": "1umTMTnYmk5B76OzZrtZc",
-        "status": "ACTIVE",
-        "_id": "61dec5ad077814a0f374d9f3",
-        "name": "Text view",
-        "attributes": {
-          "name": "Tutorials_Ecom_Tutorials_Text",
-          "layoutProperties": {
-            "textSize": 16,
-            "layout_width": "wrap_content",
-            "layout_height": "wrap_content",
-            "textColor": "#ffffff",
-            "text": "Tutorials",
-            "cornerRadius": [0, 0, 0, 0],
-            "numberOfLines": 1,
-            "leftToRightOf": "myroVPy-BxmYufDSB2pw2",
-            "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-            "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-            "layout_marginLeft": 10,
-            "textAlignment": "left",
-            "textStyle": "regular"
-          }
-        },
-        "icon": "FaTextWidth",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "Text view", "type": "TEXTVIEW" },
-        "events": [],
-        "path": "0-2"
-      },
-      {
-        "id": "n0VsjKS0hxvvarI3R2Xmr",
-        "status": "ACTIVE",
-        "_id": "61dec691077814a0f374d9f4",
-        "name": "Tutorials_Ecom_VideoView",
-        "attributes": {
-          "name": "Tutorials_Ecom_VideoView",
-          "layoutProperties": {
-            "name": "View",
-            "layout_width": "match_parent",
-            "layout_height": "550",
-            "borderWidth": 0,
-            "cornerRadius": [0, 0, 0, 0],
-            "background": "#164E26",
-            "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-            "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-            "topToBottomOf": "KJgwkbxqr2rLbnUgl2xr8"
-          }
-        },
-        "icon": "FaTabletAlt",
-        "group": "Form",
-        "type": "sidebarItem",
-        "updatedAt": "23-Aug-2021",
-        "createdAt": "23-Aug-2021",
-        "order": 20,
-        "version": "1.0.0",
-        "isLatest": true,
-        "projectType": "mobile",
-        "component": { "content": "View", "type": "VIEW" },
-        "events": [],
-        "path": "0-3"
-      },
       {
         "id": "waWDCzMDDRinSrmE8ZulB",
         "status": "ACTIVE",
@@ -199,9 +58,14 @@
             "borderWidth": 0,
             "cornerRadius": [5, 5, 5, 5],
             "background": "#FFFFFF",
-            "leftToLeftOf": "n0VsjKS0hxvvarI3R2Xmr",
-            "rightToRightOf": "n0VsjKS0hxvvarI3R2Xmr",
-            "topToTopOf": "n0VsjKS0hxvvarI3R2Xmr"
+            "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
+            "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
+            "topToTopOf": "t--BjHAHROrs6b8Dsw1i1",
+            "unify_layout_width": "match_constraint",
+            "unify_layout_height": "350",
+            "layout_marginTop": 10,
+            "layout_marginLeft": 10,
+            "layout_marginRight": 10
           }
         },
         "icon": "FaTabletAlt",
@@ -215,7 +79,8 @@
         "projectType": "mobile",
         "component": { "content": "View", "type": "VIEW" },
         "events": [],
-        "path": "0-4"
+        "path": "0-0",
+        "edit": true
       },
       {
         "id": "3QhUGA7Pli32xWCvDR0sm",
@@ -296,20 +161,21 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
       {
-        "id": "t--BjHAHROrs6b8Dsw1i1",
-        "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
+        "id": "dt2SnPWXYhmWzp7Fle8Ng",
+        "name": "general navbar new",
         "icon": "FaGripHorizontal",
         "path": "0",
         "attributes": {
-          "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
+          "name": "general navbar new",
           "layoutProperties": {
             "orientation": "vertical",
             "layout_width": "match_parent",
-            "layout_height": "wrap_content",
+            "layout_height": "88",
             "statusBarColor": "#093959",
-            "background": "#FFFFFF",
+            "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
             "cornerRadius": [0, 0, 0, 0]
@@ -328,70 +194,42 @@
         "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
         "gridProps": [
           {
-            "id": "KJgwkbxqr2rLbnUgl2xr8",
-            "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "Tutorials_Ecom_Top_View",
-            "attributes": {
-              "name": "Tutorials_Ecom_Top_View",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_constraint",
-                "layout_height": "100",
-                "borderWidth": 0,
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#164E26",
-                "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-                "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-                "topToTopOf": "t--BjHAHROrs6b8Dsw1i1"
-              }
-            },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-0"
-          },
-          {
-            "id": "myroVPy-BxmYufDSB2pw2",
+            "id": "ctQDPTyLPb7tqBKulXsBb",
             "status": "ACTIVE",
             "_id": "61decd8e077814a0f374d9fc",
-            "name": "Tutorials_Ecom_Back_Btn",
+            "name": "bg image",
             "attributes": {
-              "name": "Tutorials_Ecom_Back_Btn",
+              "name": "bg image",
               "layoutProperties": {
-                "layout_width": "22",
-                "layout_height": "22",
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
                 "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "match_parent",
+                "unify_layout_height": "match_parent",
+                "scale": "aspectFill",
+                "scaleType": "fitxy",
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "rightToRightOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "topToTopOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "id": "EUH9vvcCeZEdMNKFnr_xS",
                 "src": {
-                  "createdBy": "shaikhahmedraza",
-                  "_id": "63f8597bbf8c983b9cc00fd5",
-                  "name": "HMB_Back.png",
+                  "createdBy": "user",
+                  "_id": "655323dd47bd902a3086e2b4",
+                  "name": "navbar.png",
                   "type": "png",
                   "projectId": "63ef72a290c5800428f84dd9",
-                  "id": "1d8bk13Zt-VqOzmOlGNvr",
+                  "id": "EUH9vvcCeZEdMNKFnr_xS",
                   "gitBranchName": "master",
-                  "folderType": "xxxhdpi",
+                  "folderType": "hdpi",
                   "platform": "Android",
-                  "url": "HMB_Back.png",
-                  "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
-                  "createdAt": "2023-02-24T06:30:19.246Z",
-                  "updatedAt": "2023-02-24T06:30:19.246Z",
+                  "url": "navbar.png",
+                  "canvasUrl": "Android/drawable-hdpi/navbar.png",
+                  "createdAt": "2023-11-14T07:38:05.677Z",
+                  "updatedAt": "2023-11-14T07:38:05.677Z",
                   "__v": 0,
-                  "uri": "HMB_Back.png"
-                },
-                "leftToLeftOf": "KJgwkbxqr2rLbnUgl2xr8",
-                "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-                "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-                "layout_marginLeft": 10,
-                "id": "1d8bk13Zt-VqOzmOlGNvr"
+                  "uri": "navbar.png"
+                }
               },
               "contentType": 2
             },
@@ -405,30 +243,96 @@
             "isLatest": true,
             "projectType": "mobile",
             "component": { "content": "Image view", "type": "IMAGEVIEW" },
-            "path": "0-1"
+            "path": "0-0",
+            "edit": true,
+            "events": []
           },
           {
-            "id": "1umTMTnYmk5B76OzZrtZc",
+            "id": "9My2hpI-qOjHGVLan0bxL",
+            "status": "ACTIVE",
+            "_id": "61decd8e077814a0f374d9fc",
+            "name": "Image View",
+            "attributes": {
+              "name": "Image View",
+              "layoutProperties": {
+                "layout_width": "30",
+                "layout_height": "30",
+                "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "30",
+                "unify_layout_height": "30",
+                "src": {
+                  "createdBy": "user",
+                  "_id": "65530cc747bd902a3086df08",
+                  "name": "close.png",
+                  "type": "png",
+                  "projectId": "63ef72a290c5800428f84dd9",
+                  "id": "xFd8JvM_Iapo5WLzQk70K",
+                  "gitBranchName": "master",
+                  "folderType": "mdpi",
+                  "platform": "Android",
+                  "url": "close.png",
+                  "canvasUrl": "Android/drawable-mdpi/close.png",
+                  "createdAt": "2023-11-14T05:59:35.608Z",
+                  "updatedAt": "2023-11-14T05:59:35.608Z",
+                  "__v": 0,
+                  "uri": "close.png"
+                },
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "centerY": "ZuKSy0Cyc7edqYakff1Qe",
+                "scale": "aspectFit",
+                "id": "xFd8JvM_Iapo5WLzQk70K",
+                "layout_marginLeft": 16
+              },
+              "contentType": 2
+            },
+            "icon": "FaRegImage",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Image view", "type": "IMAGEVIEW" },
+            "path": "0-1",
+            "edit": true,
+            "events": [
+              {
+                "triggerId": "Xji_n1WHYmxK4ptfnfakA",
+                "triggerName": "On tool bar back pressed",
+                "serviceType": "NAVIGATION",
+                "attributes": {},
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ]
+          },
+          {
+            "id": "ZuKSy0Cyc7edqYakff1Qe",
             "status": "ACTIVE",
             "_id": "61dec5ad077814a0f374d9f3",
-            "name": "Text view",
+            "name": "nav heading",
             "attributes": {
-              "name": "Tutorials_Ecom_Tutorials_Text",
+              "name": "nav heading",
               "layoutProperties": {
-                "textSize": 16,
+                "textSize": 20,
                 "layout_width": "wrap_content",
                 "layout_height": "wrap_content",
-                "textColor": "#ffffff",
-                "text": "Tutorials",
+                "textColor": "#FFFFFF",
+                "text": "Heading",
                 "cornerRadius": [0, 0, 0, 0],
+                "unify_layout_width": "wrap_content",
+                "unify_layout_height": "wrap_content",
                 "numberOfLines": 1,
-                "leftToRightOf": "myroVPy-BxmYufDSB2pw2",
-                "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-                "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-                "layout_marginLeft": 10,
+                "leftToLeftOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "layout_marginLeft": 55,
+                "textStyle": "regular",
                 "textAlignment": "left",
-                "textStyle": "regular"
-              }
+                "bottomToBottomOf": "dt2SnPWXYhmWzp7Fle8Ng",
+                "layout_marginBottom": 15
+              },
+              "bindingKey": "navHeading"
             },
             "icon": "FaTextWidth",
             "group": "Form",
@@ -441,40 +345,61 @@
             "projectType": "mobile",
             "component": { "content": "Text view", "type": "TEXTVIEW" },
             "events": [],
-            "path": "0-2"
+            "path": "0-2",
+            "edit": true
+          }
+        ],
+        "subType": "component",
+        "isNavbarConstraint": true
+      },
+      {
+        "id": "t--BjHAHROrs6b8Dsw1i1",
+        "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
+        "icon": "FaGripHorizontal",
+        "path": "1",
+        "attributes": {
+          "name": "HMB_ECom_Prelogin_Tutorials_Videos_Screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#1D6131",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "dt2SnPWXYhmWzp7Fle8Ng",
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content"
           },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
           {
-            "id": "n0VsjKS0hxvvarI3R2Xmr",
-            "status": "ACTIVE",
-            "_id": "61dec691077814a0f374d9f4",
-            "name": "Tutorials_Ecom_VideoView",
+            "triggerId": "eybOnBKrMIu_G7BsCrrh0",
+            "triggerName": "set tutorials nav heading",
+            "serviceType": "DATASTORAGE",
             "attributes": {
-              "name": "Tutorials_Ecom_VideoView",
-              "layoutProperties": {
-                "name": "View",
-                "layout_width": "match_parent",
-                "layout_height": "550",
-                "borderWidth": 0,
-                "cornerRadius": [0, 0, 0, 0],
-                "background": "#164E26",
-                "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-                "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-                "topToBottomOf": "KJgwkbxqr2rLbnUgl2xr8"
-              }
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Tutorials",
+              "contentType": "string"
             },
-            "icon": "FaTabletAlt",
-            "group": "Form",
-            "type": "sidebarItem",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 20,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "mobile",
-            "component": { "content": "View", "type": "VIEW" },
-            "events": [],
-            "path": "0-3"
-          },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
           {
             "id": "waWDCzMDDRinSrmE8ZulB",
             "status": "ACTIVE",
@@ -489,9 +414,14 @@
                 "borderWidth": 0,
                 "cornerRadius": [5, 5, 5, 5],
                 "background": "#FFFFFF",
-                "leftToLeftOf": "n0VsjKS0hxvvarI3R2Xmr",
-                "rightToRightOf": "n0VsjKS0hxvvarI3R2Xmr",
-                "topToTopOf": "n0VsjKS0hxvvarI3R2Xmr"
+                "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
+                "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
+                "topToTopOf": "t--BjHAHROrs6b8Dsw1i1",
+                "unify_layout_width": "match_constraint",
+                "unify_layout_height": "350",
+                "layout_marginTop": 10,
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10
               }
             },
             "icon": "FaTabletAlt",
@@ -505,7 +435,8 @@
             "projectType": "mobile",
             "component": { "content": "View", "type": "VIEW" },
             "events": [],
-            "path": "0-4"
+            "path": "0-0",
+            "edit": true
           },
           {
             "id": "3QhUGA7Pli32xWCvDR0sm",
@@ -585,173 +516,14 @@
             "path": "0-6"
           }
         ],
-        "subType": "screen"
+        "subType": "screen",
+        "edit": true
       }
     ],
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",
     "_id": "t--BjHAHROrs6b8Dsw1i1",
-    "createdBy": "shaikhahmedraza",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "KJgwkbxqr2rLbnUgl2xr8",
-    "status": "ACTIVE",
-    "name": "Tutorials_Ecom_Top_View",
-    "attributes": {
-      "name": "Tutorials_Ecom_Top_View",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "match_constraint",
-        "layout_height": "100",
-        "borderWidth": 0,
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#164E26",
-        "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-        "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-        "topToTopOf": "t--BjHAHROrs6b8Dsw1i1"
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-0",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "myroVPy-BxmYufDSB2pw2",
-    "status": "ACTIVE",
-    "name": "Tutorials_Ecom_Back_Btn",
-    "attributes": {
-      "name": "Tutorials_Ecom_Back_Btn",
-      "layoutProperties": {
-        "layout_width": "22",
-        "layout_height": "22",
-        "cornerRadius": [0, 0, 0, 0],
-        "src": {
-          "createdBy": "shaikhahmedraza",
-          "_id": "63f8597bbf8c983b9cc00fd5",
-          "name": "HMB_Back.png",
-          "type": "png",
-          "projectId": "63ef72a290c5800428f84dd9",
-          "id": "1d8bk13Zt-VqOzmOlGNvr",
-          "gitBranchName": "master",
-          "folderType": "xxxhdpi",
-          "platform": "Android",
-          "url": "HMB_Back.png",
-          "canvasUrl": "Android/drawable-xxxhdpi/HMB_Back.png",
-          "createdAt": "2023-02-24T06:30:19.246Z",
-          "updatedAt": "2023-02-24T06:30:19.246Z",
-          "__v": 0,
-          "uri": "HMB_Back.png"
-        },
-        "leftToLeftOf": "KJgwkbxqr2rLbnUgl2xr8",
-        "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-        "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-        "layout_marginLeft": 10,
-        "id": "1d8bk13Zt-VqOzmOlGNvr"
-      },
-      "contentType": 2
-    },
-    "icon": "FaRegImage",
-    "group": "Form",
-    "type": "IMAGEVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Image view", "type": "IMAGEVIEW" },
-    "path": "0-1",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "1umTMTnYmk5B76OzZrtZc",
-    "status": "ACTIVE",
-    "name": "Text view",
-    "attributes": {
-      "name": "Tutorials_Ecom_Tutorials_Text",
-      "layoutProperties": {
-        "textSize": 16,
-        "layout_width": "wrap_content",
-        "layout_height": "wrap_content",
-        "textColor": "#ffffff",
-        "text": "Tutorials",
-        "cornerRadius": [0, 0, 0, 0],
-        "numberOfLines": 1,
-        "leftToRightOf": "myroVPy-BxmYufDSB2pw2",
-        "topToTopOf": "KJgwkbxqr2rLbnUgl2xr8",
-        "bottomToBottomOf": "KJgwkbxqr2rLbnUgl2xr8",
-        "layout_marginLeft": 10,
-        "textAlignment": "left",
-        "textStyle": "regular"
-      }
-    },
-    "icon": "FaTextWidth",
-    "group": "Form",
-    "type": "TEXTVIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "Text view", "type": "TEXTVIEW" },
-    "events": [],
-    "path": "0-2",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "n0VsjKS0hxvvarI3R2Xmr",
-    "status": "ACTIVE",
-    "name": "Tutorials_Ecom_VideoView",
-    "attributes": {
-      "name": "Tutorials_Ecom_VideoView",
-      "layoutProperties": {
-        "name": "View",
-        "layout_width": "match_parent",
-        "layout_height": "550",
-        "borderWidth": 0,
-        "cornerRadius": [0, 0, 0, 0],
-        "background": "#164E26",
-        "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
-        "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
-        "topToBottomOf": "KJgwkbxqr2rLbnUgl2xr8"
-      }
-    },
-    "icon": "FaTabletAlt",
-    "group": "Form",
-    "type": "VIEW",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "mobile",
-    "component": { "content": "View", "type": "VIEW" },
-    "events": [],
-    "path": "0-3",
-    "subType": "component",
-    "projectId": "63ef72a290c5800428f84dd9",
-    "gitBranchName": "master",
+    "createdBy": "ammarahmed",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -767,9 +539,14 @@
         "borderWidth": 0,
         "cornerRadius": [5, 5, 5, 5],
         "background": "#FFFFFF",
-        "leftToLeftOf": "n0VsjKS0hxvvarI3R2Xmr",
-        "rightToRightOf": "n0VsjKS0hxvvarI3R2Xmr",
-        "topToTopOf": "n0VsjKS0hxvvarI3R2Xmr"
+        "leftToLeftOf": "t--BjHAHROrs6b8Dsw1i1",
+        "rightToRightOf": "t--BjHAHROrs6b8Dsw1i1",
+        "topToTopOf": "t--BjHAHROrs6b8Dsw1i1",
+        "unify_layout_width": "match_constraint",
+        "unify_layout_height": "350",
+        "layout_marginTop": 10,
+        "layout_marginLeft": 10,
+        "layout_marginRight": 10
       }
     },
     "icon": "FaTabletAlt",
@@ -783,7 +560,8 @@
     "projectType": "mobile",
     "component": { "content": "View", "type": "VIEW" },
     "events": [],
-    "path": "0-4",
+    "path": "0-0",
+    "edit": true,
     "subType": "component",
     "projectId": "63ef72a290c5800428f84dd9",
     "gitBranchName": "master",

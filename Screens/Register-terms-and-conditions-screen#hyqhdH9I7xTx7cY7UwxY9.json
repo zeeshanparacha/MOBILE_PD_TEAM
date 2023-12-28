@@ -5,18 +5,28 @@
     "icon": "FaGripHorizontal",
     "path": "0",
     "attributes": {
-      "name": "Constraint Layout",
+      "name": "Register terms and conditions screen",
       "layoutProperties": {
         "orientation": "vertical",
         "layout_width": "match_parent",
         "layout_height": "wrap_content",
-        "statusBarColor": "#093959",
         "background": "#F8F8F8",
         "navBarColor": "#093959",
         "hideNavbar": true,
-        "cornerRadius": [0, 0, 0, 0]
+        "cornerRadius": [0, 0, 0, 0],
+        "navBarId": "fgu_CECWORM2CDx0HBYWx",
+        "navbarHeight": "88",
+        "unify_layout_width": "match_parent",
+        "unify_layout_height": "wrap_content",
+        "fullScreen": true
       },
       "componentId": [
+        "p7CywMVTX6HjTYverYC0s",
+        "MNKCqaDBnc_o4fU1QNLIZ",
+        "F9j0Qnfz92c7L7ck5Iz6w",
+        "p7CywMVTX6HjTYverYC0s",
+        "MNKCqaDBnc_o4fU1QNLIZ",
+        "F9j0Qnfz92c7L7ck5Iz6w",
         "p7CywMVTX6HjTYverYC0s",
         "MNKCqaDBnc_o4fU1QNLIZ",
         "F9j0Qnfz92c7L7ck5Iz6w"
@@ -25,9 +35,22 @@
     "group": "Layout",
     "type": "CONSTRAINT",
     "status": "ACTIVE",
-    "updatedAt": "10/25/2023",
-    "createdAt": "10/25/2023",
-    "events": [],
+    "updatedAt": "12/22/2023",
+    "createdAt": "12/22/2023",
+    "events": [
+      {
+        "triggerId": "iV299hX-1EJxVyaM8MHo0",
+        "triggerName": "set registration step 1",
+        "name": "On Load",
+        "type": "ONLOAD"
+      },
+      {
+        "triggerId": "B9wUm1z9hJ3tbWCfXZnfL",
+        "triggerName": "set registration nav heading",
+        "name": "On Load",
+        "type": "ONLOAD"
+      }
+    ],
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -189,7 +212,416 @@
       }
     ],
     "subType": "screen",
+    "edit": true,
     "layout": [
+      {
+        "id": "hyqhdH9I7xTx7cY7UwxY9",
+        "name": "Register terms and conditions screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Register terms and conditions screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "fgu_CECWORM2CDx0HBYWx",
+            "navbarHeight": "88",
+            "unify_layout_width": "match_parent",
+            "unify_layout_height": "wrap_content",
+            "fullScreen": true
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [
+          {
+            "triggerId": "iV299hX-1EJxVyaM8MHo0",
+            "triggerName": "set registration step 1",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "regStep",
+              "value": "1",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          },
+          {
+            "triggerId": "B9wUm1z9hJ3tbWCfXZnfL",
+            "triggerName": "set registration nav heading",
+            "serviceType": "DATASTORAGE",
+            "attributes": {
+              "serviceName": "Update value against binding key",
+              "bindingKey": "navHeading",
+              "value": "Register",
+              "contentType": "string"
+            },
+            "type": "ONLOAD",
+            "name": "On Load"
+          }
+        ],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "p7CywMVTX6HjTYverYC0s",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Decline button",
+            "attributes": {
+              "name": "Decline button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Decline",
+                "textSize": 20,
+                "textColor": "#000000",
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#F5F5F5",
+                "clickable": true,
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50,
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9"
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "MNKCqaDBnc_o4fU1QNLIZ",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Accept button",
+            "attributes": {
+              "name": "Accept button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Accept",
+                "textSize": 20,
+                "textColor": "#FFFFFF",
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "3RBJilewixCXTNJ0t7l_P",
+                "triggerName": "navigate to register form screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate",
+                  "id": "LuqT0odLSGTL_5JtRzTis"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "F9j0Qnfz92c7L7ck5Iz6w",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "register terms WEB VIEW",
+            "attributes": {
+              "name": "register terms WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 18,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToTopOf": "MNKCqaDBnc_o4fU1QNLIZ",
+                "textColor": "#000000",
+                "textAlignment": "left",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 0,
+                "textStyle": "regular"
+              },
+              "bindingKey": "registerTermsAndConditions.content.htmlContent",
+              "contentType": "State based"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "pvYW-sTJZf0cPk089b1_h",
+                "triggerName": "getRegisterTermsAndConditions",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "TERMS_CONDITIONS" },
+                  "responseStateKey": "registerTermsAndConditions"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-2",
+            "edit": true
+          }
+        ],
+        "subType": "screen",
+        "edit": true
+      },
+      {
+        "id": "hyqhdH9I7xTx7cY7UwxY9",
+        "name": "Register terms and conditions screen",
+        "icon": "FaGripHorizontal",
+        "path": "0",
+        "attributes": {
+          "name": "Register terms and conditions screen",
+          "layoutProperties": {
+            "orientation": "vertical",
+            "layout_width": "match_parent",
+            "layout_height": "wrap_content",
+            "statusBarColor": "#093959",
+            "background": "#F8F8F8",
+            "navBarColor": "#093959",
+            "hideNavbar": true,
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "fgu_CECWORM2CDx0HBYWx",
+            "navbarHeight": "88"
+          },
+          "componentId": []
+        },
+        "group": "Layout",
+        "type": "CONSTRAINT",
+        "status": "ACTIVE",
+        "updatedAt": "2021-09-23T15:17:45.489Z",
+        "createdAt": "2021-08-24T06:05:50.559Z",
+        "events": [],
+        "order": 1,
+        "version": "1.0.0",
+        "isLatest": true,
+        "component": { "content": "Constraint Layout", "type": "CONSTRAINT" },
+        "gridProps": [
+          {
+            "id": "p7CywMVTX6HjTYverYC0s",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Decline button",
+            "attributes": {
+              "name": "Decline button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Decline",
+                "textSize": 20,
+                "textColor": "#000000",
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#F5F5F5",
+                "clickable": true,
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50,
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9"
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "MNKCqaDBnc_o4fU1QNLIZ",
+            "status": "ACTIVE",
+            "_id": "61dec753077814a0f374d9f6",
+            "name": "Accept button",
+            "attributes": {
+              "name": "Accept button",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "63",
+                "text": "Accept",
+                "textSize": 20,
+                "textColor": "#FFFFFF",
+                "textStyle": "regular",
+                "textAlignment": "center",
+                "cornerRadius": [0, 0, 0, 0],
+                "background": "#1D6131",
+                "clickable": true,
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToBottomOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "width_percent": 50
+              }
+            },
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Button", "type": "BUTTON" },
+            "events": [
+              {
+                "triggerId": "3RBJilewixCXTNJ0t7l_P",
+                "triggerName": "navigate to register form screen",
+                "serviceType": "NAVIGATION",
+                "attributes": {
+                  "serviceName": "Navigate",
+                  "id": "LuqT0odLSGTL_5JtRzTis"
+                },
+                "type": "ONCLICK",
+                "name": "On click"
+              }
+            ],
+            "path": "0-1",
+            "edit": true
+          },
+          {
+            "id": "F9j0Qnfz92c7L7ck5Iz6w",
+            "status": "ACTIVE",
+            "_id": "61ded106077814a0f374da04",
+            "name": "register terms WEB VIEW",
+            "attributes": {
+              "name": "register terms WEB VIEW",
+              "layoutProperties": {
+                "layout_width": "match_parent",
+                "layout_height": "match_parent",
+                "textSize": 18,
+                "cornerRadius": [0, 0, 0, 0],
+                "leftToLeftOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "rightToRightOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "topToTopOf": "hyqhdH9I7xTx7cY7UwxY9",
+                "bottomToTopOf": "MNKCqaDBnc_o4fU1QNLIZ",
+                "textColor": "#000000",
+                "textAlignment": "left",
+                "layout_marginLeft": 10,
+                "layout_marginRight": 10,
+                "layout_marginTop": 0,
+                "textStyle": "regular"
+              },
+              "bindingKey": "registerTermsAndConditions.content.htmlContent",
+              "contentType": "State based"
+            },
+            "icon": "FaTenge",
+            "group": "Form",
+            "type": "sidebarItem",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 20,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "mobile",
+            "component": { "content": "Web view", "type": "WEBVIEW" },
+            "events": [
+              {
+                "triggerId": "pvYW-sTJZf0cPk089b1_h",
+                "triggerName": "getRegisterTermsAndConditions",
+                "serviceType": "NETWORK",
+                "attributes": {
+                  "serviceName": "POST",
+                  "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "$hmb_loginKey.content.token",
+                    "hmbToken": "$hmb_loginKey.content.otpToken",
+                    "version_code": "1",
+                    "channel_key": "006",
+                    "activity_id": "1",
+                    "locale": "en",
+                    "entityId": "1",
+                    "app_version": "5.1.0",
+                    "deviceKey": "$device.deviceKey",
+                    "deviceName": "$device.deviceName"
+                  },
+                  "url": "http://172.16.11.52:9000/prelogin/v1/getTermsAndConditions",
+                  "requestDataType": "byJSON",
+                  "requestBody": { "entityId": "TERMS_CONDITIONS" },
+                  "responseStateKey": "registerTermsAndConditions"
+                },
+                "type": "ONLOAD",
+                "name": "On Load"
+              }
+            ],
+            "path": "0-2",
+            "edit": true
+          }
+        ],
+        "subType": "screen"
+      },
       {
         "id": "hyqhdH9I7xTx7cY7UwxY9",
         "name": "Register terms and conditions screen",
@@ -205,7 +637,9 @@
             "background": "#F8F8F8",
             "navBarColor": "#093959",
             "hideNavbar": true,
-            "cornerRadius": [0, 0, 0, 0]
+            "cornerRadius": [0, 0, 0, 0],
+            "navBarId": "CVFnhsuvQBrRB61XL8epp",
+            "navbarHeight": "88"
           },
           "componentId": []
         },
